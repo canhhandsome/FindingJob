@@ -27,5 +27,10 @@ namespace WinFormProject
             fRegister.Closed += (s, args) => this.Close();
             fRegister.Show();
         }
+
+        private void FLogin_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

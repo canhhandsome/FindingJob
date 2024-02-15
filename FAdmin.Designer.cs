@@ -44,7 +44,7 @@
             panel4 = new Panel();
             button3 = new ReaLTaiizor.Controls.Button();
             panel3 = new Panel();
-            button2 = new ReaLTaiizor.Controls.Button();
+            btnLogOut = new ReaLTaiizor.Controls.Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
@@ -73,9 +73,7 @@
             // 
             panel1.BackColor = Color.White;
             panel1.Controls.Add(metroControlBox3);
-            panel1.Controls.Add(metroControlBox2);
             panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(metroControlBox1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(3, 2, 3, 2);
@@ -270,31 +268,32 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(button2);
+            panel3.Controls.Add(btnLogOut);
             panel3.Location = new Point(3, 344);
             panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
             panel3.Size = new Size(253, 60);
             panel3.TabIndex = 5;
             // 
-            // button2
+            // btnLogOut
             // 
-            button2.BackColor = Color.Transparent;
-            button2.BorderColor = Color.FromArgb(32, 34, 37);
-            button2.EnteredBorderColor = Color.FromArgb(165, 37, 37);
-            button2.EnteredColor = Color.FromArgb(32, 38, 39);
-            button2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.InactiveColor = Color.FromArgb(64, 64, 64);
-            button2.Location = new Point(-1, -9);
-            button2.Name = "button2";
-            button2.PressedBorderColor = Color.FromArgb(165, 37, 37);
-            button2.PressedColor = Color.FromArgb(165, 37, 37);
-            button2.Size = new Size(187, 84);
-            button2.TabIndex = 15;
-            button2.Text = "Log Out";
-            button2.TextAlignment = StringAlignment.Center;
+            btnLogOut.BackColor = Color.Transparent;
+            btnLogOut.BorderColor = Color.FromArgb(32, 34, 37);
+            btnLogOut.EnteredBorderColor = Color.FromArgb(165, 37, 37);
+            btnLogOut.EnteredColor = Color.FromArgb(32, 38, 39);
+            btnLogOut.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
+            btnLogOut.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLogOut.InactiveColor = Color.FromArgb(64, 64, 64);
+            btnLogOut.Location = new Point(-1, -9);
+            btnLogOut.Name = "btnLogOut";
+            btnLogOut.PressedBorderColor = Color.FromArgb(165, 37, 37);
+            btnLogOut.PressedColor = Color.FromArgb(165, 37, 37);
+            btnLogOut.Size = new Size(187, 84);
+            btnLogOut.TabIndex = 15;
+            btnLogOut.Text = "Log Out";
+            btnLogOut.TextAlignment = StringAlignment.Center;
+            btnLogOut.Click += btnLogOut_Click;
             // 
             // FAdmin
             // 
@@ -338,7 +337,7 @@
         private Panel panel4;
         private ReaLTaiizor.Controls.Button button3;
         private Panel panel3;
-        private ReaLTaiizor.Controls.Button button2;
+        private ReaLTaiizor.Controls.Button btnLogOut;
         private Panel panel2;
         private ReaLTaiizor.Controls.Button button1;
     }

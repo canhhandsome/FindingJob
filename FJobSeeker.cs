@@ -30,5 +30,14 @@ namespace WinFormProject
             }
             else flowLayoutPanel1.Width = 42;
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thank you for using our service!\nGoodbye and See you again");
+            this.Hide();
+            FLogin fLogin = new FLogin();
+            fLogin.Closed += (s, args) => this.Close();
+            fLogin.Show();
+        }
     }
 }
