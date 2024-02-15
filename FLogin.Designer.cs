@@ -86,7 +86,7 @@
             button1.Image = null;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
             button1.InactiveColor = Color.FromArgb(32, 34, 37);
-            button1.Location = new Point(318, 404);
+            button1.Location = new Point(309, 404);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.PressedBorderColor = Color.FromArgb(165, 37, 37);
@@ -250,10 +250,10 @@
             hopeRoundButton1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             hopeRoundButton1.HoverTextColor = Color.FromArgb(48, 49, 51);
             hopeRoundButton1.InfoColor = Color.FromArgb(144, 147, 153);
-            hopeRoundButton1.Location = new Point(304, 342);
+            hopeRoundButton1.Location = new Point(297, 350);
             hopeRoundButton1.Name = "hopeRoundButton1";
             hopeRoundButton1.PrimaryColor = Color.FromArgb(64, 158, 255);
-            hopeRoundButton1.Size = new Size(136, 36);
+            hopeRoundButton1.Size = new Size(152, 36);
             hopeRoundButton1.SuccessColor = Color.FromArgb(103, 194, 58);
             hopeRoundButton1.TabIndex = 28;
             hopeRoundButton1.Text = "Forgot Password?";
