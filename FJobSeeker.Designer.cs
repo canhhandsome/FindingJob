@@ -41,10 +41,8 @@
             panel3 = new Panel();
             button2 = new ReaLTaiizor.Controls.Button();
             pictureBox1 = new PictureBox();
-            metroControlBox1 = new ReaLTaiizor.Controls.MetroControlBox();
             panel1 = new Panel();
             metroControlBox3 = new ReaLTaiizor.Controls.MetroControlBox();
-            metroControlBox2 = new ReaLTaiizor.Controls.MetroControlBox();
             flowLayoutPanel1.SuspendLayout();
             panel11.SuspendLayout();
             panel10.SuspendLayout();
@@ -224,34 +222,6 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
-            // metroControlBox1
-            // 
-            metroControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            metroControlBox1.CloseHoverBackColor = Color.FromArgb(183, 40, 40);
-            metroControlBox1.CloseHoverForeColor = Color.White;
-            metroControlBox1.CloseNormalForeColor = Color.Gray;
-            metroControlBox1.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
-            metroControlBox1.DisabledForeColor = Color.DimGray;
-            metroControlBox1.IsDerivedStyle = true;
-            metroControlBox1.Location = new Point(2186, 0);
-            metroControlBox1.Margin = new Padding(3, 2, 3, 2);
-            metroControlBox1.MaximizeBox = true;
-            metroControlBox1.MaximizeHoverBackColor = Color.FromArgb(238, 238, 238);
-            metroControlBox1.MaximizeHoverForeColor = Color.Gray;
-            metroControlBox1.MaximizeNormalForeColor = Color.Gray;
-            metroControlBox1.MinimizeBox = true;
-            metroControlBox1.MinimizeHoverBackColor = Color.FromArgb(238, 238, 238);
-            metroControlBox1.MinimizeHoverForeColor = Color.Gray;
-            metroControlBox1.MinimizeNormalForeColor = Color.Gray;
-            metroControlBox1.Name = "metroControlBox1";
-            metroControlBox1.Size = new Size(100, 25);
-            metroControlBox1.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            metroControlBox1.StyleManager = null;
-            metroControlBox1.TabIndex = 0;
-            metroControlBox1.Text = "metroControlBox1";
-            metroControlBox1.ThemeAuthor = "Taiizor";
-            metroControlBox1.ThemeName = "MetroLight";
-            // 
             // panel1
             // 
             panel1.BackColor = Color.White;
@@ -293,34 +263,6 @@
             metroControlBox3.Text = "metroControlBox3";
             metroControlBox3.ThemeAuthor = "Taiizor";
             metroControlBox3.ThemeName = "MetroLight";
-            // 
-            // metroControlBox2
-            // 
-            metroControlBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            metroControlBox2.CloseHoverBackColor = Color.FromArgb(183, 40, 40);
-            metroControlBox2.CloseHoverForeColor = Color.White;
-            metroControlBox2.CloseNormalForeColor = Color.Gray;
-            metroControlBox2.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
-            metroControlBox2.DisabledForeColor = Color.DimGray;
-            metroControlBox2.IsDerivedStyle = true;
-            metroControlBox2.Location = new Point(1230, -2);
-            metroControlBox2.Margin = new Padding(3, 2, 3, 2);
-            metroControlBox2.MaximizeBox = true;
-            metroControlBox2.MaximizeHoverBackColor = Color.FromArgb(238, 238, 238);
-            metroControlBox2.MaximizeHoverForeColor = Color.Gray;
-            metroControlBox2.MaximizeNormalForeColor = Color.Gray;
-            metroControlBox2.MinimizeBox = true;
-            metroControlBox2.MinimizeHoverBackColor = Color.FromArgb(238, 238, 238);
-            metroControlBox2.MinimizeHoverForeColor = Color.Gray;
-            metroControlBox2.MinimizeNormalForeColor = Color.Gray;
-            metroControlBox2.Name = "metroControlBox2";
-            metroControlBox2.Size = new Size(100, 25);
-            metroControlBox2.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            metroControlBox2.StyleManager = null;
-            metroControlBox2.TabIndex = 4;
-            metroControlBox2.Text = "metroControlBox2";
-            metroControlBox2.ThemeAuthor = "Taiizor";
-            metroControlBox2.ThemeName = "MetroLight";
             // 
             // FJobSeeker
             // 
