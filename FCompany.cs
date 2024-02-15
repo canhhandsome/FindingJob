@@ -24,7 +24,7 @@ namespace WinFormProject
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if (flowLayoutPanel1.Width > 42)
+            if (flowLayoutPanel1.Width == 42)
             {
                 flowLayoutPanel1.Width = 186;
             }
