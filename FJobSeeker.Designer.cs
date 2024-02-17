@@ -43,6 +43,8 @@
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
             metroControlBox3 = new ReaLTaiizor.Controls.MetroControlBox();
+            panel2 = new Panel();
+            bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             flowLayoutPanel1.SuspendLayout();
             panel11.SuspendLayout();
             panel10.SuspendLayout();
@@ -51,6 +53,7 @@
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -262,12 +265,35 @@
             metroControlBox3.ThemeAuthor = "Taiizor";
             metroControlBox3.ThemeName = "MetroLight";
             // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(255, 128, 128);
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(bigLabel1);
+            panel2.Location = new Point(40, 24);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1081, 474);
+            panel2.TabIndex = 4;
+            // 
+            // bigLabel1
+            // 
+            bigLabel1.AutoSize = true;
+            bigLabel1.BackColor = Color.Transparent;
+            bigLabel1.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            bigLabel1.ForeColor = Color.FromArgb(80, 80, 80);
+            bigLabel1.Location = new Point(8, 152);
+            bigLabel1.Name = "bigLabel1";
+            bigLabel1.Size = new Size(165, 46);
+            bigLabel1.TabIndex = 0;
+            bigLabel1.Text = "bigLabel1";
+            // 
             // FJobSeeker
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 41, 50);
             ClientSize = new Size(1124, 498);
+            Controls.Add(panel2);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -284,6 +310,8 @@
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -304,5 +332,7 @@
         private Panel panel11;
         private ReaLTaiizor.Controls.Button button6;
         private ReaLTaiizor.Controls.MetroControlBox metroControlBox3;
+        private Panel panel2;
+        private ReaLTaiizor.Controls.BigLabel bigLabel1;
     }
 }

@@ -27,10 +27,16 @@ namespace WinFormProject
                 if (flowLayoutPanel1.Width == 42)
                 {
                     t.add(flowLayoutPanel1, "Width", 186);
+                    t.add(panel2, "Width", panel2.Width - flowLayoutPanel1.Width + 42);
+                    t.add(panel2, "Left", 186);
+                    t.add(bigLabel1, "Left", panel2.Left);
                 }
                 else
                 {
                     t.add(flowLayoutPanel1, "Width", 42);
+                    t.add(panel2, "Width", panel2.Width+186-42);
+                    t.add(panel2, "Left", 42);
+                    t.add(bigLabel1, "Left", 42);
                 }
                 t.run();
             };
