@@ -22,7 +22,7 @@ namespace WinFormProject
         {
             pictureBox1.Click += (sender, e) =>
             {
-                var t = new Transition(new TransitionType_EaseInEaseOut(500));
+                var t = new Transition(new TransitionType_EaseInEaseOut(350));
                 if (flowLayoutPanel1.Width == 42)
                 {
                     t.add(flowLayoutPanel1, "Width", 186);
