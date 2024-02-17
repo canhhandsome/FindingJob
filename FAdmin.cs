@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Transitions;
 
 namespace WinFormProject
 {
@@ -19,7 +20,19 @@ namespace WinFormProject
 
         private void FAdmin_Load(object sender, EventArgs e)
         {
-
+            pictureBox1.Click += (sender, e) =>
+            {
+                var t = new Transition(new TransitionType_EaseInEaseOut(500));
+                if (flowLayoutPanel1.Width == 42)
+                {
+                    t.add(flowLayoutPanel1, "Width", 186);
+                }
+                else
+                {
+                    t.add(flowLayoutPanel1, "Width", 42);
+                }
+                t.run();
+            };
         }
         private void btnLogOut_Click(object sender, EventArgs e)
         {
@@ -30,13 +43,5 @@ namespace WinFormProject
             fLogin.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            if (flowLayoutPanel1.Width == 42)
-            {
-                flowLayoutPanel1.Width = 186;
-            }
-            else flowLayoutPanel1.Width = 42;
-        }
     }
 }

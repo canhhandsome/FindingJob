@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Transitions;
 
 namespace WinFormProject
 {
@@ -19,16 +21,19 @@ namespace WinFormProject
 
         private void FJobSeeker_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            if (flowLayoutPanel1.Width == 42)
+            pictureBox1.Click += (sender, e) =>
             {
-                flowLayoutPanel1.Width = 186;
-            }
-            else flowLayoutPanel1.Width = 42;
+                var t = new Transition(new TransitionType_EaseInEaseOut(500));
+                if (flowLayoutPanel1.Width == 42)
+                {
+                    t.add(flowLayoutPanel1, "Width", 186);
+                }
+                else
+                {
+                    t.add(flowLayoutPanel1, "Width", 42);
+                }
+                t.run();
+            };
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -39,5 +44,6 @@ namespace WinFormProject
             fLogin.Closed += (s, args) => this.Close();
             fLogin.Show();
         }
+
     }
 }
