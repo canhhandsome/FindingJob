@@ -7,13 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Transitions;
 
 namespace WinFormProject
 {
     public partial class FJobSeeker : Form
     {
+        private Form currentFormChild = new Form();
+        private Button selectedButton;
+
         public FJobSeeker()
         {
             InitializeComponent();
@@ -21,25 +23,22 @@ namespace WinFormProject
 
         private void FJobSeeker_Load(object sender, EventArgs e)
         {
-            pictureBox1.Click += (sender, e) =>
+            GetAllButtons(panel2);
+        }
+        void GetAllButtons(Control control)
+        {
+            foreach (Control c in control.Controls)
             {
-                var t = new Transition(new TransitionType_EaseInEaseOut(350));
-                if (flowLayoutPanel1.Width == 42)
+                if (c is Button)
                 {
-                    t.add(flowLayoutPanel1, "Width", 186);
-                    t.add(panel2, "Width", panel2.Width - flowLayoutPanel1.Width + 42);
-                    t.add(panel2, "Left", 186);
-                    t.add(bigLabel1, "Left", panel2.Left);
+                    Button button = (Button)c;
+                    button.Click += button_Click;
+                    if (button == btnLogOut)
+                    {
+                        button.Click += btnLogOut_Click;
+                    }
                 }
-                else
-                {
-                    t.add(flowLayoutPanel1, "Width", 42);
-                    t.add(panel2, "Width", panel2.Width+186-42);
-                    t.add(panel2, "Left", 42);
-                    t.add(bigLabel1, "Left", 42);
-                }
-                t.run();
-            };
+            }
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -51,5 +50,44 @@ namespace WinFormProject
             fLogin.Show();
         }
 
+        private void button_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+
+            if (clickedButton == selectedButton)
+                return;
+
+            if (selectedButton != null)
+            {
+                selectedButton.BackColor = Color.FromArgb(64, 64, 64);
+                selectedButton.Enabled = true;
+            }
+
+            clickedButton.BackColor = Color.FromArgb(90, 48, 52);
+            clickedButton.Enabled = false;
+            selectedButton = clickedButton;
+        }
+
+        private void OpenChildForm(Panel panel, Form childForm)
+        {
+            if (currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+            currentFormChild = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel.Controls.Add(childForm);
+            panel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void btnJobAlert_Click(object sender, EventArgs e)
+        {
+            FSupJobSection fSupJobSection = new FSupJobSection();
+            OpenChildForm(pnSubBody, fSupJobSection);
+        }
     }
 }

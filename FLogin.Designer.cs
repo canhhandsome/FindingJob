@@ -341,7 +341,7 @@
             MinimumSize = new Size(261, 61);
             Name = "FLogin";
             StartPosition = FormStartPosition.CenterScreen;
-            Load += FLogin_Load_1;
+            Load += FLogin_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

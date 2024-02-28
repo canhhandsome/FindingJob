@@ -13,27 +13,33 @@ namespace WinFormProject
 {
     public partial class FAdmin : Form
     {
+        private Form currentFormChild = new Form();
+        private Button selectedButton;
+
         public FAdmin()
         {
             InitializeComponent();
         }
-
         private void FAdmin_Load(object sender, EventArgs e)
         {
-            pictureBox1.Click += (sender, e) =>
-            {
-                var t = new Transition(new TransitionType_EaseInEaseOut(350));
-                if (flowLayoutPanel1.Width == 42)
-                {
-                    t.add(flowLayoutPanel1, "Width", 186);
-                }
-                else
-                {
-                    t.add(flowLayoutPanel1, "Width", 42);
-                }
-                t.run();
-            };
+            GetAllButtons(panel2);
         }
+        private void GetAllButtons(Control control)
+        {
+            foreach (Control c in control.Controls)
+            {
+                if (c is Button)
+                {
+                    Button button = (Button)c;
+                    button.Click += button_Click;
+                    if (button == btnLogOut)
+                    {
+                        button.Click += btnLogOut_Click;
+                    }
+                }
+            }
+        }
+
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Thank you for using our service!\nGoodbye and See you again");
@@ -41,6 +47,40 @@ namespace WinFormProject
             FLogin fLogin = new FLogin();
             fLogin.Closed += (s, args) => this.Close();
             fLogin.Show();
+        }
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+
+            if (clickedButton == selectedButton)
+                return;
+
+            if (selectedButton != null)
+            {
+                selectedButton.BackColor = Color.FromArgb(64, 64, 64);
+                selectedButton.Enabled = true;
+            }
+
+            clickedButton.BackColor = Color.FromArgb(50, 105, 85);
+            clickedButton.Enabled = false;
+            selectedButton = clickedButton;
+        }
+
+        private void OpenChildForm(Form childForm)
+        {
+            if (currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+            currentFormChild = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pnBody.Controls.Add(childForm);
+            pnBody.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
     }
