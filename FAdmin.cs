@@ -42,11 +42,20 @@ namespace WinFormProject
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Thank you for using our service!\nGoodbye and See you again");
-            this.Hide();
-            FLogin fLogin = new FLogin();
-            fLogin.Closed += (s, args) => this.Close();
-            fLogin.Show();
+            DialogResult dialogResult = MessageBox.Show("Are you sure to log out?", "Alert!!!", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                MessageBox.Show("Thank you for using our service!\nGoodbye and See you again");
+                this.Hide();
+                FLogin fLogin = new FLogin();
+                fLogin.Closed += (s, args) => this.Close();
+                fLogin.Show();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                selectedButton.BackColor = Color.FromArgb(64, 64, 64);
+                selectedButton.Enabled = true;
+            }
         }
 
         private void button_Click(object sender, EventArgs e)

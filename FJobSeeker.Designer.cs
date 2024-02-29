@@ -39,10 +39,12 @@
             btnJobAlert = new Button();
             pictureBox2 = new PictureBox();
             pnSubBody = new Panel();
+            panel3 = new Panel();
             pnBody = new Panel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            pnSubBody.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -158,6 +160,7 @@
             btnSetting.TabIndex = 4;
             btnSetting.Text = "Setting";
             btnSetting.UseVisualStyleBackColor = true;
+            btnSetting.Click += btnSetting_Click;
             // 
             // btnSearchJob
             // 
@@ -174,6 +177,7 @@
             btnSearchJob.TabIndex = 2;
             btnSearchJob.Text = "Search Job";
             btnSearchJob.UseVisualStyleBackColor = true;
+            btnSearchJob.Click += btnSearchJob_Click;
             // 
             // btnJobAlert
             // 
@@ -205,14 +209,25 @@
             // 
             // pnSubBody
             // 
+            pnSubBody.BorderStyle = BorderStyle.FixedSingle;
+            pnSubBody.Controls.Add(panel3);
             pnSubBody.Dock = DockStyle.Left;
             pnSubBody.Location = new Point(191, 24);
             pnSubBody.Name = "pnSubBody";
             pnSubBody.Size = new Size(390, 474);
             pnSubBody.TabIndex = 0;
             // 
+            // panel3
+            // 
+            panel3.Location = new Point(347, 482);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(200, 100);
+            panel3.TabIndex = 0;
+            panel3.Visible = false;
+            // 
             // pnBody
             // 
+            pnBody.BorderStyle = BorderStyle.FixedSingle;
             pnBody.Dock = DockStyle.Fill;
             pnBody.Location = new Point(581, 24);
             pnBody.Name = "pnBody";
@@ -238,6 +253,7 @@
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            pnSubBody.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -255,5 +271,6 @@
         private ReaLTaiizor.Controls.MetroControlBox metroControlBox4;
         private Panel pnSubBody;
         private Panel pnBody;
+        private Panel panel3;
     }
 }

@@ -35,20 +35,12 @@ namespace WinFormProject
                     button.Click += button_Click;
                     if (button == btnLogOut)
                     {
-                        button.Click += btnLogOut_Click;
+                        button.Click += btnLogOut_Click_1;
                     }
                 }
             }
         }
 
-        private void btnLogOut_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Thank you for using our service!\nGoodbye and See you again");
-            this.Hide();
-            FLogin fLogin = new FLogin();
-            fLogin.Closed += (s, args) => this.Close();
-            fLogin.Show();
-        }
 
         private void button_Click(object sender, EventArgs e)
         {
@@ -70,10 +62,6 @@ namespace WinFormProject
 
         private void OpenChildForm(Panel panel, Form childForm)
         {
-            if (currentFormChild != null)
-            {
-                currentFormChild.Close();
-            }
             currentFormChild = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -86,8 +74,53 @@ namespace WinFormProject
 
         private void btnJobAlert_Click(object sender, EventArgs e)
         {
+            pnBody.Visible = true;
+            pnSubBody.Visible = true;
+            panel3.Visible = false;
             FSupJobSection fSupJobSection = new FSupJobSection();
             OpenChildForm(pnSubBody, fSupJobSection);
+            FJobDetails fJobDetails = new FJobDetails();
+            OpenChildForm(pnBody, fJobDetails);
+        }
+
+        private void btnSearchJob_Click(object sender, EventArgs e)
+        {
+            pnBody.Visible = true;
+            pnSubBody.Visible = false;
+            pnBody.Dock = DockStyle.Fill;
+            pnBody.BringToFront();
+            FSearchJob fSearchJob = new FSearchJob();
+            OpenChildForm(pnBody, fSearchJob);
+        }
+
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            pnBody.Visible = false;
+            pnSubBody.Visible = false;
+            Panel panel = new Panel();
+            this.Controls.Add(panel);
+            panel.Dock = DockStyle.Fill;
+            panel.BringToFront();
+            FProfile fProfile = new FProfile();
+            OpenChildForm(panel, fProfile);
+        }
+
+        private void btnLogOut_Click_1(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are you sure to log out?", "Alert!!!", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                MessageBox.Show("Thank you for using our service!\nGoodbye and See you again");
+                this.Hide();
+                FLogin fLogin = new FLogin();
+                fLogin.Closed += (s, args) => this.Close();
+                fLogin.Show();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                selectedButton.BackColor = Color.FromArgb(64, 64, 64);
+                selectedButton.Enabled = true;
+            }
         }
     }
 }

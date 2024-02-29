@@ -35,7 +35,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(90, 48, 52);
-            ClientSize = new Size(527, 435);
+            ClientSize = new Size(581, 435);
             Name = "FJobDetails";
             Text = "FJobDetails";
             ResumeLayout(false);

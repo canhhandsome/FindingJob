@@ -110,13 +110,16 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.FromArgb(50, 122, 50);
+            button1.Cursor = Cursors.Hand;
+            button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button1.Location = new Point(520, 56);
             button1.Name = "button1";
             button1.Size = new Size(108, 38);
             button1.TabIndex = 5;
             button1.Text = "Search";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // label3
