@@ -72,15 +72,14 @@ namespace WinFormProject
             childForm.Show();
         }
 
+
         private void btnJobAlert_Click(object sender, EventArgs e)
         {
+            pnBody.Controls.Clear();
             pnBody.Visible = true;
             pnSubBody.Visible = true;
-            panel3.Visible = false;
-            FSupJobSection fSupJobSection = new FSupJobSection();
+            FSupJobSection fSupJobSection = new FSupJobSection(pnBody);
             OpenChildForm(pnSubBody, fSupJobSection);
-            FJobDetails fJobDetails = new FJobDetails();
-            OpenChildForm(pnBody, fJobDetails);
         }
 
         private void btnSearchJob_Click(object sender, EventArgs e)
@@ -95,14 +94,12 @@ namespace WinFormProject
 
         private void btnSetting_Click(object sender, EventArgs e)
         {
-            pnBody.Visible = false;
+            pnBody.Visible = true;
             pnSubBody.Visible = false;
-            Panel panel = new Panel();
-            this.Controls.Add(panel);
-            panel.Dock = DockStyle.Fill;
-            panel.BringToFront();
+            pnBody.Dock = DockStyle.Fill;
+            pnBody.BringToFront();
             FProfile fProfile = new FProfile();
-            OpenChildForm(panel, fProfile);
+            OpenChildForm(pnBody, fProfile);
         }
 
         private void btnLogOut_Click_1(object sender, EventArgs e)

@@ -63,6 +63,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(386, 161);
             this.panel1.TabIndex = 1;
+            this.panel1.Click += new System.EventHandler(this.panel1_Click);
             // 
             // lblDate
             // 
@@ -261,7 +262,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(427, 580);
+            this.ClientSize = new System.Drawing.Size(430, 580);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.hopeTextBox1);
             this.Controls.Add(this.panel4);
