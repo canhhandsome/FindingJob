@@ -28,201 +28,211 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            button3 = new Button();
-            button2 = new Button();
-            hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
-            button1 = new Button();
-            label3 = new Label();
-            label2 = new Label();
-            label4 = new Label();
-            label1 = new Label();
-            tableLayoutPanel1 = new TableLayoutPanel();
-            panel2 = new Panel();
-            panel1.SuspendLayout();
-            tableLayoutPanel1.SuspendLayout();
-            panel2.SuspendLayout();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.RosyBrown;
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(button2);
-            panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 384);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(925, 51);
-            panel1.TabIndex = 6;
+            this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 512);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1057, 68);
+            this.panel1.TabIndex = 6;
             // 
             // button3
             // 
-            button3.BackColor = Color.Transparent;
-            button3.Cursor = Cursors.Hand;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatAppearance.CheckedBackColor = Color.FromArgb(224, 224, 224);
-            button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 192, 192);
-            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(192, 192, 255);
-            button3.Location = new Point(576, 0);
-            button3.Name = "button3";
-            button3.Size = new Size(141, 51);
-            button3.TabIndex = 1;
-            button3.Text = "button2";
-            button3.UseVisualStyleBackColor = false;
+            this.button3.BackColor = System.Drawing.Color.LightGray;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button3.Location = new System.Drawing.Point(658, 0);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(161, 68);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "button2";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            button2.BackColor = Color.Transparent;
-            button2.Cursor = Cursors.Hand;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatAppearance.CheckedBackColor = Color.FromArgb(224, 224, 224);
-            button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 192, 192);
-            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(192, 192, 255);
-            button2.Location = new Point(231, 0);
-            button2.Name = "button2";
-            button2.Size = new Size(141, 51);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = false;
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button2.Location = new System.Drawing.Point(264, 0);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(161, 68);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // hopeTextBox1
             // 
-            hopeTextBox1.BackColor = Color.White;
-            hopeTextBox1.BaseColor = Color.FromArgb(44, 55, 66);
-            hopeTextBox1.BorderColorA = Color.FromArgb(64, 158, 255);
-            hopeTextBox1.BorderColorB = Color.FromArgb(220, 223, 230);
-            hopeTextBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            hopeTextBox1.ForeColor = Color.FromArgb(48, 49, 51);
-            hopeTextBox1.Hint = "Enter Search";
-            hopeTextBox1.Location = new Point(67, 56);
-            hopeTextBox1.MaxLength = 32767;
-            hopeTextBox1.Multiline = false;
-            hopeTextBox1.Name = "hopeTextBox1";
-            hopeTextBox1.PasswordChar = '\0';
-            hopeTextBox1.ScrollBars = ScrollBars.None;
-            hopeTextBox1.SelectedText = "";
-            hopeTextBox1.SelectionLength = 0;
-            hopeTextBox1.SelectionStart = 0;
-            hopeTextBox1.Size = new Size(414, 38);
-            hopeTextBox1.TabIndex = 0;
-            hopeTextBox1.TabStop = false;
-            hopeTextBox1.UseSystemPasswordChar = false;
+            this.hopeTextBox1.BackColor = System.Drawing.Color.White;
+            this.hopeTextBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
+            this.hopeTextBox1.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.hopeTextBox1.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.hopeTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.hopeTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.hopeTextBox1.Hint = "Enter Search";
+            this.hopeTextBox1.Location = new System.Drawing.Point(77, 75);
+            this.hopeTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.hopeTextBox1.MaxLength = 32767;
+            this.hopeTextBox1.Multiline = false;
+            this.hopeTextBox1.Name = "hopeTextBox1";
+            this.hopeTextBox1.PasswordChar = '\0';
+            this.hopeTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.hopeTextBox1.SelectedText = "";
+            this.hopeTextBox1.SelectionLength = 0;
+            this.hopeTextBox1.SelectionStart = 0;
+            this.hopeTextBox1.Size = new System.Drawing.Size(473, 43);
+            this.hopeTextBox1.TabIndex = 0;
+            this.hopeTextBox1.TabStop = false;
+            this.hopeTextBox1.UseSystemPasswordChar = false;
             // 
             // button1
             // 
-            button1.BackColor = Color.FromArgb(50, 122, 50);
-            button1.Cursor = Cursors.Hand;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(520, 56);
-            button1.Name = "button1";
-            button1.Size = new Size(108, 38);
-            button1.TabIndex = 5;
-            button1.Text = "Search";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            this.button1.BackColor = System.Drawing.Color.LightGray;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(596, 75);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 43);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Search";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Dock = DockStyle.Fill;
-            label3.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(524, 1);
-            label3.Name = "label3";
-            label3.Size = new Size(135, 50);
-            label3.TabIndex = 1;
-            label3.Text = "Role";
-            label3.TextAlign = ContentAlignment.MiddleCenter;
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(601, 2);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(155, 67);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Role";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Dock = DockStyle.Fill;
-            label2.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(109, 1);
-            label2.Name = "label2";
-            label2.Size = new Size(408, 50);
-            label2.TabIndex = 1;
-            label2.Text = "Email";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(126, 2);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(467, 67);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Email";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Dock = DockStyle.Fill;
-            label4.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(666, 1);
-            label4.Name = "label4";
-            label4.Size = new Size(130, 50);
-            label4.TabIndex = 1;
-            label4.Text = "Register Date";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(764, 2);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(183, 67);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Register Date";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
-            label1.AllowDrop = true;
-            label1.AutoSize = true;
-            label1.Dock = DockStyle.Fill;
-            label1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(4, 1);
-            label1.Name = "label1";
-            label1.Size = new Size(98, 50);
-            label1.TabIndex = 0;
-            label1.Text = "ID";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            this.label1.AllowDrop = true;
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(5, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 67);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ID";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
             // 
-            tableLayoutPanel1.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-            tableLayoutPanel1.ColumnCount = 4;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 104F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 414F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 141F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 11F));
-            tableLayoutPanel1.Controls.Add(label1, 0, 0);
-            tableLayoutPanel1.Controls.Add(label4, 3, 0);
-            tableLayoutPanel1.Controls.Add(label2, 1, 0);
-            tableLayoutPanel1.Controls.Add(label3, 2, 0);
-            tableLayoutPanel1.ImeMode = ImeMode.On;
-            tableLayoutPanel1.Location = new Point(67, 151);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 3;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
-            tableLayoutPanel1.Size = new Size(800, 100);
-            tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 473F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 161F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 157F));
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label4, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label3, 2, 0);
+            this.tableLayoutPanel1.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(53, 201);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(952, 133);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel2
             // 
-            panel2.AutoScroll = true;
-            panel2.Controls.Add(tableLayoutPanel1);
-            panel2.Controls.Add(hopeTextBox1);
-            panel2.Controls.Add(button1);
-            panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(925, 384);
-            panel2.TabIndex = 5;
+            this.panel2.AutoScroll = true;
+            this.panel2.BackColor = System.Drawing.Color.LightGray;
+            this.panel2.Controls.Add(this.tableLayoutPanel1);
+            this.panel2.Controls.Add(this.hopeTextBox1);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1057, 512);
+            this.panel2.TabIndex = 5;
             // 
             // FManageUser
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            AutoScroll = true;
-            BackColor = Color.FromArgb(50, 105, 85);
-            ClientSize = new Size(925, 435);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
-            Name = "FManageUser";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "FManageUser";
-            Load += FManageUser_Load;
-            panel1.ResumeLayout(false);
-            tableLayoutPanel1.ResumeLayout(false);
-            tableLayoutPanel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(105)))), ((int)(((byte)(85)))));
+            this.ClientSize = new System.Drawing.Size(1057, 580);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "FManageUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FManageUser";
+            this.panel1.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
