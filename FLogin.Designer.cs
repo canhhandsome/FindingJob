@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FLogin));
-            hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
+            txtEmail = new ReaLTaiizor.Controls.HopeTextBox();
             button1 = new ReaLTaiizor.Controls.Button();
-            button2 = new ReaLTaiizor.Controls.Button();
+            btnSignin = new ReaLTaiizor.Controls.Button();
             bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             pictureBox1 = new PictureBox();
-            hopeTextBox3 = new ReaLTaiizor.Controls.HopeTextBox();
+            txtPassword = new ReaLTaiizor.Controls.HopeTextBox();
             label1 = new Label();
             label3 = new Label();
             nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
@@ -44,37 +44,37 @@
             hopeRoundButton1 = new ReaLTaiizor.Controls.HopeRoundButton();
             label2 = new Label();
             foxLabel2 = new ReaLTaiizor.Controls.FoxLabel();
-            parrotRadioButton1 = new ReaLTaiizor.Controls.ParrotRadioButton();
-            parrotRadioButton2 = new ReaLTaiizor.Controls.ParrotRadioButton();
+            rdoJobSeeker = new ReaLTaiizor.Controls.ParrotRadioButton();
+            rdoCompany = new ReaLTaiizor.Controls.ParrotRadioButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // hopeTextBox1
+            // txtEmail
             // 
-            hopeTextBox1.BackColor = Color.White;
-            hopeTextBox1.BaseColor = Color.FromArgb(44, 55, 66);
-            hopeTextBox1.BorderColorA = Color.FromArgb(64, 158, 255);
-            hopeTextBox1.BorderColorB = Color.FromArgb(220, 223, 230);
-            hopeTextBox1.Cursor = Cursors.IBeam;
-            hopeTextBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            hopeTextBox1.ForeColor = Color.FromArgb(48, 49, 51);
-            hopeTextBox1.Hint = "Enter your email";
-            hopeTextBox1.Location = new Point(60, 204);
-            hopeTextBox1.Margin = new Padding(3, 2, 3, 2);
-            hopeTextBox1.MaxLength = 32767;
-            hopeTextBox1.Multiline = false;
-            hopeTextBox1.Name = "hopeTextBox1";
-            hopeTextBox1.PasswordChar = '\0';
-            hopeTextBox1.ScrollBars = ScrollBars.None;
-            hopeTextBox1.SelectedText = "";
-            hopeTextBox1.SelectionLength = 0;
-            hopeTextBox1.SelectionStart = 0;
-            hopeTextBox1.Size = new Size(389, 38);
-            hopeTextBox1.TabIndex = 10;
-            hopeTextBox1.TabStop = false;
-            hopeTextBox1.UseSystemPasswordChar = false;
+            txtEmail.BackColor = Color.White;
+            txtEmail.BaseColor = Color.FromArgb(44, 55, 66);
+            txtEmail.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtEmail.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtEmail.Cursor = Cursors.IBeam;
+            txtEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEmail.ForeColor = Color.FromArgb(48, 49, 51);
+            txtEmail.Hint = "Enter your email";
+            txtEmail.Location = new Point(60, 204);
+            txtEmail.Margin = new Padding(3, 2, 3, 2);
+            txtEmail.MaxLength = 32767;
+            txtEmail.Multiline = false;
+            txtEmail.Name = "txtEmail";
+            txtEmail.PasswordChar = '\0';
+            txtEmail.ScrollBars = ScrollBars.None;
+            txtEmail.SelectedText = "";
+            txtEmail.SelectionLength = 0;
+            txtEmail.SelectionStart = 0;
+            txtEmail.Size = new Size(389, 38);
+            txtEmail.TabIndex = 10;
+            txtEmail.TabStop = false;
+            txtEmail.UseSystemPasswordChar = false;
             // 
             // button1
             // 
@@ -97,25 +97,26 @@
             button1.TextAlignment = StringAlignment.Center;
             button1.Click += button1_Click;
             // 
-            // button2
+            // btnSignin
             // 
-            button2.BackColor = Color.Transparent;
-            button2.BorderColor = Color.FromArgb(32, 34, 37);
-            button2.EnteredBorderColor = Color.FromArgb(165, 37, 37);
-            button2.EnteredColor = Color.FromArgb(32, 34, 37);
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Image = null;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.InactiveColor = Color.FromArgb(32, 34, 37);
-            button2.Location = new Point(60, 404);
-            button2.Margin = new Padding(3, 2, 3, 2);
-            button2.Name = "button2";
-            button2.PressedBorderColor = Color.FromArgb(165, 37, 37);
-            button2.PressedColor = Color.FromArgb(165, 37, 37);
-            button2.Size = new Size(131, 38);
-            button2.TabIndex = 1;
-            button2.Text = "Sign In";
-            button2.TextAlignment = StringAlignment.Center;
+            btnSignin.BackColor = Color.Transparent;
+            btnSignin.BorderColor = Color.FromArgb(32, 34, 37);
+            btnSignin.EnteredBorderColor = Color.FromArgb(165, 37, 37);
+            btnSignin.EnteredColor = Color.FromArgb(32, 34, 37);
+            btnSignin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSignin.Image = null;
+            btnSignin.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSignin.InactiveColor = Color.FromArgb(32, 34, 37);
+            btnSignin.Location = new Point(60, 404);
+            btnSignin.Margin = new Padding(3, 2, 3, 2);
+            btnSignin.Name = "btnSignin";
+            btnSignin.PressedBorderColor = Color.FromArgb(165, 37, 37);
+            btnSignin.PressedColor = Color.FromArgb(165, 37, 37);
+            btnSignin.Size = new Size(131, 38);
+            btnSignin.TabIndex = 1;
+            btnSignin.Text = "Sign In";
+            btnSignin.TextAlignment = StringAlignment.Center;
+            btnSignin.Click += btnSignin_Click;
             // 
             // bigLabel1
             // 
@@ -139,30 +140,30 @@
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;
             // 
-            // hopeTextBox3
+            // txtPassword
             // 
-            hopeTextBox3.BackColor = Color.White;
-            hopeTextBox3.BaseColor = Color.FromArgb(44, 55, 66);
-            hopeTextBox3.BorderColorA = Color.FromArgb(64, 158, 255);
-            hopeTextBox3.BorderColorB = Color.FromArgb(220, 223, 230);
-            hopeTextBox3.Cursor = Cursors.IBeam;
-            hopeTextBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            hopeTextBox3.ForeColor = Color.FromArgb(48, 49, 51);
-            hopeTextBox3.Hint = "Enter your password";
-            hopeTextBox3.Location = new Point(60, 284);
-            hopeTextBox3.Margin = new Padding(3, 2, 3, 2);
-            hopeTextBox3.MaxLength = 32767;
-            hopeTextBox3.Multiline = false;
-            hopeTextBox3.Name = "hopeTextBox3";
-            hopeTextBox3.PasswordChar = '*';
-            hopeTextBox3.ScrollBars = ScrollBars.None;
-            hopeTextBox3.SelectedText = "";
-            hopeTextBox3.SelectionLength = 0;
-            hopeTextBox3.SelectionStart = 0;
-            hopeTextBox3.Size = new Size(389, 38);
-            hopeTextBox3.TabIndex = 3;
-            hopeTextBox3.TabStop = false;
-            hopeTextBox3.UseSystemPasswordChar = false;
+            txtPassword.BackColor = Color.White;
+            txtPassword.BaseColor = Color.FromArgb(44, 55, 66);
+            txtPassword.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtPassword.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtPassword.Cursor = Cursors.IBeam;
+            txtPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPassword.ForeColor = Color.FromArgb(48, 49, 51);
+            txtPassword.Hint = "Enter your password";
+            txtPassword.Location = new Point(60, 284);
+            txtPassword.Margin = new Padding(3, 2, 3, 2);
+            txtPassword.MaxLength = 32767;
+            txtPassword.Multiline = false;
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
+            txtPassword.ScrollBars = ScrollBars.None;
+            txtPassword.SelectedText = "";
+            txtPassword.SelectionLength = 0;
+            txtPassword.SelectionStart = 0;
+            txtPassword.Size = new Size(389, 38);
+            txtPassword.TabIndex = 3;
+            txtPassword.TabStop = false;
+            txtPassword.UseSystemPasswordChar = false;
             // 
             // label1
             // 
@@ -282,37 +283,37 @@
             foxLabel2.TabIndex = 29;
             foxLabel2.Text = "Sign in With Email Address";
             // 
-            // parrotRadioButton1
+            // rdoJobSeeker
             // 
-            parrotRadioButton1.Checked = false;
-            parrotRadioButton1.ForeColor = Color.White;
-            parrotRadioButton1.Location = new Point(125, 152);
-            parrotRadioButton1.Name = "parrotRadioButton1";
-            parrotRadioButton1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            parrotRadioButton1.RadioColor = Color.FromArgb(0, 162, 250);
-            parrotRadioButton1.RadioHoverColor = Color.Fuchsia;
-            parrotRadioButton1.RadioStyle = ReaLTaiizor.Controls.ParrotRadioButton.Style.Material;
-            parrotRadioButton1.Size = new Size(100, 16);
-            parrotRadioButton1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            parrotRadioButton1.TabIndex = 30;
-            parrotRadioButton1.Text = "Job Seeker";
-            parrotRadioButton1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            rdoJobSeeker.Checked = false;
+            rdoJobSeeker.ForeColor = Color.White;
+            rdoJobSeeker.Location = new Point(125, 152);
+            rdoJobSeeker.Name = "rdoJobSeeker";
+            rdoJobSeeker.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            rdoJobSeeker.RadioColor = Color.FromArgb(0, 162, 250);
+            rdoJobSeeker.RadioHoverColor = Color.Fuchsia;
+            rdoJobSeeker.RadioStyle = ReaLTaiizor.Controls.ParrotRadioButton.Style.Material;
+            rdoJobSeeker.Size = new Size(100, 16);
+            rdoJobSeeker.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            rdoJobSeeker.TabIndex = 30;
+            rdoJobSeeker.Text = "Job Seeker";
+            rdoJobSeeker.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
-            // parrotRadioButton2
+            // rdoCompany
             // 
-            parrotRadioButton2.Checked = false;
-            parrotRadioButton2.ForeColor = Color.White;
-            parrotRadioButton2.Location = new Point(297, 152);
-            parrotRadioButton2.Name = "parrotRadioButton2";
-            parrotRadioButton2.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            parrotRadioButton2.RadioColor = Color.FromArgb(0, 162, 250);
-            parrotRadioButton2.RadioHoverColor = Color.Fuchsia;
-            parrotRadioButton2.RadioStyle = ReaLTaiizor.Controls.ParrotRadioButton.Style.Material;
-            parrotRadioButton2.Size = new Size(100, 16);
-            parrotRadioButton2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            parrotRadioButton2.TabIndex = 30;
-            parrotRadioButton2.Text = "Company";
-            parrotRadioButton2.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            rdoCompany.Checked = false;
+            rdoCompany.ForeColor = Color.White;
+            rdoCompany.Location = new Point(297, 152);
+            rdoCompany.Name = "rdoCompany";
+            rdoCompany.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            rdoCompany.RadioColor = Color.FromArgb(0, 162, 250);
+            rdoCompany.RadioHoverColor = Color.Fuchsia;
+            rdoCompany.RadioStyle = ReaLTaiizor.Controls.ParrotRadioButton.Style.Material;
+            rdoCompany.Size = new Size(100, 16);
+            rdoCompany.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            rdoCompany.TabIndex = 30;
+            rdoCompany.Text = "Company";
+            rdoCompany.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
             // FLogin
             // 
@@ -320,8 +321,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 41, 50);
             ClientSize = new Size(1202, 463);
-            Controls.Add(parrotRadioButton2);
-            Controls.Add(parrotRadioButton1);
+            Controls.Add(rdoCompany);
+            Controls.Add(rdoJobSeeker);
             Controls.Add(foxLabel2);
             Controls.Add(hopeRoundButton1);
             Controls.Add(hopeSwitch1);
@@ -332,10 +333,10 @@
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Controls.Add(bigLabel1);
-            Controls.Add(button2);
+            Controls.Add(btnSignin);
             Controls.Add(button1);
-            Controls.Add(hopeTextBox3);
-            Controls.Add(hopeTextBox1);
+            Controls.Add(txtPassword);
+            Controls.Add(txtEmail);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             MinimumSize = new Size(261, 61);
@@ -350,12 +351,12 @@
         }
 
         #endregion
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox1;
+        private ReaLTaiizor.Controls.HopeTextBox txtEmail;
         private ReaLTaiizor.Controls.Button button1;
-        private ReaLTaiizor.Controls.Button button2;
+        private ReaLTaiizor.Controls.Button btnSignin;
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
         private PictureBox pictureBox1;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox3;
+        private ReaLTaiizor.Controls.HopeTextBox txtPassword;
         private Label label1;
         private Label label3;
         private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
@@ -365,7 +366,7 @@
         private ReaLTaiizor.Controls.HopeRoundButton hopeRoundButton1;
         private Label label2;
         private ReaLTaiizor.Controls.FoxLabel foxLabel2;
-        private ReaLTaiizor.Controls.ParrotRadioButton parrotRadioButton1;
-        private ReaLTaiizor.Controls.ParrotRadioButton parrotRadioButton2;
+        private ReaLTaiizor.Controls.ParrotRadioButton rdoJobSeeker;
+        private ReaLTaiizor.Controls.ParrotRadioButton rdoCompany;
     }
 }

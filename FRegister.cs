@@ -45,13 +45,13 @@ namespace WinFormProject
         {
             if (!materialCheckBox1.Checked)
             {
-                button1.Enabled = false;
-                button1.BackColor = Color.White;
+                btnSignup.Enabled = false;
+                btnSignup.BackColor = Color.White;
             }
             else
             {
-                button1.Enabled = true;
-                button1.BackColor= Color.Transparent;
+                btnSignup.Enabled = true;
+                btnSignup.BackColor = Color.Transparent;
             }
         }
 
@@ -61,6 +61,11 @@ namespace WinFormProject
             FLogin fLogin = new FLogin();
             fLogin.Closed += (s, args) => this.Close();
             fLogin.Show();
+        }
+
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

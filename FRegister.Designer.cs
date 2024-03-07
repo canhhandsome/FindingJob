@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRegister));
             hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
             hopeTextBox2 = new ReaLTaiizor.Controls.HopeTextBox();
-            button1 = new ReaLTaiizor.Controls.Button();
-            button2 = new ReaLTaiizor.Controls.Button();
+            btnSignup = new ReaLTaiizor.Controls.Button();
+            btnSignin = new ReaLTaiizor.Controls.Button();
             labelEdit1 = new ReaLTaiizor.Controls.LabelEdit();
             bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             pictureBox1 = new PictureBox();
@@ -100,47 +100,48 @@
             hopeTextBox2.TabStop = false;
             hopeTextBox2.UseSystemPasswordChar = false;
             // 
-            // button1
+            // btnSignup
             // 
-            button1.BackColor = Color.White;
-            button1.BorderColor = Color.FromArgb(32, 34, 37);
-            button1.Enabled = false;
-            button1.EnteredBorderColor = Color.FromArgb(165, 37, 37);
-            button1.EnteredColor = Color.FromArgb(32, 34, 37);
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Image = null;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.InactiveColor = Color.FromArgb(32, 34, 37);
-            button1.Location = new Point(309, 487);
-            button1.Margin = new Padding(3, 2, 3, 2);
-            button1.Name = "button1";
-            button1.PressedBorderColor = Color.FromArgb(165, 37, 37);
-            button1.PressedColor = Color.FromArgb(165, 37, 37);
-            button1.Size = new Size(131, 38);
-            button1.TabIndex = 7;
-            button1.Text = "Sign Up";
-            button1.TextAlignment = StringAlignment.Center;
+            btnSignup.BackColor = Color.White;
+            btnSignup.BorderColor = Color.FromArgb(32, 34, 37);
+            btnSignup.Enabled = false;
+            btnSignup.EnteredBorderColor = Color.FromArgb(165, 37, 37);
+            btnSignup.EnteredColor = Color.FromArgb(32, 34, 37);
+            btnSignup.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSignup.Image = null;
+            btnSignup.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSignup.InactiveColor = Color.FromArgb(32, 34, 37);
+            btnSignup.Location = new Point(309, 487);
+            btnSignup.Margin = new Padding(3, 2, 3, 2);
+            btnSignup.Name = "btnSignup";
+            btnSignup.PressedBorderColor = Color.FromArgb(165, 37, 37);
+            btnSignup.PressedColor = Color.FromArgb(165, 37, 37);
+            btnSignup.Size = new Size(131, 38);
+            btnSignup.TabIndex = 7;
+            btnSignup.Text = "Sign Up";
+            btnSignup.TextAlignment = StringAlignment.Center;
+            btnSignup.Click += btnSignup_Click;
             // 
-            // button2
+            // btnSignin
             // 
-            button2.BackColor = Color.Transparent;
-            button2.BorderColor = Color.FromArgb(32, 34, 37);
-            button2.EnteredBorderColor = Color.FromArgb(165, 37, 37);
-            button2.EnteredColor = Color.FromArgb(32, 34, 37);
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Image = null;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.InactiveColor = Color.FromArgb(32, 34, 37);
-            button2.Location = new Point(60, 487);
-            button2.Margin = new Padding(3, 2, 3, 2);
-            button2.Name = "button2";
-            button2.PressedBorderColor = Color.FromArgb(165, 37, 37);
-            button2.PressedColor = Color.FromArgb(165, 37, 37);
-            button2.Size = new Size(131, 38);
-            button2.TabIndex = 1;
-            button2.Text = "Sign In";
-            button2.TextAlignment = StringAlignment.Center;
-            button2.Click += button2_Click;
+            btnSignin.BackColor = Color.Transparent;
+            btnSignin.BorderColor = Color.FromArgb(32, 34, 37);
+            btnSignin.EnteredBorderColor = Color.FromArgb(165, 37, 37);
+            btnSignin.EnteredColor = Color.FromArgb(32, 34, 37);
+            btnSignin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSignin.Image = null;
+            btnSignin.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSignin.InactiveColor = Color.FromArgb(32, 34, 37);
+            btnSignin.Location = new Point(60, 487);
+            btnSignin.Margin = new Padding(3, 2, 3, 2);
+            btnSignin.Name = "btnSignin";
+            btnSignin.PressedBorderColor = Color.FromArgb(165, 37, 37);
+            btnSignin.PressedColor = Color.FromArgb(165, 37, 37);
+            btnSignin.Size = new Size(131, 38);
+            btnSignin.TabIndex = 1;
+            btnSignin.Text = "Sign In";
+            btnSignin.TextAlignment = StringAlignment.Center;
+            btnSignin.Click += button2_Click;
             // 
             // labelEdit1
             // 
@@ -322,8 +323,8 @@
             Controls.Add(pictureBox1);
             Controls.Add(bigLabel1);
             Controls.Add(labelEdit1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnSignin);
+            Controls.Add(btnSignup);
             Controls.Add(hopeTextBox3);
             Controls.Add(hopeTextBox2);
             Controls.Add(hopeTextBox1);
@@ -343,8 +344,8 @@
         #endregion
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox1;
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox2;
-        private ReaLTaiizor.Controls.Button button1;
-        private ReaLTaiizor.Controls.Button button2;
+        private ReaLTaiizor.Controls.Button btnSignup;
+        private ReaLTaiizor.Controls.Button btnSignin;
         private ReaLTaiizor.Controls.LabelEdit labelEdit1;
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
         private PictureBox pictureBox1;
