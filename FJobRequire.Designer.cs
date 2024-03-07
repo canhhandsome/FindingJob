@@ -28,97 +28,108 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnCancle = new Button();
-            button2 = new Button();
-            btnAddRequire = new Button();
-            pnJobRequirement = new Panel();
-            label1 = new Label();
-            pnBody = new Panel();
-            SuspendLayout();
+            this.btnCancle = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnAddRequire = new System.Windows.Forms.Button();
+            this.pnJobRequirement = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnBody = new System.Windows.Forms.Panel();
+            this.pnBody.SuspendLayout();
+            this.SuspendLayout();
             // 
             // btnCancle
             // 
-            btnCancle.BackColor = Color.Silver;
-            btnCancle.FlatStyle = FlatStyle.Flat;
-            btnCancle.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCancle.Location = new Point(704, 386);
-            btnCancle.Name = "btnCancle";
-            btnCancle.Size = new Size(148, 38);
-            btnCancle.TabIndex = 26;
-            btnCancle.Text = "Cancle";
-            btnCancle.UseVisualStyleBackColor = false;
-            btnCancle.Click += btnCancle_Click;
+            this.btnCancle.BackColor = System.Drawing.Color.DimGray;
+            this.btnCancle.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnCancle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancle.Location = new System.Drawing.Point(805, 515);
+            this.btnCancle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancle.Name = "btnCancle";
+            this.btnCancle.Size = new System.Drawing.Size(169, 51);
+            this.btnCancle.TabIndex = 26;
+            this.btnCancle.Text = "Cancle";
+            this.btnCancle.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            button2.BackColor = Color.Silver;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Location = new Point(551, 386);
-            button2.Name = "button2";
-            button2.Size = new Size(148, 38);
-            button2.TabIndex = 27;
-            button2.Text = "Save";
-            button2.UseVisualStyleBackColor = false;
+            this.button2.BackColor = System.Drawing.Color.DimGray;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(630, 515);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(169, 51);
+            this.button2.TabIndex = 27;
+            this.button2.Text = "Save";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // btnAddRequire
             // 
-            btnAddRequire.BackColor = Color.Silver;
-            btnAddRequire.FlatStyle = FlatStyle.Flat;
-            btnAddRequire.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnAddRequire.Location = new Point(664, 59);
-            btnAddRequire.Name = "btnAddRequire";
-            btnAddRequire.Size = new Size(194, 38);
-            btnAddRequire.TabIndex = 28;
-            btnAddRequire.Text = "Add New Requirement";
-            btnAddRequire.UseVisualStyleBackColor = false;
-            btnAddRequire.Click += btnAddRequire_Click;
+            this.btnAddRequire.BackColor = System.Drawing.Color.DimGray;
+            this.btnAddRequire.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAddRequire.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnAddRequire.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddRequire.Location = new System.Drawing.Point(67, 515);
+            this.btnAddRequire.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAddRequire.Name = "btnAddRequire";
+            this.btnAddRequire.Size = new System.Drawing.Size(222, 51);
+            this.btnAddRequire.TabIndex = 28;
+            this.btnAddRequire.Text = "Add New Requirement";
+            this.btnAddRequire.UseVisualStyleBackColor = false;
             // 
             // pnJobRequirement
             // 
-            pnJobRequirement.AutoScroll = true;
-            pnJobRequirement.Location = new Point(59, 93);
-            pnJobRequirement.Name = "pnJobRequirement";
-            pnJobRequirement.Size = new Size(799, 254);
-            pnJobRequirement.TabIndex = 29;
+            this.pnJobRequirement.AutoScroll = true;
+            this.pnJobRequirement.BackColor = System.Drawing.Color.LightGray;
+            this.pnJobRequirement.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnJobRequirement.Location = new System.Drawing.Point(67, 124);
+            this.pnJobRequirement.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnJobRequirement.Name = "pnJobRequirement";
+            this.pnJobRequirement.Size = new System.Drawing.Size(913, 339);
+            this.pnJobRequirement.TabIndex = 29;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.FromArgb(64, 64, 64);
-            label1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(345, 24);
-            label1.Name = "label1";
-            label1.Size = new Size(242, 28);
-            label1.TabIndex = 24;
-            label1.Text = "Adding Job's Requirement";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.LightGray;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(394, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(307, 35);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Adding Job\'s Requirement";
             // 
             // pnBody
             // 
-            pnBody.Dock = DockStyle.Fill;
-            pnBody.Location = new Point(0, 0);
-            pnBody.Name = "pnBody";
-            pnBody.Size = new Size(917, 450);
-            pnBody.TabIndex = 30;
+            this.pnBody.BackColor = System.Drawing.Color.LightGray;
+            this.pnBody.Controls.Add(this.btnAddRequire);
+            this.pnBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnBody.Location = new System.Drawing.Point(0, 0);
+            this.pnBody.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnBody.Name = "pnBody";
+            this.pnBody.Size = new System.Drawing.Size(1048, 600);
+            this.pnBody.TabIndex = 30;
             // 
             // FJobRequire
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(32, 41, 58);
-            ClientSize = new Size(917, 450);
-            Controls.Add(pnJobRequirement);
-            Controls.Add(btnCancle);
-            Controls.Add(button2);
-            Controls.Add(btnAddRequire);
-            Controls.Add(label1);
-            Controls.Add(pnBody);
-            Name = "FJobRequire";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "FJobRequire";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(58)))));
+            this.ClientSize = new System.Drawing.Size(1048, 600);
+            this.Controls.Add(this.pnJobRequirement);
+            this.Controls.Add(this.btnCancle);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pnBody);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "FJobRequire";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FJobRequire";
+            this.pnBody.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
