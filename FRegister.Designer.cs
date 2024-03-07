@@ -45,6 +45,8 @@
             panel1 = new Panel();
             pictureBox2 = new PictureBox();
             foxLabel2 = new ReaLTaiizor.Controls.FoxLabel();
+            parrotRadioButton2 = new ReaLTaiizor.Controls.ParrotRadioButton();
+            parrotRadioButton1 = new ReaLTaiizor.Controls.ParrotRadioButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -60,7 +62,7 @@
             hopeTextBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             hopeTextBox1.ForeColor = Color.FromArgb(48, 49, 51);
             hopeTextBox1.Hint = "Enter your email";
-            hopeTextBox1.Location = new Point(60, 199);
+            hopeTextBox1.Location = new Point(60, 204);
             hopeTextBox1.Margin = new Padding(3, 2, 3, 2);
             hopeTextBox1.MaxLength = 32767;
             hopeTextBox1.Multiline = false;
@@ -85,7 +87,7 @@
             hopeTextBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             hopeTextBox2.ForeColor = Color.FromArgb(48, 49, 51);
             hopeTextBox2.Hint = "Enter your full name";
-            hopeTextBox2.Location = new Point(60, 283);
+            hopeTextBox2.Location = new Point(60, 288);
             hopeTextBox2.Margin = new Padding(3, 2, 3, 2);
             hopeTextBox2.MaxLength = 32767;
             hopeTextBox2.Multiline = false;
@@ -111,7 +113,7 @@
             button1.Image = null;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
             button1.InactiveColor = Color.FromArgb(32, 34, 37);
-            button1.Location = new Point(309, 487);
+            button1.Location = new Point(309, 492);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.PressedBorderColor = Color.FromArgb(165, 37, 37);
@@ -131,7 +133,7 @@
             button2.Image = null;
             button2.ImageAlign = ContentAlignment.MiddleLeft;
             button2.InactiveColor = Color.FromArgb(32, 34, 37);
-            button2.Location = new Point(60, 487);
+            button2.Location = new Point(60, 492);
             button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
             button2.PressedBorderColor = Color.FromArgb(165, 37, 37);
@@ -149,7 +151,7 @@
             labelEdit1.Cursor = Cursors.Hand;
             labelEdit1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             labelEdit1.ForeColor = Color.FromArgb(224, 224, 224);
-            labelEdit1.Location = new Point(95, 420);
+            labelEdit1.Location = new Point(95, 425);
             labelEdit1.Name = "labelEdit1";
             labelEdit1.Size = new Size(354, 40);
             labelEdit1.TabIndex = 11;
@@ -162,7 +164,7 @@
             bigLabel1.BackColor = Color.Transparent;
             bigLabel1.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             bigLabel1.ForeColor = Color.FromArgb(224, 224, 224);
-            bigLabel1.Location = new Point(95, 60);
+            bigLabel1.Location = new Point(95, 46);
             bigLabel1.Name = "bigLabel1";
             bigLabel1.Size = new Size(201, 46);
             bigLabel1.TabIndex = 12;
@@ -173,7 +175,7 @@
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(297, 60);
+            pictureBox1.Location = new Point(297, 46);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(100, 50);
             pictureBox1.TabIndex = 13;
@@ -189,7 +191,7 @@
             hopeTextBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             hopeTextBox3.ForeColor = Color.FromArgb(48, 49, 51);
             hopeTextBox3.Hint = "Enter your password";
-            hopeTextBox3.Location = new Point(60, 367);
+            hopeTextBox3.Location = new Point(60, 372);
             hopeTextBox3.Margin = new Padding(3, 2, 3, 2);
             hopeTextBox3.MaxLength = 32767;
             hopeTextBox3.Multiline = false;
@@ -208,7 +210,7 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = Color.White;
-            label1.Location = new Point(60, 182);
+            label1.Location = new Point(60, 187);
             label1.Name = "label1";
             label1.Size = new Size(81, 15);
             label1.TabIndex = 15;
@@ -218,7 +220,7 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.White;
-            label2.Location = new Point(60, 266);
+            label2.Location = new Point(60, 271);
             label2.Name = "label2";
             label2.Size = new Size(59, 15);
             label2.TabIndex = 15;
@@ -228,7 +230,7 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.White;
-            label3.Location = new Point(60, 350);
+            label3.Location = new Point(60, 355);
             label3.Name = "label3";
             label3.Size = new Size(57, 15);
             label3.TabIndex = 15;
@@ -238,7 +240,7 @@
             // 
             materialCheckBox1.AutoSize = true;
             materialCheckBox1.Depth = 0;
-            materialCheckBox1.Location = new Point(60, 420);
+            materialCheckBox1.Location = new Point(60, 425);
             materialCheckBox1.Margin = new Padding(0);
             materialCheckBox1.MouseLocation = new Point(-1, -1);
             materialCheckBox1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
@@ -300,11 +302,43 @@
             // 
             foxLabel2.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             foxLabel2.ForeColor = Color.White;
-            foxLabel2.Location = new Point(115, 127);
+            foxLabel2.Location = new Point(115, 113);
             foxLabel2.Name = "foxLabel2";
             foxLabel2.Size = new Size(250, 34);
             foxLabel2.TabIndex = 19;
             foxLabel2.Text = "Sign up With Email Address";
+            // 
+            // parrotRadioButton2
+            // 
+            parrotRadioButton2.Checked = false;
+            parrotRadioButton2.ForeColor = Color.White;
+            parrotRadioButton2.Location = new Point(287, 153);
+            parrotRadioButton2.Name = "parrotRadioButton2";
+            parrotRadioButton2.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            parrotRadioButton2.RadioColor = Color.FromArgb(0, 162, 250);
+            parrotRadioButton2.RadioHoverColor = Color.Fuchsia;
+            parrotRadioButton2.RadioStyle = ReaLTaiizor.Controls.ParrotRadioButton.Style.Material;
+            parrotRadioButton2.Size = new Size(100, 16);
+            parrotRadioButton2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            parrotRadioButton2.TabIndex = 31;
+            parrotRadioButton2.Text = "Company";
+            parrotRadioButton2.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
+            // parrotRadioButton1
+            // 
+            parrotRadioButton1.Checked = false;
+            parrotRadioButton1.ForeColor = Color.White;
+            parrotRadioButton1.Location = new Point(115, 153);
+            parrotRadioButton1.Name = "parrotRadioButton1";
+            parrotRadioButton1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            parrotRadioButton1.RadioColor = Color.FromArgb(0, 162, 250);
+            parrotRadioButton1.RadioHoverColor = Color.Fuchsia;
+            parrotRadioButton1.RadioStyle = ReaLTaiizor.Controls.ParrotRadioButton.Style.Material;
+            parrotRadioButton1.Size = new Size(100, 16);
+            parrotRadioButton1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            parrotRadioButton1.TabIndex = 32;
+            parrotRadioButton1.Text = "Job Seeker";
+            parrotRadioButton1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
             // FRegister
             // 
@@ -312,6 +346,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 41, 50);
             ClientSize = new Size(1202, 556);
+            Controls.Add(parrotRadioButton2);
+            Controls.Add(parrotRadioButton1);
             Controls.Add(foxLabel2);
             Controls.Add(pictureBox2);
             Controls.Add(panel1);
@@ -357,5 +393,7 @@
         private Panel panel1;
         private PictureBox pictureBox2;
         private ReaLTaiizor.Controls.FoxLabel foxLabel2;
+        private ReaLTaiizor.Controls.ParrotRadioButton parrotRadioButton2;
+        private ReaLTaiizor.Controls.ParrotRadioButton parrotRadioButton1;
     }
 }
