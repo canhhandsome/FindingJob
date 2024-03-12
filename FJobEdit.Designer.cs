@@ -39,7 +39,7 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnJobRequire = new System.Windows.Forms.Button();
             this.btnPostJob = new System.Windows.Forms.Button();
-            this.btnCancle = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.pnBody = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
@@ -223,18 +223,18 @@
             this.btnPostJob.Text = "Post Job";
             this.btnPostJob.UseVisualStyleBackColor = false;
             // 
-            // btnCancle
+            // btnCancel
             // 
-            this.btnCancle.BackColor = System.Drawing.Color.Silver;
-            this.btnCancle.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnCancle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCancle.Location = new System.Drawing.Point(801, 505);
-            this.btnCancle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnCancle.Name = "btnCancle";
-            this.btnCancle.Size = new System.Drawing.Size(169, 51);
-            this.btnCancle.TabIndex = 16;
-            this.btnCancle.Text = "Cancle";
-            this.btnCancle.UseVisualStyleBackColor = false;
+            this.btnCancel.BackColor = System.Drawing.Color.Silver;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancel.Location = new System.Drawing.Point(801, 505);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(169, 51);
+            this.btnCancel.TabIndex = 16;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // pnBody
             // 
@@ -252,7 +252,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(58)))));
             this.ClientSize = new System.Drawing.Size(1048, 600);
-            this.Controls.Add(this.btnCancle);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnPostJob);
             this.Controls.Add(this.btnJobRequire);
             this.Controls.Add(this.rtxtDescription);
@@ -287,7 +287,7 @@
         private ReaLTaiizor.Controls.HopeRichTextBox rtxtDescription;
         private Button btnJobRequire;
         private Button btnPostJob;
-        private Button btnCancle;
+        private Button btnCancel;
         private Panel pnBody;
     }
 }

@@ -93,6 +93,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Sign Up";
             this.button1.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -257,6 +258,7 @@
             this.hopeRoundButton1.Text = "Forgot Password?";
             this.hopeRoundButton1.TextColor = System.Drawing.Color.White;
             this.hopeRoundButton1.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.hopeRoundButton1.Click += new System.EventHandler(this.hopeRoundButton1_Click);
             // 
             // label2
             // 

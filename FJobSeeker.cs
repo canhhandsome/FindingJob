@@ -119,5 +119,10 @@ namespace WinFormProject
                 selectedButton.Enabled = true;
             }
         }
+
+        private void pnBody_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

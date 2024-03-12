@@ -239,6 +239,7 @@
             this.pnBody.Name = "pnBody";
             this.pnBody.Size = new System.Drawing.Size(622, 632);
             this.pnBody.TabIndex = 7;
+            this.pnBody.Paint += new System.Windows.Forms.PaintEventHandler(this.pnBody_Paint);
             // 
             // FJobSeeker
             // 
