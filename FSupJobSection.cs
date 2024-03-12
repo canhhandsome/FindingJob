@@ -22,7 +22,7 @@ namespace WinFormProject
             {
                 if(control is Panel)
                 {
-                    Panel panel2 = (Panel)control;
+                    Panel pancleel2 = (Panel)control;
                     panel2.Click += panel1_Click;
                 }
             }

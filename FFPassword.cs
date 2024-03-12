@@ -13,17 +13,12 @@ namespace WinFormProject
 
         }
 
-        private void hopeSwitch1_CheckedChanged(object sender, EventArgs e)
+        private void btnrspassword_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void bigLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void btnsignin_Click(object sender, EventArgs e)
         {
             this.Hide();
             FLogin fLogin = new FLogin();
