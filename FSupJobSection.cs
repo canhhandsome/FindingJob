@@ -12,14 +12,37 @@ namespace WinFormProject
 {
     public partial class FSupJobSection : Form
     {
-        public FSupJobSection()
+        private Form currentFormChild = new Form();
+        public Panel panel = new Panel();
+        public FSupJobSection(Panel panel)
         {
             InitializeComponent();
+            this.panel = panel;
+            foreach(Control control in this.Controls)
+            {
+                if(control is Panel)
+                {
+                    Panel pancleel2 = (Panel)control;
+                    panel2.Click += panel1_Click;
+                }
+            }
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        public void OpenChildForm(Panel panel, Form childForm)
         {
+            currentFormChild = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel.Controls.Add(childForm);
+            panel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
 
+        public void panel1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(panel, new FJobDetails());
         }
     }
 }

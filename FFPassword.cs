@@ -13,7 +13,7 @@ namespace WinFormProject
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnrspassword_Click(object sender, EventArgs e)
         {
             this.Hide();
             FLogin fLogin = new FLogin();
@@ -24,7 +24,7 @@ namespace WinFormProject
         private void btnResetP_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FOTP fLogin = new FOTP(txtEmail.Text);
+            FOTP fLogin = new FOTP(txtemail.Text);
             fLogin.Closed += (s, args) => this.Close();
             fLogin.Show();
         }

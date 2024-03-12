@@ -29,135 +29,135 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRegister));
-            txtEmail = new ReaLTaiizor.Controls.HopeTextBox();
-            txtName = new ReaLTaiizor.Controls.HopeTextBox();
-            btnSignup = new ReaLTaiizor.Controls.Button();
-            btnSignin = new ReaLTaiizor.Controls.Button();
-            labelEdit1 = new ReaLTaiizor.Controls.LabelEdit();
+            txtemail = new ReaLTaiizor.Controls.HopeTextBox();
+            txtfullname = new ReaLTaiizor.Controls.HopeTextBox();
+            btnsignup = new ReaLTaiizor.Controls.Button();
+            btnsignin = new ReaLTaiizor.Controls.Button();
+            lblagree = new ReaLTaiizor.Controls.LabelEdit();
             bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             pictureBox1 = new PictureBox();
-            txtPassword = new ReaLTaiizor.Controls.HopeTextBox();
+            txtpassword = new ReaLTaiizor.Controls.HopeTextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            materialCheckBox1 = new ReaLTaiizor.Controls.MaterialCheckBox();
+            btnagree = new ReaLTaiizor.Controls.MaterialCheckBox();
             nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             panel1 = new Panel();
             pictureBox2 = new PictureBox();
             foxLabel2 = new ReaLTaiizor.Controls.FoxLabel();
-            rdoCompany = new ReaLTaiizor.Controls.ParrotRadioButton();
-            rdoJobSeeker = new ReaLTaiizor.Controls.ParrotRadioButton();
+            rdocompany = new ReaLTaiizor.Controls.ParrotRadioButton();
+            rdojobseeker = new ReaLTaiizor.Controls.ParrotRadioButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // txtEmail
+            // txtemail
             // 
-            txtEmail.BackColor = Color.White;
-            txtEmail.BaseColor = Color.FromArgb(44, 55, 66);
-            txtEmail.BorderColorA = Color.FromArgb(64, 158, 255);
-            txtEmail.BorderColorB = Color.FromArgb(220, 223, 230);
-            txtEmail.Cursor = Cursors.IBeam;
-            txtEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtEmail.ForeColor = Color.FromArgb(48, 49, 51);
-            txtEmail.Hint = "Enter your email";
-            txtEmail.Location = new Point(60, 204);
-            txtEmail.Margin = new Padding(3, 2, 3, 2);
-            txtEmail.MaxLength = 32767;
-            txtEmail.Multiline = false;
-            txtEmail.Name = "txtEmail";
-            txtEmail.PasswordChar = '\0';
-            txtEmail.ScrollBars = ScrollBars.None;
-            txtEmail.SelectedText = "";
-            txtEmail.SelectionLength = 0;
-            txtEmail.SelectionStart = 0;
-            txtEmail.Size = new Size(389, 38);
-            txtEmail.TabIndex = 10;
-            txtEmail.TabStop = false;
-            txtEmail.UseSystemPasswordChar = false;
+            txtemail.BackColor = Color.White;
+            txtemail.BaseColor = Color.FromArgb(44, 55, 66);
+            txtemail.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtemail.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtemail.Cursor = Cursors.IBeam;
+            txtemail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtemail.ForeColor = Color.FromArgb(48, 49, 51);
+            txtemail.Hint = "Enter your email";
+            txtemail.Location = new Point(60, 204);
+            txtemail.Margin = new Padding(3, 2, 3, 2);
+            txtemail.MaxLength = 32767;
+            txtemail.Multiline = false;
+            txtemail.Name = "txtemail";
+            txtemail.PasswordChar = '\0';
+            txtemail.ScrollBars = ScrollBars.None;
+            txtemail.SelectedText = "";
+            txtemail.SelectionLength = 0;
+            txtemail.SelectionStart = 0;
+            txtemail.Size = new Size(389, 38);
+            txtemail.TabIndex = 10;
+            txtemail.TabStop = false;
+            txtemail.UseSystemPasswordChar = false;
             // 
-            // txtName
+            // txtfullname
             // 
-            txtName.BackColor = Color.White;
-            txtName.BaseColor = Color.FromArgb(44, 55, 66);
-            txtName.BorderColorA = Color.FromArgb(64, 158, 255);
-            txtName.BorderColorB = Color.FromArgb(220, 223, 230);
-            txtName.Cursor = Cursors.IBeam;
-            txtName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtName.ForeColor = Color.FromArgb(48, 49, 51);
-            txtName.Hint = "Enter your full name";
-            txtName.Location = new Point(60, 288);
-            txtName.Margin = new Padding(3, 2, 3, 2);
-            txtName.MaxLength = 32767;
-            txtName.Multiline = false;
-            txtName.Name = "txtName";
-            txtName.PasswordChar = '\0';
-            txtName.ScrollBars = ScrollBars.None;
-            txtName.SelectedText = "";
-            txtName.SelectionLength = 0;
-            txtName.SelectionStart = 0;
-            txtName.Size = new Size(389, 38);
-            txtName.TabIndex = 3;
-            txtName.TabStop = false;
-            txtName.UseSystemPasswordChar = false;
+            txtfullname.BackColor = Color.White;
+            txtfullname.BaseColor = Color.FromArgb(44, 55, 66);
+            txtfullname.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtfullname.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtfullname.Cursor = Cursors.IBeam;
+            txtfullname.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtfullname.ForeColor = Color.FromArgb(48, 49, 51);
+            txtfullname.Hint = "Enter your full name";
+            txtfullname.Location = new Point(60, 288);
+            txtfullname.Margin = new Padding(3, 2, 3, 2);
+            txtfullname.MaxLength = 32767;
+            txtfullname.Multiline = false;
+            txtfullname.Name = "txtfullname";
+            txtfullname.PasswordChar = '\0';
+            txtfullname.ScrollBars = ScrollBars.None;
+            txtfullname.SelectedText = "";
+            txtfullname.SelectionLength = 0;
+            txtfullname.SelectionStart = 0;
+            txtfullname.Size = new Size(389, 38);
+            txtfullname.TabIndex = 3;
+            txtfullname.TabStop = false;
+            txtfullname.UseSystemPasswordChar = false;
             // 
-            // btnSignup
+            // btnsignup
             // 
-            btnSignup.BackColor = Color.White;
-            btnSignup.BorderColor = Color.FromArgb(32, 34, 37);
-            btnSignup.Enabled = false;
-            btnSignup.EnteredBorderColor = Color.FromArgb(165, 37, 37);
-            btnSignup.EnteredColor = Color.FromArgb(32, 34, 37);
-            btnSignup.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSignup.Image = null;
-            btnSignup.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSignup.InactiveColor = Color.FromArgb(32, 34, 37);
-            btnSignup.Location = new Point(309, 487);
-            btnSignup.Margin = new Padding(3, 2, 3, 2);
-            btnSignup.Name = "btnSignup";
-            btnSignup.PressedBorderColor = Color.FromArgb(165, 37, 37);
-            btnSignup.PressedColor = Color.FromArgb(165, 37, 37);
-            btnSignup.Size = new Size(131, 38);
-            btnSignup.TabIndex = 7;
-            btnSignup.Text = "Sign Up";
-            btnSignup.TextAlignment = StringAlignment.Center;
-            btnSignup.Click += btnSignup_Click;
+            btnsignup.BackColor = Color.White;
+            btnsignup.BorderColor = Color.FromArgb(32, 34, 37);
+            btnsignup.Enabled = false;
+            btnsignup.EnteredBorderColor = Color.FromArgb(165, 37, 37);
+            btnsignup.EnteredColor = Color.FromArgb(32, 34, 37);
+            btnsignup.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnsignup.Image = null;
+            btnsignup.ImageAlign = ContentAlignment.MiddleLeft;
+            btnsignup.InactiveColor = Color.FromArgb(32, 34, 37);
+            btnsignup.Location = new Point(309, 492);
+            btnsignup.Margin = new Padding(3, 2, 3, 2);
+            btnsignup.Name = "btnsignup";
+            btnsignup.PressedBorderColor = Color.FromArgb(165, 37, 37);
+            btnsignup.PressedColor = Color.FromArgb(165, 37, 37);
+            btnsignup.Size = new Size(131, 38);
+            btnsignup.TabIndex = 7;
+            btnsignup.Text = "Sign Up";
+            btnsignup.TextAlignment = StringAlignment.Center;
+            btnsignup.Click += btnSignup_Click;
             // 
-            // btnSignin
+            // btnsignin
             // 
-            btnSignin.BackColor = Color.Transparent;
-            btnSignin.BorderColor = Color.FromArgb(32, 34, 37);
-            btnSignin.EnteredBorderColor = Color.FromArgb(165, 37, 37);
-            btnSignin.EnteredColor = Color.FromArgb(32, 34, 37);
-            btnSignin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSignin.Image = null;
-            btnSignin.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSignin.InactiveColor = Color.FromArgb(32, 34, 37);
-            btnSignin.Location = new Point(60, 487);
-            btnSignin.Margin = new Padding(3, 2, 3, 2);
-            btnSignin.Name = "btnSignin";
-            btnSignin.PressedBorderColor = Color.FromArgb(165, 37, 37);
-            btnSignin.PressedColor = Color.FromArgb(165, 37, 37);
-            btnSignin.Size = new Size(131, 38);
-            btnSignin.TabIndex = 1;
-            btnSignin.Text = "Sign In";
-            btnSignin.TextAlignment = StringAlignment.Center;
-            btnSignin.Click += button2_Click;
+            btnsignin.BackColor = Color.Transparent;
+            btnsignin.BorderColor = Color.FromArgb(32, 34, 37);
+            btnsignin.EnteredBorderColor = Color.FromArgb(165, 37, 37);
+            btnsignin.EnteredColor = Color.FromArgb(32, 34, 37);
+            btnsignin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnsignin.Image = null;
+            btnsignin.ImageAlign = ContentAlignment.MiddleLeft;
+            btnsignin.InactiveColor = Color.FromArgb(32, 34, 37);
+            btnsignin.Location = new Point(60, 492);
+            btnsignin.Margin = new Padding(3, 2, 3, 2);
+            btnsignin.Name = "btnsignin";
+            btnsignin.PressedBorderColor = Color.FromArgb(165, 37, 37);
+            btnsignin.PressedColor = Color.FromArgb(165, 37, 37);
+            btnsignin.Size = new Size(131, 38);
+            btnsignin.TabIndex = 1;
+            btnsignin.Text = "Sign In";
+            btnsignin.TextAlignment = StringAlignment.Center;
+            btnsignin.Click += btnsignin_Click;
             // 
-            // labelEdit1
+            // lblagree
             // 
-            labelEdit1.AutoSize = true;
-            labelEdit1.BackColor = Color.Transparent;
-            labelEdit1.Cursor = Cursors.Hand;
-            labelEdit1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            labelEdit1.ForeColor = Color.FromArgb(224, 224, 224);
-            labelEdit1.Location = new Point(95, 425);
-            labelEdit1.Name = "labelEdit1";
-            labelEdit1.Size = new Size(354, 40);
-            labelEdit1.TabIndex = 11;
-            labelEdit1.Text = "I have read and agree to CTV's Terms of Service \r\nand Privacy Policy regarding my private information.";
-            labelEdit1.Click += labelEdit1_Click;
+            lblagree.AutoSize = true;
+            lblagree.BackColor = Color.Transparent;
+            lblagree.Cursor = Cursors.Hand;
+            lblagree.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            lblagree.ForeColor = Color.FromArgb(224, 224, 224);
+            lblagree.Location = new Point(95, 425);
+            lblagree.Name = "lblagree";
+            lblagree.Size = new Size(354, 40);
+            lblagree.TabIndex = 11;
+            lblagree.Text = "I have read and agree to CTV's Terms of Service \r\nand Privacy Policy regarding my private information.";
+            lblagree.Click += lblagree_Click;
             // 
             // bigLabel1
             // 
@@ -170,7 +170,6 @@
             bigLabel1.Size = new Size(201, 46);
             bigLabel1.TabIndex = 12;
             bigLabel1.Text = "Welcome to";
-            bigLabel1.Click += bigLabel1_Click;
             // 
             // pictureBox1
             // 
@@ -182,30 +181,30 @@
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;
             // 
-            // txtPassword
+            // txtpassword
             // 
-            txtPassword.BackColor = Color.White;
-            txtPassword.BaseColor = Color.FromArgb(44, 55, 66);
-            txtPassword.BorderColorA = Color.FromArgb(64, 158, 255);
-            txtPassword.BorderColorB = Color.FromArgb(220, 223, 230);
-            txtPassword.Cursor = Cursors.IBeam;
-            txtPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPassword.ForeColor = Color.FromArgb(48, 49, 51);
-            txtPassword.Hint = "Enter your password";
-            txtPassword.Location = new Point(60, 372);
-            txtPassword.Margin = new Padding(3, 2, 3, 2);
-            txtPassword.MaxLength = 32767;
-            txtPassword.Multiline = false;
-            txtPassword.Name = "txtPassword";
-            txtPassword.PasswordChar = '*';
-            txtPassword.ScrollBars = ScrollBars.None;
-            txtPassword.SelectedText = "";
-            txtPassword.SelectionLength = 0;
-            txtPassword.SelectionStart = 0;
-            txtPassword.Size = new Size(389, 38);
-            txtPassword.TabIndex = 3;
-            txtPassword.TabStop = false;
-            txtPassword.UseSystemPasswordChar = true;
+            txtpassword.BackColor = Color.White;
+            txtpassword.BaseColor = Color.FromArgb(44, 55, 66);
+            txtpassword.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtpassword.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtpassword.Cursor = Cursors.IBeam;
+            txtpassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtpassword.ForeColor = Color.FromArgb(48, 49, 51);
+            txtpassword.Hint = "Enter your password";
+            txtpassword.Location = new Point(60, 372);
+            txtpassword.Margin = new Padding(3, 2, 3, 2);
+            txtpassword.MaxLength = 32767;
+            txtpassword.Multiline = false;
+            txtpassword.Name = "txtpassword";
+            txtpassword.PasswordChar = '*';
+            txtpassword.ScrollBars = ScrollBars.None;
+            txtpassword.SelectedText = "";
+            txtpassword.SelectionLength = 0;
+            txtpassword.SelectionStart = 0;
+            txtpassword.Size = new Size(389, 38);
+            txtpassword.TabIndex = 3;
+            txtpassword.TabStop = false;
+            txtpassword.UseSystemPasswordChar = true;
             // 
             // label1
             // 
@@ -237,22 +236,22 @@
             label3.TabIndex = 15;
             label3.Text = "Password";
             // 
-            // materialCheckBox1
+            // btnagree
             // 
-            materialCheckBox1.AutoSize = true;
-            materialCheckBox1.Depth = 0;
-            materialCheckBox1.Location = new Point(60, 425);
-            materialCheckBox1.Margin = new Padding(0);
-            materialCheckBox1.MouseLocation = new Point(-1, -1);
-            materialCheckBox1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialCheckBox1.Name = "materialCheckBox1";
-            materialCheckBox1.ReadOnly = false;
-            materialCheckBox1.Ripple = true;
-            materialCheckBox1.Size = new Size(35, 37);
-            materialCheckBox1.TabIndex = 16;
-            materialCheckBox1.UseAccentColor = false;
-            materialCheckBox1.UseVisualStyleBackColor = true;
-            materialCheckBox1.CheckedChanged += materialCheckBox1_CheckedChanged;
+            btnagree.AutoSize = true;
+            btnagree.Depth = 0;
+            btnagree.Location = new Point(60, 425);
+            btnagree.Margin = new Padding(0);
+            btnagree.MouseLocation = new Point(-1, -1);
+            btnagree.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            btnagree.Name = "btnagree";
+            btnagree.ReadOnly = false;
+            btnagree.Ripple = true;
+            btnagree.Size = new Size(35, 37);
+            btnagree.TabIndex = 16;
+            btnagree.UseAccentColor = false;
+            btnagree.UseVisualStyleBackColor = true;
+            btnagree.CheckedChanged += btnagree_CheckedChanged;
             // 
             // nightControlBox1
             // 
@@ -268,7 +267,7 @@
             nightControlBox1.EnableMaximizeColor = Color.FromArgb(160, 160, 160);
             nightControlBox1.EnableMinimizeButton = true;
             nightControlBox1.EnableMinimizeColor = Color.FromArgb(160, 160, 160);
-            nightControlBox1.Location = new Point(1063, 0);
+            nightControlBox1.Location = new Point(1081, 0);
             nightControlBox1.MaximizeHoverColor = Color.FromArgb(15, 255, 255, 255);
             nightControlBox1.MaximizeHoverForeColor = Color.White;
             nightControlBox1.MinimizeHoverColor = Color.FromArgb(15, 255, 255, 255);
@@ -309,37 +308,37 @@
             foxLabel2.TabIndex = 19;
             foxLabel2.Text = "Sign up With Email Address";
             // 
-            // rdoCompany
+            // rdocompany
             // 
-            rdoCompany.Checked = false;
-            rdoCompany.ForeColor = Color.White;
-            rdoCompany.Location = new Point(287, 153);
-            rdoCompany.Name = "rdoCompany";
-            rdoCompany.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            rdoCompany.RadioColor = Color.FromArgb(0, 162, 250);
-            rdoCompany.RadioHoverColor = Color.Fuchsia;
-            rdoCompany.RadioStyle = ReaLTaiizor.Controls.ParrotRadioButton.Style.Material;
-            rdoCompany.Size = new Size(100, 16);
-            rdoCompany.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            rdoCompany.TabIndex = 31;
-            rdoCompany.Text = "Company";
-            rdoCompany.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            rdocompany.Checked = false;
+            rdocompany.ForeColor = Color.White;
+            rdocompany.Location = new Point(287, 153);
+            rdocompany.Name = "rdocompany";
+            rdocompany.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            rdocompany.RadioColor = Color.FromArgb(0, 162, 250);
+            rdocompany.RadioHoverColor = Color.Fuchsia;
+            rdocompany.RadioStyle = ReaLTaiizor.Controls.ParrotRadioButton.Style.Material;
+            rdocompany.Size = new Size(100, 16);
+            rdocompany.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            rdocompany.TabIndex = 31;
+            rdocompany.Text = "Company";
+            rdocompany.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
-            // rdoJobSeeker
+            // rdojobseeker
             // 
-            rdoJobSeeker.Checked = false;
-            rdoJobSeeker.ForeColor = Color.White;
-            rdoJobSeeker.Location = new Point(115, 153);
-            rdoJobSeeker.Name = "rdoJobSeeker";
-            rdoJobSeeker.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            rdoJobSeeker.RadioColor = Color.FromArgb(0, 162, 250);
-            rdoJobSeeker.RadioHoverColor = Color.Fuchsia;
-            rdoJobSeeker.RadioStyle = ReaLTaiizor.Controls.ParrotRadioButton.Style.Material;
-            rdoJobSeeker.Size = new Size(100, 16);
-            rdoJobSeeker.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            rdoJobSeeker.TabIndex = 32;
-            rdoJobSeeker.Text = "Job Seeker";
-            rdoJobSeeker.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            rdojobseeker.Checked = false;
+            rdojobseeker.ForeColor = Color.White;
+            rdojobseeker.Location = new Point(115, 153);
+            rdojobseeker.Name = "rdojobseeker";
+            rdojobseeker.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            rdojobseeker.RadioColor = Color.FromArgb(0, 162, 250);
+            rdojobseeker.RadioHoverColor = Color.Fuchsia;
+            rdojobseeker.RadioStyle = ReaLTaiizor.Controls.ParrotRadioButton.Style.Material;
+            rdojobseeker.Size = new Size(100, 16);
+            rdojobseeker.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            rdojobseeker.TabIndex = 32;
+            rdojobseeker.Text = "Job Seeker";
+            rdojobseeker.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
             // FRegister
             // 
@@ -347,23 +346,23 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 41, 50);
             ClientSize = new Size(1202, 556);
-            Controls.Add(rdoCompany);
-            Controls.Add(rdoJobSeeker);
+            Controls.Add(rdocompany);
+            Controls.Add(rdojobseeker);
             Controls.Add(foxLabel2);
             Controls.Add(pictureBox2);
             Controls.Add(panel1);
-            Controls.Add(materialCheckBox1);
+            Controls.Add(btnagree);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Controls.Add(bigLabel1);
-            Controls.Add(labelEdit1);
-            Controls.Add(btnSignin);
-            Controls.Add(btnSignup);
-            Controls.Add(txtPassword);
-            Controls.Add(txtName);
-            Controls.Add(txtEmail);
+            Controls.Add(lblagree);
+            Controls.Add(btnsignin);
+            Controls.Add(btnsignup);
+            Controls.Add(txtpassword);
+            Controls.Add(txtfullname);
+            Controls.Add(txtemail);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             MinimumSize = new Size(261, 61);
@@ -378,23 +377,23 @@
         }
 
         #endregion
-        private ReaLTaiizor.Controls.HopeTextBox txtEmail;
-        private ReaLTaiizor.Controls.HopeTextBox txtName;
-        private ReaLTaiizor.Controls.Button btnSignup;
-        private ReaLTaiizor.Controls.Button btnSignin;
-        private ReaLTaiizor.Controls.LabelEdit labelEdit1;
+        private ReaLTaiizor.Controls.HopeTextBox txtemail;
+        private ReaLTaiizor.Controls.HopeTextBox txtfullname;
+        private ReaLTaiizor.Controls.Button btnsignup;
+        private ReaLTaiizor.Controls.Button btnsignin;
+        private ReaLTaiizor.Controls.LabelEdit lblagree;
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
         private PictureBox pictureBox1;
-        private ReaLTaiizor.Controls.HopeTextBox txtPassword;
+        private ReaLTaiizor.Controls.HopeTextBox txtpassword;
         private Label label1;
         private Label label2;
         private Label label3;
-        private ReaLTaiizor.Controls.MaterialCheckBox materialCheckBox1;
+        private ReaLTaiizor.Controls.MaterialCheckBox btnagree;
         private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
         private Panel panel1;
         private PictureBox pictureBox2;
         private ReaLTaiizor.Controls.FoxLabel foxLabel2;
-        private ReaLTaiizor.Controls.ParrotRadioButton rdoCompany;
-        private ReaLTaiizor.Controls.ParrotRadioButton rdoJobSeeker;
+        private ReaLTaiizor.Controls.ParrotRadioButton rdocompany;
+        private ReaLTaiizor.Controls.ParrotRadioButton rdojobseeker;
     }
 }

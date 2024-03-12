@@ -74,7 +74,7 @@ namespace WinFormProject
                 selectedButton.Enabled = true;
             }
 
-            clickedButton.BackColor = Color.FromArgb(32, 41, 58);
+            clickedButton.BackColor = Color.LightGray;
             clickedButton.Enabled = false;
             selectedButton = clickedButton;
         }
