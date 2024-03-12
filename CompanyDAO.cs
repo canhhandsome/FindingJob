@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WinFormProject
 {
-    public class CompanyDAO :
+    public class CompanyDAO 
     {
         public CompanyDAO() { }
     }
