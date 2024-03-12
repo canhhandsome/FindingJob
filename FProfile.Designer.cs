@@ -31,523 +31,529 @@ namespace WinFormProject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FProfile));
-            this.hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
-            this.hopeTextBox2 = new ReaLTaiizor.Controls.HopeTextBox();
-            this.hopeTextBox3 = new ReaLTaiizor.Controls.HopeTextBox();
-            this.hopeTextBox4 = new ReaLTaiizor.Controls.HopeTextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.hopeRadioButton1 = new ReaLTaiizor.Controls.HopeRadioButton();
-            this.hopeRadioButton2 = new ReaLTaiizor.Controls.HopeRadioButton();
-            this.hopeTextBox5 = new ReaLTaiizor.Controls.HopeTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.hopeRichTextBox1 = new ReaLTaiizor.Controls.HopeRichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.hopeTextBox6 = new ReaLTaiizor.Controls.HopeTextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            txtboxFullName = new ReaLTaiizor.Controls.HopeTextBox();
+            txtboxPhoneNumber = new ReaLTaiizor.Controls.HopeTextBox();
+            txtboxEmail = new ReaLTaiizor.Controls.HopeTextBox();
+            txtboxAddress = new ReaLTaiizor.Controls.HopeTextBox();
+            dtpkBirthDate = new DateTimePicker();
+            hopeRadioButton1 = new ReaLTaiizor.Controls.HopeRadioButton();
+            hopeRadioButton2 = new ReaLTaiizor.Controls.HopeRadioButton();
+            txtboxCitizenId = new ReaLTaiizor.Controls.HopeTextBox();
+            pictureBox1 = new PictureBox();
+            txtboxDetails = new ReaLTaiizor.Controls.HopeRichTextBox();
+            button1 = new Button();
+            txtboxPersonalLink = new ReaLTaiizor.Controls.HopeTextBox();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
+            lblFullName = new Label();
+            lblAddress = new Label();
+            lblCitizenId = new Label();
+            lblPhoneNumber = new Label();
+            lblEmail = new Label();
+            lblPersonalLink = new Label();
+            lblDoB = new Label();
+            label8 = new Label();
+            button6 = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
-            // hopeTextBox1
+            // txtboxFullName
             // 
-            this.hopeTextBox1.BackColor = System.Drawing.Color.White;
-            this.hopeTextBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.hopeTextBox1.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox1.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hopeTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeTextBox1.Hint = "Enter Fullname";
-            this.hopeTextBox1.Location = new System.Drawing.Point(33, 60);
-            this.hopeTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.hopeTextBox1.MaxLength = 32767;
-            this.hopeTextBox1.Multiline = false;
-            this.hopeTextBox1.Name = "hopeTextBox1";
-            this.hopeTextBox1.PasswordChar = '\0';
-            this.hopeTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBox1.SelectedText = "";
-            this.hopeTextBox1.SelectionLength = 0;
-            this.hopeTextBox1.SelectionStart = 0;
-            this.hopeTextBox1.Size = new System.Drawing.Size(298, 43);
-            this.hopeTextBox1.TabIndex = 3;
-            this.hopeTextBox1.TabStop = false;
-            this.hopeTextBox1.UseSystemPasswordChar = false;
+            txtboxFullName.BackColor = Color.White;
+            txtboxFullName.BaseColor = Color.FromArgb(44, 55, 66);
+            txtboxFullName.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtboxFullName.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtboxFullName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtboxFullName.ForeColor = Color.FromArgb(48, 49, 51);
+            txtboxFullName.Hint = "Enter Fullname";
+            txtboxFullName.Location = new Point(33, 60);
+            txtboxFullName.Margin = new Padding(3, 4, 3, 4);
+            txtboxFullName.MaxLength = 32767;
+            txtboxFullName.Multiline = false;
+            txtboxFullName.Name = "txtboxFullName";
+            txtboxFullName.PasswordChar = '\0';
+            txtboxFullName.ScrollBars = ScrollBars.None;
+            txtboxFullName.SelectedText = "";
+            txtboxFullName.SelectionLength = 0;
+            txtboxFullName.SelectionStart = 0;
+            txtboxFullName.Size = new Size(298, 43);
+            txtboxFullName.TabIndex = 3;
+            txtboxFullName.TabStop = false;
+            txtboxFullName.UseSystemPasswordChar = false;
             // 
-            // hopeTextBox2
+            // txtboxPhoneNumber
             // 
-            this.hopeTextBox2.BackColor = System.Drawing.Color.White;
-            this.hopeTextBox2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.hopeTextBox2.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox2.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeTextBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hopeTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeTextBox2.Hint = "Enter Phone Number";
-            this.hopeTextBox2.Location = new System.Drawing.Point(33, 164);
-            this.hopeTextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.hopeTextBox2.MaxLength = 32767;
-            this.hopeTextBox2.Multiline = false;
-            this.hopeTextBox2.Name = "hopeTextBox2";
-            this.hopeTextBox2.PasswordChar = '\0';
-            this.hopeTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBox2.SelectedText = "";
-            this.hopeTextBox2.SelectionLength = 0;
-            this.hopeTextBox2.SelectionStart = 0;
-            this.hopeTextBox2.Size = new System.Drawing.Size(298, 43);
-            this.hopeTextBox2.TabIndex = 4;
-            this.hopeTextBox2.TabStop = false;
-            this.hopeTextBox2.UseSystemPasswordChar = false;
+            txtboxPhoneNumber.BackColor = Color.White;
+            txtboxPhoneNumber.BaseColor = Color.FromArgb(44, 55, 66);
+            txtboxPhoneNumber.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtboxPhoneNumber.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtboxPhoneNumber.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtboxPhoneNumber.ForeColor = Color.FromArgb(48, 49, 51);
+            txtboxPhoneNumber.Hint = "Enter Phone Number";
+            txtboxPhoneNumber.Location = new Point(33, 164);
+            txtboxPhoneNumber.Margin = new Padding(3, 4, 3, 4);
+            txtboxPhoneNumber.MaxLength = 32767;
+            txtboxPhoneNumber.Multiline = false;
+            txtboxPhoneNumber.Name = "txtboxPhoneNumber";
+            txtboxPhoneNumber.PasswordChar = '\0';
+            txtboxPhoneNumber.ScrollBars = ScrollBars.None;
+            txtboxPhoneNumber.SelectedText = "";
+            txtboxPhoneNumber.SelectionLength = 0;
+            txtboxPhoneNumber.SelectionStart = 0;
+            txtboxPhoneNumber.Size = new Size(298, 43);
+            txtboxPhoneNumber.TabIndex = 4;
+            txtboxPhoneNumber.TabStop = false;
+            txtboxPhoneNumber.UseSystemPasswordChar = false;
             // 
-            // hopeTextBox3
+            // txtboxEmail
             // 
-            this.hopeTextBox3.BackColor = System.Drawing.Color.White;
-            this.hopeTextBox3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.hopeTextBox3.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox3.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeTextBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hopeTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeTextBox3.Hint = "Enter Email";
-            this.hopeTextBox3.Location = new System.Drawing.Point(33, 271);
-            this.hopeTextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.hopeTextBox3.MaxLength = 32767;
-            this.hopeTextBox3.Multiline = false;
-            this.hopeTextBox3.Name = "hopeTextBox3";
-            this.hopeTextBox3.PasswordChar = '\0';
-            this.hopeTextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBox3.SelectedText = "";
-            this.hopeTextBox3.SelectionLength = 0;
-            this.hopeTextBox3.SelectionStart = 0;
-            this.hopeTextBox3.Size = new System.Drawing.Size(298, 43);
-            this.hopeTextBox3.TabIndex = 5;
-            this.hopeTextBox3.TabStop = false;
-            this.hopeTextBox3.UseSystemPasswordChar = false;
+            txtboxEmail.BackColor = Color.White;
+            txtboxEmail.BaseColor = Color.FromArgb(44, 55, 66);
+            txtboxEmail.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtboxEmail.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtboxEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtboxEmail.ForeColor = Color.FromArgb(48, 49, 51);
+            txtboxEmail.Hint = "Enter Email";
+            txtboxEmail.Location = new Point(33, 271);
+            txtboxEmail.Margin = new Padding(3, 4, 3, 4);
+            txtboxEmail.MaxLength = 32767;
+            txtboxEmail.Multiline = false;
+            txtboxEmail.Name = "txtboxEmail";
+            txtboxEmail.PasswordChar = '\0';
+            txtboxEmail.ScrollBars = ScrollBars.None;
+            txtboxEmail.SelectedText = "";
+            txtboxEmail.SelectionLength = 0;
+            txtboxEmail.SelectionStart = 0;
+            txtboxEmail.Size = new Size(298, 43);
+            txtboxEmail.TabIndex = 5;
+            txtboxEmail.TabStop = false;
+            txtboxEmail.UseSystemPasswordChar = false;
             // 
-            // hopeTextBox4
+            // txtboxAddress
             // 
-            this.hopeTextBox4.BackColor = System.Drawing.Color.White;
-            this.hopeTextBox4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.hopeTextBox4.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox4.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeTextBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hopeTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeTextBox4.Hint = "Enter Address";
-            this.hopeTextBox4.Location = new System.Drawing.Point(415, 60);
-            this.hopeTextBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.hopeTextBox4.MaxLength = 32767;
-            this.hopeTextBox4.Multiline = false;
-            this.hopeTextBox4.Name = "hopeTextBox4";
-            this.hopeTextBox4.PasswordChar = '\0';
-            this.hopeTextBox4.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBox4.SelectedText = "";
-            this.hopeTextBox4.SelectionLength = 0;
-            this.hopeTextBox4.SelectionStart = 0;
-            this.hopeTextBox4.Size = new System.Drawing.Size(298, 43);
-            this.hopeTextBox4.TabIndex = 5;
-            this.hopeTextBox4.TabStop = false;
-            this.hopeTextBox4.UseSystemPasswordChar = false;
+            txtboxAddress.BackColor = Color.White;
+            txtboxAddress.BaseColor = Color.FromArgb(44, 55, 66);
+            txtboxAddress.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtboxAddress.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtboxAddress.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtboxAddress.ForeColor = Color.FromArgb(48, 49, 51);
+            txtboxAddress.Hint = "Enter Address";
+            txtboxAddress.Location = new Point(415, 60);
+            txtboxAddress.Margin = new Padding(3, 4, 3, 4);
+            txtboxAddress.MaxLength = 32767;
+            txtboxAddress.Multiline = false;
+            txtboxAddress.Name = "txtboxAddress";
+            txtboxAddress.PasswordChar = '\0';
+            txtboxAddress.ScrollBars = ScrollBars.None;
+            txtboxAddress.SelectedText = "";
+            txtboxAddress.SelectionLength = 0;
+            txtboxAddress.SelectionStart = 0;
+            txtboxAddress.Size = new Size(298, 43);
+            txtboxAddress.TabIndex = 5;
+            txtboxAddress.TabStop = false;
+            txtboxAddress.UseSystemPasswordChar = false;
             // 
-            // dateTimePicker1
+            // dtpkBirthDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(415, 371);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(226, 27);
-            this.dateTimePicker1.TabIndex = 6;
+            dtpkBirthDate.Location = new Point(415, 371);
+            dtpkBirthDate.Margin = new Padding(3, 4, 3, 4);
+            dtpkBirthDate.Name = "dtpkBirthDate";
+            dtpkBirthDate.Size = new Size(226, 27);
+            dtpkBirthDate.TabIndex = 6;
             // 
             // hopeRadioButton1
             // 
-            this.hopeRadioButton1.AutoSize = true;
-            this.hopeRadioButton1.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeRadioButton1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
-            this.hopeRadioButton1.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
-            this.hopeRadioButton1.Enable = true;
-            this.hopeRadioButton1.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeRadioButton1.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(146)))), ((int)(((byte)(146)))));
-            this.hopeRadioButton1.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            this.hopeRadioButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hopeRadioButton1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.hopeRadioButton1.Location = new System.Drawing.Point(33, 375);
-            this.hopeRadioButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.hopeRadioButton1.Name = "hopeRadioButton1";
-            this.hopeRadioButton1.Size = new System.Drawing.Size(80, 20);
-            this.hopeRadioButton1.TabIndex = 7;
-            this.hopeRadioButton1.TabStop = true;
-            this.hopeRadioButton1.Text = "Male";
-            this.hopeRadioButton1.UseVisualStyleBackColor = true;
+            hopeRadioButton1.AutoSize = true;
+            hopeRadioButton1.CheckedColor = Color.FromArgb(64, 158, 255);
+            hopeRadioButton1.DisabledColor = Color.FromArgb(196, 198, 202);
+            hopeRadioButton1.DisabledStringColor = Color.FromArgb(186, 187, 189);
+            hopeRadioButton1.Enable = true;
+            hopeRadioButton1.EnabledCheckedColor = Color.FromArgb(64, 158, 255);
+            hopeRadioButton1.EnabledStringColor = Color.FromArgb(146, 146, 146);
+            hopeRadioButton1.EnabledUncheckedColor = Color.FromArgb(156, 158, 161);
+            hopeRadioButton1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            hopeRadioButton1.ForeColor = SystemColors.Desktop;
+            hopeRadioButton1.Location = new Point(33, 375);
+            hopeRadioButton1.Margin = new Padding(3, 4, 3, 4);
+            hopeRadioButton1.Name = "hopeRadioButton1";
+            hopeRadioButton1.Size = new Size(80, 20);
+            hopeRadioButton1.TabIndex = 7;
+            hopeRadioButton1.TabStop = true;
+            hopeRadioButton1.Text = "Male";
+            hopeRadioButton1.UseVisualStyleBackColor = true;
             // 
             // hopeRadioButton2
             // 
-            this.hopeRadioButton2.AutoSize = true;
-            this.hopeRadioButton2.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeRadioButton2.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
-            this.hopeRadioButton2.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
-            this.hopeRadioButton2.Enable = true;
-            this.hopeRadioButton2.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeRadioButton2.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(146)))), ((int)(((byte)(146)))));
-            this.hopeRadioButton2.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            this.hopeRadioButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hopeRadioButton2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.hopeRadioButton2.Location = new System.Drawing.Point(176, 375);
-            this.hopeRadioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.hopeRadioButton2.Name = "hopeRadioButton2";
-            this.hopeRadioButton2.Size = new System.Drawing.Size(99, 20);
-            this.hopeRadioButton2.TabIndex = 7;
-            this.hopeRadioButton2.TabStop = true;
-            this.hopeRadioButton2.Text = "Female";
-            this.hopeRadioButton2.UseVisualStyleBackColor = true;
+            hopeRadioButton2.AutoSize = true;
+            hopeRadioButton2.CheckedColor = Color.FromArgb(64, 158, 255);
+            hopeRadioButton2.DisabledColor = Color.FromArgb(196, 198, 202);
+            hopeRadioButton2.DisabledStringColor = Color.FromArgb(186, 187, 189);
+            hopeRadioButton2.Enable = true;
+            hopeRadioButton2.EnabledCheckedColor = Color.FromArgb(64, 158, 255);
+            hopeRadioButton2.EnabledStringColor = Color.FromArgb(146, 146, 146);
+            hopeRadioButton2.EnabledUncheckedColor = Color.FromArgb(156, 158, 161);
+            hopeRadioButton2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            hopeRadioButton2.ForeColor = SystemColors.ControlText;
+            hopeRadioButton2.Location = new Point(176, 375);
+            hopeRadioButton2.Margin = new Padding(3, 4, 3, 4);
+            hopeRadioButton2.Name = "hopeRadioButton2";
+            hopeRadioButton2.Size = new Size(99, 20);
+            hopeRadioButton2.TabIndex = 7;
+            hopeRadioButton2.TabStop = true;
+            hopeRadioButton2.Text = "Female";
+            hopeRadioButton2.UseVisualStyleBackColor = true;
             // 
-            // hopeTextBox5
+            // txtboxCitizenId
             // 
-            this.hopeTextBox5.BackColor = System.Drawing.Color.White;
-            this.hopeTextBox5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.hopeTextBox5.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox5.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeTextBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hopeTextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeTextBox5.Hint = "Enter Citizen identification";
-            this.hopeTextBox5.Location = new System.Drawing.Point(415, 164);
-            this.hopeTextBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.hopeTextBox5.MaxLength = 32767;
-            this.hopeTextBox5.Multiline = false;
-            this.hopeTextBox5.Name = "hopeTextBox5";
-            this.hopeTextBox5.PasswordChar = '\0';
-            this.hopeTextBox5.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBox5.SelectedText = "";
-            this.hopeTextBox5.SelectionLength = 0;
-            this.hopeTextBox5.SelectionStart = 0;
-            this.hopeTextBox5.Size = new System.Drawing.Size(298, 43);
-            this.hopeTextBox5.TabIndex = 5;
-            this.hopeTextBox5.TabStop = false;
-            this.hopeTextBox5.UseSystemPasswordChar = false;
+            txtboxCitizenId.BackColor = Color.White;
+            txtboxCitizenId.BaseColor = Color.FromArgb(44, 55, 66);
+            txtboxCitizenId.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtboxCitizenId.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtboxCitizenId.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtboxCitizenId.ForeColor = Color.FromArgb(48, 49, 51);
+            txtboxCitizenId.Hint = "Enter Citizen identification";
+            txtboxCitizenId.Location = new Point(415, 164);
+            txtboxCitizenId.Margin = new Padding(3, 4, 3, 4);
+            txtboxCitizenId.MaxLength = 32767;
+            txtboxCitizenId.Multiline = false;
+            txtboxCitizenId.Name = "txtboxCitizenId";
+            txtboxCitizenId.PasswordChar = '\0';
+            txtboxCitizenId.ScrollBars = ScrollBars.None;
+            txtboxCitizenId.SelectedText = "";
+            txtboxCitizenId.SelectionLength = 0;
+            txtboxCitizenId.SelectionStart = 0;
+            txtboxCitizenId.Size = new Size(298, 43);
+            txtboxCitizenId.TabIndex = 5;
+            txtboxCitizenId.TabStop = false;
+            txtboxCitizenId.UseSystemPasswordChar = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(832, 28);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(171, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(832, 28);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(171, 200);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
             // 
-            // hopeRichTextBox1
+            // txtboxDetails
             // 
-            this.hopeRichTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeRichTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hopeRichTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeRichTextBox1.Hint = "Details";
-            this.hopeRichTextBox1.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeRichTextBox1.Location = new System.Drawing.Point(801, 252);
-            this.hopeRichTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.hopeRichTextBox1.MaxLength = 32767;
-            this.hopeRichTextBox1.Multiline = true;
-            this.hopeRichTextBox1.Name = "hopeRichTextBox1";
-            this.hopeRichTextBox1.PasswordChar = '\0';
-            this.hopeRichTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeRichTextBox1.SelectedText = "";
-            this.hopeRichTextBox1.SelectionLength = 0;
-            this.hopeRichTextBox1.SelectionStart = 0;
-            this.hopeRichTextBox1.Size = new System.Drawing.Size(229, 149);
-            this.hopeRichTextBox1.TabIndex = 9;
-            this.hopeRichTextBox1.TabStop = false;
-            this.hopeRichTextBox1.Text = "Details";
-            this.hopeRichTextBox1.UseSystemPasswordChar = false;
+            txtboxDetails.BorderColor = Color.FromArgb(220, 223, 230);
+            txtboxDetails.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtboxDetails.ForeColor = Color.FromArgb(48, 49, 51);
+            txtboxDetails.Hint = "Details";
+            txtboxDetails.HoverBorderColor = Color.FromArgb(64, 158, 255);
+            txtboxDetails.Location = new Point(801, 252);
+            txtboxDetails.Margin = new Padding(3, 4, 3, 4);
+            txtboxDetails.MaxLength = 32767;
+            txtboxDetails.Multiline = true;
+            txtboxDetails.Name = "txtboxDetails";
+            txtboxDetails.PasswordChar = '\0';
+            txtboxDetails.ScrollBars = ScrollBars.None;
+            txtboxDetails.SelectedText = "";
+            txtboxDetails.SelectionLength = 0;
+            txtboxDetails.SelectionStart = 0;
+            txtboxDetails.Size = new Size(229, 149);
+            txtboxDetails.TabIndex = 9;
+            txtboxDetails.TabStop = false;
+            txtboxDetails.Text = "Details";
+            txtboxDetails.UseSystemPasswordChar = false;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DimGray;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(101, 491);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 49);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "CV";
-            this.button1.UseVisualStyleBackColor = false;
+            button1.BackColor = Color.DimGray;
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
+            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 64, 64);
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
+            button1.FlatStyle = FlatStyle.System;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.ControlLightLight;
+            button1.Location = new Point(101, 491);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(126, 49);
+            button1.TabIndex = 10;
+            button1.Text = "CV";
+            button1.UseVisualStyleBackColor = false;
             // 
-            // hopeTextBox6
+            // txtboxPersonalLink
             // 
-            this.hopeTextBox6.BackColor = System.Drawing.Color.White;
-            this.hopeTextBox6.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.hopeTextBox6.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox6.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeTextBox6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hopeTextBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeTextBox6.Hint = "Enter Personal link";
-            this.hopeTextBox6.Location = new System.Drawing.Point(415, 271);
-            this.hopeTextBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.hopeTextBox6.MaxLength = 32767;
-            this.hopeTextBox6.Multiline = false;
-            this.hopeTextBox6.Name = "hopeTextBox6";
-            this.hopeTextBox6.PasswordChar = '\0';
-            this.hopeTextBox6.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBox6.SelectedText = "";
-            this.hopeTextBox6.SelectionLength = 0;
-            this.hopeTextBox6.SelectionStart = 0;
-            this.hopeTextBox6.Size = new System.Drawing.Size(298, 43);
-            this.hopeTextBox6.TabIndex = 5;
-            this.hopeTextBox6.TabStop = false;
-            this.hopeTextBox6.UseSystemPasswordChar = false;
+            txtboxPersonalLink.BackColor = Color.White;
+            txtboxPersonalLink.BaseColor = Color.FromArgb(44, 55, 66);
+            txtboxPersonalLink.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtboxPersonalLink.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtboxPersonalLink.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtboxPersonalLink.ForeColor = Color.FromArgb(48, 49, 51);
+            txtboxPersonalLink.Hint = "Enter Personal link";
+            txtboxPersonalLink.Location = new Point(415, 271);
+            txtboxPersonalLink.Margin = new Padding(3, 4, 3, 4);
+            txtboxPersonalLink.MaxLength = 32767;
+            txtboxPersonalLink.Multiline = false;
+            txtboxPersonalLink.Name = "txtboxPersonalLink";
+            txtboxPersonalLink.PasswordChar = '\0';
+            txtboxPersonalLink.ScrollBars = ScrollBars.None;
+            txtboxPersonalLink.SelectedText = "";
+            txtboxPersonalLink.SelectionLength = 0;
+            txtboxPersonalLink.SelectionStart = 0;
+            txtboxPersonalLink.Size = new Size(298, 43);
+            txtboxPersonalLink.TabIndex = 5;
+            txtboxPersonalLink.TabStop = false;
+            txtboxPersonalLink.UseSystemPasswordChar = false;
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.DimGray;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(246, 491);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 49);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Project";
-            this.button2.UseVisualStyleBackColor = false;
+            button2.BackColor = Color.DimGray;
+            button2.Cursor = Cursors.Hand;
+            button2.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
+            button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 64, 64);
+            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
+            button2.FlatStyle = FlatStyle.System;
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.ForeColor = SystemColors.ControlLightLight;
+            button2.Location = new Point(246, 491);
+            button2.Margin = new Padding(3, 4, 3, 4);
+            button2.Name = "button2";
+            button2.Size = new Size(126, 49);
+            button2.TabIndex = 10;
+            button2.Text = "Project";
+            button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.DimGray;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(389, 491);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(126, 49);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Certificate";
-            this.button3.UseVisualStyleBackColor = false;
+            button3.BackColor = Color.DimGray;
+            button3.Cursor = Cursors.Hand;
+            button3.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
+            button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 64, 64);
+            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
+            button3.FlatStyle = FlatStyle.System;
+            button3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button3.ForeColor = SystemColors.ControlLightLight;
+            button3.Location = new Point(389, 491);
+            button3.Margin = new Padding(3, 4, 3, 4);
+            button3.Name = "button3";
+            button3.Size = new Size(126, 49);
+            button3.TabIndex = 10;
+            button3.Text = "Certificate";
+            button3.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.DimGray;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(533, 491);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(126, 49);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Reward";
-            this.button4.UseVisualStyleBackColor = false;
+            button4.BackColor = Color.DimGray;
+            button4.Cursor = Cursors.Hand;
+            button4.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
+            button4.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 64, 64);
+            button4.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
+            button4.FlatStyle = FlatStyle.System;
+            button4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button4.ForeColor = SystemColors.ControlLightLight;
+            button4.Location = new Point(533, 491);
+            button4.Margin = new Padding(3, 4, 3, 4);
+            button4.Name = "button4";
+            button4.Size = new Size(126, 49);
+            button4.TabIndex = 10;
+            button4.Text = "Reward";
+            button4.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.DimGray;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(677, 491);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(126, 49);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Edit";
-            this.button5.UseVisualStyleBackColor = false;
+            button5.BackColor = Color.DimGray;
+            button5.Cursor = Cursors.Hand;
+            button5.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
+            button5.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 64, 64);
+            button5.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
+            button5.FlatStyle = FlatStyle.System;
+            button5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button5.ForeColor = SystemColors.ControlLightLight;
+            button5.Location = new Point(677, 491);
+            button5.Margin = new Padding(3, 4, 3, 4);
+            button5.Name = "button5";
+            button5.Size = new Size(126, 49);
+            button5.TabIndex = 10;
+            button5.Text = "Edit";
+            button5.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // lblFullName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(33, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 28);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Fullname";
+            lblFullName.AutoSize = true;
+            lblFullName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFullName.ForeColor = SystemColors.ControlText;
+            lblFullName.Location = new Point(33, 28);
+            lblFullName.Name = "lblFullName";
+            lblFullName.Size = new Size(91, 28);
+            lblFullName.TabIndex = 11;
+            lblFullName.Text = "Fullname";
+            lblFullName.Click += lblFullName_Click;
             // 
-            // label2
+            // lblAddress
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(415, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 28);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Address";
+            lblAddress.AutoSize = true;
+            lblAddress.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblAddress.ForeColor = SystemColors.ControlText;
+            lblAddress.Location = new Point(415, 28);
+            lblAddress.Name = "lblAddress";
+            lblAddress.Size = new Size(82, 28);
+            lblAddress.TabIndex = 11;
+            lblAddress.Text = "Address";
+            lblAddress.Click += lblAddress_Click;
             // 
-            // label3
+            // lblCitizenId
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(415, 132);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 28);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Citizen ID";
+            lblCitizenId.AutoSize = true;
+            lblCitizenId.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCitizenId.ForeColor = SystemColors.ControlText;
+            lblCitizenId.Location = new Point(415, 132);
+            lblCitizenId.Name = "lblCitizenId";
+            lblCitizenId.Size = new Size(95, 28);
+            lblCitizenId.TabIndex = 11;
+            lblCitizenId.Text = "Citizen ID";
+            lblCitizenId.Click += lblCitizenId_Click;
             // 
-            // label4
+            // lblPhoneNumber
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(33, 132);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 28);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Phone Number";
+            lblPhoneNumber.AutoSize = true;
+            lblPhoneNumber.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPhoneNumber.ForeColor = SystemColors.ControlText;
+            lblPhoneNumber.Location = new Point(33, 132);
+            lblPhoneNumber.Name = "lblPhoneNumber";
+            lblPhoneNumber.Size = new Size(144, 28);
+            lblPhoneNumber.TabIndex = 11;
+            lblPhoneNumber.Text = "Phone Number";
+            lblPhoneNumber.Click += lblPhoneNumber_Click;
             // 
-            // label5
+            // lblEmail
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(33, 239);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 28);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Email";
+            lblEmail.AutoSize = true;
+            lblEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblEmail.ForeColor = SystemColors.ControlText;
+            lblEmail.Location = new Point(33, 239);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(59, 28);
+            lblEmail.TabIndex = 11;
+            lblEmail.Text = "Email";
+            lblEmail.Click += lblEmail_Click;
             // 
-            // label6
+            // lblPersonalLink
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(415, 239);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 28);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Personal Link";
+            lblPersonalLink.AutoSize = true;
+            lblPersonalLink.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPersonalLink.ForeColor = SystemColors.ControlText;
+            lblPersonalLink.Location = new Point(415, 239);
+            lblPersonalLink.Name = "lblPersonalLink";
+            lblPersonalLink.Size = new Size(125, 28);
+            lblPersonalLink.TabIndex = 11;
+            lblPersonalLink.Text = "Personal Link";
+            lblPersonalLink.Click += lblPersonalLink_Click;
             // 
-            // label7
+            // lblDoB
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(415, 337);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(122, 28);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Date of Birth";
+            lblDoB.AutoSize = true;
+            lblDoB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDoB.ForeColor = SystemColors.ControlText;
+            lblDoB.Location = new Point(415, 337);
+            lblDoB.Name = "lblDoB";
+            lblDoB.Size = new Size(122, 28);
+            lblDoB.TabIndex = 11;
+            lblDoB.Text = "Date of Birth";
+            lblDoB.Click += lblDoB_Click;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(33, 337);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(76, 28);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Gender";
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.ForeColor = SystemColors.ControlText;
+            label8.Location = new Point(33, 337);
+            label8.Name = "label8";
+            label8.Size = new Size(76, 28);
+            label8.TabIndex = 11;
+            label8.Text = "Gender";
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.LightCoral;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button6.ForeColor = System.Drawing.SystemColors.Control;
-            this.button6.Location = new System.Drawing.Point(821, 491);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(126, 49);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "Cancel";
-            this.button6.UseVisualStyleBackColor = false;
+            button6.BackColor = Color.LightCoral;
+            button6.Cursor = Cursors.Hand;
+            button6.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
+            button6.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 64, 64);
+            button6.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
+            button6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button6.ForeColor = SystemColors.Control;
+            button6.Location = new Point(821, 491);
+            button6.Margin = new Padding(3, 4, 3, 4);
+            button6.Name = "button6";
+            button6.Size = new Size(126, 49);
+            button6.TabIndex = 10;
+            button6.Text = "Cancel";
+            button6.UseVisualStyleBackColor = false;
             // 
             // FProfile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(1057, 580);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.hopeRichTextBox1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.hopeRadioButton2);
-            this.Controls.Add(this.hopeRadioButton1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.hopeTextBox6);
-            this.Controls.Add(this.hopeTextBox5);
-            this.Controls.Add(this.hopeTextBox4);
-            this.Controls.Add(this.hopeTextBox3);
-            this.Controls.Add(this.hopeTextBox2);
-            this.Controls.Add(this.hopeTextBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "FProfile";
-            this.Text = "FProfile";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightGray;
+            ClientSize = new Size(1057, 580);
+            Controls.Add(label8);
+            Controls.Add(lblDoB);
+            Controls.Add(lblPersonalLink);
+            Controls.Add(lblEmail);
+            Controls.Add(lblPhoneNumber);
+            Controls.Add(lblCitizenId);
+            Controls.Add(lblAddress);
+            Controls.Add(lblFullName);
+            Controls.Add(button6);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(txtboxDetails);
+            Controls.Add(pictureBox1);
+            Controls.Add(hopeRadioButton2);
+            Controls.Add(hopeRadioButton1);
+            Controls.Add(dtpkBirthDate);
+            Controls.Add(txtboxPersonalLink);
+            Controls.Add(txtboxCitizenId);
+            Controls.Add(txtboxAddress);
+            Controls.Add(txtboxEmail);
+            Controls.Add(txtboxPhoneNumber);
+            Controls.Add(txtboxFullName);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "FProfile";
+            Text = "FProfile";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox1;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox2;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox3;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox4;
-        private DateTimePicker dateTimePicker1;
+        private ReaLTaiizor.Controls.HopeTextBox txtboxFullName;
+        private ReaLTaiizor.Controls.HopeTextBox txtboxPhoneNumber;
+        private ReaLTaiizor.Controls.HopeTextBox txtboxEmail;
+        private ReaLTaiizor.Controls.HopeTextBox txtboxAddress;
+        private DateTimePicker dtpkBirthDate;
         private ReaLTaiizor.Controls.HopeRadioButton hopeRadioButton1;
         private ReaLTaiizor.Controls.HopeRadioButton hopeRadioButton2;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox5;
+        private ReaLTaiizor.Controls.HopeTextBox txtboxCitizenId;
         private PictureBox pictureBox1;
-        private ReaLTaiizor.Controls.HopeRichTextBox hopeRichTextBox1;
+        private ReaLTaiizor.Controls.HopeRichTextBox txtboxDetails;
         private Button button1;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox6;
+        private ReaLTaiizor.Controls.HopeTextBox txtboxPersonalLink;
         private Button button2;
         private Button button3;
         private Button button4;
         private Button button5;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
+        private Label lblFullName;
+        private Label lblAddress;
+        private Label lblCitizenId;
+        private Label lblPhoneNumber;
+        private Label lblEmail;
+        private Label lblPersonalLink;
+        private Label lblDoB;
         private Label label8;
         private Button button6;
     }

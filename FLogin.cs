@@ -36,5 +36,20 @@ namespace WinFormProject
             }
             else swremember.Checked = false;
         }
+
+        private void btnsignin_Click(object sender, EventArgs e)
+        {
+            string type = (rdocompany.Checked) ? "company" : "jobseeker";
+            Account account = new Account(txtemail.Text, txtpassword.Text, type);
+            if (account.CheckAccount())
+            {
+                if (rdocompany.Checked)
+                {
+                    Company company = new Company(account);
+                }
+                else { }
+            }
+
+        }
     }
 }
