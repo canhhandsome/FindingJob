@@ -12,6 +12,7 @@ namespace WinFormProject
         string email = String.Empty;
         string password = String.Empty;
         string type = String.Empty;
+        AccountDAO accountDAO = new AccountDAO();
         public Account(string email, string password,string type)
         {
             this.email = email;
@@ -32,8 +33,7 @@ namespace WinFormProject
         }
         public bool CheckAccount()
         {
-            //Send accountid,password to database to check if there is any, if it doesn't match => return false
-            return true;
+            return accountDAO.GetAccount(this);
         }
     }
 }
