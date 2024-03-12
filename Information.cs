@@ -22,7 +22,6 @@ namespace WinFormProject
             email = string.Empty;
             address = string.Empty;
             phone = string.Empty;
-            account = new Account();
         }
         public Information(Account account)
         {

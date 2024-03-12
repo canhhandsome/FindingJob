@@ -50,8 +50,9 @@
             panel1.Controls.Add(metroControlBox3);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1285, 32);
+            panel1.Size = new Size(1124, 24);
             panel1.TabIndex = 2;
             // 
             // metroControlBox3
@@ -63,7 +64,8 @@
             metroControlBox3.DisabledForeColor = Color.DimGray;
             metroControlBox3.Dock = DockStyle.Right;
             metroControlBox3.IsDerivedStyle = true;
-            metroControlBox3.Location = new Point(1185, 0);
+            metroControlBox3.Location = new Point(1024, 0);
+            metroControlBox3.Margin = new Padding(3, 2, 3, 2);
             metroControlBox3.MaximizeBox = true;
             metroControlBox3.MaximizeHoverBackColor = Color.FromArgb(238, 238, 238);
             metroControlBox3.MaximizeHoverForeColor = Color.Gray;
@@ -91,10 +93,9 @@
             panel2.Controls.Add(btnPostJob);
             panel2.Controls.Add(pictureBox2);
             panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 32);
-            panel2.Margin = new Padding(3, 4, 3, 4);
+            panel2.Location = new Point(0, 24);
             panel2.Name = "panel2";
-            panel2.Size = new Size(218, 632);
+            panel2.Size = new Size(191, 474);
             panel2.TabIndex = 3;
             // 
             // btnLogOut
@@ -106,10 +107,9 @@
             btnLogOut.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
             btnLogOut.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLogOut.Location = new Point(0, 528);
-            btnLogOut.Margin = new Padding(3, 4, 3, 4);
+            btnLogOut.Location = new Point(0, 396);
             btnLogOut.Name = "btnLogOut";
-            btnLogOut.Size = new Size(218, 104);
+            btnLogOut.Size = new Size(191, 78);
             btnLogOut.TabIndex = 5;
             btnLogOut.Text = "Log Out";
             btnLogOut.UseVisualStyleBackColor = true;
@@ -124,10 +124,9 @@
             btnSetting.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             btnSetting.Image = (Image)resources.GetObject("btnSetting.Image");
             btnSetting.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSetting.Location = new Point(0, 424);
-            btnSetting.Margin = new Padding(3, 4, 3, 4);
+            btnSetting.Location = new Point(0, 318);
             btnSetting.Name = "btnSetting";
-            btnSetting.Size = new Size(218, 104);
+            btnSetting.Size = new Size(191, 78);
             btnSetting.TabIndex = 4;
             btnSetting.Text = "Setting";
             btnSetting.UseVisualStyleBackColor = true;
@@ -141,10 +140,9 @@
             btnApplicant.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             btnApplicant.Image = (Image)resources.GetObject("btnApplicant.Image");
             btnApplicant.ImageAlign = ContentAlignment.MiddleLeft;
-            btnApplicant.Location = new Point(0, 320);
-            btnApplicant.Margin = new Padding(3, 4, 3, 4);
+            btnApplicant.Location = new Point(0, 240);
             btnApplicant.Name = "btnApplicant";
-            btnApplicant.Size = new Size(218, 104);
+            btnApplicant.Size = new Size(191, 78);
             btnApplicant.TabIndex = 3;
             btnApplicant.Text = "Applicants";
             btnApplicant.UseVisualStyleBackColor = true;
@@ -159,10 +157,9 @@
             btnEditJob.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             btnEditJob.Image = (Image)resources.GetObject("btnEditJob.Image");
             btnEditJob.ImageAlign = ContentAlignment.MiddleLeft;
-            btnEditJob.Location = new Point(0, 216);
-            btnEditJob.Margin = new Padding(3, 4, 3, 4);
+            btnEditJob.Location = new Point(0, 162);
             btnEditJob.Name = "btnEditJob";
-            btnEditJob.Size = new Size(218, 104);
+            btnEditJob.Size = new Size(191, 78);
             btnEditJob.TabIndex = 2;
             btnEditJob.Text = "Edit Jobs";
             btnEditJob.UseVisualStyleBackColor = true;
@@ -177,10 +174,9 @@
             btnPostJob.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             btnPostJob.Image = (Image)resources.GetObject("btnPostJob.Image");
             btnPostJob.ImageAlign = ContentAlignment.MiddleLeft;
-            btnPostJob.Location = new Point(0, 112);
-            btnPostJob.Margin = new Padding(3, 4, 3, 4);
+            btnPostJob.Location = new Point(0, 84);
             btnPostJob.Name = "btnPostJob";
-            btnPostJob.Size = new Size(218, 104);
+            btnPostJob.Size = new Size(191, 78);
             btnPostJob.TabIndex = 1;
             btnPostJob.Text = "Post Job";
             btnPostJob.UseVisualStyleBackColor = true;
@@ -191,9 +187,8 @@
             pictureBox2.Dock = DockStyle.Top;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(218, 112);
+            pictureBox2.Size = new Size(191, 84);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
@@ -201,22 +196,22 @@
             // pnBody
             // 
             pnBody.Dock = DockStyle.Fill;
-            pnBody.Location = new Point(218, 32);
-            pnBody.Margin = new Padding(3, 4, 3, 4);
+            pnBody.Location = new Point(191, 24);
             pnBody.Name = "pnBody";
-            pnBody.Size = new Size(1067, 632);
+            pnBody.Size = new Size(933, 474);
             pnBody.TabIndex = 4;
             // 
             // FCompany
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 41, 50);
-            ClientSize = new Size(1285, 664);
+            ClientSize = new Size(1124, 498);
             Controls.Add(pnBody);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FCompany";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FCompany";
