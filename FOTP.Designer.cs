@@ -1,6 +1,6 @@
 ﻿namespace WinFormProject
 {
-    partial class FFPassword
+    partial class FOTP
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FFPassword));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FOTP));
             panel1 = new Panel();
             nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
-            txtEmail = new ReaLTaiizor.Controls.HopeTextBox();
+            txtOTP = new ReaLTaiizor.Controls.HopeTextBox();
             btnResetP = new ReaLTaiizor.Controls.Button();
-            button2 = new ReaLTaiizor.Controls.Button();
+            btnCancel = new ReaLTaiizor.Controls.Button();
             ptbSologan = new PictureBox();
             lblWelcome = new ReaLTaiizor.Controls.BigLabel();
             ptbLogo = new PictureBox();
@@ -78,30 +78,30 @@
             nightControlBox1.Size = new Size(139, 31);
             nightControlBox1.TabIndex = 0;
             // 
-            // txtEmail
+            // txtOTP
             // 
-            txtEmail.BackColor = Color.White;
-            txtEmail.BaseColor = Color.FromArgb(44, 55, 66);
-            txtEmail.BorderColorA = Color.FromArgb(64, 158, 255);
-            txtEmail.BorderColorB = Color.FromArgb(220, 223, 230);
-            txtEmail.Cursor = Cursors.IBeam;
-            txtEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtEmail.ForeColor = Color.FromArgb(48, 49, 51);
-            txtEmail.Hint = "Enter your email";
-            txtEmail.Location = new Point(60, 171);
-            txtEmail.Margin = new Padding(3, 2, 3, 2);
-            txtEmail.MaxLength = 32767;
-            txtEmail.Multiline = false;
-            txtEmail.Name = "txtEmail";
-            txtEmail.PasswordChar = '\0';
-            txtEmail.ScrollBars = ScrollBars.None;
-            txtEmail.SelectedText = "";
-            txtEmail.SelectionLength = 0;
-            txtEmail.SelectionStart = 0;
-            txtEmail.Size = new Size(389, 38);
-            txtEmail.TabIndex = 2;
-            txtEmail.TabStop = false;
-            txtEmail.UseSystemPasswordChar = false;
+            txtOTP.BackColor = Color.White;
+            txtOTP.BaseColor = Color.FromArgb(44, 55, 66);
+            txtOTP.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtOTP.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtOTP.Cursor = Cursors.IBeam;
+            txtOTP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtOTP.ForeColor = Color.FromArgb(48, 49, 51);
+            txtOTP.Hint = "Enter your OTP";
+            txtOTP.Location = new Point(60, 171);
+            txtOTP.Margin = new Padding(3, 2, 3, 2);
+            txtOTP.MaxLength = 32767;
+            txtOTP.Multiline = false;
+            txtOTP.Name = "txtOTP";
+            txtOTP.PasswordChar = '\0';
+            txtOTP.ScrollBars = ScrollBars.None;
+            txtOTP.SelectedText = "";
+            txtOTP.SelectionLength = 0;
+            txtOTP.SelectionStart = 0;
+            txtOTP.Size = new Size(389, 38);
+            txtOTP.TabIndex = 2;
+            txtOTP.TabStop = false;
+            txtOTP.UseSystemPasswordChar = false;
             // 
             // btnResetP
             // 
@@ -124,26 +124,26 @@
             btnResetP.TextAlignment = StringAlignment.Center;
             btnResetP.Click += btnResetP_Click;
             // 
-            // button2
+            // btnCancel
             // 
-            button2.BackColor = Color.Transparent;
-            button2.BorderColor = Color.FromArgb(32, 34, 37);
-            button2.EnteredBorderColor = Color.FromArgb(165, 37, 37);
-            button2.EnteredColor = Color.FromArgb(32, 34, 37);
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Image = null;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.InactiveColor = Color.FromArgb(32, 34, 37);
-            button2.Location = new Point(188, 336);
-            button2.Margin = new Padding(3, 2, 3, 2);
-            button2.Name = "button2";
-            button2.PressedBorderColor = Color.FromArgb(165, 37, 37);
-            button2.PressedColor = Color.FromArgb(165, 37, 37);
-            button2.Size = new Size(131, 38);
-            button2.TabIndex = 8;
-            button2.Text = "Sign In";
-            button2.TextAlignment = StringAlignment.Center;
-            button2.Click += button2_Click;
+            btnCancel.BackColor = Color.Transparent;
+            btnCancel.BorderColor = Color.FromArgb(32, 34, 37);
+            btnCancel.EnteredBorderColor = Color.FromArgb(165, 37, 37);
+            btnCancel.EnteredColor = Color.FromArgb(32, 34, 37);
+            btnCancel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCancel.Image = null;
+            btnCancel.ImageAlign = ContentAlignment.MiddleLeft;
+            btnCancel.InactiveColor = Color.FromArgb(32, 34, 37);
+            btnCancel.Location = new Point(188, 336);
+            btnCancel.Margin = new Padding(3, 2, 3, 2);
+            btnCancel.Name = "btnCancel";
+            btnCancel.PressedBorderColor = Color.FromArgb(165, 37, 37);
+            btnCancel.PressedColor = Color.FromArgb(165, 37, 37);
+            btnCancel.Size = new Size(131, 38);
+            btnCancel.TabIndex = 8;
+            btnCancel.Text = "Cancel";
+            btnCancel.TextAlignment = StringAlignment.Center;
+            btnCancel.Click += button2_Click;
             // 
             // ptbSologan
             // 
@@ -192,13 +192,13 @@
             // 
             lblForget.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             lblForget.ForeColor = Color.White;
-            lblForget.Location = new Point(175, 113);
+            lblForget.Location = new Point(60, 111);
             lblForget.Name = "lblForget";
-            lblForget.Size = new Size(168, 34);
+            lblForget.Size = new Size(389, 34);
             lblForget.TabIndex = 15;
-            lblForget.Text = "Forgot Password";
+            lblForget.Text = "Hi, ";
             // 
-            // FFPassword
+            // FOTP
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -209,16 +209,16 @@
             Controls.Add(ptbLogo);
             Controls.Add(lblWelcome);
             Controls.Add(ptbSologan);
-            Controls.Add(button2);
+            Controls.Add(btnCancel);
             Controls.Add(btnResetP);
-            Controls.Add(txtEmail);
+            Controls.Add(txtOTP);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             MinimumSize = new Size(261, 61);
-            Name = "FFPassword";
+            Name = "FOTP";
             StartPosition = FormStartPosition.CenterScreen;
-            Load += FFPassword_Load;
+            Load += FOTP_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ptbSologan).EndInit();
             ((System.ComponentModel.ISupportInitialize)ptbLogo).EndInit();
@@ -230,9 +230,9 @@
 
         private Panel panel1;
         private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
-        private ReaLTaiizor.Controls.HopeTextBox txtEmail;
+        private ReaLTaiizor.Controls.HopeTextBox txtOTP;
         private ReaLTaiizor.Controls.Button btnResetP;
-        private ReaLTaiizor.Controls.Button button2;
+        private ReaLTaiizor.Controls.Button btnCancel;
         private PictureBox ptbSologan;
         private ReaLTaiizor.Controls.BigLabel lblWelcome;
         private PictureBox ptbLogo;

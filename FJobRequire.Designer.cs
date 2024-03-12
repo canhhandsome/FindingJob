@@ -77,7 +77,7 @@
             // pnJobRequirement
             // 
             pnJobRequirement.AutoScroll = true;
-            pnJobRequirement.Location = new Point(59, 93);
+            pnJobRequirement.Location = new Point(59, 108);
             pnJobRequirement.Name = "pnJobRequirement";
             pnJobRequirement.Size = new Size(799, 254);
             pnJobRequirement.TabIndex = 29;
