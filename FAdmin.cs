@@ -71,7 +71,7 @@ namespace WinFormProject
                 selectedButton.Enabled = true;
             }
 
-            clickedButton.BackColor = Color.FromArgb(50, 105, 85);
+            clickedButton.BackColor = Color.LightGray;
             clickedButton.Enabled = false;
             selectedButton = clickedButton;
         }
@@ -92,5 +92,9 @@ namespace WinFormProject
             childForm.Show();
         }
 
+        private void btnManageUser_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FManageUser());
+        }
     }
 }

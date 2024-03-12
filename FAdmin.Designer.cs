@@ -138,83 +138,93 @@
             // 
             // btnLogOut
             // 
-            btnLogOut.Cursor = Cursors.Hand;
-            btnLogOut.Dock = DockStyle.Top;
-            btnLogOut.FlatAppearance.BorderSize = 0;
-            btnLogOut.FlatStyle = FlatStyle.Flat;
-            btnLogOut.Font = new Font("Segoe UI", 12.5F, FontStyle.Regular, GraphicsUnit.Point);
-            btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
-            btnLogOut.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLogOut.Location = new Point(0, 396);
-            btnLogOut.Name = "btnLogOut";
-            btnLogOut.Size = new Size(183, 78);
-            btnLogOut.TabIndex = 5;
-            btnLogOut.Text = "Log Out";
-            btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogOut.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLogOut.FlatAppearance.BorderSize = 0;
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
+            this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogOut.Location = new System.Drawing.Point(0, 528);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(209, 104);
+            this.btnLogOut.TabIndex = 5;
+            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnSetting
             // 
-            btnSetting.Cursor = Cursors.Hand;
-            btnSetting.Dock = DockStyle.Top;
-            btnSetting.FlatAppearance.BorderSize = 0;
-            btnSetting.FlatStyle = FlatStyle.Flat;
-            btnSetting.Font = new Font("Segoe UI", 12.5F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSetting.Image = (Image)resources.GetObject("btnSetting.Image");
-            btnSetting.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSetting.Location = new Point(0, 318);
-            btnSetting.Name = "btnSetting";
-            btnSetting.Size = new Size(183, 78);
-            btnSetting.TabIndex = 4;
-            btnSetting.Text = "Setting";
-            btnSetting.UseVisualStyleBackColor = true;
+            this.btnSetting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSetting.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSetting.FlatAppearance.BorderSize = 0;
+            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSetting.Font = new System.Drawing.Font("Segoe UI", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
+            this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSetting.Location = new System.Drawing.Point(0, 424);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.Size = new System.Drawing.Size(209, 104);
+            this.btnSetting.TabIndex = 4;
+            this.btnSetting.Text = "Setting";
+            this.btnSetting.UseVisualStyleBackColor = true;
+            this.btnSetting.Click += new System.EventHandler(this.button_Click);
             // 
             // btnReport
             // 
-            btnReport.Cursor = Cursors.Hand;
-            btnReport.Dock = DockStyle.Top;
-            btnReport.FlatAppearance.BorderSize = 0;
-            btnReport.FlatStyle = FlatStyle.Flat;
-            btnReport.Font = new Font("Segoe UI", 12.5F, FontStyle.Regular, GraphicsUnit.Point);
-            btnReport.Image = (Image)resources.GetObject("btnReport.Image");
-            btnReport.ImageAlign = ContentAlignment.MiddleLeft;
-            btnReport.Location = new Point(0, 240);
-            btnReport.Name = "btnReport";
-            btnReport.Size = new Size(183, 78);
-            btnReport.TabIndex = 3;
-            btnReport.Text = "Report";
-            btnReport.UseVisualStyleBackColor = true;
+            this.btnReport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReport.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReport.FlatAppearance.BorderSize = 0;
+            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReport.Font = new System.Drawing.Font("Segoe UI", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
+            this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReport.Location = new System.Drawing.Point(0, 320);
+            this.btnReport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(209, 104);
+            this.btnReport.TabIndex = 3;
+            this.btnReport.Text = "Report";
+            this.btnReport.UseVisualStyleBackColor = true;
+            this.btnReport.Click += new System.EventHandler(this.button_Click);
             // 
             // btnManageUser
             // 
-            btnManageUser.Cursor = Cursors.Hand;
-            btnManageUser.Dock = DockStyle.Top;
-            btnManageUser.FlatAppearance.BorderSize = 0;
-            btnManageUser.FlatStyle = FlatStyle.Flat;
-            btnManageUser.Font = new Font("Segoe UI", 12.5F, FontStyle.Regular, GraphicsUnit.Point);
-            btnManageUser.Image = (Image)resources.GetObject("btnManageUser.Image");
-            btnManageUser.ImageAlign = ContentAlignment.MiddleLeft;
-            btnManageUser.Location = new Point(0, 162);
-            btnManageUser.Name = "btnManageUser";
-            btnManageUser.Size = new Size(183, 78);
-            btnManageUser.TabIndex = 2;
-            btnManageUser.Text = "Manage User";
-            btnManageUser.UseVisualStyleBackColor = true;
+            this.btnManageUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnManageUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnManageUser.FlatAppearance.BorderSize = 0;
+            this.btnManageUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManageUser.Font = new System.Drawing.Font("Segoe UI", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnManageUser.Image = ((System.Drawing.Image)(resources.GetObject("btnManageUser.Image")));
+            this.btnManageUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManageUser.Location = new System.Drawing.Point(0, 216);
+            this.btnManageUser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnManageUser.Name = "btnManageUser";
+            this.btnManageUser.Size = new System.Drawing.Size(209, 104);
+            this.btnManageUser.TabIndex = 2;
+            this.btnManageUser.Text = "Manage User";
+            this.btnManageUser.UseVisualStyleBackColor = true;
+            this.btnManageUser.Click += new System.EventHandler(this.btnManageUser_Click);
             // 
             // btnJobListing
             // 
-            btnJobListing.Cursor = Cursors.Hand;
-            btnJobListing.Dock = DockStyle.Top;
-            btnJobListing.FlatAppearance.BorderSize = 0;
-            btnJobListing.FlatStyle = FlatStyle.Flat;
-            btnJobListing.Font = new Font("Segoe UI", 12.5F, FontStyle.Regular, GraphicsUnit.Point);
-            btnJobListing.Image = (Image)resources.GetObject("btnJobListing.Image");
-            btnJobListing.ImageAlign = ContentAlignment.MiddleLeft;
-            btnJobListing.Location = new Point(0, 84);
-            btnJobListing.Name = "btnJobListing";
-            btnJobListing.Size = new Size(183, 78);
-            btnJobListing.TabIndex = 1;
-            btnJobListing.Text = "Job Listing";
-            btnJobListing.UseVisualStyleBackColor = true;
+            this.btnJobListing.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnJobListing.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnJobListing.FlatAppearance.BorderSize = 0;
+            this.btnJobListing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnJobListing.Font = new System.Drawing.Font("Segoe UI", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnJobListing.Image = ((System.Drawing.Image)(resources.GetObject("btnJobListing.Image")));
+            this.btnJobListing.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnJobListing.Location = new System.Drawing.Point(0, 112);
+            this.btnJobListing.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnJobListing.Name = "btnJobListing";
+            this.btnJobListing.Size = new System.Drawing.Size(209, 104);
+            this.btnJobListing.TabIndex = 1;
+            this.btnJobListing.Text = "Job Listing";
+            this.btnJobListing.UseVisualStyleBackColor = true;
+            this.btnJobListing.Click += new System.EventHandler(this.button_Click);
             // 
             // pictureBox2
             // 
