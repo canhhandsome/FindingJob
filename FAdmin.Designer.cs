@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FAdmin));
             this.pnBody = new System.Windows.Forms.Panel();
+            this.pnSubBody = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroControlBox4 = new ReaLTaiizor.Controls.MetroControlBox();
             this.metroControlBox3 = new ReaLTaiizor.Controls.MetroControlBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnLogOut = new System.Windows.Forms.Button();
-            this.btnSetting = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
             this.btnManageUser = new System.Windows.Forms.Button();
             this.btnJobListing = new System.Windows.Forms.Button();
@@ -47,12 +47,23 @@
             // 
             // pnBody
             // 
-            this.pnBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnBody.Location = new System.Drawing.Point(209, 32);
+            this.pnBody.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnBody.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnBody.Location = new System.Drawing.Point(656, 32);
             this.pnBody.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnBody.Name = "pnBody";
-            this.pnBody.Size = new System.Drawing.Size(1076, 632);
+            this.pnBody.Size = new System.Drawing.Size(629, 632);
             this.pnBody.TabIndex = 7;
+            // 
+            // pnSubBody
+            // 
+            this.pnSubBody.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnSubBody.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnSubBody.Location = new System.Drawing.Point(209, 32);
+            this.pnSubBody.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnSubBody.Name = "pnSubBody";
+            this.pnSubBody.Size = new System.Drawing.Size(447, 632);
+            this.pnSubBody.TabIndex = 8;
             // 
             // panel1
             // 
@@ -123,7 +134,6 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel2.Controls.Add(this.btnLogOut);
-            this.panel2.Controls.Add(this.btnSetting);
             this.panel2.Controls.Add(this.btnReport);
             this.panel2.Controls.Add(this.btnManageUser);
             this.panel2.Controls.Add(this.btnJobListing);
@@ -144,7 +154,7 @@
             this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogOut.Location = new System.Drawing.Point(0, 528);
+            this.btnLogOut.Location = new System.Drawing.Point(0, 424);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(209, 104);
@@ -152,24 +162,6 @@
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = true;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
-            // 
-            // btnSetting
-            // 
-            this.btnSetting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSetting.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSetting.FlatAppearance.BorderSize = 0;
-            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetting.Font = new System.Drawing.Font("Segoe UI", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
-            this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSetting.Location = new System.Drawing.Point(0, 424);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(209, 104);
-            this.btnSetting.TabIndex = 4;
-            this.btnSetting.Text = "Setting";
-            this.btnSetting.UseVisualStyleBackColor = true;
-            this.btnSetting.Click += new System.EventHandler(this.button_Click);
             // 
             // btnReport
             // 
@@ -187,7 +179,7 @@
             this.btnReport.TabIndex = 3;
             this.btnReport.Text = "Report";
             this.btnReport.UseVisualStyleBackColor = true;
-            this.btnReport.Click += new System.EventHandler(this.button_Click);
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // btnManageUser
             // 
@@ -223,7 +215,7 @@
             this.btnJobListing.TabIndex = 1;
             this.btnJobListing.Text = "Job Listing";
             this.btnJobListing.UseVisualStyleBackColor = true;
-            this.btnJobListing.Click += new System.EventHandler(this.button_Click);
+            this.btnJobListing.Click += new System.EventHandler(this.btnJobListing_Click);
             // 
             // pictureBox2
             // 
@@ -243,6 +235,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(1285, 664);
+            this.Controls.Add(this.pnSubBody);
             this.Controls.Add(this.pnBody);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -266,11 +259,11 @@
         private ReaLTaiizor.Controls.MetroControlBox metroControlBox3;
         private Panel panel2;
         private Button btnLogOut;
-        private Button btnSetting;
         private Button btnReport;
         private Button btnManageUser;
         private Button btnJobListing;
         private PictureBox pictureBox2;
         private ReaLTaiizor.Controls.MetroControlBox metroControlBox4;
+        private Panel pnSubBody;
     }
 }

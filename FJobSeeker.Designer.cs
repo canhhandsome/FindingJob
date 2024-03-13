@@ -232,14 +232,15 @@
             panel3.Visible = false;
             // 
             // pnBody
-            pnBody.BorderStyle = BorderStyle.FixedSingle;
-            pnBody.Dock = DockStyle.Fill;
-            pnBody.Location = new Point(663, 32);
-            pnBody.Margin = new Padding(3, 4, 3, 4);
-            pnBody.Name = "pnBody";
-            pnBody.Size = new Size(622, 632);
-            pnBody.TabIndex = 7;
-            pnBody.TabIndex = 7;
+            // 
+            this.pnBody.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnBody.Location = new System.Drawing.Point(663, 32);
+            this.pnBody.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnBody.Name = "pnBody";
+            this.pnBody.Size = new System.Drawing.Size(622, 632);
+            this.pnBody.TabIndex = 7;
+            this.pnBody.Paint += new System.Windows.Forms.PaintEventHandler(this.pnBody_Paint);
             // 
             // FJobSeeker
             AutoScaleDimensions = new SizeF(8F, 20F);
