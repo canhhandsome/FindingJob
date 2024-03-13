@@ -114,5 +114,9 @@ namespace WinFormProject
             OpenChildForm(fApplicant);
         }
 
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FProfileCompany());
+        }
     }
 }

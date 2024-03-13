@@ -131,6 +131,7 @@
             this.btnSetting.TabIndex = 4;
             this.btnSetting.Text = "Setting";
             this.btnSetting.UseVisualStyleBackColor = true;
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // btnApplicant
             // 
