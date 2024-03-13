@@ -29,91 +29,91 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FCompany));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.metroControlBox3 = new ReaLTaiizor.Controls.MetroControlBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnLogOut = new System.Windows.Forms.Button();
-            this.btnSetting = new System.Windows.Forms.Button();
-            this.btnApplicant = new System.Windows.Forms.Button();
-            this.btnEditJob = new System.Windows.Forms.Button();
-            this.btnPostJob = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pnBody = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            metroControlBox3 = new ReaLTaiizor.Controls.MetroControlBox();
+            panel2 = new Panel();
+            btnLogOut = new Button();
+            btnSetting = new Button();
+            btnApplicant = new Button();
+            btnEditJob = new Button();
+            btnPostJob = new Button();
+            pictureBox2 = new PictureBox();
+            pnBody = new Panel();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.metroControlBox3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1285, 32);
-            this.panel1.TabIndex = 2;
+            panel1.BackColor = Color.White;
+            panel1.Controls.Add(metroControlBox3);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1124, 24);
+            panel1.TabIndex = 2;
             // 
             // metroControlBox3
             // 
-            this.metroControlBox3.CloseHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.metroControlBox3.CloseHoverForeColor = System.Drawing.Color.White;
-            this.metroControlBox3.CloseNormalForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox3.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
-            this.metroControlBox3.DisabledForeColor = System.Drawing.Color.DimGray;
-            this.metroControlBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.metroControlBox3.IsDerivedStyle = true;
-            this.metroControlBox3.Location = new System.Drawing.Point(1185, 0);
-            this.metroControlBox3.MaximizeBox = true;
-            this.metroControlBox3.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.metroControlBox3.MaximizeHoverForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox3.MaximizeNormalForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox3.MinimizeBox = true;
-            this.metroControlBox3.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.metroControlBox3.MinimizeHoverForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox3.MinimizeNormalForeColor = System.Drawing.Color.Gray;
-            this.metroControlBox3.Name = "metroControlBox3";
-            this.metroControlBox3.Size = new System.Drawing.Size(100, 25);
-            this.metroControlBox3.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            this.metroControlBox3.StyleManager = null;
-            this.metroControlBox3.TabIndex = 5;
-            this.metroControlBox3.Text = "metroControlBox3";
-            this.metroControlBox3.ThemeAuthor = "Taiizor";
-            this.metroControlBox3.ThemeName = "MetroLight";
+            metroControlBox3.CloseHoverBackColor = Color.FromArgb(183, 40, 40);
+            metroControlBox3.CloseHoverForeColor = Color.White;
+            metroControlBox3.CloseNormalForeColor = Color.Gray;
+            metroControlBox3.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
+            metroControlBox3.DisabledForeColor = Color.DimGray;
+            metroControlBox3.Dock = DockStyle.Right;
+            metroControlBox3.IsDerivedStyle = true;
+            metroControlBox3.Location = new Point(1024, 0);
+            metroControlBox3.Margin = new Padding(3, 2, 3, 2);
+            metroControlBox3.MaximizeBox = true;
+            metroControlBox3.MaximizeHoverBackColor = Color.FromArgb(238, 238, 238);
+            metroControlBox3.MaximizeHoverForeColor = Color.Gray;
+            metroControlBox3.MaximizeNormalForeColor = Color.Gray;
+            metroControlBox3.MinimizeBox = true;
+            metroControlBox3.MinimizeHoverBackColor = Color.FromArgb(238, 238, 238);
+            metroControlBox3.MinimizeHoverForeColor = Color.Gray;
+            metroControlBox3.MinimizeNormalForeColor = Color.Gray;
+            metroControlBox3.Name = "metroControlBox3";
+            metroControlBox3.Size = new Size(100, 25);
+            metroControlBox3.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            metroControlBox3.StyleManager = null;
+            metroControlBox3.TabIndex = 5;
+            metroControlBox3.Text = "metroControlBox3";
+            metroControlBox3.ThemeAuthor = "Taiizor";
+            metroControlBox3.ThemeName = "MetroLight";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.btnLogOut);
-            this.panel2.Controls.Add(this.btnSetting);
-            this.panel2.Controls.Add(this.btnApplicant);
-            this.panel2.Controls.Add(this.btnEditJob);
-            this.panel2.Controls.Add(this.btnPostJob);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 32);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(218, 632);
-            this.panel2.TabIndex = 3;
+            panel2.BackColor = Color.FromArgb(64, 64, 64);
+            panel2.Controls.Add(btnLogOut);
+            panel2.Controls.Add(btnSetting);
+            panel2.Controls.Add(btnApplicant);
+            panel2.Controls.Add(btnEditJob);
+            panel2.Controls.Add(btnPostJob);
+            panel2.Controls.Add(pictureBox2);
+            panel2.Dock = DockStyle.Left;
+            panel2.Location = new Point(0, 24);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(191, 474);
+            panel2.TabIndex = 3;
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogOut.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLogOut.FlatAppearance.BorderSize = 0;
-            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
-            this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogOut.Location = new System.Drawing.Point(0, 528);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(218, 104);
-            this.btnLogOut.TabIndex = 5;
-            this.btnLogOut.Text = "Log Out";
-            this.btnLogOut.UseVisualStyleBackColor = true;
-            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            btnLogOut.Cursor = Cursors.Hand;
+            btnLogOut.Dock = DockStyle.Top;
+            btnLogOut.FlatAppearance.BorderSize = 0;
+            btnLogOut.FlatStyle = FlatStyle.Flat;
+            btnLogOut.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
+            btnLogOut.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLogOut.Location = new Point(0, 396);
+            btnLogOut.Name = "btnLogOut";
+            btnLogOut.Size = new Size(191, 78);
+            btnLogOut.TabIndex = 5;
+            btnLogOut.Text = "Log Out";
+            btnLogOut.UseVisualStyleBackColor = true;
+            btnLogOut.Click += btnLogOut_Click;
             // 
             // btnSetting
             // 
@@ -135,98 +135,93 @@
             // 
             // btnApplicant
             // 
-            this.btnApplicant.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnApplicant.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnApplicant.FlatAppearance.BorderSize = 0;
-            this.btnApplicant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnApplicant.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnApplicant.Image = ((System.Drawing.Image)(resources.GetObject("btnApplicant.Image")));
-            this.btnApplicant.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnApplicant.Location = new System.Drawing.Point(0, 320);
-            this.btnApplicant.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnApplicant.Name = "btnApplicant";
-            this.btnApplicant.Size = new System.Drawing.Size(218, 104);
-            this.btnApplicant.TabIndex = 3;
-            this.btnApplicant.Text = "Applicants";
-            this.btnApplicant.UseVisualStyleBackColor = true;
-            this.btnApplicant.Click += new System.EventHandler(this.btnApplicant_Click);
+            btnApplicant.Cursor = Cursors.Hand;
+            btnApplicant.Dock = DockStyle.Top;
+            btnApplicant.FlatAppearance.BorderSize = 0;
+            btnApplicant.FlatStyle = FlatStyle.Flat;
+            btnApplicant.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            btnApplicant.Image = (Image)resources.GetObject("btnApplicant.Image");
+            btnApplicant.ImageAlign = ContentAlignment.MiddleLeft;
+            btnApplicant.Location = new Point(0, 240);
+            btnApplicant.Name = "btnApplicant";
+            btnApplicant.Size = new Size(191, 78);
+            btnApplicant.TabIndex = 3;
+            btnApplicant.Text = "Applicants";
+            btnApplicant.UseVisualStyleBackColor = true;
+            btnApplicant.Click += btnApplicant_Click;
             // 
             // btnEditJob
             // 
-            this.btnEditJob.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditJob.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEditJob.FlatAppearance.BorderSize = 0;
-            this.btnEditJob.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditJob.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEditJob.Image = ((System.Drawing.Image)(resources.GetObject("btnEditJob.Image")));
-            this.btnEditJob.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditJob.Location = new System.Drawing.Point(0, 216);
-            this.btnEditJob.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnEditJob.Name = "btnEditJob";
-            this.btnEditJob.Size = new System.Drawing.Size(218, 104);
-            this.btnEditJob.TabIndex = 2;
-            this.btnEditJob.Text = "Edit Jobs";
-            this.btnEditJob.UseVisualStyleBackColor = true;
-            this.btnEditJob.Click += new System.EventHandler(this.btnEditJob_Click);
+            btnEditJob.Cursor = Cursors.Hand;
+            btnEditJob.Dock = DockStyle.Top;
+            btnEditJob.FlatAppearance.BorderSize = 0;
+            btnEditJob.FlatStyle = FlatStyle.Flat;
+            btnEditJob.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            btnEditJob.Image = (Image)resources.GetObject("btnEditJob.Image");
+            btnEditJob.ImageAlign = ContentAlignment.MiddleLeft;
+            btnEditJob.Location = new Point(0, 162);
+            btnEditJob.Name = "btnEditJob";
+            btnEditJob.Size = new Size(191, 78);
+            btnEditJob.TabIndex = 2;
+            btnEditJob.Text = "Edit Jobs";
+            btnEditJob.UseVisualStyleBackColor = true;
+            btnEditJob.Click += btnEditJob_Click;
             // 
             // btnPostJob
             // 
-            this.btnPostJob.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPostJob.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPostJob.FlatAppearance.BorderSize = 0;
-            this.btnPostJob.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPostJob.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnPostJob.Image = ((System.Drawing.Image)(resources.GetObject("btnPostJob.Image")));
-            this.btnPostJob.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPostJob.Location = new System.Drawing.Point(0, 112);
-            this.btnPostJob.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnPostJob.Name = "btnPostJob";
-            this.btnPostJob.Size = new System.Drawing.Size(218, 104);
-            this.btnPostJob.TabIndex = 1;
-            this.btnPostJob.Text = "Post Job";
-            this.btnPostJob.UseVisualStyleBackColor = true;
-            this.btnPostJob.Click += new System.EventHandler(this.btnPostJob_Click);
+            btnPostJob.Cursor = Cursors.Hand;
+            btnPostJob.Dock = DockStyle.Top;
+            btnPostJob.FlatAppearance.BorderSize = 0;
+            btnPostJob.FlatStyle = FlatStyle.Flat;
+            btnPostJob.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            btnPostJob.Image = (Image)resources.GetObject("btnPostJob.Image");
+            btnPostJob.ImageAlign = ContentAlignment.MiddleLeft;
+            btnPostJob.Location = new Point(0, 84);
+            btnPostJob.Name = "btnPostJob";
+            btnPostJob.Size = new Size(191, 78);
+            btnPostJob.TabIndex = 1;
+            btnPostJob.Text = "Post Job";
+            btnPostJob.UseVisualStyleBackColor = true;
+            btnPostJob.Click += btnPostJob_Click;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(218, 112);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            pictureBox2.Dock = DockStyle.Top;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(191, 84);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
             // 
             // pnBody
             // 
-            this.pnBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnBody.Location = new System.Drawing.Point(218, 32);
-            this.pnBody.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pnBody.Name = "pnBody";
-            this.pnBody.Size = new System.Drawing.Size(1067, 632);
-            this.pnBody.TabIndex = 4;
+            pnBody.Dock = DockStyle.Fill;
+            pnBody.Location = new Point(191, 24);
+            pnBody.Name = "pnBody";
+            pnBody.Size = new Size(933, 474);
+            pnBody.TabIndex = 4;
             // 
             // FCompany
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(1285, 664);
-            this.Controls.Add(this.pnBody);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FCompany";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FCompany";
-            this.Load += new System.EventHandler(this.FCompany_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(32, 41, 50);
+            ClientSize = new Size(1124, 498);
+            Controls.Add(pnBody);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "FCompany";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "FCompany";
+            Load += FCompany_Load;
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

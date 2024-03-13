@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FJobSeeker));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.metroControlBox4 = new ReaLTaiizor.Controls.MetroControlBox();
-            this.metroControlBox3 = new ReaLTaiizor.Controls.MetroControlBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnLogOut = new System.Windows.Forms.Button();
-            this.btnSetting = new System.Windows.Forms.Button();
-            this.btnSearchJob = new System.Windows.Forms.Button();
-            this.btnJobAlert = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pnSubBody = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pnBody = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.pnSubBody.SuspendLayout();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            metroControlBox4 = new ReaLTaiizor.Controls.MetroControlBox();
+            metroControlBox3 = new ReaLTaiizor.Controls.MetroControlBox();
+            panel2 = new Panel();
+            btnLogOut = new Button();
+            btnSetting = new Button();
+            btnSearchJob = new Button();
+            btnJobAlert = new Button();
+            pictureBox2 = new PictureBox();
+            pnSubBody = new Panel();
+            panel3 = new Panel();
+            pnBody = new Panel();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            pnSubBody.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 

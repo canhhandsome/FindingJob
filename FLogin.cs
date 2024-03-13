@@ -36,5 +36,26 @@ namespace WinFormProject
             }
             else swremember.Checked = false;
         }
+
+        private void btnsignin_Click(object sender, EventArgs e)
+        {
+            string type = (rdocompany.Checked) ? "company" : "jobseeker";
+            Form form = (rdocompany.Checked) ? new FCompany() : new FJobSeeker();
+            Account account = new Account(txtemail.Text, txtpassword.Text, type);
+
+            if (account.CheckAccount())
+            {
+                MessageBox.Show("Sign in Success!!!");
+                this.Hide();
+                form.Closed += (s, args) => this.Close();
+                form.Show();
+            }
+            else
+            {
+                MessageBox.Show("Fail To Sign In!!!");
+
+            }
+
+        }
     }
 }
