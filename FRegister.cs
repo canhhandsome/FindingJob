@@ -16,46 +16,29 @@ namespace WinFormProject
 
         }
 
-        private void hopeSwitch1_CheckedChanged(object sender, EventArgs e)
+        private void btnagree_CheckedChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void bigLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void hopeButton1_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void labelEdit1_Click(object sender, EventArgs e)
-        {
-            if (materialCheckBox1.Checked)
+            if (!btnagree.Checked)
             {
-                materialCheckBox1.Checked = false;
-            }
-            else
-                materialCheckBox1.Checked = true;
-
-        }
-
-        private void materialCheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (!materialCheckBox1.Checked)
-            {
-                button1.Enabled = false;
-                button1.BackColor = Color.White;
+                btnsignup.Enabled = false;
+                btnsignup.BackColor = Color.White;
             }
             else
             {
-                button1.Enabled = true;
-                button1.BackColor= Color.Transparent;
+                btnsignup.Enabled = true;
+                btnsignup.BackColor = Color.Transparent;
             }
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void lblagree_Click(object sender, EventArgs e)
+        {
+            if (btnagree.Checked)
+            {
+                btnagree.Checked = false;
+            }
+            else
+                btnagree.Checked = true;
+        }
+        private void btnsignin_Click(object sender, EventArgs e)
         {
             this.Hide();
             FLogin fLogin = new FLogin();
