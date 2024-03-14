@@ -76,25 +76,44 @@ namespace WinFormProject
             selectedButton = clickedButton;
         }
 
-        private void OpenChildForm(Form childForm)
+        private void OpenChildForm(Panel panel, Form childForm)
         {
-            if (currentFormChild != null)
-            {
-                currentFormChild.Close();
-            }
             currentFormChild = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            pnBody.Controls.Add(childForm);
-            pnBody.Tag = childForm;
+            panel.Controls.Add(childForm);
+            panel.Tag = childForm;
             childForm.BringToFront();
-            childForm.Show();
+            childForm.Show(); ;
         }
 
         private void btnManageUser_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FManageUser());
+            pnBody.Visible = true;
+            pnSubBody.Visible = false;
+            pnBody.Dock = DockStyle.Fill;
+            pnBody.BringToFront();
+            FManageUser fManageUser = new FManageUser();
+            OpenChildForm(pnBody, fManageUser);
+        }
+
+        private void btnJobListing_Click(object sender, EventArgs e)
+        {
+            pnBody.Controls.Clear();
+            pnBody.Visible = true;
+            pnSubBody.Visible = true;
+            FSupJobSection fSupJobSection = new FSupJobSection(pnBody);
+            OpenChildForm(pnSubBody, fSupJobSection);
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            pnBody.Controls.Clear();
+            pnBody.Visible = true;
+            pnSubBody.Visible = true;
+            FSupReportSection fSupReportSection = new FSupReportSection(pnBody);
+            OpenChildForm(pnSubBody, fSupReportSection);
         }
     }
 }

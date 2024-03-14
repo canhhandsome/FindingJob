@@ -4,7 +4,6 @@ namespace WinFormProject
 {
     public partial class FLogin : Form
     {
-        AccountDAO accountDAO = new AccountDAO();
         public FLogin()
         {
             InitializeComponent();
