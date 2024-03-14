@@ -10,7 +10,7 @@ namespace WinFormProject
     {
         string companytype, companysize;
         CompanyDAO companyDAO = new CompanyDAO();
-
+        List<Job> jobs = new List<Job>();
         public Company(Account account) : base(account)
         {
             
