@@ -16,15 +16,17 @@ namespace WinFormProject
         private Form currentFormChild = new Form();
         private Button selectedButton;
         private JobSeeker jobSeeker = new JobSeeker();
-        InformationDAO informationDAO = new InformationDAO();
+
         public FJobSeeker(Account account)
         {
             InitializeComponent();
+            InformationDAO informationDAO = new InformationDAO();
             jobSeeker = new JobSeeker(informationDAO.FetchCommon(account));
         }
 
         private void FJobSeeker_Load(object sender, EventArgs e)
         {
+
             GetAllButtons(panel2);
         }
         void GetAllButtons(Control control)

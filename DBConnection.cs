@@ -64,5 +64,28 @@ namespace WinFormProject
             }
             return new Information();
         }
+
+        public void FetchHiringJob(string strFetch, List<Job> jobs)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while(reader.Read())
+                {
+                    jobs.Add(new Job(reader["Jobid"].ToString(), reader["JobName"].ToString(), reader["position"].ToString(), reader["salary"].ToString(), Convert.ToDateTime(reader["DatePublish"].ToString())));
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("them that bai" + ex);
+            }
+            finally 
+            { 
+                conn.Close(); 
+            }
+        }
     }
 }
