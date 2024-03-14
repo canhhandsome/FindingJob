@@ -14,11 +14,13 @@ namespace WinFormProject
     public partial class FJobSeeker : Form
     {
         private Form currentFormChild = new Form();
-        private Button selectedButton;
-
-        public FJobSeeker()
+        private Button selectedButton = new Button();
+        JobSeeker jobSeeker = new JobSeeker();
+        InformationDAO informationDAO = new InformationDAO();
+        public FJobSeeker(Account account)
         {
             InitializeComponent();
+            jobSeeker = new JobSeeker(informationDAO.FetchCommon(account));
         }
 
         private void FJobSeeker_Load(object sender, EventArgs e)
@@ -40,7 +42,6 @@ namespace WinFormProject
                 }
             }
         }
-
 
         private void button_Click(object sender, EventArgs e)
         {
@@ -98,8 +99,9 @@ namespace WinFormProject
             pnSubBody.Visible = false;
             pnBody.Dock = DockStyle.Fill;
             pnBody.BringToFront();
-            FProfile fProfile = new FProfile();
+            FProfile fProfile = new FProfile(jobSeeker);
             OpenChildForm(pnBody, fProfile);
+
         }
 
         private void btnLogOut_Click_1(object sender, EventArgs e)

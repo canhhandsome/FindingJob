@@ -4,7 +4,7 @@ namespace WinFormProject
 {
     public partial class FLogin : Form
     {
-        SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
+        AccountDAO accountDAO = new AccountDAO();
         public FLogin()
         {
             InitializeComponent();
@@ -39,34 +39,25 @@ namespace WinFormProject
             else swremember.Checked = false;
         }
 
-        private void btnSignin_Click(object sender, EventArgs e)
+        private void btnsignin_Click(object sender, EventArgs e)
         {
             string type = (rdocompany.Checked) ? "company" : "jobseeker";
-            Form form = (rdocompany.Checked) ? new FCompany() : new FJobSeeker();
-            conn.Open();
-            string strSelect = string.Format("SELECT {0}.Email, Password, type, {0}.Name FROM Account A JOIN {0} ON A.Email = {0}.Email", type);
-            SqlCommand cmdSelect = new SqlCommand(strSelect, conn);
-            SqlDataReader reader = cmdSelect.ExecuteReader();
-            bool ok = false;
-            while (reader.Read())
+            Account account = new Account(txtemail.Text, txtpassword.Text, type);
+            Form form = (rdocompany.Checked) ? new FCompany() : new FJobSeeker(account);
+
+            if (account.CheckAccount())
             {
-                if(type == reader["Type"].ToString().Trim())
-                {
-                    if (txtemail.Text == reader["Email"].ToString().Trim() && txtpassword.Text == reader["Password"].ToString().Trim())
-                    {
-                        MessageBox.Show("Sign in Success!!!");
-                        this.Hide();
-                        form.Closed += (s, args) => this.Close();
-                        form.Show();
-                        ok = true;
-                    }
-                }
+                MessageBox.Show("Sign in Success!!!");
+                this.Hide();
+                form.Closed += (s, args) => this.Close();
+                form.Show();
             }
-            if(!ok) 
-            { 
-                MessageBox.Show("Wrong information!!\nPlease enter again!"); 
+            else
+            {
+                MessageBox.Show("Fail To Sign In!!!");
+
             }
-            conn.Close();
+
         }
     }
 }

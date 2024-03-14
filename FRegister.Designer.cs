@@ -122,7 +122,6 @@
             btnsignup.TabIndex = 7;
             btnsignup.Text = "Sign Up";
             btnsignup.TextAlignment = StringAlignment.Center;
-            btnsignup.Click += btnSignup_Click;
             // 
             // btnsignin
             // 

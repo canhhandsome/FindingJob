@@ -116,7 +116,7 @@
             btnsignin.TabIndex = 1;
             btnsignin.Text = "Sign In";
             btnsignin.TextAlignment = StringAlignment.Center;
-            btnsignin.Click += btnSignin_Click;
+            btnsignin.Click += btnsignin_Click;
             // 
             // bigLabel1
             // 
