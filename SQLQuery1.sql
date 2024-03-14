@@ -1,4 +1,6 @@
-﻿select *
+﻿use FindingJob
+go
+select *
 from JobSeeker
 
 select id, name, email, address, phonenumber
