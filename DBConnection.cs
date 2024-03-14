@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Diagnostics.CodeAnalysis;
+using System.CodeDom;
 namespace WinFormProject
 {
     public class DBConnection
@@ -85,6 +87,29 @@ namespace WinFormProject
             finally 
             { 
                 conn.Close(); 
+            }
+        }
+        
+        public void FetchMultiValueJob(string strFetch, List<string> lists, string type)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    lists.Add(reader[type].ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("them that bai" + ex);
+            }
+            finally
+            {
+                conn.Close();
             }
         }
     }

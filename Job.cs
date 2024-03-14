@@ -39,5 +39,18 @@ namespace WinFormProject
             this.datapublish = datapublish;
         }
 
+        public string ID
+        {  get { return jobid; } }
+
+        public void FetchRequirement(List<string> lists)
+        {
+            requirements = lists;
+        }
+
+        public void FetchDescription(List<string> lists) 
+        {
+            descriptions = lists;
+        }
+
     }
 }
