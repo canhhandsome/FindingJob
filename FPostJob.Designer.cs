@@ -60,6 +60,7 @@
             this.btnPostingJob.TabIndex = 1;
             this.btnPostingJob.Text = "Posting a job";
             this.btnPostingJob.UseVisualStyleBackColor = false;
+            this.btnPostingJob.Click += new System.EventHandler(this.btnPostingJob_Click);
             // 
             // pnBody
             // 

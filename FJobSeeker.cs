@@ -77,15 +77,13 @@ namespace WinFormProject
         {
             pnBody.Controls.Clear();
             pnBody.Visible = true;
-            pnSubBody.Visible = true;
             FSupJobSection fSupJobSection = new FSupJobSection(pnBody);
-            OpenChildForm(pnSubBody, fSupJobSection);
+            OpenChildForm(pnBody, fSupJobSection);
         }
 
         private void btnSearchJob_Click(object sender, EventArgs e)
         {
             pnBody.Visible = true;
-            pnSubBody.Visible = false;
             pnBody.Dock = DockStyle.Fill;
             pnBody.BringToFront();
             FSearchJob fSearchJob = new FSearchJob();
@@ -95,7 +93,6 @@ namespace WinFormProject
         private void btnSetting_Click(object sender, EventArgs e)
         {
             pnBody.Visible = true;
-            pnSubBody.Visible = false;
             pnBody.Dock = DockStyle.Fill;
             pnBody.BringToFront();
             FProfile fProfile = new FProfile();

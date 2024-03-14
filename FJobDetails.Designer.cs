@@ -39,9 +39,15 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -165,38 +171,79 @@
             this.label11.TabIndex = 23;
             this.label11.Text = "Job Description:";
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label12.Location = new System.Drawing.Point(170, 220);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(152, 28);
-            this.label12.TabIndex = 24;
-            this.label12.Text = "Job Description:";
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label13.Location = new System.Drawing.Point(12, 260);
+            this.label13.Location = new System.Drawing.Point(12, 390);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(163, 28);
             this.label13.TabIndex = 25;
             this.label13.Text = "Job Requirement:";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.flowLayoutPanel1.Controls.Add(this.label12);
+            this.flowLayoutPanel1.Controls.Add(this.label14);
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(15, 254);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(623, 133);
+            this.flowLayoutPanel1.TabIndex = 26;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(3, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(137, 23);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "job description 1";
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.flowLayoutPanel2.Controls.Add(this.label15);
+            this.flowLayoutPanel2.Controls.Add(this.label16);
+            this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(16, 421);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(623, 133);
+            this.flowLayoutPanel2.TabIndex = 27;
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label14.Location = new System.Drawing.Point(181, 260);
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(3, 23);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(163, 28);
-            this.label14.TabIndex = 26;
-            this.label14.Text = "Job Requirement:";
+            this.label14.Size = new System.Drawing.Size(137, 23);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "job description 2";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(3, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(118, 23);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "requirement 1";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(3, 23);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(118, 23);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "requirement 2";
             // 
             // FJobDetails
             // 
@@ -204,9 +251,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(664, 580);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.flowLayoutPanel2);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -221,6 +268,10 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FJobDetails";
             this.Text = "FJobDetails";
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,8 +290,12 @@
         private Label label9;
         private Label label10;
         private Label label11;
-        private Label label12;
         private Label label13;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Label label12;
+        private FlowLayoutPanel flowLayoutPanel2;
         private Label label14;
+        private Label label15;
+        private Label label16;
     }
 }

@@ -18,12 +18,12 @@ namespace WinFormProject
         {
             InitializeComponent();
             this.panel = panel;
-            foreach(Control control in this.Controls)
+            foreach (Control control in panel1.Controls)
             {
-                if(control is Panel)
+                if (control is UCInformation)
                 {
-                    Panel pancleel2 = (Panel)control;
-                    panel2.Click += panel1_Click;
+                    UCInformation userControl = (UCInformation)control;
+                    userControl.panel1.Click += panel1_Click;
                 }
             }
         }

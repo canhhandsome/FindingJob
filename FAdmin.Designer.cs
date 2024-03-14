@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FAdmin));
             this.pnBody = new System.Windows.Forms.Panel();
-            this.pnSubBody = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroControlBox4 = new ReaLTaiizor.Controls.MetroControlBox();
             this.metroControlBox3 = new ReaLTaiizor.Controls.MetroControlBox();
@@ -48,22 +47,12 @@
             // pnBody
             // 
             this.pnBody.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnBody.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnBody.Location = new System.Drawing.Point(656, 24);
+            this.pnBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnBody.Location = new System.Drawing.Point(209, 24);
             this.pnBody.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnBody.Name = "pnBody";
-            this.pnBody.Size = new System.Drawing.Size(629, 640);
+            this.pnBody.Size = new System.Drawing.Size(1076, 640);
             this.pnBody.TabIndex = 7;
-            // 
-            // pnSubBody
-            // 
-            this.pnSubBody.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnSubBody.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnSubBody.Location = new System.Drawing.Point(209, 24);
-            this.pnSubBody.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pnSubBody.Name = "pnSubBody";
-            this.pnSubBody.Size = new System.Drawing.Size(447, 640);
-            this.pnSubBody.TabIndex = 8;
             // 
             // panel1
             // 
@@ -235,7 +224,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(1285, 664);
-            this.Controls.Add(this.pnSubBody);
             this.Controls.Add(this.pnBody);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -264,6 +252,5 @@
         private Button btnJobListing;
         private PictureBox pictureBox2;
         private ReaLTaiizor.Controls.MetroControlBox metroControlBox4;
-        private Panel pnSubBody;
     }
 }

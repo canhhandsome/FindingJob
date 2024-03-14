@@ -106,7 +106,7 @@
             this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogOut.Location = new System.Drawing.Point(0, 563);
+            this.btnLogOut.Location = new System.Drawing.Point(0, 528);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(218, 104);
@@ -127,7 +127,7 @@
             this.btnSetting.Location = new System.Drawing.Point(0, 424);
             this.btnSetting.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(218, 139);
+            this.btnSetting.Size = new System.Drawing.Size(218, 104);
             this.btnSetting.TabIndex = 4;
             this.btnSetting.Text = "Setting";
             this.btnSetting.UseVisualStyleBackColor = true;

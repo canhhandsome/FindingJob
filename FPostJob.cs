@@ -16,31 +16,42 @@ namespace WinFormProject
         private Form currentFormChild;
         private int locaX = 62;
         private int locaY = 0;
+        private List<string> jobNames = new List<string>();
+        //public string JobName { get; set; }
+        
+
         public FPostJob()
         {
             InitializeComponent();
+
+            jobNames.Add("Job 1");
+            jobNames.Add("Job 2");
+            jobNames.Add("Job 3");
         }
 
         private void PostJob_Load(object sender, EventArgs e)
         {
         }
 
-        private void AddJob()
-        {
-            Panel panel = new Panel();
-            panel.Size = new Size(812, 80);
-            panel.BorderStyle = BorderStyle.Fixed3D;
-            panel.Visible = true;
-            locaY += 100;
-            panel.Location = new Point(locaX, locaY);
-            Label lbl = new Label();
-            panel.Controls.Add(lbl);
-            lbl.Visible = true;
-            lbl.Location = new Point(17, 13);
-            lbl.Text = "Job Description";
-            panel.BringToFront();
-            Controls.Add(panel);
-        }
+        //public void AddJob()
+        //{
+        //    Panel panel = new Panel();
+        //    panel.Size = new Size(812, 80);
+        //    panel.BorderStyle = BorderStyle.Fixed3D;
+        //    panel.Visible = true;
+        //    locaY += 100;
+        //    panel.Location = new Point(locaX, locaY);
+        //    Label lbl = new Label();
+        //    lbl.Visible = true;
+        //    lbl.Location = new Point(17, 13);
+        //    lbl.Text = JobName;
+        //    panel.Controls.Add(lbl);
+        //    panel.BringToFront();
+        //    pnBody.Controls.Add(panel);
+        //    // Make sure the form is brought to the front and visible
+        //    this.BringToFront();
+        //    this.Visible = true;
+        //}
 
         private void OpenChildForm(Form childForm)
         {
@@ -75,5 +86,30 @@ namespace WinFormProject
         {
 
         }
+        public void AddJob(string jobName)
+        {
+            jobNames.Add(jobName);
+            DisplayJobNames();
+        }
+
+        public void DisplayJobNames()
+        {
+            foreach (string name in jobNames)
+            {
+                Panel panel = new Panel();
+                panel.Size = new Size(812, 80);
+                panel.BorderStyle = BorderStyle.Fixed3D;
+                panel.Visible = true;
+                locaY += 100;
+                panel.Location = new Point(locaX, locaY);
+                Label lbl = new Label();
+                lbl.Visible = true;
+                lbl.Location = new Point(17, 13);
+                lbl.Text = name;
+                panel.Controls.Add(lbl);
+                pnBody.Controls.Add(panel);
+            }
+        }
     }
 }
+

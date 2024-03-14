@@ -91,7 +91,6 @@ namespace WinFormProject
         private void btnManageUser_Click(object sender, EventArgs e)
         {
             pnBody.Visible = true;
-            pnSubBody.Visible = false;
             pnBody.Dock = DockStyle.Fill;
             pnBody.BringToFront();
             FManageUser fManageUser = new FManageUser();
@@ -102,18 +101,16 @@ namespace WinFormProject
         {
             pnBody.Controls.Clear();
             pnBody.Visible = true;
-            pnSubBody.Visible = true;
             FSupJobSection fSupJobSection = new FSupJobSection(pnBody);
-            OpenChildForm(pnSubBody, fSupJobSection);
+            OpenChildForm(pnBody, fSupJobSection);
         }
 
         private void btnReport_Click(object sender, EventArgs e)
         {
             pnBody.Controls.Clear();
             pnBody.Visible = true;
-            pnSubBody.Visible = true;
             FSupReportSection fSupReportSection = new FSupReportSection(pnBody);
-            OpenChildForm(pnSubBody, fSupReportSection);
+            OpenChildForm(pnBody, fSupReportSection);
         }
     }
 }

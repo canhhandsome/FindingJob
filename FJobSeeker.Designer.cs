@@ -38,13 +38,10 @@
             this.btnSearchJob = new System.Windows.Forms.Button();
             this.btnJobAlert = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pnSubBody = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.pnBody = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.pnSubBody.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -211,34 +208,14 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // pnSubBody
-            // 
-            this.pnSubBody.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnSubBody.Controls.Add(this.panel3);
-            this.pnSubBody.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnSubBody.Location = new System.Drawing.Point(218, 32);
-            this.pnSubBody.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pnSubBody.Name = "pnSubBody";
-            this.pnSubBody.Size = new System.Drawing.Size(445, 632);
-            this.pnSubBody.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(397, 643);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(229, 133);
-            this.panel3.TabIndex = 0;
-            this.panel3.Visible = false;
-            // 
             // pnBody
             // 
             this.pnBody.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnBody.Location = new System.Drawing.Point(663, 32);
+            this.pnBody.Location = new System.Drawing.Point(218, 32);
             this.pnBody.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnBody.Name = "pnBody";
-            this.pnBody.Size = new System.Drawing.Size(622, 632);
+            this.pnBody.Size = new System.Drawing.Size(1067, 632);
             this.pnBody.TabIndex = 7;
             this.pnBody.Paint += new System.Windows.Forms.PaintEventHandler(this.pnBody_Paint);
             // 
@@ -249,7 +226,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(1285, 664);
             this.Controls.Add(this.pnBody);
-            this.Controls.Add(this.pnSubBody);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -259,7 +235,6 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.pnSubBody.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -276,8 +251,6 @@
         private Button btnJobAlert;
         private PictureBox pictureBox2;
         private ReaLTaiizor.Controls.MetroControlBox metroControlBox4;
-        private Panel pnSubBody;
         private Panel pnBody;
-        private Panel panel3;
     }
 }
