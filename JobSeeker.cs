@@ -11,7 +11,7 @@ namespace WinFormProject
         Information information = new Information();
         private DateTime bdate = new DateTime();
         private string nationalid = string.Empty;
-
+        private string gender = string.Empty;
 
         public JobSeeker()
         {
@@ -21,11 +21,12 @@ namespace WinFormProject
         {
             this.information = information;    
         }
-        public JobSeeker (Information information, DateTime bdate, string nationalid)
+        public JobSeeker (Information information, DateTime bdate, string nationalid, string gender)
         {
             this.information = information;
             this.bdate = bdate;
             this.nationalid = nationalid;
+            this.gender = gender;
         }
 
         public Information INFO 
