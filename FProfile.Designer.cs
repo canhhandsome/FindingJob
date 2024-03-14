@@ -68,8 +68,7 @@ namespace WinFormProject
             txtboxFullName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtboxFullName.ForeColor = Color.FromArgb(48, 49, 51);
             txtboxFullName.Hint = "Enter Fullname";
-            txtboxFullName.Location = new Point(33, 60);
-            txtboxFullName.Margin = new Padding(3, 4, 3, 4);
+            txtboxFullName.Location = new Point(29, 45);
             txtboxFullName.MaxLength = 32767;
             txtboxFullName.Multiline = false;
             txtboxFullName.Name = "txtboxFullName";
@@ -78,7 +77,7 @@ namespace WinFormProject
             txtboxFullName.SelectedText = "";
             txtboxFullName.SelectionLength = 0;
             txtboxFullName.SelectionStart = 0;
-            txtboxFullName.Size = new Size(298, 43);
+            txtboxFullName.Size = new Size(261, 38);
             txtboxFullName.TabIndex = 3;
             txtboxFullName.TabStop = false;
             txtboxFullName.UseSystemPasswordChar = false;
@@ -92,8 +91,7 @@ namespace WinFormProject
             txtboxPhoneNumber.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtboxPhoneNumber.ForeColor = Color.FromArgb(48, 49, 51);
             txtboxPhoneNumber.Hint = "Enter Phone Number";
-            txtboxPhoneNumber.Location = new Point(33, 164);
-            txtboxPhoneNumber.Margin = new Padding(3, 4, 3, 4);
+            txtboxPhoneNumber.Location = new Point(29, 123);
             txtboxPhoneNumber.MaxLength = 32767;
             txtboxPhoneNumber.Multiline = false;
             txtboxPhoneNumber.Name = "txtboxPhoneNumber";
@@ -102,7 +100,7 @@ namespace WinFormProject
             txtboxPhoneNumber.SelectedText = "";
             txtboxPhoneNumber.SelectionLength = 0;
             txtboxPhoneNumber.SelectionStart = 0;
-            txtboxPhoneNumber.Size = new Size(298, 43);
+            txtboxPhoneNumber.Size = new Size(261, 38);
             txtboxPhoneNumber.TabIndex = 4;
             txtboxPhoneNumber.TabStop = false;
             txtboxPhoneNumber.UseSystemPasswordChar = false;
@@ -116,8 +114,7 @@ namespace WinFormProject
             txtboxEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtboxEmail.ForeColor = Color.FromArgb(48, 49, 51);
             txtboxEmail.Hint = "Enter Email";
-            txtboxEmail.Location = new Point(33, 271);
-            txtboxEmail.Margin = new Padding(3, 4, 3, 4);
+            txtboxEmail.Location = new Point(29, 203);
             txtboxEmail.MaxLength = 32767;
             txtboxEmail.Multiline = false;
             txtboxEmail.Name = "txtboxEmail";
@@ -126,7 +123,7 @@ namespace WinFormProject
             txtboxEmail.SelectedText = "";
             txtboxEmail.SelectionLength = 0;
             txtboxEmail.SelectionStart = 0;
-            txtboxEmail.Size = new Size(298, 43);
+            txtboxEmail.Size = new Size(261, 38);
             txtboxEmail.TabIndex = 5;
             txtboxEmail.TabStop = false;
             txtboxEmail.UseSystemPasswordChar = false;
@@ -140,8 +137,7 @@ namespace WinFormProject
             txtboxAddress.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtboxAddress.ForeColor = Color.FromArgb(48, 49, 51);
             txtboxAddress.Hint = "Enter Address";
-            txtboxAddress.Location = new Point(415, 60);
-            txtboxAddress.Margin = new Padding(3, 4, 3, 4);
+            txtboxAddress.Location = new Point(363, 45);
             txtboxAddress.MaxLength = 32767;
             txtboxAddress.Multiline = false;
             txtboxAddress.Name = "txtboxAddress";
@@ -150,17 +146,16 @@ namespace WinFormProject
             txtboxAddress.SelectedText = "";
             txtboxAddress.SelectionLength = 0;
             txtboxAddress.SelectionStart = 0;
-            txtboxAddress.Size = new Size(298, 43);
+            txtboxAddress.Size = new Size(261, 38);
             txtboxAddress.TabIndex = 5;
             txtboxAddress.TabStop = false;
             txtboxAddress.UseSystemPasswordChar = false;
             // 
             // dtpkBirthDate
             // 
-            dtpkBirthDate.Location = new Point(415, 371);
-            dtpkBirthDate.Margin = new Padding(3, 4, 3, 4);
+            dtpkBirthDate.Location = new Point(363, 278);
             dtpkBirthDate.Name = "dtpkBirthDate";
-            dtpkBirthDate.Size = new Size(226, 27);
+            dtpkBirthDate.Size = new Size(198, 23);
             dtpkBirthDate.TabIndex = 6;
             // 
             // hopeRadioButton1
@@ -175,10 +170,9 @@ namespace WinFormProject
             hopeRadioButton1.EnabledUncheckedColor = Color.FromArgb(156, 158, 161);
             hopeRadioButton1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             hopeRadioButton1.ForeColor = SystemColors.Desktop;
-            hopeRadioButton1.Location = new Point(33, 375);
-            hopeRadioButton1.Margin = new Padding(3, 4, 3, 4);
+            hopeRadioButton1.Location = new Point(29, 281);
             hopeRadioButton1.Name = "hopeRadioButton1";
-            hopeRadioButton1.Size = new Size(80, 20);
+            hopeRadioButton1.Size = new Size(69, 20);
             hopeRadioButton1.TabIndex = 7;
             hopeRadioButton1.TabStop = true;
             hopeRadioButton1.Text = "Male";
@@ -196,10 +190,9 @@ namespace WinFormProject
             hopeRadioButton2.EnabledUncheckedColor = Color.FromArgb(156, 158, 161);
             hopeRadioButton2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             hopeRadioButton2.ForeColor = SystemColors.ControlText;
-            hopeRadioButton2.Location = new Point(176, 375);
-            hopeRadioButton2.Margin = new Padding(3, 4, 3, 4);
+            hopeRadioButton2.Location = new Point(154, 281);
             hopeRadioButton2.Name = "hopeRadioButton2";
-            hopeRadioButton2.Size = new Size(99, 20);
+            hopeRadioButton2.Size = new Size(85, 20);
             hopeRadioButton2.TabIndex = 7;
             hopeRadioButton2.TabStop = true;
             hopeRadioButton2.Text = "Female";
@@ -214,8 +207,7 @@ namespace WinFormProject
             txtboxCitizenId.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtboxCitizenId.ForeColor = Color.FromArgb(48, 49, 51);
             txtboxCitizenId.Hint = "Enter Citizen identification";
-            txtboxCitizenId.Location = new Point(415, 164);
-            txtboxCitizenId.Margin = new Padding(3, 4, 3, 4);
+            txtboxCitizenId.Location = new Point(363, 123);
             txtboxCitizenId.MaxLength = 32767;
             txtboxCitizenId.Multiline = false;
             txtboxCitizenId.Name = "txtboxCitizenId";
@@ -224,7 +216,7 @@ namespace WinFormProject
             txtboxCitizenId.SelectedText = "";
             txtboxCitizenId.SelectionLength = 0;
             txtboxCitizenId.SelectionStart = 0;
-            txtboxCitizenId.Size = new Size(298, 43);
+            txtboxCitizenId.Size = new Size(261, 38);
             txtboxCitizenId.TabIndex = 5;
             txtboxCitizenId.TabStop = false;
             txtboxCitizenId.UseSystemPasswordChar = false;
@@ -233,10 +225,9 @@ namespace WinFormProject
             // 
             pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(832, 28);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(728, 21);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(171, 200);
+            pictureBox1.Size = new Size(150, 150);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
@@ -248,8 +239,7 @@ namespace WinFormProject
             txtboxDetails.ForeColor = Color.FromArgb(48, 49, 51);
             txtboxDetails.Hint = "Details";
             txtboxDetails.HoverBorderColor = Color.FromArgb(64, 158, 255);
-            txtboxDetails.Location = new Point(801, 252);
-            txtboxDetails.Margin = new Padding(3, 4, 3, 4);
+            txtboxDetails.Location = new Point(701, 189);
             txtboxDetails.MaxLength = 32767;
             txtboxDetails.Multiline = true;
             txtboxDetails.Name = "txtboxDetails";
@@ -258,7 +248,7 @@ namespace WinFormProject
             txtboxDetails.SelectedText = "";
             txtboxDetails.SelectionLength = 0;
             txtboxDetails.SelectionStart = 0;
-            txtboxDetails.Size = new Size(229, 149);
+            txtboxDetails.Size = new Size(200, 112);
             txtboxDetails.TabIndex = 9;
             txtboxDetails.TabStop = false;
             txtboxDetails.Text = "Details";
@@ -274,10 +264,9 @@ namespace WinFormProject
             button1.FlatStyle = FlatStyle.System;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(101, 491);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Location = new Point(88, 368);
             button1.Name = "button1";
-            button1.Size = new Size(126, 49);
+            button1.Size = new Size(110, 37);
             button1.TabIndex = 10;
             button1.Text = "CV";
             button1.UseVisualStyleBackColor = false;
@@ -291,8 +280,7 @@ namespace WinFormProject
             txtboxPersonalLink.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtboxPersonalLink.ForeColor = Color.FromArgb(48, 49, 51);
             txtboxPersonalLink.Hint = "Enter Personal link";
-            txtboxPersonalLink.Location = new Point(415, 271);
-            txtboxPersonalLink.Margin = new Padding(3, 4, 3, 4);
+            txtboxPersonalLink.Location = new Point(363, 203);
             txtboxPersonalLink.MaxLength = 32767;
             txtboxPersonalLink.Multiline = false;
             txtboxPersonalLink.Name = "txtboxPersonalLink";
@@ -301,7 +289,7 @@ namespace WinFormProject
             txtboxPersonalLink.SelectedText = "";
             txtboxPersonalLink.SelectionLength = 0;
             txtboxPersonalLink.SelectionStart = 0;
-            txtboxPersonalLink.Size = new Size(298, 43);
+            txtboxPersonalLink.Size = new Size(261, 38);
             txtboxPersonalLink.TabIndex = 5;
             txtboxPersonalLink.TabStop = false;
             txtboxPersonalLink.UseSystemPasswordChar = false;
@@ -316,10 +304,9 @@ namespace WinFormProject
             button2.FlatStyle = FlatStyle.System;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.ControlLightLight;
-            button2.Location = new Point(246, 491);
-            button2.Margin = new Padding(3, 4, 3, 4);
+            button2.Location = new Point(215, 368);
             button2.Name = "button2";
-            button2.Size = new Size(126, 49);
+            button2.Size = new Size(110, 37);
             button2.TabIndex = 10;
             button2.Text = "Project";
             button2.UseVisualStyleBackColor = false;
@@ -334,10 +321,9 @@ namespace WinFormProject
             button3.FlatStyle = FlatStyle.System;
             button3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button3.ForeColor = SystemColors.ControlLightLight;
-            button3.Location = new Point(389, 491);
-            button3.Margin = new Padding(3, 4, 3, 4);
+            button3.Location = new Point(340, 368);
             button3.Name = "button3";
-            button3.Size = new Size(126, 49);
+            button3.Size = new Size(110, 37);
             button3.TabIndex = 10;
             button3.Text = "Certificate";
             button3.UseVisualStyleBackColor = false;
@@ -352,10 +338,9 @@ namespace WinFormProject
             button4.FlatStyle = FlatStyle.System;
             button4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button4.ForeColor = SystemColors.ControlLightLight;
-            button4.Location = new Point(533, 491);
-            button4.Margin = new Padding(3, 4, 3, 4);
+            button4.Location = new Point(466, 368);
             button4.Name = "button4";
-            button4.Size = new Size(126, 49);
+            button4.Size = new Size(110, 37);
             button4.TabIndex = 10;
             button4.Text = "Reward";
             button4.UseVisualStyleBackColor = false;
@@ -370,10 +355,9 @@ namespace WinFormProject
             button5.FlatStyle = FlatStyle.System;
             button5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button5.ForeColor = SystemColors.ControlLightLight;
-            button5.Location = new Point(677, 491);
-            button5.Margin = new Padding(3, 4, 3, 4);
+            button5.Location = new Point(592, 368);
             button5.Name = "button5";
-            button5.Size = new Size(126, 49);
+            button5.Size = new Size(110, 37);
             button5.TabIndex = 10;
             button5.Text = "Edit";
             button5.UseVisualStyleBackColor = false;
@@ -383,9 +367,9 @@ namespace WinFormProject
             lblFullName.AutoSize = true;
             lblFullName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblFullName.ForeColor = SystemColors.ControlText;
-            lblFullName.Location = new Point(33, 28);
+            lblFullName.Location = new Point(29, 21);
             lblFullName.Name = "lblFullName";
-            lblFullName.Size = new Size(91, 28);
+            lblFullName.Size = new Size(74, 21);
             lblFullName.TabIndex = 11;
             lblFullName.Text = "Fullname";
             lblFullName.Click += lblFullName_Click;
@@ -395,9 +379,9 @@ namespace WinFormProject
             lblAddress.AutoSize = true;
             lblAddress.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblAddress.ForeColor = SystemColors.ControlText;
-            lblAddress.Location = new Point(415, 28);
+            lblAddress.Location = new Point(363, 21);
             lblAddress.Name = "lblAddress";
-            lblAddress.Size = new Size(82, 28);
+            lblAddress.Size = new Size(66, 21);
             lblAddress.TabIndex = 11;
             lblAddress.Text = "Address";
             lblAddress.Click += lblAddress_Click;
@@ -407,9 +391,9 @@ namespace WinFormProject
             lblCitizenId.AutoSize = true;
             lblCitizenId.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblCitizenId.ForeColor = SystemColors.ControlText;
-            lblCitizenId.Location = new Point(415, 132);
+            lblCitizenId.Location = new Point(363, 99);
             lblCitizenId.Name = "lblCitizenId";
-            lblCitizenId.Size = new Size(95, 28);
+            lblCitizenId.Size = new Size(76, 21);
             lblCitizenId.TabIndex = 11;
             lblCitizenId.Text = "Citizen ID";
             lblCitizenId.Click += lblCitizenId_Click;
@@ -419,9 +403,9 @@ namespace WinFormProject
             lblPhoneNumber.AutoSize = true;
             lblPhoneNumber.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblPhoneNumber.ForeColor = SystemColors.ControlText;
-            lblPhoneNumber.Location = new Point(33, 132);
+            lblPhoneNumber.Location = new Point(29, 99);
             lblPhoneNumber.Name = "lblPhoneNumber";
-            lblPhoneNumber.Size = new Size(144, 28);
+            lblPhoneNumber.Size = new Size(116, 21);
             lblPhoneNumber.TabIndex = 11;
             lblPhoneNumber.Text = "Phone Number";
             lblPhoneNumber.Click += lblPhoneNumber_Click;
@@ -431,9 +415,9 @@ namespace WinFormProject
             lblEmail.AutoSize = true;
             lblEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblEmail.ForeColor = SystemColors.ControlText;
-            lblEmail.Location = new Point(33, 239);
+            lblEmail.Location = new Point(29, 179);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(59, 28);
+            lblEmail.Size = new Size(48, 21);
             lblEmail.TabIndex = 11;
             lblEmail.Text = "Email";
             lblEmail.Click += lblEmail_Click;
@@ -443,9 +427,9 @@ namespace WinFormProject
             lblPersonalLink.AutoSize = true;
             lblPersonalLink.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblPersonalLink.ForeColor = SystemColors.ControlText;
-            lblPersonalLink.Location = new Point(415, 239);
+            lblPersonalLink.Location = new Point(363, 179);
             lblPersonalLink.Name = "lblPersonalLink";
-            lblPersonalLink.Size = new Size(125, 28);
+            lblPersonalLink.Size = new Size(102, 21);
             lblPersonalLink.TabIndex = 11;
             lblPersonalLink.Text = "Personal Link";
             lblPersonalLink.Click += lblPersonalLink_Click;
@@ -455,9 +439,9 @@ namespace WinFormProject
             lblDoB.AutoSize = true;
             lblDoB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblDoB.ForeColor = SystemColors.ControlText;
-            lblDoB.Location = new Point(415, 337);
+            lblDoB.Location = new Point(363, 253);
             lblDoB.Name = "lblDoB";
-            lblDoB.Size = new Size(122, 28);
+            lblDoB.Size = new Size(97, 21);
             lblDoB.TabIndex = 11;
             lblDoB.Text = "Date of Birth";
             lblDoB.Click += lblDoB_Click;
@@ -467,9 +451,9 @@ namespace WinFormProject
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label8.ForeColor = SystemColors.ControlText;
-            label8.Location = new Point(33, 337);
+            label8.Location = new Point(29, 253);
             label8.Name = "label8";
-            label8.Size = new Size(76, 28);
+            label8.Size = new Size(61, 21);
             label8.TabIndex = 11;
             label8.Text = "Gender";
             // 
@@ -482,20 +466,19 @@ namespace WinFormProject
             button6.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
             button6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button6.ForeColor = SystemColors.Control;
-            button6.Location = new Point(821, 491);
-            button6.Margin = new Padding(3, 4, 3, 4);
+            button6.Location = new Point(718, 368);
             button6.Name = "button6";
-            button6.Size = new Size(126, 49);
+            button6.Size = new Size(110, 37);
             button6.TabIndex = 10;
             button6.Text = "Cancel";
             button6.UseVisualStyleBackColor = false;
             // 
             // FProfile
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightGray;
-            ClientSize = new Size(1057, 580);
+            ClientSize = new Size(925, 435);
             Controls.Add(label8);
             Controls.Add(lblDoB);
             Controls.Add(lblPersonalLink);
@@ -521,9 +504,9 @@ namespace WinFormProject
             Controls.Add(txtboxEmail);
             Controls.Add(txtboxPhoneNumber);
             Controls.Add(txtboxFullName);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FProfile";
             Text = "FProfile";
+            Load += FProfile_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

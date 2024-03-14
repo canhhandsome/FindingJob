@@ -40,8 +40,8 @@
             foxLabel1 = new ReaLTaiizor.Controls.FoxLabel();
             foxLabel2 = new ReaLTaiizor.Controls.FoxLabel();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -139,9 +139,8 @@
             btnsignin.TabIndex = 8;
             btnsignin.Text = "Sign In";
             btnsignin.TextAlignment = StringAlignment.Center;
-            btnsignin.Click += btnsignin_Click;
             // 
-            // pictureBox2
+            // ptbSologan
             // 
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
@@ -153,7 +152,7 @@
             pictureBox2.TabIndex = 10;
             pictureBox2.TabStop = false;
             // 
-            // bigLabel1
+            // lblWelcome
             // 
             bigLabel1.AutoSize = true;
             bigLabel1.BackColor = Color.Transparent;
@@ -165,7 +164,7 @@
             bigLabel1.TabIndex = 12;
             bigLabel1.Text = "Welcome to";
             // 
-            // pictureBox1
+            // ptbLogo
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
@@ -176,7 +175,7 @@
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;
             // 
-            // foxLabel1
+            // lblOr
             // 
             foxLabel1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             foxLabel1.ForeColor = Color.White;
@@ -187,7 +186,7 @@
             foxLabel1.TabIndex = 14;
             foxLabel1.Text = "OR";
             // 
-            // foxLabel2
+            // lblForget
             // 
             foxLabel2.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             foxLabel2.ForeColor = Color.White;
@@ -219,8 +218,8 @@
             StartPosition = FormStartPosition.CenterScreen;
             Load += FFPassword_Load;
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

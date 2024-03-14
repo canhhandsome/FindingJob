@@ -107,7 +107,7 @@
             btnLogOut.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
             btnLogOut.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLogOut.Location = new Point(0, 396);
+            btnLogOut.Location = new Point(0, 422);
             btnLogOut.Name = "btnLogOut";
             btnLogOut.Size = new Size(191, 78);
             btnLogOut.TabIndex = 5;
@@ -117,21 +117,21 @@
             // 
             // btnSetting
             // 
-            this.btnSetting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSetting.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSetting.FlatAppearance.BorderSize = 0;
-            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetting.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
-            this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSetting.Location = new System.Drawing.Point(0, 424);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(218, 104);
-            this.btnSetting.TabIndex = 4;
-            this.btnSetting.Text = "Setting";
-            this.btnSetting.UseVisualStyleBackColor = true;
-            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
+            btnSetting.Cursor = Cursors.Hand;
+            btnSetting.Dock = DockStyle.Top;
+            btnSetting.FlatAppearance.BorderSize = 0;
+            btnSetting.FlatStyle = FlatStyle.Flat;
+            btnSetting.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSetting.Image = (Image)resources.GetObject("btnSetting.Image");
+            btnSetting.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSetting.Location = new Point(0, 318);
+            btnSetting.Margin = new Padding(3, 4, 3, 4);
+            btnSetting.Name = "btnSetting";
+            btnSetting.Size = new Size(191, 104);
+            btnSetting.TabIndex = 4;
+            btnSetting.Text = "Setting";
+            btnSetting.UseVisualStyleBackColor = true;
+            btnSetting.Click += btnSetting_Click;
             // 
             // btnApplicant
             // 

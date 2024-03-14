@@ -15,10 +15,12 @@ namespace WinFormProject
     {
         private Form currentFormChild = new Form();
         private Button selectedButton;
-
-        public FJobSeeker()
+        private JobSeeker jobSeeker = new JobSeeker();
+        InformationDAO informationDAO = new InformationDAO();
+        public FJobSeeker(Account account)
         {
             InitializeComponent();
+            jobSeeker = new JobSeeker(informationDAO.FetchCommon(account));
         }
 
         private void FJobSeeker_Load(object sender, EventArgs e)
@@ -98,10 +100,21 @@ namespace WinFormProject
             pnSubBody.Visible = false;
             pnBody.Dock = DockStyle.Fill;
             pnBody.BringToFront();
-            FProfile fProfile = new FProfile();
+            FProfile fProfile = new FProfile(jobSeeker);
             OpenChildForm(pnBody, fProfile);
         }
+        /*
+            db "idjob", rq1 = "you are handsome"
+            
+            list<string> Requirement;
+            
+            new rq = "you are not handsome"
+                
+            Update dbo.J_Requirement.rq1 = rq where idrq = ... and rq1 = rq1
 
+            foreach(list)
+                rq1 == list[...] -> rq1 = new rq;
+         */
         private void btnLogOut_Click_1(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Are you sure to log out?", "Alert!!!", MessageBoxButtons.YesNo);

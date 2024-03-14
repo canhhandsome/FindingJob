@@ -1,10 +1,12 @@
 using ReaLTaiizor.Extension;
 using ReaLTaiizor.Helper;
+using System.Data.SqlClient;
 
 namespace WinFormProject
 {
     public partial class FRegister : Form
     {
+        SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
         public FRegister()
         {
             InitializeComponent();
@@ -45,5 +47,7 @@ namespace WinFormProject
             fLogin.Closed += (s, args) => this.Close();
             fLogin.Show();
         }
+
+        
     }
 }

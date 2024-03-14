@@ -32,6 +32,8 @@ namespace WinFormProject
         {
             countRequir++;
             Label label = new Label();
+            UserControl userControl = new UserControl();
+
             ReaLTaiizor.Controls.HopeTextBox hopeTextBox = new ReaLTaiizor.Controls.HopeTextBox();
             pnJobRequirement.Controls.Add(label);
             pnJobRequirement.Controls.Add(hopeTextBox);

@@ -62,7 +62,8 @@
             txtemail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtemail.ForeColor = Color.FromArgb(48, 49, 51);
             txtemail.Hint = "Enter your email";
-            txtemail.Location = new Point(69, 272);
+            txtemail.Location = new Point(60, 204);
+            txtemail.Margin = new Padding(3, 2, 3, 2);
             txtemail.MaxLength = 32767;
             txtemail.Multiline = false;
             txtemail.Name = "txtemail";
@@ -71,7 +72,7 @@
             txtemail.SelectedText = "";
             txtemail.SelectionLength = 0;
             txtemail.SelectionStart = 0;
-            txtemail.Size = new Size(445, 43);
+            txtemail.Size = new Size(389, 38);
             txtemail.TabIndex = 10;
             txtemail.TabStop = false;
             txtemail.UseSystemPasswordChar = false;
@@ -86,7 +87,8 @@
             txtfullname.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtfullname.ForeColor = Color.FromArgb(48, 49, 51);
             txtfullname.Hint = "Enter your full name";
-            txtfullname.Location = new Point(69, 384);
+            txtfullname.Location = new Point(60, 288);
+            txtfullname.Margin = new Padding(3, 2, 3, 2);
             txtfullname.MaxLength = 32767;
             txtfullname.Multiline = false;
             txtfullname.Name = "txtfullname";
@@ -95,7 +97,7 @@
             txtfullname.SelectedText = "";
             txtfullname.SelectionLength = 0;
             txtfullname.SelectionStart = 0;
-            txtfullname.Size = new Size(445, 43);
+            txtfullname.Size = new Size(389, 38);
             txtfullname.TabIndex = 3;
             txtfullname.TabStop = false;
             txtfullname.UseSystemPasswordChar = false;
@@ -111,11 +113,12 @@
             btnsignup.Image = null;
             btnsignup.ImageAlign = ContentAlignment.MiddleLeft;
             btnsignup.InactiveColor = Color.FromArgb(32, 34, 37);
-            btnsignup.Location = new Point(353, 656);
+            btnsignup.Location = new Point(309, 492);
+            btnsignup.Margin = new Padding(3, 2, 3, 2);
             btnsignup.Name = "btnsignup";
             btnsignup.PressedBorderColor = Color.FromArgb(165, 37, 37);
             btnsignup.PressedColor = Color.FromArgb(165, 37, 37);
-            btnsignup.Size = new Size(150, 51);
+            btnsignup.Size = new Size(131, 38);
             btnsignup.TabIndex = 7;
             btnsignup.Text = "Sign Up";
             btnsignup.TextAlignment = StringAlignment.Center;
@@ -130,11 +133,12 @@
             btnsignin.Image = null;
             btnsignin.ImageAlign = ContentAlignment.MiddleLeft;
             btnsignin.InactiveColor = Color.FromArgb(32, 34, 37);
-            btnsignin.Location = new Point(69, 656);
+            btnsignin.Location = new Point(60, 492);
+            btnsignin.Margin = new Padding(3, 2, 3, 2);
             btnsignin.Name = "btnsignin";
             btnsignin.PressedBorderColor = Color.FromArgb(165, 37, 37);
             btnsignin.PressedColor = Color.FromArgb(165, 37, 37);
-            btnsignin.Size = new Size(150, 51);
+            btnsignin.Size = new Size(131, 38);
             btnsignin.TabIndex = 1;
             btnsignin.Text = "Sign In";
             btnsignin.TextAlignment = StringAlignment.Center;
@@ -147,9 +151,9 @@
             lblagree.Cursor = Cursors.Hand;
             lblagree.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             lblagree.ForeColor = Color.FromArgb(224, 224, 224);
-            lblagree.Location = new Point(109, 567);
+            lblagree.Location = new Point(95, 425);
             lblagree.Name = "lblagree";
-            lblagree.Size = new Size(452, 50);
+            lblagree.Size = new Size(354, 40);
             lblagree.TabIndex = 11;
             lblagree.Text = "I have read and agree to CTV's Terms of Service \r\nand Privacy Policy regarding my private information.";
             lblagree.Click += lblagree_Click;
@@ -160,9 +164,9 @@
             bigLabel1.BackColor = Color.Transparent;
             bigLabel1.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             bigLabel1.ForeColor = Color.FromArgb(224, 224, 224);
-            bigLabel1.Location = new Point(109, 61);
+            bigLabel1.Location = new Point(95, 46);
             bigLabel1.Name = "bigLabel1";
-            bigLabel1.Size = new Size(247, 57);
+            bigLabel1.Size = new Size(201, 46);
             bigLabel1.TabIndex = 12;
             bigLabel1.Text = "Welcome to";
             // 
@@ -170,10 +174,9 @@
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(339, 61);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(297, 46);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(114, 67);
+            pictureBox1.Size = new Size(100, 50);
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;
             // 
@@ -187,7 +190,8 @@
             txtpassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtpassword.ForeColor = Color.FromArgb(48, 49, 51);
             txtpassword.Hint = "Enter your password";
-            txtpassword.Location = new Point(69, 496);
+            txtpassword.Location = new Point(60, 372);
+            txtpassword.Margin = new Padding(3, 2, 3, 2);
             txtpassword.MaxLength = 32767;
             txtpassword.Multiline = false;
             txtpassword.Name = "txtpassword";
@@ -196,7 +200,7 @@
             txtpassword.SelectedText = "";
             txtpassword.SelectionLength = 0;
             txtpassword.SelectionStart = 0;
-            txtpassword.Size = new Size(445, 43);
+            txtpassword.Size = new Size(389, 38);
             txtpassword.TabIndex = 3;
             txtpassword.TabStop = false;
             txtpassword.UseSystemPasswordChar = true;
@@ -205,9 +209,9 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = Color.White;
-            label1.Location = new Point(69, 249);
+            label1.Location = new Point(60, 187);
             label1.Name = "label1";
-            label1.Size = new Size(103, 20);
+            label1.Size = new Size(81, 15);
             label1.TabIndex = 15;
             label1.Text = "Email Address";
             // 
@@ -215,9 +219,9 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.White;
-            label2.Location = new Point(69, 361);
+            label2.Location = new Point(60, 271);
             label2.Name = "label2";
-            label2.Size = new Size(73, 20);
+            label2.Size = new Size(59, 15);
             label2.TabIndex = 15;
             label2.Text = "Full name";
             // 
@@ -225,9 +229,9 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.White;
-            label3.Location = new Point(69, 473);
+            label3.Location = new Point(60, 355);
             label3.Name = "label3";
-            label3.Size = new Size(70, 20);
+            label3.Size = new Size(57, 15);
             label3.TabIndex = 15;
             label3.Text = "Password";
             // 
@@ -235,7 +239,7 @@
             // 
             btnagree.AutoSize = true;
             btnagree.Depth = 0;
-            btnagree.Location = new Point(69, 567);
+            btnagree.Location = new Point(60, 425);
             btnagree.Margin = new Padding(0);
             btnagree.MouseLocation = new Point(-1, -1);
             btnagree.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
@@ -262,7 +266,7 @@
             nightControlBox1.EnableMaximizeColor = Color.FromArgb(160, 160, 160);
             nightControlBox1.EnableMinimizeButton = true;
             nightControlBox1.EnableMinimizeColor = Color.FromArgb(160, 160, 160);
-            nightControlBox1.Location = new Point(1235, 0);
+            nightControlBox1.Location = new Point(1081, 0);
             nightControlBox1.MaximizeHoverColor = Color.FromArgb(15, 255, 255, 255);
             nightControlBox1.MaximizeHoverForeColor = Color.White;
             nightControlBox1.MinimizeHoverColor = Color.FromArgb(15, 255, 255, 255);
@@ -277,8 +281,9 @@
             panel1.Controls.Add(nightControlBox1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1374, 35);
+            panel1.Size = new Size(1202, 26);
             panel1.TabIndex = 17;
             // 
             // pictureBox2
@@ -286,10 +291,9 @@
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox2.Dock = DockStyle.Right;
-            pictureBox2.Location = new Point(593, 35);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
+            pictureBox2.Location = new Point(519, 26);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(781, 706);
+            pictureBox2.Size = new Size(683, 530);
             pictureBox2.TabIndex = 18;
             pictureBox2.TabStop = false;
             // 
@@ -297,10 +301,9 @@
             // 
             foxLabel2.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             foxLabel2.ForeColor = Color.White;
-            foxLabel2.Location = new Point(131, 151);
-            foxLabel2.Margin = new Padding(3, 4, 3, 4);
+            foxLabel2.Location = new Point(115, 113);
             foxLabel2.Name = "foxLabel2";
-            foxLabel2.Size = new Size(286, 45);
+            foxLabel2.Size = new Size(250, 34);
             foxLabel2.TabIndex = 19;
             foxLabel2.Text = "Sign up With Email Address";
             // 
@@ -308,14 +311,13 @@
             // 
             rdocompany.Checked = false;
             rdocompany.ForeColor = Color.White;
-            rdocompany.Location = new Point(328, 204);
-            rdocompany.Margin = new Padding(3, 4, 3, 4);
+            rdocompany.Location = new Point(287, 153);
             rdocompany.Name = "rdocompany";
             rdocompany.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             rdocompany.RadioColor = Color.FromArgb(0, 162, 250);
             rdocompany.RadioHoverColor = Color.Fuchsia;
             rdocompany.RadioStyle = ReaLTaiizor.Controls.ParrotRadioButton.Style.Material;
-            rdocompany.Size = new Size(114, 21);
+            rdocompany.Size = new Size(100, 16);
             rdocompany.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             rdocompany.TabIndex = 31;
             rdocompany.Text = "Company";
@@ -325,14 +327,13 @@
             // 
             rdojobseeker.Checked = false;
             rdojobseeker.ForeColor = Color.White;
-            rdojobseeker.Location = new Point(131, 204);
-            rdojobseeker.Margin = new Padding(3, 4, 3, 4);
+            rdojobseeker.Location = new Point(115, 153);
             rdojobseeker.Name = "rdojobseeker";
             rdojobseeker.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             rdojobseeker.RadioColor = Color.FromArgb(0, 162, 250);
             rdojobseeker.RadioHoverColor = Color.Fuchsia;
             rdojobseeker.RadioStyle = ReaLTaiizor.Controls.ParrotRadioButton.Style.Material;
-            rdojobseeker.Size = new Size(114, 21);
+            rdojobseeker.Size = new Size(100, 16);
             rdojobseeker.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             rdojobseeker.TabIndex = 32;
             rdojobseeker.Text = "Job Seeker";
@@ -340,10 +341,10 @@
             // 
             // FRegister
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 41, 50);
-            ClientSize = new Size(1374, 741);
+            ClientSize = new Size(1202, 556);
             Controls.Add(rdocompany);
             Controls.Add(rdojobseeker);
             Controls.Add(foxLabel2);
@@ -362,7 +363,8 @@
             Controls.Add(txtfullname);
             Controls.Add(txtemail);
             FormBorderStyle = FormBorderStyle.None;
-            MinimumSize = new Size(298, 81);
+            Margin = new Padding(3, 2, 3, 2);
+            MinimumSize = new Size(261, 61);
             Name = "FRegister";
             StartPosition = FormStartPosition.CenterScreen;
             Load += FRegister_Load;

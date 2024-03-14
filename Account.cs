@@ -13,6 +13,10 @@ namespace WinFormProject
         string password = String.Empty;
         string type = String.Empty;
         AccountDAO accountDAO = new AccountDAO();
+        public Account()
+        {
+
+        }
         public Account(string email, string password,string type)
         {
             this.email = email;

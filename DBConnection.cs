@@ -39,5 +39,30 @@ namespace WinFormProject
             return false;
         }
 
+        public Information FetchData(string strFetch)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                List<string> infor = new List<string>(5);
+                for (int i = 0; i < reader.FieldCount; i++)
+                {
+                    infor.Add(reader.GetFieldValue<string>(i));
+                }
+                return new Information(infor[0], infor[1], infor[2], infor[3], infor[4]);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("them that bai" + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return new Information();
+        }
     }
 }

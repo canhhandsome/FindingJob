@@ -1,3 +1,4 @@
+using System.Data.SqlClient;
 
 namespace WinFormProject
 {
@@ -40,8 +41,8 @@ namespace WinFormProject
         private void btnsignin_Click(object sender, EventArgs e)
         {
             string type = (rdocompany.Checked) ? "company" : "jobseeker";
-            Form form = (rdocompany.Checked) ? new FCompany() : new FJobSeeker();
             Account account = new Account(txtemail.Text, txtpassword.Text, type);
+            Form form = (rdocompany.Checked) ? new FCompany() : new FJobSeeker(account);
 
             if (account.CheckAccount())
             {

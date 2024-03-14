@@ -61,7 +61,8 @@
             txtemail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtemail.ForeColor = Color.FromArgb(48, 49, 51);
             txtemail.Hint = "Enter your email";
-            txtemail.Location = new Point(69, 272);
+            txtemail.Location = new Point(60, 204);
+            txtemail.Margin = new Padding(3, 2, 3, 2);
             txtemail.MaxLength = 32767;
             txtemail.Multiline = false;
             txtemail.Name = "txtemail";
@@ -70,7 +71,7 @@
             txtemail.SelectedText = "";
             txtemail.SelectionLength = 0;
             txtemail.SelectionStart = 0;
-            txtemail.Size = new Size(445, 43);
+            txtemail.Size = new Size(389, 38);
             txtemail.TabIndex = 10;
             txtemail.TabStop = false;
             txtemail.UseSystemPasswordChar = false;
@@ -85,11 +86,12 @@
             btnsignup.Image = null;
             btnsignup.ImageAlign = ContentAlignment.MiddleLeft;
             btnsignup.InactiveColor = Color.FromArgb(32, 34, 37);
-            btnsignup.Location = new Point(353, 539);
+            btnsignup.Location = new Point(309, 404);
+            btnsignup.Margin = new Padding(3, 2, 3, 2);
             btnsignup.Name = "btnsignup";
             btnsignup.PressedBorderColor = Color.FromArgb(165, 37, 37);
             btnsignup.PressedColor = Color.FromArgb(165, 37, 37);
-            btnsignup.Size = new Size(150, 51);
+            btnsignup.Size = new Size(131, 38);
             btnsignup.TabIndex = 7;
             btnsignup.Text = "Sign Up";
             btnsignup.TextAlignment = StringAlignment.Center;
@@ -105,11 +107,12 @@
             btnsignin.Image = null;
             btnsignin.ImageAlign = ContentAlignment.MiddleLeft;
             btnsignin.InactiveColor = Color.FromArgb(32, 34, 37);
-            btnsignin.Location = new Point(69, 539);
+            btnsignin.Location = new Point(60, 404);
+            btnsignin.Margin = new Padding(3, 2, 3, 2);
             btnsignin.Name = "btnsignin";
             btnsignin.PressedBorderColor = Color.FromArgb(165, 37, 37);
             btnsignin.PressedColor = Color.FromArgb(165, 37, 37);
-            btnsignin.Size = new Size(150, 51);
+            btnsignin.Size = new Size(131, 38);
             btnsignin.TabIndex = 1;
             btnsignin.Text = "Sign In";
             btnsignin.TextAlignment = StringAlignment.Center;
@@ -121,9 +124,9 @@
             bigLabel1.BackColor = Color.Transparent;
             bigLabel1.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             bigLabel1.ForeColor = Color.FromArgb(224, 224, 224);
-            bigLabel1.Location = new Point(109, 45);
+            bigLabel1.Location = new Point(95, 34);
             bigLabel1.Name = "bigLabel1";
-            bigLabel1.Size = new Size(247, 57);
+            bigLabel1.Size = new Size(201, 46);
             bigLabel1.TabIndex = 12;
             bigLabel1.Text = "Welcome to";
             // 
@@ -131,10 +134,9 @@
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(339, 45);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(297, 34);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(114, 67);
+            pictureBox1.Size = new Size(100, 50);
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;
             // 
@@ -148,7 +150,8 @@
             txtpassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtpassword.ForeColor = Color.FromArgb(48, 49, 51);
             txtpassword.Hint = "Enter your password";
-            txtpassword.Location = new Point(69, 379);
+            txtpassword.Location = new Point(60, 284);
+            txtpassword.Margin = new Padding(3, 2, 3, 2);
             txtpassword.MaxLength = 32767;
             txtpassword.Multiline = false;
             txtpassword.Name = "txtpassword";
@@ -157,7 +160,7 @@
             txtpassword.SelectedText = "";
             txtpassword.SelectionLength = 0;
             txtpassword.SelectionStart = 0;
-            txtpassword.Size = new Size(445, 43);
+            txtpassword.Size = new Size(389, 38);
             txtpassword.TabIndex = 3;
             txtpassword.TabStop = false;
             txtpassword.UseSystemPasswordChar = false;
@@ -166,9 +169,9 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = Color.White;
-            label1.Location = new Point(69, 249);
+            label1.Location = new Point(60, 187);
             label1.Name = "label1";
-            label1.Size = new Size(103, 20);
+            label1.Size = new Size(81, 15);
             label1.TabIndex = 15;
             label1.Text = "Email Address";
             // 
@@ -176,9 +179,9 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.White;
-            label3.Location = new Point(69, 356);
+            label3.Location = new Point(60, 267);
             label3.Name = "label3";
-            label3.Size = new Size(70, 20);
+            label3.Size = new Size(57, 15);
             label3.TabIndex = 15;
             label3.Text = "Password";
             // 
@@ -196,7 +199,7 @@
             nightControlBox1.EnableMaximizeColor = Color.FromArgb(180, 160, 160);
             nightControlBox1.EnableMinimizeButton = true;
             nightControlBox1.EnableMinimizeColor = Color.FromArgb(180, 160, 160);
-            nightControlBox1.Location = new Point(1235, 0);
+            nightControlBox1.Location = new Point(1063, 0);
             nightControlBox1.MaximizeHoverColor = Color.FromArgb(25, 255, 255, 255);
             nightControlBox1.MaximizeHoverForeColor = Color.FromArgb(64, 64, 64);
             nightControlBox1.MinimizeHoverColor = Color.FromArgb(25, 255, 255, 255);
@@ -211,8 +214,9 @@
             panel1.Controls.Add(nightControlBox1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1374, 35);
+            panel1.Size = new Size(1202, 26);
             panel1.TabIndex = 17;
             // 
             // pictureBox2
@@ -220,10 +224,9 @@
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox2.Dock = DockStyle.Right;
-            pictureBox2.Location = new Point(593, 35);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
+            pictureBox2.Location = new Point(519, 26);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(781, 582);
+            pictureBox2.Size = new Size(683, 437);
             pictureBox2.TabIndex = 18;
             pictureBox2.TabStop = false;
             // 
@@ -233,8 +236,7 @@
             swremember.BaseColor = Color.White;
             swremember.BaseOffColor = Color.FromArgb(220, 223, 230);
             swremember.BaseOnColor = Color.FromArgb(64, 158, 255);
-            swremember.Location = new Point(69, 467);
-            swremember.Margin = new Padding(3, 4, 3, 4);
+            swremember.Location = new Point(60, 350);
             swremember.Name = "swremember";
             swremember.Size = new Size(40, 20);
             swremember.TabIndex = 20;
@@ -249,11 +251,10 @@
             btnforgotpw.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnforgotpw.HoverTextColor = Color.FromArgb(48, 49, 51);
             btnforgotpw.InfoColor = Color.FromArgb(144, 147, 153);
-            btnforgotpw.Location = new Point(339, 467);
-            btnforgotpw.Margin = new Padding(3, 4, 3, 4);
+            btnforgotpw.Location = new Point(297, 350);
             btnforgotpw.Name = "btnforgotpw";
             btnforgotpw.PrimaryColor = Color.FromArgb(64, 158, 255);
-            btnforgotpw.Size = new Size(174, 48);
+            btnforgotpw.Size = new Size(152, 36);
             btnforgotpw.SuccessColor = Color.FromArgb(103, 194, 58);
             btnforgotpw.TabIndex = 28;
             btnforgotpw.Text = "Forgot Password?";
@@ -266,9 +267,9 @@
             lblremember.AutoSize = true;
             lblremember.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblremember.ForeColor = Color.White;
-            lblremember.Location = new Point(131, 467);
+            lblremember.Location = new Point(115, 350);
             lblremember.Name = "lblremember";
-            lblremember.Size = new Size(130, 23);
+            lblremember.Size = new Size(104, 19);
             lblremember.TabIndex = 15;
             lblremember.Text = "Remember me?";
             lblremember.Click += lblremember_Click;
@@ -277,10 +278,9 @@
             // 
             foxLabel2.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             foxLabel2.ForeColor = Color.White;
-            foxLabel2.Location = new Point(143, 128);
-            foxLabel2.Margin = new Padding(3, 4, 3, 4);
+            foxLabel2.Location = new Point(125, 96);
             foxLabel2.Name = "foxLabel2";
-            foxLabel2.Size = new Size(310, 45);
+            foxLabel2.Size = new Size(271, 34);
             foxLabel2.TabIndex = 29;
             foxLabel2.Text = "Sign in With Email Address";
             // 
@@ -288,14 +288,13 @@
             // 
             rdojobseeker.Checked = false;
             rdojobseeker.ForeColor = Color.White;
-            rdojobseeker.Location = new Point(143, 203);
-            rdojobseeker.Margin = new Padding(3, 4, 3, 4);
+            rdojobseeker.Location = new Point(125, 152);
             rdojobseeker.Name = "rdojobseeker";
             rdojobseeker.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             rdojobseeker.RadioColor = Color.FromArgb(0, 162, 250);
             rdojobseeker.RadioHoverColor = Color.Fuchsia;
             rdojobseeker.RadioStyle = ReaLTaiizor.Controls.ParrotRadioButton.Style.Material;
-            rdojobseeker.Size = new Size(114, 21);
+            rdojobseeker.Size = new Size(100, 16);
             rdojobseeker.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             rdojobseeker.TabIndex = 30;
             rdojobseeker.Text = "Job Seeker";
@@ -305,14 +304,13 @@
             // 
             rdocompany.Checked = false;
             rdocompany.ForeColor = Color.White;
-            rdocompany.Location = new Point(339, 203);
-            rdocompany.Margin = new Padding(3, 4, 3, 4);
+            rdocompany.Location = new Point(297, 152);
             rdocompany.Name = "rdocompany";
             rdocompany.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             rdocompany.RadioColor = Color.FromArgb(0, 162, 250);
             rdocompany.RadioHoverColor = Color.Fuchsia;
             rdocompany.RadioStyle = ReaLTaiizor.Controls.ParrotRadioButton.Style.Material;
-            rdocompany.Size = new Size(114, 21);
+            rdocompany.Size = new Size(100, 16);
             rdocompany.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             rdocompany.TabIndex = 30;
             rdocompany.Text = "Company";
@@ -320,10 +318,10 @@
             // 
             // FLogin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 41, 50);
-            ClientSize = new Size(1374, 617);
+            ClientSize = new Size(1202, 463);
             Controls.Add(rdocompany);
             Controls.Add(rdojobseeker);
             Controls.Add(foxLabel2);
@@ -341,7 +339,8 @@
             Controls.Add(txtpassword);
             Controls.Add(txtemail);
             FormBorderStyle = FormBorderStyle.None;
-            MinimumSize = new Size(298, 81);
+            Margin = new Padding(3, 2, 3, 2);
+            MinimumSize = new Size(261, 61);
             Name = "FLogin";
             StartPosition = FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
