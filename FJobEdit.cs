@@ -14,12 +14,15 @@ namespace WinFormProject
     public partial class FJobEdit : Form
     {
         private Form currentFormChild = new Form();
-        private FPostJob fPostJob;
+        private List<Job> jobs;
+        private string companyid;
+        private JobDAO jobDAO = new JobDAO();
 
-        public FJobEdit()
+        public FJobEdit(List<Job> jobs,string companyid)
         {
             InitializeComponent();
-            fPostJob = new FPostJob();
+            this.jobs = jobs;
+            this.companyid = companyid;
         }
         public string LblTitle
         {
@@ -54,28 +57,19 @@ namespace WinFormProject
             childForm.Show();
         }
 
-        private void btnJobRequire_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new FJobRequire());
-        }
+
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FPostJob());
+            OpenChildForm(new FPostJob(jobs,companyid));
         }
 
         private void btnPostJob_Click(object sender, EventArgs e)
         {
-            //fPostJob.JobName = txtJobName.Text;
-            //OpenChildForm(fPostJob);
-            //fPostJob.AddJob();
-            fPostJob.AddJob(txtJobName.Text);
-            OpenChildForm(fPostJob);
+            jobs.Add(new Job("JOO3",companyid,txtJobName.Text,txtExperience.Text,txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, DateTime.Now));
+            jobDAO.AddNewJob("JOO3", companyid, txtJobName.Text, txtExperience.Text, txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, DateTime.Now);
+            OpenChildForm(new FPostJob(jobs, companyid));
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

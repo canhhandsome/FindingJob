@@ -42,7 +42,7 @@ namespace WinFormProject
         {
             string type = (rdocompany.Checked) ? "company" : "jobseeker";
             Account account = new Account(txtemail.Text, txtpassword.Text, type);
-            Form form = (rdocompany.Checked) ? new FCompany() : new FJobSeeker(account);
+            Form form = (rdocompany.Checked) ? new FCompany(account) : new FJobSeeker(account);
 
             if (account.CheckAccount())
             {

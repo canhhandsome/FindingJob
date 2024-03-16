@@ -17,42 +17,23 @@ namespace WinFormProject
         private int locaX = 62;
         private int locaY = 0;
         private List<string> jobNames = new List<string>();
-        //public string JobName { get; set; }
-        
+        private List<Job> jobs;
+        private string companyid;
 
-        public FPostJob()
+        public FPostJob(List<Job> jobs,string companyid)
         {
             InitializeComponent();
-
-            jobNames.Add("Job 1");
-            jobNames.Add("Job 2");
-            jobNames.Add("Job 3");
+            this.jobs = jobs;
+            this.companyid = companyid;
         }
 
         private void PostJob_Load(object sender, EventArgs e)
         {
+            foreach (Job job in jobs)
+            {
+
+            }
         }
-
-        //public void AddJob()
-        //{
-        //    Panel panel = new Panel();
-        //    panel.Size = new Size(812, 80);
-        //    panel.BorderStyle = BorderStyle.Fixed3D;
-        //    panel.Visible = true;
-        //    locaY += 100;
-        //    panel.Location = new Point(locaX, locaY);
-        //    Label lbl = new Label();
-        //    lbl.Visible = true;
-        //    lbl.Location = new Point(17, 13);
-        //    lbl.Text = JobName;
-        //    panel.Controls.Add(lbl);
-        //    panel.BringToFront();
-        //    pnBody.Controls.Add(panel);
-        //    // Make sure the form is brought to the front and visible
-        //    this.BringToFront();
-        //    this.Visible = true;
-        //}
-
         private void OpenChildForm(Form childForm)
         {
             foreach (Control control in this.Controls)
@@ -79,7 +60,7 @@ namespace WinFormProject
 
         private void btnPostingJob_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FJobEdit());
+            OpenChildForm(new FJobEdit(jobs, companyid));
         }
 
         private void pnBody_Paint(object sender, PaintEventArgs e)

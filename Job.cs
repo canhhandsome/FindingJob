@@ -8,49 +8,28 @@ namespace WinFormProject
 {
     public class Job
     {
-        string jobid, jobname, position, salary;
+        string jobid, companyid,jobname, position, salary,requirement,description;
         DateTime datapublish;
-        List<string> descriptions = new List<string>();
-        List<string> requirements = new List<string>();
-        JobDAO JobDAO = new JobDAO();
+        JobDAO jobDAO = new JobDAO();
 
-        public Job(string jobid)
-        {
-            this.jobid = jobid;
-
-        }
-
-        public Job(string jobid, string jobname, string position, string salary, DateTime datapublish, List<string> descriptions, List<string> requirements)
+        public Job(string jobid,string companyid,string jobname,string position,string salary, string requirement,string description,DateTime datapublish)
         {
             this.jobid = jobid;
             this.jobname = jobname;
+            this.companyid = companyid;
             this.position = position;
             this.salary = salary;
+            this.requirement = requirement;
+            this.description = description;
             this.datapublish = datapublish;
-            this.descriptions = descriptions;
-            this.requirements = requirements;
-        }
-        public Job(string jobid, string jobname, string position, string salary, DateTime datapublish)
-        {
-            this.jobid = jobid;
-            this.jobname = jobname;
-            this.position = position;
-            this.salary = salary;
-            this.datapublish = datapublish;
+
         }
 
         public string ID
         {  get { return jobid; } }
-
-        public void FetchRequirement(List<string> lists)
+        public string CompanyID
         {
-            requirements = lists;
+            get { return companyid; } 
         }
-
-        public void FetchDescription(List<string> lists) 
-        {
-            descriptions = lists;
-        }
-
     }
 }
