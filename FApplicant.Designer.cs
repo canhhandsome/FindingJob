@@ -48,6 +48,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -99,7 +100,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel1.Location = new System.Drawing.Point(79, 151);
+            this.panel1.Location = new System.Drawing.Point(211, 98);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(877, 133);
@@ -174,7 +175,7 @@
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label7);
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel2.Location = new System.Drawing.Point(79, 325);
+            this.panel2.Location = new System.Drawing.Point(751, 288);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(877, 133);
@@ -249,7 +250,7 @@
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label10);
             this.panel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel3.Location = new System.Drawing.Point(79, 504);
+            this.panel3.Location = new System.Drawing.Point(852, 470);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(877, 133);
@@ -314,6 +315,14 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Applicant\'s Name: ";
             // 
+            // panel4
+            // 
+            this.panel4.AutoScroll = true;
+            this.panel4.Location = new System.Drawing.Point(47, 148);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(920, 645);
+            this.panel4.TabIndex = 3;
+            // 
             // FApplicant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -321,6 +330,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(1048, 600);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -363,5 +373,6 @@
         private Label label8;
         private Label label9;
         private Label label10;
+        private Panel panel4;
     }
 }

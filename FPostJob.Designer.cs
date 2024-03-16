@@ -28,23 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.btnPostingJob = new System.Windows.Forms.Button();
+            this.pnSubBody = new System.Windows.Forms.Panel();
             this.pnBody = new System.Windows.Forms.Panel();
+            this.lblListJobs = new System.Windows.Forms.Label();
             this.pnBody.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.LightGray;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(40, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(313, 46);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "List Of Current Jobs";
             // 
             // btnPostingJob
             // 
@@ -62,10 +51,22 @@
             this.btnPostingJob.UseVisualStyleBackColor = false;
             this.btnPostingJob.Click += new System.EventHandler(this.btnPostingJob_Click);
             // 
+            // pnSubBody
+            // 
+            this.pnSubBody.AutoScroll = true;
+            this.pnSubBody.AutoSize = true;
+            this.pnSubBody.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnSubBody.Location = new System.Drawing.Point(107, 131);
+            this.pnSubBody.Name = "pnSubBody";
+            this.pnSubBody.Size = new System.Drawing.Size(812, 491);
+            this.pnSubBody.TabIndex = 2;
+            // 
             // pnBody
             // 
             this.pnBody.AutoScroll = true;
             this.pnBody.BackColor = System.Drawing.Color.LightGray;
+            this.pnBody.Controls.Add(this.lblListJobs);
+            this.pnBody.Controls.Add(this.pnSubBody);
             this.pnBody.Controls.Add(this.btnPostingJob);
             this.pnBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnBody.Location = new System.Drawing.Point(0, 0);
@@ -74,6 +75,18 @@
             this.pnBody.Size = new System.Drawing.Size(1048, 600);
             this.pnBody.TabIndex = 2;
             // 
+            // lblListJobs
+            // 
+            this.lblListJobs.AutoSize = true;
+            this.lblListJobs.BackColor = System.Drawing.Color.LightGray;
+            this.lblListJobs.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblListJobs.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblListJobs.Location = new System.Drawing.Point(40, 39);
+            this.lblListJobs.Name = "lblListJobs";
+            this.lblListJobs.Size = new System.Drawing.Size(313, 46);
+            this.lblListJobs.TabIndex = 3;
+            this.lblListJobs.Text = "List Of Current Jobs";
+            // 
             // FPostJob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -81,21 +94,20 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(58)))));
             this.ClientSize = new System.Drawing.Size(1048, 600);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pnBody);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FPostJob";
             this.Text = "PostJob";
             this.pnBody.ResumeLayout(false);
+            this.pnBody.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Label label1;
         private Button btnPostingJob;
+        private Panel pnSubBody;
         private Panel pnBody;
+        private Label lblListJobs;
     }
 }

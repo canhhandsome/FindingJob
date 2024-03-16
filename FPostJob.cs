@@ -96,18 +96,22 @@ namespace WinFormProject
         {
             foreach (string name in jobNames)
             {
-                Panel panel = new Panel();
-                panel.Size = new Size(812, 80);
-                panel.BorderStyle = BorderStyle.Fixed3D;
-                panel.Visible = true;
-                locaY += 100;
-                panel.Location = new Point(locaX, locaY);
-                Label lbl = new Label();
-                lbl.Visible = true;
-                lbl.Location = new Point(17, 13);
-                lbl.Text = name;
-                panel.Controls.Add(lbl);
-                pnBody.Controls.Add(panel);
+                //Panel panel = new Panel();
+                //panel.Size = new Size(812, 80);
+                //panel.BorderStyle = BorderStyle.Fixed3D;
+                //panel.Visible = true;
+                //locaY += 100;
+                //panel.Location = new Point(locaX, locaY);
+                //Label lbl = new Label();
+                //lbl.Visible = true;
+                //lbl.Location = new Point(17, 13);
+                //lbl.Text = name;
+                //panel.Controls.Add(lbl);
+                //pnBody.Controls.Add(panel);
+                UCJob ucjob = new UCJob();
+                ucjob.lblJBTemplate.Text = name;
+                pnSubBody.Controls.Add(ucjob);
+                ucjob.Dock = DockStyle.Top;
             }
         }
     }
