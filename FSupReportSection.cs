@@ -43,5 +43,6 @@ namespace WinFormProject
         {
             OpenChildForm(panel, new FReportDetail());
         }
+
     }
 }

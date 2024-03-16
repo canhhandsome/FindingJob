@@ -80,7 +80,7 @@ namespace WinFormProject
             childForm.Show();
         }
 
-        private void btnCancle_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FJobEdit());
         }

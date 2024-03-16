@@ -26,7 +26,7 @@ namespace WinFormProject.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=FindingJob;Integrated Security" +
-            "=True")]
+            "=True;Pooling=False")]
         public string connStr {
             get {
                 return ((string)(this["connStr"]));
