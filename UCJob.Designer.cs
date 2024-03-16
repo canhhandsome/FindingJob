@@ -137,8 +137,8 @@
         #endregion
 
         private Panel panel1;
-        private Button btnDelete;
-        private Button btnEdit;
+        public Button btnDelete;
+        public Button btnEdit;
         private Label lblJobName;
         public Label lblDTemplate;
         public Label lblJBTemplate;

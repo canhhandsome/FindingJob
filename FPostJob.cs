@@ -23,7 +23,7 @@ namespace WinFormProject
         public FPostJob()
         {
             InitializeComponent();
-
+            ucJob1.btnEdit.Click += btnEditJob_Click;
             jobNames.Add("Job 1");
             jobNames.Add("Job 2");
             jobNames.Add("Job 3");
@@ -55,12 +55,13 @@ namespace WinFormProject
 
         private void OpenChildForm(Form childForm)
         {
-            foreach (Control control in this.Controls)
-            {
-                if (control == pnBody)
-                    continue;
-                control.Visible = false;
-            }
+            //foreach (Control control in this.Controls)
+            //{
+            //    if (control == pnBody)
+            //        continue;
+            //    control.Visible = false;
+            //}
+            pnBody.Controls.Clear();
 
             if (currentFormChild != null)
             {
@@ -113,6 +114,14 @@ namespace WinFormProject
                 pnSubBody.Controls.Add(ucjob);
                 ucjob.Dock = DockStyle.Top;
             }
+        }
+
+        private void btnEditJob_Click(object sender, EventArgs e)
+        {
+            FJobEdit fJobEdit = new FJobEdit();
+            fJobEdit.LblTitle = "Editing a job";
+            fJobEdit.BtnPostJob = "Save";
+            OpenChildForm(fJobEdit);
         }
     }
 }

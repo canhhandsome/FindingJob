@@ -30,8 +30,11 @@
         {
             this.btnPostingJob = new System.Windows.Forms.Button();
             this.pnSubBody = new System.Windows.Forms.Panel();
+            this.ucJob1 = new WinFormProject.UCJob();
             this.pnBody = new System.Windows.Forms.Panel();
+            this.btnEditJob = new System.Windows.Forms.Button();
             this.lblListJobs = new System.Windows.Forms.Label();
+            this.pnSubBody.SuspendLayout();
             this.pnBody.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,15 +59,26 @@
             this.pnSubBody.AutoScroll = true;
             this.pnSubBody.AutoSize = true;
             this.pnSubBody.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnSubBody.Controls.Add(this.ucJob1);
             this.pnSubBody.Location = new System.Drawing.Point(107, 131);
             this.pnSubBody.Name = "pnSubBody";
             this.pnSubBody.Size = new System.Drawing.Size(812, 491);
             this.pnSubBody.TabIndex = 2;
             // 
+            // ucJob1
+            // 
+            this.ucJob1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ucJob1.Location = new System.Drawing.Point(0, 0);
+            this.ucJob1.Name = "ucJob1";
+            this.ucJob1.Size = new System.Drawing.Size(808, 265);
+            this.ucJob1.TabIndex = 0;
+            // 
             // pnBody
             // 
             this.pnBody.AutoScroll = true;
+            this.pnBody.AutoSize = true;
             this.pnBody.BackColor = System.Drawing.Color.LightGray;
+            this.pnBody.Controls.Add(this.btnEditJob);
             this.pnBody.Controls.Add(this.lblListJobs);
             this.pnBody.Controls.Add(this.pnSubBody);
             this.pnBody.Controls.Add(this.btnPostingJob);
@@ -74,6 +88,16 @@
             this.pnBody.Name = "pnBody";
             this.pnBody.Size = new System.Drawing.Size(1048, 600);
             this.pnBody.TabIndex = 2;
+            // 
+            // btnEditJob
+            // 
+            this.btnEditJob.Location = new System.Drawing.Point(601, 55);
+            this.btnEditJob.Name = "btnEditJob";
+            this.btnEditJob.Size = new System.Drawing.Size(94, 29);
+            this.btnEditJob.TabIndex = 4;
+            this.btnEditJob.Text = "button1";
+            this.btnEditJob.UseVisualStyleBackColor = true;
+            this.btnEditJob.Click += new System.EventHandler(this.btnEditJob_Click);
             // 
             // lblListJobs
             // 
@@ -98,9 +122,11 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FPostJob";
             this.Text = "PostJob";
+            this.pnSubBody.ResumeLayout(false);
             this.pnBody.ResumeLayout(false);
             this.pnBody.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -109,5 +135,7 @@
         private Panel pnSubBody;
         private Panel pnBody;
         private Label lblListJobs;
+        private UCJob ucJob1;
+        private Button btnEditJob;
     }
 }
