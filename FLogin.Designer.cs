@@ -93,7 +93,6 @@
             btnsignup.TabIndex = 7;
             btnsignup.Text = "Sign Up";
             btnsignup.TextAlignment = StringAlignment.Center;
-            btnsignup.Click += btnsignup_Click;
             // 
             // btnsignin
             // 
@@ -196,7 +195,7 @@
             nightControlBox1.EnableMaximizeColor = Color.FromArgb(180, 160, 160);
             nightControlBox1.EnableMinimizeButton = true;
             nightControlBox1.EnableMinimizeColor = Color.FromArgb(180, 160, 160);
-            nightControlBox1.Location = new Point(1215, 0);
+            nightControlBox1.Location = new Point(1235, 0);
             nightControlBox1.MaximizeHoverColor = Color.FromArgb(25, 255, 255, 255);
             nightControlBox1.MaximizeHoverForeColor = Color.FromArgb(64, 64, 64);
             nightControlBox1.MinimizeHoverColor = Color.FromArgb(25, 255, 255, 255);
@@ -259,7 +258,6 @@
             btnforgotpw.Text = "Forgot Password?";
             btnforgotpw.TextColor = Color.White;
             btnforgotpw.WarningColor = Color.FromArgb(230, 162, 60);
-            btnforgotpw.Click += btnforgotpw_Click;
             // 
             // lblremember
             // 
@@ -271,7 +269,6 @@
             lblremember.Size = new Size(130, 23);
             lblremember.TabIndex = 15;
             lblremember.Text = "Remember me?";
-            lblremember.Click += lblremember_Click;
             // 
             // foxLabel2
             // 

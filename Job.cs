@@ -24,12 +24,17 @@ namespace WinFormProject
             this.datapublish = datapublish;
 
         }
-
-        public string ID
-        {  get { return jobid; } }
-        public string CompanyID
+        public string Jobid
         {
-            get { return companyid; } 
+            get { return jobid; }
+        }
+        public string Name
+        {
+            get { return jobname; }
+        }
+        public DateTime DatePublish
+        {
+            get { return datapublish; }
         }
     }
 }
