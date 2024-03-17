@@ -24,7 +24,6 @@ namespace WinFormProject
             companysize = otherinfo[1];
             companytype = otherinfo[0];
             jobs = jobDao.FetchAllJob(this.INFO.ID);
-            
         }
         public List<Job> Jobs
         {
