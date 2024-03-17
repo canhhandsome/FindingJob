@@ -24,7 +24,7 @@ namespace WinFormProject
                 if (control is UCInformation)
                 {
                     UCInformation userControl = (UCInformation)control;
-                    userControl.panel1.Click += panel1_Click;
+                    //userControl.panel1.Click += panel1_Click;
                 }
             }
         }

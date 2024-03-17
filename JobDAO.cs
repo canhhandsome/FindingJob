@@ -31,10 +31,21 @@ namespace WinFormProject
             conn.FetchHiringJob(strFetch, jobs);
             return jobs;
         }
-        public void AddNewJob(string companyid, string jobname, string position, string salary, string requirement, string description, DateTime datapublish)
+        public string AddNewJob(string companyid, string jobname, string position, string salary, string requirement, string description, DateTime datapublish)
         {
-            string sqlUpdate = string.Format("INSERT INTO Job (jobid, companyid, jobname,position,salary, datepublish,description,requirement) Values ((SUBSTRING(CONVERT(VARCHAR(36), NEWID()), 1, 8), '{0}','{}','{3}','{4}','{5}','{6}')", companyid,jobname,position,salary,datapublish,description,requirement);
+            Guid guid = Guid.NewGuid();
+
+            // Convert the GUID to a string and remove hyphens
+            string guidString = guid.ToString("N");
+
+            // Take the first 8 characters of the GUID string
+            string jobidstring = guidString.Substring(0, 8);
+
+            string sqlUpdate = string.Format("INSERT INTO Job (jobid, companyid, jobname, position, salary, datepublish, description, requirement) " +
+                                             "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')",
+                                             jobidstring, companyid, jobname, position, salary, datapublish, description, requirement);
             conn.CRUD(sqlUpdate);
+            return jobidstring;
         }
         public void DeleteJob(string jobid)
         {

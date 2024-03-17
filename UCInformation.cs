@@ -13,6 +13,10 @@ namespace WinFormProject
     public partial class UCInformation : UserControl
     {
         private Job job = new Job();
+        public UCInformation()
+        {
+
+        }
         public UCInformation(Job job)
         {
             CompanyDAO companyDAO = new CompanyDAO();

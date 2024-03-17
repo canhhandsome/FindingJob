@@ -66,8 +66,8 @@ namespace WinFormProject
 
         private void btnPostJob_Click(object sender, EventArgs e)
         {
-            jobDAO.AddNewJob(companyid, txtJobName.Text, txtExperience.Text, txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, DateTime.Now);
-            jobs.Add(new Job(companyid,txtJobName.Text,txtExperience.Text,txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, DateTime.Now));
+            string jobid = jobDAO.AddNewJob(companyid, txtJobName.Text, txtExperience.Text, txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, DateTime.Now);
+            jobs.Add(new Job(jobid,companyid,txtJobName.Text,txtExperience.Text,txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, DateTime.Now));
             OpenChildForm(new FPostJob(jobs, companyid));
         }
 

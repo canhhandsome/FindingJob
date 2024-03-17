@@ -32,9 +32,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             Job job = new Job();
-            this.ucInformation3 = new WinFormProject.UCInformation(job);
-            this.ucInformation2 = new WinFormProject.UCInformation(job);
-            this.ucInformation1 = new WinFormProject.UCInformation(job);
+            this.ucInformation3 = new WinFormProject.UCInformation();
+            this.ucInformation2 = new WinFormProject.UCInformation();
+            this.ucInformation1 = new WinFormProject.UCInformation();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
