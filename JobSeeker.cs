@@ -21,14 +21,6 @@ namespace WinFormProject
         {
             this.information = information;    
         }
-        public JobSeeker (Information information, DateTime bdate, string nationalid, string gender)
-        {
-            this.information = information;
-            this.bdate = bdate;
-            this.nationalid = nationalid;
-            this.gender = gender;
-        }
-
         public Information INFO 
         { 
             get { return information; } 

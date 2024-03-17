@@ -8,48 +8,57 @@ namespace WinFormProject
 {
     public class Job
     {
-        string jobid, jobname, position, salary;
+        string jobid, companyid, jobname ,position, salary, requirement,description;
         DateTime datapublish;
-        List<string> descriptions = new List<string>();
-        List<string> requirements = new List<string>();
-        JobDAO JobDAO = new JobDAO();
-
-        public Job(string jobid)
+        JobDAO jobDAO = new JobDAO();
+        public Job()
         {
-            this.jobid = jobid;
 
         }
-
-        public Job(string jobid, string jobname, string position, string salary, DateTime datapublish, List<string> descriptions, List<string> requirements)
+        public Job(string jobid,string companyid,string jobname,string position,string salary, string requirement,string description,DateTime datapublish)
         {
             this.jobid = jobid;
             this.jobname = jobname;
+            this.companyid = companyid;
             this.position = position;
             this.salary = salary;
+            this.requirement = requirement;
+            this.description = description;
             this.datapublish = datapublish;
-            this.descriptions = descriptions;
-            this.requirements = requirements;
+
         }
-        public Job(string jobid, string jobname, string position, string salary, DateTime datapublish)
+        public string Jobid
         {
-            this.jobid = jobid;
-            this.jobname = jobname;
-            this.position = position;
-            this.salary = salary;
-            this.datapublish = datapublish;
+            get { return jobid; }
+        }
+        public string Name
+        {
+            get { return jobname; }
+        }
+        public DateTime DatePublish
+        {
+            get { return datapublish; }
+        }
+        public string CompanyID
+        {
+            get { return companyid; }
+        }
+        public string Salary
+        {
+            get { return salary; }
+        }
+        public string Requirement
+        { 
+            get { return requirement; } 
+        }
+        public string Description
+        {
+            get { return description; }
         }
 
-        public string ID
-        {  get { return jobid; } }
-
-        public void FetchRequirement(List<string> lists)
+        public string Position
         {
-            requirements = lists;
-        }
-
-        public void FetchDescription(List<string> lists) 
-        {
-            descriptions = lists;
+            get { return position; }
         }
 
     }

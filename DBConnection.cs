@@ -19,7 +19,6 @@ namespace WinFormProject
 
         public bool AccountReader(string sqlReader, string email, string pass)
         {
-
             try
             {
                 conn.Open();
@@ -40,7 +39,7 @@ namespace WinFormProject
             finally { conn.Close(); }
             return false;
         }
-
+        //This is used for fetch common data ( the information of company and person)
         public Information FetchData(string strFetch)
         {
             try
@@ -66,6 +65,53 @@ namespace WinFormProject
             }
             return new Information();
         }
+        //This is used for fetch uncommon data ( the information of company and person)
+
+
+        public List<string> FetchSeperatedData(string strFetch)
+        {
+            List<string> seperatedinfo = new List<string>(2);
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                for (int i = 0; i < reader.FieldCount; i++)
+                {
+                    seperatedinfo.Add(reader.GetFieldValue<string>(i));
+                }
+                return seperatedinfo;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("them that bai" + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return seperatedinfo;
+
+        }
+        public string FetchScalar(string strFetch)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                return cmd.ExecuteScalar().ToString();
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally 
+            {
+                conn.Close(); 
+            }
+            return "";
+        }
 
         public void FetchHiringJob(string strFetch, List<Job> jobs)
         {
@@ -77,7 +123,7 @@ namespace WinFormProject
 
                 while(reader.Read())
                 {
-                    jobs.Add(new Job(reader["Jobid"].ToString(), reader["JobName"].ToString(), reader["position"].ToString(), reader["salary"].ToString(), Convert.ToDateTime(reader["DatePublish"].ToString())));
+                    jobs.Add(new Job(reader["Jobid"].ToString(), reader["CompanyId"].ToString(),reader["JobName"].ToString(), reader["position"].ToString(), reader["salary"].ToString(), reader["requirement"].ToString(), reader["description"].ToString(),Convert.ToDateTime(reader["DatePublish"].ToString())));
                 }
             }
             catch(Exception ex)
@@ -89,23 +135,20 @@ namespace WinFormProject
                 conn.Close(); 
             }
         }
-        
-        public void FetchMultiValueJob(string strFetch, List<string> lists, string type)
+         
+        public void CRUD(string SQL)
         {
             try
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand(strFetch, conn);
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    lists.Add(reader[type].ToString());
-                }
+                SqlCommand cmd = new SqlCommand(SQL, conn);
+                if (cmd.ExecuteNonQuery() > 0)
+                    MessageBox.Show("Successfully");
+                else MessageBox.Show("Failed");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("them that bai" + ex);
+                MessageBox.Show("Failed, check again" + ex);
             }
             finally
             {

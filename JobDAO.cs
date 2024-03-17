@@ -16,28 +16,30 @@ namespace WinFormProject
             
         }
 
-        public List<Job> FetchJob()  
+        public List<Job> FetchJobs()
         {
             List<Job> jobs = new List<Job>();
-            string strFetch = string.Format("Select * From Job");
+            string strFetch = string.Format("Select * from job");
             conn.FetchHiringJob(strFetch, jobs);
-            foreach (Job job in jobs)
-            {
-                job.FetchRequirement(FetchMulti(job.ID,"Requirement"));
-                job.FetchDescription(FetchMulti(job.ID,"Description"));
-
-                
-            }
             return jobs;
         }
 
-        public List<string> FetchMulti(string jobid, string type)
+        public List<Job> FetchAllJob(string companyid)  
         {
-            List<string> list = new List<string>();
-            string strFetch = string.Format("Select * from J_{0} where jobid = '{1}'", type, jobid);
-            conn.FetchMultiValueJob(strFetch, list, type);
-            return list;
+            List<Job> jobs = new List<Job>();
+            string strFetch = string.Format("Select * From Job where companyid= '{0}'", companyid);
+            conn.FetchHiringJob(strFetch, jobs);
+            return jobs;
         }
-
+        public void AddNewJob(string jobid, string companyid, string jobname, string position, string salary, string requirement, string description, DateTime datapublish)
+        {
+            string sqlUpdate = string.Format("INSERT INTO Job (jobid, companyid, jobname,position,salary, datepublish,description,requirement) Values ('{0}', '{1}','{2}','{3}','{4}','{5}','{6}','{7}')",jobid,companyid,jobname,position,salary,datapublish,description,requirement);
+            conn.CRUD(sqlUpdate);
+        }
+        public void DeleteJob(string jobid)
+        {
+            string SQL = string.Format("DELETE FROM JOB WHERE jobid = '{0}'", jobid);
+            conn.CRUD(SQL);
+        }
     }
 }

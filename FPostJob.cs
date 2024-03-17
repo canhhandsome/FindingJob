@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace WinFormProject
@@ -17,50 +18,38 @@ namespace WinFormProject
         private int locaX = 62;
         private int locaY = 0;
         private List<string> jobNames = new List<string>();
-        //public string JobName { get; set; }
-        
+        private List<Job> jobs;
+        private string companyid;
 
-        public FPostJob()
+        public FPostJob(List<Job> jobs, string companyid)
         {
             InitializeComponent();
+            this.jobs = jobs;
+            this.companyid = companyid;
+            foreach (Job job in jobs)
+            {
+                UCJob ucjob = new UCJob(job);
+                pnSubBody.Controls.Add(ucjob);
+                ucjob.Dock = DockStyle.Top;
 
-            jobNames.Add("Job 1");
-            jobNames.Add("Job 2");
-            jobNames.Add("Job 3");
+                // Subscribe to JobDeleted event
+                ucjob.JobDeleted += UCJob_JobDeleted;
+            }
         }
 
         private void PostJob_Load(object sender, EventArgs e)
         {
+            
         }
-
-        //public void AddJob()
-        //{
-        //    Panel panel = new Panel();
-        //    panel.Size = new Size(812, 80);
-        //    panel.BorderStyle = BorderStyle.Fixed3D;
-        //    panel.Visible = true;
-        //    locaY += 100;
-        //    panel.Location = new Point(locaX, locaY);
-        //    Label lbl = new Label();
-        //    lbl.Visible = true;
-        //    lbl.Location = new Point(17, 13);
-        //    lbl.Text = JobName;
-        //    panel.Controls.Add(lbl);
-        //    panel.BringToFront();
-        //    pnBody.Controls.Add(panel);
-        //    // Make sure the form is brought to the front and visible
-        //    this.BringToFront();
-        //    this.Visible = true;
-        //}
-
         private void OpenChildForm(Form childForm)
         {
-            foreach (Control control in this.Controls)
-            {
-                if (control == pnBody)
-                    continue;
-                control.Visible = false;
-            }
+            //foreach (Control control in this.Controls)
+            //{
+            //    if (control == pnBody)
+            //        continue;
+            //    control.Visible = false;
+            //}
+            pnBody.Controls.Clear();
 
             if (currentFormChild != null)
             {
@@ -79,35 +68,41 @@ namespace WinFormProject
 
         private void btnPostingJob_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FJobEdit());
+            OpenChildForm(new FJobEdit(jobs, companyid));
         }
 
         private void pnBody_Paint(object sender, PaintEventArgs e)
         {
 
         }
-        public void AddJob(string jobName)
-        {
-            jobNames.Add(jobName);
-            DisplayJobNames();
-        }
 
-        public void DisplayJobNames()
+       
+
+        private void btnEditJob_Click(object sender, EventArgs e)
         {
-            foreach (string name in jobNames)
+            //FJobEdit fJobEdit = new FJobEdit();
+            //fJobEdit.LblTitle = "Editing a job";
+            //fJobEdit.BtnPostJob = "Save";
+            //OpenChildForm(fJobEdit);
+        }
+        // Event handler for UCJob JobDeleted event
+        private void UCJob_JobDeleted(object sender, EventArgs e)
+        {
+            if (sender is UCJob ucjob)
             {
-                Panel panel = new Panel();
-                panel.Size = new Size(812, 80);
-                panel.BorderStyle = BorderStyle.Fixed3D;
-                panel.Visible = true;
-                locaY += 100;
-                panel.Location = new Point(locaX, locaY);
-                Label lbl = new Label();
-                lbl.Visible = true;
-                lbl.Location = new Point(17, 13);
-                lbl.Text = name;
-                panel.Controls.Add(lbl);
-                pnBody.Controls.Add(panel);
+                // Remove the UCJob control from the panel
+                pnSubBody.Controls.Remove(ucjob);
+                ucjob.Dispose(); // Dispose if necessary
+
+                // Find and remove the corresponding job from the list
+                foreach (Job job in jobs)
+                {
+                    if (job.Equals(ucjob.Job))
+                    {
+                        jobs.Remove(job);
+                        break;
+                    }
+                }
             }
         }
     }

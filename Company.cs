@@ -8,9 +8,10 @@ namespace WinFormProject
 {
     public class Company
     {
-        Information information = new Information();
         string companytype, companysize;
         CompanyDAO companyDAO = new CompanyDAO();
+        Information information = new Information();
+        JobDAO jobDao = new JobDAO();
         List<Job> jobs = new List<Job>();
         public Company()
         {
@@ -19,13 +20,14 @@ namespace WinFormProject
         public Company(Information information)
         {
             this.information  = information;
+            List<string> otherinfo = companyDAO.FetchInformation(this);
+            companysize = otherinfo[1];
+            companytype = otherinfo[0];
+            jobs = jobDao.FetchAllJob(this.INFO.ID);
         }
-        public Company(Information information, string companytype, string companysize, CompanyDAO companyDAO, List<Job> jobs) : this(information)
+        public List<Job> Jobs
         {
-            this.companytype = companytype;
-            this.companysize = companysize;
-            this.companyDAO = companyDAO;
-            this.jobs = jobs;
+            get { return jobs; }
         }
         public Information INFO
         {

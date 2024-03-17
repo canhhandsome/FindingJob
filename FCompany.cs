@@ -15,10 +15,14 @@ namespace WinFormProject
     {
         private Button selectedButton;
         private Form currentFormChild;
-        public FCompany()
+        private Company company = new Company();
+        public FCompany(Account account)
         {
             InitializeComponent();
             btnPostJob.PerformClick();
+            InformationDAO informationDAO = new InformationDAO();
+            company = new Company(informationDAO.FetchCommon(account));
+
         }
 
         private void FCompany_Load(object sender, EventArgs e)
@@ -97,15 +101,15 @@ namespace WinFormProject
 
         private void btnPostJob_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FPostJob());
+            OpenChildForm(new FPostJob(company.Jobs, company.INFO.ID));
         }
 
         private void btnEditJob_Click(object sender, EventArgs e)
         {
-            FJobEdit fJobEdit = new FJobEdit();
-            fJobEdit.LblTitle = "Editing a job";
-            fJobEdit.BtnPostJob = "Save";
-            OpenChildForm(fJobEdit);
+            //FJobEdit fJobEdit = new FJobEdit();
+            //fJobEdit.LblTitle = "Editing a job";
+            //fJobEdit.BtnPostJob = "Save";
+            //OpenChildForm(fJobEdit);
         }
 
         private void btnApplicant_Click(object sender, EventArgs e)

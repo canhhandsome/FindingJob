@@ -79,10 +79,5 @@ namespace WinFormProject
             childForm.BringToFront();
             childForm.Show();
         }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new FJobEdit());
-        }
     }
 }
