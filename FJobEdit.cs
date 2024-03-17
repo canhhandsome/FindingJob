@@ -14,9 +14,12 @@ namespace WinFormProject
     public partial class FJobEdit : Form
     {
         private Form currentFormChild = new Form();
+        private FPostJob fPostJob;
+
         public FJobEdit()
         {
             InitializeComponent();
+            fPostJob = new FPostJob();
         }
         public string LblTitle
         {
@@ -56,9 +59,23 @@ namespace WinFormProject
             OpenChildForm(new FJobRequire());
         }
 
-        private void btnCancle_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FPostJob());
+        }
+
+        private void btnPostJob_Click(object sender, EventArgs e)
+        {
+            //fPostJob.JobName = txtJobName.Text;
+            //OpenChildForm(fPostJob);
+            //fPostJob.AddJob();
+            fPostJob.AddJob(txtJobName.Text);
+            OpenChildForm(fPostJob);
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

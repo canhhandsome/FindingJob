@@ -38,13 +38,10 @@
             btnSearchJob = new Button();
             btnJobAlert = new Button();
             pictureBox2 = new PictureBox();
-            pnSubBody = new Panel();
-            panel3 = new Panel();
             pnBody = new Panel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            pnSubBody.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -144,6 +141,7 @@
             btnLogOut.TabIndex = 5;
             btnLogOut.Text = "Log Out";
             btnLogOut.UseVisualStyleBackColor = true;
+            btnLogOut.Click += btnLogOut_Click_1;
             // 
             // btnSetting
             // 
@@ -207,31 +205,13 @@
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
             // 
-            // pnSubBody
-            // 
-            pnSubBody.BorderStyle = BorderStyle.FixedSingle;
-            pnSubBody.Controls.Add(panel3);
-            pnSubBody.Dock = DockStyle.Left;
-            pnSubBody.Location = new Point(191, 24);
-            pnSubBody.Name = "pnSubBody";
-            pnSubBody.Size = new Size(390, 474);
-            pnSubBody.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            panel3.Location = new Point(347, 482);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(200, 100);
-            panel3.TabIndex = 0;
-            panel3.Visible = false;
-            // 
             // pnBody
             // 
             pnBody.BorderStyle = BorderStyle.FixedSingle;
             pnBody.Dock = DockStyle.Fill;
-            pnBody.Location = new Point(581, 24);
+            pnBody.Location = new Point(191, 24);
             pnBody.Name = "pnBody";
-            pnBody.Size = new Size(543, 474);
+            pnBody.Size = new Size(933, 474);
             pnBody.TabIndex = 7;
             pnBody.Paint += pnBody_Paint;
             // 
@@ -242,7 +222,6 @@
             BackColor = Color.FromArgb(32, 41, 50);
             ClientSize = new Size(1124, 498);
             Controls.Add(pnBody);
-            Controls.Add(pnSubBody);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -250,11 +229,9 @@
             Name = "FJobSeeker";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FJobSeeker";
-            Load += FJobSeeker_Load;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            pnSubBody.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -270,8 +247,6 @@
         private Button btnJobAlert;
         private PictureBox pictureBox2;
         private ReaLTaiizor.Controls.MetroControlBox metroControlBox4;
-        private Panel pnSubBody;
         private Panel pnBody;
-        private Panel panel3;
     }
 }

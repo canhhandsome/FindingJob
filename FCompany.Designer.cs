@@ -107,7 +107,7 @@
             btnLogOut.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
             btnLogOut.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLogOut.Location = new Point(0, 422);
+            btnLogOut.Location = new Point(0, 396);
             btnLogOut.Name = "btnLogOut";
             btnLogOut.Size = new Size(191, 78);
             btnLogOut.TabIndex = 5;
@@ -127,7 +127,7 @@
             btnSetting.Location = new Point(0, 318);
             btnSetting.Margin = new Padding(3, 4, 3, 4);
             btnSetting.Name = "btnSetting";
-            btnSetting.Size = new Size(191, 104);
+            btnSetting.Size = new Size(191, 78);
             btnSetting.TabIndex = 4;
             btnSetting.Text = "Setting";
             btnSetting.UseVisualStyleBackColor = true;
@@ -217,7 +217,6 @@
             Name = "FCompany";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FCompany";
-            Load += FCompany_Load;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
