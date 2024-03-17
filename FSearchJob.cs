@@ -17,11 +17,18 @@ namespace WinFormProject
         {
             InitializeComponent();
             JobDAO jobDAO = new JobDAO();
+            jobs = jobDAO.FetchJobs();
         }
 
-        private void FSearchJob_Load(object sender, EventArgs e)
+        private void hopeTextBox1_Enter(object sender, EventArgs e)
         {
-            
+            foreach(Job job in jobs)
+            {
+                UCInformation uCInformation = new UCInformation(job);
+                flpJob.Controls.Add(uCInformation);
+                flpJob.Height += 135;
+            }
         }
+
     }
 }

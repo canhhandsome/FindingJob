@@ -16,6 +16,14 @@ namespace WinFormProject
             
         }
 
+        public List<Job> FetchJobs()
+        {
+            List<Job> jobs = new List<Job>();
+            string strFetch = string.Format("Select * from job");
+            conn.FetchHiringJob(strFetch, jobs);
+            return jobs;
+        }
+
         public List<Job> FetchAllJob(string companyid)  
         {
             List<Job> jobs = new List<Job>();
