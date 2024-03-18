@@ -19,7 +19,7 @@ namespace WinFormProject
         {
             InitializeComponent();
             this.panel = panel;
-            foreach (Control control in panel1.Controls)
+            foreach (Control control in pnSubBody.Controls)
             {
                 if (control is UCInformation)
                 {

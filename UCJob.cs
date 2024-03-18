@@ -17,9 +17,10 @@ namespace WinFormProject
         public UCJob(Job job)
         {
             InitializeComponent();
+            this.MaximumSize = new System.Drawing.Size(812, 212);
             this.job = job;
-            lblJBTemplate.Text = job.Name;
-            lblDTemplate.Text = job.DatePublish.ToString();
+            lblJobNameT.Text = job.Name;
+            lblDateT.Text = job.DatePublish.ToString();
         }
         public Job Job { get { return job; } }
         private void btnDelete_Click(object sender, EventArgs e)

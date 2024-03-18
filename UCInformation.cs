@@ -21,6 +21,7 @@ namespace WinFormProject
         {
             CompanyDAO companyDAO = new CompanyDAO();
             InitializeComponent();
+            this.MaximumSize = new System.Drawing.Size(968, 180);
             this.job = job;
             lblFromT.Text = companyDAO.FetchName(job.CompanyID);
             lblDateT.Text = job.DatePublish.ToString();

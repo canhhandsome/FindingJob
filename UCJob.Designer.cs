@@ -28,110 +28,110 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            lblDTemplate = new Label();
-            lblJBTemplate = new Label();
-            lblDate = new Label();
-            lblJobName = new Label();
-            btnDelete = new Button();
-            btnEdit = new Button();
-            panel1.SuspendLayout();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblDateT = new System.Windows.Forms.Label();
+            this.lblJobNameT = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblJobName = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.LightGray;
-            panel1.BorderStyle = BorderStyle.Fixed3D;
-            panel1.Controls.Add(lblDTemplate);
-            panel1.Controls.Add(lblJBTemplate);
-            panel1.Controls.Add(lblDate);
-            panel1.Controls.Add(lblJobName);
-            panel1.Controls.Add(btnDelete);
-            panel1.Controls.Add(btnEdit);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(812, 212);
-            panel1.TabIndex = 0;
+            this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.lblDateT);
+            this.panel1.Controls.Add(this.lblJobNameT);
+            this.panel1.Controls.Add(this.lblDate);
+            this.panel1.Controls.Add(this.lblJobName);
+            this.panel1.Controls.Add(this.btnDelete);
+            this.panel1.Controls.Add(this.btnEdit);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(812, 212);
+            this.panel1.TabIndex = 0;
             // 
-            // lblDTemplate
+            // lblDateT
             // 
-            lblDTemplate.AutoSize = true;
-            lblDTemplate.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDTemplate.Location = new Point(92, 74);
-            lblDTemplate.Name = "lblDTemplate";
-            lblDTemplate.Size = new Size(69, 32);
-            lblDTemplate.TabIndex = 9;
-            lblDTemplate.Text = "Date:";
+            this.lblDateT.AutoSize = true;
+            this.lblDateT.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDateT.Location = new System.Drawing.Point(92, 74);
+            this.lblDateT.Name = "lblDateT";
+            this.lblDateT.Size = new System.Drawing.Size(69, 32);
+            this.lblDateT.TabIndex = 9;
+            this.lblDateT.Text = "Date:";
             // 
-            // lblJBTemplate
+            // lblJobNameT
             // 
-            lblJBTemplate.AutoSize = true;
-            lblJBTemplate.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblJBTemplate.Location = new Point(150, 15);
-            lblJBTemplate.Name = "lblJBTemplate";
-            lblJBTemplate.Size = new Size(127, 32);
-            lblJBTemplate.TabIndex = 8;
-            lblJBTemplate.Text = "Job Name:";
+            this.lblJobNameT.AutoSize = true;
+            this.lblJobNameT.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblJobNameT.Location = new System.Drawing.Point(150, 15);
+            this.lblJobNameT.Name = "lblJobNameT";
+            this.lblJobNameT.Size = new System.Drawing.Size(127, 32);
+            this.lblJobNameT.TabIndex = 8;
+            this.lblJobNameT.Text = "Job Name:";
             // 
             // lblDate
             // 
-            lblDate.AutoSize = true;
-            lblDate.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDate.Location = new Point(17, 74);
-            lblDate.Name = "lblDate";
-            lblDate.Size = new Size(69, 32);
-            lblDate.TabIndex = 7;
-            lblDate.Text = "Date:";
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDate.Location = new System.Drawing.Point(17, 74);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(69, 32);
+            this.lblDate.TabIndex = 7;
+            this.lblDate.Text = "Date:";
             // 
             // lblJobName
             // 
-            lblJobName.AutoSize = true;
-            lblJobName.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblJobName.Location = new Point(17, 15);
-            lblJobName.Name = "lblJobName";
-            lblJobName.Size = new Size(127, 32);
-            lblJobName.TabIndex = 6;
-            lblJobName.Text = "Job Name:";
+            this.lblJobName.AutoSize = true;
+            this.lblJobName.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblJobName.Location = new System.Drawing.Point(17, 15);
+            this.lblJobName.Name = "lblJobName";
+            this.lblJobName.Size = new System.Drawing.Size(127, 32);
+            this.lblJobName.TabIndex = 6;
+            this.lblJobName.Text = "Job Name:";
             // 
             // btnDelete
             // 
-            btnDelete.BackColor = Color.RosyBrown;
-            btnDelete.FlatStyle = FlatStyle.Flat;
-            btnDelete.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnDelete.ForeColor = SystemColors.ControlText;
-            btnDelete.Location = new Point(555, 151);
-            btnDelete.Margin = new Padding(3, 4, 3, 4);
-            btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(112, 44);
-            btnDelete.TabIndex = 5;
-            btnDelete.Text = "Delete";
-            btnDelete.UseVisualStyleBackColor = false;
-            btnDelete.Click += btnDelete_Click;
+            this.btnDelete.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnDelete.Location = new System.Drawing.Point(555, 151);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(112, 44);
+            this.btnDelete.TabIndex = 5;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
             // btnEdit
             // 
-            btnEdit.FlatStyle = FlatStyle.Flat;
-            btnEdit.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnEdit.ForeColor = SystemColors.ControlText;
-            btnEdit.Location = new Point(683, 151);
-            btnEdit.Margin = new Padding(3, 4, 3, 4);
-            btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(112, 44);
-            btnEdit.TabIndex = 4;
-            btnEdit.Text = "Edit";
-            btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEdit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnEdit.Location = new System.Drawing.Point(683, 151);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(112, 44);
+            this.btnEdit.TabIndex = 4;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
             // 
             // UCJob
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(panel1);
-            Name = "UCJob";
-            Size = new Size(812, 212);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panel1);
+            this.Name = "UCJob";
+            this.Size = new System.Drawing.Size(812, 212);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -140,8 +140,8 @@
         public Button btnDelete;
         public Button btnEdit;
         private Label lblJobName;
-        public Label lblDTemplate;
-        public Label lblJBTemplate;
+        public Label lblDateT;
+        public Label lblJobNameT;
         private Label lblDate;
     }
 }

@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace WinFormProject
 {
-    public partial class UCApplicant : UserControl
+    public partial class UCAlert : UserControl
     {
-        public UCApplicant()
+        public UCAlert()
         {
             InitializeComponent();
-            this.MaximumSize = new System.Drawing.Size(950, 234);
+            this.MaximumSize = new System.Drawing.Size(968, 225);
         }
+
     }
 }

@@ -29,13 +29,10 @@
         private void InitializeComponent()
         {
             this.hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            Job job = new Job();
-            this.ucInformation3 = new WinFormProject.UCInformation();
-            this.ucInformation2 = new WinFormProject.UCInformation();
-            this.ucInformation1 = new WinFormProject.UCInformation();
-            this.panel1.SuspendLayout();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.pnSubBody = new System.Windows.Forms.Panel();
+            this.ucAlert1 = new WinFormProject.UCAlert();
+            this.pnSubBody.SuspendLayout();
             this.SuspendLayout();
             // 
             // hopeTextBox1
@@ -62,51 +59,34 @@
             this.hopeTextBox1.TabStop = false;
             this.hopeTextBox1.UseSystemPasswordChar = false;
             // 
-            // button1
+            // btnSearch
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(895, 24);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 43);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSearch.Location = new System.Drawing.Point(895, 24);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(94, 43);
+            this.btnSearch.TabIndex = 3;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // pnSubBody
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.ucInformation3);
-            this.panel1.Controls.Add(this.ucInformation2);
-            this.panel1.Controls.Add(this.ucInformation1);
-            this.panel1.Location = new System.Drawing.Point(21, 109);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(968, 762);
-            this.panel1.TabIndex = 5;
+            this.pnSubBody.AutoScroll = true;
+            this.pnSubBody.Controls.Add(this.ucAlert1);
+            this.pnSubBody.Location = new System.Drawing.Point(21, 109);
+            this.pnSubBody.Name = "pnSubBody";
+            this.pnSubBody.Size = new System.Drawing.Size(968, 762);
+            this.pnSubBody.TabIndex = 5;
             // 
-            // ucInformation3
+            // ucAlert1
             // 
-            this.ucInformation3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucInformation3.Location = new System.Drawing.Point(0, 450);
-            this.ucInformation3.Name = "ucInformation3";
-            this.ucInformation3.Size = new System.Drawing.Size(968, 225);
-            this.ucInformation3.TabIndex = 2;
-            // 
-            // ucInformation2
-            // 
-            this.ucInformation2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucInformation2.Location = new System.Drawing.Point(0, 225);
-            this.ucInformation2.Name = "ucInformation2";
-            this.ucInformation2.Size = new System.Drawing.Size(968, 225);
-            this.ucInformation2.TabIndex = 1;
-            // 
-            // ucInformation1
-            // 
-            this.ucInformation1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucInformation1.Location = new System.Drawing.Point(0, 0);
-            this.ucInformation1.Name = "ucInformation1";
-            this.ucInformation1.Size = new System.Drawing.Size(968, 225);
-            this.ucInformation1.TabIndex = 0;
+            this.ucAlert1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ucAlert1.Location = new System.Drawing.Point(0, 0);
+            this.ucAlert1.MaximumSize = new System.Drawing.Size(968, 225);
+            this.ucAlert1.Name = "ucAlert1";
+            this.ucAlert1.Size = new System.Drawing.Size(968, 225);
+            this.ucAlert1.TabIndex = 0;
             // 
             // FSupJobSection
             // 
@@ -115,23 +95,21 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(1029, 611);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pnSubBody);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.hopeTextBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FSupJobSection";
             this.Text = "FSupJobSection";
-            this.panel1.ResumeLayout(false);
+            this.pnSubBody.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox1;
-        private Button button1;
-        private Panel panel1;
-        private UCInformation ucInformation3;
-        private UCInformation ucInformation2;
-        private UCInformation ucInformation1;
+        private Button btnSearch;
+        private Panel pnSubBody;
+        private UCAlert ucAlert1;
     }
 }
