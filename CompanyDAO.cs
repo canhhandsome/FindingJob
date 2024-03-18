@@ -16,6 +16,12 @@ namespace WinFormProject
             string strFetch = string.Format("SELECT companytype,companysize FROM {0} where id = '{1}'","company" ,company.INFO.ID);
             return conn.FetchSeperatedData(strFetch);
         }
+
+        public string FetchName(string companyid) 
+        {
+            string strFetch = string.Format("Select Name from company where id = '{0}'", companyid);
+            return conn.FetchScalar(strFetch);
+        }
     }
     
 }

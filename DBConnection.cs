@@ -19,7 +19,6 @@ namespace WinFormProject
 
         public bool AccountReader(string sqlReader, string email, string pass)
         {
-
             try
             {
                 conn.Open();
@@ -68,6 +67,7 @@ namespace WinFormProject
         }
         //This is used for fetch uncommon data ( the information of company and person)
 
+
         public List<string> FetchSeperatedData(string strFetch)
         {
             List<string> seperatedinfo = new List<string>(2);
@@ -93,6 +93,24 @@ namespace WinFormProject
             }
             return seperatedinfo;
 
+        }
+        public string FetchScalar(string strFetch)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                return cmd.ExecuteScalar().ToString();
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally 
+            {
+                conn.Close(); 
+            }
+            return "";
         }
 
         public void FetchHiringJob(string strFetch, List<Job> jobs)

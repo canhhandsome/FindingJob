@@ -14,6 +14,7 @@ namespace WinFormProject
     {
         private Form currentFormChild = new Form();
         public Panel panel = new Panel();
+        public Job job = new Job();
         public FSupJobSection(Panel panel)
         {
             InitializeComponent();
@@ -23,7 +24,7 @@ namespace WinFormProject
                 if (control is UCInformation)
                 {
                     UCInformation userControl = (UCInformation)control;
-                    userControl.panel1.Click += panel1_Click;
+                    //userControl.panel1.Click += panel1_Click;
                 }
             }
         }
@@ -42,7 +43,7 @@ namespace WinFormProject
 
         public void panel1_Click(object sender, EventArgs e)
         {
-            OpenChildForm(panel, new FJobDetails());
+            OpenChildForm(panel, new FJobDetails(job));
         }
     }
 }

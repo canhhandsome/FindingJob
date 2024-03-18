@@ -16,6 +16,14 @@ namespace WinFormProject
             
         }
 
+        public List<Job> FetchJobs()
+        {
+            List<Job> jobs = new List<Job>();
+            string strFetch = string.Format("Select * from job");
+            conn.FetchHiringJob(strFetch, jobs);
+            return jobs;
+        }
+
         public List<Job> FetchAllJob(string companyid)  
         {
             List<Job> jobs = new List<Job>();
@@ -23,9 +31,11 @@ namespace WinFormProject
             conn.FetchHiringJob(strFetch, jobs);
             return jobs;
         }
-        public void AddNewJob(string jobid, string companyid, string jobname, string position, string salary, string requirement, string description, DateTime datapublish)
+        public void AddNewJob(string companyid, string jobname, string position, string salary, string requirement, string description, DateTime datapublish)
         {
-            string sqlUpdate = string.Format("INSERT INTO Job (jobid, companyid, jobname,position,salary, datepublish,description,requirement) Values ('{0}', '{1}','{2}','{3}','{4}','{5}','{6}','{7}')",jobid,companyid,jobname,position,salary,datapublish,description,requirement);
+            string sqlUpdate = string.Format("INSERT INTO Job (jobid, companyid, jobname, position, salary, datepublish, description, requirement) " +
+                                     "VALUES (SUBSTRING(CONVERT(VARCHAR(36), NEWID()), 1, 8),'{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')",
+                                     companyid, jobname, position, salary, datapublish.ToString("yyyy-MM-dd"), description, requirement);
             conn.CRUD(sqlUpdate);
         }
         public void DeleteJob(string jobid)

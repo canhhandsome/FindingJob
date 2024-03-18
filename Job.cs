@@ -8,10 +8,13 @@ namespace WinFormProject
 {
     public class Job
     {
-        string jobid, companyid,jobname, position, salary,requirement,description;
+        string jobid, companyid, jobname ,position, salary, requirement,description;
         DateTime datapublish;
         JobDAO jobDAO = new JobDAO();
+        public Job()
+        {
 
+        }
         public Job(string jobid,string companyid,string jobname,string position,string salary, string requirement,string description,DateTime datapublish)
         {
             this.jobid = jobid;
@@ -36,5 +39,27 @@ namespace WinFormProject
         {
             get { return datapublish; }
         }
+        public string CompanyID
+        {
+            get { return companyid; }
+        }
+        public string Salary
+        {
+            get { return salary; }
+        }
+        public string Requirement
+        { 
+            get { return requirement; } 
+        }
+        public string Description
+        {
+            get { return description; }
+        }
+
+        public string Position
+        {
+            get { return position; }
+        }
+
     }
 }

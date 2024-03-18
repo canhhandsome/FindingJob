@@ -70,14 +70,6 @@ namespace WinFormProject
         {
             OpenChildForm(new FJobEdit(jobs, companyid));
         }
-
-        private void pnBody_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-       
-
         private void btnEditJob_Click(object sender, EventArgs e)
         {
             //FJobEdit fJobEdit = new FJobEdit();
@@ -93,16 +85,7 @@ namespace WinFormProject
                 // Remove the UCJob control from the panel
                 pnSubBody.Controls.Remove(ucjob);
                 ucjob.Dispose(); // Dispose if necessary
-
-                // Find and remove the corresponding job from the list
-                foreach (Job job in jobs)
-                {
-                    if (job.Equals(ucjob.Job))
-                    {
-                        jobs.Remove(job);
-                        break;
-                    }
-                }
+                jobs.Remove(ucjob.Job);
             }
         }
     }

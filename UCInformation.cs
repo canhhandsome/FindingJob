@@ -12,9 +12,25 @@ namespace WinFormProject
 {
     public partial class UCInformation : UserControl
     {
+        private Job job = new Job();
         public UCInformation()
         {
+
+        }
+        public UCInformation(Job job)
+        {
+            CompanyDAO companyDAO = new CompanyDAO();
             InitializeComponent();
+            this.job = job;
+            lblFromT.Text = companyDAO.FetchName(job.CompanyID);
+            lblDateT.Text = job.DatePublish.ToString();
+            lblNameT.Text = job.Name;
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            FJobDetails jobDetails = new FJobDetails(job);
+            jobDetails.Show();
         }
     }
 }

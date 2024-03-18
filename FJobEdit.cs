@@ -56,9 +56,6 @@ namespace WinFormProject
             childForm.BringToFront();
             childForm.Show();
         }
-
-
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FPostJob(jobs,companyid));
@@ -66,8 +63,8 @@ namespace WinFormProject
 
         private void btnPostJob_Click(object sender, EventArgs e)
         {
-            jobs.Add(new Job("JOO3",companyid,txtJobName.Text,txtExperience.Text,txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, DateTime.Now));
-            jobDAO.AddNewJob("JOO3", companyid, txtJobName.Text, txtExperience.Text, txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, DateTime.Now);
+            jobDAO.AddNewJob(companyid, txtJobName.Text, txtExperience.Text, txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, DateTime.Now);
+            jobs = jobDAO.FetchAllJob(companyid);
             OpenChildForm(new FPostJob(jobs, companyid));
         }
 
