@@ -43,5 +43,13 @@ namespace WinFormProject
             string SQL = string.Format("DELETE FROM JOB WHERE jobid = '{0}'", jobid);
             conn.CRUD(SQL);
         }
+        public void EditJob(Job job)
+        {
+            Job job1 = new Job();
+            string sqlUpdate = string.Format("UPDATE Job SET companyid = '{0}', jobname = '{1}', position = '{2}', salary = '{3}', datepublish = '{4}', description = '{5}', requirement = '{6}' WHERE jobid = '{7}'",
+                                             job.CompanyID, job.Name, job.Position, job.Salary, job.DatePublish.ToString("yyyy-MM-dd"), job.Description, job.Requirement, job.Jobid);
+            conn.CRUD(sqlUpdate);
+        }
+
     }
 }

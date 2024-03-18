@@ -104,14 +104,6 @@ namespace WinFormProject
             OpenChildForm(new FPostJob(company.Jobs, company.INFO.ID));
         }
 
-        private void btnEditJob_Click(object sender, EventArgs e)
-        {
-            //FJobEdit fJobEdit = new FJobEdit();
-            //fJobEdit.LblTitle = "Editing a job";
-            //fJobEdit.BtnPostJob = "Save";
-            //OpenChildForm(fJobEdit);
-        }
-
         private void btnApplicant_Click(object sender, EventArgs e)
         {
             FApplicant fApplicant = new FApplicant();

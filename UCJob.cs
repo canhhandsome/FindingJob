@@ -38,5 +38,10 @@ namespace WinFormProject
         {
             JobDeleted?.Invoke(this, e);
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

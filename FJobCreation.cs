@@ -1,28 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.ComponentModel.Design;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace WinFormProject
 {
-    public partial class FJobEdit : Form
+    public partial class FJobCreation : Form
     {
         private Form currentFormChild = new Form();
         private List<Job> jobs;
         private string companyid;
         private JobDAO jobDAO = new JobDAO();
-        private Job job;
 
-        public FJobEdit(Job job)
+        public FJobCreation(List<Job> jobs,string companyid)
         {
             InitializeComponent();
-            this.job = job;
+            this.jobs = jobs;
+            this.companyid = companyid;
+        }
+        public string LblTitle
+        {
+            get { return lblTitle.Text; }
+            set { lblTitle.Text = value; }
+        }
+        public string BtnPostJob
+        {
+            get { return btnPostJob.Text; }
+            set { btnPostJob.Text = value; }
         }
         private void OpenChildForm(Form childForm)
         {
@@ -48,15 +58,15 @@ namespace WinFormProject
         }
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new FPostJob(jobs,companyid));
+        }
+
+        private void btnPostJob_Click(object sender, EventArgs e)
+        {
+            jobDAO.AddNewJob(companyid, txtJobName.Text, txtExperience.Text, txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, DateTime.Now);
+            jobs = jobDAO.FetchAllJob(companyid);
             OpenChildForm(new FPostJob(jobs, companyid));
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            //Job job1 = new Job(job.Jobid, job.CompanyID,txtJobName.Text,txtExperience.Text,txtSalary.Text,rtxtjobrequirement.Text,rtxtdescription.Text,DateTime.Now);
-            //jobDAO.EditJob(job1);
-            //jobs = jobDAO.FetchAllJob(companyid);
-            //OpenChildForm(new FPostJob(jobs, companyid));
-        }
     }
 }

@@ -31,8 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblDateT = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
-            this.lblContentT = new System.Windows.Forms.Label();
-            this.lblContent = new System.Windows.Forms.Label();
+            this.lblSubjectT = new System.Windows.Forms.Label();
+            this.lblSubject = new System.Windows.Forms.Label();
             this.lblFromT = new System.Windows.Forms.Label();
             this.lblForm = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -44,8 +44,8 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.lblDateT);
             this.panel1.Controls.Add(this.lblDate);
-            this.panel1.Controls.Add(this.lblContentT);
-            this.panel1.Controls.Add(this.lblContent);
+            this.panel1.Controls.Add(this.lblSubjectT);
+            this.panel1.Controls.Add(this.lblSubject);
             this.panel1.Controls.Add(this.lblFromT);
             this.panel1.Controls.Add(this.lblForm);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -60,7 +60,7 @@
             // 
             this.lblDateT.AutoSize = true;
             this.lblDateT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDateT.Location = new System.Drawing.Point(91, 121);
+            this.lblDateT.Location = new System.Drawing.Point(117, 121);
             this.lblDateT.Name = "lblDateT";
             this.lblDateT.Size = new System.Drawing.Size(69, 30);
             this.lblDateT.TabIndex = 0;
@@ -76,31 +76,31 @@
             this.lblDate.TabIndex = 0;
             this.lblDate.Text = "Date: ";
             // 
-            // lblContentT
+            // lblSubjectT
             // 
-            this.lblContentT.AutoSize = true;
-            this.lblContentT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblContentT.Location = new System.Drawing.Point(123, 71);
-            this.lblContentT.Name = "lblContentT";
-            this.lblContentT.Size = new System.Drawing.Size(101, 30);
-            this.lblContentT.TabIndex = 0;
-            this.lblContentT.Text = "Content: ";
+            this.lblSubjectT.AutoSize = true;
+            this.lblSubjectT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSubjectT.Location = new System.Drawing.Point(117, 71);
+            this.lblSubjectT.Name = "lblSubjectT";
+            this.lblSubjectT.Size = new System.Drawing.Size(95, 30);
+            this.lblSubjectT.TabIndex = 0;
+            this.lblSubjectT.Text = "Subject: ";
             // 
-            // lblContent
+            // lblSubject
             // 
-            this.lblContent.AutoSize = true;
-            this.lblContent.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblContent.Location = new System.Drawing.Point(16, 71);
-            this.lblContent.Name = "lblContent";
-            this.lblContent.Size = new System.Drawing.Size(101, 30);
-            this.lblContent.TabIndex = 0;
-            this.lblContent.Text = "Content: ";
+            this.lblSubject.AutoSize = true;
+            this.lblSubject.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSubject.Location = new System.Drawing.Point(16, 71);
+            this.lblSubject.Name = "lblSubject";
+            this.lblSubject.Size = new System.Drawing.Size(95, 30);
+            this.lblSubject.TabIndex = 0;
+            this.lblSubject.Text = "Subject: ";
             // 
             // lblFromT
             // 
             this.lblFromT.AutoSize = true;
             this.lblFromT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblFromT.Location = new System.Drawing.Point(91, 21);
+            this.lblFromT.Location = new System.Drawing.Point(117, 21);
             this.lblFromT.Name = "lblFromT";
             this.lblFromT.Size = new System.Drawing.Size(69, 30);
             this.lblFromT.TabIndex = 0;
@@ -134,8 +134,8 @@
         public Panel panel1;
         public Label lblDateT;
         public Label lblDate;
-        public Label lblContentT;
-        public Label lblContent;
+        public Label lblSubjectT;
+        public Label lblSubject;
         public Label lblFromT;
         public Label lblForm;
     }

@@ -68,7 +68,7 @@ namespace WinFormProject
 
         private void btnPostingJob_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FJobEdit(jobs, companyid));
+            OpenChildForm(new FJobCreation(jobs, companyid));
         }
         private void btnEditJob_Click(object sender, EventArgs e)
         {
