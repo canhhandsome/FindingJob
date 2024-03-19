@@ -18,6 +18,8 @@ namespace WinFormProject
         {
             InitializeComponent();
             seeker = jobSeeker;
+            this.btnChoosePicture.Visible = false;
+
         }
 
         private void lblFullName_Click(object sender, EventArgs e)
@@ -68,6 +70,24 @@ namespace WinFormProject
         {
             FillInfor();
 
+        }
+
+
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.btnChoosePicture.Visible = true;
+            this.btnEdit.Text = "Save";
+            this.btnCV.Text = "Choose new CV";
+        }
+
+        private void btnChoosePicture_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDiaglog = new OpenFileDialog();
+            if (openFileDiaglog.ShowDialog() == DialogResult.OK)
+            {
+                ptbAvatar.Image = new Bitmap(openFileDiaglog.FileName);
+            }
         }
     }
 }

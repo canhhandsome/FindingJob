@@ -31,496 +31,432 @@ namespace WinFormProject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FProfile));
-            this.txtboxFullName = new ReaLTaiizor.Controls.HopeTextBox();
-            this.txtboxPhoneNumber = new ReaLTaiizor.Controls.HopeTextBox();
-            this.txtboxEmail = new ReaLTaiizor.Controls.HopeTextBox();
-            this.txtboxAddress = new ReaLTaiizor.Controls.HopeTextBox();
-            this.dtpkBirthDate = new System.Windows.Forms.DateTimePicker();
-            this.hopeRadioButton1 = new ReaLTaiizor.Controls.HopeRadioButton();
-            this.hopeRadioButton2 = new ReaLTaiizor.Controls.HopeRadioButton();
-            this.txtboxCitizenId = new ReaLTaiizor.Controls.HopeTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtboxDetails = new ReaLTaiizor.Controls.HopeRichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.txtboxPersonalLink = new ReaLTaiizor.Controls.HopeTextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.lblFullName = new System.Windows.Forms.Label();
-            this.lblAddress = new System.Windows.Forms.Label();
-            this.lblCitizenId = new System.Windows.Forms.Label();
-            this.lblPhoneNumber = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblPersonalLink = new System.Windows.Forms.Label();
-            this.lblDoB = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            txtboxFullName = new ReaLTaiizor.Controls.HopeTextBox();
+            txtboxPhoneNumber = new ReaLTaiizor.Controls.HopeTextBox();
+            txtboxEmail = new ReaLTaiizor.Controls.HopeTextBox();
+            txtboxAddress = new ReaLTaiizor.Controls.HopeTextBox();
+            dtpkBirthDate = new DateTimePicker();
+            hopeRadioButton1 = new ReaLTaiizor.Controls.HopeRadioButton();
+            hopeRadioButton2 = new ReaLTaiizor.Controls.HopeRadioButton();
+            txtboxCitizenId = new ReaLTaiizor.Controls.HopeTextBox();
+            ptbAvatar = new PictureBox();
+            btnCV = new Button();
+            txtboxPersonalLink = new ReaLTaiizor.Controls.HopeTextBox();
+            btnEdit = new Button();
+            lblFullName = new Label();
+            lblAddress = new Label();
+            lblCitizenId = new Label();
+            lblPhoneNumber = new Label();
+            lblEmail = new Label();
+            lblPersonalLink = new Label();
+            lblDoB = new Label();
+            label8 = new Label();
+            btnCancel = new Button();
+            btnChoosePicture = new Button();
+            ((System.ComponentModel.ISupportInitialize)ptbAvatar).BeginInit();
+            SuspendLayout();
             // 
             // txtboxFullName
             // 
-            this.txtboxFullName.BackColor = System.Drawing.Color.White;
-            this.txtboxFullName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.txtboxFullName.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.txtboxFullName.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.txtboxFullName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtboxFullName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.txtboxFullName.Hint = "Enter Fullname";
-            this.txtboxFullName.Location = new System.Drawing.Point(33, 60);
-            this.txtboxFullName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtboxFullName.MaxLength = 32767;
-            this.txtboxFullName.Multiline = false;
-            this.txtboxFullName.Name = "txtboxFullName";
-            this.txtboxFullName.PasswordChar = '\0';
-            this.txtboxFullName.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtboxFullName.SelectedText = "";
-            this.txtboxFullName.SelectionLength = 0;
-            this.txtboxFullName.SelectionStart = 0;
-            this.txtboxFullName.Size = new System.Drawing.Size(298, 43);
-            this.txtboxFullName.TabIndex = 3;
-            this.txtboxFullName.TabStop = false;
-            this.txtboxFullName.UseSystemPasswordChar = false;
+            txtboxFullName.BackColor = Color.White;
+            txtboxFullName.BaseColor = Color.FromArgb(44, 55, 66);
+            txtboxFullName.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtboxFullName.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtboxFullName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtboxFullName.ForeColor = Color.FromArgb(48, 49, 51);
+            txtboxFullName.Hint = "Enter Fullname";
+            txtboxFullName.Location = new Point(33, 60);
+            txtboxFullName.Margin = new Padding(3, 4, 3, 4);
+            txtboxFullName.MaxLength = 32767;
+            txtboxFullName.Multiline = false;
+            txtboxFullName.Name = "txtboxFullName";
+            txtboxFullName.PasswordChar = '\0';
+            txtboxFullName.ScrollBars = ScrollBars.None;
+            txtboxFullName.SelectedText = "";
+            txtboxFullName.SelectionLength = 0;
+            txtboxFullName.SelectionStart = 0;
+            txtboxFullName.Size = new Size(298, 43);
+            txtboxFullName.TabIndex = 3;
+            txtboxFullName.TabStop = false;
+            txtboxFullName.UseSystemPasswordChar = false;
             // 
             // txtboxPhoneNumber
             // 
-            this.txtboxPhoneNumber.BackColor = System.Drawing.Color.White;
-            this.txtboxPhoneNumber.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.txtboxPhoneNumber.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.txtboxPhoneNumber.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.txtboxPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtboxPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.txtboxPhoneNumber.Hint = "Enter Phone Number";
-            this.txtboxPhoneNumber.Location = new System.Drawing.Point(33, 164);
-            this.txtboxPhoneNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtboxPhoneNumber.MaxLength = 32767;
-            this.txtboxPhoneNumber.Multiline = false;
-            this.txtboxPhoneNumber.Name = "txtboxPhoneNumber";
-            this.txtboxPhoneNumber.PasswordChar = '\0';
-            this.txtboxPhoneNumber.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtboxPhoneNumber.SelectedText = "";
-            this.txtboxPhoneNumber.SelectionLength = 0;
-            this.txtboxPhoneNumber.SelectionStart = 0;
-            this.txtboxPhoneNumber.Size = new System.Drawing.Size(298, 43);
-            this.txtboxPhoneNumber.TabIndex = 4;
-            this.txtboxPhoneNumber.TabStop = false;
-            this.txtboxPhoneNumber.UseSystemPasswordChar = false;
+            txtboxPhoneNumber.BackColor = Color.White;
+            txtboxPhoneNumber.BaseColor = Color.FromArgb(44, 55, 66);
+            txtboxPhoneNumber.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtboxPhoneNumber.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtboxPhoneNumber.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtboxPhoneNumber.ForeColor = Color.FromArgb(48, 49, 51);
+            txtboxPhoneNumber.Hint = "Enter Phone Number";
+            txtboxPhoneNumber.Location = new Point(33, 164);
+            txtboxPhoneNumber.Margin = new Padding(3, 4, 3, 4);
+            txtboxPhoneNumber.MaxLength = 32767;
+            txtboxPhoneNumber.Multiline = false;
+            txtboxPhoneNumber.Name = "txtboxPhoneNumber";
+            txtboxPhoneNumber.PasswordChar = '\0';
+            txtboxPhoneNumber.ScrollBars = ScrollBars.None;
+            txtboxPhoneNumber.SelectedText = "";
+            txtboxPhoneNumber.SelectionLength = 0;
+            txtboxPhoneNumber.SelectionStart = 0;
+            txtboxPhoneNumber.Size = new Size(298, 43);
+            txtboxPhoneNumber.TabIndex = 4;
+            txtboxPhoneNumber.TabStop = false;
+            txtboxPhoneNumber.UseSystemPasswordChar = false;
             // 
             // txtboxEmail
             // 
-            this.txtboxEmail.BackColor = System.Drawing.Color.White;
-            this.txtboxEmail.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.txtboxEmail.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.txtboxEmail.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.txtboxEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtboxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.txtboxEmail.Hint = "Enter Email";
-            this.txtboxEmail.Location = new System.Drawing.Point(33, 271);
-            this.txtboxEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtboxEmail.MaxLength = 32767;
-            this.txtboxEmail.Multiline = false;
-            this.txtboxEmail.Name = "txtboxEmail";
-            this.txtboxEmail.PasswordChar = '\0';
-            this.txtboxEmail.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtboxEmail.SelectedText = "";
-            this.txtboxEmail.SelectionLength = 0;
-            this.txtboxEmail.SelectionStart = 0;
-            this.txtboxEmail.Size = new System.Drawing.Size(298, 43);
-            this.txtboxEmail.TabIndex = 5;
-            this.txtboxEmail.TabStop = false;
-            this.txtboxEmail.UseSystemPasswordChar = false;
+            txtboxEmail.BackColor = Color.White;
+            txtboxEmail.BaseColor = Color.FromArgb(44, 55, 66);
+            txtboxEmail.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtboxEmail.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtboxEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtboxEmail.ForeColor = Color.FromArgb(48, 49, 51);
+            txtboxEmail.Hint = "Enter Email";
+            txtboxEmail.Location = new Point(33, 271);
+            txtboxEmail.Margin = new Padding(3, 4, 3, 4);
+            txtboxEmail.MaxLength = 32767;
+            txtboxEmail.Multiline = false;
+            txtboxEmail.Name = "txtboxEmail";
+            txtboxEmail.PasswordChar = '\0';
+            txtboxEmail.ScrollBars = ScrollBars.None;
+            txtboxEmail.SelectedText = "";
+            txtboxEmail.SelectionLength = 0;
+            txtboxEmail.SelectionStart = 0;
+            txtboxEmail.Size = new Size(298, 43);
+            txtboxEmail.TabIndex = 5;
+            txtboxEmail.TabStop = false;
+            txtboxEmail.UseSystemPasswordChar = false;
             // 
             // txtboxAddress
             // 
-            this.txtboxAddress.BackColor = System.Drawing.Color.White;
-            this.txtboxAddress.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.txtboxAddress.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.txtboxAddress.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.txtboxAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtboxAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.txtboxAddress.Hint = "Enter Address";
-            this.txtboxAddress.Location = new System.Drawing.Point(415, 60);
-            this.txtboxAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtboxAddress.MaxLength = 32767;
-            this.txtboxAddress.Multiline = false;
-            this.txtboxAddress.Name = "txtboxAddress";
-            this.txtboxAddress.PasswordChar = '\0';
-            this.txtboxAddress.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtboxAddress.SelectedText = "";
-            this.txtboxAddress.SelectionLength = 0;
-            this.txtboxAddress.SelectionStart = 0;
-            this.txtboxAddress.Size = new System.Drawing.Size(298, 43);
-            this.txtboxAddress.TabIndex = 5;
-            this.txtboxAddress.TabStop = false;
-            this.txtboxAddress.UseSystemPasswordChar = false;
+            txtboxAddress.BackColor = Color.White;
+            txtboxAddress.BaseColor = Color.FromArgb(44, 55, 66);
+            txtboxAddress.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtboxAddress.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtboxAddress.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtboxAddress.ForeColor = Color.FromArgb(48, 49, 51);
+            txtboxAddress.Hint = "Enter Address";
+            txtboxAddress.Location = new Point(415, 60);
+            txtboxAddress.Margin = new Padding(3, 4, 3, 4);
+            txtboxAddress.MaxLength = 32767;
+            txtboxAddress.Multiline = false;
+            txtboxAddress.Name = "txtboxAddress";
+            txtboxAddress.PasswordChar = '\0';
+            txtboxAddress.ScrollBars = ScrollBars.None;
+            txtboxAddress.SelectedText = "";
+            txtboxAddress.SelectionLength = 0;
+            txtboxAddress.SelectionStart = 0;
+            txtboxAddress.Size = new Size(298, 43);
+            txtboxAddress.TabIndex = 5;
+            txtboxAddress.TabStop = false;
+            txtboxAddress.UseSystemPasswordChar = false;
             // 
             // dtpkBirthDate
             // 
-            this.dtpkBirthDate.Location = new System.Drawing.Point(415, 371);
-            this.dtpkBirthDate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dtpkBirthDate.Name = "dtpkBirthDate";
-            this.dtpkBirthDate.Size = new System.Drawing.Size(226, 27);
-            this.dtpkBirthDate.TabIndex = 6;
+            dtpkBirthDate.Location = new Point(415, 371);
+            dtpkBirthDate.Margin = new Padding(3, 4, 3, 4);
+            dtpkBirthDate.Name = "dtpkBirthDate";
+            dtpkBirthDate.Size = new Size(226, 27);
+            dtpkBirthDate.TabIndex = 6;
             // 
             // hopeRadioButton1
             // 
-            this.hopeRadioButton1.AutoSize = true;
-            this.hopeRadioButton1.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeRadioButton1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
-            this.hopeRadioButton1.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
-            this.hopeRadioButton1.Enable = true;
-            this.hopeRadioButton1.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeRadioButton1.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(146)))), ((int)(((byte)(146)))));
-            this.hopeRadioButton1.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            this.hopeRadioButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hopeRadioButton1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.hopeRadioButton1.Location = new System.Drawing.Point(33, 375);
-            this.hopeRadioButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.hopeRadioButton1.Name = "hopeRadioButton1";
-            this.hopeRadioButton1.Size = new System.Drawing.Size(80, 20);
-            this.hopeRadioButton1.TabIndex = 7;
-            this.hopeRadioButton1.TabStop = true;
-            this.hopeRadioButton1.Text = "Male";
-            this.hopeRadioButton1.UseVisualStyleBackColor = true;
+            hopeRadioButton1.AutoSize = true;
+            hopeRadioButton1.CheckedColor = Color.FromArgb(64, 158, 255);
+            hopeRadioButton1.DisabledColor = Color.FromArgb(196, 198, 202);
+            hopeRadioButton1.DisabledStringColor = Color.FromArgb(186, 187, 189);
+            hopeRadioButton1.Enable = true;
+            hopeRadioButton1.EnabledCheckedColor = Color.FromArgb(64, 158, 255);
+            hopeRadioButton1.EnabledStringColor = Color.FromArgb(146, 146, 146);
+            hopeRadioButton1.EnabledUncheckedColor = Color.FromArgb(156, 158, 161);
+            hopeRadioButton1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            hopeRadioButton1.ForeColor = SystemColors.Desktop;
+            hopeRadioButton1.Location = new Point(33, 375);
+            hopeRadioButton1.Margin = new Padding(3, 4, 3, 4);
+            hopeRadioButton1.Name = "hopeRadioButton1";
+            hopeRadioButton1.Size = new Size(80, 20);
+            hopeRadioButton1.TabIndex = 7;
+            hopeRadioButton1.TabStop = true;
+            hopeRadioButton1.Text = "Male";
+            hopeRadioButton1.UseVisualStyleBackColor = true;
             // 
             // hopeRadioButton2
             // 
-            this.hopeRadioButton2.AutoSize = true;
-            this.hopeRadioButton2.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeRadioButton2.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
-            this.hopeRadioButton2.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
-            this.hopeRadioButton2.Enable = true;
-            this.hopeRadioButton2.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeRadioButton2.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(146)))), ((int)(((byte)(146)))));
-            this.hopeRadioButton2.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            this.hopeRadioButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hopeRadioButton2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.hopeRadioButton2.Location = new System.Drawing.Point(176, 375);
-            this.hopeRadioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.hopeRadioButton2.Name = "hopeRadioButton2";
-            this.hopeRadioButton2.Size = new System.Drawing.Size(99, 20);
-            this.hopeRadioButton2.TabIndex = 7;
-            this.hopeRadioButton2.TabStop = true;
-            this.hopeRadioButton2.Text = "Female";
-            this.hopeRadioButton2.UseVisualStyleBackColor = true;
+            hopeRadioButton2.AutoSize = true;
+            hopeRadioButton2.CheckedColor = Color.FromArgb(64, 158, 255);
+            hopeRadioButton2.DisabledColor = Color.FromArgb(196, 198, 202);
+            hopeRadioButton2.DisabledStringColor = Color.FromArgb(186, 187, 189);
+            hopeRadioButton2.Enable = true;
+            hopeRadioButton2.EnabledCheckedColor = Color.FromArgb(64, 158, 255);
+            hopeRadioButton2.EnabledStringColor = Color.FromArgb(146, 146, 146);
+            hopeRadioButton2.EnabledUncheckedColor = Color.FromArgb(156, 158, 161);
+            hopeRadioButton2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            hopeRadioButton2.ForeColor = SystemColors.ControlText;
+            hopeRadioButton2.Location = new Point(176, 375);
+            hopeRadioButton2.Margin = new Padding(3, 4, 3, 4);
+            hopeRadioButton2.Name = "hopeRadioButton2";
+            hopeRadioButton2.Size = new Size(99, 20);
+            hopeRadioButton2.TabIndex = 7;
+            hopeRadioButton2.TabStop = true;
+            hopeRadioButton2.Text = "Female";
+            hopeRadioButton2.UseVisualStyleBackColor = true;
             // 
             // txtboxCitizenId
             // 
-            this.txtboxCitizenId.BackColor = System.Drawing.Color.White;
-            this.txtboxCitizenId.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.txtboxCitizenId.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.txtboxCitizenId.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.txtboxCitizenId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtboxCitizenId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.txtboxCitizenId.Hint = "Enter Citizen identification";
-            this.txtboxCitizenId.Location = new System.Drawing.Point(415, 164);
-            this.txtboxCitizenId.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtboxCitizenId.MaxLength = 32767;
-            this.txtboxCitizenId.Multiline = false;
-            this.txtboxCitizenId.Name = "txtboxCitizenId";
-            this.txtboxCitizenId.PasswordChar = '\0';
-            this.txtboxCitizenId.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtboxCitizenId.SelectedText = "";
-            this.txtboxCitizenId.SelectionLength = 0;
-            this.txtboxCitizenId.SelectionStart = 0;
-            this.txtboxCitizenId.Size = new System.Drawing.Size(298, 43);
-            this.txtboxCitizenId.TabIndex = 5;
-            this.txtboxCitizenId.TabStop = false;
-            this.txtboxCitizenId.UseSystemPasswordChar = false;
+            txtboxCitizenId.BackColor = Color.White;
+            txtboxCitizenId.BaseColor = Color.FromArgb(44, 55, 66);
+            txtboxCitizenId.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtboxCitizenId.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtboxCitizenId.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtboxCitizenId.ForeColor = Color.FromArgb(48, 49, 51);
+            txtboxCitizenId.Hint = "Enter Citizen identification";
+            txtboxCitizenId.Location = new Point(415, 164);
+            txtboxCitizenId.Margin = new Padding(3, 4, 3, 4);
+            txtboxCitizenId.MaxLength = 32767;
+            txtboxCitizenId.Multiline = false;
+            txtboxCitizenId.Name = "txtboxCitizenId";
+            txtboxCitizenId.PasswordChar = '\0';
+            txtboxCitizenId.ScrollBars = ScrollBars.None;
+            txtboxCitizenId.SelectedText = "";
+            txtboxCitizenId.SelectionLength = 0;
+            txtboxCitizenId.SelectionStart = 0;
+            txtboxCitizenId.Size = new Size(298, 43);
+            txtboxCitizenId.TabIndex = 5;
+            txtboxCitizenId.TabStop = false;
+            txtboxCitizenId.UseSystemPasswordChar = false;
             // 
-            // pictureBox1
+            // ptbAvatar
             // 
-            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(832, 28);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(171, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            ptbAvatar.ErrorImage = (Image)resources.GetObject("ptbAvatar.ErrorImage");
+            ptbAvatar.Image = (Image)resources.GetObject("ptbAvatar.Image");
+            ptbAvatar.Location = new Point(799, 28);
+            ptbAvatar.Margin = new Padding(3, 4, 3, 4);
+            ptbAvatar.Name = "ptbAvatar";
+            ptbAvatar.Size = new Size(171, 200);
+            ptbAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbAvatar.TabIndex = 8;
+            ptbAvatar.TabStop = false;
             // 
-            // txtboxDetails
+            // btnCV
             // 
-            this.txtboxDetails.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.txtboxDetails.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtboxDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.txtboxDetails.Hint = "Details";
-            this.txtboxDetails.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.txtboxDetails.Location = new System.Drawing.Point(801, 252);
-            this.txtboxDetails.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtboxDetails.MaxLength = 32767;
-            this.txtboxDetails.Multiline = true;
-            this.txtboxDetails.Name = "txtboxDetails";
-            this.txtboxDetails.PasswordChar = '\0';
-            this.txtboxDetails.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtboxDetails.SelectedText = "";
-            this.txtboxDetails.SelectionLength = 0;
-            this.txtboxDetails.SelectionStart = 0;
-            this.txtboxDetails.Size = new System.Drawing.Size(229, 149);
-            this.txtboxDetails.TabIndex = 9;
-            this.txtboxDetails.TabStop = false;
-            this.txtboxDetails.Text = "Details";
-            this.txtboxDetails.UseSystemPasswordChar = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DimGray;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(101, 491);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 49);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "CV";
-            this.button1.UseVisualStyleBackColor = false;
+            btnCV.BackColor = Color.DimGray;
+            btnCV.Cursor = Cursors.Hand;
+            btnCV.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
+            btnCV.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 64, 64);
+            btnCV.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
+            btnCV.FlatStyle = FlatStyle.System;
+            btnCV.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCV.ForeColor = SystemColors.ControlLightLight;
+            btnCV.Location = new Point(33, 491);
+            btnCV.Margin = new Padding(3, 4, 3, 4);
+            btnCV.Name = "btnCV";
+            btnCV.Size = new Size(126, 49);
+            btnCV.TabIndex = 10;
+            btnCV.Text = "CV";
+            btnCV.UseVisualStyleBackColor = false;
             // 
             // txtboxPersonalLink
             // 
-            this.txtboxPersonalLink.BackColor = System.Drawing.Color.White;
-            this.txtboxPersonalLink.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.txtboxPersonalLink.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.txtboxPersonalLink.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.txtboxPersonalLink.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtboxPersonalLink.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.txtboxPersonalLink.Hint = "Enter Personal link";
-            this.txtboxPersonalLink.Location = new System.Drawing.Point(415, 271);
-            this.txtboxPersonalLink.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtboxPersonalLink.MaxLength = 32767;
-            this.txtboxPersonalLink.Multiline = false;
-            this.txtboxPersonalLink.Name = "txtboxPersonalLink";
-            this.txtboxPersonalLink.PasswordChar = '\0';
-            this.txtboxPersonalLink.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtboxPersonalLink.SelectedText = "";
-            this.txtboxPersonalLink.SelectionLength = 0;
-            this.txtboxPersonalLink.SelectionStart = 0;
-            this.txtboxPersonalLink.Size = new System.Drawing.Size(298, 43);
-            this.txtboxPersonalLink.TabIndex = 5;
-            this.txtboxPersonalLink.TabStop = false;
-            this.txtboxPersonalLink.UseSystemPasswordChar = false;
+            txtboxPersonalLink.BackColor = Color.White;
+            txtboxPersonalLink.BaseColor = Color.FromArgb(44, 55, 66);
+            txtboxPersonalLink.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtboxPersonalLink.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtboxPersonalLink.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtboxPersonalLink.ForeColor = Color.FromArgb(48, 49, 51);
+            txtboxPersonalLink.Hint = "Enter Personal link";
+            txtboxPersonalLink.Location = new Point(415, 271);
+            txtboxPersonalLink.Margin = new Padding(3, 4, 3, 4);
+            txtboxPersonalLink.MaxLength = 32767;
+            txtboxPersonalLink.Multiline = false;
+            txtboxPersonalLink.Name = "txtboxPersonalLink";
+            txtboxPersonalLink.PasswordChar = '\0';
+            txtboxPersonalLink.ScrollBars = ScrollBars.None;
+            txtboxPersonalLink.SelectedText = "";
+            txtboxPersonalLink.SelectionLength = 0;
+            txtboxPersonalLink.SelectionStart = 0;
+            txtboxPersonalLink.Size = new Size(298, 43);
+            txtboxPersonalLink.TabIndex = 5;
+            txtboxPersonalLink.TabStop = false;
+            txtboxPersonalLink.UseSystemPasswordChar = false;
             // 
-            // button2
+            // btnEdit
             // 
-            this.button2.BackColor = System.Drawing.Color.DimGray;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(246, 491);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 49);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Project";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.DimGray;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(389, 491);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(126, 49);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Certificate";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.DimGray;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(533, 491);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(126, 49);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Reward";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.DimGray;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(677, 491);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(126, 49);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Edit";
-            this.button5.UseVisualStyleBackColor = false;
+            btnEdit.BackColor = Color.DimGray;
+            btnEdit.Cursor = Cursors.Hand;
+            btnEdit.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
+            btnEdit.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 64, 64);
+            btnEdit.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
+            btnEdit.FlatStyle = FlatStyle.System;
+            btnEdit.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnEdit.ForeColor = SystemColors.ControlLightLight;
+            btnEdit.Location = new Point(689, 491);
+            btnEdit.Margin = new Padding(3, 4, 3, 4);
+            btnEdit.Name = "btnEdit";
+            btnEdit.Size = new Size(126, 49);
+            btnEdit.TabIndex = 10;
+            btnEdit.Text = "Edit";
+            btnEdit.UseVisualStyleBackColor = false;
+            btnEdit.Click += button5_Click;
             // 
             // lblFullName
             // 
-            this.lblFullName.AutoSize = true;
-            this.lblFullName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblFullName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblFullName.Location = new System.Drawing.Point(33, 28);
-            this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(91, 28);
-            this.lblFullName.TabIndex = 11;
-            this.lblFullName.Text = "Fullname";
+            lblFullName.AutoSize = true;
+            lblFullName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFullName.ForeColor = SystemColors.ControlText;
+            lblFullName.Location = new Point(33, 28);
+            lblFullName.Name = "lblFullName";
+            lblFullName.Size = new Size(91, 28);
+            lblFullName.TabIndex = 11;
+            lblFullName.Text = "Fullname";
             // 
             // lblAddress
             // 
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAddress.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblAddress.Location = new System.Drawing.Point(415, 28);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(82, 28);
-            this.lblAddress.TabIndex = 11;
-            this.lblAddress.Text = "Address";
+            lblAddress.AutoSize = true;
+            lblAddress.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblAddress.ForeColor = SystemColors.ControlText;
+            lblAddress.Location = new Point(415, 28);
+            lblAddress.Name = "lblAddress";
+            lblAddress.Size = new Size(82, 28);
+            lblAddress.TabIndex = 11;
+            lblAddress.Text = "Address";
             // 
             // lblCitizenId
             // 
-            this.lblCitizenId.AutoSize = true;
-            this.lblCitizenId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCitizenId.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblCitizenId.Location = new System.Drawing.Point(415, 132);
-            this.lblCitizenId.Name = "lblCitizenId";
-            this.lblCitizenId.Size = new System.Drawing.Size(95, 28);
-            this.lblCitizenId.TabIndex = 11;
-            this.lblCitizenId.Text = "Citizen ID";
+            lblCitizenId.AutoSize = true;
+            lblCitizenId.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCitizenId.ForeColor = SystemColors.ControlText;
+            lblCitizenId.Location = new Point(415, 132);
+            lblCitizenId.Name = "lblCitizenId";
+            lblCitizenId.Size = new Size(95, 28);
+            lblCitizenId.TabIndex = 11;
+            lblCitizenId.Text = "Citizen ID";
             // 
             // lblPhoneNumber
             // 
-            this.lblPhoneNumber.AutoSize = true;
-            this.lblPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPhoneNumber.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblPhoneNumber.Location = new System.Drawing.Point(33, 132);
-            this.lblPhoneNumber.Name = "lblPhoneNumber";
-            this.lblPhoneNumber.Size = new System.Drawing.Size(144, 28);
-            this.lblPhoneNumber.TabIndex = 11;
-            this.lblPhoneNumber.Text = "Phone Number";
+            lblPhoneNumber.AutoSize = true;
+            lblPhoneNumber.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPhoneNumber.ForeColor = SystemColors.ControlText;
+            lblPhoneNumber.Location = new Point(33, 132);
+            lblPhoneNumber.Name = "lblPhoneNumber";
+            lblPhoneNumber.Size = new Size(144, 28);
+            lblPhoneNumber.TabIndex = 11;
+            lblPhoneNumber.Text = "Phone Number";
             // 
             // lblEmail
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblEmail.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblEmail.Location = new System.Drawing.Point(33, 239);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(59, 28);
-            this.lblEmail.TabIndex = 11;
-            this.lblEmail.Text = "Email";
+            lblEmail.AutoSize = true;
+            lblEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblEmail.ForeColor = SystemColors.ControlText;
+            lblEmail.Location = new Point(33, 239);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(59, 28);
+            lblEmail.TabIndex = 11;
+            lblEmail.Text = "Email";
             // 
             // lblPersonalLink
             // 
-            this.lblPersonalLink.AutoSize = true;
-            this.lblPersonalLink.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPersonalLink.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblPersonalLink.Location = new System.Drawing.Point(415, 239);
-            this.lblPersonalLink.Name = "lblPersonalLink";
-            this.lblPersonalLink.Size = new System.Drawing.Size(125, 28);
-            this.lblPersonalLink.TabIndex = 11;
-            this.lblPersonalLink.Text = "Personal Link";
+            lblPersonalLink.AutoSize = true;
+            lblPersonalLink.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPersonalLink.ForeColor = SystemColors.ControlText;
+            lblPersonalLink.Location = new Point(415, 239);
+            lblPersonalLink.Name = "lblPersonalLink";
+            lblPersonalLink.Size = new Size(125, 28);
+            lblPersonalLink.TabIndex = 11;
+            lblPersonalLink.Text = "Personal Link";
             // 
             // lblDoB
             // 
-            this.lblDoB.AutoSize = true;
-            this.lblDoB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDoB.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblDoB.Location = new System.Drawing.Point(415, 337);
-            this.lblDoB.Name = "lblDoB";
-            this.lblDoB.Size = new System.Drawing.Size(122, 28);
-            this.lblDoB.TabIndex = 11;
-            this.lblDoB.Text = "Date of Birth";
+            lblDoB.AutoSize = true;
+            lblDoB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDoB.ForeColor = SystemColors.ControlText;
+            lblDoB.Location = new Point(415, 337);
+            lblDoB.Name = "lblDoB";
+            lblDoB.Size = new Size(122, 28);
+            lblDoB.TabIndex = 11;
+            lblDoB.Text = "Date of Birth";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(33, 337);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(76, 28);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Gender";
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.ForeColor = SystemColors.ControlText;
+            label8.Location = new Point(33, 337);
+            label8.Name = "label8";
+            label8.Size = new Size(76, 28);
+            label8.TabIndex = 11;
+            label8.Text = "Gender";
             // 
-            // button6
+            // btnCancel
             // 
-            this.button6.BackColor = System.Drawing.Color.LightCoral;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button6.ForeColor = System.Drawing.SystemColors.Control;
-            this.button6.Location = new System.Drawing.Point(821, 491);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(126, 49);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "Cancel";
-            this.button6.UseVisualStyleBackColor = false;
+            btnCancel.BackColor = Color.LightCoral;
+            btnCancel.Cursor = Cursors.Hand;
+            btnCancel.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
+            btnCancel.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 64, 64);
+            btnCancel.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
+            btnCancel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCancel.ForeColor = SystemColors.Control;
+            btnCancel.Location = new Point(821, 491);
+            btnCancel.Margin = new Padding(3, 4, 3, 4);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(126, 49);
+            btnCancel.TabIndex = 10;
+            btnCancel.Text = "Cancel";
+            btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // btnChoosePicture
+            // 
+            btnChoosePicture.BackColor = Color.DimGray;
+            btnChoosePicture.Cursor = Cursors.Hand;
+            btnChoosePicture.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
+            btnChoosePicture.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 64, 64);
+            btnChoosePicture.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
+            btnChoosePicture.FlatStyle = FlatStyle.System;
+            btnChoosePicture.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnChoosePicture.ForeColor = SystemColors.ControlLightLight;
+            btnChoosePicture.Location = new Point(810, 271);
+            btnChoosePicture.Margin = new Padding(3, 4, 3, 4);
+            btnChoosePicture.Name = "btnChoosePicture";
+            btnChoosePicture.Size = new Size(149, 49);
+            btnChoosePicture.TabIndex = 12;
+            btnChoosePicture.Text = "Choose Picture";
+            btnChoosePicture.UseVisualStyleBackColor = false;
+            btnChoosePicture.Click += btnChoosePicture_Click;
             // 
             // FProfile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(1057, 580);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.lblDoB);
-            this.Controls.Add(this.lblPersonalLink);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblPhoneNumber);
-            this.Controls.Add(this.lblCitizenId);
-            this.Controls.Add(this.lblAddress);
-            this.Controls.Add(this.lblFullName);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtboxDetails);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.hopeRadioButton2);
-            this.Controls.Add(this.hopeRadioButton1);
-            this.Controls.Add(this.dtpkBirthDate);
-            this.Controls.Add(this.txtboxPersonalLink);
-            this.Controls.Add(this.txtboxCitizenId);
-            this.Controls.Add(this.txtboxAddress);
-            this.Controls.Add(this.txtboxEmail);
-            this.Controls.Add(this.txtboxPhoneNumber);
-            this.Controls.Add(this.txtboxFullName);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "FProfile";
-            this.Text = "FProfile";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightGray;
+            ClientSize = new Size(1057, 580);
+            Controls.Add(btnChoosePicture);
+            Controls.Add(label8);
+            Controls.Add(lblDoB);
+            Controls.Add(lblPersonalLink);
+            Controls.Add(lblEmail);
+            Controls.Add(lblPhoneNumber);
+            Controls.Add(lblCitizenId);
+            Controls.Add(lblAddress);
+            Controls.Add(lblFullName);
+            Controls.Add(btnCancel);
+            Controls.Add(btnEdit);
+            Controls.Add(btnCV);
+            Controls.Add(ptbAvatar);
+            Controls.Add(hopeRadioButton2);
+            Controls.Add(hopeRadioButton1);
+            Controls.Add(dtpkBirthDate);
+            Controls.Add(txtboxPersonalLink);
+            Controls.Add(txtboxCitizenId);
+            Controls.Add(txtboxAddress);
+            Controls.Add(txtboxEmail);
+            Controls.Add(txtboxPhoneNumber);
+            Controls.Add(txtboxFullName);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "FProfile";
+            Text = "FProfile";
+            ((System.ComponentModel.ISupportInitialize)ptbAvatar).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -533,14 +469,10 @@ namespace WinFormProject
         private ReaLTaiizor.Controls.HopeRadioButton hopeRadioButton1;
         private ReaLTaiizor.Controls.HopeRadioButton hopeRadioButton2;
         private ReaLTaiizor.Controls.HopeTextBox txtboxCitizenId;
-        private PictureBox pictureBox1;
-        private ReaLTaiizor.Controls.HopeRichTextBox txtboxDetails;
-        private Button button1;
+        private PictureBox ptbAvatar;
+        private Button btnCV;
         private ReaLTaiizor.Controls.HopeTextBox txtboxPersonalLink;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
+        private Button btnEdit;
         private Label lblFullName;
         private Label lblAddress;
         private Label lblCitizenId;
@@ -549,6 +481,7 @@ namespace WinFormProject
         private Label lblPersonalLink;
         private Label lblDoB;
         private Label label8;
-        private Button button6;
+        private Button btnCancel;
+        private Button btnChoosePicture;
     }
 }

@@ -34,19 +34,19 @@
             lblToT = new Label();
             lblSubject = new Label();
             lblContent = new Label();
-            txtSubject = new ReaLTaiizor.Controls.HopeTextBox();
             txtContent = new ReaLTaiizor.Controls.HopeRichTextBox();
             btnCancel = new Button();
             btnSend = new Button();
+            txtSubject = new ReaLTaiizor.Controls.HopeTextBox();
             SuspendLayout();
             // 
             // lblFrom
             // 
             lblFrom.AutoSize = true;
             lblFrom.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFrom.Location = new Point(15, 11);
+            lblFrom.Location = new Point(17, 15);
             lblFrom.Name = "lblFrom";
-            lblFrom.Size = new Size(59, 25);
+            lblFrom.Size = new Size(74, 32);
             lblFrom.TabIndex = 7;
             lblFrom.Text = "From:";
             // 
@@ -54,9 +54,9 @@
             // 
             llFromT.AutoSize = true;
             llFromT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            llFromT.Location = new Point(112, 11);
+            llFromT.Location = new Point(128, 15);
             llFromT.Name = "llFromT";
-            llFromT.Size = new Size(59, 25);
+            llFromT.Size = new Size(74, 32);
             llFromT.TabIndex = 8;
             llFromT.Text = "From:";
             // 
@@ -64,9 +64,9 @@
             // 
             lblTo.AutoSize = true;
             lblTo.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTo.Location = new Point(15, 49);
+            lblTo.Location = new Point(17, 65);
             lblTo.Name = "lblTo";
-            lblTo.Size = new Size(35, 25);
+            lblTo.Size = new Size(44, 32);
             lblTo.TabIndex = 9;
             lblTo.Text = "To:";
             // 
@@ -74,9 +74,9 @@
             // 
             lblToT.AutoSize = true;
             lblToT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblToT.Location = new Point(112, 49);
+            lblToT.Location = new Point(128, 65);
             lblToT.Name = "lblToT";
-            lblToT.Size = new Size(35, 25);
+            lblToT.Size = new Size(44, 32);
             lblToT.TabIndex = 10;
             lblToT.Text = "To:";
             // 
@@ -84,9 +84,9 @@
             // 
             lblSubject.AutoSize = true;
             lblSubject.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSubject.Location = new Point(15, 88);
+            lblSubject.Location = new Point(17, 117);
             lblSubject.Name = "lblSubject";
-            lblSubject.Size = new Size(78, 25);
+            lblSubject.Size = new Size(98, 32);
             lblSubject.TabIndex = 11;
             lblSubject.Text = "Subject:";
             // 
@@ -94,36 +94,11 @@
             // 
             lblContent.AutoSize = true;
             lblContent.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblContent.Location = new Point(15, 129);
+            lblContent.Location = new Point(17, 172);
             lblContent.Name = "lblContent";
-            lblContent.Size = new Size(83, 25);
+            lblContent.Size = new Size(105, 32);
             lblContent.TabIndex = 12;
             lblContent.Text = "Content:";
-            // 
-            // txtSubject
-            // 
-            txtSubject.BackColor = Color.White;
-            txtSubject.BaseColor = Color.FromArgb(44, 55, 66);
-            txtSubject.BorderColorA = Color.FromArgb(64, 158, 255);
-            txtSubject.BorderColorB = Color.FromArgb(220, 223, 230);
-            txtSubject.Cursor = Cursors.IBeam;
-            txtSubject.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtSubject.ForeColor = Color.FromArgb(48, 49, 51);
-            txtSubject.Hint = "Enter subject";
-            txtSubject.Location = new Point(112, 82);
-            txtSubject.Margin = new Padding(3, 2, 3, 2);
-            txtSubject.MaxLength = 32767;
-            txtSubject.Multiline = false;
-            txtSubject.Name = "txtSubject";
-            txtSubject.PasswordChar = '\0';
-            txtSubject.ScrollBars = ScrollBars.None;
-            txtSubject.SelectedText = "";
-            txtSubject.SelectionLength = 0;
-            txtSubject.SelectionStart = 0;
-            txtSubject.Size = new Size(389, 38);
-            txtSubject.TabIndex = 13;
-            txtSubject.TabStop = false;
-            txtSubject.UseSystemPasswordChar = false;
             // 
             // txtContent
             // 
@@ -132,8 +107,7 @@
             txtContent.ForeColor = Color.FromArgb(48, 49, 51);
             txtContent.Hint = "";
             txtContent.HoverBorderColor = Color.FromArgb(64, 158, 255);
-            txtContent.Location = new Point(112, 129);
-            txtContent.Margin = new Padding(3, 2, 3, 2);
+            txtContent.Location = new Point(128, 172);
             txtContent.MaxLength = 32767;
             txtContent.Multiline = true;
             txtContent.Name = "txtContent";
@@ -142,7 +116,7 @@
             txtContent.SelectedText = "";
             txtContent.SelectionLength = 0;
             txtContent.SelectionStart = 0;
-            txtContent.Size = new Size(769, 226);
+            txtContent.Size = new Size(879, 301);
             txtContent.TabIndex = 14;
             txtContent.TabStop = false;
             txtContent.Text = "Enter content";
@@ -157,9 +131,10 @@
             btnCancel.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
             btnCancel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancel.ForeColor = SystemColors.Control;
-            btnCancel.Location = new Point(756, 382);
+            btnCancel.Location = new Point(864, 509);
+            btnCancel.Margin = new Padding(3, 4, 3, 4);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(134, 37);
+            btnCancel.Size = new Size(153, 49);
             btnCancel.TabIndex = 28;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = false;
@@ -173,19 +148,44 @@
             btnSend.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
             btnSend.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnSend.ForeColor = SystemColors.ControlText;
-            btnSend.Location = new Point(598, 382);
+            btnSend.Location = new Point(683, 509);
+            btnSend.Margin = new Padding(3, 4, 3, 4);
             btnSend.Name = "btnSend";
-            btnSend.Size = new Size(134, 37);
+            btnSend.Size = new Size(153, 49);
             btnSend.TabIndex = 29;
             btnSend.Text = "Send";
             btnSend.UseVisualStyleBackColor = false;
             // 
+            // txtSubject
+            // 
+            txtSubject.BackColor = Color.White;
+            txtSubject.BaseColor = Color.FromArgb(44, 55, 66);
+            txtSubject.BorderColorA = Color.FromArgb(64, 158, 255);
+            txtSubject.BorderColorB = Color.FromArgb(220, 223, 230);
+            txtSubject.Cursor = Cursors.IBeam;
+            txtSubject.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSubject.ForeColor = Color.FromArgb(48, 49, 51);
+            txtSubject.Hint = "Enter subject";
+            txtSubject.Location = new Point(128, 109);
+            txtSubject.MaxLength = 32767;
+            txtSubject.Multiline = false;
+            txtSubject.Name = "txtSubject";
+            txtSubject.PasswordChar = '\0';
+            txtSubject.ScrollBars = ScrollBars.None;
+            txtSubject.SelectedText = "";
+            txtSubject.SelectionLength = 0;
+            txtSubject.SelectionStart = 0;
+            txtSubject.Size = new Size(445, 43);
+            txtSubject.TabIndex = 13;
+            txtSubject.TabStop = false;
+            txtSubject.UseSystemPasswordChar = false;
+            // 
             // FAnswer
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightGray;
-            ClientSize = new Size(918, 439);
+            ClientSize = new Size(1049, 585);
             Controls.Add(btnSend);
             Controls.Add(btnCancel);
             Controls.Add(txtContent);
@@ -196,7 +196,6 @@
             Controls.Add(lblTo);
             Controls.Add(llFromT);
             Controls.Add(lblFrom);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "FAnswer";
             Text = "z";
             ResumeLayout(false);
@@ -211,9 +210,9 @@
         private Label lblToT;
         private Label lblSubject;
         private Label lblContent;
-        private ReaLTaiizor.Controls.HopeTextBox txtSubject;
         private ReaLTaiizor.Controls.HopeRichTextBox txtContent;
         private Button btnCancel;
         private Button btnSend;
+        private ReaLTaiizor.Controls.HopeTextBox txtSubject;
     }
 }
