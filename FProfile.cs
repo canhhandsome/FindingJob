@@ -18,6 +18,7 @@ namespace WinFormProject
         {
             InitializeComponent();
             seeker = jobSeeker;
+            this.btnChoosePicture.Visible = false;
         }
 
         private void lblFullName_Click(object sender, EventArgs e)
@@ -68,6 +69,17 @@ namespace WinFormProject
         {
             FillInfor();
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.btnChoosePicture.Visible = true;
+            this.btnEdit.Text = "Save";
         }
     }
 }

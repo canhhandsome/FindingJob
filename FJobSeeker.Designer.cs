@@ -140,6 +140,7 @@
             this.btnLogOut.TabIndex = 5;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click_1);
             // 
             // btnSetting
             // 
@@ -157,6 +158,7 @@
             this.btnSetting.TabIndex = 4;
             this.btnSetting.Text = "Setting";
             this.btnSetting.UseVisualStyleBackColor = true;
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // btnSearchJob
             // 
@@ -174,6 +176,7 @@
             this.btnSearchJob.TabIndex = 2;
             this.btnSearchJob.Text = "Search Job";
             this.btnSearchJob.UseVisualStyleBackColor = true;
+            this.btnSearchJob.Click += new System.EventHandler(this.btnSearchJob_Click);
             // 
             // btnJobAlert
             // 
@@ -191,6 +194,7 @@
             this.btnJobAlert.TabIndex = 1;
             this.btnJobAlert.Text = "Job Alert";
             this.btnJobAlert.UseVisualStyleBackColor = true;
+            this.btnJobAlert.Click += new System.EventHandler(this.btnJobAlert_Click);
             // 
             // pictureBox2
             // 
