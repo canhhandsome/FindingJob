@@ -19,50 +19,26 @@ namespace WinFormProject
             InitializeComponent();
             seeker = jobSeeker;
             this.btnChoosePicture.Visible = false;
+            this.btnSave.Visible = false ;
+            this.ptbCV.Visible = false ;
+            this.btnChooseNewCV.Visible = false ;
+            this.btnCancel.Visible = false ;
+            txtFullName.ReadOnly = true;
+            txtAddress.ReadOnly = true;
+            txtCitizenID.ReadOnly = true;
+            txtEmail.ReadOnly = true;
+            txtPhoneNumber.ReadOnly = true;
+            dtpkBirthDate.Enabled = false;
         }
 
-        private void lblFullName_Click(object sender, EventArgs e)
-        {
-            txtboxFullName.Focus();
-        }
-
-        private void lblAddress_Click(object sender, EventArgs e)
-        {
-            txtboxAddress.Focus();
-        }
-
-        private void lblPhoneNumber_Click(object sender, EventArgs e)
-        {
-            txtboxPhoneNumber.Focus();
-        }
-
-        private void lblCitizenId_Click(object sender, EventArgs e)
-        {
-            txtboxCitizenId.Focus();
-        }
-
-        private void lblEmail_Click(object sender, EventArgs e)
-        {
-            txtboxEmail.Focus();
-        }
-
-        private void lblPersonalLink_Click(object sender, EventArgs e)
-        {
-            txtboxPersonalLink.Focus();
-        }
-
-        private void lblDoB_Click(object sender, EventArgs e)
-        {
-            dtpkBirthDate.Focus();
-        }
 
         private void FillInfor()
         {
-            txtboxFullName.Text = seeker.INFO.Name;
-            txtboxCitizenId.Text = seeker.INFO.ID;
-            txtboxEmail.Text = seeker.INFO.Email;
-            txtboxPhoneNumber.Text = seeker.INFO.Phone;
-            txtboxAddress.Text = seeker.INFO.Address;
+            txtFullName.Text = seeker.INFO.Name;
+            txtCitizenID.Text = seeker.INFO.ID;
+            txtEmail.Text = seeker.INFO.Email;
+            txtPhoneNumber.Text = seeker.INFO.Phone;
+            txtAddress.Text = seeker.INFO.Address;
         }
 
         private void FProfile_Load(object sender, EventArgs e)
@@ -76,10 +52,38 @@ namespace WinFormProject
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnEdit_Click(object sender, EventArgs e)
         {
             this.btnChoosePicture.Visible = true;
-            this.btnEdit.Text = "Save";
+            this.btnEdit.Visible = false;
+            this.btnSave.Visible = true;
+            this.btnChooseNewCV.Visible = true;
+            this.ptbCV.Visible = true;
+            this.btnCV.Visible = false;
+            this.btnCancel.Visible = true;
+            txtFullName.ReadOnly = false;
+            txtAddress.ReadOnly = false;
+            txtCitizenID.ReadOnly = false;
+            txtEmail.ReadOnly = false;
+            txtPhoneNumber.ReadOnly = false;
+            dtpkBirthDate.Enabled = true;
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            this.btnEdit.Visible = true;
+            this.btnChoosePicture.Visible = false;
+            this.btnSave.Visible = false;
+            this.btnChooseNewCV.Visible = false;
+            this.ptbCV.Visible = false;
+            this.btnCV.Visible = true;
+            this.btnCancel.Visible = false;
+            txtFullName.ReadOnly = true;
+            txtAddress.ReadOnly = true;
+            txtCitizenID.ReadOnly = true;
+            txtEmail.ReadOnly = true;
+            txtPhoneNumber.ReadOnly = true;
+            dtpkBirthDate.Enabled = false;
         }
     }
 }
