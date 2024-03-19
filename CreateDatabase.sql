@@ -24,6 +24,7 @@ CREATE TABLE Company (
     Address VARCHAR(255),
     CompanyType VARCHAR(100),
     CompanySize VARCHAR(100),
+    Phonenumber NCHar(100),
     WorkingTime VARCHAR(100),
     Avatar image
 );
