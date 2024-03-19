@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,18 +16,19 @@ namespace WinFormProject
     {
         private Form currentFormChild = new Form();
         private Button selectedButton;
+        private Information information = new Information();
         private JobSeeker jobSeeker = new JobSeeker();
+        InformationDAO informationDAO = new InformationDAO();
+        private Account account = new Account();
 
         public FJobSeeker(Account account)
         {
             InitializeComponent();
-            InformationDAO informationDAO = new InformationDAO();
-            jobSeeker = new JobSeeker(informationDAO.FetchCommon(account));
+            this.account = account;
         }
 
         private void FJobSeeker_Load(object sender, EventArgs e)
         {
-
             GetAllButtons(panel2);
         }
         void GetAllButtons(Control control)
@@ -79,6 +81,7 @@ namespace WinFormProject
 
         private void btnJobAlert_Click(object sender, EventArgs e)
         {
+            jobSeeker = new JobSeeker(informationDAO.FetchCommon(account));
             pnBody.Controls.Clear();
             pnBody.Visible = true;
             FSupJobSection fSupJobSection = new FSupJobSection(pnBody);
@@ -87,6 +90,7 @@ namespace WinFormProject
 
         private void btnSearchJob_Click(object sender, EventArgs e)
         {
+            jobSeeker = new JobSeeker(informationDAO.FetchCommon(account));
             pnBody.Visible = true;
             pnBody.Dock = DockStyle.Fill;
             pnBody.BringToFront();
@@ -96,24 +100,13 @@ namespace WinFormProject
 
         private void btnSetting_Click(object sender, EventArgs e)
         {
+            jobSeeker = new JobSeeker(informationDAO.FetchCommon(account));
             pnBody.Visible = true;
             pnBody.Dock = DockStyle.Fill;
             pnBody.BringToFront();
             FProfile fProfile = new FProfile(jobSeeker);
             OpenChildForm(pnBody, fProfile);
         }
-        /*
-            db "idjob", rq1 = "you are handsome"
-            
-            list<string> Requirement;
-            
-            new rq = "you are not handsome"
-                
-            Update dbo.J_Requirement.rq1 = rq where idrq = ... and rq1 = rq1
-
-            foreach(list)
-                rq1 == list[...] -> rq1 = new rq;
-         */
         private void btnLogOut_Click_1(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Are you sure to log out?", "Alert!!!", MessageBoxButtons.YesNo);
@@ -130,11 +123,6 @@ namespace WinFormProject
                 selectedButton.BackColor = Color.FromArgb(64, 64, 64);
                 selectedButton.Enabled = true;
             }
-        }
-
-        private void pnBody_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

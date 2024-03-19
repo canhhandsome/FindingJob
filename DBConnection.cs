@@ -177,5 +177,49 @@ namespace WinFormProject
                 conn.Close();
             }
         }
+        public void CRUD(string SQL, JobSeeker jobseeker)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(SQL, conn);
+                cmd.Parameters.AddWithValue("@BDate", jobseeker.BDate);
+                cmd.Parameters.AddWithValue("@Avatar", jobseeker.Avatar);
+                cmd.Parameters.AddWithValue("@CV", jobseeker.CV);
+                if (cmd.ExecuteNonQuery() > 0)
+                    MessageBox.Show("Successfully");
+                else MessageBox.Show("Failed");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed, check again" + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+        public byte[] FetchBinaryData(string strFetch)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                object result = cmd.ExecuteScalar();
+                if (result != DBNull.Value && result != null)
+                {
+                    return (byte[])result;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to fetch binary data: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return null;
+        }
     }
 }

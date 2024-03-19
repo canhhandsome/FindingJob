@@ -13,72 +13,160 @@ namespace WinFormProject
 {
     public partial class FProfile : Form
     {
-        JobSeeker seeker = new JobSeeker();
-        public FProfile(JobSeeker jobSeeker)
+        JobSeeker jobseeker;
+        JobSeekerDAO jsDAO = new JobSeekerDAO();
+        public FProfile(ref JobSeeker jobSeeker)
         {
             InitializeComponent();
-            seeker = jobSeeker;
-            this.btnChoosePicture.Visible = false;
-
+            this.jobseeker = jobSeeker; // Assign the reference to the member variable
+            Enable_Save_Click();
+            FillInfor();
         }
 
-        private void lblFullName_Click(object sender, EventArgs e)
-        {
-            txtboxFullName.Focus();
-        }
-
-        private void lblAddress_Click(object sender, EventArgs e)
-        {
-            txtboxAddress.Focus();
-        }
-
-        private void lblPhoneNumber_Click(object sender, EventArgs e)
-        {
-            txtboxPhoneNumber.Focus();
-        }
-
-        private void lblCitizenId_Click(object sender, EventArgs e)
-        {
-            txtboxCitizenId.Focus();
-        }
-
-        private void lblEmail_Click(object sender, EventArgs e)
-        {
-            txtboxEmail.Focus();
-        }
-
-        private void lblPersonalLink_Click(object sender, EventArgs e)
-        {
-            txtboxPersonalLink.Focus();
-        }
-
-        private void lblDoB_Click(object sender, EventArgs e)
-        {
-            dtpkBirthDate.Focus();
-        }
 
         private void FillInfor()
         {
-            txtboxFullName.Text = seeker.INFO.Name;
-            txtboxCitizenId.Text = seeker.INFO.ID;
-            txtboxEmail.Text = seeker.INFO.Email;
-            txtboxPhoneNumber.Text = seeker.INFO.Phone;
-            txtboxAddress.Text = seeker.INFO.Address;
-        }
+            txtFullName.Text = jobseeker.INFO.Name;
+            txtCitizenID.Text = jobseeker.INFO.ID;
+            txtEmail.Text = jobseeker.INFO.Email;
+            txtPhoneNumber.Text = jobseeker.INFO.Phone;
+            txtAddress.Text = jobseeker.INFO.Address;
+            dtpkBirthDate.Value = jobseeker.BDate;
+            if (jobseeker.Gender == "male")
+            {
+                rdoMale.Checked = true;
+            }
+            else rdofemale.Checked = true;
+            DisplayAvatar();
+            DisplayCV();
 
+        }
+        private void DisplayAvatar()
+        {
+            byte[] imageData = jobseeker.Avatar;
+            // Check if byte array is not null and has data
+            if (imageData != null && imageData.Length > 0)
+            {
+                try
+                {
+                    // Create MemoryStream from byte array
+                    using (MemoryStream ms = new MemoryStream(imageData))
+                    {
+                        // Create Image from MemoryStream
+                        Image img = Image.FromStream(ms);
+
+                        // Set the Image to the PictureBox
+                        ptbAvatar.Image = img;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+            else
+            {
+                // Clear the PictureBox if byte array is null or empty
+                ptbAvatar.Image = null;
+            }
+        }
+        private void DisplayCV()
+        {
+            byte[] imageData = jobseeker.CV;
+            // Check if byte array is not null and has data
+            if (imageData != null && imageData.Length > 0)
+            {
+                try
+                {
+                    // Create MemoryStream from byte array
+                    using (MemoryStream ms = new MemoryStream(imageData))
+                    {
+                        // Create Image from MemoryStream
+                        Image img = Image.FromStream(ms);
+
+                        // Set the Image to the PictureBox
+                        ptbCV.Image = img;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+            else
+            {
+                // Clear the PictureBox if byte array is null or empty
+                ptbCV.Image = null;
+            }
+        }
         private void FProfile_Load(object sender, EventArgs e)
         {
-            FillInfor();
+
 
         }
-
-
-
-        private void button5_Click(object sender, EventArgs e)
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            Enable_Edit_Click();
+        }
+        private void Enable_Edit_Click()
         {
             this.btnChoosePicture.Visible = true;
-            this.btnEdit.Text = "Save";
-            this.btnCV.Text = "Choose new CV";
+            this.btnEdit.Visible = false;
+            this.btnSave.Visible = true;
+            this.btnChooseNewCV.Visible = true;
+            this.ptbCV.Visible = true;
+            this.btnCV.Visible = false;
+            this.btnCancel.Visible = true;
+            txtFullName.ReadOnly = false;
+            txtAddress.ReadOnly = false;
+            txtCitizenID.ReadOnly = false;
+            txtEmail.ReadOnly = false;
+            txtPhoneNumber.ReadOnly = false;
+            dtpkBirthDate.Enabled = true;
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            Enable_Save_Click();
+            JobSeeker newjseeker = CreateJobSeeker();
+            jsDAO.UpdateJobSeeker(newjseeker);
+            jobseeker = newjseeker;
+        }
+        private void Enable_Save_Click()
+        {
+            this.btnEdit.Visible = true;
+            this.btnChoosePicture.Visible = false;
+            this.btnSave.Visible = false;
+            this.btnChooseNewCV.Visible = false;
+            this.ptbCV.Visible = false;
+            this.btnCV.Visible = true;
+            this.btnCancel.Visible = false;
+            txtFullName.ReadOnly = true;
+            txtAddress.ReadOnly = true;
+            txtCitizenID.ReadOnly = true;
+            txtEmail.ReadOnly = true;
+            txtPhoneNumber.ReadOnly = true;
+            dtpkBirthDate.Enabled = false;
+        }
+        public byte[] ImageToByteArray(Image img)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                // Save the image to the MemoryStream
+                img.Save(ms, System.Drawing.Imaging.ImageFormat.Png); // Saving as PNG for lossless compression
+
+                // Return the byte array
+                return ms.ToArray();
+            }
+        }
+
+        private void btnChooseNewCV_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDiaglog = new OpenFileDialog();
+            if (openFileDiaglog.ShowDialog() == DialogResult.OK)
+            {
+                ptbCV.Image = new Bitmap(openFileDiaglog.FileName);
+            }
         }
 
         private void btnChoosePicture_Click(object sender, EventArgs e)
@@ -89,5 +177,15 @@ namespace WinFormProject
                 ptbAvatar.Image = new Bitmap(openFileDiaglog.FileName);
             }
         }
+        private JobSeeker CreateJobSeeker()
+        {
+            string gender = String.Empty;
+            byte[] AvatarData = ImageToByteArray(ptbAvatar.Image);
+            byte[] CvData = ImageToByteArray(ptbCV.Image);
+            Information information = new Information(jobseeker.INFO.ID, txtFullName.Text, txtEmail.Text, txtAddress.Text, txtPhoneNumber.Text);
+            if (rdofemale.Checked) gender = "female"; else gender = "male";
+            return new JobSeeker(information, dtpkBirthDate.Value, txtCitizenID.Text, gender, AvatarData, CvData);
+        }
+
     }
 }

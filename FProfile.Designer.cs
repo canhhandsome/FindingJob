@@ -31,206 +31,89 @@ namespace WinFormProject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FProfile));
-            txtboxFullName = new ReaLTaiizor.Controls.HopeTextBox();
-            txtboxPhoneNumber = new ReaLTaiizor.Controls.HopeTextBox();
-            txtboxEmail = new ReaLTaiizor.Controls.HopeTextBox();
-            txtboxAddress = new ReaLTaiizor.Controls.HopeTextBox();
             dtpkBirthDate = new DateTimePicker();
-            hopeRadioButton1 = new ReaLTaiizor.Controls.HopeRadioButton();
-            hopeRadioButton2 = new ReaLTaiizor.Controls.HopeRadioButton();
-            txtboxCitizenId = new ReaLTaiizor.Controls.HopeTextBox();
+            rdoMale = new ReaLTaiizor.Controls.HopeRadioButton();
+            rdofemale = new ReaLTaiizor.Controls.HopeRadioButton();
             ptbAvatar = new PictureBox();
             btnCV = new Button();
-            txtboxPersonalLink = new ReaLTaiizor.Controls.HopeTextBox();
             btnEdit = new Button();
             lblFullName = new Label();
             lblAddress = new Label();
             lblCitizenId = new Label();
             lblPhoneNumber = new Label();
             lblEmail = new Label();
-            lblPersonalLink = new Label();
             lblDoB = new Label();
             label8 = new Label();
             btnCancel = new Button();
             btnChoosePicture = new Button();
+            btnSave = new Button();
+            txtFullName = new TextBox();
+            txtAddress = new TextBox();
+            txtPhoneNumber = new TextBox();
+            txtCitizenID = new TextBox();
+            txtEmail = new TextBox();
+            ptbCV = new PictureBox();
+            btnChooseNewCV = new Button();
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ptbCV).BeginInit();
             SuspendLayout();
-            // 
-            // txtboxFullName
-            // 
-            txtboxFullName.BackColor = Color.White;
-            txtboxFullName.BaseColor = Color.FromArgb(44, 55, 66);
-            txtboxFullName.BorderColorA = Color.FromArgb(64, 158, 255);
-            txtboxFullName.BorderColorB = Color.FromArgb(220, 223, 230);
-            txtboxFullName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtboxFullName.ForeColor = Color.FromArgb(48, 49, 51);
-            txtboxFullName.Hint = "Enter Fullname";
-            txtboxFullName.Location = new Point(33, 60);
-            txtboxFullName.Margin = new Padding(3, 4, 3, 4);
-            txtboxFullName.MaxLength = 32767;
-            txtboxFullName.Multiline = false;
-            txtboxFullName.Name = "txtboxFullName";
-            txtboxFullName.PasswordChar = '\0';
-            txtboxFullName.ScrollBars = ScrollBars.None;
-            txtboxFullName.SelectedText = "";
-            txtboxFullName.SelectionLength = 0;
-            txtboxFullName.SelectionStart = 0;
-            txtboxFullName.Size = new Size(298, 43);
-            txtboxFullName.TabIndex = 3;
-            txtboxFullName.TabStop = false;
-            txtboxFullName.UseSystemPasswordChar = false;
-            // 
-            // txtboxPhoneNumber
-            // 
-            txtboxPhoneNumber.BackColor = Color.White;
-            txtboxPhoneNumber.BaseColor = Color.FromArgb(44, 55, 66);
-            txtboxPhoneNumber.BorderColorA = Color.FromArgb(64, 158, 255);
-            txtboxPhoneNumber.BorderColorB = Color.FromArgb(220, 223, 230);
-            txtboxPhoneNumber.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtboxPhoneNumber.ForeColor = Color.FromArgb(48, 49, 51);
-            txtboxPhoneNumber.Hint = "Enter Phone Number";
-            txtboxPhoneNumber.Location = new Point(33, 164);
-            txtboxPhoneNumber.Margin = new Padding(3, 4, 3, 4);
-            txtboxPhoneNumber.MaxLength = 32767;
-            txtboxPhoneNumber.Multiline = false;
-            txtboxPhoneNumber.Name = "txtboxPhoneNumber";
-            txtboxPhoneNumber.PasswordChar = '\0';
-            txtboxPhoneNumber.ScrollBars = ScrollBars.None;
-            txtboxPhoneNumber.SelectedText = "";
-            txtboxPhoneNumber.SelectionLength = 0;
-            txtboxPhoneNumber.SelectionStart = 0;
-            txtboxPhoneNumber.Size = new Size(298, 43);
-            txtboxPhoneNumber.TabIndex = 4;
-            txtboxPhoneNumber.TabStop = false;
-            txtboxPhoneNumber.UseSystemPasswordChar = false;
-            // 
-            // txtboxEmail
-            // 
-            txtboxEmail.BackColor = Color.White;
-            txtboxEmail.BaseColor = Color.FromArgb(44, 55, 66);
-            txtboxEmail.BorderColorA = Color.FromArgb(64, 158, 255);
-            txtboxEmail.BorderColorB = Color.FromArgb(220, 223, 230);
-            txtboxEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtboxEmail.ForeColor = Color.FromArgb(48, 49, 51);
-            txtboxEmail.Hint = "Enter Email";
-            txtboxEmail.Location = new Point(33, 271);
-            txtboxEmail.Margin = new Padding(3, 4, 3, 4);
-            txtboxEmail.MaxLength = 32767;
-            txtboxEmail.Multiline = false;
-            txtboxEmail.Name = "txtboxEmail";
-            txtboxEmail.PasswordChar = '\0';
-            txtboxEmail.ScrollBars = ScrollBars.None;
-            txtboxEmail.SelectedText = "";
-            txtboxEmail.SelectionLength = 0;
-            txtboxEmail.SelectionStart = 0;
-            txtboxEmail.Size = new Size(298, 43);
-            txtboxEmail.TabIndex = 5;
-            txtboxEmail.TabStop = false;
-            txtboxEmail.UseSystemPasswordChar = false;
-            // 
-            // txtboxAddress
-            // 
-            txtboxAddress.BackColor = Color.White;
-            txtboxAddress.BaseColor = Color.FromArgb(44, 55, 66);
-            txtboxAddress.BorderColorA = Color.FromArgb(64, 158, 255);
-            txtboxAddress.BorderColorB = Color.FromArgb(220, 223, 230);
-            txtboxAddress.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtboxAddress.ForeColor = Color.FromArgb(48, 49, 51);
-            txtboxAddress.Hint = "Enter Address";
-            txtboxAddress.Location = new Point(415, 60);
-            txtboxAddress.Margin = new Padding(3, 4, 3, 4);
-            txtboxAddress.MaxLength = 32767;
-            txtboxAddress.Multiline = false;
-            txtboxAddress.Name = "txtboxAddress";
-            txtboxAddress.PasswordChar = '\0';
-            txtboxAddress.ScrollBars = ScrollBars.None;
-            txtboxAddress.SelectedText = "";
-            txtboxAddress.SelectionLength = 0;
-            txtboxAddress.SelectionStart = 0;
-            txtboxAddress.Size = new Size(298, 43);
-            txtboxAddress.TabIndex = 5;
-            txtboxAddress.TabStop = false;
-            txtboxAddress.UseSystemPasswordChar = false;
             // 
             // dtpkBirthDate
             // 
-            dtpkBirthDate.Location = new Point(415, 371);
+            dtpkBirthDate.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dtpkBirthDate.Location = new Point(406, 276);
             dtpkBirthDate.Margin = new Padding(3, 4, 3, 4);
             dtpkBirthDate.Name = "dtpkBirthDate";
-            dtpkBirthDate.Size = new Size(226, 27);
+            dtpkBirthDate.Size = new Size(327, 34);
             dtpkBirthDate.TabIndex = 6;
             // 
-            // hopeRadioButton1
+            // rdoMale
             // 
-            hopeRadioButton1.AutoSize = true;
-            hopeRadioButton1.CheckedColor = Color.FromArgb(64, 158, 255);
-            hopeRadioButton1.DisabledColor = Color.FromArgb(196, 198, 202);
-            hopeRadioButton1.DisabledStringColor = Color.FromArgb(186, 187, 189);
-            hopeRadioButton1.Enable = true;
-            hopeRadioButton1.EnabledCheckedColor = Color.FromArgb(64, 158, 255);
-            hopeRadioButton1.EnabledStringColor = Color.FromArgb(146, 146, 146);
-            hopeRadioButton1.EnabledUncheckedColor = Color.FromArgb(156, 158, 161);
-            hopeRadioButton1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            hopeRadioButton1.ForeColor = SystemColors.Desktop;
-            hopeRadioButton1.Location = new Point(33, 375);
-            hopeRadioButton1.Margin = new Padding(3, 4, 3, 4);
-            hopeRadioButton1.Name = "hopeRadioButton1";
-            hopeRadioButton1.Size = new Size(80, 20);
-            hopeRadioButton1.TabIndex = 7;
-            hopeRadioButton1.TabStop = true;
-            hopeRadioButton1.Text = "Male";
-            hopeRadioButton1.UseVisualStyleBackColor = true;
+            rdoMale.AutoSize = true;
+            rdoMale.CheckedColor = Color.FromArgb(64, 158, 255);
+            rdoMale.DisabledColor = Color.FromArgb(196, 198, 202);
+            rdoMale.DisabledStringColor = Color.FromArgb(186, 187, 189);
+            rdoMale.Enable = true;
+            rdoMale.EnabledCheckedColor = Color.FromArgb(64, 158, 255);
+            rdoMale.EnabledStringColor = Color.FromArgb(146, 146, 146);
+            rdoMale.EnabledUncheckedColor = Color.FromArgb(156, 158, 161);
+            rdoMale.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            rdoMale.ForeColor = SystemColors.Desktop;
+            rdoMale.Location = new Point(33, 375);
+            rdoMale.Margin = new Padding(3, 4, 3, 4);
+            rdoMale.Name = "rdoMale";
+            rdoMale.Size = new Size(80, 20);
+            rdoMale.TabIndex = 7;
+            rdoMale.TabStop = true;
+            rdoMale.Text = "Male";
+            rdoMale.UseVisualStyleBackColor = true;
             // 
-            // hopeRadioButton2
+            // rdofemale
             // 
-            hopeRadioButton2.AutoSize = true;
-            hopeRadioButton2.CheckedColor = Color.FromArgb(64, 158, 255);
-            hopeRadioButton2.DisabledColor = Color.FromArgb(196, 198, 202);
-            hopeRadioButton2.DisabledStringColor = Color.FromArgb(186, 187, 189);
-            hopeRadioButton2.Enable = true;
-            hopeRadioButton2.EnabledCheckedColor = Color.FromArgb(64, 158, 255);
-            hopeRadioButton2.EnabledStringColor = Color.FromArgb(146, 146, 146);
-            hopeRadioButton2.EnabledUncheckedColor = Color.FromArgb(156, 158, 161);
-            hopeRadioButton2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            hopeRadioButton2.ForeColor = SystemColors.ControlText;
-            hopeRadioButton2.Location = new Point(176, 375);
-            hopeRadioButton2.Margin = new Padding(3, 4, 3, 4);
-            hopeRadioButton2.Name = "hopeRadioButton2";
-            hopeRadioButton2.Size = new Size(99, 20);
-            hopeRadioButton2.TabIndex = 7;
-            hopeRadioButton2.TabStop = true;
-            hopeRadioButton2.Text = "Female";
-            hopeRadioButton2.UseVisualStyleBackColor = true;
-            // 
-            // txtboxCitizenId
-            // 
-            txtboxCitizenId.BackColor = Color.White;
-            txtboxCitizenId.BaseColor = Color.FromArgb(44, 55, 66);
-            txtboxCitizenId.BorderColorA = Color.FromArgb(64, 158, 255);
-            txtboxCitizenId.BorderColorB = Color.FromArgb(220, 223, 230);
-            txtboxCitizenId.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtboxCitizenId.ForeColor = Color.FromArgb(48, 49, 51);
-            txtboxCitizenId.Hint = "Enter Citizen identification";
-            txtboxCitizenId.Location = new Point(415, 164);
-            txtboxCitizenId.Margin = new Padding(3, 4, 3, 4);
-            txtboxCitizenId.MaxLength = 32767;
-            txtboxCitizenId.Multiline = false;
-            txtboxCitizenId.Name = "txtboxCitizenId";
-            txtboxCitizenId.PasswordChar = '\0';
-            txtboxCitizenId.ScrollBars = ScrollBars.None;
-            txtboxCitizenId.SelectedText = "";
-            txtboxCitizenId.SelectionLength = 0;
-            txtboxCitizenId.SelectionStart = 0;
-            txtboxCitizenId.Size = new Size(298, 43);
-            txtboxCitizenId.TabIndex = 5;
-            txtboxCitizenId.TabStop = false;
-            txtboxCitizenId.UseSystemPasswordChar = false;
+            rdofemale.AutoSize = true;
+            rdofemale.CheckedColor = Color.FromArgb(64, 158, 255);
+            rdofemale.DisabledColor = Color.FromArgb(196, 198, 202);
+            rdofemale.DisabledStringColor = Color.FromArgb(186, 187, 189);
+            rdofemale.Enable = true;
+            rdofemale.EnabledCheckedColor = Color.FromArgb(64, 158, 255);
+            rdofemale.EnabledStringColor = Color.FromArgb(146, 146, 146);
+            rdofemale.EnabledUncheckedColor = Color.FromArgb(156, 158, 161);
+            rdofemale.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            rdofemale.ForeColor = SystemColors.ControlText;
+            rdofemale.Location = new Point(176, 375);
+            rdofemale.Margin = new Padding(3, 4, 3, 4);
+            rdofemale.Name = "rdofemale";
+            rdofemale.Size = new Size(99, 20);
+            rdofemale.TabIndex = 7;
+            rdofemale.TabStop = true;
+            rdofemale.Text = "Female";
+            rdofemale.UseVisualStyleBackColor = true;
             // 
             // ptbAvatar
             // 
             ptbAvatar.ErrorImage = (Image)resources.GetObject("ptbAvatar.ErrorImage");
             ptbAvatar.Image = (Image)resources.GetObject("ptbAvatar.Image");
-            ptbAvatar.Location = new Point(799, 28);
+            ptbAvatar.Location = new Point(810, 28);
             ptbAvatar.Margin = new Padding(3, 4, 3, 4);
             ptbAvatar.Name = "ptbAvatar";
             ptbAvatar.Size = new Size(171, 200);
@@ -256,30 +139,6 @@ namespace WinFormProject
             btnCV.Text = "CV";
             btnCV.UseVisualStyleBackColor = false;
             // 
-            // txtboxPersonalLink
-            // 
-            txtboxPersonalLink.BackColor = Color.White;
-            txtboxPersonalLink.BaseColor = Color.FromArgb(44, 55, 66);
-            txtboxPersonalLink.BorderColorA = Color.FromArgb(64, 158, 255);
-            txtboxPersonalLink.BorderColorB = Color.FromArgb(220, 223, 230);
-            txtboxPersonalLink.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtboxPersonalLink.ForeColor = Color.FromArgb(48, 49, 51);
-            txtboxPersonalLink.Hint = "Enter Personal link";
-            txtboxPersonalLink.Location = new Point(415, 271);
-            txtboxPersonalLink.Margin = new Padding(3, 4, 3, 4);
-            txtboxPersonalLink.MaxLength = 32767;
-            txtboxPersonalLink.Multiline = false;
-            txtboxPersonalLink.Name = "txtboxPersonalLink";
-            txtboxPersonalLink.PasswordChar = '\0';
-            txtboxPersonalLink.ScrollBars = ScrollBars.None;
-            txtboxPersonalLink.SelectedText = "";
-            txtboxPersonalLink.SelectionLength = 0;
-            txtboxPersonalLink.SelectionStart = 0;
-            txtboxPersonalLink.Size = new Size(298, 43);
-            txtboxPersonalLink.TabIndex = 5;
-            txtboxPersonalLink.TabStop = false;
-            txtboxPersonalLink.UseSystemPasswordChar = false;
-            // 
             // btnEdit
             // 
             btnEdit.BackColor = Color.DimGray;
@@ -290,14 +149,14 @@ namespace WinFormProject
             btnEdit.FlatStyle = FlatStyle.System;
             btnEdit.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnEdit.ForeColor = SystemColors.ControlLightLight;
-            btnEdit.Location = new Point(689, 491);
+            btnEdit.Location = new Point(833, 491);
             btnEdit.Margin = new Padding(3, 4, 3, 4);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(126, 49);
             btnEdit.TabIndex = 10;
             btnEdit.Text = "Edit";
             btnEdit.UseVisualStyleBackColor = false;
-            btnEdit.Click += button5_Click;
+            btnEdit.Click += btnEdit_Click;
             // 
             // lblFullName
             // 
@@ -354,23 +213,12 @@ namespace WinFormProject
             lblEmail.TabIndex = 11;
             lblEmail.Text = "Email";
             // 
-            // lblPersonalLink
-            // 
-            lblPersonalLink.AutoSize = true;
-            lblPersonalLink.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPersonalLink.ForeColor = SystemColors.ControlText;
-            lblPersonalLink.Location = new Point(415, 239);
-            lblPersonalLink.Name = "lblPersonalLink";
-            lblPersonalLink.Size = new Size(125, 28);
-            lblPersonalLink.TabIndex = 11;
-            lblPersonalLink.Text = "Personal Link";
-            // 
             // lblDoB
             // 
             lblDoB.AutoSize = true;
             lblDoB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblDoB.ForeColor = SystemColors.ControlText;
-            lblDoB.Location = new Point(415, 337);
+            lblDoB.Location = new Point(415, 239);
             lblDoB.Name = "lblDoB";
             lblDoB.Size = new Size(122, 28);
             lblDoB.TabIndex = 11;
@@ -396,7 +244,7 @@ namespace WinFormProject
             btnCancel.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
             btnCancel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancel.ForeColor = SystemColors.Control;
-            btnCancel.Location = new Point(821, 491);
+            btnCancel.Location = new Point(873, 491);
             btnCancel.Margin = new Padding(3, 4, 3, 4);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(126, 49);
@@ -414,7 +262,7 @@ namespace WinFormProject
             btnChoosePicture.FlatStyle = FlatStyle.System;
             btnChoosePicture.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnChoosePicture.ForeColor = SystemColors.ControlLightLight;
-            btnChoosePicture.Location = new Point(810, 271);
+            btnChoosePicture.Location = new Point(821, 271);
             btnChoosePicture.Margin = new Padding(3, 4, 3, 4);
             btnChoosePicture.Name = "btnChoosePicture";
             btnChoosePicture.Size = new Size(149, 49);
@@ -423,16 +271,110 @@ namespace WinFormProject
             btnChoosePicture.UseVisualStyleBackColor = false;
             btnChoosePicture.Click += btnChoosePicture_Click;
             // 
+            // btnSave
+            // 
+            btnSave.BackColor = Color.DimGray;
+            btnSave.Cursor = Cursors.Hand;
+            btnSave.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
+            btnSave.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 64, 64);
+            btnSave.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
+            btnSave.FlatStyle = FlatStyle.System;
+            btnSave.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSave.ForeColor = SystemColors.ControlLightLight;
+            btnSave.Location = new Point(741, 491);
+            btnSave.Margin = new Padding(3, 4, 3, 4);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(126, 49);
+            btnSave.TabIndex = 13;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += btnSave_Click;
+            // 
+            // txtFullName
+            // 
+            txtFullName.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            txtFullName.Location = new Point(33, 60);
+            txtFullName.Name = "txtFullName";
+            txtFullName.Size = new Size(298, 36);
+            txtFullName.TabIndex = 14;
+            // 
+            // txtAddress
+            // 
+            txtAddress.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            txtAddress.Location = new Point(415, 60);
+            txtAddress.Name = "txtAddress";
+            txtAddress.Size = new Size(298, 36);
+            txtAddress.TabIndex = 15;
+            // 
+            // txtPhoneNumber
+            // 
+            txtPhoneNumber.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPhoneNumber.Location = new Point(33, 164);
+            txtPhoneNumber.Name = "txtPhoneNumber";
+            txtPhoneNumber.Size = new Size(298, 36);
+            txtPhoneNumber.TabIndex = 16;
+            // 
+            // txtCitizenID
+            // 
+            txtCitizenID.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCitizenID.Location = new Point(415, 164);
+            txtCitizenID.Name = "txtCitizenID";
+            txtCitizenID.Size = new Size(298, 36);
+            txtCitizenID.TabIndex = 17;
+            // 
+            // txtEmail
+            // 
+            txtEmail.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEmail.Location = new Point(33, 271);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(298, 36);
+            txtEmail.TabIndex = 18;
+            // 
+            // ptbCV
+            // 
+            ptbCV.Location = new Point(33, 426);
+            ptbCV.Name = "ptbCV";
+            ptbCV.Size = new Size(123, 142);
+            ptbCV.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbCV.TabIndex = 19;
+            ptbCV.TabStop = false;
+            // 
+            // btnChooseNewCV
+            // 
+            btnChooseNewCV.BackColor = Color.DimGray;
+            btnChooseNewCV.Cursor = Cursors.Hand;
+            btnChooseNewCV.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
+            btnChooseNewCV.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 64, 64);
+            btnChooseNewCV.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
+            btnChooseNewCV.FlatStyle = FlatStyle.System;
+            btnChooseNewCV.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnChooseNewCV.ForeColor = SystemColors.ControlLightLight;
+            btnChooseNewCV.Location = new Point(176, 491);
+            btnChooseNewCV.Margin = new Padding(3, 4, 3, 4);
+            btnChooseNewCV.Name = "btnChooseNewCV";
+            btnChooseNewCV.Size = new Size(126, 49);
+            btnChooseNewCV.TabIndex = 20;
+            btnChooseNewCV.Text = "Choose CV";
+            btnChooseNewCV.UseVisualStyleBackColor = false;
+            btnChooseNewCV.Click += btnChooseNewCV_Click;
+            // 
             // FProfile
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightGray;
             ClientSize = new Size(1057, 580);
+            Controls.Add(btnChooseNewCV);
+            Controls.Add(ptbCV);
+            Controls.Add(txtEmail);
+            Controls.Add(txtCitizenID);
+            Controls.Add(txtPhoneNumber);
+            Controls.Add(txtAddress);
+            Controls.Add(txtFullName);
+            Controls.Add(btnSave);
             Controls.Add(btnChoosePicture);
             Controls.Add(label8);
             Controls.Add(lblDoB);
-            Controls.Add(lblPersonalLink);
             Controls.Add(lblEmail);
             Controls.Add(lblPhoneNumber);
             Controls.Add(lblCitizenId);
@@ -442,46 +384,41 @@ namespace WinFormProject
             Controls.Add(btnEdit);
             Controls.Add(btnCV);
             Controls.Add(ptbAvatar);
-            Controls.Add(hopeRadioButton2);
-            Controls.Add(hopeRadioButton1);
+            Controls.Add(rdofemale);
+            Controls.Add(rdoMale);
             Controls.Add(dtpkBirthDate);
-            Controls.Add(txtboxPersonalLink);
-            Controls.Add(txtboxCitizenId);
-            Controls.Add(txtboxAddress);
-            Controls.Add(txtboxEmail);
-            Controls.Add(txtboxPhoneNumber);
-            Controls.Add(txtboxFullName);
             Margin = new Padding(3, 4, 3, 4);
             Name = "FProfile";
             Text = "FProfile";
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ptbCV).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private ReaLTaiizor.Controls.HopeTextBox txtboxFullName;
-        private ReaLTaiizor.Controls.HopeTextBox txtboxPhoneNumber;
-        private ReaLTaiizor.Controls.HopeTextBox txtboxEmail;
-        private ReaLTaiizor.Controls.HopeTextBox txtboxAddress;
         private DateTimePicker dtpkBirthDate;
-        private ReaLTaiizor.Controls.HopeRadioButton hopeRadioButton1;
-        private ReaLTaiizor.Controls.HopeRadioButton hopeRadioButton2;
-        private ReaLTaiizor.Controls.HopeTextBox txtboxCitizenId;
+        private ReaLTaiizor.Controls.HopeRadioButton rdoMale;
+        private ReaLTaiizor.Controls.HopeRadioButton rdofemale;
         private PictureBox ptbAvatar;
         private Button btnCV;
-        private ReaLTaiizor.Controls.HopeTextBox txtboxPersonalLink;
         private Button btnEdit;
         private Label lblFullName;
         private Label lblAddress;
         private Label lblCitizenId;
         private Label lblPhoneNumber;
         private Label lblEmail;
-        private Label lblPersonalLink;
         private Label lblDoB;
         private Label label8;
         private Button btnCancel;
         private Button btnChoosePicture;
+        private Button btnSave;
+        private TextBox txtFullName;
+        private TextBox txtAddress;
+        private TextBox txtPhoneNumber;
+        private TextBox txtCitizenID;
+        private TextBox txtEmail;
+        private PictureBox ptbCV;
+        private Button btnChooseNewCV;
     }
 }

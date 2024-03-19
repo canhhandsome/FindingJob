@@ -52,7 +52,6 @@ namespace WinFormProject
         }
         public void EditJob(Job job)
         {
-            Job job1 = new Job();
             string sqlUpdate = string.Format("UPDATE Job SET  jobname = '{0}', position = '{1}', salary = '{2}', description = '{3}', requirement = '{4}' WHERE jobid = '{5}'",
                                              job.CompanyID, job.Name, job.Position, job.Salary, job.Description, job.Requirement, job.Jobid);
             conn.CRUD(sqlUpdate);

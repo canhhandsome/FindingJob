@@ -21,14 +21,24 @@ namespace WinFormProject
         {
 
         }
+        public JobSeeker(Information information, DateTime bdate, string nationalid, string gender, byte[] avatarData, byte[] cvData)
+        {
+            this.information = information;
+            this.bdate = bdate;
+            this.nationalid = nationalid;
+            this.gender = gender;
+            AvatarData = avatarData;
+            CvData = cvData;
+        }
+
         public JobSeeker(Information information)
         {
             this.information = information;
             List<string> list = new List<string>();
             list = jobseekerdao.FetchInformation(this);
-            bdate = DateTime.Parse(list[0]);
-            nationalid = list[1];
-            gender = list[2];
+            nationalid = list[0];
+            gender = list[1];
+            bdate = DateTime.Parse(jobseekerdao.FetchBdate(this));
             AvatarData = jobseekerdao.FetchImg(this.INFO.ID);
             CvData = jobseekerdao.FetchCV(this.INFO.ID);
         }
