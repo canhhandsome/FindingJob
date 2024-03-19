@@ -12,9 +12,16 @@ namespace WinFormProject
 {
     public partial class FApplicant : Form
     {
-        public FApplicant()
+        Company company;
+        public FApplicant(Company company)
         {
             InitializeComponent();
+            this.company = company;
+            foreach(Apply apply in company.Applies)
+            {
+                UCApplicant uCApplicant = new UCApplicant(apply);
+                flpApplicant.Controls.Add(uCApplicant);
+            }
         }
 
         private void FApplicant_Load(object sender, EventArgs e)

@@ -123,7 +123,7 @@ namespace WinFormProject
 
                 while(reader.Read())
                 {
-                    jobs.Add(new Job(reader["Jobid"].ToString(), reader["CompanyId"].ToString(),reader["JobName"].ToString(), reader["position"].ToString(), reader["salary"].ToString(), reader["requirement"].ToString(), reader["description"].ToString(),Convert.ToDateTime(reader["DatePublish"].ToString())));
+                    jobs.Add(new Job(reader["Jobid"].ToString(), reader["CompanyId"].ToString(),reader["JobName"].ToString(), reader["position"].ToString(), reader["salary"].ToString(), reader["requirement"].ToString(), reader["description"].ToString(),Convert.ToDateTime(reader["datepublish"].ToString())));
                 }
             }
             catch(Exception ex)
@@ -135,7 +135,30 @@ namespace WinFormProject
                 conn.Close(); 
             }
         }
-         
+
+        public void FetchAllApplies(string strFetch, List<Apply> applies)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    applies.Add(new Apply(reader["jobseekerID"].ToString(), reader["JobID"].ToString(), Convert.ToDateTime(reader["timeapply"].ToString()), reader["status"].ToString()));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("them that bai" + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
         public void CRUD(string SQL)
         {
             try

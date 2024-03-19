@@ -228,6 +228,7 @@
             btnApply.TabIndex = 30;
             btnApply.Text = "Apply";
             btnApply.UseVisualStyleBackColor = true;
+            btnApply.Click += btnApply_Click;
             // 
             // btnBack
             // 

@@ -43,7 +43,7 @@ namespace WinFormProject
 
         public void panel1_Click(object sender, EventArgs e)
         {
-            OpenChildForm(panel, new FJobDetails(job));
+            OpenChildForm(panel, new FJobDetails(job, "hihi"));
         }
     }
 }

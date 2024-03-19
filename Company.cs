@@ -10,9 +10,11 @@ namespace WinFormProject
     {
         string companytype, companysize;
         CompanyDAO companyDAO = new CompanyDAO();
-        Information information = new Information();
         JobDAO jobDao = new JobDAO();
+        ApplyDAO applyDAO = new ApplyDAO();
+        Information information = new Information();
         List<Job> jobs = new List<Job>();
+        List<Apply> applies = new List<Apply>();
         public Company()
         {
 
@@ -24,7 +26,15 @@ namespace WinFormProject
             companysize = otherinfo[1];
             companytype = otherinfo[0];
             jobs = jobDao.FetchAllJob(this.INFO.ID);
+            foreach (Job job in jobs)
+            {
+                foreach(Apply apply in applyDAO.AllApplies(job.Jobid))
+                {
+                    applies.Add(apply);
+                }
+            }
         }
+
         public List<Job> Jobs
         {
             get { return jobs; }
@@ -32,6 +42,10 @@ namespace WinFormProject
         public Information INFO
         {
             get { return information; }
+        }
+        public List<Apply> Applies 
+        { 
+            get { return applies; } 
         }
     }
 }

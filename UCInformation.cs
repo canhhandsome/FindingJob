@@ -13,13 +13,15 @@ namespace WinFormProject
     public partial class UCInformation : UserControl
     {
         private Job job = new Job();
+        string jsID;
         public UCInformation()
         {
 
         }
-        public UCInformation(Job job)
+        public UCInformation(Job job, string jsID)
         {
             CompanyDAO companyDAO = new CompanyDAO();
+            this.jsID = jsID;
             InitializeComponent();
             this.MaximumSize = new System.Drawing.Size(968, 180);
             this.job = job;
@@ -30,7 +32,7 @@ namespace WinFormProject
 
         private void panel1_Click(object sender, EventArgs e)
         {
-            FJobDetails jobDetails = new FJobDetails(job);
+            FJobDetails jobDetails = new FJobDetails(job, jsID);
             jobDetails.Show();
         }
     }

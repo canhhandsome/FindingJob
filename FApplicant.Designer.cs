@@ -28,91 +28,75 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
-            this.lblSearchApplicant = new System.Windows.Forms.Label();
-            this.pnSubBody = new System.Windows.Forms.Panel();
-            this.ucApplicant1 = new WinFormProject.UCApplicant();
-            this.pnSubBody.SuspendLayout();
-            this.SuspendLayout();
+            hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
+            lblSearchApplicant = new Label();
+            flpApplicant = new FlowLayoutPanel();
+            SuspendLayout();
             // 
             // hopeTextBox1
             // 
-            this.hopeTextBox1.BackColor = System.Drawing.Color.White;
-            this.hopeTextBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.hopeTextBox1.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox1.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hopeTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeTextBox1.Hint = "Enter Applicant";
-            this.hopeTextBox1.Location = new System.Drawing.Point(301, 47);
-            this.hopeTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.hopeTextBox1.MaxLength = 32767;
-            this.hopeTextBox1.Multiline = false;
-            this.hopeTextBox1.Name = "hopeTextBox1";
-            this.hopeTextBox1.PasswordChar = '\0';
-            this.hopeTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBox1.SelectedText = "";
-            this.hopeTextBox1.SelectionLength = 0;
-            this.hopeTextBox1.SelectionStart = 0;
-            this.hopeTextBox1.Size = new System.Drawing.Size(666, 43);
-            this.hopeTextBox1.TabIndex = 0;
-            this.hopeTextBox1.TabStop = false;
-            this.hopeTextBox1.UseSystemPasswordChar = false;
+            hopeTextBox1.BackColor = Color.White;
+            hopeTextBox1.BaseColor = Color.FromArgb(44, 55, 66);
+            hopeTextBox1.BorderColorA = Color.FromArgb(64, 158, 255);
+            hopeTextBox1.BorderColorB = Color.FromArgb(220, 223, 230);
+            hopeTextBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            hopeTextBox1.ForeColor = Color.FromArgb(48, 49, 51);
+            hopeTextBox1.Hint = "Enter Applicant";
+            hopeTextBox1.Location = new Point(263, 35);
+            hopeTextBox1.MaxLength = 32767;
+            hopeTextBox1.Multiline = false;
+            hopeTextBox1.Name = "hopeTextBox1";
+            hopeTextBox1.PasswordChar = '\0';
+            hopeTextBox1.ScrollBars = ScrollBars.None;
+            hopeTextBox1.SelectedText = "";
+            hopeTextBox1.SelectionLength = 0;
+            hopeTextBox1.SelectionStart = 0;
+            hopeTextBox1.Size = new Size(583, 38);
+            hopeTextBox1.TabIndex = 0;
+            hopeTextBox1.TabStop = false;
+            hopeTextBox1.UseSystemPasswordChar = false;
             // 
             // lblSearchApplicant
             // 
-            this.lblSearchApplicant.AutoSize = true;
-            this.lblSearchApplicant.BackColor = System.Drawing.Color.Transparent;
-            this.lblSearchApplicant.Font = new System.Drawing.Font("Segoe UI", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSearchApplicant.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblSearchApplicant.Location = new System.Drawing.Point(25, 45);
-            this.lblSearchApplicant.Name = "lblSearchApplicant";
-            this.lblSearchApplicant.Size = new System.Drawing.Size(258, 45);
-            this.lblSearchApplicant.TabIndex = 1;
-            this.lblSearchApplicant.Text = "Search Applicant";
+            lblSearchApplicant.AutoSize = true;
+            lblSearchApplicant.BackColor = Color.Transparent;
+            lblSearchApplicant.Font = new Font("Segoe UI", 19.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSearchApplicant.ForeColor = SystemColors.ControlText;
+            lblSearchApplicant.Location = new Point(22, 34);
+            lblSearchApplicant.Name = "lblSearchApplicant";
+            lblSearchApplicant.Size = new Size(207, 36);
+            lblSearchApplicant.TabIndex = 1;
+            lblSearchApplicant.Text = "Search Applicant";
             // 
-            // pnSubBody
+            // flpApplicant
             // 
-            this.pnSubBody.AutoScroll = true;
-            this.pnSubBody.Controls.Add(this.ucApplicant1);
-            this.pnSubBody.Location = new System.Drawing.Point(35, 124);
-            this.pnSubBody.Name = "pnSubBody";
-            this.pnSubBody.Size = new System.Drawing.Size(950, 645);
-            this.pnSubBody.TabIndex = 3;
-            // 
-            // ucApplicant1
-            // 
-            this.ucApplicant1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucApplicant1.Location = new System.Drawing.Point(0, 0);
-            this.ucApplicant1.Name = "ucApplicant1";
-            this.ucApplicant1.Size = new System.Drawing.Size(950, 286);
-            this.ucApplicant1.TabIndex = 0;
+            flpApplicant.Location = new Point(29, 104);
+            flpApplicant.Name = "flpApplicant";
+            flpApplicant.Size = new Size(817, 204);
+            flpApplicant.TabIndex = 2;
             // 
             // FApplicant
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(1048, 600);
-            this.Controls.Add(this.pnSubBody);
-            this.Controls.Add(this.lblSearchApplicant);
-            this.Controls.Add(this.hopeTextBox1);
-            this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "FApplicant";
-            this.Text = "FApplicant";
-            this.pnSubBody.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
+            BackColor = Color.LightGray;
+            ClientSize = new Size(917, 450);
+            Controls.Add(flpApplicant);
+            Controls.Add(lblSearchApplicant);
+            Controls.Add(hopeTextBox1);
+            ForeColor = SystemColors.ControlText;
+            Name = "FApplicant";
+            Text = "FApplicant";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox1;
         private Label lblSearchApplicant;
-        private Panel pnSubBody;
         private UCApplicant ucApplicant1;
+        private FlowLayoutPanel flpApplicant;
     }
 }

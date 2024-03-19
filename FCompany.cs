@@ -106,7 +106,7 @@ namespace WinFormProject
 
         private void btnApplicant_Click(object sender, EventArgs e)
         {
-            FApplicant fApplicant = new FApplicant();
+            FApplicant fApplicant = new FApplicant(company);
             OpenChildForm(fApplicant);
         }
 

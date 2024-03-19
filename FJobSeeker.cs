@@ -90,7 +90,7 @@ namespace WinFormProject
             pnBody.Visible = true;
             pnBody.Dock = DockStyle.Fill;
             pnBody.BringToFront();
-            FSearchJob fSearchJob = new FSearchJob();
+            FSearchJob fSearchJob = new FSearchJob(jobSeeker.INFO.ID);
             OpenChildForm(pnBody, fSearchJob);
         }
 

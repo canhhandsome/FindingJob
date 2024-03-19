@@ -13,8 +13,10 @@ namespace WinFormProject
     public partial class FSearchJob : Form
     {
         private List<Job> jobs = new List<Job>();
-        public FSearchJob()
+        string jsID;
+        public FSearchJob(string jsID)
         {
+            this.jsID = jsID;
             InitializeComponent();
             JobDAO jobDAO = new JobDAO();
             jobs = jobDAO.FetchJobs();
@@ -24,7 +26,7 @@ namespace WinFormProject
         {
             foreach(Job job in jobs)
             {
-                UCInformation uCInformation = new UCInformation(job);
+                UCInformation uCInformation = new UCInformation(job, jsID);
                 flpJob.Controls.Add(uCInformation);
                 flpJob.Height += 135;
             }

@@ -28,104 +28,104 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblDateT = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.lblNameT = new System.Windows.Forms.Label();
-            this.lblContent = new System.Windows.Forms.Label();
-            this.lblFromT = new System.Windows.Forms.Label();
-            this.lblForm = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            lblDateT = new Label();
+            lblDate = new Label();
+            lblNameT = new Label();
+            lblContent = new Label();
+            lblFromT = new Label();
+            lblForm = new Label();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightGray;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.lblDateT);
-            this.panel1.Controls.Add(this.lblDate);
-            this.panel1.Controls.Add(this.lblNameT);
-            this.panel1.Controls.Add(this.lblContent);
-            this.panel1.Controls.Add(this.lblFromT);
-            this.panel1.Controls.Add(this.lblForm);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(968, 180);
-            this.panel1.TabIndex = 7;
+            panel1.BackColor = Color.LightGray;
+            panel1.BorderStyle = BorderStyle.Fixed3D;
+            panel1.Controls.Add(lblDateT);
+            panel1.Controls.Add(lblDate);
+            panel1.Controls.Add(lblNameT);
+            panel1.Controls.Add(lblContent);
+            panel1.Controls.Add(lblFromT);
+            panel1.Controls.Add(lblForm);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(847, 135);
+            panel1.TabIndex = 7;
+            panel1.Click += panel1_Click;
             // 
             // lblDateT
             // 
-            this.lblDateT.AutoSize = true;
-            this.lblDateT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDateT.Location = new System.Drawing.Point(107, 71);
-            this.lblDateT.Name = "lblDateT";
-            this.lblDateT.Size = new System.Drawing.Size(69, 30);
-            this.lblDateT.TabIndex = 0;
-            this.lblDateT.Text = "Date: ";
+            lblDateT.AutoSize = true;
+            lblDateT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDateT.Location = new Point(94, 53);
+            lblDateT.Name = "lblDateT";
+            lblDateT.Size = new Size(58, 25);
+            lblDateT.TabIndex = 0;
+            lblDateT.Text = "Date: ";
             // 
             // lblDate
             // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDate.Location = new System.Drawing.Point(16, 71);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(69, 30);
-            this.lblDate.TabIndex = 0;
-            this.lblDate.Text = "Date: ";
+            lblDate.AutoSize = true;
+            lblDate.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDate.Location = new Point(14, 53);
+            lblDate.Name = "lblDate";
+            lblDate.Size = new Size(58, 25);
+            lblDate.TabIndex = 0;
+            lblDate.Text = "Date: ";
             // 
             // lblNameT
             // 
-            this.lblNameT.AutoSize = true;
-            this.lblNameT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNameT.Location = new System.Drawing.Point(107, 121);
-            this.lblNameT.Name = "lblNameT";
-            this.lblNameT.Size = new System.Drawing.Size(82, 30);
-            this.lblNameT.TabIndex = 0;
-            this.lblNameT.Text = "Name: ";
+            lblNameT.AutoSize = true;
+            lblNameT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblNameT.Location = new Point(94, 91);
+            lblNameT.Name = "lblNameT";
+            lblNameT.Size = new Size(68, 25);
+            lblNameT.TabIndex = 0;
+            lblNameT.Text = "Name: ";
             // 
             // lblContent
             // 
-            this.lblContent.AutoSize = true;
-            this.lblContent.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblContent.Location = new System.Drawing.Point(16, 121);
-            this.lblContent.Name = "lblContent";
-            this.lblContent.Size = new System.Drawing.Size(82, 30);
-            this.lblContent.TabIndex = 0;
-            this.lblContent.Text = "Name: ";
+            lblContent.AutoSize = true;
+            lblContent.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblContent.Location = new Point(14, 91);
+            lblContent.Name = "lblContent";
+            lblContent.Size = new Size(68, 25);
+            lblContent.TabIndex = 0;
+            lblContent.Text = "Name: ";
             // 
             // lblFromT
             // 
-            this.lblFromT.AutoSize = true;
-            this.lblFromT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblFromT.Location = new System.Drawing.Point(107, 21);
-            this.lblFromT.Name = "lblFromT";
-            this.lblFromT.Size = new System.Drawing.Size(69, 30);
-            this.lblFromT.TabIndex = 0;
-            this.lblFromT.Text = "From:";
+            lblFromT.AutoSize = true;
+            lblFromT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFromT.Location = new Point(94, 16);
+            lblFromT.Name = "lblFromT";
+            lblFromT.Size = new Size(58, 25);
+            lblFromT.TabIndex = 0;
+            lblFromT.Text = "From:";
             // 
             // lblForm
             // 
-            this.lblForm.AutoSize = true;
-            this.lblForm.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblForm.Location = new System.Drawing.Point(16, 21);
-            this.lblForm.Name = "lblForm";
-            this.lblForm.Size = new System.Drawing.Size(69, 30);
-            this.lblForm.TabIndex = 0;
-            this.lblForm.Text = "From:";
+            lblForm.AutoSize = true;
+            lblForm.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblForm.Location = new Point(14, 16);
+            lblForm.Name = "lblForm";
+            lblForm.Size = new Size(58, 25);
+            lblForm.TabIndex = 0;
+            lblForm.Text = "From:";
             // 
             // UCInformation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.Name = "UCInformation";
-            this.Size = new System.Drawing.Size(968, 180);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "UCInformation";
+            Size = new Size(847, 135);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

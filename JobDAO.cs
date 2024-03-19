@@ -1,6 +1,7 @@
 ﻿using System;
 using System.CodeDom;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,10 +32,16 @@ namespace WinFormProject
             conn.FetchHiringJob(strFetch, jobs);
             return jobs;
         }
+
+        public string FetchName(string jobid)
+        {
+            string strFetch = string.Format("Select JobName From Job where jobid = '{0}'", jobid);
+            return conn.FetchScalar(strFetch);
+        }
         public void AddNewJob(string companyid, string jobname, string position, string salary, string requirement, string description, DateTime datapublish)
         {
             string sqlUpdate = string.Format("INSERT INTO Job (jobid, companyid, jobname, position, salary, datepublish, description, requirement) " +
-                                     "VALUES (SUBSTRING(CONVERT(VARCHAR(36), NEWID()), 1, 8),'{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')",
+                                     "VALUES (SUBSTRING(CONVERT(VARCHAR(4), NEWID()), 1, 8),'{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')",
                                      companyid, jobname, position, salary, datapublish.ToString("yyyy-MM-dd"), description, requirement);
             conn.CRUD(sqlUpdate);
         }

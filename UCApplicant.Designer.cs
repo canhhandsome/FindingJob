@@ -28,172 +28,152 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnDecline = new System.Windows.Forms.Button();
-            this.lblDateT = new System.Windows.Forms.Label();
-            this.lblJobT = new System.Windows.Forms.Label();
-            this.lblApplicantNameT = new System.Windows.Forms.Label();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnApprove = new System.Windows.Forms.Button();
-            this.btnProfile = new System.Windows.Forms.Button();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.lblJob = new System.Windows.Forms.Label();
-            this.lblApplicantName = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            btnDecline = new Button();
+            lblDateT = new Label();
+            lblJobT = new Label();
+            lblApplicantNameT = new Label();
+            btnApprove = new Button();
+            btnProfile = new Button();
+            lblDate = new Label();
+            lblJob = new Label();
+            lblApplicantName = new Label();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightGray;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.btnDecline);
-            this.panel1.Controls.Add(this.lblDateT);
-            this.panel1.Controls.Add(this.lblJobT);
-            this.panel1.Controls.Add(this.lblApplicantNameT);
-            this.panel1.Controls.Add(this.btnDelete);
-            this.panel1.Controls.Add(this.btnApprove);
-            this.panel1.Controls.Add(this.btnProfile);
-            this.panel1.Controls.Add(this.lblDate);
-            this.panel1.Controls.Add(this.lblJob);
-            this.panel1.Controls.Add(this.lblApplicantName);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(950, 234);
-            this.panel1.TabIndex = 3;
+            panel1.BackColor = Color.LightGray;
+            panel1.BorderStyle = BorderStyle.Fixed3D;
+            panel1.Controls.Add(btnDecline);
+            panel1.Controls.Add(lblDateT);
+            panel1.Controls.Add(lblJobT);
+            panel1.Controls.Add(lblApplicantNameT);
+            panel1.Controls.Add(btnApprove);
+            panel1.Controls.Add(btnProfile);
+            panel1.Controls.Add(lblDate);
+            panel1.Controls.Add(lblJob);
+            panel1.Controls.Add(lblApplicantName);
+            panel1.Dock = DockStyle.Fill;
+            panel1.ForeColor = SystemColors.ControlText;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(831, 176);
+            panel1.TabIndex = 3;
             // 
             // btnDecline
             // 
-            this.btnDecline.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDecline.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDecline.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnDecline.Location = new System.Drawing.Point(580, 166);
-            this.btnDecline.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnDecline.Name = "btnDecline";
-            this.btnDecline.Size = new System.Drawing.Size(112, 44);
-            this.btnDecline.TabIndex = 8;
-            this.btnDecline.Text = "Decline";
-            this.btnDecline.UseVisualStyleBackColor = true;
+            btnDecline.FlatStyle = FlatStyle.Flat;
+            btnDecline.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDecline.ForeColor = SystemColors.ControlText;
+            btnDecline.Location = new Point(508, 124);
+            btnDecline.Name = "btnDecline";
+            btnDecline.Size = new Size(98, 33);
+            btnDecline.TabIndex = 8;
+            btnDecline.Text = "Decline";
+            btnDecline.UseVisualStyleBackColor = true;
             // 
             // lblDateT
             // 
-            this.lblDateT.AutoSize = true;
-            this.lblDateT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDateT.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblDateT.Location = new System.Drawing.Point(96, 89);
-            this.lblDateT.Name = "lblDateT";
-            this.lblDateT.Size = new System.Drawing.Size(69, 30);
-            this.lblDateT.TabIndex = 7;
-            this.lblDateT.Text = "Date: ";
+            lblDateT.AutoSize = true;
+            lblDateT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDateT.ForeColor = SystemColors.ControlText;
+            lblDateT.Location = new Point(84, 67);
+            lblDateT.Name = "lblDateT";
+            lblDateT.Size = new Size(58, 25);
+            lblDateT.TabIndex = 7;
+            lblDateT.Text = "Date: ";
             // 
             // lblJobT
             // 
-            this.lblJobT.AutoSize = true;
-            this.lblJobT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblJobT.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblJobT.Location = new System.Drawing.Point(85, 51);
-            this.lblJobT.Name = "lblJobT";
-            this.lblJobT.Size = new System.Drawing.Size(58, 30);
-            this.lblJobT.TabIndex = 6;
-            this.lblJobT.Text = "Job: ";
+            lblJobT.AutoSize = true;
+            lblJobT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblJobT.ForeColor = SystemColors.ControlText;
+            lblJobT.Location = new Point(74, 38);
+            lblJobT.Name = "lblJobT";
+            lblJobT.Size = new Size(49, 25);
+            lblJobT.TabIndex = 6;
+            lblJobT.Text = "Job: ";
             // 
             // lblApplicantNameT
             // 
-            this.lblApplicantNameT.AutoSize = true;
-            this.lblApplicantNameT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblApplicantNameT.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblApplicantNameT.Location = new System.Drawing.Point(219, 15);
-            this.lblApplicantNameT.Name = "lblApplicantNameT";
-            this.lblApplicantNameT.Size = new System.Drawing.Size(192, 30);
-            this.lblApplicantNameT.TabIndex = 5;
-            this.lblApplicantNameT.Text = "Applicant\'s Name: ";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.RosyBrown;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDelete.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnDelete.Location = new System.Drawing.Point(462, 166);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(112, 44);
-            this.btnDelete.TabIndex = 4;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = false;
+            lblApplicantNameT.AutoSize = true;
+            lblApplicantNameT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblApplicantNameT.ForeColor = SystemColors.ControlText;
+            lblApplicantNameT.Location = new Point(192, 11);
+            lblApplicantNameT.Name = "lblApplicantNameT";
+            lblApplicantNameT.Size = new Size(160, 25);
+            lblApplicantNameT.TabIndex = 5;
+            lblApplicantNameT.Text = "Applicant's Name: ";
             // 
             // btnApprove
             // 
-            this.btnApprove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnApprove.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnApprove.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnApprove.Location = new System.Drawing.Point(698, 166);
-            this.btnApprove.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnApprove.Name = "btnApprove";
-            this.btnApprove.Size = new System.Drawing.Size(112, 44);
-            this.btnApprove.TabIndex = 3;
-            this.btnApprove.Text = "Approve";
-            this.btnApprove.UseVisualStyleBackColor = true;
+            btnApprove.FlatStyle = FlatStyle.Flat;
+            btnApprove.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnApprove.ForeColor = SystemColors.ControlText;
+            btnApprove.Location = new Point(611, 124);
+            btnApprove.Name = "btnApprove";
+            btnApprove.Size = new Size(98, 33);
+            btnApprove.TabIndex = 3;
+            btnApprove.Text = "Approve";
+            btnApprove.UseVisualStyleBackColor = true;
             // 
             // btnProfile
             // 
-            this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProfile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnProfile.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnProfile.Location = new System.Drawing.Point(816, 166);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(112, 44);
-            this.btnProfile.TabIndex = 3;
-            this.btnProfile.Text = "Profile";
-            this.btnProfile.UseVisualStyleBackColor = true;
+            btnProfile.FlatStyle = FlatStyle.Flat;
+            btnProfile.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnProfile.ForeColor = SystemColors.ControlText;
+            btnProfile.Location = new Point(714, 124);
+            btnProfile.Name = "btnProfile";
+            btnProfile.Size = new Size(98, 33);
+            btnProfile.TabIndex = 3;
+            btnProfile.Text = "Profile";
+            btnProfile.UseVisualStyleBackColor = true;
             // 
             // lblDate
             // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDate.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblDate.Location = new System.Drawing.Point(21, 89);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(69, 30);
-            this.lblDate.TabIndex = 2;
-            this.lblDate.Text = "Date: ";
+            lblDate.AutoSize = true;
+            lblDate.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDate.ForeColor = SystemColors.ControlText;
+            lblDate.Location = new Point(18, 67);
+            lblDate.Name = "lblDate";
+            lblDate.Size = new Size(58, 25);
+            lblDate.TabIndex = 2;
+            lblDate.Text = "Date: ";
             // 
             // lblJob
             // 
-            this.lblJob.AutoSize = true;
-            this.lblJob.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblJob.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblJob.Location = new System.Drawing.Point(21, 51);
-            this.lblJob.Name = "lblJob";
-            this.lblJob.Size = new System.Drawing.Size(58, 30);
-            this.lblJob.TabIndex = 1;
-            this.lblJob.Text = "Job: ";
+            lblJob.AutoSize = true;
+            lblJob.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblJob.ForeColor = SystemColors.ControlText;
+            lblJob.Location = new Point(18, 38);
+            lblJob.Name = "lblJob";
+            lblJob.Size = new Size(49, 25);
+            lblJob.TabIndex = 1;
+            lblJob.Text = "Job: ";
             // 
             // lblApplicantName
             // 
-            this.lblApplicantName.AutoSize = true;
-            this.lblApplicantName.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblApplicantName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblApplicantName.Location = new System.Drawing.Point(21, 15);
-            this.lblApplicantName.Name = "lblApplicantName";
-            this.lblApplicantName.Size = new System.Drawing.Size(192, 30);
-            this.lblApplicantName.TabIndex = 0;
-            this.lblApplicantName.Text = "Applicant\'s Name: ";
+            lblApplicantName.AutoSize = true;
+            lblApplicantName.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblApplicantName.ForeColor = SystemColors.ControlText;
+            lblApplicantName.Location = new Point(18, 11);
+            lblApplicantName.Name = "lblApplicantName";
+            lblApplicantName.Size = new Size(160, 25);
+            lblApplicantName.TabIndex = 0;
+            lblApplicantName.Text = "Applicant's Name: ";
             // 
             // UCApplicant
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.Name = "UCApplicant";
-            this.Size = new System.Drawing.Size(950, 234);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "UCApplicant";
+            Size = new Size(831, 176);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -204,7 +184,6 @@
         private Label lblDate;
         private Label lblJob;
         private Label lblApplicantName;
-        private Button btnDelete;
         private Button btnDecline;
         private Label lblDateT;
         private Label lblJobT;
