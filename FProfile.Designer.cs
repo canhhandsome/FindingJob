@@ -138,6 +138,7 @@ namespace WinFormProject
             btnCV.TabIndex = 10;
             btnCV.Text = "CV";
             btnCV.UseVisualStyleBackColor = false;
+            btnCV.Click += btnCV_Click;
             // 
             // btnEdit
             // 

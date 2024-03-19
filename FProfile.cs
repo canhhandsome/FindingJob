@@ -15,7 +15,7 @@ namespace WinFormProject
     {
         JobSeeker jobseeker;
         JobSeekerDAO jsDAO = new JobSeekerDAO();
-        public FProfile(ref JobSeeker jobSeeker)
+        public FProfile(JobSeeker jobSeeker)
         {
             InitializeComponent();
             this.jobseeker = jobSeeker; // Assign the reference to the member variable
@@ -187,5 +187,10 @@ namespace WinFormProject
             return new JobSeeker(information, dtpkBirthDate.Value, txtCitizenID.Text, gender, AvatarData, CvData);
         }
 
+        private void btnCV_Click(object sender, EventArgs e)
+        {
+            FCV fcv = new FCV(jobseeker);
+            fcv.Show();
+        }
     }
 }

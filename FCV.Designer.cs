@@ -1,6 +1,6 @@
 ﻿namespace WinFormProject
 {
-    partial class FCVcs
+    partial class FCV
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ptbCV = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCV)).BeginInit();
-            this.SuspendLayout();
+            ptbCV = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)ptbCV).BeginInit();
+            SuspendLayout();
             // 
             // ptbCV
             // 
-            this.ptbCV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ptbCV.Location = new System.Drawing.Point(0, 0);
-            this.ptbCV.Name = "ptbCV";
-            this.ptbCV.Size = new System.Drawing.Size(1057, 580);
-            this.ptbCV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbCV.TabIndex = 0;
-            this.ptbCV.TabStop = false;
+            ptbCV.Dock = DockStyle.Fill;
+            ptbCV.Location = new Point(0, 0);
+            ptbCV.Name = "ptbCV";
+            ptbCV.Size = new Size(954, 839);
+            ptbCV.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbCV.TabIndex = 0;
+            ptbCV.TabStop = false;
             // 
-            // FCVcs
+            // FCV
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(1057, 580);
-            this.Controls.Add(this.ptbCV);
-            this.Name = "FCVcs";
-            this.Text = "FCVcs";
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCV)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
+            BackColor = Color.LightGray;
+            ClientSize = new Size(954, 839);
+            Controls.Add(ptbCV);
+            Name = "FCV";
+            Text = "FCV";
+            ((System.ComponentModel.ISupportInitialize)ptbCV).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
