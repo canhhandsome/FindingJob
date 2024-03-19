@@ -17,7 +17,7 @@ namespace WinFormProject
             
         }
 
-        public List<Job> FetchJobs()
+        public List<Job> FetchAvailableJobs()
         {
             List<Job> jobs = new List<Job>();
             string strFetch = string.Format("Select * from job");
@@ -25,7 +25,7 @@ namespace WinFormProject
             return jobs;
         }
 
-        public List<Job> FetchAllJob(string companyid)  
+        public List<Job> FetchCompanyJob(string companyid)  
         {
             List<Job> jobs = new List<Job>();
             string strFetch = string.Format("Select * From Job where companyid= '{0}'", companyid);
@@ -38,11 +38,11 @@ namespace WinFormProject
             string strFetch = string.Format("Select JobName From Job where jobid = '{0}'", jobid);
             return conn.FetchScalar(strFetch);
         }
-        public void AddNewJob(string companyid, string jobname, string position, string salary, string requirement, string description, DateTime datapublish)
+        public void AddNewJob(string companyid, string jobname, string position, string salary, string requirement, string description)
         {
-            string sqlUpdate = string.Format("INSERT INTO Job (jobid, companyid, jobname, position, salary, datepublish, description, requirement) " +
-                                     "VALUES (SUBSTRING(CONVERT(VARCHAR(4), NEWID()), 1, 8),'{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')",
-                                     companyid, jobname, position, salary, datapublish.ToString("yyyy-MM-dd"), description, requirement);
+            string sqlUpdate = string.Format("INSERT INTO Job (companyid, jobname, position, salary, description, requirement) " +
+                                     "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')",
+                                     companyid, jobname, position, salary, description, requirement);
             conn.CRUD(sqlUpdate);
         }
         public void DeleteJob(string jobid)
@@ -53,8 +53,8 @@ namespace WinFormProject
         public void EditJob(Job job)
         {
             Job job1 = new Job();
-            string sqlUpdate = string.Format("UPDATE Job SET companyid = '{0}', jobname = '{1}', position = '{2}', salary = '{3}', datepublish = '{4}', description = '{5}', requirement = '{6}' WHERE jobid = '{7}'",
-                                             job.CompanyID, job.Name, job.Position, job.Salary, job.DatePublish.ToString("yyyy-MM-dd"), job.Description, job.Requirement, job.Jobid);
+            string sqlUpdate = string.Format("UPDATE Job SET  jobname = '{0}', position = '{1}', salary = '{2}', description = '{3}', requirement = '{4}' WHERE jobid = '{5}'",
+                                             job.CompanyID, job.Name, job.Position, job.Salary, job.Description, job.Requirement, job.Jobid);
             conn.CRUD(sqlUpdate);
         }
 

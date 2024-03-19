@@ -22,6 +22,17 @@ namespace WinFormProject
             string strFetch = string.Format("Select Name from company where id = '{0}'", companyid);
             return conn.FetchScalar(strFetch);
         }
+        public byte[] FetchImg(string companyid)
+        {
+            string strFetch = string.Format("SELECT Avatar FROM Company WHERE id = '{0}'", companyid);
+            // Assuming FetchScalar method executes the query and returns a single scalar value (in this case, the image data)
+            string imageDataAsString = conn.FetchScalar(strFetch) as string;
+
+            // Convert the image data string to a byte array
+            byte[] imageData = Convert.FromBase64String(imageDataAsString);
+
+            return imageData;
+        }
     }
     
 }

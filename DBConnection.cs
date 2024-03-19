@@ -67,7 +67,6 @@ namespace WinFormProject
         }
         //This is used for fetch uncommon data ( the information of company and person)
 
-
         public List<string> FetchSeperatedData(string strFetch)
         {
             List<string> seperatedinfo = new List<string>(2);

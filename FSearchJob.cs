@@ -19,7 +19,7 @@ namespace WinFormProject
             this.jsID = jsID;
             InitializeComponent();
             JobDAO jobDAO = new JobDAO();
-            jobs = jobDAO.FetchJobs();
+            jobs = jobDAO.FetchAvailableJobs();
         }
 
         private void hopeTextBox1_Enter(object sender, EventArgs e)

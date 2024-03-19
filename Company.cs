@@ -15,6 +15,7 @@ namespace WinFormProject
         Information information = new Information();
         List<Job> jobs = new List<Job>();
         List<Apply> applies = new List<Apply>();
+        byte[] AvatarData;
         public Company()
         {
 
@@ -25,7 +26,7 @@ namespace WinFormProject
             List<string> otherinfo = companyDAO.FetchInformation(this);
             companysize = otherinfo[1];
             companytype = otherinfo[0];
-            jobs = jobDao.FetchAllJob(this.INFO.ID);
+            jobs = jobDao.FetchCompanyJob(this.INFO.ID);
             foreach (Job job in jobs)
             {
                 foreach(Apply apply in applyDAO.AllApplies(job.Jobid))
@@ -33,6 +34,7 @@ namespace WinFormProject
                     applies.Add(apply);
                 }
             }
+            AvatarData = companyDAO.FetchImg(this.INFO.ID);
         }
 
         public List<Job> Jobs

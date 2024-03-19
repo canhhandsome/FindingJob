@@ -63,8 +63,8 @@ namespace WinFormProject
 
         private void btnPostJob_Click(object sender, EventArgs e)
         {
-            jobDAO.AddNewJob(companyid, txtJobName.Text, txtExperience.Text, txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, DateTime.Now);
-            jobs = jobDAO.FetchAllJob(companyid);
+            jobDAO.AddNewJob(companyid, txtJobName.Text, txtExperience.Text, txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text);
+            jobs = jobDAO.FetchCompanyJob(companyid);
             OpenChildForm(new FPostJob(jobs, companyid));
         }
 
