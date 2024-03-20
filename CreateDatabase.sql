@@ -13,8 +13,8 @@ CREATE TABLE JobSeeker (
     PhoneNumber VARCHAR(20),
     DateOfBirth DATE,
     NationalID VARCHAR(20),
-    Avatar image,
-    CV image
+    Avatar varbinary(max),
+    CV varbinary(max)
 );
 
 CREATE TABLE Company (
@@ -26,7 +26,7 @@ CREATE TABLE Company (
     CompanySize VARCHAR(100),
     Phonenumber NCHar(100),
     WorkingTime VARCHAR(100),
-    Avatar image
+    Avatar varbinary (max)
 );
 
 CREATE TABLE Job (
@@ -82,5 +82,26 @@ ALTER TABLE JobSeeker
 ADD CONSTRAINT FK_AccountJobSeeker
 FOREIGN KEY (Email) REFERENCES Account(Email);
 
-ALTER TABLE apply
+ALTER TABLE Apply
 ADD CONSTRAINT chk_status CHECK (status IN ('waiting', 'approve', 'decline'));
+
+
+-- Insert sample data into the Account table
+INSERT INTO Account (Email, Password, Type)
+VALUES
+    ('john@example.com', 'password123', 'jobseeker'),
+    ('emma@example.com', 'secret456', 'jobseeker'),
+    ('abc@example.com', 'company123', 'company'), -- New account for ABC Corp
+    ('xyz@example.com', 'company456', 'company'); -- New account for XYZ Inc
+
+-- Insert sample data into the JobSeeker table
+INSERT INTO JobSeeker (Name, Email, Address, PhoneNumber, DateOfBirth, NationalID, Avatar, CV)
+VALUES
+    ('John Doe', 'john@example.com', '123 Main St, City', '123-456-7890', '1990-01-01', '12345', NULL, NULL),
+    ('Emma Smith', 'emma@example.com', '456 Elm St, Town', '987-654-3210', '1995-05-15', '54321', NULL, NULL);
+
+-- Insert sample data into the Company table
+INSERT INTO Company (Name, Email, Address, PhoneNumber, CompanyType, CompanySize, WorkingTime, Avatar)
+VALUES
+    ('ABC Corp', 'abc@example.com', '789 Oak St, Village', '987-654-3210', 'Tech', 'Large', '9am - 5pm', NULL),
+    ('XYZ Inc', 'xyz@example.com', '987 Pine St, Town', '123-456-7890', 'Finance', 'Medium', '8am - 4pm', NULL);
