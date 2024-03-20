@@ -105,3 +105,9 @@ INSERT INTO Company (Name, Email, Address, PhoneNumber, CompanyType, CompanySize
 VALUES
     ('ABC Corp', 'abc@example.com', '789 Oak St, Village', '987-654-3210', 'Tech', 'Large', '9am - 5pm', NULL),
     ('XYZ Inc', 'xyz@example.com', '987 Pine St, Town', '123-456-7890', 'Finance', 'Medium', '8am - 4pm', NULL);
+
+alter table jobseeker
+add gender varchar(10)
+
+update JobSeeker
+set gender = 'female'

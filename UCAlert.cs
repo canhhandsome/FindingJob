@@ -12,11 +12,22 @@ namespace WinFormProject
 {
     public partial class UCAlert : UserControl
     {
-        public UCAlert()
+        Alert alert = new Alert();
+        public UCAlert(Alert alert)
         {
             InitializeComponent();
+            this.alert = alert;
             this.MaximumSize = new System.Drawing.Size(968, 225);
+            lblDateT.Text = alert.DateReply.ToString("dd/MM/yyyy");
+            CompanyDAO companyDAO = new CompanyDAO();
+            lblFromT.Text = companyDAO.FetchName(alert.SenderID);
+            lblSubjectT.Text = alert.Subject;
         }
 
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            FAlertView fAlertView = new FAlertView(alert);
+            fAlertView.Show();
+        }
     }
 }

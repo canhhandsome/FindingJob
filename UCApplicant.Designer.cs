@@ -129,6 +129,7 @@
             btnProfile.TabIndex = 3;
             btnProfile.Text = "Profile";
             btnProfile.UseVisualStyleBackColor = true;
+            btnProfile.Click += btnProfile_Click;
             // 
             // lblDate
             // 

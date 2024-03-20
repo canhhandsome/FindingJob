@@ -84,7 +84,7 @@ namespace WinFormProject
             jobSeeker = new JobSeeker(informationDAO.FetchCommon(account));
             pnBody.Controls.Clear();
             pnBody.Visible = true;
-            FSupJobSection fSupJobSection = new FSupJobSection(pnBody);
+            FSupJobSection fSupJobSection = new FSupJobSection(jobSeeker);
             OpenChildForm(pnBody, fSupJobSection);
         }
 

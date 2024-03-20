@@ -28,88 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.pnSubBody = new System.Windows.Forms.Panel();
-            this.ucAlert1 = new WinFormProject.UCAlert();
-            this.pnSubBody.SuspendLayout();
-            this.SuspendLayout();
+            hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
+            btnSearch = new Button();
+            flpAlert = new FlowLayoutPanel();
+            SuspendLayout();
             // 
             // hopeTextBox1
             // 
-            this.hopeTextBox1.BackColor = System.Drawing.Color.White;
-            this.hopeTextBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.hopeTextBox1.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox1.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hopeTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeTextBox1.Hint = "Enter Search";
-            this.hopeTextBox1.Location = new System.Drawing.Point(21, 24);
-            this.hopeTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.hopeTextBox1.MaxLength = 32767;
-            this.hopeTextBox1.Multiline = false;
-            this.hopeTextBox1.Name = "hopeTextBox1";
-            this.hopeTextBox1.PasswordChar = '\0';
-            this.hopeTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBox1.SelectedText = "";
-            this.hopeTextBox1.SelectionLength = 0;
-            this.hopeTextBox1.SelectionStart = 0;
-            this.hopeTextBox1.Size = new System.Drawing.Size(841, 43);
-            this.hopeTextBox1.TabIndex = 2;
-            this.hopeTextBox1.TabStop = false;
-            this.hopeTextBox1.UseSystemPasswordChar = false;
+            hopeTextBox1.BackColor = Color.White;
+            hopeTextBox1.BaseColor = Color.FromArgb(44, 55, 66);
+            hopeTextBox1.BorderColorA = Color.FromArgb(64, 158, 255);
+            hopeTextBox1.BorderColorB = Color.FromArgb(220, 223, 230);
+            hopeTextBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            hopeTextBox1.ForeColor = Color.FromArgb(48, 49, 51);
+            hopeTextBox1.Hint = "Enter Search";
+            hopeTextBox1.Location = new Point(24, 18);
+            hopeTextBox1.MaxLength = 32767;
+            hopeTextBox1.Multiline = false;
+            hopeTextBox1.Name = "hopeTextBox1";
+            hopeTextBox1.PasswordChar = '\0';
+            hopeTextBox1.ScrollBars = ScrollBars.None;
+            hopeTextBox1.SelectedText = "";
+            hopeTextBox1.SelectionLength = 0;
+            hopeTextBox1.SelectionStart = 0;
+            hopeTextBox1.Size = new Size(736, 38);
+            hopeTextBox1.TabIndex = 2;
+            hopeTextBox1.TabStop = false;
+            hopeTextBox1.UseSystemPasswordChar = false;
             // 
             // btnSearch
             // 
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSearch.Location = new System.Drawing.Point(895, 24);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(94, 43);
-            this.btnSearch.TabIndex = 3;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            btnSearch.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSearch.Location = new Point(789, 18);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(82, 32);
+            btnSearch.TabIndex = 3;
+            btnSearch.Text = "Search";
+            btnSearch.UseVisualStyleBackColor = true;
             // 
-            // pnSubBody
+            // flpAlert
             // 
-            this.pnSubBody.AutoScroll = true;
-            this.pnSubBody.Controls.Add(this.ucAlert1);
-            this.pnSubBody.Location = new System.Drawing.Point(21, 109);
-            this.pnSubBody.Name = "pnSubBody";
-            this.pnSubBody.Size = new System.Drawing.Size(968, 762);
-            this.pnSubBody.TabIndex = 5;
-            // 
-            // ucAlert1
-            // 
-            this.ucAlert1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucAlert1.Location = new System.Drawing.Point(0, 0);
-            this.ucAlert1.MaximumSize = new System.Drawing.Size(968, 225);
-            this.ucAlert1.Name = "ucAlert1";
-            this.ucAlert1.Size = new System.Drawing.Size(968, 225);
-            this.ucAlert1.TabIndex = 0;
+            flpAlert.Location = new Point(24, 86);
+            flpAlert.Name = "flpAlert";
+            flpAlert.Size = new Size(847, 124);
+            flpAlert.TabIndex = 4;
             // 
             // FSupJobSection
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(1029, 611);
-            this.Controls.Add(this.pnSubBody);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.hopeTextBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "FSupJobSection";
-            this.Text = "FSupJobSection";
-            this.pnSubBody.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
+            BackColor = Color.LightGray;
+            ClientSize = new Size(900, 458);
+            Controls.Add(flpAlert);
+            Controls.Add(btnSearch);
+            Controls.Add(hopeTextBox1);
+            Name = "FSupJobSection";
+            Text = "FSupJobSection";
+            ResumeLayout(false);
         }
 
         #endregion
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox1;
         private Button btnSearch;
-        private Panel pnSubBody;
         private UCAlert ucAlert1;
+        private FlowLayoutPanel flpAlert;
     }
 }

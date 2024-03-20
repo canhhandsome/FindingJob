@@ -61,10 +61,9 @@ namespace WinFormProject
             // dtpkBirthDate
             // 
             dtpkBirthDate.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dtpkBirthDate.Location = new Point(406, 276);
-            dtpkBirthDate.Margin = new Padding(3, 4, 3, 4);
+            dtpkBirthDate.Location = new Point(355, 207);
             dtpkBirthDate.Name = "dtpkBirthDate";
-            dtpkBirthDate.Size = new Size(327, 34);
+            dtpkBirthDate.Size = new Size(287, 29);
             dtpkBirthDate.TabIndex = 6;
             // 
             // rdoMale
@@ -79,10 +78,9 @@ namespace WinFormProject
             rdoMale.EnabledUncheckedColor = Color.FromArgb(156, 158, 161);
             rdoMale.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             rdoMale.ForeColor = SystemColors.Desktop;
-            rdoMale.Location = new Point(33, 375);
-            rdoMale.Margin = new Padding(3, 4, 3, 4);
+            rdoMale.Location = new Point(29, 281);
             rdoMale.Name = "rdoMale";
-            rdoMale.Size = new Size(80, 20);
+            rdoMale.Size = new Size(69, 20);
             rdoMale.TabIndex = 7;
             rdoMale.TabStop = true;
             rdoMale.Text = "Male";
@@ -100,10 +98,9 @@ namespace WinFormProject
             rdofemale.EnabledUncheckedColor = Color.FromArgb(156, 158, 161);
             rdofemale.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             rdofemale.ForeColor = SystemColors.ControlText;
-            rdofemale.Location = new Point(176, 375);
-            rdofemale.Margin = new Padding(3, 4, 3, 4);
+            rdofemale.Location = new Point(154, 281);
             rdofemale.Name = "rdofemale";
-            rdofemale.Size = new Size(99, 20);
+            rdofemale.Size = new Size(85, 20);
             rdofemale.TabIndex = 7;
             rdofemale.TabStop = true;
             rdofemale.Text = "Female";
@@ -113,10 +110,9 @@ namespace WinFormProject
             // 
             ptbAvatar.ErrorImage = (Image)resources.GetObject("ptbAvatar.ErrorImage");
             ptbAvatar.Image = (Image)resources.GetObject("ptbAvatar.Image");
-            ptbAvatar.Location = new Point(810, 28);
-            ptbAvatar.Margin = new Padding(3, 4, 3, 4);
+            ptbAvatar.Location = new Point(709, 21);
             ptbAvatar.Name = "ptbAvatar";
-            ptbAvatar.Size = new Size(171, 200);
+            ptbAvatar.Size = new Size(150, 150);
             ptbAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbAvatar.TabIndex = 8;
             ptbAvatar.TabStop = false;
@@ -131,10 +127,9 @@ namespace WinFormProject
             btnCV.FlatStyle = FlatStyle.System;
             btnCV.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnCV.ForeColor = SystemColors.ControlLightLight;
-            btnCV.Location = new Point(33, 491);
-            btnCV.Margin = new Padding(3, 4, 3, 4);
+            btnCV.Location = new Point(29, 368);
             btnCV.Name = "btnCV";
-            btnCV.Size = new Size(126, 49);
+            btnCV.Size = new Size(110, 37);
             btnCV.TabIndex = 10;
             btnCV.Text = "CV";
             btnCV.UseVisualStyleBackColor = false;
@@ -150,10 +145,9 @@ namespace WinFormProject
             btnEdit.FlatStyle = FlatStyle.System;
             btnEdit.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnEdit.ForeColor = SystemColors.ControlLightLight;
-            btnEdit.Location = new Point(833, 491);
-            btnEdit.Margin = new Padding(3, 4, 3, 4);
+            btnEdit.Location = new Point(729, 368);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(126, 49);
+            btnEdit.Size = new Size(110, 37);
             btnEdit.TabIndex = 10;
             btnEdit.Text = "Edit";
             btnEdit.UseVisualStyleBackColor = false;
@@ -164,9 +158,9 @@ namespace WinFormProject
             lblFullName.AutoSize = true;
             lblFullName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblFullName.ForeColor = SystemColors.ControlText;
-            lblFullName.Location = new Point(33, 28);
+            lblFullName.Location = new Point(29, 21);
             lblFullName.Name = "lblFullName";
-            lblFullName.Size = new Size(91, 28);
+            lblFullName.Size = new Size(74, 21);
             lblFullName.TabIndex = 11;
             lblFullName.Text = "Fullname";
             // 
@@ -175,9 +169,9 @@ namespace WinFormProject
             lblAddress.AutoSize = true;
             lblAddress.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblAddress.ForeColor = SystemColors.ControlText;
-            lblAddress.Location = new Point(415, 28);
+            lblAddress.Location = new Point(363, 21);
             lblAddress.Name = "lblAddress";
-            lblAddress.Size = new Size(82, 28);
+            lblAddress.Size = new Size(66, 21);
             lblAddress.TabIndex = 11;
             lblAddress.Text = "Address";
             // 
@@ -186,9 +180,9 @@ namespace WinFormProject
             lblCitizenId.AutoSize = true;
             lblCitizenId.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblCitizenId.ForeColor = SystemColors.ControlText;
-            lblCitizenId.Location = new Point(415, 132);
+            lblCitizenId.Location = new Point(363, 99);
             lblCitizenId.Name = "lblCitizenId";
-            lblCitizenId.Size = new Size(95, 28);
+            lblCitizenId.Size = new Size(76, 21);
             lblCitizenId.TabIndex = 11;
             lblCitizenId.Text = "Citizen ID";
             // 
@@ -197,9 +191,9 @@ namespace WinFormProject
             lblPhoneNumber.AutoSize = true;
             lblPhoneNumber.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblPhoneNumber.ForeColor = SystemColors.ControlText;
-            lblPhoneNumber.Location = new Point(33, 132);
+            lblPhoneNumber.Location = new Point(29, 99);
             lblPhoneNumber.Name = "lblPhoneNumber";
-            lblPhoneNumber.Size = new Size(144, 28);
+            lblPhoneNumber.Size = new Size(116, 21);
             lblPhoneNumber.TabIndex = 11;
             lblPhoneNumber.Text = "Phone Number";
             // 
@@ -208,9 +202,9 @@ namespace WinFormProject
             lblEmail.AutoSize = true;
             lblEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblEmail.ForeColor = SystemColors.ControlText;
-            lblEmail.Location = new Point(33, 239);
+            lblEmail.Location = new Point(29, 179);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(59, 28);
+            lblEmail.Size = new Size(48, 21);
             lblEmail.TabIndex = 11;
             lblEmail.Text = "Email";
             // 
@@ -219,9 +213,9 @@ namespace WinFormProject
             lblDoB.AutoSize = true;
             lblDoB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblDoB.ForeColor = SystemColors.ControlText;
-            lblDoB.Location = new Point(415, 239);
+            lblDoB.Location = new Point(363, 179);
             lblDoB.Name = "lblDoB";
-            lblDoB.Size = new Size(122, 28);
+            lblDoB.Size = new Size(97, 21);
             lblDoB.TabIndex = 11;
             lblDoB.Text = "Date of Birth";
             // 
@@ -230,9 +224,9 @@ namespace WinFormProject
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label8.ForeColor = SystemColors.ControlText;
-            label8.Location = new Point(33, 337);
+            label8.Location = new Point(29, 253);
             label8.Name = "label8";
-            label8.Size = new Size(76, 28);
+            label8.Size = new Size(61, 21);
             label8.TabIndex = 11;
             label8.Text = "Gender";
             // 
@@ -245,10 +239,9 @@ namespace WinFormProject
             btnCancel.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
             btnCancel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancel.ForeColor = SystemColors.Control;
-            btnCancel.Location = new Point(873, 491);
-            btnCancel.Margin = new Padding(3, 4, 3, 4);
+            btnCancel.Location = new Point(764, 368);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(126, 49);
+            btnCancel.Size = new Size(110, 37);
             btnCancel.TabIndex = 10;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = false;
@@ -263,10 +256,9 @@ namespace WinFormProject
             btnChoosePicture.FlatStyle = FlatStyle.System;
             btnChoosePicture.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnChoosePicture.ForeColor = SystemColors.ControlLightLight;
-            btnChoosePicture.Location = new Point(821, 271);
-            btnChoosePicture.Margin = new Padding(3, 4, 3, 4);
+            btnChoosePicture.Location = new Point(718, 203);
             btnChoosePicture.Name = "btnChoosePicture";
-            btnChoosePicture.Size = new Size(149, 49);
+            btnChoosePicture.Size = new Size(130, 37);
             btnChoosePicture.TabIndex = 12;
             btnChoosePicture.Text = "Choose Picture";
             btnChoosePicture.UseVisualStyleBackColor = false;
@@ -282,10 +274,9 @@ namespace WinFormProject
             btnSave.FlatStyle = FlatStyle.System;
             btnSave.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnSave.ForeColor = SystemColors.ControlLightLight;
-            btnSave.Location = new Point(741, 491);
-            btnSave.Margin = new Padding(3, 4, 3, 4);
+            btnSave.Location = new Point(648, 368);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(126, 49);
+            btnSave.Size = new Size(110, 37);
             btnSave.TabIndex = 13;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = false;
@@ -294,48 +285,54 @@ namespace WinFormProject
             // txtFullName
             // 
             txtFullName.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            txtFullName.Location = new Point(33, 60);
+            txtFullName.Location = new Point(29, 45);
+            txtFullName.Margin = new Padding(3, 2, 3, 2);
             txtFullName.Name = "txtFullName";
-            txtFullName.Size = new Size(298, 36);
+            txtFullName.Size = new Size(261, 31);
             txtFullName.TabIndex = 14;
             // 
             // txtAddress
             // 
             txtAddress.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            txtAddress.Location = new Point(415, 60);
+            txtAddress.Location = new Point(363, 45);
+            txtAddress.Margin = new Padding(3, 2, 3, 2);
             txtAddress.Name = "txtAddress";
-            txtAddress.Size = new Size(298, 36);
+            txtAddress.Size = new Size(261, 31);
             txtAddress.TabIndex = 15;
             // 
             // txtPhoneNumber
             // 
             txtPhoneNumber.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPhoneNumber.Location = new Point(33, 164);
+            txtPhoneNumber.Location = new Point(29, 123);
+            txtPhoneNumber.Margin = new Padding(3, 2, 3, 2);
             txtPhoneNumber.Name = "txtPhoneNumber";
-            txtPhoneNumber.Size = new Size(298, 36);
+            txtPhoneNumber.Size = new Size(261, 31);
             txtPhoneNumber.TabIndex = 16;
             // 
             // txtCitizenID
             // 
             txtCitizenID.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCitizenID.Location = new Point(415, 164);
+            txtCitizenID.Location = new Point(363, 123);
+            txtCitizenID.Margin = new Padding(3, 2, 3, 2);
             txtCitizenID.Name = "txtCitizenID";
-            txtCitizenID.Size = new Size(298, 36);
+            txtCitizenID.Size = new Size(261, 31);
             txtCitizenID.TabIndex = 17;
             // 
             // txtEmail
             // 
             txtEmail.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            txtEmail.Location = new Point(33, 271);
+            txtEmail.Location = new Point(29, 203);
+            txtEmail.Margin = new Padding(3, 2, 3, 2);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(298, 36);
+            txtEmail.Size = new Size(261, 31);
             txtEmail.TabIndex = 18;
             // 
             // ptbCV
             // 
-            ptbCV.Location = new Point(33, 426);
+            ptbCV.Location = new Point(29, 320);
+            ptbCV.Margin = new Padding(3, 2, 3, 2);
             ptbCV.Name = "ptbCV";
-            ptbCV.Size = new Size(123, 142);
+            ptbCV.Size = new Size(108, 106);
             ptbCV.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbCV.TabIndex = 19;
             ptbCV.TabStop = false;
@@ -350,10 +347,9 @@ namespace WinFormProject
             btnChooseNewCV.FlatStyle = FlatStyle.System;
             btnChooseNewCV.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnChooseNewCV.ForeColor = SystemColors.ControlLightLight;
-            btnChooseNewCV.Location = new Point(176, 491);
-            btnChooseNewCV.Margin = new Padding(3, 4, 3, 4);
+            btnChooseNewCV.Location = new Point(154, 368);
             btnChooseNewCV.Name = "btnChooseNewCV";
-            btnChooseNewCV.Size = new Size(126, 49);
+            btnChooseNewCV.Size = new Size(110, 37);
             btnChooseNewCV.TabIndex = 20;
             btnChooseNewCV.Text = "Choose CV";
             btnChooseNewCV.UseVisualStyleBackColor = false;
@@ -361,10 +357,10 @@ namespace WinFormProject
             // 
             // FProfile
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightGray;
-            ClientSize = new Size(1057, 580);
+            ClientSize = new Size(925, 435);
             Controls.Add(btnChooseNewCV);
             Controls.Add(ptbCV);
             Controls.Add(txtEmail);
@@ -388,8 +384,8 @@ namespace WinFormProject
             Controls.Add(rdofemale);
             Controls.Add(rdoMale);
             Controls.Add(dtpkBirthDate);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FProfile";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FProfile";
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).EndInit();
             ((System.ComponentModel.ISupportInitialize)ptbCV).EndInit();
@@ -402,8 +398,8 @@ namespace WinFormProject
         private ReaLTaiizor.Controls.HopeRadioButton rdoMale;
         private ReaLTaiizor.Controls.HopeRadioButton rdofemale;
         private PictureBox ptbAvatar;
-        private Button btnCV;
-        private Button btnEdit;
+        public Button btnCV;
+        public Button btnEdit;
         private Label lblFullName;
         private Label lblAddress;
         private Label lblCitizenId;

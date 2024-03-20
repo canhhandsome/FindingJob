@@ -101,8 +101,8 @@ namespace WinFormProject
         {
             pnBody.Controls.Clear();
             pnBody.Visible = true;
-            FSupJobSection fSupJobSection = new FSupJobSection(pnBody);
-            OpenChildForm(pnBody, fSupJobSection);
+            //FSupJobSection fSupJobSection = new FSupJobSection(pnBody);
+            //OpenChildForm(pnBody, fSupJobSection);
         }
 
         private void btnReport_Click(object sender, EventArgs e)

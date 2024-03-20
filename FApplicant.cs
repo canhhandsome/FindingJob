@@ -19,7 +19,7 @@ namespace WinFormProject
             this.company = company;
             foreach(Apply apply in company.Applies)
             {
-                UCApplicant uCApplicant = new UCApplicant(apply);
+                UCApplicant uCApplicant = new UCApplicant(apply, company);
                 flpApplicant.Controls.Add(uCApplicant);
             }
         }

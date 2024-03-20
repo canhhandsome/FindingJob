@@ -28,177 +28,158 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSend = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.lblContent = new System.Windows.Forms.Label();
-            this.lblSubject = new System.Windows.Forms.Label();
-            this.lblDateT = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.llFromT = new System.Windows.Forms.Label();
-            this.lblFrom = new System.Windows.Forms.Label();
-            this.lblSubjectT = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.lblContentT = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.SuspendLayout();
+            btnDone = new Button();
+            lblContent = new Label();
+            lblSubject = new Label();
+            lblDateT = new Label();
+            lblDate = new Label();
+            llFromT = new Label();
+            lblFrom = new Label();
+            lblSubjectT = new Label();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            lblContentT = new Label();
+            flowLayoutPanel1.SuspendLayout();
+            SuspendLayout();
             // 
-            // btnSend
+            // btnDone
             // 
-            this.btnSend.BackColor = System.Drawing.Color.White;
-            this.btnSend.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSend.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnSend.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnSend.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnSend.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSend.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSend.Location = new System.Drawing.Point(677, 511);
-            this.btnSend.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(153, 49);
-            this.btnSend.TabIndex = 39;
-            this.btnSend.Text = "Send";
-            this.btnSend.UseVisualStyleBackColor = false;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.LightCoral;
-            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCancel.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCancel.Location = new System.Drawing.Point(857, 511);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(153, 49);
-            this.btnCancel.TabIndex = 38;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
+            btnDone.BackColor = Color.White;
+            btnDone.Cursor = Cursors.Hand;
+            btnDone.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
+            btnDone.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 64, 64);
+            btnDone.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
+            btnDone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDone.ForeColor = SystemColors.ActiveCaptionText;
+            btnDone.Location = new Point(750, 383);
+            btnDone.Name = "btnDone";
+            btnDone.Size = new Size(134, 37);
+            btnDone.TabIndex = 38;
+            btnDone.Text = "Done";
+            btnDone.UseVisualStyleBackColor = false;
+            btnDone.Click += btnDone_Click;
             // 
             // lblContent
             // 
-            this.lblContent.AutoSize = true;
-            this.lblContent.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblContent.Location = new System.Drawing.Point(10, 173);
-            this.lblContent.Name = "lblContent";
-            this.lblContent.Size = new System.Drawing.Size(105, 32);
-            this.lblContent.TabIndex = 35;
-            this.lblContent.Text = "Content:";
+            lblContent.AutoSize = true;
+            lblContent.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            lblContent.Location = new Point(9, 130);
+            lblContent.Name = "lblContent";
+            lblContent.Size = new Size(83, 25);
+            lblContent.TabIndex = 35;
+            lblContent.Text = "Content:";
             // 
             // lblSubject
             // 
-            this.lblSubject.AutoSize = true;
-            this.lblSubject.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSubject.Location = new System.Drawing.Point(10, 118);
-            this.lblSubject.Name = "lblSubject";
-            this.lblSubject.Size = new System.Drawing.Size(98, 32);
-            this.lblSubject.TabIndex = 34;
-            this.lblSubject.Text = "Subject:";
+            lblSubject.AutoSize = true;
+            lblSubject.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSubject.Location = new Point(9, 88);
+            lblSubject.Name = "lblSubject";
+            lblSubject.Size = new Size(78, 25);
+            lblSubject.TabIndex = 34;
+            lblSubject.Text = "Subject:";
             // 
             // lblDateT
             // 
-            this.lblDateT.AutoSize = true;
-            this.lblDateT.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDateT.Location = new System.Drawing.Point(121, 66);
-            this.lblDateT.Name = "lblDateT";
-            this.lblDateT.Size = new System.Drawing.Size(69, 32);
-            this.lblDateT.TabIndex = 33;
-            this.lblDateT.Text = "Date:";
+            lblDateT.AutoSize = true;
+            lblDateT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDateT.Location = new Point(106, 50);
+            lblDateT.Name = "lblDateT";
+            lblDateT.Size = new Size(55, 25);
+            lblDateT.TabIndex = 33;
+            lblDateT.Text = "Date:";
             // 
             // lblDate
             // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDate.Location = new System.Drawing.Point(10, 66);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(69, 32);
-            this.lblDate.TabIndex = 32;
-            this.lblDate.Text = "Date:";
+            lblDate.AutoSize = true;
+            lblDate.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDate.Location = new Point(9, 50);
+            lblDate.Name = "lblDate";
+            lblDate.Size = new Size(55, 25);
+            lblDate.TabIndex = 32;
+            lblDate.Text = "Date:";
             // 
             // llFromT
             // 
-            this.llFromT.AutoSize = true;
-            this.llFromT.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.llFromT.Location = new System.Drawing.Point(121, 16);
-            this.llFromT.Name = "llFromT";
-            this.llFromT.Size = new System.Drawing.Size(74, 32);
-            this.llFromT.TabIndex = 31;
-            this.llFromT.Text = "From:";
+            llFromT.AutoSize = true;
+            llFromT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            llFromT.Location = new Point(106, 12);
+            llFromT.Name = "llFromT";
+            llFromT.Size = new Size(59, 25);
+            llFromT.TabIndex = 31;
+            llFromT.Text = "From:";
             // 
             // lblFrom
             // 
-            this.lblFrom.AutoSize = true;
-            this.lblFrom.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblFrom.Location = new System.Drawing.Point(10, 16);
-            this.lblFrom.Name = "lblFrom";
-            this.lblFrom.Size = new System.Drawing.Size(74, 32);
-            this.lblFrom.TabIndex = 30;
-            this.lblFrom.Text = "From:";
+            lblFrom.AutoSize = true;
+            lblFrom.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFrom.Location = new Point(9, 12);
+            lblFrom.Name = "lblFrom";
+            lblFrom.Size = new Size(59, 25);
+            lblFrom.TabIndex = 30;
+            lblFrom.Text = "From:";
             // 
             // lblSubjectT
             // 
-            this.lblSubjectT.AutoSize = true;
-            this.lblSubjectT.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSubjectT.Location = new System.Drawing.Point(121, 118);
-            this.lblSubjectT.Name = "lblSubjectT";
-            this.lblSubjectT.Size = new System.Drawing.Size(98, 32);
-            this.lblSubjectT.TabIndex = 40;
-            this.lblSubjectT.Text = "Subject:";
+            lblSubjectT.AutoSize = true;
+            lblSubjectT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSubjectT.Location = new Point(106, 88);
+            lblSubjectT.Name = "lblSubjectT";
+            lblSubjectT.Size = new Size(78, 25);
+            lblSubjectT.TabIndex = 40;
+            lblSubjectT.Text = "Subject:";
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel1.Controls.Add(this.lblContentT);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(121, 173);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(857, 315);
-            this.flowLayoutPanel1.TabIndex = 41;
+            flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.BackColor = Color.White;
+            flowLayoutPanel1.BorderStyle = BorderStyle.Fixed3D;
+            flowLayoutPanel1.Controls.Add(lblContentT);
+            flowLayoutPanel1.Enabled = false;
+            flowLayoutPanel1.Location = new Point(106, 130);
+            flowLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(750, 237);
+            flowLayoutPanel1.TabIndex = 41;
             // 
             // lblContentT
             // 
-            this.lblContentT.AutoSize = true;
-            this.lblContentT.BackColor = System.Drawing.Color.White;
-            this.lblContentT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblContentT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblContentT.Location = new System.Drawing.Point(3, 0);
-            this.lblContentT.Name = "lblContentT";
-            this.lblContentT.Size = new System.Drawing.Size(82, 28);
-            this.lblContentT.TabIndex = 0;
-            this.lblContentT.Text = "Content";
+            lblContentT.AutoSize = true;
+            lblContentT.BackColor = Color.White;
+            lblContentT.Dock = DockStyle.Fill;
+            lblContentT.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblContentT.Location = new Point(3, 0);
+            lblContentT.Name = "lblContentT";
+            lblContentT.Size = new Size(65, 21);
+            lblContentT.TabIndex = 0;
+            lblContentT.Text = "Content";
             // 
             // FAlertView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(1049, 585);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.lblSubjectT);
-            this.Controls.Add(this.btnSend);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.lblContent);
-            this.Controls.Add(this.lblSubject);
-            this.Controls.Add(this.lblDateT);
-            this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.llFromT);
-            this.Controls.Add(this.lblFrom);
-            this.Name = "FAlertView";
-            this.Text = "FAlertView";
-            this.Load += new System.EventHandler(this.FAlertView_Load);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Gainsboro;
+            ClientSize = new Size(918, 439);
+            Controls.Add(flowLayoutPanel1);
+            Controls.Add(lblSubjectT);
+            Controls.Add(btnDone);
+            Controls.Add(lblContent);
+            Controls.Add(lblSubject);
+            Controls.Add(lblDateT);
+            Controls.Add(lblDate);
+            Controls.Add(llFromT);
+            Controls.Add(lblFrom);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "FAlertView";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "FAlertView";
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private Button btnSend;
-        private Button btnCancel;
+        private Button btnDone;
         private Label lblContent;
         private Label lblSubject;
         private Label lblDateT;
