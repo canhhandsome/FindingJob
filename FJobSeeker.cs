@@ -15,7 +15,7 @@ namespace WinFormProject
     public partial class FJobSeeker : Form
     {
         private Form currentFormChild = new Form();
-        private Button selectedButton;
+        private ReaLTaiizor.Controls.ParrotButton selectedButton;
         private Information information = new Information();
         private JobSeeker jobSeeker = new JobSeeker();
         InformationDAO informationDAO = new InformationDAO();
@@ -35,14 +35,10 @@ namespace WinFormProject
         {
             foreach (Control c in control.Controls)
             {
-                if (c is Button)
+                if (c is ReaLTaiizor.Controls.ParrotButton)
                 {
-                    Button button = (Button)c;
+                    ReaLTaiizor.Controls.ParrotButton button = (ReaLTaiizor.Controls.ParrotButton)c;
                     button.Click += button_Click;
-                    if (button == btnLogOut)
-                    {
-                        button.Click += btnLogOut_Click_1;
-                    }
                 }
             }
         }
@@ -50,18 +46,18 @@ namespace WinFormProject
 
         private void button_Click(object sender, EventArgs e)
         {
-            Button clickedButton = (Button)sender;
+            ReaLTaiizor.Controls.ParrotButton clickedButton = (ReaLTaiizor.Controls.ParrotButton)sender;
 
             if (clickedButton == selectedButton)
                 return;
 
             if (selectedButton != null)
             {
-                selectedButton.BackColor = Color.FromArgb(64, 64, 64);
+                selectedButton.BackgroundColor = Color.FromArgb(236, 247, 251);
                 selectedButton.Enabled = true;
             }
 
-            clickedButton.BackColor = Color.LightGray;
+            clickedButton.BackgroundColor = Color.White;
             clickedButton.Enabled = false;
             selectedButton = clickedButton;
         }
@@ -84,7 +80,7 @@ namespace WinFormProject
             jobSeeker = new JobSeeker(informationDAO.FetchCommon(account));
             pnBody.Controls.Clear();
             pnBody.Visible = true;
-            FSupJobSection fSupJobSection = new FSupJobSection(pnBody);
+            FSupJobSection fSupJobSection = new FSupJobSection(jobSeeker);
             OpenChildForm(pnBody, fSupJobSection);
         }
 
@@ -107,7 +103,7 @@ namespace WinFormProject
             FProfile fProfile = new FProfile(jobSeeker);
             OpenChildForm(pnBody, fProfile);
         }
-        private void btnLogOut_Click_1(object sender, EventArgs e)
+        private void btnLogOut_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Are you sure to log out?", "Alert!!!", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
@@ -124,5 +120,6 @@ namespace WinFormProject
                 selectedButton.Enabled = true;
             }
         }
+
     }
 }
