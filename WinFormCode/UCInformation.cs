@@ -25,7 +25,7 @@ namespace WinFormProject
             this.jsID = jsID;
             this.job = job;
             this.MaximumSize = new System.Drawing.Size(950, 234);
-            FillInTemplate();           
+            FillInTemplate();
             PanelUtils.MakeRounded(this.panel1, 10);
         }
         public void FillInTemplate()

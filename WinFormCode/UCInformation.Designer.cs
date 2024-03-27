@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            ptbCompanyPicture = new PictureBox();
             lblDateT = new Label();
             lblDate = new Label();
             lblNameT = new Label();
             lblContent = new Label();
             lblFromT = new Label();
             lblForm = new Label();
-            ptbCompanyPicture = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).BeginInit();
             SuspendLayout();
@@ -58,11 +58,20 @@
             panel1.TabIndex = 7;
             panel1.Click += panel1_Click;
             // 
+            // ptbCompanyPicture
+            // 
+            ptbCompanyPicture.Location = new Point(17, 3);
+            ptbCompanyPicture.Name = "ptbCompanyPicture";
+            ptbCompanyPicture.Size = new Size(150, 159);
+            ptbCompanyPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbCompanyPicture.TabIndex = 1;
+            ptbCompanyPicture.TabStop = false;
+            // 
             // lblDateT
             // 
             lblDateT.AutoSize = true;
             lblDateT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDateT.Location = new Point(107, 71);
+            lblDateT.Location = new Point(264, 67);
             lblDateT.Name = "lblDateT";
             lblDateT.Size = new Size(69, 30);
             lblDateT.TabIndex = 0;
@@ -72,7 +81,7 @@
             // 
             lblDate.AutoSize = true;
             lblDate.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDate.Location = new Point(16, 71);
+            lblDate.Location = new Point(173, 67);
             lblDate.Name = "lblDate";
             lblDate.Size = new Size(69, 30);
             lblDate.TabIndex = 0;
@@ -82,7 +91,7 @@
             // 
             lblNameT.AutoSize = true;
             lblNameT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblNameT.Location = new Point(107, 121);
+            lblNameT.Location = new Point(264, 117);
             lblNameT.Name = "lblNameT";
             lblNameT.Size = new Size(82, 30);
             lblNameT.TabIndex = 0;
@@ -92,7 +101,7 @@
             // 
             lblContent.AutoSize = true;
             lblContent.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblContent.Location = new Point(16, 121);
+            lblContent.Location = new Point(173, 117);
             lblContent.Name = "lblContent";
             lblContent.Size = new Size(82, 30);
             lblContent.TabIndex = 0;
@@ -102,7 +111,7 @@
             // 
             lblFromT.AutoSize = true;
             lblFromT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFromT.Location = new Point(107, 21);
+            lblFromT.Location = new Point(264, 17);
             lblFromT.Name = "lblFromT";
             lblFromT.Size = new Size(69, 30);
             lblFromT.TabIndex = 0;
@@ -112,20 +121,11 @@
             // 
             lblForm.AutoSize = true;
             lblForm.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblForm.Location = new Point(16, 21);
+            lblForm.Location = new Point(173, 17);
             lblForm.Name = "lblForm";
             lblForm.Size = new Size(69, 30);
             lblForm.TabIndex = 0;
             lblForm.Text = "From:";
-            // 
-            // ptbCompanyPicture
-            // 
-            ptbCompanyPicture.Location = new Point(786, 21);
-            ptbCompanyPicture.Name = "ptbCompanyPicture";
-            ptbCompanyPicture.Size = new Size(150, 141);
-            ptbCompanyPicture.SizeMode = PictureBoxSizeMode.StretchImage;
-            ptbCompanyPicture.TabIndex = 1;
-            ptbCompanyPicture.TabStop = false;
             // 
             // UCInformation
             // 

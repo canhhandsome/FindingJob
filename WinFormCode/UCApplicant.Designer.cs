@@ -66,9 +66,9 @@
             // 
             // ptbApplicantPicture
             // 
-            ptbApplicantPicture.Location = new Point(783, 3);
+            ptbApplicantPicture.Location = new Point(15, 13);
             ptbApplicantPicture.Name = "ptbApplicantPicture";
-            ptbApplicantPicture.Size = new Size(148, 153);
+            ptbApplicantPicture.Size = new Size(175, 191);
             ptbApplicantPicture.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbApplicantPicture.TabIndex = 10;
             ptbApplicantPicture.TabStop = false;
@@ -207,7 +207,7 @@
             lblDateT.AutoSize = true;
             lblDateT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblDateT.ForeColor = SystemColors.ControlText;
-            lblDateT.Location = new Point(113, 111);
+            lblDateT.Location = new Point(271, 88);
             lblDateT.Name = "lblDateT";
             lblDateT.Size = new Size(69, 30);
             lblDateT.TabIndex = 7;
@@ -218,7 +218,7 @@
             lblJobT.AutoSize = true;
             lblJobT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblJobT.ForeColor = SystemColors.ControlText;
-            lblJobT.Location = new Point(102, 72);
+            lblJobT.Location = new Point(260, 49);
             lblJobT.Name = "lblJobT";
             lblJobT.Size = new Size(58, 30);
             lblJobT.TabIndex = 6;
@@ -229,7 +229,7 @@
             lblApplicantNameT.AutoSize = true;
             lblApplicantNameT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblApplicantNameT.ForeColor = SystemColors.ControlText;
-            lblApplicantNameT.Location = new Point(237, 36);
+            lblApplicantNameT.Location = new Point(395, 13);
             lblApplicantNameT.Name = "lblApplicantNameT";
             lblApplicantNameT.Size = new Size(192, 30);
             lblApplicantNameT.TabIndex = 5;
@@ -240,7 +240,7 @@
             lblDate.AutoSize = true;
             lblDate.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblDate.ForeColor = SystemColors.ControlText;
-            lblDate.Location = new Point(38, 111);
+            lblDate.Location = new Point(196, 88);
             lblDate.Name = "lblDate";
             lblDate.Size = new Size(69, 30);
             lblDate.TabIndex = 2;
@@ -251,7 +251,7 @@
             lblJob.AutoSize = true;
             lblJob.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblJob.ForeColor = SystemColors.ControlText;
-            lblJob.Location = new Point(38, 72);
+            lblJob.Location = new Point(196, 49);
             lblJob.Name = "lblJob";
             lblJob.Size = new Size(58, 30);
             lblJob.TabIndex = 1;
@@ -262,7 +262,7 @@
             lblApplicantName.AutoSize = true;
             lblApplicantName.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblApplicantName.ForeColor = SystemColors.ControlText;
-            lblApplicantName.Location = new Point(38, 36);
+            lblApplicantName.Location = new Point(196, 13);
             lblApplicantName.Name = "lblApplicantName";
             lblApplicantName.Size = new Size(192, 30);
             lblApplicantName.TabIndex = 0;

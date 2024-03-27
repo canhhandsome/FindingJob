@@ -13,22 +13,21 @@ namespace WinFormProject
     public partial class FAnswer : Form
     {
         Apply apply = new Apply();
-        Company company = new Company();
-        public FAnswer(Apply apply, Company company)
+        Job job = new Job();
+        public FAnswer(Apply apply, Job job)
         {
             InitializeComponent();
             this.apply = apply;
-            this.company = company;
+            this.job = job;
             JobSeekerDAO jobSeekerDAO = new JobSeekerDAO();
             JobDAO jobDAO = new JobDAO();
-            llFromT.Text = company.INFO.Name;
             lblToT.Text = jobSeekerDAO.FetchName(apply.JSeekerID);
         }
 
         private void btnSend_Click(object sender, EventArgs e)
         {
             AlertDAO dAO = new AlertDAO();
-            Alert alert = new Alert(company.INFO.ID, apply.JSeekerID, txtSubject.Text, txtContent.Text);
+            Alert alert = new Alert(job.CompanyID, apply.JSeekerID, txtSubject.Text, txtContent.Text);
             dAO.InsertAlert(alert);
             this.Close();
         }

@@ -13,13 +13,15 @@ namespace WinFormProject
     public partial class FApplicant : Form
     {
         Company company;
-        public FApplicant(Company company)
+        ApplyDAO applyDAO = new ApplyDAO();
+        List<Apply> applies = new List<Apply> { };
+        public FApplicant(Job job) 
         {
             InitializeComponent();
-            this.company = company;
-            foreach (Apply apply in company.Applies)
+            applies = applyDAO.AllApplies(job.Jobid);
+            foreach (Apply apply in applies)
             {
-                UCApplicant uCApplicant = new UCApplicant(apply, company);
+                UCApplicant uCApplicant = new UCApplicant(apply, job);
                 flpApplicant.Controls.Add(uCApplicant);
                 flpApplicant.Height += 200;
             }

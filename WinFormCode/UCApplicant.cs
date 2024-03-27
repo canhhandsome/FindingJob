@@ -16,13 +16,13 @@ namespace WinFormProject
         JobSeekerDAO jsDAO = new JobSeekerDAO();
         JobDAO jobDAO = new JobDAO();
         Apply apply = new Apply();
-        Company company = new Company();
+        Job job = new Job();
         byte[] applicantAvatar = new byte[0];
-        public UCApplicant(Apply apply, Company company)
+        public UCApplicant(Apply apply, Job job)
         {
             InitializeComponent();
             this.apply = apply;
-            this.company = company;
+            this.job = job;
             this.MaximumSize = new System.Drawing.Size(950, 234);
             FillInTemplate();
             PanelUtils.MakeRounded(this.panel1, 15);
@@ -46,7 +46,7 @@ namespace WinFormProject
             ReaLTaiizor.Controls.CyberButton button = (ReaLTaiizor.Controls.CyberButton)sender;
             ApplyDAO applyDao = new ApplyDAO();
             applyDao.UpdateStatus(button.TextButton, apply);
-            FAnswer fAnswer = new FAnswer(apply, company);
+            FAnswer fAnswer = new FAnswer(apply, job);
             fAnswer.Show();
         }
     }

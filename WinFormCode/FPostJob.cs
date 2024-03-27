@@ -31,7 +31,7 @@ namespace WinFormProject
                 UCJob ucjob = new UCJob(job);
                 pnSubBody.Controls.Add(ucjob);
                 ucjob.Dock = DockStyle.Top;
-
+                pnSubBody.Height += 159;
                 // Subscribe to JobDeleted event
                 ucjob.JobDeleted += UCJob_JobDeleted;
             }

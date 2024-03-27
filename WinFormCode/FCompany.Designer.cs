@@ -149,7 +149,7 @@
             btnApplicant.BackgroundColor = Color.FromArgb(236, 247, 251);
             btnApplicant.ButtonImage = (Image)resources.GetObject("btnApplicant.ButtonImage");
             btnApplicant.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
-            btnApplicant.ButtonText = "Applicants";
+            btnApplicant.ButtonText = "History";
             btnApplicant.ClickBackColor = Color.FromArgb(220, 251, 251);
             btnApplicant.ClickTextColor = Color.Black;
             btnApplicant.CornerRadius = 5;
@@ -166,7 +166,6 @@
             btnApplicant.TextColor = Color.Black;
             btnApplicant.TextRenderingType = System.Drawing.Text.TextRenderingHint.SingleBitPerPixel;
             btnApplicant.Vertical_Alignment = StringAlignment.Center;
-            btnApplicant.Click += btnApplicant_Click;
             // 
             // btnPostJob
             // 

@@ -35,7 +35,7 @@
             // 
             // flpApplicant
             // 
-            flpApplicant.Location = new Point(50, 104);
+            flpApplicant.Location = new Point(45, 104);
             flpApplicant.Name = "flpApplicant";
             flpApplicant.Size = new Size(861, 204);
             flpApplicant.TabIndex = 2;
@@ -52,7 +52,7 @@
             materialTextBoxEdit1.HideSelection = true;
             materialTextBoxEdit1.Hint = "Search Applicant";
             materialTextBoxEdit1.LeadingIcon = (Image)resources.GetObject("materialTextBoxEdit1.LeadingIcon");
-            materialTextBoxEdit1.Location = new Point(171, 31);
+            materialTextBoxEdit1.Location = new Point(166, 31);
             materialTextBoxEdit1.MaxLength = 32767;
             materialTextBoxEdit1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             materialTextBoxEdit1.Name = "materialTextBoxEdit1";
@@ -82,6 +82,7 @@
             Controls.Add(flpApplicant);
             ForeColor = SystemColors.ControlText;
             Name = "FApplicant";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FApplicant";
             ResumeLayout(false);
         }
