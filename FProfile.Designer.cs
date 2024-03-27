@@ -68,9 +68,10 @@ namespace WinFormProject
             // dtpkBirthDate
             // 
             dtpkBirthDate.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dtpkBirthDate.Location = new Point(363, 207);
+            dtpkBirthDate.Location = new Point(415, 276);
+            dtpkBirthDate.Margin = new Padding(3, 4, 3, 4);
             dtpkBirthDate.Name = "dtpkBirthDate";
-            dtpkBirthDate.Size = new Size(261, 29);
+            dtpkBirthDate.Size = new Size(298, 34);
             dtpkBirthDate.TabIndex = 6;
             // 
             // ptbAvatar
@@ -78,9 +79,10 @@ namespace WinFormProject
             ptbAvatar.BackColor = Color.FromArgb(248, 212, 187);
             ptbAvatar.ErrorImage = (Image)resources.GetObject("ptbAvatar.ErrorImage");
             ptbAvatar.Image = (Image)resources.GetObject("ptbAvatar.Image");
-            ptbAvatar.Location = new Point(6, 5);
+            ptbAvatar.Location = new Point(7, 7);
+            ptbAvatar.Margin = new Padding(3, 4, 3, 4);
             ptbAvatar.Name = "ptbAvatar";
-            ptbAvatar.Size = new Size(150, 150);
+            ptbAvatar.Size = new Size(171, 200);
             ptbAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbAvatar.TabIndex = 8;
             ptbAvatar.TabStop = false;
@@ -90,9 +92,9 @@ namespace WinFormProject
             lblDoB.AutoSize = true;
             lblDoB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblDoB.ForeColor = SystemColors.ControlText;
-            lblDoB.Location = new Point(363, 179);
+            lblDoB.Location = new Point(415, 239);
             lblDoB.Name = "lblDoB";
-            lblDoB.Size = new Size(97, 21);
+            lblDoB.Size = new Size(122, 28);
             lblDoB.TabIndex = 11;
             lblDoB.Text = "Date of Birth";
             // 
@@ -101,19 +103,18 @@ namespace WinFormProject
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label8.ForeColor = SystemColors.ControlText;
-            label8.Location = new Point(46, 271);
+            label8.Location = new Point(53, 361);
             label8.Name = "label8";
-            label8.Size = new Size(61, 21);
+            label8.Size = new Size(76, 28);
             label8.TabIndex = 11;
             label8.Text = "Gender";
             // 
             // ptbCV
             // 
             ptbCV.BackColor = Color.White;
-            ptbCV.Location = new Point(731, 257);
-            ptbCV.Margin = new Padding(3, 2, 3, 2);
+            ptbCV.Location = new Point(835, 343);
             ptbCV.Name = "ptbCV";
-            ptbCV.Size = new Size(108, 106);
+            ptbCV.Size = new Size(123, 141);
             ptbCV.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbCV.TabIndex = 19;
             ptbCV.TabStop = false;
@@ -127,13 +128,14 @@ namespace WinFormProject
             txtFullName.BeepOnError = false;
             txtFullName.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
             txtFullName.Depth = 0;
-            txtFullName.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtFullName.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtFullName.HidePromptOnLeave = false;
             txtFullName.HideSelection = true;
             txtFullName.Hint = "Fullname";
             txtFullName.InsertKeyMode = InsertKeyMode.Default;
             txtFullName.LeadingIcon = null;
-            txtFullName.Location = new Point(29, 28);
+            txtFullName.Location = new Point(33, 37);
+            txtFullName.Margin = new Padding(3, 4, 3, 4);
             txtFullName.Mask = "";
             txtFullName.MaxLength = 32767;
             txtFullName.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
@@ -150,7 +152,7 @@ namespace WinFormProject
             txtFullName.SelectionLength = 0;
             txtFullName.SelectionStart = 0;
             txtFullName.ShortcutsEnabled = true;
-            txtFullName.Size = new Size(261, 48);
+            txtFullName.Size = new Size(298, 48);
             txtFullName.SkipLiterals = true;
             txtFullName.TabIndex = 22;
             txtFullName.TabStop = false;
@@ -169,13 +171,14 @@ namespace WinFormProject
             txtPhoneNumber.BeepOnError = false;
             txtPhoneNumber.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
             txtPhoneNumber.Depth = 0;
-            txtPhoneNumber.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtPhoneNumber.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtPhoneNumber.HidePromptOnLeave = false;
             txtPhoneNumber.HideSelection = true;
             txtPhoneNumber.Hint = "Phone Number";
             txtPhoneNumber.InsertKeyMode = InsertKeyMode.Default;
             txtPhoneNumber.LeadingIcon = null;
-            txtPhoneNumber.Location = new Point(29, 106);
+            txtPhoneNumber.Location = new Point(33, 141);
+            txtPhoneNumber.Margin = new Padding(3, 4, 3, 4);
             txtPhoneNumber.Mask = "";
             txtPhoneNumber.MaxLength = 32767;
             txtPhoneNumber.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
@@ -192,7 +195,7 @@ namespace WinFormProject
             txtPhoneNumber.SelectionLength = 0;
             txtPhoneNumber.SelectionStart = 0;
             txtPhoneNumber.ShortcutsEnabled = true;
-            txtPhoneNumber.Size = new Size(261, 48);
+            txtPhoneNumber.Size = new Size(298, 48);
             txtPhoneNumber.SkipLiterals = true;
             txtPhoneNumber.TabIndex = 22;
             txtPhoneNumber.TabStop = false;
@@ -211,13 +214,14 @@ namespace WinFormProject
             txtEmail.BeepOnError = false;
             txtEmail.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
             txtEmail.Depth = 0;
-            txtEmail.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtEmail.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtEmail.HidePromptOnLeave = false;
             txtEmail.HideSelection = true;
             txtEmail.Hint = "Email";
             txtEmail.InsertKeyMode = InsertKeyMode.Default;
             txtEmail.LeadingIcon = null;
-            txtEmail.Location = new Point(29, 188);
+            txtEmail.Location = new Point(33, 251);
+            txtEmail.Margin = new Padding(3, 4, 3, 4);
             txtEmail.Mask = "";
             txtEmail.MaxLength = 32767;
             txtEmail.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
@@ -234,7 +238,7 @@ namespace WinFormProject
             txtEmail.SelectionLength = 0;
             txtEmail.SelectionStart = 0;
             txtEmail.ShortcutsEnabled = true;
-            txtEmail.Size = new Size(261, 48);
+            txtEmail.Size = new Size(298, 48);
             txtEmail.SkipLiterals = true;
             txtEmail.TabIndex = 22;
             txtEmail.TabStop = false;
@@ -253,13 +257,14 @@ namespace WinFormProject
             txtAddress.BeepOnError = false;
             txtAddress.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
             txtAddress.Depth = 0;
-            txtAddress.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtAddress.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtAddress.HidePromptOnLeave = false;
             txtAddress.HideSelection = true;
             txtAddress.Hint = "Address";
             txtAddress.InsertKeyMode = InsertKeyMode.Default;
             txtAddress.LeadingIcon = null;
-            txtAddress.Location = new Point(363, 28);
+            txtAddress.Location = new Point(415, 37);
+            txtAddress.Margin = new Padding(3, 4, 3, 4);
             txtAddress.Mask = "";
             txtAddress.MaxLength = 32767;
             txtAddress.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
@@ -276,7 +281,7 @@ namespace WinFormProject
             txtAddress.SelectionLength = 0;
             txtAddress.SelectionStart = 0;
             txtAddress.ShortcutsEnabled = true;
-            txtAddress.Size = new Size(261, 48);
+            txtAddress.Size = new Size(298, 48);
             txtAddress.SkipLiterals = true;
             txtAddress.TabIndex = 22;
             txtAddress.TabStop = false;
@@ -295,13 +300,14 @@ namespace WinFormProject
             txtCitizenID.BeepOnError = false;
             txtCitizenID.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
             txtCitizenID.Depth = 0;
-            txtCitizenID.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtCitizenID.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtCitizenID.HidePromptOnLeave = false;
             txtCitizenID.HideSelection = true;
             txtCitizenID.Hint = "Citizen ID";
             txtCitizenID.InsertKeyMode = InsertKeyMode.Default;
             txtCitizenID.LeadingIcon = null;
-            txtCitizenID.Location = new Point(363, 106);
+            txtCitizenID.Location = new Point(415, 141);
+            txtCitizenID.Margin = new Padding(3, 4, 3, 4);
             txtCitizenID.Mask = "";
             txtCitizenID.MaxLength = 32767;
             txtCitizenID.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
@@ -318,7 +324,7 @@ namespace WinFormProject
             txtCitizenID.SelectionLength = 0;
             txtCitizenID.SelectionStart = 0;
             txtCitizenID.ShortcutsEnabled = true;
-            txtCitizenID.Size = new Size(261, 48);
+            txtCitizenID.Size = new Size(298, 48);
             txtCitizenID.SkipLiterals = true;
             txtCitizenID.TabIndex = 22;
             txtCitizenID.TabStop = false;
@@ -332,9 +338,10 @@ namespace WinFormProject
             // 
             panel1.BackColor = Color.FromArgb(248, 212, 187);
             panel1.Controls.Add(ptbAvatar);
-            panel1.Location = new Point(703, 28);
+            panel1.Location = new Point(803, 37);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(160, 160);
+            panel1.Size = new Size(183, 213);
             panel1.TabIndex = 23;
             // 
             // pictureBox1
@@ -342,9 +349,10 @@ namespace WinFormProject
             pictureBox1.BackColor = Color.FromArgb(247, 218, 218);
             pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(339, 142);
+            pictureBox1.Location = new Point(387, 189);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(41, 36);
+            pictureBox1.Size = new Size(47, 48);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 24;
             pictureBox1.TabStop = false;
@@ -354,9 +362,10 @@ namespace WinFormProject
             pictureBox2.BackColor = Color.FromArgb(247, 218, 218);
             pictureBox2.ErrorImage = (Image)resources.GetObject("pictureBox2.ErrorImage");
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(339, 66);
+            pictureBox2.Location = new Point(387, 88);
+            pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(41, 36);
+            pictureBox2.Size = new Size(47, 48);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 24;
             pictureBox2.TabStop = false;
@@ -366,9 +375,10 @@ namespace WinFormProject
             pictureBox3.BackColor = Color.FromArgb(247, 218, 218);
             pictureBox3.ErrorImage = (Image)resources.GetObject("pictureBox3.ErrorImage");
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(7, 141);
+            pictureBox3.Location = new Point(8, 188);
+            pictureBox3.Margin = new Padding(3, 4, 3, 4);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(41, 36);
+            pictureBox3.Size = new Size(47, 48);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 24;
             pictureBox3.TabStop = false;
@@ -378,9 +388,10 @@ namespace WinFormProject
             pictureBox4.BackColor = Color.FromArgb(247, 218, 218);
             pictureBox4.ErrorImage = (Image)resources.GetObject("pictureBox4.ErrorImage");
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(7, 65);
+            pictureBox4.Location = new Point(8, 87);
+            pictureBox4.Margin = new Padding(3, 4, 3, 4);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(41, 36);
+            pictureBox4.Size = new Size(47, 48);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 24;
             pictureBox4.TabStop = false;
@@ -390,9 +401,10 @@ namespace WinFormProject
             pictureBox5.BackColor = Color.FromArgb(247, 218, 218);
             pictureBox5.ErrorImage = (Image)resources.GetObject("pictureBox5.ErrorImage");
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(7, 224);
+            pictureBox5.Location = new Point(8, 299);
+            pictureBox5.Margin = new Padding(3, 4, 3, 4);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(41, 36);
+            pictureBox5.Size = new Size(47, 48);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 24;
             pictureBox5.TabStop = false;
@@ -424,12 +436,13 @@ namespace WinFormProject
             btnCV.Lighting = true;
             btnCV.LinearGradient_Background = false;
             btnCV.LinearGradientPen = false;
-            btnCV.Location = new Point(732, 381);
+            btnCV.Location = new Point(837, 508);
+            btnCV.Margin = new Padding(3, 4, 3, 4);
             btnCV.Name = "btnCV";
             btnCV.PenWidth = 15;
             btnCV.Rounding = true;
             btnCV.RoundingInt = 20;
-            btnCV.Size = new Size(107, 42);
+            btnCV.Size = new Size(122, 56);
             btnCV.SmoothingMode = SmoothingMode.HighQuality;
             btnCV.TabIndex = 25;
             btnCV.Tag = "Decline";
@@ -466,12 +479,13 @@ namespace WinFormProject
             btnChooseNewCV.Lighting = true;
             btnChooseNewCV.LinearGradient_Background = false;
             btnChooseNewCV.LinearGradientPen = false;
-            btnChooseNewCV.Location = new Point(732, 381);
+            btnChooseNewCV.Location = new Point(837, 508);
+            btnChooseNewCV.Margin = new Padding(3, 4, 3, 4);
             btnChooseNewCV.Name = "btnChooseNewCV";
             btnChooseNewCV.PenWidth = 15;
             btnChooseNewCV.Rounding = true;
             btnChooseNewCV.RoundingInt = 20;
-            btnChooseNewCV.Size = new Size(107, 42);
+            btnChooseNewCV.Size = new Size(122, 56);
             btnChooseNewCV.SmoothingMode = SmoothingMode.HighQuality;
             btnChooseNewCV.TabIndex = 26;
             btnChooseNewCV.Tag = "Decline";
@@ -508,12 +522,13 @@ namespace WinFormProject
             btnCancel.Lighting = true;
             btnCancel.LinearGradient_Background = false;
             btnCancel.LinearGradientPen = false;
-            btnCancel.Location = new Point(152, 366);
+            btnCancel.Location = new Point(174, 488);
+            btnCancel.Margin = new Padding(3, 4, 3, 4);
             btnCancel.Name = "btnCancel";
             btnCancel.PenWidth = 15;
             btnCancel.Rounding = true;
             btnCancel.RoundingInt = 20;
-            btnCancel.Size = new Size(107, 42);
+            btnCancel.Size = new Size(122, 56);
             btnCancel.SmoothingMode = SmoothingMode.HighQuality;
             btnCancel.TabIndex = 26;
             btnCancel.Tag = "Decline";
@@ -549,12 +564,13 @@ namespace WinFormProject
             btnEdit.Lighting = true;
             btnEdit.LinearGradient_Background = false;
             btnEdit.LinearGradientPen = false;
-            btnEdit.Location = new Point(90, 366);
+            btnEdit.Location = new Point(103, 488);
+            btnEdit.Margin = new Padding(3, 4, 3, 4);
             btnEdit.Name = "btnEdit";
             btnEdit.PenWidth = 15;
             btnEdit.Rounding = true;
             btnEdit.RoundingInt = 20;
-            btnEdit.Size = new Size(107, 42);
+            btnEdit.Size = new Size(122, 56);
             btnEdit.SmoothingMode = SmoothingMode.HighQuality;
             btnEdit.TabIndex = 26;
             btnEdit.Tag = "Decline";
@@ -591,12 +607,13 @@ namespace WinFormProject
             btnSave.Lighting = true;
             btnSave.LinearGradient_Background = false;
             btnSave.LinearGradientPen = false;
-            btnSave.Location = new Point(29, 366);
+            btnSave.Location = new Point(33, 488);
+            btnSave.Margin = new Padding(3, 4, 3, 4);
             btnSave.Name = "btnSave";
             btnSave.PenWidth = 15;
             btnSave.Rounding = true;
             btnSave.RoundingInt = 20;
-            btnSave.Size = new Size(107, 42);
+            btnSave.Size = new Size(122, 56);
             btnSave.SmoothingMode = SmoothingMode.HighQuality;
             btnSave.TabIndex = 26;
             btnSave.Tag = "Decline";
@@ -610,7 +627,7 @@ namespace WinFormProject
             // 
             rdoMale.AutoSize = true;
             rdoMale.Depth = 0;
-            rdoMale.Location = new Point(29, 300);
+            rdoMale.Location = new Point(33, 400);
             rdoMale.Margin = new Padding(0);
             rdoMale.MouseLocation = new Point(-1, -1);
             rdoMale.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
@@ -627,7 +644,7 @@ namespace WinFormProject
             // 
             rdoFemale.AutoSize = true;
             rdoFemale.Depth = 0;
-            rdoFemale.Location = new Point(127, 300);
+            rdoFemale.Location = new Point(145, 400);
             rdoFemale.Margin = new Padding(0);
             rdoFemale.MouseLocation = new Point(-1, -1);
             rdoFemale.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
@@ -667,12 +684,13 @@ namespace WinFormProject
             btnChoosePicture.Lighting = true;
             btnChoosePicture.LinearGradient_Background = false;
             btnChoosePicture.LinearGradientPen = false;
-            btnChoosePicture.Location = new Point(709, 194);
+            btnChoosePicture.Location = new Point(810, 259);
+            btnChoosePicture.Margin = new Padding(3, 4, 3, 4);
             btnChoosePicture.Name = "btnChoosePicture";
             btnChoosePicture.PenWidth = 15;
             btnChoosePicture.Rounding = true;
             btnChoosePicture.RoundingInt = 20;
-            btnChoosePicture.Size = new Size(150, 42);
+            btnChoosePicture.Size = new Size(171, 56);
             btnChoosePicture.SmoothingMode = SmoothingMode.HighQuality;
             btnChoosePicture.TabIndex = 26;
             btnChoosePicture.Tag = "Decline";
@@ -684,10 +702,10 @@ namespace WinFormProject
             // 
             // FProfile
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(925, 435);
+            ClientSize = new Size(1057, 580);
             Controls.Add(rdoFemale);
             Controls.Add(rdoMale);
             Controls.Add(btnSave);
@@ -711,6 +729,7 @@ namespace WinFormProject
             Controls.Add(lblDoB);
             Controls.Add(dtpkBirthDate);
             Controls.Add(btnEdit);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FProfile";
             StartPosition = FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).EndInit();

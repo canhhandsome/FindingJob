@@ -37,71 +37,8 @@ namespace WinFormProject
                 rdoMale.Checked = true;
             }
             else rdoFemale.Checked = true;
-            DisplayAvatar();
-            DisplayCV();
-
-        }
-        private void DisplayAvatar()
-        {
-            byte[] imageData = jobseeker.Avatar;
-            // Check if byte array is not null and has data
-            if (imageData != null && imageData.Length > 0)
-            {
-                try
-                {
-                    // Create MemoryStream from byte array
-                    using (MemoryStream ms = new MemoryStream(imageData))
-                    {
-                        // Create Image from MemoryStream
-                        Image img = Image.FromStream(ms);
-
-                        // Set the Image to the PictureBox
-                        ptbAvatar.Image = img;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
-                }
-            }
-            else
-            {
-                // Clear the PictureBox if byte array is null or empty
-                ptbAvatar.Image = null;
-            }
-        }
-        private void DisplayCV()
-        {
-            byte[] imageData = jobseeker.CV;
-            // Check if byte array is not null and has data
-            if (imageData != null && imageData.Length > 0)
-            {
-                try
-                {
-                    // Create MemoryStream from byte array
-                    using (MemoryStream ms = new MemoryStream(imageData))
-                    {
-                        // Create Image from MemoryStream
-                        Image img = Image.FromStream(ms);
-
-                        // Set the Image to the PictureBox
-                        ptbCV.Image = img;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
-                }
-            }
-            else
-            {
-                // Clear the PictureBox if byte array is null or empty
-                ptbCV.Image = null;
-            }
-        }
-        private void FProfile_Load(object sender, EventArgs e)
-        {
-
+            ImageHandler.DisplayImage(jobseeker.Avatar, ref ptbAvatar);
+            ImageHandler.DisplayImage(jobseeker.CV, ref ptbCV);
 
         }
         private void btnEdit_Click(object sender, EventArgs e)
@@ -148,31 +85,14 @@ namespace WinFormProject
             txtPhoneNumber.ReadOnly = true;
             dtpkBirthDate.Enabled = false;
         }
-        public byte[] ImageToByteArray(Image img)
-        {
-            using (MemoryStream ms = new MemoryStream())
-            {
-                img.Save(ms, System.Drawing.Imaging.ImageFormat.Png); // Saving as PNG for lossless compression
-                return ms.ToArray();
-            }
-        }
-
         private void btnChooseNewCV_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDiaglog = new OpenFileDialog();
-            if (openFileDiaglog.ShowDialog() == DialogResult.OK)
-            {
-                ptbCV.Image = new Bitmap(openFileDiaglog.FileName);
-            }
+            ImageHandler.ChoosePicture(ref ptbAvatar);
         }
 
         private void btnChoosePicture_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDiaglog = new OpenFileDialog();
-            if (openFileDiaglog.ShowDialog() == DialogResult.OK)
-            {
-                ptbAvatar.Image = new Bitmap(openFileDiaglog.FileName);
-            }
+            ImageHandler.ChoosePicture(ref ptbCV);
         }
         private JobSeeker CreateJobSeeker()
         {
@@ -180,12 +100,12 @@ namespace WinFormProject
             byte[] AvatarData = new byte[1];
             if (ptbAvatar.Image != null)
             {
-                AvatarData = ImageToByteArray(ptbAvatar.Image);
+                AvatarData = ImageHandler.ImageToByteArray(ptbAvatar.Image);
             }
             byte[] CvData = new byte[1];
-            if(ptbCV.Image != null)
+            if (ptbCV.Image != null)
             {
-                CvData = ImageToByteArray(ptbCV.Image);
+                AvatarData = ImageHandler.ImageToByteArray(ptbCV.Image);
             }
             Information information = new Information(jobseeker.INFO.ID, txtFullName.Text, txtEmail.Text, txtAddress.Text, txtPhoneNumber.Text);
             if (rdoFemale.Checked) gender = "female"; else gender = "male";
