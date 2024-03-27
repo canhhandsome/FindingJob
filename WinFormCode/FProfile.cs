@@ -87,12 +87,13 @@ namespace WinFormProject
         }
         private void btnChooseNewCV_Click(object sender, EventArgs e)
         {
-            ImageHandler.ChoosePicture(ref ptbAvatar);
+            ImageHandler.ChoosePicture(ref ptbCV);
+
         }
 
         private void btnChoosePicture_Click(object sender, EventArgs e)
         {
-            ImageHandler.ChoosePicture(ref ptbCV);
+            ImageHandler.ChoosePicture(ref ptbAvatar);
         }
         private JobSeeker CreateJobSeeker()
         {
