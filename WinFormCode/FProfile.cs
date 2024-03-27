@@ -87,12 +87,13 @@ namespace WinFormProject
         }
         private void btnChooseNewCV_Click(object sender, EventArgs e)
         {
-            ImageHandler.ChoosePicture(ref ptbAvatar);
+            ImageHandler.ChoosePicture(ref ptbCV);
+
         }
 
         private void btnChoosePicture_Click(object sender, EventArgs e)
         {
-            ImageHandler.ChoosePicture(ref ptbCV);
+            ImageHandler.ChoosePicture(ref ptbAvatar);
         }
         private JobSeeker CreateJobSeeker()
         {
@@ -105,7 +106,7 @@ namespace WinFormProject
             byte[] CvData = new byte[1];
             if (ptbCV.Image != null)
             {
-                AvatarData = ImageHandler.ImageToByteArray(ptbCV.Image);
+                CvData = ImageHandler.ImageToByteArray(ptbCV.Image);
             }
             Information information = new Information(jobseeker.INFO.ID, txtFullName.Text, txtEmail.Text, txtAddress.Text, txtPhoneNumber.Text);
             if (rdoFemale.Checked) gender = "female"; else gender = "male";
