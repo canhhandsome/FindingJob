@@ -14,9 +14,11 @@ namespace WinFormProject
     {
         public Job job = new Job();
         List<Alert> alerts = new List<Alert>();
+        JobSeeker seeker = new JobSeeker();
         public FSupJobSection(JobSeeker jobSeeker)
         {
             InitializeComponent();
+            seeker = jobSeeker;
             AlertDAO alertDAO = new AlertDAO();
             this.alerts = alertDAO.FetchAlert(jobSeeker.INFO.ID);
             foreach(Alert alert in alerts) 
@@ -26,6 +28,7 @@ namespace WinFormProject
                 flpAlert.Height += 255;
             }
         }
+
 
 
     }

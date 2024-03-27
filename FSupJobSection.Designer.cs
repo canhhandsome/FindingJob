@@ -68,6 +68,7 @@
             // 
             // flpAlert
             // 
+            flpAlert.AutoScroll = true;
             flpAlert.Location = new Point(24, 86);
             flpAlert.Name = "flpAlert";
             flpAlert.Size = new Size(847, 124);

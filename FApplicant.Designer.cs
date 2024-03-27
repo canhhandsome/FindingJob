@@ -28,75 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
-            hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
-            lblSearchApplicant = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FApplicant));
             flpApplicant = new FlowLayoutPanel();
+            materialTextBoxEdit1 = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             SuspendLayout();
-            // 
-            // hopeTextBox1
-            // 
-            hopeTextBox1.BackColor = Color.White;
-            hopeTextBox1.BaseColor = Color.FromArgb(44, 55, 66);
-            hopeTextBox1.BorderColorA = Color.FromArgb(64, 158, 255);
-            hopeTextBox1.BorderColorB = Color.FromArgb(220, 223, 230);
-            hopeTextBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            hopeTextBox1.ForeColor = Color.FromArgb(48, 49, 51);
-            hopeTextBox1.Hint = "Enter Applicant";
-            hopeTextBox1.Location = new Point(263, 35);
-            hopeTextBox1.MaxLength = 32767;
-            hopeTextBox1.Multiline = false;
-            hopeTextBox1.Name = "hopeTextBox1";
-            hopeTextBox1.PasswordChar = '\0';
-            hopeTextBox1.ScrollBars = ScrollBars.None;
-            hopeTextBox1.SelectedText = "";
-            hopeTextBox1.SelectionLength = 0;
-            hopeTextBox1.SelectionStart = 0;
-            hopeTextBox1.Size = new Size(583, 38);
-            hopeTextBox1.TabIndex = 0;
-            hopeTextBox1.TabStop = false;
-            hopeTextBox1.UseSystemPasswordChar = false;
-            // 
-            // lblSearchApplicant
-            // 
-            lblSearchApplicant.AutoSize = true;
-            lblSearchApplicant.BackColor = Color.Transparent;
-            lblSearchApplicant.Font = new Font("Segoe UI", 19.2F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSearchApplicant.ForeColor = SystemColors.ControlText;
-            lblSearchApplicant.Location = new Point(22, 34);
-            lblSearchApplicant.Name = "lblSearchApplicant";
-            lblSearchApplicant.Size = new Size(207, 36);
-            lblSearchApplicant.TabIndex = 1;
-            lblSearchApplicant.Text = "Search Applicant";
             // 
             // flpApplicant
             // 
-            flpApplicant.Location = new Point(29, 104);
+            flpApplicant.Location = new Point(50, 104);
             flpApplicant.Name = "flpApplicant";
-            flpApplicant.Size = new Size(817, 204);
+            flpApplicant.Size = new Size(861, 204);
             flpApplicant.TabIndex = 2;
+            // 
+            // materialTextBoxEdit1
+            // 
+            materialTextBoxEdit1.AnimateReadOnly = false;
+            materialTextBoxEdit1.AutoCompleteMode = AutoCompleteMode.None;
+            materialTextBoxEdit1.AutoCompleteSource = AutoCompleteSource.None;
+            materialTextBoxEdit1.BackgroundImageLayout = ImageLayout.None;
+            materialTextBoxEdit1.CharacterCasing = CharacterCasing.Normal;
+            materialTextBoxEdit1.Depth = 0;
+            materialTextBoxEdit1.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            materialTextBoxEdit1.HideSelection = true;
+            materialTextBoxEdit1.Hint = "Search Applicant";
+            materialTextBoxEdit1.LeadingIcon = (Image)resources.GetObject("materialTextBoxEdit1.LeadingIcon");
+            materialTextBoxEdit1.Location = new Point(171, 31);
+            materialTextBoxEdit1.MaxLength = 32767;
+            materialTextBoxEdit1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            materialTextBoxEdit1.Name = "materialTextBoxEdit1";
+            materialTextBoxEdit1.PasswordChar = '\0';
+            materialTextBoxEdit1.PrefixSuffixText = null;
+            materialTextBoxEdit1.ReadOnly = false;
+            materialTextBoxEdit1.RightToLeft = RightToLeft.No;
+            materialTextBoxEdit1.SelectedText = "";
+            materialTextBoxEdit1.SelectionLength = 0;
+            materialTextBoxEdit1.SelectionStart = 0;
+            materialTextBoxEdit1.ShortcutsEnabled = true;
+            materialTextBoxEdit1.Size = new Size(619, 48);
+            materialTextBoxEdit1.TabIndex = 3;
+            materialTextBoxEdit1.TabStop = false;
+            materialTextBoxEdit1.TextAlign = HorizontalAlignment.Left;
+            materialTextBoxEdit1.TrailingIcon = null;
+            materialTextBoxEdit1.UseSystemPasswordChar = false;
             // 
             // FApplicant
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            BackColor = Color.LightGray;
+            BackColor = Color.White;
             ClientSize = new Size(917, 450);
+            Controls.Add(materialTextBoxEdit1);
             Controls.Add(flpApplicant);
-            Controls.Add(lblSearchApplicant);
-            Controls.Add(hopeTextBox1);
             ForeColor = SystemColors.ControlText;
             Name = "FApplicant";
             Text = "FApplicant";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox1;
-        private Label lblSearchApplicant;
         private UCApplicant ucApplicant1;
         private FlowLayoutPanel flpApplicant;
+        private ReaLTaiizor.Controls.MaterialTextBoxEdit materialTextBoxEdit1;
     }
 }

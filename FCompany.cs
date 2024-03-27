@@ -13,36 +13,27 @@ namespace WinFormProject
 {
     public partial class FCompany : Form
     {
-        private Button selectedButton;
+        private ReaLTaiizor.Controls.ParrotButton selectedButton;
         private Form currentFormChild;
         private Company company = new Company();
         public FCompany(Account account)
         {
             InitializeComponent();
-            btnPostJob.PerformClick();
+            //btnPostJob.PerformClick();
             InformationDAO informationDAO = new InformationDAO();
             company = new Company(informationDAO.FetchCommon(account));
-
-        }
-
-        private void FCompany_Load(object sender, EventArgs e)
-        {
             GetAllButtons(panel2);
         }
+
 
         void GetAllButtons(Control control)
         {
             foreach (Control c in control.Controls)
             {
-                if (c is Button)
+                if (c is ReaLTaiizor.Controls.ParrotButton)
                 {
-                    Button button = (Button)c;
+                    ReaLTaiizor.Controls.ParrotButton button = (ReaLTaiizor.Controls.ParrotButton)c;
                     button.Click += button_Click;
-                    if (button == btnLogOut)
-                    {
-                        button.Click -= btnLogOut_Click;
-                        button.Click += btnLogOut_Click;
-                    }
                 }
             }
         }
@@ -67,18 +58,18 @@ namespace WinFormProject
 
         private void button_Click(object sender, EventArgs e)
         {
-            Button clickedButton = (Button)sender;
+            ReaLTaiizor.Controls.ParrotButton clickedButton = (ReaLTaiizor.Controls.ParrotButton)sender;
 
             if (clickedButton == selectedButton)
                 return;
 
             if (selectedButton != null)
             {
-                selectedButton.BackColor = Color.FromArgb(64, 64, 64);
+                selectedButton.BackgroundColor = Color.FromArgb(236, 247, 251);
                 selectedButton.Enabled = true;
             }
 
-            clickedButton.BackColor = Color.LightGray;
+            clickedButton.BackgroundColor = Color.White;
             clickedButton.Enabled = false;
             selectedButton = clickedButton;
         }
@@ -114,5 +105,6 @@ namespace WinFormProject
         {
             OpenChildForm(new FProfileCompany());
         }
+
     }
 }

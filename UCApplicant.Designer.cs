@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            btnDecline = new Button();
+            btnApprove = new ReaLTaiizor.Controls.CyberButton();
+            btnProfile = new ReaLTaiizor.Controls.CyberButton();
+            btnDecline = new ReaLTaiizor.Controls.CyberButton();
             lblDateT = new Label();
             lblJobT = new Label();
             lblApplicantNameT = new Label();
-            btnApprove = new Button();
-            btnProfile = new Button();
             lblDate = new Label();
             lblJob = new Label();
             lblApplicantName = new Label();
@@ -43,14 +43,13 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.LightGray;
-            panel1.BorderStyle = BorderStyle.Fixed3D;
+            panel1.BackColor = Color.FromArgb(254, 232, 223);
+            panel1.Controls.Add(btnApprove);
+            panel1.Controls.Add(btnProfile);
             panel1.Controls.Add(btnDecline);
             panel1.Controls.Add(lblDateT);
             panel1.Controls.Add(lblJobT);
             panel1.Controls.Add(lblApplicantNameT);
-            panel1.Controls.Add(btnApprove);
-            panel1.Controls.Add(btnProfile);
             panel1.Controls.Add(lblDate);
             panel1.Controls.Add(lblJob);
             panel1.Controls.Add(lblApplicantName);
@@ -61,24 +60,138 @@
             panel1.Size = new Size(831, 176);
             panel1.TabIndex = 3;
             // 
+            // btnApprove
+            // 
+            btnApprove.Alpha = 20;
+            btnApprove.BackColor = Color.Transparent;
+            btnApprove.Background = true;
+            btnApprove.Background_WidthPen = 4F;
+            btnApprove.BackgroundPen = true;
+            btnApprove.ColorBackground = Color.FromArgb(176, 226, 243);
+            btnApprove.ColorBackground_1 = Color.FromArgb(128, 128, 255);
+            btnApprove.ColorBackground_2 = Color.FromArgb(128, 128, 255);
+            btnApprove.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
+            btnApprove.ColorLighting = Color.FromArgb(128, 128, 255);
+            btnApprove.ColorPen_1 = Color.FromArgb(128, 128, 255);
+            btnApprove.ColorPen_2 = Color.FromArgb(128, 128, 255);
+            btnApprove.Cursor = Cursors.Hand;
+            btnApprove.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            btnApprove.Effect_1 = true;
+            btnApprove.Effect_1_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnApprove.Effect_1_Transparency = 25;
+            btnApprove.Effect_2 = true;
+            btnApprove.Effect_2_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnApprove.Effect_2_Transparency = 20;
+            btnApprove.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnApprove.ForeColor = Color.FromArgb(46, 54, 71);
+            btnApprove.Lighting = true;
+            btnApprove.LinearGradient_Background = false;
+            btnApprove.LinearGradientPen = false;
+            btnApprove.Location = new Point(588, 122);
+            btnApprove.Name = "btnApprove";
+            btnApprove.PenWidth = 15;
+            btnApprove.Rounding = true;
+            btnApprove.RoundingInt = 20;
+            btnApprove.Size = new Size(107, 42);
+            btnApprove.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnApprove.TabIndex = 9;
+            btnApprove.Tag = "Cyber";
+            btnApprove.TextButton = "Approve";
+            btnApprove.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnApprove.Timer_Effect_1 = 1;
+            btnApprove.Timer_RGB = 300;
+            btnApprove.Click += btnAnswer_Click;
+            // 
+            // btnProfile
+            // 
+            btnProfile.Alpha = 20;
+            btnProfile.BackColor = Color.Transparent;
+            btnProfile.Background = true;
+            btnProfile.Background_WidthPen = 4F;
+            btnProfile.BackgroundPen = true;
+            btnProfile.ColorBackground = Color.FromArgb(176, 226, 243);
+            btnProfile.ColorBackground_1 = Color.FromArgb(128, 128, 255);
+            btnProfile.ColorBackground_2 = Color.FromArgb(128, 128, 255);
+            btnProfile.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
+            btnProfile.ColorLighting = Color.FromArgb(128, 128, 255);
+            btnProfile.ColorPen_1 = Color.FromArgb(128, 128, 255);
+            btnProfile.ColorPen_2 = Color.FromArgb(128, 128, 255);
+            btnProfile.Cursor = Cursors.Hand;
+            btnProfile.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            btnProfile.Effect_1 = true;
+            btnProfile.Effect_1_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnProfile.Effect_1_Transparency = 25;
+            btnProfile.Effect_2 = true;
+            btnProfile.Effect_2_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnProfile.Effect_2_Transparency = 20;
+            btnProfile.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnProfile.ForeColor = Color.FromArgb(46, 54, 71);
+            btnProfile.Lighting = true;
+            btnProfile.LinearGradient_Background = false;
+            btnProfile.LinearGradientPen = false;
+            btnProfile.Location = new Point(708, 122);
+            btnProfile.Name = "btnProfile";
+            btnProfile.PenWidth = 15;
+            btnProfile.Rounding = true;
+            btnProfile.RoundingInt = 20;
+            btnProfile.Size = new Size(107, 42);
+            btnProfile.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnProfile.TabIndex = 9;
+            btnProfile.Tag = "Cyber";
+            btnProfile.TextButton = "Profile";
+            btnProfile.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnProfile.Timer_Effect_1 = 1;
+            btnProfile.Timer_RGB = 300;
+            btnProfile.Click += btnProfile_Click;
+            // 
             // btnDecline
             // 
-            btnDecline.FlatStyle = FlatStyle.Flat;
-            btnDecline.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnDecline.ForeColor = SystemColors.ControlText;
-            btnDecline.Location = new Point(508, 124);
+            btnDecline.Alpha = 20;
+            btnDecline.BackColor = Color.Transparent;
+            btnDecline.Background = true;
+            btnDecline.Background_WidthPen = 4F;
+            btnDecline.BackgroundPen = true;
+            btnDecline.ColorBackground = Color.FromArgb(176, 226, 243);
+            btnDecline.ColorBackground_1 = Color.FromArgb(128, 128, 255);
+            btnDecline.ColorBackground_2 = Color.FromArgb(128, 128, 255);
+            btnDecline.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
+            btnDecline.ColorLighting = Color.FromArgb(128, 128, 255);
+            btnDecline.ColorPen_1 = Color.FromArgb(128, 128, 255);
+            btnDecline.ColorPen_2 = Color.FromArgb(128, 128, 255);
+            btnDecline.Cursor = Cursors.Hand;
+            btnDecline.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            btnDecline.Effect_1 = true;
+            btnDecline.Effect_1_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnDecline.Effect_1_Transparency = 25;
+            btnDecline.Effect_2 = true;
+            btnDecline.Effect_2_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnDecline.Effect_2_Transparency = 20;
+            btnDecline.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDecline.ForeColor = Color.FromArgb(46, 54, 71);
+            btnDecline.Lighting = true;
+            btnDecline.LinearGradient_Background = false;
+            btnDecline.LinearGradientPen = false;
+            btnDecline.Location = new Point(467, 122);
             btnDecline.Name = "btnDecline";
-            btnDecline.Size = new Size(98, 33);
-            btnDecline.TabIndex = 8;
-            btnDecline.Text = "Decline";
-            btnDecline.UseVisualStyleBackColor = true;
+            btnDecline.PenWidth = 15;
+            btnDecline.Rounding = true;
+            btnDecline.RoundingInt = 20;
+            btnDecline.Size = new Size(107, 42);
+            btnDecline.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnDecline.TabIndex = 9;
+            btnDecline.Tag = "Decline";
+            btnDecline.TextButton = "Decline";
+            btnDecline.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnDecline.Timer_Effect_1 = 5;
+            btnDecline.Timer_RGB = 300;
+            btnDecline.Click += btnAnswer_Click;
             // 
             // lblDateT
             // 
             lblDateT.AutoSize = true;
             lblDateT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblDateT.ForeColor = SystemColors.ControlText;
-            lblDateT.Location = new Point(84, 67);
+            lblDateT.Location = new Point(99, 83);
             lblDateT.Name = "lblDateT";
             lblDateT.Size = new Size(58, 25);
             lblDateT.TabIndex = 7;
@@ -89,7 +202,7 @@
             lblJobT.AutoSize = true;
             lblJobT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblJobT.ForeColor = SystemColors.ControlText;
-            lblJobT.Location = new Point(74, 38);
+            lblJobT.Location = new Point(89, 54);
             lblJobT.Name = "lblJobT";
             lblJobT.Size = new Size(49, 25);
             lblJobT.TabIndex = 6;
@@ -100,43 +213,18 @@
             lblApplicantNameT.AutoSize = true;
             lblApplicantNameT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblApplicantNameT.ForeColor = SystemColors.ControlText;
-            lblApplicantNameT.Location = new Point(192, 11);
+            lblApplicantNameT.Location = new Point(207, 27);
             lblApplicantNameT.Name = "lblApplicantNameT";
             lblApplicantNameT.Size = new Size(160, 25);
             lblApplicantNameT.TabIndex = 5;
             lblApplicantNameT.Text = "Applicant's Name: ";
-            // 
-            // btnApprove
-            // 
-            btnApprove.FlatStyle = FlatStyle.Flat;
-            btnApprove.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnApprove.ForeColor = SystemColors.ControlText;
-            btnApprove.Location = new Point(611, 124);
-            btnApprove.Name = "btnApprove";
-            btnApprove.Size = new Size(98, 33);
-            btnApprove.TabIndex = 3;
-            btnApprove.Text = "Approve";
-            btnApprove.UseVisualStyleBackColor = true;
-            // 
-            // btnProfile
-            // 
-            btnProfile.FlatStyle = FlatStyle.Flat;
-            btnProfile.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnProfile.ForeColor = SystemColors.ControlText;
-            btnProfile.Location = new Point(714, 124);
-            btnProfile.Name = "btnProfile";
-            btnProfile.Size = new Size(98, 33);
-            btnProfile.TabIndex = 3;
-            btnProfile.Text = "Profile";
-            btnProfile.UseVisualStyleBackColor = true;
-            btnProfile.Click += btnProfile_Click;
             // 
             // lblDate
             // 
             lblDate.AutoSize = true;
             lblDate.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblDate.ForeColor = SystemColors.ControlText;
-            lblDate.Location = new Point(18, 67);
+            lblDate.Location = new Point(33, 83);
             lblDate.Name = "lblDate";
             lblDate.Size = new Size(58, 25);
             lblDate.TabIndex = 2;
@@ -147,7 +235,7 @@
             lblJob.AutoSize = true;
             lblJob.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblJob.ForeColor = SystemColors.ControlText;
-            lblJob.Location = new Point(18, 38);
+            lblJob.Location = new Point(33, 54);
             lblJob.Name = "lblJob";
             lblJob.Size = new Size(49, 25);
             lblJob.TabIndex = 1;
@@ -158,7 +246,7 @@
             lblApplicantName.AutoSize = true;
             lblApplicantName.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblApplicantName.ForeColor = SystemColors.ControlText;
-            lblApplicantName.Location = new Point(18, 11);
+            lblApplicantName.Location = new Point(33, 27);
             lblApplicantName.Name = "lblApplicantName";
             lblApplicantName.Size = new Size(160, 25);
             lblApplicantName.TabIndex = 0;
@@ -180,14 +268,14 @@
         #endregion
 
         private Panel panel1;
-        private Button btnApprove;
-        private Button btnProfile;
         private Label lblDate;
         private Label lblJob;
         private Label lblApplicantName;
-        private Button btnDecline;
         private Label lblDateT;
         private Label lblJobT;
         private Label lblApplicantNameT;
+        private ReaLTaiizor.Controls.CyberButton btnProfile;
+        private ReaLTaiizor.Controls.CyberButton btnDecline;
+        private ReaLTaiizor.Controls.CyberButton btnApprove;
     }
 }
