@@ -55,9 +55,10 @@
             dungeonComboBox1.HoverSelectionColor = Color.Empty;
             dungeonComboBox1.IntegralHeight = false;
             dungeonComboBox1.ItemHeight = 20;
-            dungeonComboBox1.Location = new Point(74, 34);
+            dungeonComboBox1.Location = new Point(85, 45);
+            dungeonComboBox1.Margin = new Padding(3, 4, 3, 4);
             dungeonComboBox1.Name = "dungeonComboBox1";
-            dungeonComboBox1.Size = new Size(163, 26);
+            dungeonComboBox1.Size = new Size(186, 26);
             dungeonComboBox1.StartIndex = 0;
             dungeonComboBox1.TabIndex = 1;
             // 
@@ -70,7 +71,8 @@
             hopeTextBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             hopeTextBox1.ForeColor = Color.FromArgb(48, 49, 51);
             hopeTextBox1.Hint = "Enter Jobs";
-            hopeTextBox1.Location = new Point(259, 27);
+            hopeTextBox1.Location = new Point(296, 36);
+            hopeTextBox1.Margin = new Padding(3, 4, 3, 4);
             hopeTextBox1.MaxLength = 32767;
             hopeTextBox1.Multiline = false;
             hopeTextBox1.Name = "hopeTextBox1";
@@ -79,7 +81,7 @@
             hopeTextBox1.SelectedText = "";
             hopeTextBox1.SelectionLength = 0;
             hopeTextBox1.SelectionStart = 0;
-            hopeTextBox1.Size = new Size(561, 38);
+            hopeTextBox1.Size = new Size(641, 43);
             hopeTextBox1.TabIndex = 2;
             hopeTextBox1.TabStop = false;
             hopeTextBox1.UseSystemPasswordChar = false;
@@ -88,32 +90,33 @@
             // btnFilter
             // 
             btnFilter.FlatStyle = FlatStyle.System;
-            btnFilter.Location = new Point(834, 27);
-            btnFilter.Margin = new Padding(3, 2, 3, 2);
+            btnFilter.Location = new Point(953, 36);
             btnFilter.Name = "btnFilter";
-            btnFilter.Size = new Size(50, 32);
+            btnFilter.Size = new Size(57, 43);
             btnFilter.TabIndex = 3;
             btnFilter.Text = "Filter";
             btnFilter.UseVisualStyleBackColor = true;
             // 
             // flpJob
             // 
-            flpJob.Location = new Point(74, 102);
+            flpJob.Location = new Point(55, 136);
+            flpJob.Margin = new Padding(3, 4, 3, 4);
             flpJob.Name = "flpJob";
-            flpJob.Size = new Size(810, 141);
+            flpJob.Size = new Size(967, 188);
             flpJob.TabIndex = 4;
             // 
             // FSearchJob
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            BackColor = Color.LightGray;
-            ClientSize = new Size(917, 435);
+            BackColor = Color.White;
+            ClientSize = new Size(1048, 580);
             Controls.Add(flpJob);
             Controls.Add(btnFilter);
             Controls.Add(hopeTextBox1);
             Controls.Add(dungeonComboBox1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FSearchJob";
             Text = "FSearchJob";
             ResumeLayout(false);

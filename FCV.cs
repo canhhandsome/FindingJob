@@ -32,7 +32,7 @@ namespace WinFormProject
                     {
                         // Create Image from MemoryStream
                         Image img = Image.FromStream(ms);
-                        
+
                         // Set the Image to the PictureBox
                         ptbCV.Image = img;
                     }

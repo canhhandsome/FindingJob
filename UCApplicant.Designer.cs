@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            ptbApplicantPicture = new PictureBox();
             btnApprove = new ReaLTaiizor.Controls.CyberButton();
             btnProfile = new ReaLTaiizor.Controls.CyberButton();
             btnDecline = new ReaLTaiizor.Controls.CyberButton();
@@ -39,11 +40,13 @@
             lblJob = new Label();
             lblApplicantName = new Label();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ptbApplicantPicture).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(254, 232, 223);
+            panel1.Controls.Add(ptbApplicantPicture);
             panel1.Controls.Add(btnApprove);
             panel1.Controls.Add(btnProfile);
             panel1.Controls.Add(btnDecline);
@@ -56,9 +59,19 @@
             panel1.Dock = DockStyle.Fill;
             panel1.ForeColor = SystemColors.ControlText;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(831, 176);
+            panel1.Size = new Size(950, 235);
             panel1.TabIndex = 3;
+            // 
+            // ptbApplicantPicture
+            // 
+            ptbApplicantPicture.Location = new Point(783, 3);
+            ptbApplicantPicture.Name = "ptbApplicantPicture";
+            ptbApplicantPicture.Size = new Size(148, 153);
+            ptbApplicantPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbApplicantPicture.TabIndex = 10;
+            ptbApplicantPicture.TabStop = false;
             // 
             // btnApprove
             // 
@@ -87,12 +100,13 @@
             btnApprove.Lighting = true;
             btnApprove.LinearGradient_Background = false;
             btnApprove.LinearGradientPen = false;
-            btnApprove.Location = new Point(588, 122);
+            btnApprove.Location = new Point(672, 163);
+            btnApprove.Margin = new Padding(3, 4, 3, 4);
             btnApprove.Name = "btnApprove";
             btnApprove.PenWidth = 15;
             btnApprove.Rounding = true;
             btnApprove.RoundingInt = 20;
-            btnApprove.Size = new Size(107, 42);
+            btnApprove.Size = new Size(122, 56);
             btnApprove.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnApprove.TabIndex = 9;
             btnApprove.Tag = "Cyber";
@@ -129,12 +143,13 @@
             btnProfile.Lighting = true;
             btnProfile.LinearGradient_Background = false;
             btnProfile.LinearGradientPen = false;
-            btnProfile.Location = new Point(708, 122);
+            btnProfile.Location = new Point(809, 163);
+            btnProfile.Margin = new Padding(3, 4, 3, 4);
             btnProfile.Name = "btnProfile";
             btnProfile.PenWidth = 15;
             btnProfile.Rounding = true;
             btnProfile.RoundingInt = 20;
-            btnProfile.Size = new Size(107, 42);
+            btnProfile.Size = new Size(122, 56);
             btnProfile.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnProfile.TabIndex = 9;
             btnProfile.Tag = "Cyber";
@@ -171,12 +186,13 @@
             btnDecline.Lighting = true;
             btnDecline.LinearGradient_Background = false;
             btnDecline.LinearGradientPen = false;
-            btnDecline.Location = new Point(467, 122);
+            btnDecline.Location = new Point(534, 163);
+            btnDecline.Margin = new Padding(3, 4, 3, 4);
             btnDecline.Name = "btnDecline";
             btnDecline.PenWidth = 15;
             btnDecline.Rounding = true;
             btnDecline.RoundingInt = 20;
-            btnDecline.Size = new Size(107, 42);
+            btnDecline.Size = new Size(122, 56);
             btnDecline.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnDecline.TabIndex = 9;
             btnDecline.Tag = "Decline";
@@ -191,9 +207,9 @@
             lblDateT.AutoSize = true;
             lblDateT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblDateT.ForeColor = SystemColors.ControlText;
-            lblDateT.Location = new Point(99, 83);
+            lblDateT.Location = new Point(113, 111);
             lblDateT.Name = "lblDateT";
-            lblDateT.Size = new Size(58, 25);
+            lblDateT.Size = new Size(69, 30);
             lblDateT.TabIndex = 7;
             lblDateT.Text = "Date: ";
             // 
@@ -202,9 +218,9 @@
             lblJobT.AutoSize = true;
             lblJobT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblJobT.ForeColor = SystemColors.ControlText;
-            lblJobT.Location = new Point(89, 54);
+            lblJobT.Location = new Point(102, 72);
             lblJobT.Name = "lblJobT";
-            lblJobT.Size = new Size(49, 25);
+            lblJobT.Size = new Size(58, 30);
             lblJobT.TabIndex = 6;
             lblJobT.Text = "Job: ";
             // 
@@ -213,9 +229,9 @@
             lblApplicantNameT.AutoSize = true;
             lblApplicantNameT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblApplicantNameT.ForeColor = SystemColors.ControlText;
-            lblApplicantNameT.Location = new Point(207, 27);
+            lblApplicantNameT.Location = new Point(237, 36);
             lblApplicantNameT.Name = "lblApplicantNameT";
-            lblApplicantNameT.Size = new Size(160, 25);
+            lblApplicantNameT.Size = new Size(192, 30);
             lblApplicantNameT.TabIndex = 5;
             lblApplicantNameT.Text = "Applicant's Name: ";
             // 
@@ -224,9 +240,9 @@
             lblDate.AutoSize = true;
             lblDate.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblDate.ForeColor = SystemColors.ControlText;
-            lblDate.Location = new Point(33, 83);
+            lblDate.Location = new Point(38, 111);
             lblDate.Name = "lblDate";
-            lblDate.Size = new Size(58, 25);
+            lblDate.Size = new Size(69, 30);
             lblDate.TabIndex = 2;
             lblDate.Text = "Date: ";
             // 
@@ -235,9 +251,9 @@
             lblJob.AutoSize = true;
             lblJob.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblJob.ForeColor = SystemColors.ControlText;
-            lblJob.Location = new Point(33, 54);
+            lblJob.Location = new Point(38, 72);
             lblJob.Name = "lblJob";
-            lblJob.Size = new Size(49, 25);
+            lblJob.Size = new Size(58, 30);
             lblJob.TabIndex = 1;
             lblJob.Text = "Job: ";
             // 
@@ -246,22 +262,22 @@
             lblApplicantName.AutoSize = true;
             lblApplicantName.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblApplicantName.ForeColor = SystemColors.ControlText;
-            lblApplicantName.Location = new Point(33, 27);
+            lblApplicantName.Location = new Point(38, 36);
             lblApplicantName.Name = "lblApplicantName";
-            lblApplicantName.Size = new Size(160, 25);
+            lblApplicantName.Size = new Size(192, 30);
             lblApplicantName.TabIndex = 0;
             lblApplicantName.Text = "Applicant's Name: ";
             // 
             // UCApplicant
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "UCApplicant";
-            Size = new Size(831, 176);
+            Size = new Size(950, 235);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)ptbApplicantPicture).EndInit();
             ResumeLayout(false);
         }
 
@@ -277,5 +293,6 @@
         private ReaLTaiizor.Controls.CyberButton btnProfile;
         private ReaLTaiizor.Controls.CyberButton btnDecline;
         private ReaLTaiizor.Controls.CyberButton btnApprove;
+        private PictureBox ptbApplicantPicture;
     }
 }

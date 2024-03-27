@@ -24,7 +24,7 @@ namespace WinFormProject
 
         private void hopeTextBox1_Enter(object sender, EventArgs e)
         {
-            foreach(Job job in jobs)
+            foreach (Job job in jobs)
             {
                 UCInformation uCInformation = new UCInformation(job, jsID);
                 flpJob.Controls.Add(uCInformation);
