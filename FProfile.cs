@@ -36,7 +36,7 @@ namespace WinFormProject
             {
                 rdoMale.Checked = true;
             }
-            else rdofemale.Checked = true;
+            else rdoFemale.Checked = true;
             DisplayAvatar();
             DisplayCV();
 
@@ -138,7 +138,7 @@ namespace WinFormProject
             this.btnChoosePicture.Visible = false;
             this.btnSave.Visible = false;
             this.btnChooseNewCV.Visible = false;
-            this.ptbCV.Visible = false;
+            this.ptbCV.Visible = true;
             this.btnCV.Visible = true;
             this.btnCancel.Visible = false;
             txtFullName.ReadOnly = true;
@@ -152,10 +152,7 @@ namespace WinFormProject
         {
             using (MemoryStream ms = new MemoryStream())
             {
-                // Save the image to the MemoryStream
                 img.Save(ms, System.Drawing.Imaging.ImageFormat.Png); // Saving as PNG for lossless compression
-
-                // Return the byte array
                 return ms.ToArray();
             }
         }
@@ -180,10 +177,18 @@ namespace WinFormProject
         private JobSeeker CreateJobSeeker()
         {
             string gender = String.Empty;
-            byte[] AvatarData = ImageToByteArray(ptbAvatar.Image);
-            byte[] CvData = ImageToByteArray(ptbCV.Image);
+            byte[] AvatarData = new byte[1];
+            if (ptbAvatar.Image != null)
+            {
+                AvatarData = ImageToByteArray(ptbAvatar.Image);
+            }
+            byte[] CvData = new byte[1];
+            if(ptbCV.Image != null)
+            {
+                CvData = ImageToByteArray(ptbCV.Image);
+            }
             Information information = new Information(jobseeker.INFO.ID, txtFullName.Text, txtEmail.Text, txtAddress.Text, txtPhoneNumber.Text);
-            if (rdofemale.Checked) gender = "female"; else gender = "male";
+            if (rdoFemale.Checked) gender = "female"; else gender = "male";
             return new JobSeeker(information, dtpkBirthDate.Value, txtCitizenID.Text, gender, AvatarData, CvData);
         }
 

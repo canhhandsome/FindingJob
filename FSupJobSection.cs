@@ -12,38 +12,24 @@ namespace WinFormProject
 {
     public partial class FSupJobSection : Form
     {
-        private Form currentFormChild = new Form();
-        public Panel panel = new Panel();
         public Job job = new Job();
-        public FSupJobSection(Panel panel)
+        List<Alert> alerts = new List<Alert>();
+        JobSeeker seeker = new JobSeeker();
+        public FSupJobSection(JobSeeker jobSeeker)
         {
             InitializeComponent();
-            this.panel = panel;
-            foreach (Control control in pnSubBody.Controls)
+            seeker = jobSeeker;
+            AlertDAO alertDAO = new AlertDAO();
+            this.alerts = alertDAO.FetchAlert(jobSeeker.INFO.ID);
+            foreach(Alert alert in alerts) 
             {
-                if (control is UCInformation)
-                {
-                    UCInformation userControl = (UCInformation)control;
-                    //userControl.panel1.Click += panel1_Click;
-                }
+                UCAlert uCAlert = new UCAlert(alert);
+                flpAlert.Controls.Add(uCAlert);
+                flpAlert.Height += 255;
             }
         }
 
-        public void OpenChildForm(Panel panel, Form childForm)
-        {
-            currentFormChild = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panel.Controls.Add(childForm);
-            panel.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
 
-        public void panel1_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(panel, new FJobDetails(job, "hihi"));
-        }
+
     }
 }

@@ -17,16 +17,13 @@ namespace WinFormProject
         {
             InitializeComponent();
             this.company = company;
-            foreach(Apply apply in company.Applies)
+            foreach (Apply apply in company.Applies)
             {
-                UCApplicant uCApplicant = new UCApplicant(apply);
+                UCApplicant uCApplicant = new UCApplicant(apply, company);
                 flpApplicant.Controls.Add(uCApplicant);
+                flpApplicant.Height += 200;
             }
         }
 
-        private void FApplicant_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

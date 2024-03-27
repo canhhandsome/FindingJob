@@ -12,14 +12,19 @@ namespace WinFormProject
 {
     public partial class FAlertView : Form
     {
-        public FAlertView()
+        public FAlertView(Alert alert)
         {
             InitializeComponent();
+            CompanyDAO companyDAO = new CompanyDAO();
+            llFromT.Text = companyDAO.FetchName(alert.SenderID);
+            lblContentT.Text = alert.Content;
+            lblDateT.Text = alert.DateReply.ToString("dd/MM/yyyy");
+            lblSubjectT.Text = alert.Subject;
         }
 
-        private void FAlertView_Load(object sender, EventArgs e)
+        private void btnDone_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

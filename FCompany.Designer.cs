@@ -32,10 +32,10 @@
             panel1 = new Panel();
             metroControlBox3 = new ReaLTaiizor.Controls.MetroControlBox();
             panel2 = new Panel();
-            btnLogOut = new Button();
-            btnSetting = new Button();
-            btnApplicant = new Button();
-            btnPostJob = new Button();
+            btnLogOut = new ReaLTaiizor.Controls.ParrotButton();
+            btnSetting = new ReaLTaiizor.Controls.ParrotButton();
+            btnApplicant = new ReaLTaiizor.Controls.ParrotButton();
+            btnPostJob = new ReaLTaiizor.Controls.ParrotButton();
             pictureBox2 = new PictureBox();
             pnBody = new Panel();
             panel1.SuspendLayout();
@@ -45,7 +45,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.White;
+            panel1.BackColor = Color.WhiteSmoke;
             panel1.Controls.Add(metroControlBox3);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -84,7 +84,7 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(64, 64, 64);
+            panel2.BackColor = Color.FromArgb(65, 59, 96);
             panel2.Controls.Add(btnLogOut);
             panel2.Controls.Add(btnSetting);
             panel2.Controls.Add(btnApplicant);
@@ -93,76 +93,103 @@
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 24);
             panel2.Name = "panel2";
-            panel2.Size = new Size(191, 474);
+            panel2.Size = new Size(202, 474);
             panel2.TabIndex = 3;
             // 
             // btnLogOut
             // 
-            btnLogOut.Cursor = Cursors.Hand;
-            btnLogOut.Dock = DockStyle.Top;
-            btnLogOut.FlatAppearance.BorderSize = 0;
-            btnLogOut.FlatStyle = FlatStyle.Flat;
-            btnLogOut.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
-            btnLogOut.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLogOut.Location = new Point(0, 318);
+            btnLogOut.BackgroundColor = Color.FromArgb(236, 247, 251);
+            btnLogOut.ButtonImage = (Image)resources.GetObject("btnLogOut.ButtonImage");
+            btnLogOut.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            btnLogOut.ButtonText = "Log Out";
+            btnLogOut.ClickBackColor = Color.FromArgb(220, 251, 251);
+            btnLogOut.ClickTextColor = Color.Black;
+            btnLogOut.CornerRadius = 5;
+            btnLogOut.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLogOut.Horizontal_Alignment = StringAlignment.Center;
+            btnLogOut.HoverBackgroundColor = Color.FromArgb(250, 247, 251);
+            btnLogOut.HoverTextColor = Color.Black;
+            btnLogOut.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            btnLogOut.Location = new Point(12, 377);
             btnLogOut.Name = "btnLogOut";
-            btnLogOut.Size = new Size(191, 78);
-            btnLogOut.TabIndex = 5;
-            btnLogOut.Text = "Log Out";
-            btnLogOut.UseVisualStyleBackColor = true;
+            btnLogOut.Size = new Size(178, 71);
+            btnLogOut.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnLogOut.TabIndex = 14;
+            btnLogOut.TextColor = Color.Black;
+            btnLogOut.TextRenderingType = System.Drawing.Text.TextRenderingHint.SingleBitPerPixel;
+            btnLogOut.Vertical_Alignment = StringAlignment.Center;
             btnLogOut.Click += btnLogOut_Click;
             // 
             // btnSetting
             // 
-            btnSetting.Cursor = Cursors.Hand;
-            btnSetting.Dock = DockStyle.Top;
-            btnSetting.FlatAppearance.BorderSize = 0;
-            btnSetting.FlatStyle = FlatStyle.Flat;
-            btnSetting.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSetting.Image = (Image)resources.GetObject("btnSetting.Image");
-            btnSetting.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSetting.Location = new Point(0, 240);
-            btnSetting.Margin = new Padding(3, 4, 3, 4);
+            btnSetting.BackgroundColor = Color.FromArgb(236, 247, 251);
+            btnSetting.ButtonImage = (Image)resources.GetObject("btnSetting.ButtonImage");
+            btnSetting.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            btnSetting.ButtonText = "Profile";
+            btnSetting.ClickBackColor = Color.FromArgb(220, 251, 251);
+            btnSetting.ClickTextColor = Color.Black;
+            btnSetting.CornerRadius = 5;
+            btnSetting.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSetting.Horizontal_Alignment = StringAlignment.Center;
+            btnSetting.HoverBackgroundColor = Color.FromArgb(250, 247, 251);
+            btnSetting.HoverTextColor = Color.Black;
+            btnSetting.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            btnSetting.Location = new Point(12, 296);
             btnSetting.Name = "btnSetting";
-            btnSetting.Size = new Size(191, 78);
-            btnSetting.TabIndex = 4;
-            btnSetting.Text = "Setting";
-            btnSetting.UseVisualStyleBackColor = true;
+            btnSetting.Size = new Size(178, 71);
+            btnSetting.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnSetting.TabIndex = 14;
+            btnSetting.TextColor = Color.Black;
+            btnSetting.TextRenderingType = System.Drawing.Text.TextRenderingHint.SingleBitPerPixel;
+            btnSetting.Vertical_Alignment = StringAlignment.Center;
             btnSetting.Click += btnSetting_Click;
             // 
             // btnApplicant
             // 
-            btnApplicant.Cursor = Cursors.Hand;
-            btnApplicant.Dock = DockStyle.Top;
-            btnApplicant.FlatAppearance.BorderSize = 0;
-            btnApplicant.FlatStyle = FlatStyle.Flat;
-            btnApplicant.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            btnApplicant.Image = (Image)resources.GetObject("btnApplicant.Image");
-            btnApplicant.ImageAlign = ContentAlignment.MiddleLeft;
-            btnApplicant.Location = new Point(0, 162);
+            btnApplicant.BackgroundColor = Color.FromArgb(236, 247, 251);
+            btnApplicant.ButtonImage = (Image)resources.GetObject("btnApplicant.ButtonImage");
+            btnApplicant.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            btnApplicant.ButtonText = "Applicants";
+            btnApplicant.ClickBackColor = Color.FromArgb(220, 251, 251);
+            btnApplicant.ClickTextColor = Color.Black;
+            btnApplicant.CornerRadius = 5;
+            btnApplicant.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            btnApplicant.Horizontal_Alignment = StringAlignment.Center;
+            btnApplicant.HoverBackgroundColor = Color.FromArgb(250, 247, 251);
+            btnApplicant.HoverTextColor = Color.Black;
+            btnApplicant.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            btnApplicant.Location = new Point(12, 216);
             btnApplicant.Name = "btnApplicant";
-            btnApplicant.Size = new Size(191, 78);
-            btnApplicant.TabIndex = 3;
-            btnApplicant.Text = "Applicants";
-            btnApplicant.UseVisualStyleBackColor = true;
+            btnApplicant.Size = new Size(178, 71);
+            btnApplicant.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnApplicant.TabIndex = 14;
+            btnApplicant.TextColor = Color.Black;
+            btnApplicant.TextRenderingType = System.Drawing.Text.TextRenderingHint.SingleBitPerPixel;
+            btnApplicant.Vertical_Alignment = StringAlignment.Center;
             btnApplicant.Click += btnApplicant_Click;
             // 
             // btnPostJob
             // 
-            btnPostJob.Cursor = Cursors.Hand;
-            btnPostJob.Dock = DockStyle.Top;
-            btnPostJob.FlatAppearance.BorderSize = 0;
-            btnPostJob.FlatStyle = FlatStyle.Flat;
-            btnPostJob.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            btnPostJob.Image = (Image)resources.GetObject("btnPostJob.Image");
-            btnPostJob.ImageAlign = ContentAlignment.MiddleLeft;
-            btnPostJob.Location = new Point(0, 84);
+            btnPostJob.BackgroundColor = Color.FromArgb(236, 247, 251);
+            btnPostJob.ButtonImage = (Image)resources.GetObject("btnPostJob.ButtonImage");
+            btnPostJob.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            btnPostJob.ButtonText = "Post Job";
+            btnPostJob.ClickBackColor = Color.FromArgb(220, 251, 251);
+            btnPostJob.ClickTextColor = Color.Black;
+            btnPostJob.CornerRadius = 5;
+            btnPostJob.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            btnPostJob.Horizontal_Alignment = StringAlignment.Center;
+            btnPostJob.HoverBackgroundColor = Color.FromArgb(250, 247, 251);
+            btnPostJob.HoverTextColor = Color.Black;
+            btnPostJob.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            btnPostJob.Location = new Point(12, 136);
             btnPostJob.Name = "btnPostJob";
-            btnPostJob.Size = new Size(191, 78);
-            btnPostJob.TabIndex = 1;
-            btnPostJob.Text = "Post Job";
-            btnPostJob.UseVisualStyleBackColor = true;
+            btnPostJob.Size = new Size(178, 71);
+            btnPostJob.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnPostJob.TabIndex = 14;
+            btnPostJob.TextColor = Color.Black;
+            btnPostJob.TextRenderingType = System.Drawing.Text.TextRenderingHint.SingleBitPerPixel;
+            btnPostJob.Vertical_Alignment = StringAlignment.Center;
             btnPostJob.Click += btnPostJob_Click;
             // 
             // pictureBox2
@@ -171,7 +198,7 @@
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(0, 0);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(191, 84);
+            pictureBox2.Size = new Size(202, 121);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
@@ -179,16 +206,16 @@
             // pnBody
             // 
             pnBody.Dock = DockStyle.Fill;
-            pnBody.Location = new Point(191, 24);
+            pnBody.Location = new Point(202, 24);
             pnBody.Name = "pnBody";
-            pnBody.Size = new Size(933, 474);
+            pnBody.Size = new Size(922, 474);
             pnBody.TabIndex = 4;
             // 
             // FCompany
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(32, 41, 50);
+            BackColor = Color.White;
             ClientSize = new Size(1124, 498);
             Controls.Add(pnBody);
             Controls.Add(panel2);
@@ -211,10 +238,10 @@
         private ReaLTaiizor.Controls.MetroControlBox metroControlBox3;
         private Panel panel2;
         private PictureBox pictureBox2;
-        private Button btnPostJob;
-        private Button btnLogOut;
-        private Button btnSetting;
-        private Button btnApplicant;
         private Panel pnBody;
+        private ReaLTaiizor.Controls.ParrotButton btnPostJob;
+        private ReaLTaiizor.Controls.ParrotButton btnLogOut;
+        private ReaLTaiizor.Controls.ParrotButton btnSetting;
+        private ReaLTaiizor.Controls.ParrotButton btnApplicant;
     }
 }

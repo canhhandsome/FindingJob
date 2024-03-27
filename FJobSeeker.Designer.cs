@@ -33,10 +33,10 @@
             metroControlBox4 = new ReaLTaiizor.Controls.MetroControlBox();
             metroControlBox3 = new ReaLTaiizor.Controls.MetroControlBox();
             panel2 = new Panel();
-            btnLogOut = new Button();
-            btnSetting = new Button();
-            btnSearchJob = new Button();
-            btnJobAlert = new Button();
+            btnLogOut = new ReaLTaiizor.Controls.ParrotButton();
+            btnSetting = new ReaLTaiizor.Controls.ParrotButton();
+            btnJobAlert = new ReaLTaiizor.Controls.ParrotButton();
+            btnSearchJob = new ReaLTaiizor.Controls.ParrotButton();
             pictureBox2 = new PictureBox();
             pnBody = new Panel();
             panel1.SuspendLayout();
@@ -46,7 +46,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.White;
+            panel1.BackColor = Color.WhiteSmoke;
             panel1.Controls.Add(metroControlBox4);
             panel1.Controls.Add(metroControlBox3);
             panel1.Dock = DockStyle.Top;
@@ -111,11 +111,11 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(64, 64, 64);
+            panel2.BackColor = Color.FromArgb(65, 59, 96);
             panel2.Controls.Add(btnLogOut);
             panel2.Controls.Add(btnSetting);
-            panel2.Controls.Add(btnSearchJob);
             panel2.Controls.Add(btnJobAlert);
+            panel2.Controls.Add(btnSearchJob);
             panel2.Controls.Add(pictureBox2);
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 32);
@@ -138,9 +138,10 @@
             btnLogOut.HoverBackgroundColor = Color.FromArgb(250, 247, 251);
             btnLogOut.HoverTextColor = Color.Black;
             btnLogOut.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnLogOut.Location = new Point(12, 372);
+            btnLogOut.Location = new Point(14, 496);
+            btnLogOut.Margin = new Padding(3, 4, 3, 4);
             btnLogOut.Name = "btnLogOut";
-            btnLogOut.Size = new Size(178, 71);
+            btnLogOut.Size = new Size(203, 95);
             btnLogOut.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnLogOut.TabIndex = 13;
             btnLogOut.TextColor = Color.Black;
@@ -162,33 +163,16 @@
             btnSetting.HoverBackgroundColor = Color.FromArgb(250, 247, 251);
             btnSetting.HoverTextColor = Color.Black;
             btnSetting.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnSetting.Location = new Point(12, 293);
+            btnSetting.Location = new Point(14, 391);
+            btnSetting.Margin = new Padding(3, 4, 3, 4);
             btnSetting.Name = "btnSetting";
-            btnSetting.Size = new Size(178, 71);
+            btnSetting.Size = new Size(203, 95);
             btnSetting.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnSetting.TabIndex = 13;
             btnSetting.TextColor = Color.Black;
             btnSetting.TextRenderingType = System.Drawing.Text.TextRenderingHint.SingleBitPerPixel;
             btnSetting.Vertical_Alignment = StringAlignment.Center;
             btnSetting.Click += btnSetting_Click;
-            // 
-            // btnSearchJob
-            // 
-            btnSearchJob.Cursor = Cursors.Hand;
-            btnSearchJob.Dock = DockStyle.Top;
-            btnSearchJob.FlatAppearance.BorderSize = 0;
-            btnSearchJob.FlatStyle = FlatStyle.Flat;
-            btnSearchJob.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSearchJob.Image = (Image)resources.GetObject("btnSearchJob.Image");
-            btnSearchJob.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSearchJob.Location = new Point(0, 251);
-            btnSearchJob.Margin = new Padding(3, 5, 3, 5);
-            btnSearchJob.Name = "btnSearchJob";
-            btnSearchJob.Size = new Size(218, 139);
-            btnSearchJob.TabIndex = 2;
-            btnSearchJob.Text = "Search Job";
-            btnSearchJob.UseVisualStyleBackColor = true;
-            btnSearchJob.Click += btnSearchJob_Click;
             // 
             // btnJobAlert
             // 
@@ -204,9 +188,10 @@
             btnJobAlert.HoverBackgroundColor = Color.FromArgb(250, 247, 251);
             btnJobAlert.HoverTextColor = Color.Black;
             btnJobAlert.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnJobAlert.Location = new Point(12, 215);
+            btnJobAlert.Location = new Point(14, 287);
+            btnJobAlert.Margin = new Padding(3, 4, 3, 4);
             btnJobAlert.Name = "btnJobAlert";
-            btnJobAlert.Size = new Size(178, 71);
+            btnJobAlert.Size = new Size(203, 95);
             btnJobAlert.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnJobAlert.TabIndex = 13;
             btnJobAlert.TextColor = Color.Black;
@@ -228,9 +213,10 @@
             btnSearchJob.HoverBackgroundColor = Color.FromArgb(250, 247, 251);
             btnSearchJob.HoverTextColor = Color.Black;
             btnSearchJob.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnSearchJob.Location = new Point(12, 136);
+            btnSearchJob.Location = new Point(14, 181);
+            btnSearchJob.Margin = new Padding(3, 4, 3, 4);
             btnSearchJob.Name = "btnSearchJob";
-            btnSearchJob.Size = new Size(178, 71);
+            btnSearchJob.Size = new Size(203, 95);
             btnSearchJob.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnSearchJob.TabIndex = 13;
             btnSearchJob.TextColor = Color.Black;
@@ -245,7 +231,7 @@
             pictureBox2.Location = new Point(0, 0);
             pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(202, 121);
+            pictureBox2.Size = new Size(231, 161);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
@@ -254,9 +240,10 @@
             // 
             pnBody.BorderStyle = BorderStyle.FixedSingle;
             pnBody.Dock = DockStyle.Fill;
-            pnBody.Location = new Point(202, 24);
+            pnBody.Location = new Point(231, 32);
+            pnBody.Margin = new Padding(3, 4, 3, 4);
             pnBody.Name = "pnBody";
-            pnBody.Size = new Size(922, 474);
+            pnBody.Size = new Size(1054, 632);
             pnBody.TabIndex = 7;
             // 
             // FJobSeeker
@@ -264,14 +251,14 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1124, 498);
+            ClientSize = new Size(1285, 664);
             Controls.Add(pnBody);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FJobSeeker";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "FJobSeeker";
+            Text = "d";
             Load += FJobSeeker_Load;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
@@ -285,12 +272,12 @@
         private Panel panel1;
         private ReaLTaiizor.Controls.MetroControlBox metroControlBox3;
         private Panel panel2;
-        private Button btnLogOut;
-        private Button btnSetting;
-        private Button btnSearchJob;
-        private Button btnJobAlert;
         private PictureBox pictureBox2;
         private ReaLTaiizor.Controls.MetroControlBox metroControlBox4;
         private Panel pnBody;
+        private ReaLTaiizor.Controls.ParrotButton btnSearchJob;
+        private ReaLTaiizor.Controls.ParrotButton btnLogOut;
+        private ReaLTaiizor.Controls.ParrotButton btnSetting;
+        private ReaLTaiizor.Controls.ParrotButton btnJobAlert;
     }
 }

@@ -28,258 +28,252 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.lblProblem = new System.Windows.Forms.Label();
-            this.lblForm = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.SuspendLayout();
+            button1 = new Button();
+            hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
+            panel1 = new Panel();
+            lblDate = new Label();
+            lblProblem = new Label();
+            lblForm = new Label();
+            panel2 = new Panel();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            panel3 = new Panel();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            panel4 = new Panel();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            panel3.SuspendLayout();
+            panel4.SuspendLayout();
+            SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(306, 20);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 43);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(268, 15);
+            button1.Name = "button1";
+            button1.Size = new Size(82, 32);
+            button1.TabIndex = 5;
+            button1.Text = "Search";
+            button1.UseVisualStyleBackColor = true;
             // 
             // hopeTextBox1
             // 
-            this.hopeTextBox1.BackColor = System.Drawing.Color.White;
-            this.hopeTextBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.hopeTextBox1.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox1.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hopeTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeTextBox1.Hint = "Enter Search";
-            this.hopeTextBox1.Location = new System.Drawing.Point(14, 20);
-            this.hopeTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.hopeTextBox1.MaxLength = 32767;
-            this.hopeTextBox1.Multiline = false;
-            this.hopeTextBox1.Name = "hopeTextBox1";
-            this.hopeTextBox1.PasswordChar = '\0';
-            this.hopeTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBox1.SelectedText = "";
-            this.hopeTextBox1.SelectionLength = 0;
-            this.hopeTextBox1.SelectionStart = 0;
-            this.hopeTextBox1.Size = new System.Drawing.Size(286, 43);
-            this.hopeTextBox1.TabIndex = 4;
-            this.hopeTextBox1.TabStop = false;
-            this.hopeTextBox1.UseSystemPasswordChar = false;
+            hopeTextBox1.BackColor = Color.White;
+            hopeTextBox1.BaseColor = Color.FromArgb(44, 55, 66);
+            hopeTextBox1.BorderColorA = Color.FromArgb(64, 158, 255);
+            hopeTextBox1.BorderColorB = Color.FromArgb(220, 223, 230);
+            hopeTextBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            hopeTextBox1.ForeColor = Color.FromArgb(48, 49, 51);
+            hopeTextBox1.Hint = "Enter Search";
+            hopeTextBox1.Location = new Point(12, 15);
+            hopeTextBox1.MaxLength = 32767;
+            hopeTextBox1.Multiline = false;
+            hopeTextBox1.Name = "hopeTextBox1";
+            hopeTextBox1.PasswordChar = '\0';
+            hopeTextBox1.ScrollBars = ScrollBars.None;
+            hopeTextBox1.SelectedText = "";
+            hopeTextBox1.SelectionLength = 0;
+            hopeTextBox1.SelectionStart = 0;
+            hopeTextBox1.Size = new Size(250, 38);
+            hopeTextBox1.TabIndex = 4;
+            hopeTextBox1.TabStop = false;
+            hopeTextBox1.UseSystemPasswordChar = false;
             // 
             // panel1
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.lblDate);
-            this.panel1.Controls.Add(this.lblProblem);
-            this.panel1.Controls.Add(this.lblForm);
-            this.panel1.Location = new System.Drawing.Point(14, 99);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(386, 161);
-            this.panel1.TabIndex = 6;
+            panel1.BorderStyle = BorderStyle.Fixed3D;
+            panel1.Controls.Add(lblDate);
+            panel1.Controls.Add(lblProblem);
+            panel1.Controls.Add(lblForm);
+            panel1.Location = new Point(12, 74);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(338, 122);
+            panel1.TabIndex = 6;
             // 
             // lblDate
             // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDate.Location = new System.Drawing.Point(16, 115);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(140, 30);
-            this.lblDate.TabIndex = 0;
-            this.lblDate.Text = "Date Report: ";
+            lblDate.AutoSize = true;
+            lblDate.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDate.Location = new Point(14, 86);
+            lblDate.Name = "lblDate";
+            lblDate.Size = new Size(116, 25);
+            lblDate.TabIndex = 0;
+            lblDate.Text = "Date Report: ";
             // 
             // lblProblem
             // 
-            this.lblProblem.AutoSize = true;
-            this.lblProblem.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblProblem.Location = new System.Drawing.Point(16, 67);
-            this.lblProblem.Name = "lblProblem";
-            this.lblProblem.Size = new System.Drawing.Size(100, 30);
-            this.lblProblem.TabIndex = 0;
-            this.lblProblem.Text = "Problem:";
+            lblProblem.AutoSize = true;
+            lblProblem.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblProblem.Location = new Point(14, 50);
+            lblProblem.Name = "lblProblem";
+            lblProblem.Size = new Size(83, 25);
+            lblProblem.TabIndex = 0;
+            lblProblem.Text = "Problem:";
             // 
             // lblForm
             // 
-            this.lblForm.AutoSize = true;
-            this.lblForm.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblForm.Location = new System.Drawing.Point(16, 21);
-            this.lblForm.Name = "lblForm";
-            this.lblForm.Size = new System.Drawing.Size(69, 30);
-            this.lblForm.TabIndex = 0;
-            this.lblForm.Text = "From:";
+            lblForm.AutoSize = true;
+            lblForm.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblForm.Location = new Point(14, 16);
+            lblForm.Name = "lblForm";
+            lblForm.Size = new Size(58, 25);
+            lblForm.TabIndex = 0;
+            lblForm.Text = "From:";
             // 
             // panel2
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(14, 263);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(386, 161);
-            this.panel2.TabIndex = 7;
+            panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(label1);
+            panel2.Controls.Add(label2);
+            panel2.Controls.Add(label3);
+            panel2.Location = new Point(12, 197);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(338, 122);
+            panel2.TabIndex = 7;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(16, 115);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Date Report: ";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(14, 86);
+            label1.Name = "label1";
+            label1.Size = new Size(116, 25);
+            label1.TabIndex = 0;
+            label1.Text = "Date Report: ";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(16, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 30);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Problem:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(14, 50);
+            label2.Name = "label2";
+            label2.Size = new Size(83, 25);
+            label2.TabIndex = 0;
+            label2.Text = "Problem:";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(16, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 30);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "From:";
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(14, 16);
+            label3.Name = "label3";
+            label3.Size = new Size(58, 25);
+            label3.TabIndex = 0;
+            label3.Text = "From:";
             // 
             // panel3
             // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(14, 423);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(386, 161);
-            this.panel3.TabIndex = 7;
+            panel3.BorderStyle = BorderStyle.Fixed3D;
+            panel3.Controls.Add(label4);
+            panel3.Controls.Add(label5);
+            panel3.Controls.Add(label6);
+            panel3.Location = new Point(12, 317);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(338, 122);
+            panel3.TabIndex = 7;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(16, 115);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(140, 30);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Date Report: ";
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(14, 86);
+            label4.Name = "label4";
+            label4.Size = new Size(116, 25);
+            label4.TabIndex = 0;
+            label4.Text = "Date Report: ";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(16, 67);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 30);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Problem:";
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(14, 50);
+            label5.Name = "label5";
+            label5.Size = new Size(83, 25);
+            label5.TabIndex = 0;
+            label5.Text = "Problem:";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(16, 21);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 30);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "From:";
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(14, 16);
+            label6.Name = "label6";
+            label6.Size = new Size(58, 25);
+            label6.TabIndex = 0;
+            label6.Text = "From:";
             // 
             // panel4
             // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.label9);
-            this.panel4.Location = new System.Drawing.Point(14, 580);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(386, 161);
-            this.panel4.TabIndex = 8;
+            panel4.BorderStyle = BorderStyle.Fixed3D;
+            panel4.Controls.Add(label7);
+            panel4.Controls.Add(label8);
+            panel4.Controls.Add(label9);
+            panel4.Location = new Point(12, 435);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(338, 122);
+            panel4.TabIndex = 8;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(16, 115);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(140, 30);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Date Report: ";
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(14, 86);
+            label7.Name = "label7";
+            label7.Size = new Size(116, 25);
+            label7.TabIndex = 0;
+            label7.Text = "Date Report: ";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(16, 67);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(100, 30);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Problem:";
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(14, 50);
+            label8.Name = "label8";
+            label8.Size = new Size(83, 25);
+            label8.TabIndex = 0;
+            label8.Text = "Problem:";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(16, 21);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 30);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "From:";
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Location = new Point(14, 16);
+            label9.Name = "label9";
+            label9.Size = new Size(58, 25);
+            label9.TabIndex = 0;
+            label9.Text = "From:";
             // 
             // FSupReportSection
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(430, 580);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.hopeTextBox1);
-            this.Name = "FSupReportSection";
-            this.Text = "FSupReportSection";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
+            BackColor = Color.LightGray;
+            ClientSize = new Size(376, 435);
+            Controls.Add(panel4);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            Controls.Add(button1);
+            Controls.Add(hopeTextBox1);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "FSupReportSection";
+            Text = "FSupReportSection";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

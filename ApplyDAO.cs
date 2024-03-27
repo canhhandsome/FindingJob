@@ -23,5 +23,11 @@ namespace WinFormProject
             conn.FetchAllApplies(strFetch, list);
             return list;
         }
+
+        public void UpdateStatus(string status, Apply apply)
+        {
+            string strCRUD = string.Format("UPDATE Apply SET status = '{0}' WHERE JobSeekerID = '{1}' AND JobID = '{2}'", status, apply.JSeekerID, apply.JobID);
+            conn.CRUD(strCRUD);
+        }
     }
 }
