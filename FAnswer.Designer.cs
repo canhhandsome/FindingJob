@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblFrom = new Label();
-            llFromT = new Label();
             lblTo = new Label();
             lblToT = new Label();
             lblSubject = new Label();
@@ -40,31 +38,11 @@
             txtSubject = new ReaLTaiizor.Controls.HopeTextBox();
             SuspendLayout();
             // 
-            // lblFrom
-            // 
-            lblFrom.AutoSize = true;
-            lblFrom.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFrom.Location = new Point(15, 11);
-            lblFrom.Name = "lblFrom";
-            lblFrom.Size = new Size(59, 25);
-            lblFrom.TabIndex = 7;
-            lblFrom.Text = "From:";
-            // 
-            // llFromT
-            // 
-            llFromT.AutoSize = true;
-            llFromT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            llFromT.Location = new Point(112, 11);
-            llFromT.Name = "llFromT";
-            llFromT.Size = new Size(59, 25);
-            llFromT.TabIndex = 8;
-            llFromT.Text = "From:";
-            // 
             // lblTo
             // 
             lblTo.AutoSize = true;
             lblTo.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTo.Location = new Point(15, 49);
+            lblTo.Location = new Point(15, 23);
             lblTo.Name = "lblTo";
             lblTo.Size = new Size(35, 25);
             lblTo.TabIndex = 9;
@@ -74,7 +52,7 @@
             // 
             lblToT.AutoSize = true;
             lblToT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblToT.Location = new Point(112, 49);
+            lblToT.Location = new Point(112, 23);
             lblToT.Name = "lblToT";
             lblToT.Size = new Size(35, 25);
             lblToT.TabIndex = 10;
@@ -84,7 +62,7 @@
             // 
             lblSubject.AutoSize = true;
             lblSubject.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSubject.Location = new Point(15, 88);
+            lblSubject.Location = new Point(15, 62);
             lblSubject.Name = "lblSubject";
             lblSubject.Size = new Size(78, 25);
             lblSubject.TabIndex = 11;
@@ -94,7 +72,7 @@
             // 
             lblContent.AutoSize = true;
             lblContent.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblContent.Location = new Point(15, 129);
+            lblContent.Location = new Point(15, 103);
             lblContent.Name = "lblContent";
             lblContent.Size = new Size(83, 25);
             lblContent.TabIndex = 12;
@@ -107,7 +85,7 @@
             txtContent.ForeColor = Color.FromArgb(48, 49, 51);
             txtContent.Hint = "";
             txtContent.HoverBorderColor = Color.FromArgb(64, 158, 255);
-            txtContent.Location = new Point(112, 129);
+            txtContent.Location = new Point(112, 103);
             txtContent.Margin = new Padding(3, 2, 3, 2);
             txtContent.MaxLength = 32767;
             txtContent.Multiline = true;
@@ -132,7 +110,7 @@
             btnCancel.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
             btnCancel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancel.ForeColor = SystemColors.Control;
-            btnCancel.Location = new Point(756, 382);
+            btnCancel.Location = new Point(756, 368);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(134, 37);
             btnCancel.TabIndex = 28;
@@ -149,7 +127,7 @@
             btnSend.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
             btnSend.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnSend.ForeColor = SystemColors.ControlText;
-            btnSend.Location = new Point(598, 382);
+            btnSend.Location = new Point(598, 368);
             btnSend.Name = "btnSend";
             btnSend.Size = new Size(134, 37);
             btnSend.TabIndex = 29;
@@ -167,7 +145,7 @@
             txtSubject.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtSubject.ForeColor = Color.FromArgb(48, 49, 51);
             txtSubject.Hint = "Enter subject";
-            txtSubject.Location = new Point(112, 82);
+            txtSubject.Location = new Point(112, 56);
             txtSubject.Margin = new Padding(3, 2, 3, 2);
             txtSubject.MaxLength = 32767;
             txtSubject.Multiline = false;
@@ -196,8 +174,6 @@
             Controls.Add(lblSubject);
             Controls.Add(lblToT);
             Controls.Add(lblTo);
-            Controls.Add(llFromT);
-            Controls.Add(lblFrom);
             Margin = new Padding(3, 2, 3, 2);
             Name = "FAnswer";
             StartPosition = FormStartPosition.CenterScreen;
@@ -207,9 +183,6 @@
         }
 
         #endregion
-
-        private Label lblFrom;
-        private Label llFromT;
         private Label lblTo;
         private Label lblToT;
         private Label lblSubject;

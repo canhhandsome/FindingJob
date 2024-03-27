@@ -19,7 +19,7 @@ namespace WinFormProject
         public List<Apply> AllApplies(string jobID)
         {
             List<Apply> list = new List<Apply>();
-            string strFetch = string.Format("SELECT * FROM apply WHERE jobID = '{0}'", jobID);
+            string strFetch = string.Format("SELECT * FROM apply WHERE jobID = '{0}' AND status = 'waiting'", jobID);
             conn.FetchAllApplies(strFetch, list);
             return list;
         }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             btnPostingJob = new Button();
-            pnSubBody = new Panel();
             pnBody = new Panel();
+            pnSubBody = new FlowLayoutPanel();
             lblListJobs = new Label();
             pnBody.SuspendLayout();
             SuspendLayout();
@@ -42,61 +42,55 @@
             btnPostingJob.FlatStyle = FlatStyle.System;
             btnPostingJob.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             btnPostingJob.ForeColor = SystemColors.ControlLightLight;
-            btnPostingJob.Location = new Point(814, 38);
-            btnPostingJob.Margin = new Padding(3, 4, 3, 4);
+            btnPostingJob.Location = new Point(712, 28);
             btnPostingJob.Name = "btnPostingJob";
-            btnPostingJob.Size = new Size(190, 52);
+            btnPostingJob.Size = new Size(166, 39);
             btnPostingJob.TabIndex = 1;
             btnPostingJob.Text = "Posting a job";
             btnPostingJob.UseVisualStyleBackColor = false;
             btnPostingJob.Click += btnPostingJob_Click;
             // 
-            // pnSubBody
-            // 
-            pnSubBody.AutoScroll = true;
-            pnSubBody.AutoSize = true;
-            pnSubBody.BorderStyle = BorderStyle.Fixed3D;
-            pnSubBody.Location = new Point(107, 131);
-            pnSubBody.Name = "pnSubBody";
-            pnSubBody.Size = new Size(812, 491);
-            pnSubBody.TabIndex = 2;
-            // 
             // pnBody
             // 
             pnBody.AutoScroll = true;
             pnBody.AutoSize = true;
-            pnBody.BackColor = Color.LightGray;
-            pnBody.Controls.Add(lblListJobs);
+            pnBody.BackColor = Color.White;
             pnBody.Controls.Add(pnSubBody);
+            pnBody.Controls.Add(lblListJobs);
             pnBody.Controls.Add(btnPostingJob);
             pnBody.Dock = DockStyle.Fill;
             pnBody.Location = new Point(0, 0);
-            pnBody.Margin = new Padding(3, 4, 3, 4);
             pnBody.Name = "pnBody";
-            pnBody.Size = new Size(1048, 600);
+            pnBody.Size = new Size(917, 450);
             pnBody.TabIndex = 2;
+            // 
+            // pnSubBody
+            // 
+            pnSubBody.Location = new Point(94, 92);
+            pnSubBody.Name = "pnSubBody";
+            pnSubBody.Size = new Size(749, 53);
+            pnSubBody.TabIndex = 4;
             // 
             // lblListJobs
             // 
             lblListJobs.AutoSize = true;
-            lblListJobs.BackColor = Color.LightGray;
+            lblListJobs.BackColor = Color.White;
             lblListJobs.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             lblListJobs.ForeColor = SystemColors.ControlText;
-            lblListJobs.Location = new Point(40, 39);
+            lblListJobs.Location = new Point(35, 29);
             lblListJobs.Name = "lblListJobs";
-            lblListJobs.Size = new Size(313, 46);
+            lblListJobs.Size = new Size(247, 37);
             lblListJobs.TabIndex = 3;
             lblListJobs.Text = "List Of Current Jobs";
             // 
             // FPostJob
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.FromArgb(32, 41, 58);
-            ClientSize = new Size(1048, 600);
+            ClientSize = new Size(917, 450);
             Controls.Add(pnBody);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FPostJob";
             Text = "PostJob";
             pnBody.ResumeLayout(false);
@@ -107,8 +101,8 @@
 
         #endregion
         private Button btnPostingJob;
-        private Panel pnSubBody;
         private Panel pnBody;
         private Label lblListJobs;
+        private FlowLayoutPanel pnSubBody;
     }
 }
