@@ -29,17 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRegister));
-            txtemail = new ReaLTaiizor.Controls.HopeTextBox();
-            txtfullname = new ReaLTaiizor.Controls.HopeTextBox();
-            btnsignup = new ReaLTaiizor.Controls.Button();
-            btnsignin = new ReaLTaiizor.Controls.Button();
             lblagree = new ReaLTaiizor.Controls.LabelEdit();
             bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             pictureBox1 = new PictureBox();
-            txtpassword = new ReaLTaiizor.Controls.HopeTextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
             btnagree = new ReaLTaiizor.Controls.MaterialCheckBox();
             nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             panel1 = new Panel();
@@ -47,102 +39,15 @@
             foxLabel2 = new ReaLTaiizor.Controls.FoxLabel();
             rdocompany = new ReaLTaiizor.Controls.ParrotRadioButton();
             rdojobseeker = new ReaLTaiizor.Controls.ParrotRadioButton();
+            btnsignin = new ReaLTaiizor.Controls.ParrotButton();
+            btnsignup = new ReaLTaiizor.Controls.ParrotButton();
+            txtfullname = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            txtemail = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            txtpassword = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
-            // 
-            // txtemail
-            // 
-            txtemail.BackColor = Color.White;
-            txtemail.BaseColor = Color.FromArgb(44, 55, 66);
-            txtemail.BorderColorA = Color.FromArgb(64, 158, 255);
-            txtemail.BorderColorB = Color.FromArgb(220, 223, 230);
-            txtemail.Cursor = Cursors.IBeam;
-            txtemail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtemail.ForeColor = Color.FromArgb(48, 49, 51);
-            txtemail.Hint = "Enter your email";
-            txtemail.Location = new Point(60, 204);
-            txtemail.Margin = new Padding(3, 2, 3, 2);
-            txtemail.MaxLength = 32767;
-            txtemail.Multiline = false;
-            txtemail.Name = "txtemail";
-            txtemail.PasswordChar = '\0';
-            txtemail.ScrollBars = ScrollBars.None;
-            txtemail.SelectedText = "";
-            txtemail.SelectionLength = 0;
-            txtemail.SelectionStart = 0;
-            txtemail.Size = new Size(389, 38);
-            txtemail.TabIndex = 10;
-            txtemail.TabStop = false;
-            txtemail.UseSystemPasswordChar = false;
-            // 
-            // txtfullname
-            // 
-            txtfullname.BackColor = Color.White;
-            txtfullname.BaseColor = Color.FromArgb(44, 55, 66);
-            txtfullname.BorderColorA = Color.FromArgb(64, 158, 255);
-            txtfullname.BorderColorB = Color.FromArgb(220, 223, 230);
-            txtfullname.Cursor = Cursors.IBeam;
-            txtfullname.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtfullname.ForeColor = Color.FromArgb(48, 49, 51);
-            txtfullname.Hint = "Enter your full name";
-            txtfullname.Location = new Point(60, 288);
-            txtfullname.Margin = new Padding(3, 2, 3, 2);
-            txtfullname.MaxLength = 32767;
-            txtfullname.Multiline = false;
-            txtfullname.Name = "txtfullname";
-            txtfullname.PasswordChar = '\0';
-            txtfullname.ScrollBars = ScrollBars.None;
-            txtfullname.SelectedText = "";
-            txtfullname.SelectionLength = 0;
-            txtfullname.SelectionStart = 0;
-            txtfullname.Size = new Size(389, 38);
-            txtfullname.TabIndex = 3;
-            txtfullname.TabStop = false;
-            txtfullname.UseSystemPasswordChar = false;
-            // 
-            // btnsignup
-            // 
-            btnsignup.BackColor = Color.White;
-            btnsignup.BorderColor = Color.FromArgb(32, 34, 37);
-            btnsignup.Enabled = false;
-            btnsignup.EnteredBorderColor = Color.FromArgb(165, 37, 37);
-            btnsignup.EnteredColor = Color.FromArgb(32, 34, 37);
-            btnsignup.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnsignup.Image = null;
-            btnsignup.ImageAlign = ContentAlignment.MiddleLeft;
-            btnsignup.InactiveColor = Color.FromArgb(32, 34, 37);
-            btnsignup.Location = new Point(309, 492);
-            btnsignup.Margin = new Padding(3, 2, 3, 2);
-            btnsignup.Name = "btnsignup";
-            btnsignup.PressedBorderColor = Color.FromArgb(165, 37, 37);
-            btnsignup.PressedColor = Color.FromArgb(165, 37, 37);
-            btnsignup.Size = new Size(131, 38);
-            btnsignup.TabIndex = 7;
-            btnsignup.Text = "Sign Up";
-            btnsignup.TextAlignment = StringAlignment.Center;
-            // 
-            // btnsignin
-            // 
-            btnsignin.BackColor = Color.Transparent;
-            btnsignin.BorderColor = Color.FromArgb(32, 34, 37);
-            btnsignin.EnteredBorderColor = Color.FromArgb(165, 37, 37);
-            btnsignin.EnteredColor = Color.FromArgb(32, 34, 37);
-            btnsignin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnsignin.Image = null;
-            btnsignin.ImageAlign = ContentAlignment.MiddleLeft;
-            btnsignin.InactiveColor = Color.FromArgb(32, 34, 37);
-            btnsignin.Location = new Point(60, 492);
-            btnsignin.Margin = new Padding(3, 2, 3, 2);
-            btnsignin.Name = "btnsignin";
-            btnsignin.PressedBorderColor = Color.FromArgb(165, 37, 37);
-            btnsignin.PressedColor = Color.FromArgb(165, 37, 37);
-            btnsignin.Size = new Size(131, 38);
-            btnsignin.TabIndex = 1;
-            btnsignin.Text = "Sign In";
-            btnsignin.TextAlignment = StringAlignment.Center;
-            btnsignin.Click += btnsignin_Click;
             // 
             // lblagree
             // 
@@ -150,7 +55,7 @@
             lblagree.BackColor = Color.Transparent;
             lblagree.Cursor = Cursors.Hand;
             lblagree.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            lblagree.ForeColor = Color.FromArgb(224, 224, 224);
+            lblagree.ForeColor = Color.Black;
             lblagree.Location = new Point(95, 425);
             lblagree.Name = "lblagree";
             lblagree.Size = new Size(354, 40);
@@ -163,7 +68,7 @@
             bigLabel1.AutoSize = true;
             bigLabel1.BackColor = Color.Transparent;
             bigLabel1.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            bigLabel1.ForeColor = Color.FromArgb(224, 224, 224);
+            bigLabel1.ForeColor = Color.Black;
             bigLabel1.Location = new Point(95, 46);
             bigLabel1.Name = "bigLabel1";
             bigLabel1.Size = new Size(201, 46);
@@ -172,6 +77,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.FromArgb(65, 59, 96);
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Location = new Point(297, 46);
@@ -180,65 +86,11 @@
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;
             // 
-            // txtpassword
-            // 
-            txtpassword.BackColor = Color.White;
-            txtpassword.BaseColor = Color.FromArgb(44, 55, 66);
-            txtpassword.BorderColorA = Color.FromArgb(64, 158, 255);
-            txtpassword.BorderColorB = Color.FromArgb(220, 223, 230);
-            txtpassword.Cursor = Cursors.IBeam;
-            txtpassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtpassword.ForeColor = Color.FromArgb(48, 49, 51);
-            txtpassword.Hint = "Enter your password";
-            txtpassword.Location = new Point(60, 372);
-            txtpassword.Margin = new Padding(3, 2, 3, 2);
-            txtpassword.MaxLength = 32767;
-            txtpassword.Multiline = false;
-            txtpassword.Name = "txtpassword";
-            txtpassword.PasswordChar = '*';
-            txtpassword.ScrollBars = ScrollBars.None;
-            txtpassword.SelectedText = "";
-            txtpassword.SelectionLength = 0;
-            txtpassword.SelectionStart = 0;
-            txtpassword.Size = new Size(389, 38);
-            txtpassword.TabIndex = 3;
-            txtpassword.TabStop = false;
-            txtpassword.UseSystemPasswordChar = true;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(60, 187);
-            label1.Name = "label1";
-            label1.Size = new Size(81, 15);
-            label1.TabIndex = 15;
-            label1.Text = "Email Address";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(60, 271);
-            label2.Name = "label2";
-            label2.Size = new Size(59, 15);
-            label2.TabIndex = 15;
-            label2.Text = "Full name";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(60, 355);
-            label3.Name = "label3";
-            label3.Size = new Size(57, 15);
-            label3.TabIndex = 15;
-            label3.Text = "Password";
-            // 
             // btnagree
             // 
             btnagree.AutoSize = true;
             btnagree.Depth = 0;
+            btnagree.ForeColor = Color.Black;
             btnagree.Location = new Point(60, 425);
             btnagree.Margin = new Padding(0);
             btnagree.MouseLocation = new Point(-1, -1);
@@ -266,7 +118,7 @@
             nightControlBox1.EnableMaximizeColor = Color.FromArgb(160, 160, 160);
             nightControlBox1.EnableMinimizeButton = true;
             nightControlBox1.EnableMinimizeColor = Color.FromArgb(160, 160, 160);
-            nightControlBox1.Location = new Point(1081, 0);
+            nightControlBox1.Location = new Point(1063, 0);
             nightControlBox1.MaximizeHoverColor = Color.FromArgb(15, 255, 255, 255);
             nightControlBox1.MaximizeHoverForeColor = Color.White;
             nightControlBox1.MinimizeHoverColor = Color.FromArgb(15, 255, 255, 255);
@@ -300,8 +152,8 @@
             // foxLabel2
             // 
             foxLabel2.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            foxLabel2.ForeColor = Color.White;
-            foxLabel2.Location = new Point(115, 113);
+            foxLabel2.ForeColor = Color.Black;
+            foxLabel2.Location = new Point(115, 102);
             foxLabel2.Name = "foxLabel2";
             foxLabel2.Size = new Size(250, 34);
             foxLabel2.TabIndex = 19;
@@ -310,7 +162,7 @@
             // rdocompany
             // 
             rdocompany.Checked = false;
-            rdocompany.ForeColor = Color.White;
+            rdocompany.ForeColor = Color.Black;
             rdocompany.Location = new Point(287, 153);
             rdocompany.Name = "rdocompany";
             rdocompany.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
@@ -326,7 +178,7 @@
             // rdojobseeker
             // 
             rdojobseeker.Checked = false;
-            rdojobseeker.ForeColor = Color.White;
+            rdojobseeker.ForeColor = Color.Black;
             rdojobseeker.Location = new Point(115, 153);
             rdojobseeker.Name = "rdojobseeker";
             rdojobseeker.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
@@ -339,29 +191,167 @@
             rdojobseeker.Text = "Job Seeker";
             rdojobseeker.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
+            // btnsignin
+            // 
+            btnsignin.BackgroundColor = Color.FromArgb(248, 212, 187);
+            btnsignin.ButtonImage = null;
+            btnsignin.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            btnsignin.ButtonText = "Sign In";
+            btnsignin.ClickBackColor = Color.FromArgb(255, 212, 180);
+            btnsignin.ClickTextColor = Color.Black;
+            btnsignin.CornerRadius = 6;
+            btnsignin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnsignin.Horizontal_Alignment = StringAlignment.Center;
+            btnsignin.HoverBackgroundColor = Color.FromArgb(248, 242, 197);
+            btnsignin.HoverTextColor = Color.Black;
+            btnsignin.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            btnsignin.Location = new Point(75, 489);
+            btnsignin.Name = "btnsignin";
+            btnsignin.Size = new Size(131, 38);
+            btnsignin.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnsignin.TabIndex = 35;
+            btnsignin.TextColor = Color.Black;
+            btnsignin.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnsignin.Vertical_Alignment = StringAlignment.Center;
+            btnsignin.Click += btnsignin_Click;
+            // 
+            // btnsignup
+            // 
+            btnsignup.BackgroundColor = Color.FromArgb(248, 212, 187);
+            btnsignup.ButtonImage = null;
+            btnsignup.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            btnsignup.ButtonText = "Sign Up";
+            btnsignup.ClickBackColor = Color.FromArgb(255, 212, 180);
+            btnsignup.ClickTextColor = Color.Black;
+            btnsignup.CornerRadius = 6;
+            btnsignup.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnsignup.Horizontal_Alignment = StringAlignment.Center;
+            btnsignup.HoverBackgroundColor = Color.FromArgb(248, 242, 197);
+            btnsignup.HoverTextColor = Color.Black;
+            btnsignup.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            btnsignup.Location = new Point(299, 489);
+            btnsignup.Name = "btnsignup";
+            btnsignup.Size = new Size(131, 38);
+            btnsignup.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnsignup.TabIndex = 36;
+            btnsignup.TextColor = Color.Black;
+            btnsignup.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnsignup.Vertical_Alignment = StringAlignment.Center;
+            // 
+            // txtfullname
+            // 
+            txtfullname.AnimateReadOnly = false;
+            txtfullname.AutoCompleteMode = AutoCompleteMode.None;
+            txtfullname.AutoCompleteSource = AutoCompleteSource.None;
+            txtfullname.BackgroundImageLayout = ImageLayout.None;
+            txtfullname.CharacterCasing = CharacterCasing.Normal;
+            txtfullname.Depth = 0;
+            txtfullname.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtfullname.HideSelection = true;
+            txtfullname.Hint = "Enter Fullname";
+            txtfullname.LeadingIcon = null;
+            txtfullname.Location = new Point(60, 273);
+            txtfullname.MaxLength = 32767;
+            txtfullname.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            txtfullname.Name = "txtfullname";
+            txtfullname.PasswordChar = '*';
+            txtfullname.PrefixSuffixText = null;
+            txtfullname.ReadOnly = false;
+            txtfullname.RightToLeft = RightToLeft.No;
+            txtfullname.SelectedText = "";
+            txtfullname.SelectionLength = 0;
+            txtfullname.SelectionStart = 0;
+            txtfullname.ShortcutsEnabled = true;
+            txtfullname.Size = new Size(370, 48);
+            txtfullname.TabIndex = 38;
+            txtfullname.TabStop = false;
+            txtfullname.TextAlign = HorizontalAlignment.Left;
+            txtfullname.TrailingIcon = null;
+            txtfullname.UseSystemPasswordChar = false;
+            // 
+            // txtemail
+            // 
+            txtemail.AnimateReadOnly = false;
+            txtemail.AutoCompleteMode = AutoCompleteMode.None;
+            txtemail.AutoCompleteSource = AutoCompleteSource.None;
+            txtemail.BackgroundImageLayout = ImageLayout.None;
+            txtemail.CharacterCasing = CharacterCasing.Normal;
+            txtemail.Depth = 0;
+            txtemail.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtemail.HideSelection = true;
+            txtemail.Hint = "Enter Email Address";
+            txtemail.LeadingIcon = null;
+            txtemail.Location = new Point(60, 197);
+            txtemail.MaxLength = 32767;
+            txtemail.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            txtemail.Name = "txtemail";
+            txtemail.PasswordChar = '\0';
+            txtemail.PrefixSuffixText = null;
+            txtemail.ReadOnly = false;
+            txtemail.RightToLeft = RightToLeft.No;
+            txtemail.SelectedText = "";
+            txtemail.SelectionLength = 0;
+            txtemail.SelectionStart = 0;
+            txtemail.ShortcutsEnabled = true;
+            txtemail.Size = new Size(370, 48);
+            txtemail.TabIndex = 37;
+            txtemail.TabStop = false;
+            txtemail.TextAlign = HorizontalAlignment.Left;
+            txtemail.TrailingIcon = null;
+            txtemail.UseSystemPasswordChar = false;
+            // 
+            // txtpassword
+            // 
+            txtpassword.AnimateReadOnly = false;
+            txtpassword.AutoCompleteMode = AutoCompleteMode.None;
+            txtpassword.AutoCompleteSource = AutoCompleteSource.None;
+            txtpassword.BackgroundImageLayout = ImageLayout.None;
+            txtpassword.CharacterCasing = CharacterCasing.Normal;
+            txtpassword.Depth = 0;
+            txtpassword.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtpassword.HideSelection = true;
+            txtpassword.Hint = "Enter Password";
+            txtpassword.LeadingIcon = null;
+            txtpassword.Location = new Point(60, 351);
+            txtpassword.MaxLength = 32767;
+            txtpassword.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            txtpassword.Name = "txtpassword";
+            txtpassword.PasswordChar = '*';
+            txtpassword.PrefixSuffixText = null;
+            txtpassword.ReadOnly = false;
+            txtpassword.RightToLeft = RightToLeft.No;
+            txtpassword.SelectedText = "";
+            txtpassword.SelectionLength = 0;
+            txtpassword.SelectionStart = 0;
+            txtpassword.ShortcutsEnabled = true;
+            txtpassword.Size = new Size(370, 48);
+            txtpassword.TabIndex = 38;
+            txtpassword.TabStop = false;
+            txtpassword.TextAlign = HorizontalAlignment.Left;
+            txtpassword.TrailingIcon = null;
+            txtpassword.UseSystemPasswordChar = false;
+            // 
             // FRegister
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(32, 41, 50);
+            BackColor = Color.White;
             ClientSize = new Size(1202, 556);
+            Controls.Add(txtpassword);
+            Controls.Add(txtfullname);
+            Controls.Add(txtemail);
+            Controls.Add(btnsignin);
+            Controls.Add(btnsignup);
             Controls.Add(rdocompany);
             Controls.Add(rdojobseeker);
             Controls.Add(foxLabel2);
             Controls.Add(pictureBox2);
             Controls.Add(panel1);
             Controls.Add(btnagree);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
             Controls.Add(pictureBox1);
             Controls.Add(bigLabel1);
             Controls.Add(lblagree);
-            Controls.Add(btnsignin);
-            Controls.Add(btnsignup);
-            Controls.Add(txtpassword);
-            Controls.Add(txtfullname);
-            Controls.Add(txtemail);
+            ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             MinimumSize = new Size(261, 61);
@@ -376,17 +366,9 @@
         }
 
         #endregion
-        private ReaLTaiizor.Controls.HopeTextBox txtemail;
-        private ReaLTaiizor.Controls.HopeTextBox txtfullname;
-        private ReaLTaiizor.Controls.Button btnsignup;
-        private ReaLTaiizor.Controls.Button btnsignin;
         private ReaLTaiizor.Controls.LabelEdit lblagree;
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
         private PictureBox pictureBox1;
-        private ReaLTaiizor.Controls.HopeTextBox txtpassword;
-        private Label label1;
-        private Label label2;
-        private Label label3;
         private ReaLTaiizor.Controls.MaterialCheckBox btnagree;
         private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
         private Panel panel1;
@@ -394,5 +376,10 @@
         private ReaLTaiizor.Controls.FoxLabel foxLabel2;
         private ReaLTaiizor.Controls.ParrotRadioButton rdocompany;
         private ReaLTaiizor.Controls.ParrotRadioButton rdojobseeker;
+        private ReaLTaiizor.Controls.ParrotButton btnsignin;
+        private ReaLTaiizor.Controls.ParrotButton btnsignup;
+        private ReaLTaiizor.Controls.MaterialTextBoxEdit txtfullname;
+        private ReaLTaiizor.Controls.MaterialTextBoxEdit txtemail;
+        private ReaLTaiizor.Controls.MaterialTextBoxEdit txtpassword;
     }
 }

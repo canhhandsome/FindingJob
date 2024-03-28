@@ -7,11 +7,8 @@ namespace WinFormProject
         public FLogin()
         {
             InitializeComponent();
-        }
-
-        private void FLogin_Load(object sender, EventArgs e)
-        {
-
+            txtemail.KeyDown += new KeyEventHandler(YourForm_KeyDown);
+            txtpassword.KeyDown += new KeyEventHandler(YourForm_KeyDown);
         }
         private void btnsignup_Click(object sender, EventArgs e)
         {
@@ -20,7 +17,6 @@ namespace WinFormProject
             fRegister.Closed += (s, args) => this.Close();
             fRegister.Show();
         }
-
         private void btnforgotpw_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -28,16 +24,6 @@ namespace WinFormProject
             fFPassword.Closed += (s, args) => this.Close();
             fFPassword.Show();
         }
-
-        private void lblremember_Click(object sender, EventArgs e)
-        {
-            if (!swremember.Checked)
-            {
-                swremember.Checked = true;
-            }
-            else swremember.Checked = false;
-        }
-
         private void btnsignin_Click(object sender, EventArgs e)
         {
             string type = (rdocompany.Checked) ? "company" : "jobseeker";
@@ -54,9 +40,14 @@ namespace WinFormProject
             else
             {
                 MessageBox.Show("Fail To Sign In!!!");
-
             }
-
+        }
+        private void YourForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnsignin_Click(sender, e);
+            }
         }
     }
 }

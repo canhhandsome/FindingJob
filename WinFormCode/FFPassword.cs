@@ -28,5 +28,6 @@ namespace WinFormProject
             fLogin.Closed += (s, args) => this.Close();
             fLogin.Show();
         }
+
     }
 }

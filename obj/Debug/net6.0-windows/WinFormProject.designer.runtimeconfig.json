@@ -12,8 +12,13 @@
       }
     ],
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\TIEN TOAN\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\TIEN TOAN\\.nuget\\packages"
+=======
+      "C:\\Users\\Canh\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Canh\\.nuget\\packages"
+>>>>>>> CanhDAO
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

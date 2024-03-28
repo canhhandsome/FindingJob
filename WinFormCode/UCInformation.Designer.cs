@@ -52,17 +52,17 @@
             panel1.Controls.Add(lblForm);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(968, 180);
+            panel1.Size = new Size(847, 135);
             panel1.TabIndex = 7;
             panel1.Click += panel1_Click;
             // 
             // ptbCompanyPicture
             // 
-            ptbCompanyPicture.Location = new Point(17, 3);
+            ptbCompanyPicture.Location = new Point(15, 2);
+            ptbCompanyPicture.Margin = new Padding(3, 2, 3, 2);
             ptbCompanyPicture.Name = "ptbCompanyPicture";
-            ptbCompanyPicture.Size = new Size(150, 159);
+            ptbCompanyPicture.Size = new Size(131, 119);
             ptbCompanyPicture.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbCompanyPicture.TabIndex = 1;
             ptbCompanyPicture.TabStop = false;
@@ -71,9 +71,9 @@
             // 
             lblDateT.AutoSize = true;
             lblDateT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDateT.Location = new Point(264, 67);
+            lblDateT.Location = new Point(231, 50);
             lblDateT.Name = "lblDateT";
-            lblDateT.Size = new Size(69, 30);
+            lblDateT.Size = new Size(58, 25);
             lblDateT.TabIndex = 0;
             lblDateT.Text = "Date: ";
             // 
@@ -81,9 +81,9 @@
             // 
             lblDate.AutoSize = true;
             lblDate.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDate.Location = new Point(173, 67);
+            lblDate.Location = new Point(151, 50);
             lblDate.Name = "lblDate";
-            lblDate.Size = new Size(69, 30);
+            lblDate.Size = new Size(58, 25);
             lblDate.TabIndex = 0;
             lblDate.Text = "Date: ";
             // 
@@ -91,9 +91,9 @@
             // 
             lblNameT.AutoSize = true;
             lblNameT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblNameT.Location = new Point(264, 117);
+            lblNameT.Location = new Point(231, 88);
             lblNameT.Name = "lblNameT";
-            lblNameT.Size = new Size(82, 30);
+            lblNameT.Size = new Size(68, 25);
             lblNameT.TabIndex = 0;
             lblNameT.Text = "Name: ";
             // 
@@ -101,9 +101,9 @@
             // 
             lblContent.AutoSize = true;
             lblContent.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblContent.Location = new Point(173, 117);
+            lblContent.Location = new Point(151, 88);
             lblContent.Name = "lblContent";
-            lblContent.Size = new Size(82, 30);
+            lblContent.Size = new Size(68, 25);
             lblContent.TabIndex = 0;
             lblContent.Text = "Name: ";
             // 
@@ -111,9 +111,9 @@
             // 
             lblFromT.AutoSize = true;
             lblFromT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFromT.Location = new Point(264, 17);
+            lblFromT.Location = new Point(231, 13);
             lblFromT.Name = "lblFromT";
-            lblFromT.Size = new Size(69, 30);
+            lblFromT.Size = new Size(58, 25);
             lblFromT.TabIndex = 0;
             lblFromT.Text = "From:";
             // 
@@ -121,19 +121,20 @@
             // 
             lblForm.AutoSize = true;
             lblForm.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblForm.Location = new Point(173, 17);
+            lblForm.Location = new Point(151, 13);
             lblForm.Name = "lblForm";
-            lblForm.Size = new Size(69, 30);
+            lblForm.Size = new Size(58, 25);
             lblForm.TabIndex = 0;
             lblForm.Text = "From:";
             // 
             // UCInformation
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "UCInformation";
-            Size = new Size(968, 180);
+            Size = new Size(847, 135);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).EndInit();
