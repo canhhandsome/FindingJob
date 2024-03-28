@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[3.8.0.2, )"
             },
+            "Syncfusion.Pdf.WinForms": {
+              "target": "Package",
+              "version": "[25.1.37, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.6, )"

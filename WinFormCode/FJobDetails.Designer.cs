@@ -28,253 +28,310 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblCompany = new Label();
-            lblCompanyT = new Label();
-            lblName = new Label();
-            lblNameT = new Label();
-            lblPosition = new Label();
-            lblPositionT = new Label();
-            lblSalary = new Label();
-            lblSalaryT = new Label();
-            lblDate = new Label();
-            lblDateT = new Label();
-            tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
-            rtxtRequirement = new RichTextBox();
-            tabPage2 = new TabPage();
-            rtxtDescription = new RichTextBox();
-            btnApply = new ReaLTaiizor.Controls.DreamButton();
-            btnBack = new ReaLTaiizor.Controls.DreamButton();
-            tabControl1.SuspendLayout();
-            tabPage1.SuspendLayout();
-            tabPage2.SuspendLayout();
-            SuspendLayout();
+            this.lblCompany = new System.Windows.Forms.Label();
+            this.lblCompanyT = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblNameT = new System.Windows.Forms.Label();
+            this.lblPosition = new System.Windows.Forms.Label();
+            this.lblPositionT = new System.Windows.Forms.Label();
+            this.lblSalary = new System.Windows.Forms.Label();
+            this.lblSalaryT = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblDateT = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.rtxtRequirement = new System.Windows.Forms.RichTextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.rtxtDescription = new System.Windows.Forms.RichTextBox();
+            this.btnApply = new ReaLTaiizor.Controls.CyberButton();
+            this.btnBack = new ReaLTaiizor.Controls.CyberButton();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.SuspendLayout();
             // 
             // lblCompany
             // 
-            lblCompany.AutoSize = true;
-            lblCompany.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCompany.ForeColor = SystemColors.ControlText;
-            lblCompany.Location = new Point(10, 15);
-            lblCompany.Name = "lblCompany";
-            lblCompany.Size = new Size(80, 21);
-            lblCompany.TabIndex = 13;
-            lblCompany.Text = "Company:";
+            this.lblCompany.AutoSize = true;
+            this.lblCompany.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCompany.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblCompany.Location = new System.Drawing.Point(11, 20);
+            this.lblCompany.Name = "lblCompany";
+            this.lblCompany.Size = new System.Drawing.Size(100, 28);
+            this.lblCompany.TabIndex = 13;
+            this.lblCompany.Text = "Company:";
             // 
             // lblCompanyT
             // 
-            lblCompanyT.AutoSize = true;
-            lblCompanyT.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCompanyT.ForeColor = SystemColors.ControlText;
-            lblCompanyT.Location = new Point(103, 15);
-            lblCompanyT.Name = "lblCompanyT";
-            lblCompanyT.Size = new Size(80, 21);
-            lblCompanyT.TabIndex = 14;
-            lblCompanyT.Text = "Company:";
+            this.lblCompanyT.AutoSize = true;
+            this.lblCompanyT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCompanyT.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblCompanyT.Location = new System.Drawing.Point(118, 20);
+            this.lblCompanyT.Name = "lblCompanyT";
+            this.lblCompanyT.Size = new System.Drawing.Size(100, 28);
+            this.lblCompanyT.TabIndex = 14;
+            this.lblCompanyT.Text = "Company:";
             // 
             // lblName
             // 
-            lblName.AutoSize = true;
-            lblName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblName.ForeColor = SystemColors.ControlText;
-            lblName.Location = new Point(10, 45);
-            lblName.Name = "lblName";
-            lblName.Size = new Size(83, 21);
-            lblName.TabIndex = 15;
-            lblName.Text = "Job Name:";
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblName.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblName.Location = new System.Drawing.Point(11, 60);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(104, 28);
+            this.lblName.TabIndex = 15;
+            this.lblName.Text = "Job Name:";
             // 
             // lblNameT
             // 
-            lblNameT.AutoSize = true;
-            lblNameT.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblNameT.ForeColor = SystemColors.ControlText;
-            lblNameT.Location = new Point(107, 45);
-            lblNameT.Name = "lblNameT";
-            lblNameT.Size = new Size(83, 21);
-            lblNameT.TabIndex = 16;
-            lblNameT.Text = "Job Name:";
+            this.lblNameT.AutoSize = true;
+            this.lblNameT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNameT.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblNameT.Location = new System.Drawing.Point(122, 60);
+            this.lblNameT.Name = "lblNameT";
+            this.lblNameT.Size = new System.Drawing.Size(104, 28);
+            this.lblNameT.TabIndex = 16;
+            this.lblNameT.Text = "Job Name:";
             // 
             // lblPosition
             // 
-            lblPosition.AutoSize = true;
-            lblPosition.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPosition.ForeColor = SystemColors.ControlText;
-            lblPosition.Location = new Point(10, 75);
-            lblPosition.Name = "lblPosition";
-            lblPosition.Size = new Size(68, 21);
-            lblPosition.TabIndex = 17;
-            lblPosition.Text = "Position:";
+            this.lblPosition.AutoSize = true;
+            this.lblPosition.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPosition.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblPosition.Location = new System.Drawing.Point(11, 100);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(86, 28);
+            this.lblPosition.TabIndex = 17;
+            this.lblPosition.Text = "Position:";
             // 
             // lblPositionT
             // 
-            lblPositionT.AutoSize = true;
-            lblPositionT.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPositionT.ForeColor = SystemColors.ControlText;
-            lblPositionT.Location = new Point(91, 75);
-            lblPositionT.Name = "lblPositionT";
-            lblPositionT.Size = new Size(68, 21);
-            lblPositionT.TabIndex = 18;
-            lblPositionT.Text = "Position:";
+            this.lblPositionT.AutoSize = true;
+            this.lblPositionT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPositionT.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblPositionT.Location = new System.Drawing.Point(104, 100);
+            this.lblPositionT.Name = "lblPositionT";
+            this.lblPositionT.Size = new System.Drawing.Size(86, 28);
+            this.lblPositionT.TabIndex = 18;
+            this.lblPositionT.Text = "Position:";
             // 
             // lblSalary
             // 
-            lblSalary.AutoSize = true;
-            lblSalary.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSalary.ForeColor = SystemColors.ControlText;
-            lblSalary.Location = new Point(10, 105);
-            lblSalary.Name = "lblSalary";
-            lblSalary.Size = new Size(56, 21);
-            lblSalary.TabIndex = 19;
-            lblSalary.Text = "Salary:";
+            this.lblSalary.AutoSize = true;
+            this.lblSalary.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSalary.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblSalary.Location = new System.Drawing.Point(11, 140);
+            this.lblSalary.Name = "lblSalary";
+            this.lblSalary.Size = new System.Drawing.Size(69, 28);
+            this.lblSalary.TabIndex = 19;
+            this.lblSalary.Text = "Salary:";
             // 
             // lblSalaryT
             // 
-            lblSalaryT.AutoSize = true;
-            lblSalaryT.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSalaryT.ForeColor = SystemColors.ControlText;
-            lblSalaryT.Location = new Point(76, 105);
-            lblSalaryT.Name = "lblSalaryT";
-            lblSalaryT.Size = new Size(56, 21);
-            lblSalaryT.TabIndex = 20;
-            lblSalaryT.Text = "Salary:";
+            this.lblSalaryT.AutoSize = true;
+            this.lblSalaryT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSalaryT.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblSalaryT.Location = new System.Drawing.Point(87, 140);
+            this.lblSalaryT.Name = "lblSalaryT";
+            this.lblSalaryT.Size = new System.Drawing.Size(69, 28);
+            this.lblSalaryT.TabIndex = 20;
+            this.lblSalaryT.Text = "Salary:";
             // 
             // lblDate
             // 
-            lblDate.AutoSize = true;
-            lblDate.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDate.ForeColor = SystemColors.ControlText;
-            lblDate.Location = new Point(10, 135);
-            lblDate.Name = "lblDate";
-            lblDate.Size = new Size(100, 21);
-            lblDate.TabIndex = 21;
-            lblDate.Text = "Date Publish:";
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDate.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblDate.Location = new System.Drawing.Point(11, 180);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(125, 28);
+            this.lblDate.TabIndex = 21;
+            this.lblDate.Text = "Date Publish:";
             // 
             // lblDateT
             // 
-            lblDateT.AutoSize = true;
-            lblDateT.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDateT.ForeColor = SystemColors.ControlText;
-            lblDateT.Location = new Point(125, 135);
-            lblDateT.Name = "lblDateT";
-            lblDateT.Size = new Size(100, 21);
-            lblDateT.TabIndex = 22;
-            lblDateT.Text = "Date Publish:";
+            this.lblDateT.AutoSize = true;
+            this.lblDateT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDateT.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblDateT.Location = new System.Drawing.Point(143, 180);
+            this.lblDateT.Name = "lblDateT";
+            this.lblDateT.Size = new System.Drawing.Size(125, 28);
+            this.lblDateT.TabIndex = 22;
+            this.lblDateT.Text = "Date Publish:";
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            tabControl1.Location = new Point(10, 174);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(488, 231);
-            tabControl1.TabIndex = 28;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tabControl1.Location = new System.Drawing.Point(11, 232);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(558, 308);
+            this.tabControl1.TabIndex = 28;
             // 
             // tabPage1
             // 
-            tabPage1.Controls.Add(rtxtRequirement);
-            tabPage1.Location = new Point(4, 29);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(480, 198);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Requirement";
-            tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Controls.Add(this.rtxtRequirement);
+            this.tabPage1.Location = new System.Drawing.Point(4, 34);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage1.Size = new System.Drawing.Size(550, 270);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Requirement";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // rtxtRequirement
             // 
-            rtxtRequirement.Dock = DockStyle.Fill;
-            rtxtRequirement.Enabled = false;
-            rtxtRequirement.Location = new Point(3, 3);
-            rtxtRequirement.Name = "rtxtRequirement";
-            rtxtRequirement.Size = new Size(474, 192);
-            rtxtRequirement.TabIndex = 0;
-            rtxtRequirement.Text = "";
+            this.rtxtRequirement.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtxtRequirement.Enabled = false;
+            this.rtxtRequirement.Location = new System.Drawing.Point(3, 4);
+            this.rtxtRequirement.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rtxtRequirement.Name = "rtxtRequirement";
+            this.rtxtRequirement.Size = new System.Drawing.Size(544, 262);
+            this.rtxtRequirement.TabIndex = 0;
+            this.rtxtRequirement.Text = "";
             // 
             // tabPage2
             // 
-            tabPage2.Controls.Add(rtxtDescription);
-            tabPage2.Location = new Point(4, 29);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(480, 198);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Description";
-            tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Controls.Add(this.rtxtDescription);
+            this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage2.Size = new System.Drawing.Size(550, 270);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Description";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // rtxtDescription
             // 
-            rtxtDescription.Dock = DockStyle.Fill;
-            rtxtDescription.Enabled = false;
-            rtxtDescription.Location = new Point(3, 3);
-            rtxtDescription.Name = "rtxtDescription";
-            rtxtDescription.Size = new Size(474, 192);
-            rtxtDescription.TabIndex = 0;
-            rtxtDescription.Text = "";
+            this.rtxtDescription.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtxtDescription.Enabled = false;
+            this.rtxtDescription.Location = new System.Drawing.Point(3, 4);
+            this.rtxtDescription.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rtxtDescription.Name = "rtxtDescription";
+            this.rtxtDescription.Size = new System.Drawing.Size(544, 262);
+            this.rtxtDescription.TabIndex = 0;
+            this.rtxtDescription.Text = "";
             // 
             // btnApply
             // 
-            btnApply.ColorA = Color.FromArgb(31, 31, 31);
-            btnApply.ColorB = Color.FromArgb(41, 41, 41);
-            btnApply.ColorC = Color.FromArgb(51, 51, 51);
-            btnApply.ColorD = Color.FromArgb(0, 0, 0, 0);
-            btnApply.ColorE = Color.FromArgb(25, 255, 255, 255);
-            btnApply.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnApply.ForeColor = Color.FromArgb(40, 218, 255);
-            btnApply.Location = new Point(252, 420);
-            btnApply.Name = "btnApply";
-            btnApply.Size = new Size(120, 40);
-            btnApply.TabIndex = 30;
-            btnApply.Text = "Apply";
-            btnApply.UseVisualStyleBackColor = true;
-            btnApply.Click += btnApply_Click;
+            this.btnApply.Alpha = 20;
+            this.btnApply.BackColor = System.Drawing.Color.Transparent;
+            this.btnApply.Background = true;
+            this.btnApply.Background_WidthPen = 4F;
+            this.btnApply.BackgroundPen = true;
+            this.btnApply.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
+            this.btnApply.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnApply.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnApply.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
+            this.btnApply.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnApply.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnApply.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnApply.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnApply.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.btnApply.Effect_1 = true;
+            this.btnApply.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnApply.Effect_1_Transparency = 25;
+            this.btnApply.Effect_2 = true;
+            this.btnApply.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnApply.Effect_2_Transparency = 20;
+            this.btnApply.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnApply.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
+            this.btnApply.Lighting = true;
+            this.btnApply.LinearGradient_Background = false;
+            this.btnApply.LinearGradientPen = false;
+            this.btnApply.Location = new System.Drawing.Point(282, 560);
+            this.btnApply.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnApply.Name = "btnApply";
+            this.btnApply.PenWidth = 15;
+            this.btnApply.Rounding = true;
+            this.btnApply.RoundingInt = 20;
+            this.btnApply.Size = new System.Drawing.Size(137, 53);
+            this.btnApply.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btnApply.TabIndex = 43;
+            this.btnApply.Tag = "Decline";
+            this.btnApply.TextButton = "Apply";
+            this.btnApply.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btnApply.Timer_Effect_1 = 5;
+            this.btnApply.Timer_RGB = 300;
             // 
             // btnBack
             // 
-            btnBack.ColorA = Color.FromArgb(31, 31, 31);
-            btnBack.ColorB = Color.FromArgb(41, 41, 41);
-            btnBack.ColorC = Color.FromArgb(51, 51, 51);
-            btnBack.ColorD = Color.FromArgb(0, 0, 0, 0);
-            btnBack.ColorE = Color.FromArgb(25, 255, 255, 255);
-            btnBack.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnBack.ForeColor = Color.FromArgb(40, 218, 255);
-            btnBack.Location = new Point(378, 420);
-            btnBack.Name = "btnBack";
-            btnBack.Size = new Size(120, 40);
-            btnBack.TabIndex = 30;
-            btnBack.Text = "Back";
-            btnBack.UseVisualStyleBackColor = true;
-            btnBack.Click += btnBack_Click;
+            this.btnBack.Alpha = 20;
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.Background = true;
+            this.btnBack.Background_WidthPen = 4F;
+            this.btnBack.BackgroundPen = true;
+            this.btnBack.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
+            this.btnBack.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnBack.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnBack.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
+            this.btnBack.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnBack.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnBack.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.btnBack.Effect_1 = true;
+            this.btnBack.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnBack.Effect_1_Transparency = 25;
+            this.btnBack.Effect_2 = true;
+            this.btnBack.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnBack.Effect_2_Transparency = 20;
+            this.btnBack.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
+            this.btnBack.Lighting = true;
+            this.btnBack.LinearGradient_Background = false;
+            this.btnBack.LinearGradientPen = false;
+            this.btnBack.Location = new System.Drawing.Point(425, 560);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.PenWidth = 15;
+            this.btnBack.Rounding = true;
+            this.btnBack.RoundingInt = 20;
+            this.btnBack.Size = new System.Drawing.Size(137, 53);
+            this.btnBack.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btnBack.TabIndex = 44;
+            this.btnBack.Tag = "Decline";
+            this.btnBack.TextButton = "Back";
+            this.btnBack.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btnBack.Timer_Effect_1 = 5;
+            this.btnBack.Timer_RGB = 300;
             // 
             // FJobDetails
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.MistyRose;
-            ClientSize = new Size(510, 472);
-            Controls.Add(btnBack);
-            Controls.Add(btnApply);
-            Controls.Add(tabControl1);
-            Controls.Add(lblDateT);
-            Controls.Add(lblDate);
-            Controls.Add(lblSalaryT);
-            Controls.Add(lblSalary);
-            Controls.Add(lblPositionT);
-            Controls.Add(lblPosition);
-            Controls.Add(lblNameT);
-            Controls.Add(lblName);
-            Controls.Add(lblCompanyT);
-            Controls.Add(lblCompany);
-            FormBorderStyle = FormBorderStyle.SizableToolWindow;
-            Name = "FJobDetails";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "FJobDetails";
-            tabControl1.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
-            tabPage2.ResumeLayout(false);
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MistyRose;
+            this.ClientSize = new System.Drawing.Size(583, 629);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnApply);
+            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.lblDateT);
+            this.Controls.Add(this.lblDate);
+            this.Controls.Add(this.lblSalaryT);
+            this.Controls.Add(this.lblSalary);
+            this.Controls.Add(this.lblPositionT);
+            this.Controls.Add(this.lblPosition);
+            this.Controls.Add(this.lblNameT);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.lblCompanyT);
+            this.Controls.Add(this.lblCompany);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "FJobDetails";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FJobDetails";
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -294,7 +351,7 @@
         private RichTextBox rtxtRequirement;
         private TabPage tabPage2;
         private RichTextBox rtxtDescription;
-        private ReaLTaiizor.Controls.DreamButton btnApply;
-        private ReaLTaiizor.Controls.DreamButton btnBack;
+        private ReaLTaiizor.Controls.CyberButton btnApply;
+        private ReaLTaiizor.Controls.CyberButton btnBack;
     }
 }
