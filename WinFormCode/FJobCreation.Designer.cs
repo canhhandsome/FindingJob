@@ -28,284 +28,384 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblJobName = new Label();
-            lblExperience = new Label();
-            lblSalary = new Label();
-            txtJobName = new ReaLTaiizor.Controls.HopeTextBox();
-            txtExperience = new ReaLTaiizor.Controls.HopeTextBox();
-            txtSalary = new ReaLTaiizor.Controls.HopeTextBox();
-            lblTitle = new Label();
-            btnPostJob = new Button();
-            btnCancel = new Button();
-            pnBody = new Panel();
-            tabpage = new TabControl();
-            tbprequirement = new TabPage();
-            rtxtjobrequirement = new ReaLTaiizor.Controls.MaterialRichTextBox();
-            tbpdescription = new TabPage();
-            rtxtdescription = new ReaLTaiizor.Controls.MaterialRichTextBox();
-            pnBody.SuspendLayout();
-            tabpage.SuspendLayout();
-            tbprequirement.SuspendLayout();
-            tbpdescription.SuspendLayout();
-            SuspendLayout();
+            this.lblJobName = new System.Windows.Forms.Label();
+            this.lblExperience = new System.Windows.Forms.Label();
+            this.lblSalary = new System.Windows.Forms.Label();
+            this.txtJobName = new ReaLTaiizor.Controls.HopeTextBox();
+            this.txtSalary = new ReaLTaiizor.Controls.HopeTextBox();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.pnBody = new System.Windows.Forms.Panel();
+            this.cbbExperience = new System.Windows.Forms.ComboBox();
+            this.btnCancel = new ReaLTaiizor.Controls.CyberButton();
+            this.btnPostJob = new ReaLTaiizor.Controls.CyberButton();
+            this.tabpage = new System.Windows.Forms.TabControl();
+            this.tbprequirement = new System.Windows.Forms.TabPage();
+            this.rtxtjobrequirement = new System.Windows.Forms.RichTextBox();
+            this.tbpdescription = new System.Windows.Forms.TabPage();
+            this.rtxtdescription = new System.Windows.Forms.RichTextBox();
+            this.tbpbenefit = new System.Windows.Forms.TabPage();
+            this.rtxtBenefit = new System.Windows.Forms.RichTextBox();
+            this.dtpDateEnd = new System.Windows.Forms.DateTimePicker();
+            this.lblDateEnd = new System.Windows.Forms.Label();
+            this.pnBody.SuspendLayout();
+            this.tabpage.SuspendLayout();
+            this.tbprequirement.SuspendLayout();
+            this.tbpdescription.SuspendLayout();
+            this.tbpbenefit.SuspendLayout();
+            this.SuspendLayout();
             // 
             // lblJobName
             // 
-            lblJobName.AutoSize = true;
-            lblJobName.BackColor = Color.LightGray;
-            lblJobName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblJobName.ForeColor = SystemColors.ControlText;
-            lblJobName.Location = new Point(12, 92);
-            lblJobName.Name = "lblJobName";
-            lblJobName.Size = new Size(113, 28);
-            lblJobName.TabIndex = 0;
-            lblJobName.Text = "Job's Name";
+            this.lblJobName.AutoSize = true;
+            this.lblJobName.BackColor = System.Drawing.Color.White;
+            this.lblJobName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblJobName.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblJobName.Location = new System.Drawing.Point(12, 92);
+            this.lblJobName.Name = "lblJobName";
+            this.lblJobName.Size = new System.Drawing.Size(113, 28);
+            this.lblJobName.TabIndex = 0;
+            this.lblJobName.Text = "Job\'s Name";
             // 
             // lblExperience
             // 
-            lblExperience.AutoSize = true;
-            lblExperience.BackColor = Color.LightGray;
-            lblExperience.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblExperience.ForeColor = SystemColors.ControlText;
-            lblExperience.Location = new Point(12, 154);
-            lblExperience.Name = "lblExperience";
-            lblExperience.Size = new Size(181, 28);
-            lblExperience.TabIndex = 0;
-            lblExperience.Text = "Experience to Work";
+            this.lblExperience.AutoSize = true;
+            this.lblExperience.BackColor = System.Drawing.Color.White;
+            this.lblExperience.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblExperience.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblExperience.Location = new System.Drawing.Point(12, 138);
+            this.lblExperience.Name = "lblExperience";
+            this.lblExperience.Size = new System.Drawing.Size(181, 28);
+            this.lblExperience.TabIndex = 0;
+            this.lblExperience.Text = "Experience to Work";
             // 
             // lblSalary
             // 
-            lblSalary.AutoSize = true;
-            lblSalary.BackColor = Color.LightGray;
-            lblSalary.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSalary.ForeColor = SystemColors.ControlText;
-            lblSalary.Location = new Point(12, 216);
-            lblSalary.Name = "lblSalary";
-            lblSalary.Size = new Size(65, 28);
-            lblSalary.TabIndex = 0;
-            lblSalary.Text = "Salary";
+            this.lblSalary.AutoSize = true;
+            this.lblSalary.BackColor = System.Drawing.Color.White;
+            this.lblSalary.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSalary.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblSalary.Location = new System.Drawing.Point(15, 192);
+            this.lblSalary.Name = "lblSalary";
+            this.lblSalary.Size = new System.Drawing.Size(65, 28);
+            this.lblSalary.TabIndex = 0;
+            this.lblSalary.Text = "Salary";
             // 
             // txtJobName
             // 
-            txtJobName.BackColor = Color.White;
-            txtJobName.BaseColor = Color.FromArgb(44, 55, 66);
-            txtJobName.BorderColorA = Color.FromArgb(64, 158, 255);
-            txtJobName.BorderColorB = Color.FromArgb(220, 223, 230);
-            txtJobName.Cursor = Cursors.IBeam;
-            txtJobName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtJobName.ForeColor = Color.FromArgb(48, 49, 51);
-            txtJobName.Hint = "Enter job's name";
-            txtJobName.Location = new Point(312, 77);
-            txtJobName.MaxLength = 32767;
-            txtJobName.Multiline = false;
-            txtJobName.Name = "txtJobName";
-            txtJobName.PasswordChar = '\0';
-            txtJobName.ScrollBars = ScrollBars.None;
-            txtJobName.SelectedText = "";
-            txtJobName.SelectionLength = 0;
-            txtJobName.SelectionStart = 0;
-            txtJobName.Size = new Size(445, 43);
-            txtJobName.TabIndex = 11;
-            txtJobName.TabStop = false;
-            txtJobName.UseSystemPasswordChar = false;
-            // 
-            // txtExperience
-            // 
-            txtExperience.BackColor = Color.White;
-            txtExperience.BaseColor = Color.FromArgb(44, 55, 66);
-            txtExperience.BorderColorA = Color.FromArgb(64, 158, 255);
-            txtExperience.BorderColorB = Color.FromArgb(220, 223, 230);
-            txtExperience.Cursor = Cursors.IBeam;
-            txtExperience.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtExperience.ForeColor = Color.FromArgb(48, 49, 51);
-            txtExperience.Hint = "Enter Experience";
-            txtExperience.Location = new Point(312, 139);
-            txtExperience.MaxLength = 32767;
-            txtExperience.Multiline = false;
-            txtExperience.Name = "txtExperience";
-            txtExperience.PasswordChar = '\0';
-            txtExperience.ScrollBars = ScrollBars.None;
-            txtExperience.SelectedText = "";
-            txtExperience.SelectionLength = 0;
-            txtExperience.SelectionStart = 0;
-            txtExperience.Size = new Size(445, 43);
-            txtExperience.TabIndex = 12;
-            txtExperience.TabStop = false;
-            txtExperience.UseSystemPasswordChar = false;
+            this.txtJobName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
+            this.txtJobName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
+            this.txtJobName.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.txtJobName.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.txtJobName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtJobName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtJobName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.txtJobName.Hint = "Enter job\'s name";
+            this.txtJobName.Location = new System.Drawing.Point(312, 77);
+            this.txtJobName.MaxLength = 32767;
+            this.txtJobName.Multiline = false;
+            this.txtJobName.Name = "txtJobName";
+            this.txtJobName.PasswordChar = '\0';
+            this.txtJobName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtJobName.SelectedText = "";
+            this.txtJobName.SelectionLength = 0;
+            this.txtJobName.SelectionStart = 0;
+            this.txtJobName.Size = new System.Drawing.Size(445, 43);
+            this.txtJobName.TabIndex = 11;
+            this.txtJobName.TabStop = false;
+            this.txtJobName.UseSystemPasswordChar = false;
             // 
             // txtSalary
             // 
-            txtSalary.BackColor = Color.White;
-            txtSalary.BaseColor = Color.FromArgb(44, 55, 66);
-            txtSalary.BorderColorA = Color.FromArgb(64, 158, 255);
-            txtSalary.BorderColorB = Color.FromArgb(220, 223, 230);
-            txtSalary.Cursor = Cursors.IBeam;
-            txtSalary.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtSalary.ForeColor = Color.FromArgb(48, 49, 51);
-            txtSalary.Hint = "Enter Salary";
-            txtSalary.Location = new Point(312, 201);
-            txtSalary.MaxLength = 32767;
-            txtSalary.Multiline = false;
-            txtSalary.Name = "txtSalary";
-            txtSalary.PasswordChar = '\0';
-            txtSalary.ScrollBars = ScrollBars.None;
-            txtSalary.SelectedText = "";
-            txtSalary.SelectionLength = 0;
-            txtSalary.SelectionStart = 0;
-            txtSalary.Size = new Size(445, 43);
-            txtSalary.TabIndex = 13;
-            txtSalary.TabStop = false;
-            txtSalary.UseSystemPasswordChar = false;
+            this.txtSalary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
+            this.txtSalary.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
+            this.txtSalary.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.txtSalary.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.txtSalary.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSalary.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtSalary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.txtSalary.Hint = "Enter Salary";
+            this.txtSalary.Location = new System.Drawing.Point(312, 185);
+            this.txtSalary.MaxLength = 32767;
+            this.txtSalary.Multiline = false;
+            this.txtSalary.Name = "txtSalary";
+            this.txtSalary.PasswordChar = '\0';
+            this.txtSalary.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtSalary.SelectedText = "";
+            this.txtSalary.SelectionLength = 0;
+            this.txtSalary.SelectionStart = 0;
+            this.txtSalary.Size = new System.Drawing.Size(445, 43);
+            this.txtSalary.TabIndex = 13;
+            this.txtSalary.TabStop = false;
+            this.txtSalary.UseSystemPasswordChar = false;
             // 
             // lblTitle
             // 
-            lblTitle.AutoSize = true;
-            lblTitle.BackColor = Color.LightGray;
-            lblTitle.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTitle.ForeColor = SystemColors.ControlText;
-            lblTitle.Location = new Point(430, 25);
-            lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(214, 35);
-            lblTitle.TabIndex = 14;
-            lblTitle.Text = "Adding a new Job";
-            // 
-            // btnPostJob
-            // 
-            btnPostJob.BackColor = Color.Silver;
-            btnPostJob.FlatStyle = FlatStyle.System;
-            btnPostJob.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnPostJob.Location = new Point(692, 527);
-            btnPostJob.Margin = new Padding(3, 4, 3, 4);
-            btnPostJob.Name = "btnPostJob";
-            btnPostJob.Size = new Size(169, 51);
-            btnPostJob.TabIndex = 16;
-            btnPostJob.Text = "Post Job";
-            btnPostJob.UseVisualStyleBackColor = false;
-            btnPostJob.Click += btnPostJob_Click;
-            // 
-            // btnCancel
-            // 
-            btnCancel.BackColor = Color.Silver;
-            btnCancel.FlatStyle = FlatStyle.System;
-            btnCancel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCancel.Location = new Point(867, 527);
-            btnCancel.Margin = new Padding(3, 4, 3, 4);
-            btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(169, 51);
-            btnCancel.TabIndex = 16;
-            btnCancel.Text = "Cancel";
-            btnCancel.UseVisualStyleBackColor = false;
-            btnCancel.Click += btnCancel_Click;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.White;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblTitle.Location = new System.Drawing.Point(430, 25);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(214, 35);
+            this.lblTitle.TabIndex = 14;
+            this.lblTitle.Text = "Adding a new Job";
             // 
             // pnBody
             // 
-            pnBody.BackColor = Color.LightGray;
-            pnBody.Controls.Add(tabpage);
-            pnBody.Controls.Add(btnCancel);
-            pnBody.Controls.Add(btnPostJob);
-            pnBody.Controls.Add(lblJobName);
-            pnBody.Controls.Add(txtJobName);
-            pnBody.Controls.Add(lblExperience);
-            pnBody.Controls.Add(lblSalary);
-            pnBody.Controls.Add(txtSalary);
-            pnBody.Controls.Add(txtExperience);
-            pnBody.Dock = DockStyle.Fill;
-            pnBody.Location = new Point(0, 0);
-            pnBody.Margin = new Padding(3, 4, 3, 4);
-            pnBody.Name = "pnBody";
-            pnBody.Size = new Size(1048, 600);
-            pnBody.TabIndex = 17;
+            this.pnBody.BackColor = System.Drawing.Color.White;
+            this.pnBody.Controls.Add(this.lblDateEnd);
+            this.pnBody.Controls.Add(this.dtpDateEnd);
+            this.pnBody.Controls.Add(this.cbbExperience);
+            this.pnBody.Controls.Add(this.btnCancel);
+            this.pnBody.Controls.Add(this.btnPostJob);
+            this.pnBody.Controls.Add(this.tabpage);
+            this.pnBody.Controls.Add(this.lblJobName);
+            this.pnBody.Controls.Add(this.txtJobName);
+            this.pnBody.Controls.Add(this.lblExperience);
+            this.pnBody.Controls.Add(this.lblSalary);
+            this.pnBody.Controls.Add(this.txtSalary);
+            this.pnBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnBody.Location = new System.Drawing.Point(0, 0);
+            this.pnBody.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnBody.Name = "pnBody";
+            this.pnBody.Size = new System.Drawing.Size(1048, 600);
+            this.pnBody.TabIndex = 17;
+            this.pnBody.Click += new System.EventHandler(this.btnPostJob_Click);
+            // 
+            // cbbExperience
+            // 
+            this.cbbExperience.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
+            this.cbbExperience.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbExperience.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbbExperience.FormattingEnabled = true;
+            this.cbbExperience.Items.AddRange(new object[] {
+            "Intern",
+            "Fresher",
+            "Junior",
+            "Middle",
+            "Senior",
+            "Expert"});
+            this.cbbExperience.Location = new System.Drawing.Point(312, 135);
+            this.cbbExperience.Name = "cbbExperience";
+            this.cbbExperience.Size = new System.Drawing.Size(445, 36);
+            this.cbbExperience.TabIndex = 31;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Alpha = 20;
+            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancel.Background = true;
+            this.btnCancel.Background_WidthPen = 4F;
+            this.btnCancel.BackgroundPen = true;
+            this.btnCancel.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
+            this.btnCancel.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCancel.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCancel.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
+            this.btnCancel.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCancel.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCancel.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.btnCancel.Effect_1 = true;
+            this.btnCancel.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCancel.Effect_1_Transparency = 25;
+            this.btnCancel.Effect_2 = true;
+            this.btnCancel.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCancel.Effect_2_Transparency = 20;
+            this.btnCancel.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
+            this.btnCancel.Lighting = true;
+            this.btnCancel.LinearGradient_Background = false;
+            this.btnCancel.LinearGradientPen = false;
+            this.btnCancel.Location = new System.Drawing.Point(877, 527);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.PenWidth = 15;
+            this.btnCancel.Rounding = true;
+            this.btnCancel.RoundingInt = 20;
+            this.btnCancel.Size = new System.Drawing.Size(150, 56);
+            this.btnCancel.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btnCancel.TabIndex = 28;
+            this.btnCancel.Tag = "Decline";
+            this.btnCancel.TextButton = "Cancel";
+            this.btnCancel.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btnCancel.Timer_Effect_1 = 5;
+            this.btnCancel.Timer_RGB = 300;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnPostJob
+            // 
+            this.btnPostJob.Alpha = 20;
+            this.btnPostJob.BackColor = System.Drawing.Color.Transparent;
+            this.btnPostJob.Background = true;
+            this.btnPostJob.Background_WidthPen = 4F;
+            this.btnPostJob.BackgroundPen = true;
+            this.btnPostJob.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
+            this.btnPostJob.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnPostJob.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnPostJob.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
+            this.btnPostJob.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnPostJob.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnPostJob.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnPostJob.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPostJob.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.btnPostJob.Effect_1 = true;
+            this.btnPostJob.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnPostJob.Effect_1_Transparency = 25;
+            this.btnPostJob.Effect_2 = true;
+            this.btnPostJob.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnPostJob.Effect_2_Transparency = 20;
+            this.btnPostJob.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPostJob.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
+            this.btnPostJob.Lighting = true;
+            this.btnPostJob.LinearGradient_Background = false;
+            this.btnPostJob.LinearGradientPen = false;
+            this.btnPostJob.Location = new System.Drawing.Point(721, 527);
+            this.btnPostJob.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPostJob.Name = "btnPostJob";
+            this.btnPostJob.PenWidth = 15;
+            this.btnPostJob.Rounding = true;
+            this.btnPostJob.RoundingInt = 20;
+            this.btnPostJob.Size = new System.Drawing.Size(150, 56);
+            this.btnPostJob.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btnPostJob.TabIndex = 27;
+            this.btnPostJob.Tag = "Decline";
+            this.btnPostJob.TextButton = "Post Job";
+            this.btnPostJob.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btnPostJob.Timer_Effect_1 = 5;
+            this.btnPostJob.Timer_RGB = 300;
+            this.btnPostJob.Click += new System.EventHandler(this.btnPostJob_Click);
             // 
             // tabpage
             // 
-            tabpage.Controls.Add(tbprequirement);
-            tabpage.Controls.Add(tbpdescription);
-            tabpage.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            tabpage.Location = new Point(14, 270);
-            tabpage.Name = "tabpage";
-            tabpage.SelectedIndex = 0;
-            tabpage.Size = new Size(1022, 250);
-            tabpage.TabIndex = 17;
+            this.tabpage.Controls.Add(this.tbprequirement);
+            this.tabpage.Controls.Add(this.tbpdescription);
+            this.tabpage.Controls.Add(this.tbpbenefit);
+            this.tabpage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tabpage.Location = new System.Drawing.Point(14, 323);
+            this.tabpage.Name = "tabpage";
+            this.tabpage.SelectedIndex = 0;
+            this.tabpage.Size = new System.Drawing.Size(1022, 197);
+            this.tabpage.TabIndex = 17;
             // 
             // tbprequirement
             // 
-            tbprequirement.AutoScroll = true;
-            tbprequirement.BorderStyle = BorderStyle.Fixed3D;
-            tbprequirement.Controls.Add(rtxtjobrequirement);
-            tbprequirement.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            tbprequirement.Location = new Point(4, 37);
-            tbprequirement.Name = "tbprequirement";
-            tbprequirement.Padding = new Padding(3);
-            tbprequirement.Size = new Size(1014, 209);
-            tbprequirement.TabIndex = 0;
-            tbprequirement.Text = "Job's Requirement";
-            tbprequirement.UseVisualStyleBackColor = true;
+            this.tbprequirement.AutoScroll = true;
+            this.tbprequirement.BackColor = System.Drawing.Color.Transparent;
+            this.tbprequirement.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tbprequirement.Controls.Add(this.rtxtjobrequirement);
+            this.tbprequirement.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbprequirement.Location = new System.Drawing.Point(4, 37);
+            this.tbprequirement.Name = "tbprequirement";
+            this.tbprequirement.Padding = new System.Windows.Forms.Padding(3);
+            this.tbprequirement.Size = new System.Drawing.Size(1014, 156);
+            this.tbprequirement.TabIndex = 0;
+            this.tbprequirement.Text = "Job\'s Requirement";
             // 
             // rtxtjobrequirement
             // 
-            rtxtjobrequirement.BackColor = Color.FromArgb(255, 255, 255);
-            rtxtjobrequirement.BorderStyle = BorderStyle.None;
-            rtxtjobrequirement.Depth = 0;
-            rtxtjobrequirement.Dock = DockStyle.Fill;
-            rtxtjobrequirement.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            rtxtjobrequirement.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            rtxtjobrequirement.Hint = "";
-            rtxtjobrequirement.Location = new Point(3, 3);
-            rtxtjobrequirement.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            rtxtjobrequirement.Name = "rtxtjobrequirement";
-            rtxtjobrequirement.Size = new Size(1004, 199);
-            rtxtjobrequirement.TabIndex = 0;
-            rtxtjobrequirement.Text = "";
+            this.rtxtjobrequirement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
+            this.rtxtjobrequirement.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtjobrequirement.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtxtjobrequirement.Location = new System.Drawing.Point(3, 3);
+            this.rtxtjobrequirement.Name = "rtxtjobrequirement";
+            this.rtxtjobrequirement.Size = new System.Drawing.Size(1004, 146);
+            this.rtxtjobrequirement.TabIndex = 1;
+            this.rtxtjobrequirement.Text = "";
             // 
             // tbpdescription
             // 
-            tbpdescription.AutoScroll = true;
-            tbpdescription.BorderStyle = BorderStyle.Fixed3D;
-            tbpdescription.Controls.Add(rtxtdescription);
-            tbpdescription.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            tbpdescription.Location = new Point(4, 37);
-            tbpdescription.Name = "tbpdescription";
-            tbpdescription.Padding = new Padding(3);
-            tbpdescription.Size = new Size(1014, 209);
-            tbpdescription.TabIndex = 1;
-            tbpdescription.Text = "Job's Description";
-            tbpdescription.UseVisualStyleBackColor = true;
+            this.tbpdescription.AutoScroll = true;
+            this.tbpdescription.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tbpdescription.Controls.Add(this.rtxtdescription);
+            this.tbpdescription.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbpdescription.Location = new System.Drawing.Point(4, 37);
+            this.tbpdescription.Name = "tbpdescription";
+            this.tbpdescription.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpdescription.Size = new System.Drawing.Size(1014, 209);
+            this.tbpdescription.TabIndex = 1;
+            this.tbpdescription.Text = "Job\'s Description";
+            this.tbpdescription.UseVisualStyleBackColor = true;
             // 
             // rtxtdescription
             // 
-            rtxtdescription.BackColor = Color.FromArgb(255, 255, 255);
-            rtxtdescription.BorderStyle = BorderStyle.None;
-            rtxtdescription.Depth = 0;
-            rtxtdescription.Dock = DockStyle.Fill;
-            rtxtdescription.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            rtxtdescription.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            rtxtdescription.Hint = "";
-            rtxtdescription.Location = new Point(3, 3);
-            rtxtdescription.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            rtxtdescription.Name = "rtxtdescription";
-            rtxtdescription.Size = new Size(1004, 199);
-            rtxtdescription.TabIndex = 0;
-            rtxtdescription.Text = "";
+            this.rtxtdescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
+            this.rtxtdescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtdescription.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtxtdescription.Location = new System.Drawing.Point(3, 3);
+            this.rtxtdescription.Name = "rtxtdescription";
+            this.rtxtdescription.Size = new System.Drawing.Size(1004, 199);
+            this.rtxtdescription.TabIndex = 0;
+            this.rtxtdescription.Text = "";
             // 
-            // FJobEdit
+            // tbpbenefit
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(32, 41, 58);
-            ClientSize = new Size(1048, 600);
-            Controls.Add(lblTitle);
-            Controls.Add(pnBody);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "FJobEdit";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "FJobEdit";
-            pnBody.ResumeLayout(false);
-            pnBody.PerformLayout();
-            tabpage.ResumeLayout(false);
-            tbprequirement.ResumeLayout(false);
-            tbpdescription.ResumeLayout(false);
-            ResumeLayout(false);
-            PerformLayout();
+            this.tbpbenefit.AutoScroll = true;
+            this.tbpbenefit.BackColor = System.Drawing.Color.Transparent;
+            this.tbpbenefit.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tbpbenefit.Controls.Add(this.rtxtBenefit);
+            this.tbpbenefit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbpbenefit.Location = new System.Drawing.Point(4, 37);
+            this.tbpbenefit.Name = "tbpbenefit";
+            this.tbpbenefit.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpbenefit.Size = new System.Drawing.Size(1014, 209);
+            this.tbpbenefit.TabIndex = 2;
+            this.tbpbenefit.Text = "Benefit";
+            // 
+            // rtxtBenefit
+            // 
+            this.rtxtBenefit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
+            this.rtxtBenefit.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtBenefit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtxtBenefit.Location = new System.Drawing.Point(3, 3);
+            this.rtxtBenefit.Name = "rtxtBenefit";
+            this.rtxtBenefit.Size = new System.Drawing.Size(1004, 199);
+            this.rtxtBenefit.TabIndex = 0;
+            this.rtxtBenefit.Text = "";
+            // 
+            // dtpDateEnd
+            // 
+            this.dtpDateEnd.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpDateEnd.CalendarMonthBackground = System.Drawing.Color.White;
+            this.dtpDateEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpDateEnd.Location = new System.Drawing.Point(312, 247);
+            this.dtpDateEnd.Name = "dtpDateEnd";
+            this.dtpDateEnd.Size = new System.Drawing.Size(447, 34);
+            this.dtpDateEnd.TabIndex = 33;
+            // 
+            // lblDateEnd
+            // 
+            this.lblDateEnd.AutoSize = true;
+            this.lblDateEnd.BackColor = System.Drawing.Color.White;
+            this.lblDateEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDateEnd.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblDateEnd.Location = new System.Drawing.Point(12, 252);
+            this.lblDateEnd.Name = "lblDateEnd";
+            this.lblDateEnd.Size = new System.Drawing.Size(91, 28);
+            this.lblDateEnd.TabIndex = 32;
+            this.lblDateEnd.Text = "Date End";
+            // 
+            // FJobCreation
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(58)))));
+            this.ClientSize = new System.Drawing.Size(1048, 600);
+            this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.pnBody);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "FJobCreation";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FJobCreation";
+            this.pnBody.ResumeLayout(false);
+            this.pnBody.PerformLayout();
+            this.tabpage.ResumeLayout(false);
+            this.tbprequirement.ResumeLayout(false);
+            this.tbpdescription.ResumeLayout(false);
+            this.tbpbenefit.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -314,16 +414,20 @@
         private Label lblExperience;
         private Label lblSalary;
         private ReaLTaiizor.Controls.HopeTextBox txtJobName;
-        private ReaLTaiizor.Controls.HopeTextBox txtExperience;
         private ReaLTaiizor.Controls.HopeTextBox txtSalary;
         private Label lblTitle;
-        private Button btnPostJob;
-        private Button btnCancel;
         private Panel pnBody;
         private TabControl tabpage;
         private TabPage tbprequirement;
         private TabPage tbpdescription;
-        private ReaLTaiizor.Controls.MaterialRichTextBox rtxtdescription;
-        private ReaLTaiizor.Controls.MaterialRichTextBox rtxtjobrequirement;
+        private RichTextBox rtxtjobrequirement;
+        private RichTextBox rtxtdescription;
+        private TabPage tbpbenefit;
+        private RichTextBox rtxtBenefit;
+        private ReaLTaiizor.Controls.CyberButton btnCancel;
+        private ReaLTaiizor.Controls.CyberButton btnPostJob;
+        private ComboBox cbbExperience;
+        private Label lblDateEnd;
+        private DateTimePicker dtpDateEnd;
     }
 }

@@ -12,13 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-<<<<<<< HEAD
-      "C:\\Users\\OS\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\OS\\.nuget\\packages"
-=======
       "C:\\Users\\TIEN TOAN\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\TIEN TOAN\\.nuget\\packages"
->>>>>>> TuanWooxTest
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
