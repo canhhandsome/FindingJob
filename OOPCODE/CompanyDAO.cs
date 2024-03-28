@@ -13,7 +13,7 @@ namespace WinFormProject
         public CompanyDAO() { }
         public List<string> FetchInformation(Company company)
         {
-            string strFetch = string.Format("SELECT companytype,companysize FROM {0} where id = '{1}'","company" ,company.INFO.ID);
+            string strFetch = string.Format("SELECT companytype,companysize,detail,taxidentification,weblink FROM {0} where id = '{1}'","company" ,company.INFO.ID);
             return conn.FetchSeperatedData(strFetch);
         }
 
@@ -22,9 +22,9 @@ namespace WinFormProject
             string strFetch = string.Format("Select Name from company where id = '{0}'", companyid);
             return conn.FetchScalar(strFetch);
         }
-        public byte[] FetchImg(string companyid)
+        public byte[] FetchImg(string companyid, string whattotake)
         {
-            string strFetch = string.Format("SELECT Avatar FROM Company WHERE id = '{0}'", companyid);
+            string strFetch = string.Format("SELECT '{0}'  FROM Company WHERE id = '{1}'", whattotake,companyid);
             // Assuming FetchScalar method executes the query and returns a single scalar value (in this case, the image data)
             string imageDataAsString = conn.FetchScalar(strFetch) as string;
 

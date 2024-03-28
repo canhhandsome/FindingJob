@@ -8,14 +8,14 @@ namespace WinFormProject
 {
     public class Company
     {
-        string companytype, companysize;
+        string companytype, companysize,taxidentification,description,websitelink;
         CompanyDAO companyDAO = new CompanyDAO();
         JobDAO jobDao = new JobDAO();
         ApplyDAO applyDAO = new ApplyDAO();
         Information information = new Information();
         List<Job> jobs = new List<Job>();
-        List<Apply> applies = new List<Apply>();
-        byte[] AvatarData;
+        byte[] AvatarData = new byte[0];
+        byte[] BusinessLicense = new byte[0];
         public Company()
         {
 
@@ -24,19 +24,20 @@ namespace WinFormProject
         {
             this.information  = information;
             List<string> otherinfo = companyDAO.FetchInformation(this);
+            FillOtherInfor(otherinfo);
+            jobs = jobDao.FetchCompanyJob(this.INFO.ID);
+            AvatarData = companyDAO.FetchImg(this.INFO.ID,"Avatar");
+            BusinessLicense = companyDAO.FetchImg(this.INFO.ID, "BusinessLicense");
+            
+        }
+        private void FillOtherInfor(List<String> otherinfo)
+        {
             companysize = otherinfo[1];
             companytype = otherinfo[0];
-            jobs = jobDao.FetchCompanyJob(this.INFO.ID);
-            foreach (Job job in jobs)
-            {
-                foreach(Apply apply in applyDAO.AllApplies(job.Jobid))
-                {
-                    applies.Add(apply);
-                }
-            }
-            AvatarData = companyDAO.FetchImg(this.INFO.ID);
+            description = otherinfo[2];
+            taxidentification = otherinfo[3];
+            websitelink = otherinfo[4];
         }
-
         public List<Job> Jobs
         {
             get { return jobs; }
@@ -45,9 +46,6 @@ namespace WinFormProject
         {
             get { return information; }
         }
-        public List<Apply> Applies 
-        { 
-            get { return applies; } 
-        }
+
     }
 }

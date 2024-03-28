@@ -25,8 +25,12 @@ CREATE TABLE Company (
     CompanyType VARCHAR(100),
     CompanySize VARCHAR(100),
     Phonenumber NCHar(100),
-    WorkingTime VARCHAR(100),
-    Avatar varbinary (max)
+    WorkingTimeBegin varchar(20), 
+    WorkingTimeEnd varchar(20), 
+    Avatar varbinary (max),
+    TaxIndentification varchar(50),
+    BusinessLicense varbinary(max),
+    Details text
 );
 
 CREATE TABLE Job (

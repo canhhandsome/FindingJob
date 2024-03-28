@@ -28,19 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ptbCV = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)ptbCV).BeginInit();
             SuspendLayout();
-            // 
-            // ptbCV
-            // 
-            ptbCV.Dock = DockStyle.Fill;
-            ptbCV.Location = new Point(0, 0);
-            ptbCV.Name = "ptbCV";
-            ptbCV.Size = new Size(954, 839);
-            ptbCV.SizeMode = PictureBoxSizeMode.StretchImage;
-            ptbCV.TabIndex = 0;
-            ptbCV.TabStop = false;
             // 
             // FCV
             // 
@@ -48,16 +36,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.LightGray;
-            ClientSize = new Size(954, 839);
-            Controls.Add(ptbCV);
+            ClientSize = new Size(995, 839);
             Name = "FCV";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FCV";
-            ((System.ComponentModel.ISupportInitialize)ptbCV).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private PictureBox ptbCV;
     }
 }

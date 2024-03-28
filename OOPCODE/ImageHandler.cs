@@ -1,14 +1,16 @@
-﻿using System;
+﻿using Syncfusion.Pdf.Parsing;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WinFormProject
 {
     public static class ImageHandler
     {
-        public static void DisplayImage(byte[] imageData,ref PictureBox ptb)
+        public static void DisplayImage(byte[] imageData, ref PictureBox ptb)
         {
             // Check if byte array is not null and has data
             if (imageData != null && imageData.Length > 0)
@@ -50,6 +52,31 @@ namespace WinFormProject
             if (openFileDiaglog.ShowDialog() == DialogResult.OK)
             {
                 ptb.Image = new Bitmap(openFileDiaglog.FileName);
+            }
+        }
+        public static void DisplayPdfPreview(byte[] pdfBytes, PictureBox ptbCv)
+        {
+            // Convert PDF to image
+            Image previewImage = ConvertPdfToImage(pdfBytes);
+
+            // Display the image in PictureBox
+            ptbCv.Image = previewImage;
+        }
+
+        private static Image ConvertPdfToImage(byte[] pdfBytes)
+        {
+            using (MemoryStream memoryStream = new MemoryStream(pdfBytes))
+            {
+                // Load PDF document
+                PdfLoadedDocument loadedDocument = new PdfLoadedDocument(memoryStream);
+
+                // Render first page as image
+                Bitmap image = loadedDocument.ExportAsImage(0);
+
+                // Dispose the document
+                loadedDocument.Dispose();
+
+                return image;
             }
         }
     }

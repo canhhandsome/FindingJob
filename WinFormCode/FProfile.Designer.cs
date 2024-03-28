@@ -536,6 +536,7 @@ namespace WinFormProject
             btnCancel.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             btnCancel.Timer_Effect_1 = 5;
             btnCancel.Timer_RGB = 300;
+            btnCancel.Click += btnCancel_Click;
             // 
             // btnEdit
             // 

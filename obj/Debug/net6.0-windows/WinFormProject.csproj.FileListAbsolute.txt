@@ -54,3 +54,6 @@ D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\obj\Debug\net6
 D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FFilter.resources
 D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FCV.resources
 D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\MaterialSkin.dll
+D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Compression.Base.dll
+D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Licensing.dll
+D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Pdf.Base.dll
