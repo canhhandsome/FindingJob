@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FSearchJob));
             dungeonComboBox1 = new ReaLTaiizor.Controls.DungeonComboBox();
-            hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
             btnFilter = new Button();
             flpJob = new FlowLayoutPanel();
+            txtSearch = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             SuspendLayout();
             // 
             // dungeonComboBox1
@@ -55,68 +56,73 @@
             dungeonComboBox1.HoverSelectionColor = Color.Empty;
             dungeonComboBox1.IntegralHeight = false;
             dungeonComboBox1.ItemHeight = 20;
-            dungeonComboBox1.Location = new Point(85, 45);
-            dungeonComboBox1.Margin = new Padding(3, 4, 3, 4);
+            dungeonComboBox1.Location = new Point(48, 28);
             dungeonComboBox1.Name = "dungeonComboBox1";
-            dungeonComboBox1.Size = new Size(186, 26);
+            dungeonComboBox1.Size = new Size(129, 26);
             dungeonComboBox1.StartIndex = 0;
             dungeonComboBox1.TabIndex = 1;
-            // 
-            // hopeTextBox1
-            // 
-            hopeTextBox1.BackColor = Color.White;
-            hopeTextBox1.BaseColor = Color.FromArgb(44, 55, 66);
-            hopeTextBox1.BorderColorA = Color.FromArgb(64, 158, 255);
-            hopeTextBox1.BorderColorB = Color.FromArgb(220, 223, 230);
-            hopeTextBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            hopeTextBox1.ForeColor = Color.FromArgb(48, 49, 51);
-            hopeTextBox1.Hint = "Enter Jobs";
-            hopeTextBox1.Location = new Point(296, 36);
-            hopeTextBox1.Margin = new Padding(3, 4, 3, 4);
-            hopeTextBox1.MaxLength = 32767;
-            hopeTextBox1.Multiline = false;
-            hopeTextBox1.Name = "hopeTextBox1";
-            hopeTextBox1.PasswordChar = '\0';
-            hopeTextBox1.ScrollBars = ScrollBars.None;
-            hopeTextBox1.SelectedText = "";
-            hopeTextBox1.SelectionLength = 0;
-            hopeTextBox1.SelectionStart = 0;
-            hopeTextBox1.Size = new Size(641, 43);
-            hopeTextBox1.TabIndex = 2;
-            hopeTextBox1.TabStop = false;
-            hopeTextBox1.UseSystemPasswordChar = false;
-            hopeTextBox1.Enter += hopeTextBox1_Enter;
             // 
             // btnFilter
             // 
             btnFilter.FlatStyle = FlatStyle.System;
-            btnFilter.Location = new Point(953, 36);
+            btnFilter.Location = new Point(834, 27);
+            btnFilter.Margin = new Padding(3, 2, 3, 2);
             btnFilter.Name = "btnFilter";
-            btnFilter.Size = new Size(57, 43);
+            btnFilter.Size = new Size(50, 32);
             btnFilter.TabIndex = 3;
             btnFilter.Text = "Filter";
             btnFilter.UseVisualStyleBackColor = true;
             // 
             // flpJob
             // 
-            flpJob.Location = new Point(55, 136);
-            flpJob.Margin = new Padding(3, 4, 3, 4);
+            flpJob.Location = new Point(48, 102);
             flpJob.Name = "flpJob";
-            flpJob.Size = new Size(967, 188);
+            flpJob.Size = new Size(846, 141);
             flpJob.TabIndex = 4;
+            // 
+            // txtSearch
+            // 
+            txtSearch.AnimateReadOnly = false;
+            txtSearch.AutoCompleteMode = AutoCompleteMode.None;
+            txtSearch.AutoCompleteSource = AutoCompleteSource.None;
+            txtSearch.BackgroundImageLayout = ImageLayout.None;
+            txtSearch.CharacterCasing = CharacterCasing.Normal;
+            txtSearch.Depth = 0;
+            txtSearch.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtSearch.HideSelection = true;
+            txtSearch.Hint = "Search Job";
+            txtSearch.LeadingIcon = (Image)resources.GetObject("txtSearch.LeadingIcon");
+            txtSearch.Location = new Point(199, 17);
+            txtSearch.MaxLength = 32767;
+            txtSearch.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            txtSearch.Name = "txtSearch";
+            txtSearch.PasswordChar = '\0';
+            txtSearch.PrefixSuffixText = null;
+            txtSearch.ReadOnly = false;
+            txtSearch.RightToLeft = RightToLeft.No;
+            txtSearch.SelectedText = "";
+            txtSearch.SelectionLength = 0;
+            txtSearch.SelectionStart = 0;
+            txtSearch.ShortcutsEnabled = true;
+            txtSearch.Size = new Size(619, 48);
+            txtSearch.TabIndex = 4;
+            txtSearch.TabStop = false;
+            txtSearch.TextAlign = HorizontalAlignment.Left;
+            txtSearch.TrailingIcon = null;
+            txtSearch.UseSystemPasswordChar = false;
+            txtSearch.KeyDown += txtSearch_KeyDown;
             // 
             // FSearchJob
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.White;
-            ClientSize = new Size(1048, 580);
+            ClientSize = new Size(917, 435);
+            Controls.Add(txtSearch);
             Controls.Add(flpJob);
             Controls.Add(btnFilter);
-            Controls.Add(hopeTextBox1);
             Controls.Add(dungeonComboBox1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FSearchJob";
             Text = "FSearchJob";
             ResumeLayout(false);
@@ -124,8 +130,8 @@
 
         #endregion
         private ReaLTaiizor.Controls.DungeonComboBox dungeonComboBox1;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox1;
         private Button btnFilter;
         private FlowLayoutPanel flpJob;
+        private ReaLTaiizor.Controls.MaterialTextBoxEdit txtSearch;
     }
 }

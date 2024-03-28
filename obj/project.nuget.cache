@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IvQAayNtI8B76NlwkwycxdXtyYRs2ptOHuWC/EGj3UJvH9JqIZNa/CeOTPWZlU8Pdp81DL3n+4hlgPDoBR+nQg==",
+  "dgSpecHash": "oW6UzfTA46tVIIL7uUrwEk/9l/4xiAWaRi14WHeJvsh76r3zX+W3YNNvraj6E32IWiPxE1i6n1VrtCmeD1cQ5A==",
   "success": true,
   "projectFilePath": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormProject.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,9 @@
     "C:\\Users\\Canh\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Canh\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Canh\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Canh\\.nuget\\packages\\syncfusion.compression.base\\25.1.37\\syncfusion.compression.base.25.1.37.nupkg.sha512",
+    "C:\\Users\\Canh\\.nuget\\packages\\syncfusion.licensing\\25.1.37\\syncfusion.licensing.25.1.37.nupkg.sha512",
+    "C:\\Users\\Canh\\.nuget\\packages\\syncfusion.pdf.winforms\\25.1.37\\syncfusion.pdf.winforms.25.1.37.nupkg.sha512",
     "C:\\Users\\Canh\\.nuget\\packages\\system.data.sqlclient\\4.8.6\\system.data.sqlclient.4.8.6.nupkg.sha512",
     "C:\\Users\\Canh\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\Canh\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
