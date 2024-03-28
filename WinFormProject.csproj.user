@@ -35,9 +35,6 @@
     <Compile Update="WinFormCode\FJobEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="WinFormCode\FJobRequire.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="WinFormCode\FJobSeeker.cs">
       <SubType>Form</SubType>
     </Compile>
