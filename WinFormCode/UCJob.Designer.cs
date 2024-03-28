@@ -32,7 +32,9 @@
             btnApplicants = new ReaLTaiizor.Controls.CyberButton();
             btnDelete = new ReaLTaiizor.Controls.CyberButton();
             btnEdit = new ReaLTaiizor.Controls.CyberButton();
+            lblEndT = new Label();
             lblDateT = new Label();
+            lblEnd = new Label();
             lblJobNameT = new Label();
             lblDate = new Label();
             lblJobName = new Label();
@@ -45,7 +47,9 @@
             panel1.Controls.Add(btnApplicants);
             panel1.Controls.Add(btnDelete);
             panel1.Controls.Add(btnEdit);
+            panel1.Controls.Add(lblEndT);
             panel1.Controls.Add(lblDateT);
+            panel1.Controls.Add(lblEnd);
             panel1.Controls.Add(lblJobNameT);
             panel1.Controls.Add(lblDate);
             panel1.Controls.Add(lblJobName);
@@ -180,15 +184,35 @@
             btnEdit.Timer_Effect_1 = 1;
             btnEdit.Timer_RGB = 300;
             // 
+            // lblEndT
+            // 
+            lblEndT.AutoSize = true;
+            lblEndT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            lblEndT.Location = new Point(428, 11);
+            lblEndT.Name = "lblEndT";
+            lblEndT.Size = new Size(55, 25);
+            lblEndT.TabIndex = 9;
+            lblEndT.Text = "Date:";
+            // 
             // lblDateT
             // 
             lblDateT.AutoSize = true;
             lblDateT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDateT.Location = new Point(80, 56);
+            lblDateT.Location = new Point(80, 54);
             lblDateT.Name = "lblDateT";
             lblDateT.Size = new Size(55, 25);
             lblDateT.TabIndex = 9;
             lblDateT.Text = "Date:";
+            // 
+            // lblEnd
+            // 
+            lblEnd.AutoSize = true;
+            lblEnd.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            lblEnd.Location = new Point(312, 11);
+            lblEnd.Name = "lblEnd";
+            lblEnd.Size = new Size(92, 25);
+            lblEnd.TabIndex = 7;
+            lblEnd.Text = "Date End:";
             // 
             // lblJobNameT
             // 
@@ -204,7 +228,7 @@
             // 
             lblDate.AutoSize = true;
             lblDate.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDate.Location = new Point(15, 56);
+            lblDate.Location = new Point(15, 54);
             lblDate.Name = "lblDate";
             lblDate.Size = new Size(55, 25);
             lblDate.TabIndex = 7;
@@ -243,5 +267,7 @@
         private ReaLTaiizor.Controls.CyberButton btnDelete;
         private ReaLTaiizor.Controls.CyberButton btnEdit;
         private ReaLTaiizor.Controls.CyberButton btnApplicants;
+        public Label lblEndT;
+        private Label lblEnd;
     }
 }

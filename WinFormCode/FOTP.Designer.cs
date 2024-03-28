@@ -32,13 +32,13 @@
             panel1 = new Panel();
             nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             txtOTP = new ReaLTaiizor.Controls.HopeTextBox();
-            btnResetP = new ReaLTaiizor.Controls.Button();
-            btnCancel = new ReaLTaiizor.Controls.Button();
             ptbSologan = new PictureBox();
             lblWelcome = new ReaLTaiizor.Controls.BigLabel();
             ptbLogo = new PictureBox();
             lblOr = new ReaLTaiizor.Controls.FoxLabel();
             lblForget = new ReaLTaiizor.Controls.FoxLabel();
+            btnResetP = new ReaLTaiizor.Controls.ParrotButton();
+            btnCancel = new ReaLTaiizor.Controls.ParrotButton();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptbSologan).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ptbLogo).BeginInit();
@@ -86,7 +86,7 @@
             txtOTP.BorderColorB = Color.FromArgb(220, 223, 230);
             txtOTP.Cursor = Cursors.IBeam;
             txtOTP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtOTP.ForeColor = Color.FromArgb(48, 49, 51);
+            txtOTP.ForeColor = Color.Black;
             txtOTP.Hint = "Enter your OTP";
             txtOTP.Location = new Point(60, 171);
             txtOTP.Margin = new Padding(3, 2, 3, 2);
@@ -102,48 +102,6 @@
             txtOTP.TabIndex = 2;
             txtOTP.TabStop = false;
             txtOTP.UseSystemPasswordChar = false;
-            // 
-            // btnResetP
-            // 
-            btnResetP.BackColor = Color.Transparent;
-            btnResetP.BorderColor = Color.FromArgb(32, 34, 37);
-            btnResetP.EnteredBorderColor = Color.FromArgb(165, 37, 37);
-            btnResetP.EnteredColor = Color.FromArgb(32, 34, 37);
-            btnResetP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnResetP.Image = null;
-            btnResetP.ImageAlign = ContentAlignment.MiddleLeft;
-            btnResetP.InactiveColor = Color.FromArgb(32, 34, 37);
-            btnResetP.Location = new Point(188, 241);
-            btnResetP.Margin = new Padding(3, 2, 3, 2);
-            btnResetP.Name = "btnResetP";
-            btnResetP.PressedBorderColor = Color.FromArgb(165, 37, 37);
-            btnResetP.PressedColor = Color.FromArgb(165, 37, 37);
-            btnResetP.Size = new Size(131, 38);
-            btnResetP.TabIndex = 7;
-            btnResetP.Text = "Reset Password";
-            btnResetP.TextAlignment = StringAlignment.Center;
-            btnResetP.Click += btnResetP_Click;
-            // 
-            // btnCancel
-            // 
-            btnCancel.BackColor = Color.Transparent;
-            btnCancel.BorderColor = Color.FromArgb(32, 34, 37);
-            btnCancel.EnteredBorderColor = Color.FromArgb(165, 37, 37);
-            btnCancel.EnteredColor = Color.FromArgb(32, 34, 37);
-            btnCancel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCancel.Image = null;
-            btnCancel.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCancel.InactiveColor = Color.FromArgb(32, 34, 37);
-            btnCancel.Location = new Point(188, 336);
-            btnCancel.Margin = new Padding(3, 2, 3, 2);
-            btnCancel.Name = "btnCancel";
-            btnCancel.PressedBorderColor = Color.FromArgb(165, 37, 37);
-            btnCancel.PressedColor = Color.FromArgb(165, 37, 37);
-            btnCancel.Size = new Size(131, 38);
-            btnCancel.TabIndex = 8;
-            btnCancel.Text = "Cancel";
-            btnCancel.TextAlignment = StringAlignment.Center;
-            btnCancel.Click += button2_Click;
             // 
             // ptbSologan
             // 
@@ -161,7 +119,7 @@
             lblWelcome.AutoSize = true;
             lblWelcome.BackColor = Color.Transparent;
             lblWelcome.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblWelcome.ForeColor = Color.FromArgb(224, 224, 224);
+            lblWelcome.ForeColor = Color.Black;
             lblWelcome.Location = new Point(95, 45);
             lblWelcome.Name = "lblWelcome";
             lblWelcome.Size = new Size(201, 46);
@@ -181,7 +139,7 @@
             // lblOr
             // 
             lblOr.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblOr.ForeColor = Color.White;
+            lblOr.ForeColor = Color.Black;
             lblOr.Location = new Point(240, 297);
             lblOr.Name = "lblOr";
             lblOr.Size = new Size(29, 19);
@@ -191,26 +149,73 @@
             // lblForget
             // 
             lblForget.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            lblForget.ForeColor = Color.White;
+            lblForget.ForeColor = Color.Black;
             lblForget.Location = new Point(60, 111);
             lblForget.Name = "lblForget";
             lblForget.Size = new Size(389, 34);
             lblForget.TabIndex = 15;
             lblForget.Text = "Hi, ";
             // 
+            // btnResetP
+            // 
+            btnResetP.BackgroundColor = Color.FromArgb(248, 212, 187);
+            btnResetP.ButtonImage = null;
+            btnResetP.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            btnResetP.ButtonText = "Reset Password";
+            btnResetP.ClickBackColor = Color.FromArgb(255, 212, 180);
+            btnResetP.ClickTextColor = Color.Black;
+            btnResetP.CornerRadius = 6;
+            btnResetP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnResetP.Horizontal_Alignment = StringAlignment.Center;
+            btnResetP.HoverBackgroundColor = Color.FromArgb(248, 242, 197);
+            btnResetP.HoverTextColor = Color.Black;
+            btnResetP.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            btnResetP.Location = new Point(191, 239);
+            btnResetP.Name = "btnResetP";
+            btnResetP.Size = new Size(131, 38);
+            btnResetP.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnResetP.TabIndex = 37;
+            btnResetP.TextColor = Color.Black;
+            btnResetP.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnResetP.Vertical_Alignment = StringAlignment.Center;
+            // 
+            // btnCancel
+            // 
+            btnCancel.BackgroundColor = Color.FromArgb(248, 212, 187);
+            btnCancel.ButtonImage = null;
+            btnCancel.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            btnCancel.ButtonText = "Cancel";
+            btnCancel.ClickBackColor = Color.FromArgb(255, 212, 180);
+            btnCancel.ClickTextColor = Color.Black;
+            btnCancel.CornerRadius = 6;
+            btnCancel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCancel.Horizontal_Alignment = StringAlignment.Center;
+            btnCancel.HoverBackgroundColor = Color.FromArgb(248, 242, 197);
+            btnCancel.HoverTextColor = Color.Black;
+            btnCancel.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            btnCancel.Location = new Point(191, 335);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(131, 38);
+            btnCancel.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnCancel.TabIndex = 38;
+            btnCancel.TextColor = Color.Black;
+            btnCancel.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnCancel.Vertical_Alignment = StringAlignment.Center;
+            btnCancel.Click += button2_Click;
+            // 
             // FOTP
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(32, 41, 50);
+            BackColor = Color.White;
             ClientSize = new Size(982, 406);
+            Controls.Add(btnResetP);
+            Controls.Add(btnCancel);
             Controls.Add(lblForget);
             Controls.Add(lblOr);
             Controls.Add(ptbLogo);
             Controls.Add(lblWelcome);
             Controls.Add(ptbSologan);
-            Controls.Add(btnCancel);
-            Controls.Add(btnResetP);
             Controls.Add(txtOTP);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -231,12 +236,12 @@
         private Panel panel1;
         private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
         private ReaLTaiizor.Controls.HopeTextBox txtOTP;
-        private ReaLTaiizor.Controls.Button btnResetP;
-        private ReaLTaiizor.Controls.Button btnCancel;
         private PictureBox ptbSologan;
         private ReaLTaiizor.Controls.BigLabel lblWelcome;
         private PictureBox ptbLogo;
         private ReaLTaiizor.Controls.FoxLabel lblOr;
         private ReaLTaiizor.Controls.FoxLabel lblForget;
+        private ReaLTaiizor.Controls.ParrotButton btnResetP;
+        private ReaLTaiizor.Controls.ParrotButton btnCancel;
     }
 }

@@ -96,5 +96,10 @@ namespace WinFormProject
             base.OnSizeChanged(e);
             this.RecreateRegion();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
