@@ -22,7 +22,7 @@ namespace WinFormProject
             CompanyDAO companyDAO = new CompanyDAO();
             lblFromT.Text = companyDAO.FetchName(alert.SenderID);
             lblSubjectT.Text = alert.Subject;
-            PanelUtils.MakeRounded(this.panel1,20);
+            PanelUtils.MakeRounded(this.panel1, 20);
         }
 
         private void panel1_Click(object sender, EventArgs e)

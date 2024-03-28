@@ -41,7 +41,6 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(254, 232, 223);
-            panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(lblDateT);
             panel1.Controls.Add(lblDate);
             panel1.Controls.Add(lblSubjectT);

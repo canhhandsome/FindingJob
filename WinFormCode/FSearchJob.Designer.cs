@@ -73,7 +73,7 @@
             btnFilter.Text = "Filter";
             btnFilter.UseVisualStyleBackColor = true;
             // 
-            // flpJob
+            // btnFilter
             // 
             flpJob.Location = new Point(48, 102);
             flpJob.Name = "flpJob";

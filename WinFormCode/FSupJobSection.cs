@@ -21,7 +21,7 @@ namespace WinFormProject
             seeker = jobSeeker;
             AlertDAO alertDAO = new AlertDAO();
             this.alerts = alertDAO.FetchAlert(jobSeeker.INFO.ID);
-            foreach(Alert alert in alerts) 
+            foreach (Alert alert in alerts)
             {
                 UCAlert uCAlert = new UCAlert(alert);
                 flpAlert.Controls.Add(uCAlert);
