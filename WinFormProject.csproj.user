@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="WinFormCode\FAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FAlertView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FApplicant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FCV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FFPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FJobCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FJobDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FJobEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FJobSeeker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FManageUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FOTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FPostJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FProfileCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FReportDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FSearchJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FSupJobSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FSupReportSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\UCAlert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\UCApplicant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\UCInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\UCJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

@@ -10,11 +10,16 @@
 
   <ItemGroup>
     <PackageReference Include="dot-net-transitions" Version="1.2.1" />
-    <PackageReference Include="ReaLTaiizor" Version="3.7.9.9" />
+    <PackageReference Include="MaterialSkin" Version="0.2.1" />
+    <PackageReference Include="ReaLTaiizor" Version="3.8.0.2" />
+    <PackageReference Include="Syncfusion.Pdf.WinForms" Version="25.1.37" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="FOTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -39,6 +44,30 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\OS\.nuget\packages\syncfusion.pdftoimageconverter.winforms\25.1.37\build\net6.0-windows7.0\..\..\Pdfium\win-arm64\native\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\OS\.nuget\packages\syncfusion.pdftoimageconverter.winforms\25.1.37\build\net6.0-windows7.0\..\..\Pdfium\win-x64\native\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\OS\.nuget\packages\syncfusion.pdftoimageconverter.winforms\25.1.37\build\net6.0-windows7.0\..\..\Pdfium\win-x86\native\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\OS\.nuget\packages\syncfusion.pdftoimageconverter.winforms\25.1.37\build\net6.0-windows7.0\..\..\Pdfium\win-arm64\native\pdfium.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\OS\.nuget\packages\syncfusion.pdftoimageconverter.winforms\25.1.37\build\net6.0-windows7.0\..\..\Pdfium\win-x86\native\pdfium.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\OS\.nuget\packages\syncfusion.pdftoimageconverter.winforms\25.1.37\build\net6.0-windows7.0\..\..\Pdfium\win-x64\native\pdfium.dll" />
   </ItemGroup>
 
 </Project>
