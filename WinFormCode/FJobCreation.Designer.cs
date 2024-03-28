@@ -35,6 +35,8 @@
             this.txtSalary = new ReaLTaiizor.Controls.HopeTextBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnBody = new System.Windows.Forms.Panel();
+            this.lblDateEnd = new System.Windows.Forms.Label();
+            this.dtpDateEnd = new System.Windows.Forms.DateTimePicker();
             this.cbbExperience = new System.Windows.Forms.ComboBox();
             this.btnCancel = new ReaLTaiizor.Controls.CyberButton();
             this.btnPostJob = new ReaLTaiizor.Controls.CyberButton();
@@ -45,8 +47,6 @@
             this.rtxtdescription = new System.Windows.Forms.RichTextBox();
             this.tbpbenefit = new System.Windows.Forms.TabPage();
             this.rtxtBenefit = new System.Windows.Forms.RichTextBox();
-            this.dtpDateEnd = new System.Windows.Forms.DateTimePicker();
-            this.lblDateEnd = new System.Windows.Forms.Label();
             this.pnBody.SuspendLayout();
             this.tabpage.SuspendLayout();
             this.tbprequirement.SuspendLayout();
@@ -172,6 +172,28 @@
             this.pnBody.TabIndex = 17;
             this.pnBody.Click += new System.EventHandler(this.btnPostJob_Click);
             // 
+            // lblDateEnd
+            // 
+            this.lblDateEnd.AutoSize = true;
+            this.lblDateEnd.BackColor = System.Drawing.Color.White;
+            this.lblDateEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDateEnd.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblDateEnd.Location = new System.Drawing.Point(12, 252);
+            this.lblDateEnd.Name = "lblDateEnd";
+            this.lblDateEnd.Size = new System.Drawing.Size(91, 28);
+            this.lblDateEnd.TabIndex = 32;
+            this.lblDateEnd.Text = "Date End";
+            // 
+            // dtpDateEnd
+            // 
+            this.dtpDateEnd.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpDateEnd.CalendarMonthBackground = System.Drawing.Color.White;
+            this.dtpDateEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpDateEnd.Location = new System.Drawing.Point(312, 247);
+            this.dtpDateEnd.Name = "dtpDateEnd";
+            this.dtpDateEnd.Size = new System.Drawing.Size(447, 34);
+            this.dtpDateEnd.TabIndex = 33;
+            // 
             // cbbExperience
             // 
             this.cbbExperience.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
@@ -197,7 +219,7 @@
             this.btnCancel.Background = true;
             this.btnCancel.Background_WidthPen = 4F;
             this.btnCancel.BackgroundPen = true;
-            this.btnCancel.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
+            this.btnCancel.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.btnCancel.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnCancel.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnCancel.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
@@ -322,7 +344,7 @@
             this.tbpdescription.Location = new System.Drawing.Point(4, 37);
             this.tbpdescription.Name = "tbpdescription";
             this.tbpdescription.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpdescription.Size = new System.Drawing.Size(1014, 209);
+            this.tbpdescription.Size = new System.Drawing.Size(1014, 156);
             this.tbpdescription.TabIndex = 1;
             this.tbpdescription.Text = "Job\'s Description";
             this.tbpdescription.UseVisualStyleBackColor = true;
@@ -334,7 +356,7 @@
             this.rtxtdescription.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rtxtdescription.Location = new System.Drawing.Point(3, 3);
             this.rtxtdescription.Name = "rtxtdescription";
-            this.rtxtdescription.Size = new System.Drawing.Size(1004, 199);
+            this.rtxtdescription.Size = new System.Drawing.Size(1004, 146);
             this.rtxtdescription.TabIndex = 0;
             this.rtxtdescription.Text = "";
             // 
@@ -348,7 +370,7 @@
             this.tbpbenefit.Location = new System.Drawing.Point(4, 37);
             this.tbpbenefit.Name = "tbpbenefit";
             this.tbpbenefit.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpbenefit.Size = new System.Drawing.Size(1014, 209);
+            this.tbpbenefit.Size = new System.Drawing.Size(1014, 156);
             this.tbpbenefit.TabIndex = 2;
             this.tbpbenefit.Text = "Benefit";
             // 
@@ -359,31 +381,9 @@
             this.rtxtBenefit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rtxtBenefit.Location = new System.Drawing.Point(3, 3);
             this.rtxtBenefit.Name = "rtxtBenefit";
-            this.rtxtBenefit.Size = new System.Drawing.Size(1004, 199);
+            this.rtxtBenefit.Size = new System.Drawing.Size(1004, 146);
             this.rtxtBenefit.TabIndex = 0;
             this.rtxtBenefit.Text = "";
-            // 
-            // dtpDateEnd
-            // 
-            this.dtpDateEnd.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpDateEnd.CalendarMonthBackground = System.Drawing.Color.White;
-            this.dtpDateEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpDateEnd.Location = new System.Drawing.Point(312, 247);
-            this.dtpDateEnd.Name = "dtpDateEnd";
-            this.dtpDateEnd.Size = new System.Drawing.Size(447, 34);
-            this.dtpDateEnd.TabIndex = 33;
-            // 
-            // lblDateEnd
-            // 
-            this.lblDateEnd.AutoSize = true;
-            this.lblDateEnd.BackColor = System.Drawing.Color.White;
-            this.lblDateEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDateEnd.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblDateEnd.Location = new System.Drawing.Point(12, 252);
-            this.lblDateEnd.Name = "lblDateEnd";
-            this.lblDateEnd.Size = new System.Drawing.Size(91, 28);
-            this.lblDateEnd.TabIndex = 32;
-            this.lblDateEnd.Text = "Date End";
             // 
             // FJobCreation
             // 
