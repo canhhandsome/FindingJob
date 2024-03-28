@@ -82,7 +82,6 @@ D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject
 D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobCreation.resources
 D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobDetails.resources
 D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobEdit.resources
-D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobRequire.resources
 D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobSeeker.resources
 D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FLogin.resources
 D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FManageUser.resources
