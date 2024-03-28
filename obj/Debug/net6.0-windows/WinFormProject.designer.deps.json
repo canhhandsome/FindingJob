@@ -91,6 +91,34 @@
           }
         }
       },
+      "Syncfusion.Compression.Base/25.1.37": {
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Compression.Base.dll": {
+            "assemblyVersion": "25.1.37.0",
+            "fileVersion": "25.1.37.0"
+          }
+        }
+      },
+      "Syncfusion.Licensing/25.1.37": {
+        "runtime": {
+          "lib/net6.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "25.1.37.0",
+            "fileVersion": "25.1.37.0"
+          }
+        }
+      },
+      "Syncfusion.Pdf.WinForms/25.1.37": {
+        "dependencies": {
+          "Syncfusion.Compression.Base": "25.1.37",
+          "Syncfusion.Licensing": "25.1.37"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Pdf.Base.dll": {
+            "assemblyVersion": "25.1.37.0",
+            "fileVersion": "25.1.37.0"
+          }
+        }
+      },
       "System.Data.SqlClient/4.8.6": {
         "dependencies": {
           "Microsoft.Win32.Registry": "4.7.0",
@@ -225,6 +253,27 @@
       "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "Syncfusion.Compression.Base/25.1.37": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-x2H2Pa6dnXq9Sn8h/R9eETJDMbV/2HldXWkPK16ZJms9kJMCyrkezwTcD59qz/HYra639Sgmj9Sn3xAQOq8vTA==",
+      "path": "syncfusion.compression.base/25.1.37",
+      "hashPath": "syncfusion.compression.base.25.1.37.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/25.1.37": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6Fu08NMF7nE8mw1HZ9yoZphB8ML8EBNQGxL50xTuRqfTpOHRSg+8h8NQmtDlEWh4UBZ35K+52qD5AJxnKbY2bg==",
+      "path": "syncfusion.licensing/25.1.37",
+      "hashPath": "syncfusion.licensing.25.1.37.nupkg.sha512"
+    },
+    "Syncfusion.Pdf.WinForms/25.1.37": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-k9VAVrdpctTOa5sG3Ptv6kpB4zLcqFm7r2Dn/XkVd0qS9fnXPAtAVtPUzWeTbtt4/k9gfzrykFqjuDyGI9gRHA==",
+      "path": "syncfusion.pdf.winforms/25.1.37",
+      "hashPath": "syncfusion.pdf.winforms.25.1.37.nupkg.sha512"
     },
     "System.Data.SqlClient/4.8.6": {
       "type": "package",
