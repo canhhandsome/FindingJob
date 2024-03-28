@@ -78,7 +78,7 @@ namespace WinFormProject
                 reader.Read();
                 for (int i = 0; i < reader.FieldCount; i++)
                 {
-                    seperatedinfo.Add(reader.GetFieldValue<string>(i));
+                    seperatedinfo.Add(reader.IsDBNull(i) ? "" : reader.GetFieldValue<string>(i));
                 }
                 return seperatedinfo;
             }
