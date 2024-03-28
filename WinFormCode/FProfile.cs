@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormProject.OOPCODE;
 
 namespace WinFormProject
 {
@@ -15,6 +16,7 @@ namespace WinFormProject
     {
         JobSeeker jobseeker;
         JobSeekerDAO jsDAO = new JobSeekerDAO();
+        byte[] Cv = new byte[0];
         public FProfile(JobSeeker jobSeeker)
         {
             InitializeComponent();
@@ -37,9 +39,8 @@ namespace WinFormProject
                 rdoMale.Checked = true;
             }
             else rdoFemale.Checked = true;
-            ImageHandler.DisplayImage(jobseeker.Avatar, ref ptbAvatar);
-            ImageHandler.DisplayImage(jobseeker.CV, ref ptbCV);
-
+            if(jobseeker.Avatar!=null) ImageHandler.DisplayImage(jobseeker.Avatar, ref ptbAvatar);
+            if(jobseeker.CV!=null) ImageHandler.DisplayPdfPreview(jobseeker.CV, ptbCV);
         }
         private void btnEdit_Click(object sender, EventArgs e)
         {
@@ -87,12 +88,15 @@ namespace WinFormProject
         }
         private void btnChooseNewCV_Click(object sender, EventArgs e)
         {
-            ImageHandler.ChoosePicture(ref ptbAvatar);
+            Cv = PDFHandler.OpenFileDialog();
+            if(Cv!=null) ImageHandler.DisplayPdfPreview(Cv, ptbCV);
+
         }
 
         private void btnChoosePicture_Click(object sender, EventArgs e)
         {
-            ImageHandler.ChoosePicture(ref ptbCV);
+            ImageHandler.ChoosePicture(ref ptbAvatar);
+
         }
         private JobSeeker CreateJobSeeker()
         {
@@ -105,7 +109,7 @@ namespace WinFormProject
             byte[] CvData = new byte[1];
             if (ptbCV.Image != null)
             {
-                AvatarData = ImageHandler.ImageToByteArray(ptbCV.Image);
+                CvData = Cv;
             }
             Information information = new Information(jobseeker.INFO.ID, txtFullName.Text, txtEmail.Text, txtAddress.Text, txtPhoneNumber.Text);
             if (rdoFemale.Checked) gender = "female"; else gender = "male";
@@ -116,6 +120,13 @@ namespace WinFormProject
         {
             FCV fcv = new FCV(jobseeker);
             fcv.Show();
+            
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            FillInfor(); // Reload the form with the original data
+            Enable_Save_Click(); // Re-enable the form for editing
         }
     }
 }
