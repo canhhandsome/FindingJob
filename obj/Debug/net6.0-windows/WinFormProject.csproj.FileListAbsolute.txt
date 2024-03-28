@@ -12,7 +12,6 @@ D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\obj\Debug\net6
 D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FFPassword.resources
 D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobDetails.resources
 D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobEdit.resources
-D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobRequire.resources
 D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobSeeker.resources
 D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FLogin.resources
 D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FManageUser.resources

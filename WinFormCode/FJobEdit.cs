@@ -53,7 +53,7 @@ namespace WinFormProject
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            //Job job1 = new Job(job.Jobid, job.CompanyID,txtJobName.Text,txtExperience.Text,txtSalary.Text,rtxtjobrequirement.Text,rtxtdescription.Text,DateTime.Now);
+            //Job job1 = new Job(job.Jobid, job.CompanyID,txtJobName.Text,cbbExperience.Text,txtSalary.Text,rtxtjobrequirement.Text,rtxtdescription.Text,DateTime.Now);
             //jobDAO.EditJob(job1);
             //jobs = jobDAO.FetchAllJob(companyid);
             //OpenChildForm(new FPostJob(jobs, companyid));
