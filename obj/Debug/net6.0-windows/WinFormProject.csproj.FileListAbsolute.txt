@@ -111,3 +111,6 @@ D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\Findin
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.pdb
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.genruntimeconfig.cache
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\ref\WinFormProject.dll
+D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Compression.Base.dll
+D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Licensing.dll
+D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Pdf.Base.dll
