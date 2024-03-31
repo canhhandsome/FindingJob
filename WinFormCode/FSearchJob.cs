@@ -25,7 +25,7 @@ namespace WinFormProject
 
         private void FillJob(List<Job> jobslist)
         {
-            flpJob.Controls.Clear() ;
+            flpJob.Controls.Clear();
             foreach (Job job in jobslist)
             {
                 UCInformation uCInformation = new UCInformation(job, jsID);
@@ -43,7 +43,7 @@ namespace WinFormProject
                 {
                     CompanyDAO companyDAO = new CompanyDAO();
                     string namecompany = companyDAO.FetchName(job.CompanyID).ToLower();
-                    string[] propertiesToSearch = { job.Name.ToLower(), job.Position.ToLower(), job.Requirement.ToLower(), job.Description.ToLower(), namecompany};
+                    string[] propertiesToSearch = { job.Name.ToLower(), job.Position.ToLower(), job.Requirement.ToLower(), job.Description.ToLower(), namecompany };
 
                     return propertiesToSearch.Any(property => property.Contains(search));
                 }).ToList();
@@ -51,5 +51,10 @@ namespace WinFormProject
             }
         }
 
+        private void btnFilter_Click(object sender, EventArgs e)
+        {
+            FFilter fFilter = new FFilter(jobs);
+            fFilter.Show();
+        }
     }
 }

@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FSearchJob));
             dungeonComboBox1 = new ReaLTaiizor.Controls.DungeonComboBox();
-            btnFilter = new Button();
             flpJob = new FlowLayoutPanel();
             txtSearch = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            btnFilter = new ReaLTaiizor.Controls.ParrotButton();
             SuspendLayout();
             // 
             // dungeonComboBox1
@@ -56,26 +56,15 @@
             dungeonComboBox1.HoverSelectionColor = Color.Empty;
             dungeonComboBox1.IntegralHeight = false;
             dungeonComboBox1.ItemHeight = 20;
-            dungeonComboBox1.Location = new Point(48, 28);
+            dungeonComboBox1.Location = new Point(31, 29);
             dungeonComboBox1.Name = "dungeonComboBox1";
             dungeonComboBox1.Size = new Size(129, 26);
             dungeonComboBox1.StartIndex = 0;
             dungeonComboBox1.TabIndex = 1;
             // 
-            // btnFilter
+            // flpJob
             // 
-            btnFilter.FlatStyle = FlatStyle.System;
-            btnFilter.Location = new Point(834, 27);
-            btnFilter.Margin = new Padding(3, 2, 3, 2);
-            btnFilter.Name = "btnFilter";
-            btnFilter.Size = new Size(50, 32);
-            btnFilter.TabIndex = 3;
-            btnFilter.Text = "Filter";
-            btnFilter.UseVisualStyleBackColor = true;
-            // 
-            // btnFilter
-            // 
-            flpJob.Location = new Point(48, 102);
+            flpJob.Location = new Point(31, 103);
             flpJob.Name = "flpJob";
             flpJob.Size = new Size(846, 141);
             flpJob.TabIndex = 4;
@@ -92,7 +81,7 @@
             txtSearch.HideSelection = true;
             txtSearch.Hint = "Search Job";
             txtSearch.LeadingIcon = (Image)resources.GetObject("txtSearch.LeadingIcon");
-            txtSearch.Location = new Point(199, 17);
+            txtSearch.Location = new Point(182, 18);
             txtSearch.MaxLength = 32767;
             txtSearch.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtSearch.Name = "txtSearch";
@@ -112,6 +101,31 @@
             txtSearch.UseSystemPasswordChar = false;
             txtSearch.KeyDown += txtSearch_KeyDown;
             // 
+            // btnFilter
+            // 
+            btnFilter.BackgroundColor = Color.FromArgb(248, 212, 187);
+            btnFilter.ButtonImage = null;
+            btnFilter.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            btnFilter.ButtonText = "Filter";
+            btnFilter.ClickBackColor = Color.FromArgb(255, 212, 180);
+            btnFilter.ClickTextColor = Color.Black;
+            btnFilter.CornerRadius = 6;
+            btnFilter.Cursor = Cursors.Hand;
+            btnFilter.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnFilter.Horizontal_Alignment = StringAlignment.Center;
+            btnFilter.HoverBackgroundColor = Color.FromArgb(248, 242, 197);
+            btnFilter.HoverTextColor = Color.Black;
+            btnFilter.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            btnFilter.Location = new Point(807, 27);
+            btnFilter.Name = "btnFilter";
+            btnFilter.Size = new Size(70, 38);
+            btnFilter.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnFilter.TabIndex = 36;
+            btnFilter.TextColor = Color.Black;
+            btnFilter.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnFilter.Vertical_Alignment = StringAlignment.Center;
+            btnFilter.Click += btnFilter_Click;
+            // 
             // FSearchJob
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -119,9 +133,9 @@
             AutoScroll = true;
             BackColor = Color.White;
             ClientSize = new Size(917, 435);
+            Controls.Add(btnFilter);
             Controls.Add(txtSearch);
             Controls.Add(flpJob);
-            Controls.Add(btnFilter);
             Controls.Add(dungeonComboBox1);
             Name = "FSearchJob";
             Text = "FSearchJob";
@@ -130,8 +144,8 @@
 
         #endregion
         private ReaLTaiizor.Controls.DungeonComboBox dungeonComboBox1;
-        private Button btnFilter;
         private FlowLayoutPanel flpJob;
         private ReaLTaiizor.Controls.MaterialTextBoxEdit txtSearch;
+        private ReaLTaiizor.Controls.ParrotButton btnFilter;
     }
 }

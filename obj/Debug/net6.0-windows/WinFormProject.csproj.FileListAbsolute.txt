@@ -81,7 +81,6 @@ D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\Findin
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobCreation.resources
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobDetails.resources
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobEdit.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobRequire.resources
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobSeeker.resources
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FLogin.resources
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FManageUser.resources
@@ -113,3 +112,6 @@ D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\Findin
 D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Compression.Base.dll
 D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Licensing.dll
 D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Pdf.Base.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Compression.Base.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Licensing.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Pdf.Base.dll

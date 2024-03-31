@@ -11,9 +11,9 @@ namespace WinFormProject
     {
         private DBConnection conn = new DBConnection();
         public CompanyDAO() { }
-        public List<string> FetchInformation(Company company)
+        public List<string> FetchInformation(string companyID)
         {
-            string strFetch = string.Format("SELECT companytype,companysize,detail,taxidentification,websitelink FROM {0} where id = '{1}'","company" ,company.INFO.ID);
+            string strFetch = string.Format("SELECT companytype,companysize,details,taxindentification,websitelink FROM {0} where id = '{1}'","company" ,companyID);
             return conn.FetchSeperatedData(strFetch);
         }
 

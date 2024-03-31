@@ -23,7 +23,7 @@ namespace WinFormProject
         public Company(Information information)
         {
             this.information  = information;
-            List<string> otherinfo = companyDAO.FetchInformation(this);
+            List<string> otherinfo = companyDAO.FetchInformation(this.INFO.ID);
             FillOtherInfor(otherinfo);
             jobs = jobDao.FetchCompanyJob(this.INFO.ID);
             AvatarData = companyDAO.FetchImg(this.INFO.ID,"Avatar");
