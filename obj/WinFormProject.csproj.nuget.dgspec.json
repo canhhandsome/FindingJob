@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UTE\\UTE 2023 - 2024\\Ki 2\\WindowsProgramming\\Project\\FindingJob\\WinFormProject.csproj": {}
+    "D:\\UTE\\UTE 2023and2024\\Ki2\\WindowsProgramming\\Project\\FindingJob\\WinFormProject.csproj": {}
   },
   "projects": {
-    "D:\\UTE\\UTE 2023 - 2024\\Ki 2\\WindowsProgramming\\Project\\FindingJob\\WinFormProject.csproj": {
+    "D:\\UTE\\UTE 2023and2024\\Ki2\\WindowsProgramming\\Project\\FindingJob\\WinFormProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UTE\\UTE 2023 - 2024\\Ki 2\\WindowsProgramming\\Project\\FindingJob\\WinFormProject.csproj",
+        "projectUniqueName": "D:\\UTE\\UTE 2023and2024\\Ki2\\WindowsProgramming\\Project\\FindingJob\\WinFormProject.csproj",
         "projectName": "WinFormProject",
-        "projectPath": "D:\\UTE\\UTE 2023 - 2024\\Ki 2\\WindowsProgramming\\Project\\FindingJob\\WinFormProject.csproj",
+        "projectPath": "D:\\UTE\\UTE 2023and2024\\Ki2\\WindowsProgramming\\Project\\FindingJob\\WinFormProject.csproj",
         "packagesPath": "C:\\Users\\OS\\.nuget\\packages\\",
-        "outputPath": "D:\\UTE\\UTE 2023 - 2024\\Ki 2\\WindowsProgramming\\Project\\FindingJob\\obj\\",
+        "outputPath": "D:\\UTE\\UTE 2023and2024\\Ki2\\WindowsProgramming\\Project\\FindingJob\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\OS\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3hQskVpAj8ZepMqb68xRz1roBNX2FSrgz+HzSPwizW9JCZUOXvY7mkINk7x0+MYcm+7v4CClfzjK7kCYTmZz3g==",
+  "dgSpecHash": "zefJDdFLhD5gD8ztcJ+G/rj12PkzXM5V4wYch79rn8F0R8U6LpkBfaTpfmEF6F5jYPGAOwEB/ZlZCBwBzzdNUw==",
   "success": true,
-  "projectFilePath": "D:\\UTE\\UTE 2023 - 2024\\Ki 2\\WindowsProgramming\\Project\\FindingJob\\WinFormProject.csproj",
+  "projectFilePath": "D:\\UTE\\UTE 2023and2024\\Ki2\\WindowsProgramming\\Project\\FindingJob\\WinFormProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\OS\\.nuget\\packages\\dot-net-transitions\\1.2.1\\dot-net-transitions.1.2.1.nupkg.sha512",
     "C:\\Users\\OS\\.nuget\\packages\\materialskin\\0.2.1\\materialskin.0.2.1.nupkg.sha512",
@@ -21,12 +21,6 @@
     "C:\\Users\\OS\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\UTE\\UTE 2023 - 2024\\Ki 2\\WindowsProgramming\\Project\\FindingJob\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

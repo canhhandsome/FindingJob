@@ -14,18 +14,25 @@ namespace WinFormProject
     {
         private List<Job> jobs = new List<Job>();
         string jsID;
+        FFilter fFilter;
+        JobDAO jobDAO = new JobDAO();
         public FSearchJob(string jsID)
         {
             this.jsID = jsID;
             InitializeComponent();
-            JobDAO jobDAO = new JobDAO();
             jobs = jobDAO.FetchAvailableJobs();
+            fFilter = new FFilter(jobs);
+            FillJob(this.jobs);
+            fFilter.ListReady += fFilter_ListReady;
+        }
+        private void fFilter_ListReady(object sender, List<Job> e)
+        {
+            jobs = e;
             FillJob(this.jobs);
         }
-
         private void FillJob(List<Job> jobslist)
         {
-            flpJob.Controls.Clear() ;
+            flpJob.Controls.Clear();
             foreach (Job job in jobslist)
             {
                 UCInformation uCInformation = new UCInformation(job, jsID);
@@ -43,7 +50,7 @@ namespace WinFormProject
                 {
                     CompanyDAO companyDAO = new CompanyDAO();
                     string namecompany = companyDAO.FetchName(job.CompanyID).ToLower();
-                    string[] propertiesToSearch = { job.Name.ToLower(), job.Position.ToLower(), job.Requirement.ToLower(), job.Description.ToLower(), namecompany};
+                    string[] propertiesToSearch = { job.Name.ToLower(), job.Position.ToLower(), job.Requirement.ToLower(), job.Description.ToLower(), namecompany };
 
                     return propertiesToSearch.Any(property => property.Contains(search));
                 }).ToList();
@@ -51,5 +58,9 @@ namespace WinFormProject
             }
         }
 
+        private void btnFilter_Click(object sender, EventArgs e)
+        {
+            fFilter.Show();
+        }
     }
 }

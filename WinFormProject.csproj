@@ -70,4 +70,8 @@
     <Content Remove="C:\Users\OS\.nuget\packages\syncfusion.pdftoimageconverter.winforms\25.1.37\build\net6.0-windows7.0\..\..\Pdfium\win-x64\native\pdfium.dll" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
 </Project>

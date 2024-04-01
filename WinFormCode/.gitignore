@@ -3,6 +3,11 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+.vs/WinFormProject/FileContentIndex/53abf23b-a353-4a37-a807-05481e743170.vsidx
+.vs/WinFormProject/FileContentIndex/53abf23b-a353-4a37-a807-05481e743170.vsidx
+.vs/WinFormProject/FileContentIndex/53abf23b-a353-4a37-a807-05481e743170.vsidx
+.vs/WinFormProject/FileContentIndex/53abf23b-a353-4a37-a807-05481e743170.vsidx
+
 # User-specific files
 *.rsuser
 *.suo
