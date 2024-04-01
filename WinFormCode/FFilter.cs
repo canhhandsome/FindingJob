@@ -18,9 +18,13 @@ namespace WinFormProject
         private int buttonClickCount = 0;
         string salary = string.Empty;
         List<Job> jobs = new List<Job>();
+        List<Job> jobsdefault = new List<Job>();
+        public event EventHandler<List<Job>> ListReady;
+
         public FFilter(List<Job> jobs)
         {
             InitializeComponent();
+            this.jobsdefault = jobs;
             this.jobs = jobs;
 
             salary = @$"${from} - ${to}";
@@ -116,13 +120,87 @@ namespace WinFormProject
             return search;
         }
 
+        private List<string> TypeSearch()
+        {
+            List<string> search = new List<string>();
+            foreach (Control control in pnType.Controls)
+            {
+                if (control is Button)
+                {
+                    Button btn = (Button)control;
+                    if (btn.Tag != null)
+                        if (btn.Tag.ToString() == "1")
+                            search.Add(btn.Text);
+                }
+            }
+            return search;
+        }
+        private void PassListBackToListener()
+        {
+            ListReady?.Invoke(this, jobs);
+        }
+
         private void btnApply_Click(object sender, EventArgs e)
         {
-            List<string> selectedLevels = LevelSearch();
-            if (selectedLevels.Count > 0)
+            jobs = jobsdefault;
+            List<string> Search = LevelSearch();
+            if (Search.Count > 0)
             {
-                jobs = jobs.Where(job => selectedLevels.Contains(job.Position)).ToList();
+                jobs = jobs.Where(job => Search.Contains(job.Position)).ToList();
             }
+            Search = TypeSearch();
+            CompanyDAO companyDAO = new CompanyDAO();
+            if (Search.Count > 0)
+            {
+                jobs = jobs.Where(job => Search.Contains(companyDAO.FetchInformation(job.CompanyID)[0])).ToList();
+            }
+            jobs = jobs.Where(job =>
+            {
+                float salary;
+                if (float.TryParse(job.Salary, out salary))
+                {
+                    return salary <= to && salary >= from;
+                }
+                else
+                {
+                    return false;
+                }
+            }).ToList();
+            PassListBackToListener();
+            this.Hide();
+        }
+        private void ResetAllControls(Control parentControl)
+        {
+            foreach (Control control in parentControl.Controls)
+            {
+                if (control is Button button)
+                {
+                    button.Image = Properties.Resources.plus; // Assuming this is the default image
+                    button.BackColor = Color.Transparent; // Assuming this is the default background color
+                    button.Tag = 0;
+                }
+                else if (control is Panel)
+                {
+                    ResetAllControls(control);
+                }
+            }
+
+            tbFrom.Value = 0; // Assuming 0 is the default value
+            tbTo.Value = 10; // Assuming 10 is the default value
+
+            from = 500; // Assuming 500 is the default value for 'from'
+            to = 10000; // Assuming 10000 is the default value for 'to'
+
+            salary = @$"${from} - ${to}"; // Assuming this is the default salary range
+            lblSalaryRange.Text = salary; // Update the label text
+
+        }
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            jobs = jobsdefault;
+            ResetAllControls(pnBody);
+            PassListBackToListener();
+            this.Hide();
         }
     }
 }

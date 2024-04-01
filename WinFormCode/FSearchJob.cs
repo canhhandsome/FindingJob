@@ -14,15 +14,22 @@ namespace WinFormProject
     {
         private List<Job> jobs = new List<Job>();
         string jsID;
+        FFilter fFilter;
+        JobDAO jobDAO = new JobDAO();
         public FSearchJob(string jsID)
         {
             this.jsID = jsID;
             InitializeComponent();
-            JobDAO jobDAO = new JobDAO();
             jobs = jobDAO.FetchAvailableJobs();
+            fFilter = new FFilter(jobs);
+            FillJob(this.jobs);
+            fFilter.ListReady += fFilter_ListReady;
+        }
+        private void fFilter_ListReady(object sender, List<Job> e)
+        {
+            jobs = e;
             FillJob(this.jobs);
         }
-
         private void FillJob(List<Job> jobslist)
         {
             flpJob.Controls.Clear();
@@ -53,7 +60,6 @@ namespace WinFormProject
 
         private void btnFilter_Click(object sender, EventArgs e)
         {
-            FFilter fFilter = new FFilter(jobs);
             fFilter.Show();
         }
     }

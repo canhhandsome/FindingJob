@@ -32,7 +32,6 @@
             lblFilter = new Label();
             pnFooter = new Panel();
             btnApply = new ReaLTaiizor.Controls.ParrotButton();
-            label1 = new Label();
             pnBody = new Panel();
             panel1 = new Panel();
             btnRemote = new Button();
@@ -56,6 +55,7 @@
             lblSalary = new Label();
             lblLevel = new Label();
             tbTo = new TrackBar();
+            btnReset = new ReaLTaiizor.Controls.ParrotButton();
             pnHeader.SuspendLayout();
             pnFooter.SuspendLayout();
             pnBody.SuspendLayout();
@@ -91,8 +91,8 @@
             // 
             pnFooter.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             pnFooter.BorderStyle = BorderStyle.FixedSingle;
+            pnFooter.Controls.Add(btnReset);
             pnFooter.Controls.Add(btnApply);
-            pnFooter.Controls.Add(label1);
             pnFooter.Dock = DockStyle.Bottom;
             pnFooter.Location = new Point(0, 622);
             pnFooter.Name = "pnFooter";
@@ -109,7 +109,7 @@
             btnApply.ClickTextColor = Color.Black;
             btnApply.CornerRadius = 6;
             btnApply.Cursor = Cursors.Hand;
-            btnApply.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnApply.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnApply.Horizontal_Alignment = StringAlignment.Center;
             btnApply.HoverBackgroundColor = Color.FromArgb(248, 242, 197);
             btnApply.HoverTextColor = Color.Black;
@@ -123,16 +123,6 @@
             btnApply.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             btnApply.Vertical_Alignment = StringAlignment.Center;
             btnApply.Click += btnApply_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(28, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(135, 25);
-            label1.TabIndex = 1;
-            label1.Text = "Working Form";
             // 
             // pnBody
             // 
@@ -438,6 +428,30 @@
             tbTo.Value = 10;
             tbTo.Scroll += trackBar4_Scroll;
             // 
+            // btnReset
+            // 
+            btnReset.BackgroundColor = Color.Transparent;
+            btnReset.ButtonImage = null;
+            btnReset.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            btnReset.ButtonText = "Reset";
+            btnReset.ClickBackColor = Color.Transparent;
+            btnReset.ClickTextColor = Color.DodgerBlue;
+            btnReset.CornerRadius = 5;
+            btnReset.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnReset.Horizontal_Alignment = StringAlignment.Center;
+            btnReset.HoverBackgroundColor = Color.Transparent;
+            btnReset.HoverTextColor = Color.FromArgb(14, 46, 200);
+            btnReset.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            btnReset.Location = new Point(33, 23);
+            btnReset.Name = "btnReset";
+            btnReset.Size = new Size(135, 25);
+            btnReset.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnReset.TabIndex = 36;
+            btnReset.TextColor = Color.FromArgb(14, 46, 237);
+            btnReset.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnReset.Vertical_Alignment = StringAlignment.Center;
+            btnReset.Click += btnReset_Click;
+            // 
             // FFilter
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -455,7 +469,6 @@
             pnHeader.ResumeLayout(false);
             pnHeader.PerformLayout();
             pnFooter.ResumeLayout(false);
-            pnFooter.PerformLayout();
             pnBody.ResumeLayout(false);
             pnBody.PerformLayout();
             panel1.ResumeLayout(false);
@@ -479,7 +492,6 @@
         private Label lblSalary;
         private Label lblLevel;
         private Button btnFresher;
-        private Label label1;
         private Button btnIntern;
         private Button btnSenior;
         private Button btnJunior;
@@ -497,5 +509,6 @@
         private Panel pnType;
         private Panel pnLevel;
         private Panel panel1;
+        private ReaLTaiizor.Controls.ParrotButton btnReset;
     }
 }
