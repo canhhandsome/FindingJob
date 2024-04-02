@@ -207,8 +207,29 @@ namespace WinFormProject
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(SQL, conn);
                 cmd.Parameters.AddWithValue("@BDate", jobseeker.BDate);
-                cmd.Parameters.AddWithValue("@Avatar", jobseeker.Avatar);
-                cmd.Parameters.AddWithValue("@CV", jobseeker.CV);
+                cmd.Parameters.AddWithValue("@Avatar", (object)jobseeker.Avatar ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@CV", (object)jobseeker.CV ?? DBNull.Value);
+                if (cmd.ExecuteNonQuery() > 0)
+                    MessageBox.Show("Successfully");
+                else MessageBox.Show("Failed");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed, check again" + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+        public void CRUD(string SQL, Company company)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(SQL, conn);
+                cmd.Parameters.AddWithValue("@Avatar", (object)company.Avatar ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@BusinessLicense", (object)company.BusinessLicense ?? DBNull.Value);
                 if (cmd.ExecuteNonQuery() > 0)
                     MessageBox.Show("Successfully");
                 else MessageBox.Show("Failed");

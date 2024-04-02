@@ -33,7 +33,7 @@ namespace WinFormProject
             lblFromT.Text = companyDAO.FetchName(job.CompanyID);
             lblDateT.Text = job.DatePublish.ToString();
             lblNameT.Text = job.Name;
-            companyAvatar = companyDAO.FetchImg(job.CompanyID,"Avatar");
+            companyAvatar = companyDAO.FetchImg(job.CompanyID, "Avatar");
             ImageHandler.DisplayImage(companyAvatar, ref ptbCompanyPicture);
         }
         private void panel1_Click(object sender, EventArgs e)

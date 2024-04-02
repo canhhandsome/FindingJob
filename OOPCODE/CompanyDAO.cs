@@ -13,7 +13,7 @@ namespace WinFormProject
         public CompanyDAO() { }
         public List<string> FetchInformation(string companyID)
         {
-            string strFetch = string.Format("SELECT companytype,companysize,details,taxindentification,websitelink FROM {0} where id = '{1}'","company" ,companyID);
+            string strFetch = string.Format("SELECT companytype,companysize,detail,taxidentification,websitelink,workingtimebegin,workingtimeend FROM {0} where id = '{1}'","company" ,companyID);
             return conn.FetchSeperatedData(strFetch);
         }
 
@@ -25,8 +25,14 @@ namespace WinFormProject
         public byte[] FetchImg(string companyid, string whattotake)
         {
             string strFetch = string.Format("SELECT {0}  FROM Company WHERE id = '{1}'", whattotake,companyid);
-            // Assuming FetchScalar method executes the query and returns a single scalar value (in this case, the image data)
             return conn.FetchBinaryData(strFetch);
+        }
+        public void UpdateCompany(Company company)
+        {
+            string sqlUpdate = string.Format("UPDATE Company SET Name = '{1}', Address = '{2}', Phonenumber = '{3}', CompanyType = '{4}', Email = '{5}', WebsiteLink = '{6}', TaxIdentification = '{7}', CompanySize = '{8}', WorkingTimeBegin = '{9}', WorkingTimeEnd = '{10}', Detail = '{11}', Avatar = @Avatar, BusinessLicense = @BusinessLicense WHERE ID = '{0}' ",
+                    company.INFO.ID, company.INFO.Name, company.INFO.Address, company.INFO.Phone, company.CompanyType, company.INFO.Email, company.Websitelink,
+                    company.Taxidentification, company.CompanySize, company.WorkingTimeBegin, company.WorkingTimeEnd, company.Description);
+            conn.CRUD(sqlUpdate, company);
         }
     }
     

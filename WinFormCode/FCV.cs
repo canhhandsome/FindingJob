@@ -14,12 +14,10 @@ namespace WinFormProject
 {
     public partial class FCV : Form
     {
-        JobSeeker jobseeker;
         WebBrowser pdfViewer = new WebBrowser();
         public FCV(JobSeeker jobseeker)
         {
             InitializeComponent();
-            this.jobseeker = jobseeker;
             this.Controls.Add(pdfViewer);
             pdfViewer.Dock = DockStyle.Fill;
             PDFHandler.DisplayPDFInWebBrowser(jobseeker.CV, ref pdfViewer);

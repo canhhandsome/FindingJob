@@ -21,8 +21,16 @@ namespace WinFormProject.OOPCODE
                 // Write the PDF byte array to a temporary file
                 File.WriteAllBytes(tempFilePath, pdfData);
 
-                // Navigate the WebBrowser control to the temporary file
-                webBrowser.Navigate(tempFilePath);
+                // Check if the file was written successfully
+                if (File.Exists(tempFilePath))
+                {
+                    // Navigate the WebBrowser control to the temporary file
+                    webBrowser.Navigate(tempFilePath);
+                }
+                else
+                {
+                    MessageBox.Show("Error: Failed to write PDF data to temporary file.");
+                }
             }
             catch (Exception ex)
             {

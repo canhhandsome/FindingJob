@@ -8,17 +8,30 @@ namespace WinFormProject
 {
     public class Company
     {
-        string companytype, companysize,taxidentification,description,websitelink;
+        string companytype, companysize,taxidentification,description,websitelink,workingtimebegin,workingtimeend;
         CompanyDAO companyDAO = new CompanyDAO();
         JobDAO jobDao = new JobDAO();
         ApplyDAO applyDAO = new ApplyDAO();
         Information information = new Information();
         List<Job> jobs = new List<Job>();
         byte[] AvatarData = new byte[0];
-        byte[] BusinessLicense = new byte[0];
+        byte[] BusinessLicenseData = new byte[0];
         public Company()
         {
 
+        }
+        public Company(Information information, string companytype, string companysize, string taxidentification, string description,string websitelink,string workingtimebegin,string workingtimeend, byte[] AvatarData, byte[] BusinessLicenseData)
+        {
+            this.information = information;
+            this.companytype = companytype;
+            this.companysize = companysize;
+            this.taxidentification = taxidentification;
+            this.description = description;
+            this.websitelink = websitelink;
+            this.workingtimebegin = workingtimebegin;
+            this.workingtimeend = workingtimeend;
+            this.AvatarData = AvatarData;
+            this.BusinessLicenseData = BusinessLicenseData;
         }
         public Company(Information information)
         {
@@ -27,7 +40,7 @@ namespace WinFormProject
             FillOtherInfor(otherinfo);
             jobs = jobDao.FetchCompanyJob(this.INFO.ID);
             AvatarData = companyDAO.FetchImg(this.INFO.ID,"Avatar");
-            BusinessLicense = companyDAO.FetchImg(this.INFO.ID, "BusinessLicense");
+            BusinessLicenseData = companyDAO.FetchImg(this.INFO.ID, "BusinessLicense");
             
         }
         private void FillOtherInfor(List<String> otherinfo)
@@ -37,6 +50,8 @@ namespace WinFormProject
             description = otherinfo[2];
             taxidentification = otherinfo[3];
             websitelink = otherinfo[4];
+            workingtimebegin = otherinfo[5];
+            workingtimeend = otherinfo[6];
         }
         public List<Job> Jobs
         {
@@ -46,6 +61,41 @@ namespace WinFormProject
         {
             get { return information; }
         }
-
+        public string CompanyType
+        {
+            get { return companytype; }
+        }
+        public string CompanySize
+        {
+            get { return companysize; }
+        }
+        public string Description
+        {
+            get { return description; }
+        }
+        public string Taxidentification
+        {
+            get { return taxidentification; }
+        }
+        public string Websitelink
+        {
+            get { return websitelink; }
+        }
+        public string WorkingTimeBegin
+        {
+            get { return workingtimebegin; }
+        }
+        public string WorkingTimeEnd
+        {
+            get { return workingtimeend; }
+        }
+        public byte[] BusinessLicense
+        {
+            get { return BusinessLicenseData; }
+        }
+        public byte[] Avatar
+        {
+            get { return AvatarData;  }
+        }
     }
 }
