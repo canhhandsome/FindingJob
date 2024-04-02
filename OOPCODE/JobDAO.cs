@@ -38,11 +38,11 @@ namespace WinFormProject
             string strFetch = string.Format("Select JobName From Job where jobid = '{0}'", jobid);
             return conn.FetchScalar(strFetch);
         }
-        public void AddNewJob(string companyid, string jobname, string position, string salary, string requirement, string description)
+        public void AddNewJob(string companyid, string jobname, string position, string salary, string requirement, string description, string DateEnd)
         {
-            string sqlUpdate = string.Format("INSERT INTO Job (companyid, jobname, position, salary, description, requirement) " +
-                                     "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')",
-                                     companyid, jobname, position, salary, description, requirement);
+            string sqlUpdate = string.Format("INSERT INTO Job (companyid, jobname, position, salary, description, requirement, DateEnd) " +
+                                     "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')",
+                                     companyid, jobname, position, salary, description, requirement, DateEnd);
             conn.CRUD(sqlUpdate);
         }
         public void DeleteJob(string jobid)

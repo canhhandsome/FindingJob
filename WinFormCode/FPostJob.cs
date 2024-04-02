@@ -77,7 +77,6 @@ namespace WinFormProject
             //fJobEdit.BtnPostJob = "Save";
             //OpenChildForm(fJobEdit);
         }
-        // Event handler for UCJob JobDeleted event
         private void UCJob_JobDeleted(object sender, EventArgs e)
         {
             if (sender is UCJob ucjob)

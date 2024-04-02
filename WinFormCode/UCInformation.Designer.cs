@@ -30,6 +30,8 @@
         {
             panel1 = new Panel();
             ptbCompanyPicture = new PictureBox();
+            lblDateEndT = new Label();
+            lblDateEnd = new Label();
             lblDateT = new Label();
             lblDate = new Label();
             lblNameT = new Label();
@@ -44,6 +46,8 @@
             // 
             panel1.BackColor = Color.FromArgb(254, 232, 223);
             panel1.Controls.Add(ptbCompanyPicture);
+            panel1.Controls.Add(lblDateEndT);
+            panel1.Controls.Add(lblDateEnd);
             panel1.Controls.Add(lblDateT);
             panel1.Controls.Add(lblDate);
             panel1.Controls.Add(lblNameT);
@@ -59,7 +63,7 @@
             // 
             // ptbCompanyPicture
             // 
-            ptbCompanyPicture.Location = new Point(15, 2);
+            ptbCompanyPicture.Location = new Point(15, 7);
             ptbCompanyPicture.Margin = new Padding(3, 2, 3, 2);
             ptbCompanyPicture.Name = "ptbCompanyPicture";
             ptbCompanyPicture.Size = new Size(131, 119);
@@ -67,11 +71,31 @@
             ptbCompanyPicture.TabIndex = 1;
             ptbCompanyPicture.TabStop = false;
             // 
+            // lblDateEndT
+            // 
+            lblDateEndT.AutoSize = true;
+            lblDateEndT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDateEndT.Location = new Point(693, 13);
+            lblDateEndT.Name = "lblDateEndT";
+            lblDateEndT.Size = new Size(58, 25);
+            lblDateEndT.TabIndex = 0;
+            lblDateEndT.Text = "Date: ";
+            // 
+            // lblDateEnd
+            // 
+            lblDateEnd.AutoSize = true;
+            lblDateEnd.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDateEnd.Location = new Point(568, 13);
+            lblDateEnd.Name = "lblDateEnd";
+            lblDateEnd.Size = new Size(93, 25);
+            lblDateEnd.TabIndex = 0;
+            lblDateEnd.Text = "Date End: ";
+            // 
             // lblDateT
             // 
             lblDateT.AutoSize = true;
             lblDateT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDateT.Location = new Point(231, 50);
+            lblDateT.Location = new Point(277, 50);
             lblDateT.Name = "lblDateT";
             lblDateT.Size = new Size(58, 25);
             lblDateT.TabIndex = 0;
@@ -83,15 +107,15 @@
             lblDate.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblDate.Location = new Point(151, 50);
             lblDate.Name = "lblDate";
-            lblDate.Size = new Size(58, 25);
+            lblDate.Size = new Size(120, 25);
             lblDate.TabIndex = 0;
-            lblDate.Text = "Date: ";
+            lblDate.Text = "Date Publish: ";
             // 
             // lblNameT
             // 
             lblNameT.AutoSize = true;
             lblNameT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblNameT.Location = new Point(231, 88);
+            lblNameT.Location = new Point(277, 88);
             lblNameT.Name = "lblNameT";
             lblNameT.Size = new Size(68, 25);
             lblNameT.TabIndex = 0;
@@ -111,7 +135,7 @@
             // 
             lblFromT.AutoSize = true;
             lblFromT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFromT.Location = new Point(231, 13);
+            lblFromT.Location = new Point(277, 13);
             lblFromT.Name = "lblFromT";
             lblFromT.Size = new Size(58, 25);
             lblFromT.TabIndex = 0;
@@ -151,5 +175,7 @@
         public Label lblFromT;
         public Label lblNameT;
         private PictureBox ptbCompanyPicture;
+        public Label lblDateEndT;
+        public Label lblDateEnd;
     }
 }

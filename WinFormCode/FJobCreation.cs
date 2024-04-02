@@ -24,16 +24,6 @@ namespace WinFormProject
             this.jobs = jobs;
             this.companyid = companyid;
         }
-        public string LblTitle
-        {
-            get { return lblTitle.Text; }
-            set { lblTitle.Text = value; }
-        }
-        public string BtnPostJob
-        {
-            get { return btnPostJob.Text; }
-            set { btnPostJob.Text = value; }
-        }
         private void OpenChildForm(Form childForm)
         {
             foreach (Control control in this.Controls)
@@ -63,7 +53,7 @@ namespace WinFormProject
 
         private void btnPostJob_Click(object sender, EventArgs e)
         {
-            jobDAO.AddNewJob(companyid, txtJobName.Text, cbbExperience.Text, txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text);
+            jobDAO.AddNewJob(companyid, txtJobName.Text, cbbExperience.Text, txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, dtpDateEnd.Value.ToString("yyyy-MM-dd"));
             jobs = jobDAO.FetchCompanyJob(companyid);
             OpenChildForm(new FPostJob(jobs, companyid));
         }

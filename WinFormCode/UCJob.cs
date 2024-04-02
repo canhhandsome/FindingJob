@@ -3,6 +3,7 @@
 using System;
 using System.ComponentModel;
 using System.Drawing.Drawing2D;
+using System.Threading.Tasks.Dataflow;
 using System.Windows.Forms;
 
 namespace WinFormProject
@@ -23,6 +24,7 @@ namespace WinFormProject
             this.job = job;
             lblJobNameT.Text = job.Name;
             lblDateT.Text = job.DatePublish.ToString();
+            lblEndT.Text = job.DateEnd.ToString("dd/MM/yyyy");
         }
 
         public Job Job { get { return job; } }

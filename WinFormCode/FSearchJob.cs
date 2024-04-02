@@ -35,9 +35,12 @@ namespace WinFormProject
             flpJob.Controls.Clear();
             foreach (Job job in jobslist)
             {
-                UCInformation uCInformation = new UCInformation(job, jsID);
-                flpJob.Controls.Add(uCInformation);
-                flpJob.Height += 150;
+                if(job.Status == "waiting")
+                {
+                    UCInformation uCInformation = new UCInformation(job, jsID);
+                    flpJob.Controls.Add(uCInformation);
+                    flpJob.Height += 150;
+                }
             }
         }
 
