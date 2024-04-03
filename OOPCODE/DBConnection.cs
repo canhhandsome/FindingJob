@@ -265,5 +265,29 @@ namespace WinFormProject
             }
             return null;
         }
+        public bool CheckApplyData(string SQL,string jobid,string jsid)
+        {
+            int rowsCount = 0;
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(SQL, conn);
+                object result = cmd.ExecuteScalar();
+
+                if (result != null && result != DBNull.Value)
+                {
+                    rowsCount = Convert.ToInt32(result);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Operation failed. Error: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return rowsCount > 0;
+        }
     }
 }

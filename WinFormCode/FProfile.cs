@@ -100,18 +100,17 @@ namespace WinFormProject
         }
         private JobSeeker CreateJobSeeker()
         {
-            string gender = String.Empty;
+            string gender;
             byte[] AvatarData = new byte[1];
             if (ptbAvatar.Image != null)
             {
                 AvatarData = ImageHandler.ImageToByteArray(ptbAvatar.Image);
             }
-            byte[] CvData = new byte[1];
-            if (ptbCV.Image != null)
+            byte[] CvData;
+            if (ptbCV.Image != null && Cv.Length > 0)
             {
                 CvData = Cv;
-            }
-            else CvData = jobseeker.CV;
+            } else CvData = this.jobseeker.CV;
             Information information = new Information(jobseeker.INFO.ID, txtFullName.Text, txtEmail.Text, txtAddress.Text, txtPhoneNumber.Text);
             if (rdoFemale.Checked) gender = "female"; else gender = "male";
             return new JobSeeker(information, dtpkBirthDate.Value, txtCitizenID.Text, gender, AvatarData, CvData);

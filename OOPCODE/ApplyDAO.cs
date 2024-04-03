@@ -29,5 +29,10 @@ namespace WinFormProject
             string strCRUD = string.Format("UPDATE Apply SET status = '{0}' WHERE JobSeekerID = '{1}' AND JobID = '{2}'", status, apply.JSeekerID, apply.JobID);
             conn.CRUD(strCRUD);
         }
+        public bool CheckApply(string jobID,string jsid) 
+        {
+            string SQL = string.Format("Select * From apply where jobID = '{0}' and jobseekerID = '{1}'", jobID,jsid);
+            return conn.CheckApplyData(SQL,jobID,jsid);
+        }
     }
 }

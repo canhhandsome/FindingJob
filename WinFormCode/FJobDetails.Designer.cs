@@ -62,9 +62,9 @@
             lblCompany.AutoSize = true;
             lblCompany.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblCompany.ForeColor = SystemColors.ControlText;
-            lblCompany.Location = new Point(10, 15);
+            lblCompany.Location = new Point(11, 20);
             lblCompany.Name = "lblCompany";
-            lblCompany.Size = new Size(80, 21);
+            lblCompany.Size = new Size(100, 28);
             lblCompany.TabIndex = 13;
             lblCompany.Text = "Company:";
             // 
@@ -73,9 +73,9 @@
             lblCompanyT.AutoSize = true;
             lblCompanyT.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblCompanyT.ForeColor = SystemColors.ControlText;
-            lblCompanyT.Location = new Point(103, 15);
+            lblCompanyT.Location = new Point(118, 20);
             lblCompanyT.Name = "lblCompanyT";
-            lblCompanyT.Size = new Size(80, 21);
+            lblCompanyT.Size = new Size(100, 28);
             lblCompanyT.TabIndex = 14;
             lblCompanyT.Text = "Company:";
             // 
@@ -84,9 +84,9 @@
             lblName.AutoSize = true;
             lblName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblName.ForeColor = SystemColors.ControlText;
-            lblName.Location = new Point(10, 45);
+            lblName.Location = new Point(11, 60);
             lblName.Name = "lblName";
-            lblName.Size = new Size(83, 21);
+            lblName.Size = new Size(104, 28);
             lblName.TabIndex = 15;
             lblName.Text = "Job Name:";
             // 
@@ -95,9 +95,9 @@
             lblNameT.AutoSize = true;
             lblNameT.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblNameT.ForeColor = SystemColors.ControlText;
-            lblNameT.Location = new Point(107, 45);
+            lblNameT.Location = new Point(122, 60);
             lblNameT.Name = "lblNameT";
-            lblNameT.Size = new Size(83, 21);
+            lblNameT.Size = new Size(104, 28);
             lblNameT.TabIndex = 16;
             lblNameT.Text = "Job Name:";
             // 
@@ -106,9 +106,9 @@
             lblPosition.AutoSize = true;
             lblPosition.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblPosition.ForeColor = SystemColors.ControlText;
-            lblPosition.Location = new Point(10, 75);
+            lblPosition.Location = new Point(11, 100);
             lblPosition.Name = "lblPosition";
-            lblPosition.Size = new Size(68, 21);
+            lblPosition.Size = new Size(86, 28);
             lblPosition.TabIndex = 17;
             lblPosition.Text = "Position:";
             // 
@@ -117,9 +117,9 @@
             lblPositionT.AutoSize = true;
             lblPositionT.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblPositionT.ForeColor = SystemColors.ControlText;
-            lblPositionT.Location = new Point(91, 75);
+            lblPositionT.Location = new Point(104, 100);
             lblPositionT.Name = "lblPositionT";
-            lblPositionT.Size = new Size(68, 21);
+            lblPositionT.Size = new Size(86, 28);
             lblPositionT.TabIndex = 18;
             lblPositionT.Text = "Position:";
             // 
@@ -128,9 +128,9 @@
             lblSalary.AutoSize = true;
             lblSalary.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblSalary.ForeColor = SystemColors.ControlText;
-            lblSalary.Location = new Point(10, 105);
+            lblSalary.Location = new Point(11, 140);
             lblSalary.Name = "lblSalary";
-            lblSalary.Size = new Size(56, 21);
+            lblSalary.Size = new Size(69, 28);
             lblSalary.TabIndex = 19;
             lblSalary.Text = "Salary:";
             // 
@@ -139,9 +139,9 @@
             lblSalaryT.AutoSize = true;
             lblSalaryT.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblSalaryT.ForeColor = SystemColors.ControlText;
-            lblSalaryT.Location = new Point(76, 105);
+            lblSalaryT.Location = new Point(87, 140);
             lblSalaryT.Name = "lblSalaryT";
-            lblSalaryT.Size = new Size(56, 21);
+            lblSalaryT.Size = new Size(69, 28);
             lblSalaryT.TabIndex = 20;
             lblSalaryT.Text = "Salary:";
             // 
@@ -150,9 +150,9 @@
             lblDate.AutoSize = true;
             lblDate.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblDate.ForeColor = SystemColors.ControlText;
-            lblDate.Location = new Point(10, 135);
+            lblDate.Location = new Point(11, 180);
             lblDate.Name = "lblDate";
-            lblDate.Size = new Size(100, 21);
+            lblDate.Size = new Size(125, 28);
             lblDate.TabIndex = 21;
             lblDate.Text = "Date Publish:";
             // 
@@ -161,9 +161,9 @@
             lblDateT.AutoSize = true;
             lblDateT.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblDateT.ForeColor = SystemColors.ControlText;
-            lblDateT.Location = new Point(125, 135);
+            lblDateT.Location = new Point(143, 180);
             lblDateT.Name = "lblDateT";
-            lblDateT.Size = new Size(100, 21);
+            lblDateT.Size = new Size(125, 28);
             lblDateT.TabIndex = 22;
             lblDateT.Text = "Date Publish:";
             // 
@@ -173,19 +173,21 @@
             tabControl1.Controls.Add(tabPage2);
             tabControl1.Controls.Add(tabPage3);
             tabControl1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            tabControl1.Location = new Point(10, 174);
+            tabControl1.Location = new Point(11, 232);
+            tabControl1.Margin = new Padding(3, 4, 3, 4);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(488, 231);
+            tabControl1.Size = new Size(558, 308);
             tabControl1.TabIndex = 28;
             // 
             // tabPage1
             // 
             tabPage1.Controls.Add(rtxtRequirement);
-            tabPage1.Location = new Point(4, 29);
+            tabPage1.Location = new Point(4, 34);
+            tabPage1.Margin = new Padding(3, 4, 3, 4);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(480, 198);
+            tabPage1.Padding = new Padding(3, 4, 3, 4);
+            tabPage1.Size = new Size(550, 270);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Requirement";
             tabPage1.UseVisualStyleBackColor = true;
@@ -194,9 +196,10 @@
             // 
             rtxtRequirement.Dock = DockStyle.Fill;
             rtxtRequirement.Enabled = false;
-            rtxtRequirement.Location = new Point(3, 3);
+            rtxtRequirement.Location = new Point(3, 4);
+            rtxtRequirement.Margin = new Padding(3, 4, 3, 4);
             rtxtRequirement.Name = "rtxtRequirement";
-            rtxtRequirement.Size = new Size(474, 192);
+            rtxtRequirement.Size = new Size(544, 262);
             rtxtRequirement.TabIndex = 0;
             rtxtRequirement.Text = "";
             // 
@@ -204,10 +207,11 @@
             // 
             tabPage2.Controls.Add(richTextBox1);
             tabPage2.Controls.Add(rtxtDescription);
-            tabPage2.Location = new Point(4, 29);
+            tabPage2.Location = new Point(4, 34);
+            tabPage2.Margin = new Padding(3, 4, 3, 4);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(480, 198);
+            tabPage2.Padding = new Padding(3, 4, 3, 4);
+            tabPage2.Size = new Size(550, 270);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Description";
             tabPage2.UseVisualStyleBackColor = true;
@@ -216,9 +220,10 @@
             // 
             richTextBox1.Dock = DockStyle.Fill;
             richTextBox1.Enabled = false;
-            richTextBox1.Location = new Point(3, 3);
+            richTextBox1.Location = new Point(3, 4);
+            richTextBox1.Margin = new Padding(3, 4, 3, 4);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(474, 192);
+            richTextBox1.Size = new Size(544, 262);
             richTextBox1.TabIndex = 1;
             richTextBox1.Text = "";
             // 
@@ -226,19 +231,21 @@
             // 
             rtxtDescription.Dock = DockStyle.Fill;
             rtxtDescription.Enabled = false;
-            rtxtDescription.Location = new Point(3, 3);
+            rtxtDescription.Location = new Point(3, 4);
+            rtxtDescription.Margin = new Padding(3, 4, 3, 4);
             rtxtDescription.Name = "rtxtDescription";
-            rtxtDescription.Size = new Size(474, 192);
+            rtxtDescription.Size = new Size(544, 262);
             rtxtDescription.TabIndex = 0;
             rtxtDescription.Text = "";
             // 
             // tabPage3
             // 
             tabPage3.Controls.Add(rtxtBenefit);
-            tabPage3.Location = new Point(4, 29);
+            tabPage3.Location = new Point(4, 34);
+            tabPage3.Margin = new Padding(3, 4, 3, 4);
             tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(480, 198);
+            tabPage3.Padding = new Padding(3, 4, 3, 4);
+            tabPage3.Size = new Size(550, 270);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Benefit";
             tabPage3.UseVisualStyleBackColor = true;
@@ -247,9 +254,10 @@
             // 
             rtxtBenefit.Dock = DockStyle.Fill;
             rtxtBenefit.Enabled = false;
-            rtxtBenefit.Location = new Point(3, 3);
+            rtxtBenefit.Location = new Point(3, 4);
+            rtxtBenefit.Margin = new Padding(3, 4, 3, 4);
             rtxtBenefit.Name = "rtxtBenefit";
-            rtxtBenefit.Size = new Size(474, 192);
+            rtxtBenefit.Size = new Size(544, 262);
             rtxtBenefit.TabIndex = 45;
             rtxtBenefit.Text = "";
             // 
@@ -280,12 +288,13 @@
             btnApply.Lighting = true;
             btnApply.LinearGradient_Background = false;
             btnApply.LinearGradientPen = false;
-            btnApply.Location = new Point(247, 420);
+            btnApply.Location = new Point(282, 560);
+            btnApply.Margin = new Padding(3, 4, 3, 4);
             btnApply.Name = "btnApply";
             btnApply.PenWidth = 15;
             btnApply.Rounding = true;
             btnApply.RoundingInt = 20;
-            btnApply.Size = new Size(120, 40);
+            btnApply.Size = new Size(137, 53);
             btnApply.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnApply.TabIndex = 43;
             btnApply.Tag = "Decline";
@@ -322,12 +331,13 @@
             btnBack.Lighting = true;
             btnBack.LinearGradient_Background = false;
             btnBack.LinearGradientPen = false;
-            btnBack.Location = new Point(372, 420);
+            btnBack.Location = new Point(425, 560);
+            btnBack.Margin = new Padding(3, 4, 3, 4);
             btnBack.Name = "btnBack";
             btnBack.PenWidth = 15;
             btnBack.Rounding = true;
             btnBack.RoundingInt = 20;
-            btnBack.Size = new Size(120, 40);
+            btnBack.Size = new Size(137, 53);
             btnBack.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnBack.TabIndex = 44;
             btnBack.Tag = "Decline";
@@ -341,9 +351,9 @@
             // 
             lblEndT.AutoSize = true;
             lblEndT.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblEndT.Location = new Point(389, 135);
+            lblEndT.Location = new Point(445, 180);
             lblEndT.Name = "lblEndT";
-            lblEndT.Size = new Size(75, 21);
+            lblEndT.Size = new Size(95, 28);
             lblEndT.TabIndex = 46;
             lblEndT.Text = "Date End:";
             // 
@@ -351,9 +361,9 @@
             // 
             lblEnd.AutoSize = true;
             lblEnd.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblEnd.Location = new Point(273, 135);
+            lblEnd.Location = new Point(312, 180);
             lblEnd.Name = "lblEnd";
-            lblEnd.Size = new Size(75, 21);
+            lblEnd.Size = new Size(95, 28);
             lblEnd.TabIndex = 45;
             lblEnd.Text = "Date End:";
             // 
@@ -384,12 +394,13 @@
             btnCompanyDetails.Lighting = true;
             btnCompanyDetails.LinearGradient_Background = false;
             btnCompanyDetails.LinearGradientPen = false;
-            btnCompanyDetails.Location = new Point(91, 420);
+            btnCompanyDetails.Location = new Point(104, 560);
+            btnCompanyDetails.Margin = new Padding(3, 4, 3, 4);
             btnCompanyDetails.Name = "btnCompanyDetails";
             btnCompanyDetails.PenWidth = 15;
             btnCompanyDetails.Rounding = true;
             btnCompanyDetails.RoundingInt = 20;
-            btnCompanyDetails.Size = new Size(150, 40);
+            btnCompanyDetails.Size = new Size(171, 53);
             btnCompanyDetails.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnCompanyDetails.TabIndex = 43;
             btnCompanyDetails.Tag = "Decline";
@@ -400,10 +411,10 @@
             // 
             // FJobDetails
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(510, 472);
+            ClientSize = new Size(583, 629);
             Controls.Add(lblEndT);
             Controls.Add(lblEnd);
             Controls.Add(btnBack);
@@ -421,6 +432,7 @@
             Controls.Add(lblCompanyT);
             Controls.Add(lblCompany);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FJobDetails";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FJobDetails";

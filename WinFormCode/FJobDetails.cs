@@ -13,7 +13,7 @@ namespace WinFormProject
     public partial class FJobDetails : Form
     {
         string jsID;
-        Job job; 
+        Job job;
         ApplyDAO applyDAO = new ApplyDAO();
 
         public FJobDetails(Job job, string jsID)
@@ -31,6 +31,18 @@ namespace WinFormProject
             rtxtRequirement.Text = job.Requirement;
             rtxtBenefit.Text = job.Benefit;
             lblEndT.Text = job.DateEnd.ToString("dd/MM/yyyy");
+            if (applyDAO.CheckApply(job.Jobid, jsID))
+            {
+                btnApply.Enabled = false;
+                btnApply.ColorBackground = Color.FromArgb(214, 204, 194);
+                btnApply.ColorBackground_Pen = Color.FromArgb(214, 204, 194);
+            }
+            else
+            {
+                btnApply.Enabled = true;
+                btnApply.ColorBackground = Color.FromArgb(176, 226, 243);
+                btnApply.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
+            }
         }
 
         private void btnBack_Click(object sender, EventArgs e)
