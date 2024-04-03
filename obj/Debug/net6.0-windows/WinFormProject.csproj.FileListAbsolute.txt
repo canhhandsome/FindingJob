@@ -231,3 +231,5 @@ D:\Window Programming\Project\New folder\FindingJob\obj\Debug\net6.0-windows\ref
 D:\Window Programming\Project\New folder\FindingJob\obj\Debug\net6.0-windows\WinFormProject.pdb
 D:\Window Programming\Project\New folder\FindingJob\obj\Debug\net6.0-windows\WinFormProject.genruntimeconfig.cache
 D:\Window Programming\Project\New folder\FindingJob\obj\Debug\net6.0-windows\ref\WinFormProject.dll
+D:\Window Programming\Project\New folder\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FHistory.resources
+D:\Window Programming\Project\New folder\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.UCHistory.resources
