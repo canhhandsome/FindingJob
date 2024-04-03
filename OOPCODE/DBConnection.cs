@@ -272,12 +272,19 @@ namespace WinFormProject
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(SQL, conn);
-                object result = cmd.ExecuteScalar();
-
-                if (result != null && result != DBNull.Value)
+                SqlDataReader reader = cmd.ExecuteReader();
+                List<string> list = new List<string>();
+                if (reader.HasRows)
                 {
-                    rowsCount = Convert.ToInt32(result);
-                }
+                    while (reader.Read())
+                    {
+                        list.Add(reader["jobseekerID"].ToString());
+                        list.Add(reader["JobID"].ToString());
+                     }
+                    if (list[0] == jsid && list[1] == jobid) rowsCount = 1;
+                    else rowsCount = 0;
+                } else rowsCount = 0;
+                
             }
             catch (Exception ex)
             {
