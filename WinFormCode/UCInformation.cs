@@ -16,9 +16,6 @@ namespace WinFormProject
         CompanyDAO companyDAO = new CompanyDAO();
         string jsID = string.Empty;
         byte[] companyAvatar = new byte[100];
-        public UCInformation()
-        {
-        }
         public UCInformation(Job job, string jsID)
         {
             InitializeComponent();
