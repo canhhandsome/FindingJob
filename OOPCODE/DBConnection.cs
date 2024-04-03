@@ -296,5 +296,31 @@ namespace WinFormProject
             }
             return rowsCount > 0;
         }
+        public Company FetchCompanyById(string strFetch,string id)
+        {
+            Company company = new Company();
+            List<string> seperatedinfo = new List<string>(2);
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while(reader.Read())
+                {
+                    Information information = new Information(reader["ID"].ToString(), reader["Name"].ToString(),
+                        reader["Email"].ToString(), reader["Address"].ToString(), reader["Phonenumber"].ToString());
+                    company = new Company(information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("them that bai" + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return company;
+        }
     }
 }

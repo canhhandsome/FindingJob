@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormProject.WinFormCode;
 
 namespace WinFormProject
 {
@@ -16,9 +17,6 @@ namespace WinFormProject
         CompanyDAO companyDAO = new CompanyDAO();
         string jsID = string.Empty;
         byte[] companyAvatar = new byte[100];
-        public UCInformation()
-        {
-        }
         public UCInformation(Job job, string jsID)
         {
             InitializeComponent();
@@ -41,6 +39,12 @@ namespace WinFormProject
         {
             FJobDetails jobDetails = new FJobDetails(job, jsID);
             jobDetails.Show();
+        }
+
+        private void btnCompanyDetail_Click(object sender, EventArgs e)
+        {
+            FCompanyDetail companyDetail = new FCompanyDetail(job.CompanyID);
+            companyDetail.Show();
         }
     }
 }

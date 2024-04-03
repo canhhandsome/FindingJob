@@ -27,8 +27,8 @@ namespace WinFormProject
             this.txtAddress.Text = company.INFO.Address;
             this.txtPhoneNumber.Text = company.INFO.Phone;
             this.txtEmail.Text = company.INFO.Email;
-            this.txtCompanyType.Text = company.CompanyType;
-            this.txtCompanySize.Text = company.CompanySize;
+            this.cbbCompanyType.Text = company.CompanyType;
+            this.cbbCompanySize.Text = company.CompanySize;
             this.txtTaxIdentification.Text = company.Taxidentification;
             this.cbbWTB.Text = company.WorkingTimeBegin;
             this.cbbWTEnd.Text = company.WorkingTimeEnd;
@@ -42,17 +42,17 @@ namespace WinFormProject
             this.btnSave.Visible = false;
             this.btnCancel.Visible = false;
             this.btnChooseLicense.Visible = false;
-            txtCompanyName.ReadOnly = true;
-            txtAddress.ReadOnly = true;
-            txtCompanyType.ReadOnly = true;
-            txtEmail.ReadOnly = true;
-            txtPhoneNumber.ReadOnly = true;
+            txtCompanyName.Enabled = false;
+            txtAddress.Enabled = false;
+            cbbCompanyType.Enabled = false;
+            txtEmail.Enabled = false;
+            txtPhoneNumber.Enabled = false;
             txtDetail.Enabled = false;
-            txtTaxIdentification.ReadOnly = true;
-            txtWebsiteLink.ReadOnly = true;
+            txtTaxIdentification.Enabled = false;
+            txtWebsiteLink.Enabled = false;
             cbbWTB.Enabled = false;
             cbbWTEnd.Enabled = false;
-            txtCompanySize.Enabled = false;
+            cbbCompanySize.Enabled = false;
         }
         private void Enable_Edit_Click()
         {
@@ -61,15 +61,15 @@ namespace WinFormProject
             this.btnSave.Visible = true;
             this.btnCancel.Visible = true;
             this.btnChooseLicense.Visible = true;
-            txtCompanyName.ReadOnly = false;
-            txtAddress.ReadOnly = false;
-            txtCompanyType.ReadOnly = false;
-            txtEmail.ReadOnly = false;
-            txtPhoneNumber.ReadOnly = false;
-            txtCompanySize.Enabled = true;
+            txtCompanyName.Enabled = true;
+            txtAddress.Enabled = true;
+            cbbCompanyType.Enabled = true;
+            txtEmail.Enabled = true;
+            txtPhoneNumber.Enabled = true;
+            cbbCompanySize.Enabled = true;
             txtDetail.Enabled = true;
-            txtTaxIdentification.ReadOnly = false;
-            txtWebsiteLink.ReadOnly = false;
+            txtTaxIdentification.Enabled = true;
+            txtWebsiteLink.Enabled = true;
             cbbWTB.Enabled = true;
             cbbWTEnd.Enabled = true;
         }
@@ -91,7 +91,7 @@ namespace WinFormProject
                 BusinessData = ImageHandler.ImageToByteArray(ptbLicense.Image);
             }
             Information information = new Information(company.INFO.ID, txtCompanyName.Text, txtEmail.Text, txtAddress.Text, txtPhoneNumber.Text);
-            return new Company(information, txtCompanyType.Text, txtCompanySize.Text, txtTaxIdentification.Text,
+            return new Company(information, cbbCompanyType.Text, cbbCompanySize.Text, txtTaxIdentification.Text,
                 txtDetail.Text, txtWebsiteLink.Text, cbbWTB.Text, cbbWTEnd.Text, AvatarData, BusinessData); ;
         }
 
@@ -118,6 +118,16 @@ namespace WinFormProject
         {
             FillInfor(); // Reload tshe form with the original data
             Enable_Save_Click(); // Re-enable the form for editing
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ptbAvatar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

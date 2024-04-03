@@ -29,117 +29,123 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FSearchJob));
-            dungeonComboBox1 = new ReaLTaiizor.Controls.DungeonComboBox();
-            flpJob = new FlowLayoutPanel();
-            txtSearch = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            btnFilter = new ReaLTaiizor.Controls.ParrotButton();
-            SuspendLayout();
+            this.dungeonComboBox1 = new ReaLTaiizor.Controls.DungeonComboBox();
+            this.flpJob = new System.Windows.Forms.FlowLayoutPanel();
+            this.txtSearch = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            this.btnFilter = new ReaLTaiizor.Controls.ParrotButton();
+            this.SuspendLayout();
             // 
             // dungeonComboBox1
             // 
-            dungeonComboBox1.BackColor = Color.FromArgb(246, 246, 246);
-            dungeonComboBox1.ColorA = Color.FromArgb(246, 132, 85);
-            dungeonComboBox1.ColorB = Color.FromArgb(231, 108, 57);
-            dungeonComboBox1.ColorC = Color.FromArgb(242, 241, 240);
-            dungeonComboBox1.ColorD = Color.FromArgb(253, 252, 252);
-            dungeonComboBox1.ColorE = Color.FromArgb(239, 237, 236);
-            dungeonComboBox1.ColorF = Color.FromArgb(180, 180, 180);
-            dungeonComboBox1.ColorG = Color.FromArgb(119, 119, 118);
-            dungeonComboBox1.ColorH = Color.FromArgb(224, 222, 220);
-            dungeonComboBox1.ColorI = Color.FromArgb(250, 249, 249);
-            dungeonComboBox1.DrawMode = DrawMode.OwnerDrawFixed;
-            dungeonComboBox1.DropDownHeight = 100;
-            dungeonComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            dungeonComboBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dungeonComboBox1.ForeColor = Color.FromArgb(76, 76, 97);
-            dungeonComboBox1.FormattingEnabled = true;
-            dungeonComboBox1.HoverSelectionColor = Color.Empty;
-            dungeonComboBox1.IntegralHeight = false;
-            dungeonComboBox1.ItemHeight = 20;
-            dungeonComboBox1.Location = new Point(31, 29);
-            dungeonComboBox1.Name = "dungeonComboBox1";
-            dungeonComboBox1.Size = new Size(129, 26);
-            dungeonComboBox1.StartIndex = 0;
-            dungeonComboBox1.TabIndex = 1;
+            this.dungeonComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.dungeonComboBox1.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(132)))), ((int)(((byte)(85)))));
+            this.dungeonComboBox1.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(108)))), ((int)(((byte)(57)))));
+            this.dungeonComboBox1.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(240)))));
+            this.dungeonComboBox1.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.dungeonComboBox1.ColorE = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.dungeonComboBox1.ColorF = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.dungeonComboBox1.ColorG = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(119)))), ((int)(((byte)(118)))));
+            this.dungeonComboBox1.ColorH = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(222)))), ((int)(((byte)(220)))));
+            this.dungeonComboBox1.ColorI = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.dungeonComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.dungeonComboBox1.DropDownHeight = 100;
+            this.dungeonComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.dungeonComboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dungeonComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
+            this.dungeonComboBox1.FormattingEnabled = true;
+            this.dungeonComboBox1.HoverSelectionColor = System.Drawing.Color.Empty;
+            this.dungeonComboBox1.IntegralHeight = false;
+            this.dungeonComboBox1.ItemHeight = 20;
+            this.dungeonComboBox1.Location = new System.Drawing.Point(35, 39);
+            this.dungeonComboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dungeonComboBox1.Name = "dungeonComboBox1";
+            this.dungeonComboBox1.Size = new System.Drawing.Size(147, 26);
+            this.dungeonComboBox1.StartIndex = 0;
+            this.dungeonComboBox1.TabIndex = 1;
             // 
             // flpJob
             // 
-            flpJob.Location = new Point(31, 103);
-            flpJob.Name = "flpJob";
-            flpJob.Size = new Size(846, 141);
-            flpJob.TabIndex = 4;
+            this.flpJob.Location = new System.Drawing.Point(35, 137);
+            this.flpJob.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.flpJob.Name = "flpJob";
+            this.flpJob.Size = new System.Drawing.Size(967, 188);
+            this.flpJob.TabIndex = 4;
             // 
             // txtSearch
             // 
-            txtSearch.AnimateReadOnly = false;
-            txtSearch.AutoCompleteMode = AutoCompleteMode.None;
-            txtSearch.AutoCompleteSource = AutoCompleteSource.None;
-            txtSearch.BackgroundImageLayout = ImageLayout.None;
-            txtSearch.CharacterCasing = CharacterCasing.Normal;
-            txtSearch.Depth = 0;
-            txtSearch.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txtSearch.HideSelection = true;
-            txtSearch.Hint = "Search Job";
-            txtSearch.LeadingIcon = (Image)resources.GetObject("txtSearch.LeadingIcon");
-            txtSearch.Location = new Point(182, 18);
-            txtSearch.MaxLength = 32767;
-            txtSearch.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtSearch.Name = "txtSearch";
-            txtSearch.PasswordChar = '\0';
-            txtSearch.PrefixSuffixText = null;
-            txtSearch.ReadOnly = false;
-            txtSearch.RightToLeft = RightToLeft.No;
-            txtSearch.SelectedText = "";
-            txtSearch.SelectionLength = 0;
-            txtSearch.SelectionStart = 0;
-            txtSearch.ShortcutsEnabled = true;
-            txtSearch.Size = new Size(619, 48);
-            txtSearch.TabIndex = 4;
-            txtSearch.TabStop = false;
-            txtSearch.TextAlign = HorizontalAlignment.Left;
-            txtSearch.TrailingIcon = null;
-            txtSearch.UseSystemPasswordChar = false;
-            txtSearch.KeyDown += txtSearch_KeyDown;
+            this.txtSearch.AnimateReadOnly = false;
+            this.txtSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtSearch.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtSearch.Depth = 0;
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSearch.HideSelection = true;
+            this.txtSearch.Hint = "Search Job";
+            this.txtSearch.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtSearch.LeadingIcon")));
+            this.txtSearch.Location = new System.Drawing.Point(208, 24);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSearch.MaxLength = 32767;
+            this.txtSearch.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.PrefixSuffixText = null;
+            this.txtSearch.ReadOnly = false;
+            this.txtSearch.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.SelectionLength = 0;
+            this.txtSearch.SelectionStart = 0;
+            this.txtSearch.ShortcutsEnabled = true;
+            this.txtSearch.Size = new System.Drawing.Size(707, 48);
+            this.txtSearch.TabIndex = 4;
+            this.txtSearch.TabStop = false;
+            this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSearch.TrailingIcon = null;
+            this.txtSearch.UseSystemPasswordChar = false;
+            this.txtSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyDown);
             // 
             // btnFilter
             // 
-            btnFilter.BackgroundColor = Color.FromArgb(248, 212, 187);
-            btnFilter.ButtonImage = null;
-            btnFilter.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
-            btnFilter.ButtonText = "Filter";
-            btnFilter.ClickBackColor = Color.FromArgb(255, 212, 180);
-            btnFilter.ClickTextColor = Color.Black;
-            btnFilter.CornerRadius = 6;
-            btnFilter.Cursor = Cursors.Hand;
-            btnFilter.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnFilter.Horizontal_Alignment = StringAlignment.Center;
-            btnFilter.HoverBackgroundColor = Color.FromArgb(248, 242, 197);
-            btnFilter.HoverTextColor = Color.Black;
-            btnFilter.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnFilter.Location = new Point(807, 27);
-            btnFilter.Name = "btnFilter";
-            btnFilter.Size = new Size(70, 38);
-            btnFilter.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            btnFilter.TabIndex = 36;
-            btnFilter.TextColor = Color.Black;
-            btnFilter.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            btnFilter.Vertical_Alignment = StringAlignment.Center;
-            btnFilter.Click += btnFilter_Click;
+            this.btnFilter.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
+            this.btnFilter.ButtonImage = null;
+            this.btnFilter.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            this.btnFilter.ButtonText = "Filter";
+            this.btnFilter.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(212)))), ((int)(((byte)(180)))));
+            this.btnFilter.ClickTextColor = System.Drawing.Color.Black;
+            this.btnFilter.CornerRadius = 6;
+            this.btnFilter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFilter.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnFilter.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnFilter.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(242)))), ((int)(((byte)(197)))));
+            this.btnFilter.HoverTextColor = System.Drawing.Color.Black;
+            this.btnFilter.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            this.btnFilter.Location = new System.Drawing.Point(922, 36);
+            this.btnFilter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.Size = new System.Drawing.Size(80, 51);
+            this.btnFilter.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btnFilter.TabIndex = 36;
+            this.btnFilter.TextColor = System.Drawing.Color.Black;
+            this.btnFilter.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btnFilter.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
             // 
             // FSearchJob
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            AutoScroll = true;
-            BackColor = Color.White;
-            ClientSize = new Size(917, 435);
-            Controls.Add(btnFilter);
-            Controls.Add(txtSearch);
-            Controls.Add(flpJob);
-            Controls.Add(dungeonComboBox1);
-            Name = "FSearchJob";
-            Text = "FSearchJob";
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1048, 580);
+            this.Controls.Add(this.btnFilter);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.flpJob);
+            this.Controls.Add(this.dungeonComboBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "FSearchJob";
+            this.Text = "FSearchJob";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
