@@ -53,6 +53,9 @@ namespace WinFormProject
         private void btnApply_Click(object sender, EventArgs e)
         {
             applyDAO.InsertApply(jsID, job.Jobid);
+            btnApply.Enabled = false;
+            btnApply.ColorBackground = Color.FromArgb(214, 204, 194);
+            btnApply.ColorBackground_Pen = Color.FromArgb(214, 204, 194);
         }
     }
 }

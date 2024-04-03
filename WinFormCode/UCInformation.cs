@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormProject.WinFormCode;
 
 namespace WinFormProject
 {
@@ -38,6 +39,12 @@ namespace WinFormProject
         {
             FJobDetails jobDetails = new FJobDetails(job, jsID);
             jobDetails.Show();
+        }
+
+        private void btnCompanyDetail_Click(object sender, EventArgs e)
+        {
+            FCompanyDetail companyDetail = new FCompanyDetail();
+            companyDetail.Show();
         }
     }
 }

@@ -295,3 +295,4 @@ D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\refint\WinForm
 D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.pdb
 D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.genruntimeconfig.cache
 D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\ref\WinFormProject.dll
+D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FCompanyDetail.resources
