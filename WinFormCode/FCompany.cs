@@ -24,7 +24,6 @@ namespace WinFormProject
             this.account = account;
             //btnPostJob.PerformClick();
             company = new Company(informationDAO.FetchCommon(account));
-            company = new Company(informationDAO.FetchCommon(account));
             GetAllButtons(panel2);
         }
 
