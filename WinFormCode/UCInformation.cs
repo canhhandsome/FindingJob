@@ -34,7 +34,7 @@ namespace WinFormProject
             lblDateT.Text = job.DatePublish.ToString("dd/MM/yyyy");
             lblNameT.Text = job.Name;
             lblDateEndT.Text = job.DateEnd.ToString("dd/MM/yyyy");
-            companyAvatar = companyDAO.FetchImg(job.CompanyID,"Avatar");
+            companyAvatar = companyDAO.FetchImg(job.CompanyID, "Avatar");
             ImageHandler.DisplayImage(companyAvatar, ref ptbCompanyPicture);
         }
         private void panel1_Click(object sender, EventArgs e)
