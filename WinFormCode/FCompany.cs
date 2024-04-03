@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Transitions;
+using WinFormProject.WinFormCode;
 
 namespace WinFormProject
 {
@@ -103,5 +104,9 @@ namespace WinFormProject
             OpenChildForm(new FProfileCompany(company));
         }
 
+        private void btnHistory_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FHistory(company.Jobs, company.INFO.ID));
+        }
     }
 }
