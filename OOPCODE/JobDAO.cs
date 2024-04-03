@@ -38,22 +38,22 @@ namespace WinFormProject
             string strFetch = string.Format("Select JobName From Job where jobid = '{0}'", jobid);
             return conn.FetchScalar(strFetch);
         }
-        public void AddNewJob(string companyid, string jobname, string position, string salary, string requirement, string description, string DateEnd)
+        public void AddNewJob(string companyid, string jobname, string position, string salary, string requirement, string description, string benefit, string DateEnd)
         {
-            string sqlUpdate = string.Format("INSERT INTO Job (companyid, jobname, position, salary, description, requirement, DateEnd) " +
-                                     "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')",
-                                     companyid, jobname, position, salary, description, requirement, DateEnd);
+            string sqlUpdate = string.Format("INSERT INTO Job (companyid, jobname, position, salary, description, requirement, benefit, DateEnd) " +
+                                     "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')",
+                                     companyid, jobname, position, salary, description, requirement, benefit, DateEnd);
             conn.CRUD(sqlUpdate);
         }
-        public void DeleteJob(string jobid)
+        public void DoneJob(string jobid)
         {
-            string SQL = string.Format("DELETE FROM JOB WHERE jobid = '{0}'", jobid);
+            string SQL = string.Format("UPDATE JOB SET status = 'done', DateEnd = '{1}' WHERE jobid = '{0}'", jobid, DateTime.Now.ToString("yyyy-MM-dd"));
             conn.CRUD(SQL);
         }
         public void EditJob(Job job)
         {
-            string sqlUpdate = string.Format("UPDATE Job SET  jobname = '{0}', position = '{1}', salary = '{2}', description = '{3}', requirement = '{4}' WHERE jobid = '{5}'",
-                                             job.CompanyID, job.Name, job.Position, job.Salary, job.Description, job.Requirement, job.Jobid);
+            string sqlUpdate = string.Format("UPDATE Job SET  jobname = '{0}', position = '{1}', salary = '{2}', description = '{3}', requirement = '{4}', benefit = '{5}', DateEnd = '{6}' WHERE jobid = '{7}'",
+                                             job.Name, job.Position, job.Salary, job.Description, job.Requirement, job.Benefit, job.DateEnd.ToString("yyyy-MM-dd"), job.Jobid);
             conn.CRUD(sqlUpdate);
         }
 

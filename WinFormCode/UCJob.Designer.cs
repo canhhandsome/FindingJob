@@ -32,8 +32,10 @@
             btnApplicants = new ReaLTaiizor.Controls.CyberButton();
             btnDelete = new ReaLTaiizor.Controls.CyberButton();
             btnEdit = new ReaLTaiizor.Controls.CyberButton();
+            lblStatusT = new Label();
             lblEndT = new Label();
             lblDateT = new Label();
+            lblStatus = new Label();
             lblEnd = new Label();
             lblJobNameT = new Label();
             lblDate = new Label();
@@ -47,8 +49,10 @@
             panel1.Controls.Add(btnApplicants);
             panel1.Controls.Add(btnDelete);
             panel1.Controls.Add(btnEdit);
+            panel1.Controls.Add(lblStatusT);
             panel1.Controls.Add(lblEndT);
             panel1.Controls.Add(lblDateT);
+            panel1.Controls.Add(lblStatus);
             panel1.Controls.Add(lblEnd);
             panel1.Controls.Add(lblJobNameT);
             panel1.Controls.Add(lblDate);
@@ -183,6 +187,17 @@
             btnEdit.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             btnEdit.Timer_Effect_1 = 1;
             btnEdit.Timer_RGB = 300;
+            btnEdit.Click += btnEdit_Click;
+            // 
+            // lblStatusT
+            // 
+            lblStatusT.AutoSize = true;
+            lblStatusT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            lblStatusT.Location = new Point(428, 54);
+            lblStatusT.Name = "lblStatusT";
+            lblStatusT.Size = new Size(66, 25);
+            lblStatusT.TabIndex = 9;
+            lblStatusT.Text = "Status:";
             // 
             // lblEndT
             // 
@@ -190,9 +205,9 @@
             lblEndT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             lblEndT.Location = new Point(428, 11);
             lblEndT.Name = "lblEndT";
-            lblEndT.Size = new Size(55, 25);
+            lblEndT.Size = new Size(92, 25);
             lblEndT.TabIndex = 9;
-            lblEndT.Text = "Date:";
+            lblEndT.Text = "Date End:";
             // 
             // lblDateT
             // 
@@ -203,6 +218,16 @@
             lblDateT.Size = new Size(55, 25);
             lblDateT.TabIndex = 9;
             lblDateT.Text = "Date:";
+            // 
+            // lblStatus
+            // 
+            lblStatus.AutoSize = true;
+            lblStatus.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            lblStatus.Location = new Point(312, 54);
+            lblStatus.Name = "lblStatus";
+            lblStatus.Size = new Size(66, 25);
+            lblStatus.TabIndex = 7;
+            lblStatus.Text = "Status:";
             // 
             // lblEnd
             // 
@@ -252,6 +277,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "UCJob";
             Size = new Size(710, 159);
+            Load += UCJob_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -269,5 +295,7 @@
         private ReaLTaiizor.Controls.CyberButton btnApplicants;
         public Label lblEndT;
         private Label lblEnd;
+        public Label lblStatusT;
+        private Label lblStatus;
     }
 }

@@ -8,14 +8,14 @@ namespace WinFormProject
 {
     public class Job
     {
-        string jobid, companyid, jobname ,position, salary, requirement,description, status;
+        string jobid, companyid, jobname ,position, salary, requirement, description, benefit, status;
         DateTime datapublish, dateend;
         JobDAO jobDAO = new JobDAO();
         public Job()
         {
 
         }
-        public Job(string jobid,string companyid,string jobname,string position,string salary, string requirement,string description,DateTime datapublish, DateTime dateend, string status)
+        public Job(string jobid,string companyid,string jobname,string position,string salary, string requirement,string description, string benefit,DateTime datapublish, DateTime dateend, string status)
         {
             this.jobid = jobid;
             this.jobname = jobname;
@@ -24,6 +24,7 @@ namespace WinFormProject
             this.salary = salary;
             this.requirement = requirement;
             this.description = description;
+            this.benefit = benefit;
             this.datapublish = datapublish;
             this.dateend = dateend;
             this.status = status;
@@ -60,6 +61,11 @@ namespace WinFormProject
         public string Position
         {
             get { return position; }
+        }
+
+        public string Benefit
+        { 
+            get { return benefit; } 
         }
 
         public DateTime DateEnd

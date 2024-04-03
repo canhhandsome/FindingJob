@@ -53,7 +53,7 @@ namespace WinFormProject
                 {
                     CompanyDAO companyDAO = new CompanyDAO();
                     string namecompany = companyDAO.FetchName(job.CompanyID).ToLower();
-                    string[] propertiesToSearch = { job.Name.ToLower(), job.Position.ToLower(), job.Requirement.ToLower(), job.Description.ToLower(), namecompany };
+                    string[] propertiesToSearch = { job.Name.ToLower(), job.Position.ToLower(), job.Requirement.ToLower(), job.Description.ToLower(), job.Benefit.ToLower(), namecompany };
 
                     return propertiesToSearch.Any(property => property.Contains(search));
                 }).ToList();

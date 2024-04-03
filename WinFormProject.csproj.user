@@ -65,7 +65,7 @@
     <Compile Update="WinFormCode\FSearchJob.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="WinFormCode\FSupJobSection.cs">
+    <Compile Update="WinFormCode\FAlert.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="WinFormCode\FSupReportSection.cs">

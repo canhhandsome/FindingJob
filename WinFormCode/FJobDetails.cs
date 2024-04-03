@@ -29,6 +29,8 @@ namespace WinFormProject
             lblSalaryT.Text = job.Salary;
             rtxtDescription.Text = job.Description;
             rtxtRequirement.Text = job.Requirement;
+            rtxtBenefit.Text = job.Benefit;
+            lblEndT.Text = job.DateEnd.ToString("dd/MM/yyyy");
         }
 
         private void btnBack_Click(object sender, EventArgs e)

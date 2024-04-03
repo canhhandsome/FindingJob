@@ -91,7 +91,6 @@ D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\Findin
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FRegister.resources
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FReportDetail.resources
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FSearchJob.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FSupJobSection.resources
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FSupReportSection.resources
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.UCAlert.resources
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.UCApplicant.resources
@@ -173,3 +172,4 @@ D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.
 D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.pdb
 D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.genruntimeconfig.cache
 D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\ref\WinFormProject.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAlert.resources
