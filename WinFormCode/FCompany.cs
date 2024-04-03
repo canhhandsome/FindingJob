@@ -15,14 +15,16 @@ namespace WinFormProject
     {
         private ReaLTaiizor.Controls.ParrotButton selectedButton;
         private Form currentFormChild;
-        InformationDAO informationDAO = new InformationDAO();
+        private Account account;
         private Company company = new Company();
-        private Account account = new Account();
+        InformationDAO informationDAO = new InformationDAO();
         public FCompany(Account account)
         {
             InitializeComponent();
-            //btnPostJob.PerformClick();
             this.account = account;
+            //btnPostJob.PerformClick();
+            company = new Company(informationDAO.FetchCommon(account));
+            company = new Company(informationDAO.FetchCommon(account));
             GetAllButtons(panel2);
         }
 

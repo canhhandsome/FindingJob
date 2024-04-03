@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace WinFormProject
 {
-    public partial class FSupJobSection : Form
+    public partial class FAlert : Form
     {
         public Job job = new Job();
         List<Alert> alerts = new List<Alert>();
         JobSeeker seeker = new JobSeeker();
-        public FSupJobSection(JobSeeker jobSeeker)
+        public FAlert(JobSeeker jobSeeker)
         {
             InitializeComponent();
             seeker = jobSeeker;
@@ -28,8 +28,6 @@ namespace WinFormProject
                 flpAlert.Height += 255;
             }
         }
-
-
 
     }
 }

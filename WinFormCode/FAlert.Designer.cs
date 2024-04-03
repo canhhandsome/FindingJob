@@ -1,6 +1,6 @@
 ﻿namespace WinFormProject
 {
-    partial class FSupJobSection
+    partial class FAlert
     {
         /// <summary>
         /// Required designer variable.
@@ -42,8 +42,7 @@
             hopeTextBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             hopeTextBox1.ForeColor = Color.FromArgb(48, 49, 51);
             hopeTextBox1.Hint = "Enter Search";
-            hopeTextBox1.Location = new Point(27, 24);
-            hopeTextBox1.Margin = new Padding(3, 4, 3, 4);
+            hopeTextBox1.Location = new Point(24, 18);
             hopeTextBox1.MaxLength = 32767;
             hopeTextBox1.Multiline = false;
             hopeTextBox1.Name = "hopeTextBox1";
@@ -52,7 +51,7 @@
             hopeTextBox1.SelectedText = "";
             hopeTextBox1.SelectionLength = 0;
             hopeTextBox1.SelectionStart = 0;
-            hopeTextBox1.Size = new Size(841, 43);
+            hopeTextBox1.Size = new Size(736, 38);
             hopeTextBox1.TabIndex = 2;
             hopeTextBox1.TabStop = false;
             hopeTextBox1.UseSystemPasswordChar = false;
@@ -60,10 +59,9 @@
             // flpAlert
             // 
             flpAlert.AutoScroll = true;
-            flpAlert.Location = new Point(12, 115);
-            flpAlert.Margin = new Padding(3, 4, 3, 4);
+            flpAlert.Location = new Point(31, 86);
             flpAlert.Name = "flpAlert";
-            flpAlert.Size = new Size(1005, 165);
+            flpAlert.Size = new Size(879, 124);
             flpAlert.TabIndex = 4;
             // 
             // btnSearch
@@ -93,13 +91,12 @@
             btnSearch.Lighting = true;
             btnSearch.LinearGradient_Background = false;
             btnSearch.LinearGradientPen = false;
-            btnSearch.Location = new Point(891, 18);
-            btnSearch.Margin = new Padding(3, 4, 3, 4);
+            btnSearch.Location = new Point(780, 14);
             btnSearch.Name = "btnSearch";
             btnSearch.PenWidth = 15;
             btnSearch.Rounding = true;
             btnSearch.RoundingInt = 20;
-            btnSearch.Size = new Size(104, 53);
+            btnSearch.Size = new Size(91, 40);
             btnSearch.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnSearch.TabIndex = 44;
             btnSearch.Tag = "Decline";
@@ -108,19 +105,18 @@
             btnSearch.Timer_Effect_1 = 5;
             btnSearch.Timer_RGB = 300;
             // 
-            // FSupJobSection
+            // FAlert
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(1029, 611);
+            ClientSize = new Size(900, 458);
             Controls.Add(btnSearch);
             Controls.Add(flpAlert);
             Controls.Add(hopeTextBox1);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "FSupJobSection";
-            Text = "FSupJobSection";
+            Name = "FAlert";
+            Text = "FAlert";
             ResumeLayout(false);
         }
 

@@ -26,29 +26,23 @@ namespace WinFormProject
             InitializeComponent();
             this.jobs = jobs;
             this.companyid = companyid;
-            foreach (Job job in jobs)
-            {
-                UCJob ucjob = new UCJob(job);
-                pnSubBody.Controls.Add(ucjob);
-                ucjob.Dock = DockStyle.Top;
-                pnSubBody.Height += 180;
-                // Subscribe to JobDeleted event
-                ucjob.JobDeleted += UCJob_JobDeleted;
-            }
         }
 
         private void PostJob_Load(object sender, EventArgs e)
         {
-            
+            JobDAO jobDAO = new JobDAO();
+            jobs = jobDAO.FetchCompanyJob(companyid);
+            pnSubBody.Controls.Clear();
+            foreach (Job job in jobs)
+            {
+                UCJob ucjob = new UCJob(job, currentFormChild, pnBody);
+                pnSubBody.Controls.Add(ucjob);
+                ucjob.Dock = DockStyle.Top;
+                pnSubBody.Height += 180;
+            }
         }
         private void OpenChildForm(Form childForm)
         {
-            //foreach (Control control in this.Controls)
-            //{
-            //    if (control == pnBody)
-            //        continue;
-            //    control.Visible = false;
-            //}
             pnBody.Controls.Clear();
 
             if (currentFormChild != null)
@@ -69,6 +63,7 @@ namespace WinFormProject
         private void btnPostingJob_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FJobCreation(jobs, companyid));
+            PostJob_Load(sender, e);
         }
         private void btnEditJob_Click(object sender, EventArgs e)
         {
@@ -76,17 +71,6 @@ namespace WinFormProject
             //fJobEdit.LblTitle = "Editing a job";
             //fJobEdit.BtnPostJob = "Save";
             //OpenChildForm(fJobEdit);
-        }
-        // Event handler for UCJob JobDeleted event
-        private void UCJob_JobDeleted(object sender, EventArgs e)
-        {
-            if (sender is UCJob ucjob)
-            {
-                // Remove the UCJob control from the panel
-                pnSubBody.Controls.Remove(ucjob);
-                ucjob.Dispose(); // Dispose if necessary
-                jobs.Remove(ucjob.Job);
-            }
         }
     }
 }

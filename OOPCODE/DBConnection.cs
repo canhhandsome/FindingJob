@@ -122,7 +122,7 @@ namespace WinFormProject
 
                 while(reader.Read())
                 {
-                    jobs.Add(new Job(reader["Jobid"].ToString(), reader["CompanyId"].ToString(),reader["JobName"].ToString(), reader["position"].ToString(), reader["salary"].ToString(), reader["requirement"].ToString(), reader["description"].ToString(),Convert.ToDateTime(reader["datepublish"].ToString())));
+                    jobs.Add(new Job(reader["Jobid"].ToString().Trim(), reader["CompanyId"].ToString().Trim(), reader["JobName"].ToString().Trim(), reader["position"].ToString().Trim(), reader["salary"].ToString().Trim(), reader["requirement"].ToString().Trim(), reader["description"].ToString().Trim(), reader["benefit"].ToString().Trim(), Convert.ToDateTime(reader["datepublish"].ToString()), Convert.ToDateTime(reader["DateEnd"].ToString()), reader["status"].ToString().Trim()));
                 }
             }
             catch(Exception ex)

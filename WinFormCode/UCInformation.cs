@@ -31,9 +31,10 @@ namespace WinFormProject
         public void FillInTemplate()
         {
             lblFromT.Text = companyDAO.FetchName(job.CompanyID);
-            lblDateT.Text = job.DatePublish.ToString();
+            lblDateT.Text = job.DatePublish.ToString("dd/MM/yyyy");
             lblNameT.Text = job.Name;
-            companyAvatar = companyDAO.FetchImg(job.CompanyID, "Avatar");
+            lblDateEndT.Text = job.DateEnd.ToString("dd/MM/yyyy");
+            companyAvatar = companyDAO.FetchImg(job.CompanyID,"Avatar");
             ImageHandler.DisplayImage(companyAvatar, ref ptbCompanyPicture);
         }
         private void panel1_Click(object sender, EventArgs e)
