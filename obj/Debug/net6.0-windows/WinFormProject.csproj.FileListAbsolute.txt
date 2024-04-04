@@ -297,4 +297,3 @@ D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject
 D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\ref\WinFormProject.dll
 D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FCompanyDetail.resources
 D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FCompanyDetail.resources
-D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.UCCarousel.resources
