@@ -17,6 +17,9 @@
     <Compile Update="WinFormCode\FCompany.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="WinFormCode\FCompanyDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="WinFormCode\FCV.cs">
       <SubType>Form</SubType>
     </Compile>

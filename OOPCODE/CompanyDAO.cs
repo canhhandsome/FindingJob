@@ -34,6 +34,11 @@ namespace WinFormProject
                     company.Taxidentification, company.CompanySize, company.WorkingTimeBegin, company.WorkingTimeEnd, company.Description);
             conn.CRUD(sqlUpdate, company);
         }
+        public Company FetchCompanyInformationBasedOnID(string id)
+        {
+            string strFetch = string.Format("Select * from Company where id = '{0}'", id);
+            return conn.FetchCompanyById(strFetch, id);
+        }
     }
     
 }
