@@ -184,7 +184,7 @@
             tabPage1.Controls.Add(rtxtRequirement);
             tabPage1.Location = new Point(4, 29);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3, 3, 3, 3);
+            tabPage1.Padding = new Padding(3);
             tabPage1.Size = new Size(480, 198);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Requirement";
@@ -206,7 +206,7 @@
             tabPage2.Controls.Add(rtxtDescription);
             tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3, 3, 3, 3);
+            tabPage2.Padding = new Padding(3);
             tabPage2.Size = new Size(480, 198);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Description";
@@ -237,7 +237,7 @@
             tabPage3.Controls.Add(rtxtBenefit);
             tabPage3.Location = new Point(4, 29);
             tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3, 3, 3, 3);
+            tabPage3.Padding = new Padding(3);
             tabPage3.Size = new Size(480, 198);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Benefit";

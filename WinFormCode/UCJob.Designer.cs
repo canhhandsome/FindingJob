@@ -40,12 +40,14 @@
             lblJobNameT = new Label();
             lblDate = new Label();
             lblJobName = new Label();
+            lblCountApplicants = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(254, 232, 223);
+            panel1.Controls.Add(lblCountApplicants);
             panel1.Controls.Add(btnApplicants);
             panel1.Controls.Add(btnDelete);
             panel1.Controls.Add(btnEdit);
@@ -270,6 +272,16 @@
             lblJobName.TabIndex = 6;
             lblJobName.Text = "Job Name:";
             // 
+            // lblCountApplicants
+            // 
+            lblCountApplicants.AutoSize = true;
+            lblCountApplicants.BackColor = Color.IndianRed;
+            lblCountApplicants.Location = new Point(433, 110);
+            lblCountApplicants.Name = "lblCountApplicants";
+            lblCountApplicants.Size = new Size(13, 15);
+            lblCountApplicants.TabIndex = 12;
+            lblCountApplicants.Text = "0";
+            // 
             // UCJob
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -298,5 +310,6 @@
         private Label lblEnd;
         public Label lblStatusT;
         private Label lblStatus;
+        private Label lblCountApplicants;
     }
 }
