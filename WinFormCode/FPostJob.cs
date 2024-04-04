@@ -72,6 +72,11 @@ namespace WinFormProject
             //fJobEdit.BtnPostJob = "Save";
             //OpenChildForm(fJobEdit);
         }
+
+        private void pnSubBody_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

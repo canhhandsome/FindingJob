@@ -119,5 +119,6 @@ namespace WinFormProject
             FJobEdit fJobEdit = new FJobEdit(job, job.CompanyID);
             OpenChildForm(fJobEdit);
         }
+
     }
 }
