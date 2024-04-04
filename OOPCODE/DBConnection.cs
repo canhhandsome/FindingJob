@@ -337,7 +337,8 @@ namespace WinFormProject
                 {
                     while (reader.Read())
                     {
-                        Images.Add(ImageHandler.ByteArrayToImage((byte[])reader["img"]));
+                        byte[] imageData = (byte[])reader["img"];
+                        Images.Add(ImageHandler.ByteArrayToImage(imageData));
                     }
                 }
             }

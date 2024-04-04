@@ -100,5 +100,9 @@ namespace WinFormProject
         {
             get { return AvatarData;  }
         }
+        public List<Image> ImageForJob
+        {
+            get { return Images; }
+        }
     }
 }

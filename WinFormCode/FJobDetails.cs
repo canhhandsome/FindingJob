@@ -32,9 +32,9 @@ namespace WinFormProject
 
         private void SetForm()
         {
-            lblWorkingTime.ForeColor = Color.FromArgb(166,166,166);
+            lblWorkingTime.ForeColor = Color.FromArgb(166, 166, 166);
             lblAddress.ForeColor = Color.FromArgb(166, 166, 166);
-            lblWorkingTime.ForeColor = Color.FromArgb(166, 166, 166); 
+            lblWorkingTime.ForeColor = Color.FromArgb(166, 166, 166);
             lblCompanySize.ForeColor = Color.FromArgb(166, 166, 166);
             lblCompanyType.ForeColor = Color.FromArgb(166, 166, 166);
             lblJobName.Text = job.Name;
@@ -52,7 +52,17 @@ namespace WinFormProject
             lblCompanyTypeText.Text = company.CompanyType;
             lblWorkingTimeText.Text = company.WorkingTimeBegin + " to " + company.WorkingTimeEnd;
             lblAddressText.Text = company.INFO.Address;
-
+            if(company.ImageForJob.Count == 0)
+            {
+                UCCarousel carousel = new UCCarousel();
+                pnCarousel.Controls.Add(carousel);
+                carousel.Dock = DockStyle.Fill;
+            } else
+            {
+                UCCarousel carousel = new UCCarousel(company.ImageForJob);
+                pnCarousel.Controls.Add(carousel);
+                carousel.Dock = DockStyle.Fill;
+            }
         }
         private void SetApplyButton()
         {

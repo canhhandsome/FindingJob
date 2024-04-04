@@ -29,35 +29,37 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCCarousel));
-            button1 = new Button();
-            button2 = new Button();
+            btnRightArrow = new Button();
+            btnLeftArrow = new Button();
             SuspendLayout();
             // 
-            // button1
+            // btnRightArrow
             // 
-            button1.BackColor = Color.Transparent;
-            button1.Dock = DockStyle.Right;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(713, 0);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 252);
-            button1.TabIndex = 1;
-            button1.UseVisualStyleBackColor = false;
+            btnRightArrow.BackColor = Color.Transparent;
+            btnRightArrow.Dock = DockStyle.Right;
+            btnRightArrow.FlatAppearance.BorderSize = 0;
+            btnRightArrow.FlatStyle = FlatStyle.Flat;
+            btnRightArrow.Image = (Image)resources.GetObject("btnRightArrow.Image");
+            btnRightArrow.Location = new Point(713, 0);
+            btnRightArrow.Name = "btnRightArrow";
+            btnRightArrow.Size = new Size(94, 252);
+            btnRightArrow.TabIndex = 1;
+            btnRightArrow.UseVisualStyleBackColor = false;
+            btnRightArrow.Click += btnRightArrow_Click;
             // 
-            // button2
+            // btnLeftArrow
             // 
-            button2.BackColor = Color.Transparent;
-            button2.Dock = DockStyle.Left;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.Location = new Point(0, 0);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 252);
-            button2.TabIndex = 2;
-            button2.UseVisualStyleBackColor = false;
+            btnLeftArrow.BackColor = Color.Transparent;
+            btnLeftArrow.Dock = DockStyle.Left;
+            btnLeftArrow.FlatAppearance.BorderSize = 0;
+            btnLeftArrow.FlatStyle = FlatStyle.Flat;
+            btnLeftArrow.Image = (Image)resources.GetObject("btnLeftArrow.Image");
+            btnLeftArrow.Location = new Point(0, 0);
+            btnLeftArrow.Name = "btnLeftArrow";
+            btnLeftArrow.Size = new Size(94, 252);
+            btnLeftArrow.TabIndex = 2;
+            btnLeftArrow.UseVisualStyleBackColor = false;
+            btnLeftArrow.Click += btnLeftArrow_Click;
             // 
             // UCCarousel
             // 
@@ -65,8 +67,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnLeftArrow);
+            Controls.Add(btnRightArrow);
             Name = "UCCarousel";
             Size = new Size(807, 252);
             ResumeLayout(false);
@@ -74,7 +76,7 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
+        private Button btnRightArrow;
+        private Button btnLeftArrow;
     }
 }

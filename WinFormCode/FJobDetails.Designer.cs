@@ -45,8 +45,7 @@
             lblCompany = new Label();
             lblJobName = new Label();
             flowLayoutPanel2 = new FlowLayoutPanel();
-            panel3 = new Panel();
-            ucCarousel1 = new WinFormCode.UCCarousel();
+            pnCarousel = new Panel();
             panel4 = new Panel();
             lbLocation = new Label();
             pictureBox1 = new PictureBox();
@@ -89,7 +88,6 @@
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             flowLayoutPanel2.SuspendLayout();
-            panel3.SuspendLayout();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel5.SuspendLayout();
@@ -317,7 +315,7 @@
             // 
             // flowLayoutPanel2
             // 
-            flowLayoutPanel2.Controls.Add(panel3);
+            flowLayoutPanel2.Controls.Add(pnCarousel);
             flowLayoutPanel2.Controls.Add(panel4);
             flowLayoutPanel2.Controls.Add(panel5);
             flowLayoutPanel2.Controls.Add(panel7);
@@ -328,24 +326,13 @@
             flowLayoutPanel2.Size = new Size(813, 517);
             flowLayoutPanel2.TabIndex = 1;
             // 
-            // panel3
+            // pnCarousel
             // 
-            panel3.Controls.Add(ucCarousel1);
-            panel3.Dock = DockStyle.Top;
-            panel3.Location = new Point(3, 3);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(807, 252);
-            panel3.TabIndex = 1;
-            // 
-            // ucCarousel1
-            // 
-            ucCarousel1.BackgroundImage = (Image)resources.GetObject("ucCarousel1.BackgroundImage");
-            ucCarousel1.BackgroundImageLayout = ImageLayout.Stretch;
-            ucCarousel1.Dock = DockStyle.Fill;
-            ucCarousel1.Location = new Point(0, 0);
-            ucCarousel1.Name = "ucCarousel1";
-            ucCarousel1.Size = new Size(807, 252);
-            ucCarousel1.TabIndex = 0;
+            pnCarousel.Dock = DockStyle.Top;
+            pnCarousel.Location = new Point(3, 3);
+            pnCarousel.Name = "pnCarousel";
+            pnCarousel.Size = new Size(807, 252);
+            pnCarousel.TabIndex = 1;
             // 
             // panel4
             // 
@@ -899,7 +886,6 @@
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             flowLayoutPanel2.ResumeLayout(false);
-            panel3.ResumeLayout(false);
             panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel5.ResumeLayout(false);
@@ -936,7 +922,7 @@
         private Label lblCompany;
         private Label lblJobName;
         private ReaLTaiizor.Controls.CyberButton btnApply;
-        private Panel panel3;
+        private Panel pnCarousel;
         private FlowLayoutPanel flowLayoutPanel2;
         private Panel panel4;
         private PictureBox pictureBox1;
@@ -971,7 +957,6 @@
         private ReaLTaiizor.Controls.MetroLabel lblWorkingTimeText;
         private ReaLTaiizor.Controls.MetroLabel lblWorkingTime;
         private ReaLTaiizor.Controls.CyberButton btnCompanyDetail;
-        private WinFormCode.UCCarousel ucCarousel1;
         private Panel panel13;
         private PictureBox ptbAvatar;
     }
