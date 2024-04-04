@@ -57,5 +57,10 @@ namespace WinFormProject
             btnApply.ColorBackground = Color.FromArgb(214, 204, 194);
             btnApply.ColorBackground_Pen = Color.FromArgb(214, 204, 194);
         }
+
+        private void btnApply_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -35,7 +35,7 @@ namespace WinFormProject
             flpJob.Controls.Clear();
             foreach (Job job in jobslist)
             {
-                if(job.Status == "waiting")
+                if (job.Status == "waiting")
                 {
                     UCInformation uCInformation = new UCInformation(job, jsID);
                     flpJob.Controls.Add(uCInformation);

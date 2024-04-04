@@ -28,186 +28,186 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.ptbCompanyPicture = new System.Windows.Forms.PictureBox();
-            this.lblDateEndT = new System.Windows.Forms.Label();
-            this.lblDateEnd = new System.Windows.Forms.Label();
-            this.lblDateT = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.lblNameT = new System.Windows.Forms.Label();
-            this.lblContent = new System.Windows.Forms.Label();
-            this.lblFromT = new System.Windows.Forms.Label();
-            this.lblForm = new System.Windows.Forms.Label();
-            this.btnCompanyDetail = new ReaLTaiizor.Controls.CyberButton();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCompanyPicture)).BeginInit();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            btnCompanyDetail = new ReaLTaiizor.Controls.CyberButton();
+            ptbCompanyPicture = new PictureBox();
+            lblDateEndT = new Label();
+            lblDateEnd = new Label();
+            lblDateT = new Label();
+            lblDate = new Label();
+            lblNameT = new Label();
+            lblContent = new Label();
+            lblFromT = new Label();
+            lblForm = new Label();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(232)))), ((int)(((byte)(223)))));
-            this.panel1.Controls.Add(this.btnCompanyDetail);
-            this.panel1.Controls.Add(this.ptbCompanyPicture);
-            this.panel1.Controls.Add(this.lblDateEndT);
-            this.panel1.Controls.Add(this.lblDateEnd);
-            this.panel1.Controls.Add(this.lblDateT);
-            this.panel1.Controls.Add(this.lblDate);
-            this.panel1.Controls.Add(this.lblNameT);
-            this.panel1.Controls.Add(this.lblContent);
-            this.panel1.Controls.Add(this.lblFromT);
-            this.panel1.Controls.Add(this.lblForm);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(968, 180);
-            this.panel1.TabIndex = 7;
-            // 
-            // ptbCompanyPicture
-            // 
-            this.ptbCompanyPicture.Location = new System.Drawing.Point(15, 13);
-            this.ptbCompanyPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbCompanyPicture.Name = "ptbCompanyPicture";
-            this.ptbCompanyPicture.Size = new System.Drawing.Size(150, 139);
-            this.ptbCompanyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbCompanyPicture.TabIndex = 1;
-            this.ptbCompanyPicture.TabStop = false;
-            // 
-            // lblDateEndT
-            // 
-            this.lblDateEndT.AutoSize = true;
-            this.lblDateEndT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDateEndT.Location = new System.Drawing.Point(685, 13);
-            this.lblDateEndT.Name = "lblDateEndT";
-            this.lblDateEndT.Size = new System.Drawing.Size(69, 30);
-            this.lblDateEndT.TabIndex = 0;
-            this.lblDateEndT.Text = "Date: ";
-            // 
-            // lblDateEnd
-            // 
-            this.lblDateEnd.AutoSize = true;
-            this.lblDateEnd.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDateEnd.Location = new System.Drawing.Point(568, 13);
-            this.lblDateEnd.Name = "lblDateEnd";
-            this.lblDateEnd.Size = new System.Drawing.Size(111, 30);
-            this.lblDateEnd.TabIndex = 0;
-            this.lblDateEnd.Text = "Date End: ";
-            // 
-            // lblDateT
-            // 
-            this.lblDateT.AutoSize = true;
-            this.lblDateT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDateT.Location = new System.Drawing.Point(310, 67);
-            this.lblDateT.Name = "lblDateT";
-            this.lblDateT.Size = new System.Drawing.Size(69, 30);
-            this.lblDateT.TabIndex = 0;
-            this.lblDateT.Text = "Date: ";
-            // 
-            // lblDate
-            // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDate.Location = new System.Drawing.Point(173, 67);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(143, 30);
-            this.lblDate.TabIndex = 0;
-            this.lblDate.Text = "Date Publish: ";
-            // 
-            // lblNameT
-            // 
-            this.lblNameT.AutoSize = true;
-            this.lblNameT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNameT.Location = new System.Drawing.Point(248, 117);
-            this.lblNameT.Name = "lblNameT";
-            this.lblNameT.Size = new System.Drawing.Size(82, 30);
-            this.lblNameT.TabIndex = 0;
-            this.lblNameT.Text = "Name: ";
-            // 
-            // lblContent
-            // 
-            this.lblContent.AutoSize = true;
-            this.lblContent.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblContent.Location = new System.Drawing.Point(173, 117);
-            this.lblContent.Name = "lblContent";
-            this.lblContent.Size = new System.Drawing.Size(82, 30);
-            this.lblContent.TabIndex = 0;
-            this.lblContent.Text = "Name: ";
-            // 
-            // lblFromT
-            // 
-            this.lblFromT.AutoSize = true;
-            this.lblFromT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblFromT.Location = new System.Drawing.Point(248, 17);
-            this.lblFromT.Name = "lblFromT";
-            this.lblFromT.Size = new System.Drawing.Size(69, 30);
-            this.lblFromT.TabIndex = 0;
-            this.lblFromT.Text = "From:";
-            // 
-            // lblForm
-            // 
-            this.lblForm.AutoSize = true;
-            this.lblForm.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblForm.Location = new System.Drawing.Point(173, 17);
-            this.lblForm.Name = "lblForm";
-            this.lblForm.Size = new System.Drawing.Size(69, 30);
-            this.lblForm.TabIndex = 0;
-            this.lblForm.Text = "From:";
+            panel1.BackColor = Color.FromArgb(254, 232, 223);
+            panel1.Controls.Add(btnCompanyDetail);
+            panel1.Controls.Add(ptbCompanyPicture);
+            panel1.Controls.Add(lblDateEndT);
+            panel1.Controls.Add(lblDateEnd);
+            panel1.Controls.Add(lblDateT);
+            panel1.Controls.Add(lblDate);
+            panel1.Controls.Add(lblNameT);
+            panel1.Controls.Add(lblContent);
+            panel1.Controls.Add(lblFromT);
+            panel1.Controls.Add(lblForm);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(968, 180);
+            panel1.TabIndex = 7;
+            panel1.Click += panel1_Click;
             // 
             // btnCompanyDetail
             // 
-            this.btnCompanyDetail.Alpha = 20;
-            this.btnCompanyDetail.BackColor = System.Drawing.Color.Transparent;
-            this.btnCompanyDetail.Background = true;
-            this.btnCompanyDetail.Background_WidthPen = 4F;
-            this.btnCompanyDetail.BackgroundPen = true;
-            this.btnCompanyDetail.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnCompanyDetail.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCompanyDetail.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCompanyDetail.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnCompanyDetail.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCompanyDetail.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCompanyDetail.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCompanyDetail.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCompanyDetail.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.btnCompanyDetail.Effect_1 = true;
-            this.btnCompanyDetail.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCompanyDetail.Effect_1_Transparency = 25;
-            this.btnCompanyDetail.Effect_2 = true;
-            this.btnCompanyDetail.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCompanyDetail.Effect_2_Transparency = 20;
-            this.btnCompanyDetail.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCompanyDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
-            this.btnCompanyDetail.Lighting = true;
-            this.btnCompanyDetail.LinearGradient_Background = false;
-            this.btnCompanyDetail.LinearGradientPen = false;
-            this.btnCompanyDetail.Location = new System.Drawing.Point(765, 106);
-            this.btnCompanyDetail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnCompanyDetail.Name = "btnCompanyDetail";
-            this.btnCompanyDetail.PenWidth = 15;
-            this.btnCompanyDetail.Rounding = true;
-            this.btnCompanyDetail.RoundingInt = 20;
-            this.btnCompanyDetail.Size = new System.Drawing.Size(171, 56);
-            this.btnCompanyDetail.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnCompanyDetail.TabIndex = 46;
-            this.btnCompanyDetail.Tag = "Decline";
-            this.btnCompanyDetail.TextButton = "Company Detail";
-            this.btnCompanyDetail.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnCompanyDetail.Timer_Effect_1 = 5;
-            this.btnCompanyDetail.Timer_RGB = 300;
-            this.btnCompanyDetail.Click += new System.EventHandler(this.btnCompanyDetail_Click);
+            btnCompanyDetail.Alpha = 20;
+            btnCompanyDetail.BackColor = Color.Transparent;
+            btnCompanyDetail.Background = true;
+            btnCompanyDetail.Background_WidthPen = 4F;
+            btnCompanyDetail.BackgroundPen = true;
+            btnCompanyDetail.ColorBackground = Color.FromArgb(176, 226, 243);
+            btnCompanyDetail.ColorBackground_1 = Color.FromArgb(128, 128, 255);
+            btnCompanyDetail.ColorBackground_2 = Color.FromArgb(128, 128, 255);
+            btnCompanyDetail.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
+            btnCompanyDetail.ColorLighting = Color.FromArgb(128, 128, 255);
+            btnCompanyDetail.ColorPen_1 = Color.FromArgb(128, 128, 255);
+            btnCompanyDetail.ColorPen_2 = Color.FromArgb(128, 128, 255);
+            btnCompanyDetail.Cursor = Cursors.Hand;
+            btnCompanyDetail.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            btnCompanyDetail.Effect_1 = true;
+            btnCompanyDetail.Effect_1_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnCompanyDetail.Effect_1_Transparency = 25;
+            btnCompanyDetail.Effect_2 = true;
+            btnCompanyDetail.Effect_2_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnCompanyDetail.Effect_2_Transparency = 20;
+            btnCompanyDetail.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCompanyDetail.ForeColor = Color.FromArgb(46, 54, 71);
+            btnCompanyDetail.Lighting = true;
+            btnCompanyDetail.LinearGradient_Background = false;
+            btnCompanyDetail.LinearGradientPen = false;
+            btnCompanyDetail.Location = new Point(765, 106);
+            btnCompanyDetail.Margin = new Padding(3, 4, 3, 4);
+            btnCompanyDetail.Name = "btnCompanyDetail";
+            btnCompanyDetail.PenWidth = 15;
+            btnCompanyDetail.Rounding = true;
+            btnCompanyDetail.RoundingInt = 20;
+            btnCompanyDetail.Size = new Size(171, 56);
+            btnCompanyDetail.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnCompanyDetail.TabIndex = 46;
+            btnCompanyDetail.Tag = "Decline";
+            btnCompanyDetail.TextButton = "Company Detail";
+            btnCompanyDetail.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnCompanyDetail.Timer_Effect_1 = 5;
+            btnCompanyDetail.Timer_RGB = 300;
+            btnCompanyDetail.Click += btnCompanyDetail_Click;
+            // 
+            // ptbCompanyPicture
+            // 
+            ptbCompanyPicture.Location = new Point(15, 13);
+            ptbCompanyPicture.Margin = new Padding(3, 2, 3, 2);
+            ptbCompanyPicture.Name = "ptbCompanyPicture";
+            ptbCompanyPicture.Size = new Size(150, 139);
+            ptbCompanyPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbCompanyPicture.TabIndex = 1;
+            ptbCompanyPicture.TabStop = false;
+            // 
+            // lblDateEndT
+            // 
+            lblDateEndT.AutoSize = true;
+            lblDateEndT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDateEndT.Location = new Point(685, 13);
+            lblDateEndT.Name = "lblDateEndT";
+            lblDateEndT.Size = new Size(69, 30);
+            lblDateEndT.TabIndex = 0;
+            lblDateEndT.Text = "Date: ";
+            // 
+            // lblDateEnd
+            // 
+            lblDateEnd.AutoSize = true;
+            lblDateEnd.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDateEnd.Location = new Point(568, 13);
+            lblDateEnd.Name = "lblDateEnd";
+            lblDateEnd.Size = new Size(111, 30);
+            lblDateEnd.TabIndex = 0;
+            lblDateEnd.Text = "Date End: ";
+            // 
+            // lblDateT
+            // 
+            lblDateT.AutoSize = true;
+            lblDateT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDateT.Location = new Point(310, 67);
+            lblDateT.Name = "lblDateT";
+            lblDateT.Size = new Size(69, 30);
+            lblDateT.TabIndex = 0;
+            lblDateT.Text = "Date: ";
+            // 
+            // lblDate
+            // 
+            lblDate.AutoSize = true;
+            lblDate.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDate.Location = new Point(173, 67);
+            lblDate.Name = "lblDate";
+            lblDate.Size = new Size(143, 30);
+            lblDate.TabIndex = 0;
+            lblDate.Text = "Date Publish: ";
+            // 
+            // lblNameT
+            // 
+            lblNameT.AutoSize = true;
+            lblNameT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblNameT.Location = new Point(248, 117);
+            lblNameT.Name = "lblNameT";
+            lblNameT.Size = new Size(82, 30);
+            lblNameT.TabIndex = 0;
+            lblNameT.Text = "Name: ";
+            // 
+            // lblContent
+            // 
+            lblContent.AutoSize = true;
+            lblContent.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblContent.Location = new Point(173, 117);
+            lblContent.Name = "lblContent";
+            lblContent.Size = new Size(82, 30);
+            lblContent.TabIndex = 0;
+            lblContent.Text = "Name: ";
+            // 
+            // lblFromT
+            // 
+            lblFromT.AutoSize = true;
+            lblFromT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFromT.Location = new Point(248, 17);
+            lblFromT.Name = "lblFromT";
+            lblFromT.Size = new Size(69, 30);
+            lblFromT.TabIndex = 0;
+            lblFromT.Text = "From:";
+            // 
+            // lblForm
+            // 
+            lblForm.AutoSize = true;
+            lblForm.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblForm.Location = new Point(173, 17);
+            lblForm.Name = "lblForm";
+            lblForm.Size = new Size(69, 30);
+            lblForm.TabIndex = 0;
+            lblForm.Text = "From:";
             // 
             // UCInformation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.Name = "UCInformation";
-            this.Size = new System.Drawing.Size(968, 180);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCompanyPicture)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(panel1);
+            Name = "UCInformation";
+            Size = new Size(968, 180);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
