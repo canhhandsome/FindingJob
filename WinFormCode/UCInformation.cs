@@ -24,7 +24,6 @@ namespace WinFormProject
             InitializeComponent();
             this.jsID = jsID;
             this.job = job;
-            this.MaximumSize = new System.Drawing.Size(500, 361);
             company = companyDAO.FetchCompanyInformationBasedOnID(job.CompanyID);
             FillInTemplate();
             PanelUtils.MakeRounded(this.flpBody, 30);
@@ -39,7 +38,7 @@ namespace WinFormProject
             companyAvatar = companyDAO.FetchImg(job.CompanyID, "Avatar");
 
             ImageHandler.DisplayImage(companyAvatar, ref ptbCompanyPicture);
-            
+
         }
 
         private string PublishTime()

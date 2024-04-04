@@ -51,9 +51,8 @@
             panel1.Controls.Add(metroControlBox3);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1297, 24);
+            panel1.Size = new Size(1482, 32);
             panel1.TabIndex = 5;
             // 
             // metroControlBox4
@@ -65,8 +64,7 @@
             metroControlBox4.DisabledForeColor = Color.DimGray;
             metroControlBox4.Dock = DockStyle.Right;
             metroControlBox4.IsDerivedStyle = true;
-            metroControlBox4.Location = new Point(1197, 0);
-            metroControlBox4.Margin = new Padding(3, 2, 3, 2);
+            metroControlBox4.Location = new Point(1382, 0);
             metroControlBox4.MaximizeBox = true;
             metroControlBox4.MaximizeHoverBackColor = Color.FromArgb(238, 238, 238);
             metroControlBox4.MaximizeHoverForeColor = Color.Gray;
@@ -93,8 +91,7 @@
             metroControlBox3.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
             metroControlBox3.DisabledForeColor = Color.DimGray;
             metroControlBox3.IsDerivedStyle = true;
-            metroControlBox3.Location = new Point(2503, -3);
-            metroControlBox3.Margin = new Padding(3, 2, 3, 2);
+            metroControlBox3.Location = new Point(2861, -4);
             metroControlBox3.MaximizeBox = true;
             metroControlBox3.MaximizeHoverBackColor = Color.FromArgb(238, 238, 238);
             metroControlBox3.MaximizeHoverForeColor = Color.Gray;
@@ -121,9 +118,10 @@
             panel2.Controls.Add(btnSearchJob);
             panel2.Controls.Add(pictureBox2);
             panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 24);
+            panel2.Location = new Point(0, 32);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(202, 674);
+            panel2.Size = new Size(231, 899);
             panel2.TabIndex = 6;
             // 
             // btnLogOut
@@ -140,9 +138,10 @@
             btnLogOut.HoverBackgroundColor = Color.FromArgb(250, 247, 251);
             btnLogOut.HoverTextColor = Color.Black;
             btnLogOut.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnLogOut.Location = new Point(12, 372);
+            btnLogOut.Location = new Point(14, 496);
+            btnLogOut.Margin = new Padding(3, 4, 3, 4);
             btnLogOut.Name = "btnLogOut";
-            btnLogOut.Size = new Size(178, 71);
+            btnLogOut.Size = new Size(203, 95);
             btnLogOut.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnLogOut.TabIndex = 13;
             btnLogOut.TextColor = Color.Black;
@@ -164,9 +163,10 @@
             btnSetting.HoverBackgroundColor = Color.FromArgb(250, 247, 251);
             btnSetting.HoverTextColor = Color.Black;
             btnSetting.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnSetting.Location = new Point(12, 293);
+            btnSetting.Location = new Point(14, 391);
+            btnSetting.Margin = new Padding(3, 4, 3, 4);
             btnSetting.Name = "btnSetting";
-            btnSetting.Size = new Size(178, 71);
+            btnSetting.Size = new Size(203, 95);
             btnSetting.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnSetting.TabIndex = 13;
             btnSetting.TextColor = Color.Black;
@@ -188,9 +188,10 @@
             btnJobAlert.HoverBackgroundColor = Color.FromArgb(250, 247, 251);
             btnJobAlert.HoverTextColor = Color.Black;
             btnJobAlert.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnJobAlert.Location = new Point(12, 215);
+            btnJobAlert.Location = new Point(14, 287);
+            btnJobAlert.Margin = new Padding(3, 4, 3, 4);
             btnJobAlert.Name = "btnJobAlert";
-            btnJobAlert.Size = new Size(178, 71);
+            btnJobAlert.Size = new Size(203, 95);
             btnJobAlert.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnJobAlert.TabIndex = 13;
             btnJobAlert.TextColor = Color.Black;
@@ -212,9 +213,10 @@
             btnSearchJob.HoverBackgroundColor = Color.FromArgb(250, 247, 251);
             btnSearchJob.HoverTextColor = Color.Black;
             btnSearchJob.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnSearchJob.Location = new Point(12, 136);
+            btnSearchJob.Location = new Point(14, 181);
+            btnSearchJob.Margin = new Padding(3, 4, 3, 4);
             btnSearchJob.Name = "btnSearchJob";
-            btnSearchJob.Size = new Size(178, 71);
+            btnSearchJob.Size = new Size(203, 95);
             btnSearchJob.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnSearchJob.TabIndex = 13;
             btnSearchJob.TextColor = Color.Black;
@@ -227,8 +229,9 @@
             pictureBox2.Dock = DockStyle.Top;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(202, 121);
+            pictureBox2.Size = new Size(231, 161);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
@@ -237,22 +240,22 @@
             // 
             pnBody.BorderStyle = BorderStyle.FixedSingle;
             pnBody.Dock = DockStyle.Fill;
-            pnBody.Location = new Point(202, 24);
+            pnBody.Location = new Point(231, 32);
+            pnBody.Margin = new Padding(3, 4, 3, 4);
             pnBody.Name = "pnBody";
-            pnBody.Size = new Size(1095, 674);
+            pnBody.Size = new Size(1251, 899);
             pnBody.TabIndex = 7;
             // 
             // FJobSeeker
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1297, 698);
+            ClientSize = new Size(1482, 931);
             Controls.Add(pnBody);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "FJobSeeker";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "d";
