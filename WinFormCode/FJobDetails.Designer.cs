@@ -109,11 +109,11 @@
             // lblSalary
             // 
             lblSalary.AutoSize = true;
-            lblSalary.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSalary.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             lblSalary.ForeColor = Color.SeaGreen;
-            lblSalary.Location = new Point(47, 109);
+            lblSalary.Location = new Point(46, 108);
             lblSalary.Name = "lblSalary";
-            lblSalary.Size = new Size(69, 28);
+            lblSalary.Size = new Size(85, 31);
             lblSalary.TabIndex = 19;
             lblSalary.Text = "Salary:";
             // 
@@ -122,7 +122,7 @@
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
             tabControl1.Controls.Add(tabPage3);
-            tabControl1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            tabControl1.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             tabControl1.Location = new Point(3, 749);
             tabControl1.Margin = new Padding(3, 4, 3, 4);
             tabControl1.Name = "tabControl1";
@@ -133,11 +133,12 @@
             // tabPage1
             // 
             tabPage1.Controls.Add(rtxtRequirement);
-            tabPage1.Location = new Point(4, 34);
+            tabPage1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            tabPage1.Location = new Point(4, 46);
             tabPage1.Margin = new Padding(3, 4, 3, 4);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3, 4, 3, 4);
-            tabPage1.Size = new Size(805, 270);
+            tabPage1.Size = new Size(805, 258);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Requirement";
             tabPage1.UseVisualStyleBackColor = true;
@@ -221,7 +222,7 @@
             flowLayoutPanel1.Dock = DockStyle.Left;
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(852, 865);
+            flowLayoutPanel1.Size = new Size(842, 865);
             flowLayoutPanel1.TabIndex = 49;
             flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 
@@ -305,7 +306,7 @@
             // lblJobName
             // 
             lblJobName.AccessibleDescription = "";
-            lblJobName.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point);
+            lblJobName.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             lblJobName.Location = new Point(0, 0);
             lblJobName.Name = "lblJobName";
             lblJobName.Size = new Size(809, 69);
@@ -346,7 +347,7 @@
             // lbLocation
             // 
             lbLocation.Dock = DockStyle.Right;
-            lbLocation.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            lbLocation.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lbLocation.ForeColor = SystemColors.ControlText;
             lbLocation.Location = new Point(78, 0);
             lbLocation.Name = "lbLocation";
@@ -388,7 +389,7 @@
             // lblWorkingForm
             // 
             lblWorkingForm.Dock = DockStyle.Right;
-            lblWorkingForm.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            lblWorkingForm.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblWorkingForm.ForeColor = SystemColors.ControlText;
             lblWorkingForm.Location = new Point(78, 0);
             lblWorkingForm.Name = "lblWorkingForm";
@@ -430,7 +431,7 @@
             // lblDate
             // 
             lblDate.Dock = DockStyle.Right;
-            lblDate.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDate.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblDate.ForeColor = SystemColors.ControlText;
             lblDate.Location = new Point(78, 0);
             lblDate.Name = "lblDate";
@@ -542,7 +543,7 @@
             // 
             // metroLabel1
             // 
-            metroLabel1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            metroLabel1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             metroLabel1.IsDerivedStyle = true;
             metroLabel1.Location = new Point(5, 25);
             metroLabel1.Name = "metroLabel1";
