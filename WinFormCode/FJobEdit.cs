@@ -61,8 +61,9 @@ namespace WinFormProject
         }
 
         private void btnSave_Click(object sender, EventArgs e)
-        {
-            Job job1 = new Job(job.Jobid, job.CompanyID, txtJobName.Text, cbbExperience.Text, txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, rtxtbenefit.Text, job.DatePublish, dtpDateEnd.Value, job.Status);
+        { 
+            string workingform = string.Empty;
+            Job job1 = new Job(job.Jobid, job.CompanyID, txtJobName.Text, cbbExperience.Text, txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, rtxtbenefit.Text, job.DatePublish, dtpDateEnd.Value, job.Status,workingform);
             jobDAO.EditJob(job1);
             jobs = jobDAO.FetchCompanyJob(companyid);
             OpenChildForm(new FPostJob(jobs, companyid));

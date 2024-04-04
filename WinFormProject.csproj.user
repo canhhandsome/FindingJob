@@ -83,6 +83,9 @@
     <Compile Update="WinFormCode\UCApplicant.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="WinFormCode\UCCarousel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="WinFormCode\UCHistory.cs">
       <SubType>UserControl</SubType>
     </Compile>

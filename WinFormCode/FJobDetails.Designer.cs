@@ -46,6 +46,7 @@
             lblJobName = new Label();
             flowLayoutPanel2 = new FlowLayoutPanel();
             panel3 = new Panel();
+            ucCarousel1 = new WinFormCode.UCCarousel();
             panel4 = new Panel();
             lbLocation = new Label();
             pictureBox1 = new PictureBox();
@@ -62,10 +63,10 @@
             btnSkill3 = new ReaLTaiizor.Controls.CyberButton();
             metroLabel1 = new ReaLTaiizor.Controls.MetroLabel();
             btnSkill1 = new ReaLTaiizor.Controls.CyberButton();
-            pictureBox6 = new PictureBox();
-            lblCompanyUp = new ReaLTaiizor.Controls.MetroLabel();
-            lblCompanyNameDown = new ReaLTaiizor.Controls.MetroLabel();
+            lblCompanyNameLeft = new ReaLTaiizor.Controls.MetroLabel();
             panel10 = new Panel();
+            panel13 = new Panel();
+            ptbAvatar = new PictureBox();
             btnCompanyDetail = new ReaLTaiizor.Controls.CyberButton();
             flowLayoutPanel3 = new FlowLayoutPanel();
             panel2 = new Panel();
@@ -78,7 +79,7 @@
             lblAddressText = new ReaLTaiizor.Controls.MetroLabel();
             lblAddress = new ReaLTaiizor.Controls.MetroLabel();
             panel12 = new Panel();
-            lblWorkingTimText = new ReaLTaiizor.Controls.MetroLabel();
+            lblWorkingTimeText = new ReaLTaiizor.Controls.MetroLabel();
             lblWorkingTime = new ReaLTaiizor.Controls.MetroLabel();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -88,6 +89,7 @@
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             flowLayoutPanel2.SuspendLayout();
+            panel3.SuspendLayout();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel5.SuspendLayout();
@@ -97,8 +99,9 @@
             panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel10.SuspendLayout();
+            panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ptbAvatar).BeginInit();
             flowLayoutPanel3.SuspendLayout();
             panel2.SuspendLayout();
             panel9.SuspendLayout();
@@ -158,11 +161,11 @@
             // 
             tabPage2.Controls.Add(richTextBox1);
             tabPage2.Controls.Add(rtxtDescription);
-            tabPage2.Location = new Point(4, 34);
+            tabPage2.Location = new Point(4, 46);
             tabPage2.Margin = new Padding(3, 4, 3, 4);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3, 4, 3, 4);
-            tabPage2.Size = new Size(805, 270);
+            tabPage2.Size = new Size(805, 258);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Description";
             tabPage2.UseVisualStyleBackColor = true;
@@ -174,7 +177,7 @@
             richTextBox1.Location = new Point(3, 4);
             richTextBox1.Margin = new Padding(3, 4, 3, 4);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(799, 262);
+            richTextBox1.Size = new Size(799, 250);
             richTextBox1.TabIndex = 1;
             richTextBox1.Text = "";
             // 
@@ -185,18 +188,18 @@
             rtxtDescription.Location = new Point(3, 4);
             rtxtDescription.Margin = new Padding(3, 4, 3, 4);
             rtxtDescription.Name = "rtxtDescription";
-            rtxtDescription.Size = new Size(799, 262);
+            rtxtDescription.Size = new Size(799, 250);
             rtxtDescription.TabIndex = 0;
             rtxtDescription.Text = "";
             // 
             // tabPage3
             // 
             tabPage3.Controls.Add(rtxtBenefit);
-            tabPage3.Location = new Point(4, 34);
+            tabPage3.Location = new Point(4, 46);
             tabPage3.Margin = new Padding(3, 4, 3, 4);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3, 4, 3, 4);
-            tabPage3.Size = new Size(805, 270);
+            tabPage3.Size = new Size(805, 258);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Benefit";
             tabPage3.UseVisualStyleBackColor = true;
@@ -208,7 +211,7 @@
             rtxtBenefit.Location = new Point(3, 4);
             rtxtBenefit.Margin = new Padding(3, 4, 3, 4);
             rtxtBenefit.Name = "rtxtBenefit";
-            rtxtBenefit.Size = new Size(799, 262);
+            rtxtBenefit.Size = new Size(799, 250);
             rtxtBenefit.TabIndex = 45;
             rtxtBenefit.Text = "";
             // 
@@ -224,7 +227,6 @@
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(842, 865);
             flowLayoutPanel1.TabIndex = 49;
-            flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 
             // panel1
             // 
@@ -249,7 +251,7 @@
             btnApply.ColorBackground = Color.FromArgb(237, 27, 47);
             btnApply.ColorBackground_1 = Color.FromArgb(128, 128, 255);
             btnApply.ColorBackground_2 = Color.FromArgb(128, 128, 255);
-            btnApply.ColorBackground_Pen = Color.Black;
+            btnApply.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
             btnApply.ColorLighting = Color.FromArgb(128, 128, 255);
             btnApply.ColorPen_1 = Color.FromArgb(128, 128, 255);
             btnApply.ColorPen_2 = Color.FromArgb(128, 128, 255);
@@ -328,11 +330,22 @@
             // 
             // panel3
             // 
+            panel3.Controls.Add(ucCarousel1);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(3, 3);
             panel3.Name = "panel3";
             panel3.Size = new Size(807, 252);
             panel3.TabIndex = 1;
+            // 
+            // ucCarousel1
+            // 
+            ucCarousel1.BackgroundImage = (Image)resources.GetObject("ucCarousel1.BackgroundImage");
+            ucCarousel1.BackgroundImageLayout = ImageLayout.Stretch;
+            ucCarousel1.Dock = DockStyle.Fill;
+            ucCarousel1.Location = new Point(0, 0);
+            ucCarousel1.Name = "ucCarousel1";
+            ucCarousel1.Size = new Size(807, 252);
+            ucCarousel1.TabIndex = 0;
             // 
             // panel4
             // 
@@ -471,7 +484,7 @@
             btnSkill2.ColorBackground = Color.White;
             btnSkill2.ColorBackground_1 = Color.FromArgb(37, 52, 68);
             btnSkill2.ColorBackground_2 = Color.FromArgb(41, 63, 86);
-            btnSkill2.ColorBackground_Pen = Color.Black;
+            btnSkill2.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
             btnSkill2.ColorLighting = Color.FromArgb(29, 200, 238);
             btnSkill2.ColorPen_1 = Color.FromArgb(37, 52, 68);
             btnSkill2.ColorPen_2 = Color.FromArgb(41, 63, 86);
@@ -511,7 +524,7 @@
             btnSkill3.ColorBackground = Color.White;
             btnSkill3.ColorBackground_1 = Color.FromArgb(37, 52, 68);
             btnSkill3.ColorBackground_2 = Color.FromArgb(41, 63, 86);
-            btnSkill3.ColorBackground_Pen = Color.Black;
+            btnSkill3.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
             btnSkill3.ColorLighting = Color.FromArgb(29, 200, 238);
             btnSkill3.ColorPen_1 = Color.FromArgb(37, 52, 68);
             btnSkill3.ColorPen_2 = Color.FromArgb(41, 63, 86);
@@ -565,7 +578,7 @@
             btnSkill1.ColorBackground = Color.White;
             btnSkill1.ColorBackground_1 = Color.FromArgb(37, 52, 68);
             btnSkill1.ColorBackground_2 = Color.FromArgb(41, 63, 86);
-            btnSkill1.ColorBackground_Pen = Color.Black;
+            btnSkill1.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
             btnSkill1.ColorLighting = Color.FromArgb(29, 200, 238);
             btnSkill1.ColorPen_1 = Color.FromArgb(37, 52, 68);
             btnSkill1.ColorPen_2 = Color.FromArgb(41, 63, 86);
@@ -595,53 +608,53 @@
             btnSkill1.Timer_Effect_1 = 5;
             btnSkill1.Timer_RGB = 300;
             // 
-            // pictureBox6
+            // lblCompanyNameLeft
             // 
-            pictureBox6.Location = new Point(3, 3);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(153, 161);
-            pictureBox6.TabIndex = 47;
-            pictureBox6.TabStop = false;
-            // 
-            // lblCompanyUp
-            // 
-            lblCompanyUp.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCompanyUp.IsDerivedStyle = true;
-            lblCompanyUp.Location = new Point(159, 11);
-            lblCompanyUp.Name = "lblCompanyUp";
-            lblCompanyUp.Size = new Size(278, 67);
-            lblCompanyUp.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            lblCompanyUp.StyleManager = null;
-            lblCompanyUp.TabIndex = 48;
-            lblCompanyUp.Text = "Company Name";
-            lblCompanyUp.ThemeAuthor = "Taiizor";
-            lblCompanyUp.ThemeName = "MetroLight";
-            // 
-            // lblCompanyNameDown
-            // 
-            lblCompanyNameDown.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCompanyNameDown.IsDerivedStyle = true;
-            lblCompanyNameDown.Location = new Point(6, 167);
-            lblCompanyNameDown.Name = "lblCompanyNameDown";
-            lblCompanyNameDown.Size = new Size(426, 52);
-            lblCompanyNameDown.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            lblCompanyNameDown.StyleManager = null;
-            lblCompanyNameDown.TabIndex = 49;
-            lblCompanyNameDown.Text = "Company Name";
-            lblCompanyNameDown.ThemeAuthor = "Taiizor";
-            lblCompanyNameDown.ThemeName = "MetroLight";
+            lblCompanyNameLeft.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCompanyNameLeft.IsDerivedStyle = true;
+            lblCompanyNameLeft.Location = new Point(159, 11);
+            lblCompanyNameLeft.Name = "lblCompanyNameLeft";
+            lblCompanyNameLeft.Size = new Size(278, 67);
+            lblCompanyNameLeft.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            lblCompanyNameLeft.StyleManager = null;
+            lblCompanyNameLeft.TabIndex = 48;
+            lblCompanyNameLeft.Text = "Company Name";
+            lblCompanyNameLeft.ThemeAuthor = "Taiizor";
+            lblCompanyNameLeft.ThemeName = "MetroLight";
             // 
             // panel10
             // 
+            panel10.Controls.Add(panel13);
             panel10.Controls.Add(btnCompanyDetail);
-            panel10.Controls.Add(pictureBox6);
-            panel10.Controls.Add(lblCompanyNameDown);
-            panel10.Controls.Add(lblCompanyUp);
+            panel10.Controls.Add(lblCompanyNameLeft);
             panel10.Dock = DockStyle.Top;
             panel10.Location = new Point(3, 3);
             panel10.Name = "panel10";
-            panel10.Size = new Size(448, 219);
+            panel10.Size = new Size(448, 183);
             panel10.TabIndex = 51;
+            // 
+            // panel13
+            // 
+            panel13.BackColor = Color.FromArgb(248, 212, 187);
+            panel13.Controls.Add(ptbAvatar);
+            panel13.Location = new Point(17, 11);
+            panel13.Margin = new Padding(3, 4, 3, 4);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(138, 128);
+            panel13.TabIndex = 51;
+            // 
+            // ptbAvatar
+            // 
+            ptbAvatar.BackColor = Color.FromArgb(248, 212, 187);
+            ptbAvatar.ErrorImage = (Image)resources.GetObject("ptbAvatar.ErrorImage");
+            ptbAvatar.Image = (Image)resources.GetObject("ptbAvatar.Image");
+            ptbAvatar.Location = new Point(6, 7);
+            ptbAvatar.Margin = new Padding(3, 4, 3, 4);
+            ptbAvatar.Name = "ptbAvatar";
+            ptbAvatar.Size = new Size(129, 117);
+            ptbAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbAvatar.TabIndex = 8;
+            ptbAvatar.TabStop = false;
             // 
             // btnCompanyDetail
             // 
@@ -653,7 +666,7 @@
             btnCompanyDetail.ColorBackground = Color.FromArgb(192, 255, 255);
             btnCompanyDetail.ColorBackground_1 = Color.FromArgb(128, 128, 255);
             btnCompanyDetail.ColorBackground_2 = Color.FromArgb(128, 128, 255);
-            btnCompanyDetail.ColorBackground_Pen = Color.Black;
+            btnCompanyDetail.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
             btnCompanyDetail.ColorLighting = Color.FromArgb(128, 128, 255);
             btnCompanyDetail.ColorPen_1 = Color.FromArgb(128, 128, 255);
             btnCompanyDetail.ColorPen_2 = Color.FromArgb(128, 128, 255);
@@ -670,7 +683,7 @@
             btnCompanyDetail.Lighting = true;
             btnCompanyDetail.LinearGradient_Background = false;
             btnCompanyDetail.LinearGradientPen = false;
-            btnCompanyDetail.Location = new Point(159, 45);
+            btnCompanyDetail.Location = new Point(164, 83);
             btnCompanyDetail.Margin = new Padding(3, 4, 3, 4);
             btnCompanyDetail.Name = "btnCompanyDetail";
             btnCompanyDetail.PenWidth = 15;
@@ -684,6 +697,7 @@
             btnCompanyDetail.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             btnCompanyDetail.Timer_Effect_1 = 5;
             btnCompanyDetail.Timer_RGB = 300;
+            btnCompanyDetail.Click += btnCompanyDetail_Click;
             // 
             // flowLayoutPanel3
             // 
@@ -702,7 +716,7 @@
             // 
             panel2.Controls.Add(lblCompanyTypeText);
             panel2.Controls.Add(lblCompanyType);
-            panel2.Location = new Point(3, 228);
+            panel2.Location = new Point(3, 192);
             panel2.Name = "panel2";
             panel2.Size = new Size(448, 107);
             panel2.TabIndex = 52;
@@ -710,11 +724,11 @@
             // lblCompanyTypeText
             // 
             lblCompanyTypeText.Dock = DockStyle.Right;
-            lblCompanyTypeText.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCompanyTypeText.Font = new Font("Segoe UI Variable Display", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             lblCompanyTypeText.IsDerivedStyle = true;
-            lblCompanyTypeText.Location = new Point(216, 0);
+            lblCompanyTypeText.Location = new Point(174, 0);
             lblCompanyTypeText.Name = "lblCompanyTypeText";
-            lblCompanyTypeText.Size = new Size(232, 107);
+            lblCompanyTypeText.Size = new Size(274, 107);
             lblCompanyTypeText.Style = ReaLTaiizor.Enum.Metro.Style.Light;
             lblCompanyTypeText.StyleManager = null;
             lblCompanyTypeText.TabIndex = 1;
@@ -726,7 +740,7 @@
             // lblCompanyType
             // 
             lblCompanyType.Dock = DockStyle.Left;
-            lblCompanyType.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCompanyType.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             lblCompanyType.IsDerivedStyle = true;
             lblCompanyType.Location = new Point(0, 0);
             lblCompanyType.Name = "lblCompanyType";
@@ -743,7 +757,7 @@
             // 
             panel9.Controls.Add(lblCompanySizeText);
             panel9.Controls.Add(lblCompanySize);
-            panel9.Location = new Point(3, 341);
+            panel9.Location = new Point(3, 305);
             panel9.Name = "panel9";
             panel9.Size = new Size(448, 107);
             panel9.TabIndex = 53;
@@ -751,11 +765,11 @@
             // lblCompanySizeText
             // 
             lblCompanySizeText.Dock = DockStyle.Right;
-            lblCompanySizeText.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCompanySizeText.Font = new Font("Segoe UI Variable Display", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             lblCompanySizeText.IsDerivedStyle = true;
-            lblCompanySizeText.Location = new Point(216, 0);
+            lblCompanySizeText.Location = new Point(174, 0);
             lblCompanySizeText.Name = "lblCompanySizeText";
-            lblCompanySizeText.Size = new Size(232, 107);
+            lblCompanySizeText.Size = new Size(274, 107);
             lblCompanySizeText.Style = ReaLTaiizor.Enum.Metro.Style.Light;
             lblCompanySizeText.StyleManager = null;
             lblCompanySizeText.TabIndex = 1;
@@ -767,7 +781,7 @@
             // lblCompanySize
             // 
             lblCompanySize.Dock = DockStyle.Left;
-            lblCompanySize.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCompanySize.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             lblCompanySize.IsDerivedStyle = true;
             lblCompanySize.Location = new Point(0, 0);
             lblCompanySize.Name = "lblCompanySize";
@@ -784,7 +798,7 @@
             // 
             panel11.Controls.Add(lblAddressText);
             panel11.Controls.Add(lblAddress);
-            panel11.Location = new Point(3, 454);
+            panel11.Location = new Point(3, 418);
             panel11.Name = "panel11";
             panel11.Size = new Size(448, 107);
             panel11.TabIndex = 54;
@@ -792,11 +806,11 @@
             // lblAddressText
             // 
             lblAddressText.Dock = DockStyle.Right;
-            lblAddressText.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblAddressText.Font = new Font("Segoe UI Variable Display", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             lblAddressText.IsDerivedStyle = true;
-            lblAddressText.Location = new Point(216, 0);
+            lblAddressText.Location = new Point(174, 0);
             lblAddressText.Name = "lblAddressText";
-            lblAddressText.Size = new Size(232, 107);
+            lblAddressText.Size = new Size(274, 107);
             lblAddressText.Style = ReaLTaiizor.Enum.Metro.Style.Light;
             lblAddressText.StyleManager = null;
             lblAddressText.TabIndex = 1;
@@ -808,7 +822,7 @@
             // lblAddress
             // 
             lblAddress.Dock = DockStyle.Left;
-            lblAddress.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblAddress.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lblAddress.IsDerivedStyle = true;
             lblAddress.Location = new Point(0, 0);
             lblAddress.Name = "lblAddress";
@@ -823,33 +837,33 @@
             // 
             // panel12
             // 
-            panel12.Controls.Add(lblWorkingTimText);
+            panel12.Controls.Add(lblWorkingTimeText);
             panel12.Controls.Add(lblWorkingTime);
-            panel12.Location = new Point(3, 567);
+            panel12.Location = new Point(3, 531);
             panel12.Name = "panel12";
             panel12.Size = new Size(448, 107);
             panel12.TabIndex = 55;
             // 
-            // lblWorkingTimText
+            // lblWorkingTimeText
             // 
-            lblWorkingTimText.Dock = DockStyle.Right;
-            lblWorkingTimText.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            lblWorkingTimText.IsDerivedStyle = true;
-            lblWorkingTimText.Location = new Point(216, 0);
-            lblWorkingTimText.Name = "lblWorkingTimText";
-            lblWorkingTimText.Size = new Size(232, 107);
-            lblWorkingTimText.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            lblWorkingTimText.StyleManager = null;
-            lblWorkingTimText.TabIndex = 1;
-            lblWorkingTimText.Text = "Working Time Text";
-            lblWorkingTimText.TextAlign = ContentAlignment.MiddleLeft;
-            lblWorkingTimText.ThemeAuthor = "Taiizor";
-            lblWorkingTimText.ThemeName = "MetroLight";
+            lblWorkingTimeText.Dock = DockStyle.Right;
+            lblWorkingTimeText.Font = new Font("Segoe UI Variable Display", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lblWorkingTimeText.IsDerivedStyle = true;
+            lblWorkingTimeText.Location = new Point(174, 0);
+            lblWorkingTimeText.Name = "lblWorkingTimeText";
+            lblWorkingTimeText.Size = new Size(274, 107);
+            lblWorkingTimeText.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            lblWorkingTimeText.StyleManager = null;
+            lblWorkingTimeText.TabIndex = 1;
+            lblWorkingTimeText.Text = "Working Time Text";
+            lblWorkingTimeText.TextAlign = ContentAlignment.MiddleLeft;
+            lblWorkingTimeText.ThemeAuthor = "Taiizor";
+            lblWorkingTimeText.ThemeName = "MetroLight";
             // 
             // lblWorkingTime
             // 
             lblWorkingTime.Dock = DockStyle.Left;
-            lblWorkingTime.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblWorkingTime.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lblWorkingTime.IsDerivedStyle = true;
             lblWorkingTime.Location = new Point(0, 0);
             lblWorkingTime.Name = "lblWorkingTime";
@@ -876,7 +890,6 @@
             Name = "FJobDetails";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FJobDetails";
-            Load += FJobDetails_Load;
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
@@ -886,6 +899,7 @@
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             flowLayoutPanel2.ResumeLayout(false);
+            panel3.ResumeLayout(false);
             panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel5.ResumeLayout(false);
@@ -895,8 +909,9 @@
             panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel10.ResumeLayout(false);
+            panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)ptbAvatar).EndInit();
             flowLayoutPanel3.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel9.ResumeLayout(false);
@@ -939,8 +954,7 @@
         private Label lbLocation;
         private Label lblWorkingForm;
         private Label lblDate;
-        private ReaLTaiizor.Controls.MetroLabel lblCompanyUp;
-        private PictureBox pictureBox6;
+        private ReaLTaiizor.Controls.MetroLabel lblCompanyNameLeft;
         private ReaLTaiizor.Controls.MetroLabel lblCompanyNameDown;
         private Panel panel10;
         private FlowLayoutPanel flowLayoutPanel3;
@@ -954,8 +968,11 @@
         private ReaLTaiizor.Controls.MetroLabel lblAddressText;
         private ReaLTaiizor.Controls.MetroLabel lblAddress;
         private Panel panel12;
-        private ReaLTaiizor.Controls.MetroLabel lblWorkingTimText;
+        private ReaLTaiizor.Controls.MetroLabel lblWorkingTimeText;
         private ReaLTaiizor.Controls.MetroLabel lblWorkingTime;
         private ReaLTaiizor.Controls.CyberButton btnCompanyDetail;
+        private WinFormCode.UCCarousel ucCarousel1;
+        private Panel panel13;
+        private PictureBox ptbAvatar;
     }
 }

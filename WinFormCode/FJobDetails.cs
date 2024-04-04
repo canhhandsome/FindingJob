@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Syncfusion.Pdf.ColorSpace;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,17 +15,46 @@ namespace WinFormProject
     {
         string jsID;
         Job job;
+        Company company;
         ApplyDAO applyDAO = new ApplyDAO();
 
         public FJobDetails(Job job, string jsID)
         {
+            InitializeComponent();
             CompanyDAO companyDAO = new CompanyDAO();
             this.job = job;
             this.jsID = jsID;
-            InitializeComponent();
+            company = companyDAO.FetchCompanyInformationBasedOnID(job.CompanyID);
+            SetForm();
+            SetApplyButton();
+        }
+
+        private void SetForm()
+        {
+            lblWorkingTime.ForeColor = Color.FromArgb(166,166,166);
+            lblAddress.ForeColor = Color.FromArgb(166, 166, 166);
+            lblWorkingTime.ForeColor = Color.FromArgb(166, 166, 166); 
+            lblCompanySize.ForeColor = Color.FromArgb(166, 166, 166);
+            lblCompanyType.ForeColor = Color.FromArgb(166, 166, 166);
+            lblJobName.Text = job.Name;
+            lblCompany.Text = company.INFO.Name;
+            lblSalary.Text = job.Salary;
+            lbLocation.Text = company.INFO.Address;
+            lblWorkingForm.Text = job.WorkingForm;
+            lblDate.Text = job.DatePublish.ToString();
             rtxtDescription.Text = job.Description;
             rtxtRequirement.Text = job.Requirement;
             rtxtBenefit.Text = job.Benefit;
+            if (company.Avatar != null) ImageHandler.DisplayImage(company.Avatar, ref ptbAvatar);
+            lblCompanyNameLeft.Text = company.INFO.Name;
+            lblCompanySizeText.Text = company.CompanySize;
+            lblCompanyTypeText.Text = company.CompanyType;
+            lblWorkingTimeText.Text = company.WorkingTimeBegin + " to " + company.WorkingTimeEnd;
+            lblAddressText.Text = company.INFO.Address;
+
+        }
+        private void SetApplyButton()
+        {
             if (applyDAO.CheckApply(job.Jobid, jsID))
             {
                 btnApply.Enabled = false;
@@ -38,13 +68,12 @@ namespace WinFormProject
                 btnApply.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
             }
         }
-
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnApply_Click(object sender, EventArgs e)
+        private void btnApply_Click_1(object sender, EventArgs e)
         {
             applyDAO.InsertApply(jsID, job.Jobid);
             btnApply.Enabled = false;
@@ -52,17 +81,7 @@ namespace WinFormProject
             btnApply.ColorBackground_Pen = Color.FromArgb(214, 204, 194);
         }
 
-        private void btnApply_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FJobDetails_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void btnCompanyDetail_Click(object sender, EventArgs e)
         {
 
         }
