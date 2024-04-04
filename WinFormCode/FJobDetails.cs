@@ -56,5 +56,10 @@ namespace WinFormProject
         {
 
         }
+
+        private void FJobDetails_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
