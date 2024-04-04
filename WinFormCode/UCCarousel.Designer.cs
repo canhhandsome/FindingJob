@@ -63,6 +63,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             Controls.Add(btnRightArrow);
             Controls.Add(btnLeftArrow);
             Name = "UCCarousel";

@@ -522,7 +522,7 @@
             btnSkill2.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnSkill2.TabIndex = 5;
             btnSkill2.Tag = "Cyber";
-            btnSkill2.TextButton = "CyberButton";
+            btnSkill2.TextButton = "Skill2";
             btnSkill2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             btnSkill2.Timer_Effect_1 = 5;
             btnSkill2.Timer_RGB = 300;
@@ -562,7 +562,7 @@
             btnSkill3.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnSkill3.TabIndex = 4;
             btnSkill3.Tag = "Cyber";
-            btnSkill3.TextButton = "CyberButton";
+            btnSkill3.TextButton = "Skill3";
             btnSkill3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             btnSkill3.Timer_Effect_1 = 5;
             btnSkill3.Timer_RGB = 300;
@@ -616,7 +616,7 @@
             btnSkill1.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnSkill1.TabIndex = 0;
             btnSkill1.Tag = "Cyber";
-            btnSkill1.TextButton = "CyberButton";
+            btnSkill1.TextButton = "Skill1";
             btnSkill1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             btnSkill1.Timer_Effect_1 = 5;
             btnSkill1.Timer_RGB = 300;
