@@ -16,6 +16,7 @@ namespace WinFormProject
         {
             InitializeComponent();
             CompanyDAO companyDAO = new CompanyDAO();
+            JobDAO jobDAO = new JobDAO();
             llFromT.Text = companyDAO.FetchName(alert.SenderID);
             lblContentT.Text = alert.Content;
             lblDateT.Text = alert.DateReply.ToString("dd/MM/yyyy");

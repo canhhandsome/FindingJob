@@ -34,7 +34,7 @@
             panel2 = new Panel();
             btnLogOut = new ReaLTaiizor.Controls.ParrotButton();
             btnSetting = new ReaLTaiizor.Controls.ParrotButton();
-            btnApplicant = new ReaLTaiizor.Controls.ParrotButton();
+            btnHistory = new ReaLTaiizor.Controls.ParrotButton();
             btnPostJob = new ReaLTaiizor.Controls.ParrotButton();
             pictureBox2 = new PictureBox();
             pnBody = new Panel();
@@ -49,9 +49,8 @@
             panel1.Controls.Add(metroControlBox3);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1124, 24);
+            panel1.Size = new Size(1285, 32);
             panel1.TabIndex = 2;
             // 
             // metroControlBox3
@@ -63,8 +62,7 @@
             metroControlBox3.DisabledForeColor = Color.DimGray;
             metroControlBox3.Dock = DockStyle.Right;
             metroControlBox3.IsDerivedStyle = true;
-            metroControlBox3.Location = new Point(1024, 0);
-            metroControlBox3.Margin = new Padding(3, 2, 3, 2);
+            metroControlBox3.Location = new Point(1185, 0);
             metroControlBox3.MaximizeBox = true;
             metroControlBox3.MaximizeHoverBackColor = Color.FromArgb(238, 238, 238);
             metroControlBox3.MaximizeHoverForeColor = Color.Gray;
@@ -87,13 +85,14 @@
             panel2.BackColor = Color.FromArgb(65, 59, 96);
             panel2.Controls.Add(btnLogOut);
             panel2.Controls.Add(btnSetting);
-            panel2.Controls.Add(btnApplicant);
+            panel2.Controls.Add(btnHistory);
             panel2.Controls.Add(btnPostJob);
             panel2.Controls.Add(pictureBox2);
             panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 24);
+            panel2.Location = new Point(0, 32);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(202, 474);
+            panel2.Size = new Size(231, 632);
             panel2.TabIndex = 3;
             // 
             // btnLogOut
@@ -110,9 +109,10 @@
             btnLogOut.HoverBackgroundColor = Color.FromArgb(250, 247, 251);
             btnLogOut.HoverTextColor = Color.Black;
             btnLogOut.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnLogOut.Location = new Point(12, 377);
+            btnLogOut.Location = new Point(14, 503);
+            btnLogOut.Margin = new Padding(3, 4, 3, 4);
             btnLogOut.Name = "btnLogOut";
-            btnLogOut.Size = new Size(178, 71);
+            btnLogOut.Size = new Size(203, 95);
             btnLogOut.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnLogOut.TabIndex = 14;
             btnLogOut.TextColor = Color.Black;
@@ -134,9 +134,10 @@
             btnSetting.HoverBackgroundColor = Color.FromArgb(250, 247, 251);
             btnSetting.HoverTextColor = Color.Black;
             btnSetting.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnSetting.Location = new Point(12, 296);
+            btnSetting.Location = new Point(14, 395);
+            btnSetting.Margin = new Padding(3, 4, 3, 4);
             btnSetting.Name = "btnSetting";
-            btnSetting.Size = new Size(178, 71);
+            btnSetting.Size = new Size(203, 95);
             btnSetting.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnSetting.TabIndex = 14;
             btnSetting.TextColor = Color.Black;
@@ -144,28 +145,30 @@
             btnSetting.Vertical_Alignment = StringAlignment.Center;
             btnSetting.Click += btnSetting_Click;
             // 
-            // btnApplicant
+            // btnHistory
             // 
-            btnApplicant.BackgroundColor = Color.FromArgb(236, 247, 251);
-            btnApplicant.ButtonImage = (Image)resources.GetObject("btnApplicant.ButtonImage");
-            btnApplicant.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
-            btnApplicant.ButtonText = "History";
-            btnApplicant.ClickBackColor = Color.FromArgb(220, 251, 251);
-            btnApplicant.ClickTextColor = Color.Black;
-            btnApplicant.CornerRadius = 5;
-            btnApplicant.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            btnApplicant.Horizontal_Alignment = StringAlignment.Center;
-            btnApplicant.HoverBackgroundColor = Color.FromArgb(250, 247, 251);
-            btnApplicant.HoverTextColor = Color.Black;
-            btnApplicant.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnApplicant.Location = new Point(12, 216);
-            btnApplicant.Name = "btnApplicant";
-            btnApplicant.Size = new Size(178, 71);
-            btnApplicant.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            btnApplicant.TabIndex = 14;
-            btnApplicant.TextColor = Color.Black;
-            btnApplicant.TextRenderingType = System.Drawing.Text.TextRenderingHint.SingleBitPerPixel;
-            btnApplicant.Vertical_Alignment = StringAlignment.Center;
+            btnHistory.BackgroundColor = Color.FromArgb(236, 247, 251);
+            btnHistory.ButtonImage = (Image)resources.GetObject("btnHistory.ButtonImage");
+            btnHistory.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            btnHistory.ButtonText = "History";
+            btnHistory.ClickBackColor = Color.FromArgb(220, 251, 251);
+            btnHistory.ClickTextColor = Color.Black;
+            btnHistory.CornerRadius = 5;
+            btnHistory.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            btnHistory.Horizontal_Alignment = StringAlignment.Center;
+            btnHistory.HoverBackgroundColor = Color.FromArgb(250, 247, 251);
+            btnHistory.HoverTextColor = Color.Black;
+            btnHistory.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            btnHistory.Location = new Point(14, 288);
+            btnHistory.Margin = new Padding(3, 4, 3, 4);
+            btnHistory.Name = "btnHistory";
+            btnHistory.Size = new Size(203, 95);
+            btnHistory.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnHistory.TabIndex = 14;
+            btnHistory.TextColor = Color.Black;
+            btnHistory.TextRenderingType = System.Drawing.Text.TextRenderingHint.SingleBitPerPixel;
+            btnHistory.Vertical_Alignment = StringAlignment.Center;
+            btnHistory.Click += btnHistory_Click;
             // 
             // btnPostJob
             // 
@@ -181,9 +184,10 @@
             btnPostJob.HoverBackgroundColor = Color.FromArgb(250, 247, 251);
             btnPostJob.HoverTextColor = Color.Black;
             btnPostJob.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnPostJob.Location = new Point(12, 136);
+            btnPostJob.Location = new Point(14, 181);
+            btnPostJob.Margin = new Padding(3, 4, 3, 4);
             btnPostJob.Name = "btnPostJob";
-            btnPostJob.Size = new Size(178, 71);
+            btnPostJob.Size = new Size(203, 95);
             btnPostJob.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnPostJob.TabIndex = 14;
             btnPostJob.TextColor = Color.Black;
@@ -196,8 +200,9 @@
             pictureBox2.Dock = DockStyle.Top;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(202, 121);
+            pictureBox2.Size = new Size(231, 161);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
@@ -205,22 +210,22 @@
             // pnBody
             // 
             pnBody.Dock = DockStyle.Fill;
-            pnBody.Location = new Point(202, 24);
+            pnBody.Location = new Point(231, 32);
+            pnBody.Margin = new Padding(3, 4, 3, 4);
             pnBody.Name = "pnBody";
-            pnBody.Size = new Size(922, 474);
+            pnBody.Size = new Size(1054, 632);
             pnBody.TabIndex = 4;
             // 
             // FCompany
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1124, 498);
+            ClientSize = new Size(1285, 664);
             Controls.Add(pnBody);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "FCompany";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FCompany";
@@ -241,6 +246,6 @@
         private ReaLTaiizor.Controls.ParrotButton btnPostJob;
         private ReaLTaiizor.Controls.ParrotButton btnLogOut;
         private ReaLTaiizor.Controls.ParrotButton btnSetting;
-        private ReaLTaiizor.Controls.ParrotButton btnApplicant;
+        private ReaLTaiizor.Controls.ParrotButton btnHistory;
     }
 }

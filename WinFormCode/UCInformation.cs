@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormProject.WinFormCode;
 
 namespace WinFormProject
 {
@@ -16,9 +17,6 @@ namespace WinFormProject
         CompanyDAO companyDAO = new CompanyDAO();
         string jsID = string.Empty;
         byte[] companyAvatar = new byte[100];
-        public UCInformation()
-        {
-        }
         public UCInformation(Job job, string jsID)
         {
             InitializeComponent();
@@ -31,15 +29,22 @@ namespace WinFormProject
         public void FillInTemplate()
         {
             lblFromT.Text = companyDAO.FetchName(job.CompanyID);
-            lblDateT.Text = job.DatePublish.ToString();
+            lblDateT.Text = job.DatePublish.ToString("dd/MM/yyyy");
             lblNameT.Text = job.Name;
-            companyAvatar = companyDAO.FetchImg(job.CompanyID,"Avatar");
+            lblDateEndT.Text = job.DateEnd.ToString("dd/MM/yyyy");
+            companyAvatar = companyDAO.FetchImg(job.CompanyID, "Avatar");
             ImageHandler.DisplayImage(companyAvatar, ref ptbCompanyPicture);
         }
         private void panel1_Click(object sender, EventArgs e)
         {
             FJobDetails jobDetails = new FJobDetails(job, jsID);
             jobDetails.Show();
+        }
+
+        private void btnCompanyDetail_Click(object sender, EventArgs e)
+        {
+            FCompanyDetail companyDetail = new FCompanyDetail(job.CompanyID);
+            companyDetail.Show();
         }
     }
 }

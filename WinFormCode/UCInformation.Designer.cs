@@ -29,7 +29,10 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            btnCompanyDetail = new ReaLTaiizor.Controls.CyberButton();
             ptbCompanyPicture = new PictureBox();
+            lblDateEndT = new Label();
+            lblDateEnd = new Label();
             lblDateT = new Label();
             lblDate = new Label();
             lblNameT = new Label();
@@ -43,7 +46,10 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(254, 232, 223);
+            panel1.Controls.Add(btnCompanyDetail);
             panel1.Controls.Add(ptbCompanyPicture);
+            panel1.Controls.Add(lblDateEndT);
+            panel1.Controls.Add(lblDateEnd);
             panel1.Controls.Add(lblDateT);
             panel1.Controls.Add(lblDate);
             panel1.Controls.Add(lblNameT);
@@ -57,21 +63,83 @@
             panel1.TabIndex = 7;
             panel1.Click += panel1_Click;
             // 
+            // btnCompanyDetail
+            // 
+            btnCompanyDetail.Alpha = 20;
+            btnCompanyDetail.BackColor = Color.Transparent;
+            btnCompanyDetail.Background = true;
+            btnCompanyDetail.Background_WidthPen = 4F;
+            btnCompanyDetail.BackgroundPen = true;
+            btnCompanyDetail.ColorBackground = Color.FromArgb(176, 226, 243);
+            btnCompanyDetail.ColorBackground_1 = Color.FromArgb(128, 128, 255);
+            btnCompanyDetail.ColorBackground_2 = Color.FromArgb(128, 128, 255);
+            btnCompanyDetail.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
+            btnCompanyDetail.ColorLighting = Color.FromArgb(128, 128, 255);
+            btnCompanyDetail.ColorPen_1 = Color.FromArgb(128, 128, 255);
+            btnCompanyDetail.ColorPen_2 = Color.FromArgb(128, 128, 255);
+            btnCompanyDetail.Cursor = Cursors.Hand;
+            btnCompanyDetail.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            btnCompanyDetail.Effect_1 = true;
+            btnCompanyDetail.Effect_1_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnCompanyDetail.Effect_1_Transparency = 25;
+            btnCompanyDetail.Effect_2 = true;
+            btnCompanyDetail.Effect_2_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnCompanyDetail.Effect_2_Transparency = 20;
+            btnCompanyDetail.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCompanyDetail.ForeColor = Color.FromArgb(46, 54, 71);
+            btnCompanyDetail.Lighting = true;
+            btnCompanyDetail.LinearGradient_Background = false;
+            btnCompanyDetail.LinearGradientPen = false;
+            btnCompanyDetail.Location = new Point(669, 80);
+            btnCompanyDetail.Name = "btnCompanyDetail";
+            btnCompanyDetail.PenWidth = 15;
+            btnCompanyDetail.Rounding = true;
+            btnCompanyDetail.RoundingInt = 20;
+            btnCompanyDetail.Size = new Size(150, 42);
+            btnCompanyDetail.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnCompanyDetail.TabIndex = 46;
+            btnCompanyDetail.Tag = "Decline";
+            btnCompanyDetail.TextButton = "Company Detail";
+            btnCompanyDetail.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnCompanyDetail.Timer_Effect_1 = 5;
+            btnCompanyDetail.Timer_RGB = 300;
+            btnCompanyDetail.Click += btnCompanyDetail_Click;
+            // 
             // ptbCompanyPicture
             // 
-            ptbCompanyPicture.Location = new Point(15, 2);
+            ptbCompanyPicture.Location = new Point(13, 10);
             ptbCompanyPicture.Margin = new Padding(3, 2, 3, 2);
             ptbCompanyPicture.Name = "ptbCompanyPicture";
-            ptbCompanyPicture.Size = new Size(131, 119);
+            ptbCompanyPicture.Size = new Size(131, 104);
             ptbCompanyPicture.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbCompanyPicture.TabIndex = 1;
             ptbCompanyPicture.TabStop = false;
+            // 
+            // lblDateEndT
+            // 
+            lblDateEndT.AutoSize = true;
+            lblDateEndT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDateEndT.Location = new Point(599, 10);
+            lblDateEndT.Name = "lblDateEndT";
+            lblDateEndT.Size = new Size(58, 25);
+            lblDateEndT.TabIndex = 0;
+            lblDateEndT.Text = "Date: ";
+            // 
+            // lblDateEnd
+            // 
+            lblDateEnd.AutoSize = true;
+            lblDateEnd.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDateEnd.Location = new Point(497, 10);
+            lblDateEnd.Name = "lblDateEnd";
+            lblDateEnd.Size = new Size(93, 25);
+            lblDateEnd.TabIndex = 0;
+            lblDateEnd.Text = "Date End: ";
             // 
             // lblDateT
             // 
             lblDateT.AutoSize = true;
             lblDateT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDateT.Location = new Point(231, 50);
+            lblDateT.Location = new Point(271, 50);
             lblDateT.Name = "lblDateT";
             lblDateT.Size = new Size(58, 25);
             lblDateT.TabIndex = 0;
@@ -83,15 +151,15 @@
             lblDate.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblDate.Location = new Point(151, 50);
             lblDate.Name = "lblDate";
-            lblDate.Size = new Size(58, 25);
+            lblDate.Size = new Size(120, 25);
             lblDate.TabIndex = 0;
-            lblDate.Text = "Date: ";
+            lblDate.Text = "Date Publish: ";
             // 
             // lblNameT
             // 
             lblNameT.AutoSize = true;
             lblNameT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblNameT.Location = new Point(231, 88);
+            lblNameT.Location = new Point(217, 88);
             lblNameT.Name = "lblNameT";
             lblNameT.Size = new Size(68, 25);
             lblNameT.TabIndex = 0;
@@ -111,7 +179,7 @@
             // 
             lblFromT.AutoSize = true;
             lblFromT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFromT.Location = new Point(231, 13);
+            lblFromT.Location = new Point(217, 13);
             lblFromT.Name = "lblFromT";
             lblFromT.Size = new Size(58, 25);
             lblFromT.TabIndex = 0;
@@ -151,5 +219,8 @@
         public Label lblFromT;
         public Label lblNameT;
         private PictureBox ptbCompanyPicture;
+        public Label lblDateEndT;
+        public Label lblDateEnd;
+        private ReaLTaiizor.Controls.CyberButton btnCompanyDetail;
     }
 }

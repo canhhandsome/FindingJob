@@ -30,13 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FProfileCompany));
             this.txtDetail = new ReaLTaiizor.Controls.HopeRichTextBox();
-            this.lblEmployees = new System.Windows.Forms.Label();
             this.txtCompanyName = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             this.txtAddress = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             this.txtPhoneNumber = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
-            this.txtCompanyType = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             this.txtEmail = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
-            this.txtCompanySize = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ptbAvatar = new System.Windows.Forms.PictureBox();
             this.btnChoosePicture = new ReaLTaiizor.Controls.CyberButton();
@@ -51,6 +48,8 @@
             this.txtWebsiteLink = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             this.btnChooseLicense = new ReaLTaiizor.Controls.CyberButton();
             this.ptbLicense = new System.Windows.Forms.PictureBox();
+            this.cbbCompanyType = new ReaLTaiizor.Controls.MaterialComboBox();
+            this.cbbCompanySize = new ReaLTaiizor.Controls.MaterialComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLicense)).BeginInit();
@@ -78,17 +77,6 @@
             this.txtDetail.TabStop = false;
             this.txtDetail.Text = "Details";
             this.txtDetail.UseSystemPasswordChar = false;
-            // 
-            // lblEmployees
-            // 
-            this.lblEmployees.AutoSize = true;
-            this.lblEmployees.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblEmployees.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblEmployees.Location = new System.Drawing.Point(565, 253);
-            this.lblEmployees.Name = "lblEmployees";
-            this.lblEmployees.Size = new System.Drawing.Size(106, 28);
-            this.lblEmployees.TabIndex = 37;
-            this.lblEmployees.Text = "employees";
             // 
             // txtCompanyName
             // 
@@ -219,49 +207,6 @@
             this.txtPhoneNumber.UseSystemPasswordChar = false;
             this.txtPhoneNumber.ValidatingType = null;
             // 
-            // txtCompanyType
-            // 
-            this.txtCompanyType.AllowPromptAsInput = true;
-            this.txtCompanyType.AnimateReadOnly = false;
-            this.txtCompanyType.AsciiOnly = false;
-            this.txtCompanyType.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtCompanyType.BeepOnError = false;
-            this.txtCompanyType.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtCompanyType.Depth = 0;
-            this.txtCompanyType.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtCompanyType.HidePromptOnLeave = false;
-            this.txtCompanyType.HideSelection = true;
-            this.txtCompanyType.Hint = "Company Type";
-            this.txtCompanyType.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.txtCompanyType.LeadingIcon = null;
-            this.txtCompanyType.Location = new System.Drawing.Point(373, 100);
-            this.txtCompanyType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCompanyType.Mask = "";
-            this.txtCompanyType.MaxLength = 32767;
-            this.txtCompanyType.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.txtCompanyType.Name = "txtCompanyType";
-            this.txtCompanyType.PasswordChar = '\0';
-            this.txtCompanyType.PrefixSuffixText = null;
-            this.txtCompanyType.PromptChar = '_';
-            this.txtCompanyType.ReadOnly = false;
-            this.txtCompanyType.RejectInputOnFirstFailure = false;
-            this.txtCompanyType.ResetOnPrompt = true;
-            this.txtCompanyType.ResetOnSpace = true;
-            this.txtCompanyType.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtCompanyType.SelectedText = "";
-            this.txtCompanyType.SelectionLength = 0;
-            this.txtCompanyType.SelectionStart = 0;
-            this.txtCompanyType.ShortcutsEnabled = true;
-            this.txtCompanyType.Size = new System.Drawing.Size(298, 48);
-            this.txtCompanyType.SkipLiterals = true;
-            this.txtCompanyType.TabIndex = 41;
-            this.txtCompanyType.TabStop = false;
-            this.txtCompanyType.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtCompanyType.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtCompanyType.TrailingIcon = null;
-            this.txtCompanyType.UseSystemPasswordChar = false;
-            this.txtCompanyType.ValidatingType = null;
-            // 
             // txtEmail
             // 
             this.txtEmail.AllowPromptAsInput = true;
@@ -305,49 +250,6 @@
             this.txtEmail.UseSystemPasswordChar = false;
             this.txtEmail.ValidatingType = null;
             // 
-            // txtCompanySize
-            // 
-            this.txtCompanySize.AllowPromptAsInput = true;
-            this.txtCompanySize.AnimateReadOnly = false;
-            this.txtCompanySize.AsciiOnly = false;
-            this.txtCompanySize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtCompanySize.BeepOnError = false;
-            this.txtCompanySize.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtCompanySize.Depth = 0;
-            this.txtCompanySize.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtCompanySize.HidePromptOnLeave = false;
-            this.txtCompanySize.HideSelection = true;
-            this.txtCompanySize.Hint = "Company Size";
-            this.txtCompanySize.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.txtCompanySize.LeadingIcon = null;
-            this.txtCompanySize.Location = new System.Drawing.Point(373, 243);
-            this.txtCompanySize.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCompanySize.Mask = "";
-            this.txtCompanySize.MaxLength = 32767;
-            this.txtCompanySize.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.txtCompanySize.Name = "txtCompanySize";
-            this.txtCompanySize.PasswordChar = '\0';
-            this.txtCompanySize.PrefixSuffixText = null;
-            this.txtCompanySize.PromptChar = '_';
-            this.txtCompanySize.ReadOnly = false;
-            this.txtCompanySize.RejectInputOnFirstFailure = false;
-            this.txtCompanySize.ResetOnPrompt = true;
-            this.txtCompanySize.ResetOnSpace = true;
-            this.txtCompanySize.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtCompanySize.SelectedText = "";
-            this.txtCompanySize.SelectionLength = 0;
-            this.txtCompanySize.SelectionStart = 0;
-            this.txtCompanySize.ShortcutsEnabled = true;
-            this.txtCompanySize.Size = new System.Drawing.Size(186, 48);
-            this.txtCompanySize.SkipLiterals = true;
-            this.txtCompanySize.TabIndex = 43;
-            this.txtCompanySize.TabStop = false;
-            this.txtCompanySize.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtCompanySize.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtCompanySize.TrailingIcon = null;
-            this.txtCompanySize.UseSystemPasswordChar = false;
-            this.txtCompanySize.ValidatingType = null;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
@@ -357,6 +259,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(183, 195);
             this.panel1.TabIndex = 44;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // ptbAvatar
             // 
@@ -370,6 +273,7 @@
             this.ptbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbAvatar.TabIndex = 8;
             this.ptbAvatar.TabStop = false;
+            this.ptbAvatar.Click += new System.EventHandler(this.ptbAvatar_Click);
             // 
             // btnChoosePicture
             // 
@@ -412,6 +316,7 @@
             this.btnChoosePicture.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btnChoosePicture.Timer_Effect_1 = 5;
             this.btnChoosePicture.Timer_RGB = 300;
+            this.btnChoosePicture.Click += new System.EventHandler(this.btnChoosePicture_Click);
             // 
             // btnSave
             // 
@@ -454,6 +359,7 @@
             this.btnSave.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btnSave.Timer_Effect_1 = 5;
             this.btnSave.Timer_RGB = 300;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
@@ -496,6 +402,7 @@
             this.btnCancel.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btnCancel.Timer_Effect_1 = 5;
             this.btnCancel.Timer_RGB = 300;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnEdit
             // 
@@ -566,7 +473,7 @@
             this.txtTaxIdentification.Hint = "Tax Identification";
             this.txtTaxIdentification.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
             this.txtTaxIdentification.LeadingIcon = null;
-            this.txtTaxIdentification.Location = new System.Drawing.Point(26, 243);
+            this.txtTaxIdentification.Location = new System.Drawing.Point(373, 100);
             this.txtTaxIdentification.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTaxIdentification.Mask = "";
             this.txtTaxIdentification.MaxLength = 32767;
@@ -603,7 +510,7 @@
             this.cbbWTB.DropDownHeight = 174;
             this.cbbWTB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbWTB.DropDownWidth = 121;
-            this.cbbWTB.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cbbWTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.cbbWTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cbbWTB.FormattingEnabled = true;
             this.cbbWTB.IntegralHeight = false;
@@ -749,19 +656,76 @@
             this.btnChooseLicense.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btnChooseLicense.Timer_Effect_1 = 5;
             this.btnChooseLicense.Timer_RGB = 300;
+            this.btnChooseLicense.Click += new System.EventHandler(this.btnChooseLicense_Click);
             // 
             // ptbLicense
             // 
             this.ptbLicense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
             this.ptbLicense.ErrorImage = ((System.Drawing.Image)(resources.GetObject("ptbLicense.ErrorImage")));
             this.ptbLicense.Image = ((System.Drawing.Image)(resources.GetObject("ptbLicense.Image")));
-            this.ptbLicense.Location = new System.Drawing.Point(812, 307);
+            this.ptbLicense.Location = new System.Drawing.Point(812, 299);
             this.ptbLicense.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ptbLicense.Name = "ptbLicense";
-            this.ptbLicense.Size = new System.Drawing.Size(148, 125);
+            this.ptbLicense.Size = new System.Drawing.Size(148, 131);
             this.ptbLicense.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbLicense.TabIndex = 56;
             this.ptbLicense.TabStop = false;
+            // 
+            // cbbCompanyType
+            // 
+            this.cbbCompanyType.AutoResize = false;
+            this.cbbCompanyType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cbbCompanyType.Depth = 0;
+            this.cbbCompanyType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cbbCompanyType.DropDownHeight = 174;
+            this.cbbCompanyType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbCompanyType.DropDownWidth = 121;
+            this.cbbCompanyType.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cbbCompanyType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cbbCompanyType.FormattingEnabled = true;
+            this.cbbCompanyType.Hint = "Company Type";
+            this.cbbCompanyType.IntegralHeight = false;
+            this.cbbCompanyType.ItemHeight = 43;
+            this.cbbCompanyType.Items.AddRange(new object[] {
+            "Outsource",
+            "Product",
+            "HeadHunter",
+            "Non - IT",
+            "Services and Consulting"});
+            this.cbbCompanyType.Location = new System.Drawing.Point(26, 242);
+            this.cbbCompanyType.MaxDropDownItems = 4;
+            this.cbbCompanyType.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.cbbCompanyType.Name = "cbbCompanyType";
+            this.cbbCompanyType.Size = new System.Drawing.Size(298, 49);
+            this.cbbCompanyType.StartIndex = 0;
+            this.cbbCompanyType.TabIndex = 57;
+            // 
+            // cbbCompanySize
+            // 
+            this.cbbCompanySize.AutoResize = false;
+            this.cbbCompanySize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cbbCompanySize.Depth = 0;
+            this.cbbCompanySize.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cbbCompanySize.DropDownHeight = 174;
+            this.cbbCompanySize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbCompanySize.DropDownWidth = 121;
+            this.cbbCompanySize.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cbbCompanySize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cbbCompanySize.FormattingEnabled = true;
+            this.cbbCompanySize.Hint = "Company Size";
+            this.cbbCompanySize.IntegralHeight = false;
+            this.cbbCompanySize.ItemHeight = 43;
+            this.cbbCompanySize.Items.AddRange(new object[] {
+            "Small",
+            "Medium",
+            "Large"});
+            this.cbbCompanySize.Location = new System.Drawing.Point(373, 242);
+            this.cbbCompanySize.MaxDropDownItems = 4;
+            this.cbbCompanySize.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.cbbCompanySize.Name = "cbbCompanySize";
+            this.cbbCompanySize.Size = new System.Drawing.Size(298, 49);
+            this.cbbCompanySize.StartIndex = 0;
+            this.cbbCompanySize.TabIndex = 58;
             // 
             // FProfileCompany
             // 
@@ -769,6 +733,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1049, 585);
+            this.Controls.Add(this.cbbCompanySize);
+            this.Controls.Add(this.cbbCompanyType);
             this.Controls.Add(this.ptbLicense);
             this.Controls.Add(this.btnChooseLicense);
             this.Controls.Add(this.txtWebsiteLink);
@@ -782,13 +748,10 @@
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnChoosePicture);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtCompanySize);
             this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtCompanyType);
             this.Controls.Add(this.txtPhoneNumber);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtCompanyName);
-            this.Controls.Add(this.lblEmployees);
             this.Controls.Add(this.txtDetail);
             this.Name = "FProfileCompany";
             this.Text = "FProfileCompany";
@@ -802,13 +765,10 @@
 
         #endregion
         private ReaLTaiizor.Controls.HopeRichTextBox txtDetail;
-        private Label lblEmployees;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox txtCompanyName;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox txtAddress;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox txtPhoneNumber;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox txtCompanyType;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox txtEmail;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox txtCompanySize;
         private Panel panel1;
         private PictureBox ptbAvatar;
         private ReaLTaiizor.Controls.CyberButton btnChoosePicture;
@@ -823,5 +783,7 @@
         private ReaLTaiizor.Controls.MaterialMaskedTextBox txtWebsiteLink;
         private ReaLTaiizor.Controls.CyberButton btnChooseLicense;
         private PictureBox ptbLicense;
+        private ReaLTaiizor.Controls.MaterialComboBox cbbCompanyType;
+        private ReaLTaiizor.Controls.MaterialComboBox cbbCompanySize;
     }
 }

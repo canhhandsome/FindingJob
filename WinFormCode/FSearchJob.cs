@@ -35,9 +35,12 @@ namespace WinFormProject
             flpJob.Controls.Clear();
             foreach (Job job in jobslist)
             {
-                UCInformation uCInformation = new UCInformation(job, jsID);
-                flpJob.Controls.Add(uCInformation);
-                flpJob.Height += 150;
+                if(job.Status == "waiting")
+                {
+                    UCInformation uCInformation = new UCInformation(job, jsID);
+                    flpJob.Controls.Add(uCInformation);
+                    flpJob.Height += 150;
+                }
             }
         }
 
@@ -50,7 +53,7 @@ namespace WinFormProject
                 {
                     CompanyDAO companyDAO = new CompanyDAO();
                     string namecompany = companyDAO.FetchName(job.CompanyID).ToLower();
-                    string[] propertiesToSearch = { job.Name.ToLower(), job.Position.ToLower(), job.Requirement.ToLower(), job.Description.ToLower(), namecompany };
+                    string[] propertiesToSearch = { job.Name.ToLower(), job.Position.ToLower(), job.Requirement.ToLower(), job.Description.ToLower(), job.Benefit.ToLower(), namecompany };
 
                     return propertiesToSearch.Any(property => property.Contains(search));
                 }).ToList();

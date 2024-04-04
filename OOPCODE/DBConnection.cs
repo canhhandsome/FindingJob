@@ -122,7 +122,7 @@ namespace WinFormProject
 
                 while(reader.Read())
                 {
-                    jobs.Add(new Job(reader["Jobid"].ToString(), reader["CompanyId"].ToString(),reader["JobName"].ToString(), reader["position"].ToString(), reader["salary"].ToString(), reader["requirement"].ToString(), reader["description"].ToString(),Convert.ToDateTime(reader["datepublish"].ToString())));
+                    jobs.Add(new Job(reader["Jobid"].ToString().Trim(), reader["CompanyId"].ToString().Trim(), reader["JobName"].ToString().Trim(), reader["position"].ToString().Trim(), reader["salary"].ToString().Trim(), reader["requirement"].ToString().Trim(), reader["description"].ToString().Trim(), reader["benefit"].ToString().Trim(), Convert.ToDateTime(reader["datepublish"].ToString()), Convert.ToDateTime(reader["DateEnd"].ToString()), reader["status"].ToString().Trim()));
                 }
             }
             catch(Exception ex)
@@ -207,8 +207,29 @@ namespace WinFormProject
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(SQL, conn);
                 cmd.Parameters.AddWithValue("@BDate", jobseeker.BDate);
-                cmd.Parameters.AddWithValue("@Avatar", jobseeker.Avatar);
-                cmd.Parameters.AddWithValue("@CV", jobseeker.CV);
+                cmd.Parameters.AddWithValue("@Avatar", (object)jobseeker.Avatar ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@CV", (object)jobseeker.CV ?? DBNull.Value);
+                if (cmd.ExecuteNonQuery() > 0)
+                    MessageBox.Show("Successfully");
+                else MessageBox.Show("Failed");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed, check again" + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+        public void CRUD(string SQL, Company company)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(SQL, conn);
+                cmd.Parameters.AddWithValue("@Avatar", (object)company.Avatar ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@BusinessLicense", (object)company.BusinessLicense ?? DBNull.Value);
                 if (cmd.ExecuteNonQuery() > 0)
                     MessageBox.Show("Successfully");
                 else MessageBox.Show("Failed");
@@ -243,6 +264,63 @@ namespace WinFormProject
                 conn.Close();
             }
             return null;
+        }
+        public bool CheckApplyData(string SQL,string jobid,string jsid)
+        {
+            int rowsCount = 0;
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(SQL, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                List<string> list = new List<string>();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(reader["jobseekerID"].ToString());
+                        list.Add(reader["JobID"].ToString());
+                     }
+                    if (list[0] == jsid && list[1] == jobid) rowsCount = 1;
+                    else rowsCount = 0;
+                } else rowsCount = 0;
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Operation failed. Error: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return rowsCount > 0;
+        }
+        public Company FetchCompanyById(string strFetch,string id)
+        {
+            Company company = new Company();
+            List<string> seperatedinfo = new List<string>(2);
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while(reader.Read())
+                {
+                    Information information = new Information(reader["ID"].ToString(), reader["Name"].ToString(),
+                        reader["Email"].ToString(), reader["Address"].ToString(), reader["Phonenumber"].ToString());
+                    company = new Company(information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("them that bai" + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return company;
         }
     }
 }

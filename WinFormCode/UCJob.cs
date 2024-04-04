@@ -3,50 +3,37 @@
 using System;
 using System.ComponentModel;
 using System.Drawing.Drawing2D;
+using System.Threading.Tasks.Dataflow;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace WinFormProject
 {
     public partial class UCJob : UserControl
     {
-        // Define delegate and event
-        public delegate void JobDeletedEventHandler(object sender, EventArgs e);
-        public event JobDeletedEventHandler JobDeleted;
-
         Job job = new Job();
         JobDAO jobDAO = new JobDAO();
-
-        public UCJob(Job job)
+        Form currentFormChild;
+        Panel pnBody;
+        public UCJob(Job job, Form currentFormChild, Panel pnBody)
         {
             InitializeComponent();
+            this.currentFormChild = currentFormChild;
+            this.pnBody = pnBody;
             this.MaximumSize = new System.Drawing.Size(812, 212);
             this.job = job;
-            lblJobNameT.Text = job.Name;
-            lblDateT.Text = job.DatePublish.ToString();
         }
 
         public Job Job { get { return job; } }
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            jobDAO.DeleteJob(job.Jobid);
-            OnJobDeleted(EventArgs.Empty);
-        }
-
-        protected virtual void OnJobDeleted(EventArgs e)
-        {
-            JobDeleted?.Invoke(this, e);
-        }
-
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-
+            jobDAO.DoneJob(job.Jobid);
         }
 
         private void btnApplicants_Click(object sender, EventArgs e)
         {
             FApplicant fApplicant = new FApplicant(Job);
             fApplicant.Show();
-
         }
 
         private int radius = 20;
@@ -97,7 +84,43 @@ namespace WinFormProject
             this.RecreateRegion();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void UCJob_Load(object sender, EventArgs e)
+        {
+            lblJobNameT.Text = job.Name;
+            lblDateT.Text = job.DatePublish.ToString();
+            lblEndT.Text = job.DateEnd.ToString("dd/MM/yyyy");
+            lblStatusT.Text = job.Status;
+        }
+        private void OpenChildForm(Form childForm)
+        {
+            foreach (Control control in this.Controls)
+            {
+                if (control == pnBody)
+                    continue;
+                control.Visible = false;
+            }
+            if (currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+            currentFormChild = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pnBody.Controls.Add(childForm);
+            pnBody.Tag = childForm;
+            pnBody.BackColor = Color.FromArgb(32, 41, 58);
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            FJobEdit fJobEdit = new FJobEdit(job, job.CompanyID);
+            OpenChildForm(fJobEdit);
+        }
+
+        private void btnDelete_Click_1(object sender, EventArgs e)
         {
 
         }

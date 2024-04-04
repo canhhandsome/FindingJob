@@ -39,8 +39,8 @@ namespace WinFormProject
                 rdoMale.Checked = true;
             }
             else rdoFemale.Checked = true;
-            if(jobseeker.Avatar!=null) ImageHandler.DisplayImage(jobseeker.Avatar, ref ptbAvatar);
-            if(jobseeker.CV!=null) ImageHandler.DisplayPdfPreview(jobseeker.CV, ptbCV);
+            if (jobseeker.Avatar != null) ImageHandler.DisplayImage(jobseeker.Avatar, ref ptbAvatar);
+            if (jobseeker.CV != null) ImageHandler.DisplayPdfPreview(jobseeker.CV, ptbCV);
         }
         private void btnEdit_Click(object sender, EventArgs e)
         {
@@ -89,7 +89,7 @@ namespace WinFormProject
         private void btnChooseNewCV_Click(object sender, EventArgs e)
         {
             Cv = PDFHandler.OpenFileDialog();
-            if(Cv!=null) ImageHandler.DisplayPdfPreview(Cv, ptbCV);
+            if (Cv != null) ImageHandler.DisplayPdfPreview(Cv, ptbCV);
 
         }
 
@@ -100,17 +100,17 @@ namespace WinFormProject
         }
         private JobSeeker CreateJobSeeker()
         {
-            string gender = String.Empty;
+            string gender;
             byte[] AvatarData = new byte[1];
             if (ptbAvatar.Image != null)
             {
                 AvatarData = ImageHandler.ImageToByteArray(ptbAvatar.Image);
             }
-            byte[] CvData = new byte[1];
-            if (ptbCV.Image != null)
+            byte[] CvData;
+            if (ptbCV.Image != null && Cv.Length > 0)
             {
                 CvData = Cv;
-            }
+            } else CvData = this.jobseeker.CV;
             Information information = new Information(jobseeker.INFO.ID, txtFullName.Text, txtEmail.Text, txtAddress.Text, txtPhoneNumber.Text);
             if (rdoFemale.Checked) gender = "female"; else gender = "male";
             return new JobSeeker(information, dtpkBirthDate.Value, txtCitizenID.Text, gender, AvatarData, CvData);
@@ -120,7 +120,7 @@ namespace WinFormProject
         {
             FCV fcv = new FCV(jobseeker);
             fcv.Show();
-            
+
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

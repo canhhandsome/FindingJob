@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.ComponentModel.Design;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,10 +20,18 @@ namespace WinFormProject
         private JobDAO jobDAO = new JobDAO();
         private Job job;
 
-        public FJobEdit(Job job)
+        public FJobEdit(Job job, string companyid)
         {
             InitializeComponent();
             this.job = job;
+            this.companyid = companyid;
+            txtJobName.Text = job.Name;
+            cbbExperience.SelectedItem = job.Position;
+            txtSalary.Text = job.Salary;
+            rtxtdescription.Text = job.Description;
+            rtxtjobrequirement.Text = job.Requirement;
+            rtxtbenefit.Text = job.Benefit;
+            dtpDateEnd.Value = job.DateEnd;
         }
         private void OpenChildForm(Form childForm)
         {
@@ -53,10 +62,10 @@ namespace WinFormProject
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            //Job job1 = new Job(job.Jobid, job.CompanyID,txtJobName.Text,cbbExperience.Text,txtSalary.Text,rtxtjobrequirement.Text,rtxtdescription.Text,DateTime.Now);
-            //jobDAO.EditJob(job1);
-            //jobs = jobDAO.FetchAllJob(companyid);
-            //OpenChildForm(new FPostJob(jobs, companyid));
+            Job job1 = new Job(job.Jobid, job.CompanyID, txtJobName.Text, cbbExperience.Text, txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, rtxtbenefit.Text, job.DatePublish, dtpDateEnd.Value, job.Status);
+            jobDAO.EditJob(job1);
+            jobs = jobDAO.FetchCompanyJob(companyid);
+            OpenChildForm(new FPostJob(jobs, companyid));
         }
     }
 }

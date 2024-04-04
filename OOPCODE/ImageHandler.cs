@@ -48,10 +48,13 @@ namespace WinFormProject
         }
         public static void ChoosePicture(ref PictureBox ptb)
         {
-            OpenFileDialog openFileDiaglog = new OpenFileDialog();
-            if (openFileDiaglog.ShowDialog() == DialogResult.OK)
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                ptb.Image = new Bitmap(openFileDiaglog.FileName);
+                openFileDialog.Filter = "Image Files (*.png;*.jpg;*.jpeg)|*.png;*.jpg;*.jpeg";
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    ptb.ImageLocation = openFileDialog.FileName;
+                }
             }
         }
         public static void DisplayPdfPreview(byte[] pdfBytes, PictureBox ptbCv)
@@ -67,17 +70,24 @@ namespace WinFormProject
         {
             using (MemoryStream memoryStream = new MemoryStream(pdfBytes))
             {
-                // Load PDF document
-                PdfLoadedDocument loadedDocument = new PdfLoadedDocument(memoryStream);
+                // Check if the memoryStream has content
+                if (memoryStream.Length > 0)
+                {
+                    // Load PDF document
+                    PdfLoadedDocument loadedDocument = new PdfLoadedDocument(memoryStream);
 
-                // Render first page as image
-                Bitmap image = loadedDocument.ExportAsImage(0);
+                    // Render first page as image
+                    Bitmap image = loadedDocument.ExportAsImage(0);
 
-                // Dispose the document
-                loadedDocument.Dispose();
+                    // Dispose the document
+                    loadedDocument.Dispose();
 
-                return image;
+                    return image;
+                }
             }
+
+            return null;
+
         }
     }
 }

@@ -17,6 +17,9 @@
     <Compile Update="WinFormCode\FCompany.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="WinFormCode\FCompanyDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="WinFormCode\FCV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -24,6 +27,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="WinFormCode\FFPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FHistory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="WinFormCode\FJobCreation.cs">
@@ -65,7 +71,7 @@
     <Compile Update="WinFormCode\FSearchJob.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="WinFormCode\FSupJobSection.cs">
+    <Compile Update="WinFormCode\FAlert.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="WinFormCode\FSupReportSection.cs">
@@ -75,6 +81,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="WinFormCode\UCApplicant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\UCHistory.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="WinFormCode\UCInformation.cs">
