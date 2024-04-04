@@ -134,7 +134,7 @@
             tabPage1.Controls.Add(rtxtRequirement);
             tabPage1.Location = new Point(4, 29);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3, 3, 3, 3);
+            tabPage1.Padding = new Padding(3);
             tabPage1.Size = new Size(701, 198);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Requirement";
@@ -156,7 +156,7 @@
             tabPage2.Controls.Add(rtxtDescription);
             tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3, 3, 3, 3);
+            tabPage2.Padding = new Padding(3);
             tabPage2.Size = new Size(701, 198);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Description";
@@ -187,7 +187,7 @@
             tabPage3.Controls.Add(rtxtBenefit);
             tabPage3.Location = new Point(4, 29);
             tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3, 3, 3, 3);
+            tabPage3.Padding = new Padding(3);
             tabPage3.Size = new Size(701, 198);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Benefit";
@@ -876,6 +876,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             BackColor = Color.White;
             ClientSize = new Size(1127, 796);
             Controls.Add(flowLayoutPanel3);
