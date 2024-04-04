@@ -22,15 +22,9 @@ namespace WinFormProject
             this.job = job;
             this.jsID = jsID;
             InitializeComponent();
-            lblCompanyT.Text = companyDAO.FetchName(job.CompanyID);
-            lblDateT.Text = job.DatePublish.ToString("dd/MM/yyyy");
-            lblNameT.Text = job.Name;
-            lblPositionT.Text = job.Position;
-            lblSalaryT.Text = job.Salary;
             rtxtDescription.Text = job.Description;
             rtxtRequirement.Text = job.Requirement;
             rtxtBenefit.Text = job.Benefit;
-            lblEndT.Text = job.DateEnd.ToString("dd/MM/yyyy");
             if (applyDAO.CheckApply(job.Jobid, jsID))
             {
                 btnApply.Enabled = false;
