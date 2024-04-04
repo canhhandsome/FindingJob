@@ -46,6 +46,35 @@ namespace WinFormProject
                 return ms.ToArray();
             }
         }
+        public static Image ByteArrayToImage(byte[] imageData)
+        {
+            using (MemoryStream ms = new MemoryStream(imageData))
+            {
+                Image image = Image.FromStream(ms);
+                return image;
+            }
+        }
+        public static List<byte[]> ConvertListImgToListByte(List<Image> listimg)
+        {
+            List<byte[]> resultList = new List<byte[]>();
+            foreach (Image img in listimg)
+            {
+                byte[] byteArray = ImageToByteArray(img);
+                resultList.Add(byteArray);
+            }
+            return resultList;
+        }
+
+        public static List<Image> ConvertListByteToListImage(List<byte[]> listbyte)
+        {
+            List<Image> resultList = new List<Image>();
+            foreach (byte[] byteArray in listbyte)
+            {
+                Image image = ByteArrayToImage(byteArray);
+                resultList.Add(image);
+            }
+            return resultList;
+        }
         public static void ChoosePicture(ref PictureBox ptb)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())

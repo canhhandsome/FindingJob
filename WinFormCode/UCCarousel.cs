@@ -12,6 +12,7 @@ namespace WinFormProject.WinFormCode
 {
     public partial class UCCarousel : UserControl
     {
+        List<Image> images = new List<Image>();
         public UCCarousel()
         {
             InitializeComponent();

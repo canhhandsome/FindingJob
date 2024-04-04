@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormProject.WinFormCode;
 
 namespace WinFormProject
 {
@@ -83,7 +84,8 @@ namespace WinFormProject
 
         private void btnCompanyDetail_Click(object sender, EventArgs e)
         {
-
+            FCompanyDetail companydetail = new FCompanyDetail(company.INFO.ID);
+            companydetail.Show();
         }
     }
 }
