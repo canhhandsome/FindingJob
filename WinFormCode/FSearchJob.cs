@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -33,17 +34,36 @@ namespace WinFormProject
         private void FillJob(List<Job> jobslist)
         {
             flpJob.Controls.Clear();
+            int count = 0;
             foreach (Job job in jobslist)
             {
-                if(job.Status == "waiting")
+                if (job.Status == "waiting")
                 {
+                    count++;
                     UCInformation uCInformation = new UCInformation(job, jsID);
+                    uCInformation.flpBody.BackColor = colorJob(count);
                     flpJob.Controls.Add(uCInformation);
-                    flpJob.Height += 150;
+                    if (count % 2 == 1)
+                    {
+                        flpJob.Height += 375;
+                    }
+                }
+                if (count == 4)
+                {
+                    count = 0;
                 }
             }
         }
-
+        private Color colorJob(int count)
+        {
+            if (count == 1)
+                return Color.FromArgb(227, 219, 250);
+            else if (count == 2)
+                return Color.FromArgb(251, 226, 244);
+            else if (count == 3)
+                return Color.FromArgb(255, 225, 204);
+            else return Color.FromArgb(212, 246, 237);
+        }
         private void txtSearch_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -65,5 +85,6 @@ namespace WinFormProject
         {
             fFilter.Show();
         }
+
     }
 }
