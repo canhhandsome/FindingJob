@@ -26,10 +26,10 @@ namespace WinFormProject
             string strFetch = string.Format("SELECT DateOfBirth FROM {0} where id = '{1}'", "jobseeker", jobseeker.INFO.ID);
             return conn.FetchScalar(strFetch);
         }
-        public byte[] FetchImg(string jobseekerid)
+        public Image FetchImg(string jobseekerid)
         {
             string strFetch = string.Format("SELECT Avatar FROM JobSeeker WHERE id = '{0}'", jobseekerid);
-            return conn.FetchBinaryData(strFetch);
+            return conn.FetchInfoImages(strFetch);
         }
 
         public byte[] FetchCV(string jobseekerid)

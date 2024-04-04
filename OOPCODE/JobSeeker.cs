@@ -13,7 +13,7 @@ namespace WinFormProject
         private DateTime bdate = new DateTime();
         private string nationalid = string.Empty;
         private string gender = string.Empty;
-        private byte[] AvatarData;
+        private Image AvatarData = null;
         private byte[] CvData;
 
 
@@ -21,7 +21,7 @@ namespace WinFormProject
         {
 
         }
-        public JobSeeker(Information information, DateTime bdate, string nationalid, string gender, byte[] avatarData, byte[] cvData)
+        public JobSeeker(Information information, DateTime bdate, string nationalid, string gender, Image avatarData, byte[] cvData)
         {
             this.information = information;
             this.bdate = bdate;
@@ -63,7 +63,7 @@ namespace WinFormProject
             get { return gender; }
         }
 
-        public byte[] Avatar
+        public Image Avatar
         {
             get { return AvatarData; }
         }

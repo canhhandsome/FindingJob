@@ -18,7 +18,6 @@ namespace WinFormProject
         CompanyDAO companyDAO = new CompanyDAO();
         string jsID = string.Empty;
         Company company;
-        byte[] companyAvatar = new byte[100];
         public UCInformation(Job job, string jsID)
         {
             InitializeComponent();
@@ -35,9 +34,7 @@ namespace WinFormProject
             lblNameT.Text = job.Name;
             lblAddressT.Text = company.INFO.Address;
             lblWorkingFormT.Text = company.WorkingTimeBegin;
-            companyAvatar = companyDAO.FetchImg(job.CompanyID, "Avatar");
-
-            ImageHandler.DisplayImage(companyAvatar, ref ptbCompanyPicture);
+            if (company.Avatar != null) ptbCompanyPicture.Image = company.Avatar;
 
         }
 

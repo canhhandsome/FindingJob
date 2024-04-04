@@ -46,7 +46,7 @@ namespace WinFormProject
             rtxtDescription.Text = job.Description;
             rtxtRequirement.Text = job.Requirement;
             rtxtBenefit.Text = job.Benefit;
-            if (company.Avatar != null) ImageHandler.DisplayImage(company.Avatar, ref ptbAvatar);
+            if (company.Avatar != null) ptbAvatar.Image = company.Avatar;
             lblCompanyNameLeft.Text = company.INFO.Name;
             lblCompanySizeText.Text = company.CompanySize;
             lblCompanyTypeText.Text = company.CompanyType;

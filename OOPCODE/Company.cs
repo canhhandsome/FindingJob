@@ -14,13 +14,14 @@ namespace WinFormProject
         ApplyDAO applyDAO = new ApplyDAO();
         Information information = new Information();
         List<Job> jobs = new List<Job>();
-        byte[] AvatarData = new byte[0];
-        byte[] BusinessLicenseData = new byte[0];
+        Image AvatarData = null;
+        Image BusinessLicenseData = null;
+        List<Image> Images = new List<Image>();
         public Company()
         {
 
         }
-        public Company(Information information, string companytype, string companysize, string taxidentification, string description,string websitelink,string workingtimebegin,string workingtimeend, byte[] AvatarData, byte[] BusinessLicenseData)
+        public Company(Information information, string companytype, string companysize, string taxidentification, string description,string websitelink,string workingtimebegin,string workingtimeend, Image AvatarData, Image BusinessLicenseData,List<Image> Images)
         {
             this.information = information;
             this.companytype = companytype;
@@ -32,6 +33,7 @@ namespace WinFormProject
             this.workingtimeend = workingtimeend;
             this.AvatarData = AvatarData;
             this.BusinessLicenseData = BusinessLicenseData;
+            this.Images = Images;
         }
         public Company(Information information)
         {
@@ -41,6 +43,7 @@ namespace WinFormProject
             jobs = jobDao.FetchCompanyJob(this.INFO.ID);
             AvatarData = companyDAO.FetchImg(this.INFO.ID,"Avatar");
             BusinessLicenseData = companyDAO.FetchImg(this.INFO.ID, "BusinessLicense");
+            Images = companyDAO.FetchAllPictures(this.INFO.ID);
             
         }
         private void FillOtherInfor(List<String> otherinfo)
@@ -89,11 +92,11 @@ namespace WinFormProject
         {
             get { return workingtimeend; }
         }
-        public byte[] BusinessLicense
+        public Image BusinessLicense
         {
             get { return BusinessLicenseData; }
         }
-        public byte[] Avatar
+        public Image Avatar
         {
             get { return AvatarData;  }
         }

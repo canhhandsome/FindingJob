@@ -39,7 +39,7 @@ namespace WinFormProject
                 rdoMale.Checked = true;
             }
             else rdoFemale.Checked = true;
-            if (jobseeker.Avatar != null) ImageHandler.DisplayImage(jobseeker.Avatar, ref ptbAvatar);
+            if (jobseeker.Avatar != null) ptbAvatar.Image = jobseeker.Avatar;
             if (jobseeker.CV != null) ImageHandler.DisplayPdfPreview(jobseeker.CV, ptbCV);
         }
         private void btnEdit_Click(object sender, EventArgs e)
@@ -101,10 +101,10 @@ namespace WinFormProject
         private JobSeeker CreateJobSeeker()
         {
             string gender;
-            byte[] AvatarData = new byte[1];
+            Image AvatarData = null;
             if (ptbAvatar.Image != null)
             {
-                AvatarData = ImageHandler.ImageToByteArray(ptbAvatar.Image);
+                AvatarData = ptbAvatar.Image;
             }
             byte[] CvData;
             if (ptbCV.Image != null && Cv.Length > 0)

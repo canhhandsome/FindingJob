@@ -7,6 +7,8 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Diagnostics.CodeAnalysis;
 using System.CodeDom;
+using System.Security.Cryptography;
+
 namespace WinFormProject
 {
     public class DBConnection
@@ -207,7 +209,7 @@ namespace WinFormProject
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(SQL, conn);
                 cmd.Parameters.AddWithValue("@BDate", jobseeker.BDate);
-                cmd.Parameters.AddWithValue("@Avatar", (object)jobseeker.Avatar ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@Avatar", (object)ImageHandler.ImageToByteArray(jobseeker.Avatar) ?? DBNull.Value);
                 cmd.Parameters.AddWithValue("@CV", (object)jobseeker.CV ?? DBNull.Value);
                 if (cmd.ExecuteNonQuery() > 0)
                     MessageBox.Show("Successfully");
@@ -228,8 +230,8 @@ namespace WinFormProject
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(SQL, conn);
-                cmd.Parameters.AddWithValue("@Avatar", (object)company.Avatar ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@BusinessLicense", (object)company.BusinessLicense ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@Avatar", (object)ImageHandler.ImageToByteArray(company.Avatar) ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@BusinessLicense", (object)ImageHandler.ImageToByteArray(company.BusinessLicense) ?? DBNull.Value);
                 if (cmd.ExecuteNonQuery() > 0)
                     MessageBox.Show("Successfully");
                 else MessageBox.Show("Failed");
@@ -243,7 +245,7 @@ namespace WinFormProject
                 conn.Close();
             }
         }
-        public byte[] FetchBinaryData(string strFetch)
+        public Image FetchInfoImages(string strFetch)
         {
             try
             {
@@ -252,7 +254,7 @@ namespace WinFormProject
                 object result = cmd.ExecuteScalar();
                 if (result != DBNull.Value && result != null)
                 {
-                    return (byte[])result;
+                    return ImageHandler.ByteArrayToImage((byte[])result);
                 }
             }
             catch (Exception ex)
@@ -321,6 +323,55 @@ namespace WinFormProject
                 conn.Close();
             }
             return company;
+        }
+        public List<Image> FetchAllImg(string strFetch)
+        {
+            List<Image> Images = new List<Image>();
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                List<string> list = new List<string>();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Images.Add(ImageHandler.ByteArrayToImage((byte[])reader["img"]));
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Operation failed. Error: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return Images;
+        }
+        public  byte[] FetchBinaryData(string strFetch)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                object result = cmd.ExecuteScalar();
+                if (result != DBNull.Value && result != null)
+                {
+                    return (byte[])result;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to fetch binary data: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return null;
         }
     }
 }
