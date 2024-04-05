@@ -46,7 +46,7 @@
             },
             "ReaLTaiizor": {
               "target": "Package",
-              "version": "[3.8.0.2, )"
+              "version": "[3.8.0.5, )"
             },
             "Syncfusion.Pdf.WinForms": {
               "target": "Package",

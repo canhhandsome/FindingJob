@@ -49,11 +49,11 @@
           }
         }
       },
-      "ReaLTaiizor/3.8.0.2": {
+      "ReaLTaiizor/3.8.0.5": {
         "runtime": {
           "lib/net6.0-windows7.0/ReaLTaiizor.dll": {
-            "assemblyVersion": "3.8.0.2",
-            "fileVersion": "3.8.0.2"
+            "assemblyVersion": "3.8.0.5",
+            "fileVersion": "3.8.0.5"
           }
         }
       },
@@ -219,12 +219,12 @@
       "path": "microsoft.win32.registry/4.7.0",
       "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
     },
-    "ReaLTaiizor/3.8.0.2": {
+    "ReaLTaiizor/3.8.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jlCo02R8T9Ks/hY95to+bA0aKsp2rv16yWn2+qjfzm6u6FOhPdiAmbUiKjaEv/kX1+HX5J9Ms9RCYNT6trrTfg==",
-      "path": "realtaiizor/3.8.0.2",
-      "hashPath": "realtaiizor.3.8.0.2.nupkg.sha512"
+      "sha512": "sha512-l/LKMZXpfBwIEax7ZEXpRNlLmPAENN2OPf5sAYXVecjENvmlGhrgX0YKU72kFsw/Yjuzn+F01jMAAgs2mYsJIg==",
+      "path": "realtaiizor/3.8.0.5",
+      "hashPath": "realtaiizor.3.8.0.5.nupkg.sha512"
     },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",

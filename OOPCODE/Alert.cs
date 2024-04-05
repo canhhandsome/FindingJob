@@ -8,20 +8,22 @@ namespace WinFormProject
 {
     public class Alert
     {
-        string id, senderID, recipientID, subject, content;
+        string senderID, recipientID, subject, content, jobID;
+        string id = string.Empty;
         DateTime dateReply = new DateTime();
-        public Alert() { }
+        public Alert() {  }
 
-        public Alert(string senderID, string recipientID, string subject, string content)
+        public Alert(string senderID, string recipientID, string subject, string content, string jobID)
         {
             this.senderID = senderID;
             this.recipientID = recipientID;
             this.subject = subject;
             this.content = content;
             this.dateReply = DateTime.Now;
+            this.jobID = jobID;
         }
 
-        public Alert(string id, string senderID, string recipientID, string subject, string content)
+        public Alert(string id, string senderID, string recipientID, string subject, string content, string jobID)
         {
             this.id = id;
             this.senderID = senderID;
@@ -29,6 +31,7 @@ namespace WinFormProject
             this.subject = subject;
             this.content = content;
             this.dateReply = DateTime.Now;
+            this.jobID = jobID;
         }
         public string ID
         { get { return id; } }
@@ -42,5 +45,7 @@ namespace WinFormProject
         { get { return senderID; } }
         public string RecipientID
         { get { return recipientID; } }
+        public string JobID 
+        { get { return jobID; } }
     }
 }

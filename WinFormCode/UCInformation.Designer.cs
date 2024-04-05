@@ -241,6 +241,7 @@
             this.btnDetails.TextColor = System.Drawing.Color.Black;
             this.btnDetails.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btnDetails.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnDetails.Click += new System.EventHandler(this.panel1_Click);
             // 
             // UCInformation
             // 

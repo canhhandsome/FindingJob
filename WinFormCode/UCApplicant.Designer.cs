@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblDateT = new System.Windows.Forms.Label();
             this.ptbApplicantPicture = new System.Windows.Forms.PictureBox();
+            this.lblApplicantNameT = new System.Windows.Forms.Label();
+            this.lblEmailT = new System.Windows.Forms.Label();
             this.btnApprove = new ReaLTaiizor.Controls.CyberButton();
             this.btnProfile = new ReaLTaiizor.Controls.CyberButton();
             this.btnDecline = new ReaLTaiizor.Controls.CyberButton();
-            this.lblDateT = new System.Windows.Forms.Label();
-            this.lblApplicantNameT = new System.Windows.Forms.Label();
-            this.lblEmailT = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbApplicantPicture)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbApplicantPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(232)))), ((int)(((byte)(223)))));
+            this.panel1.BackColor = System.Drawing.Color.Tan;
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.btnApprove);
             this.panel1.Controls.Add(this.btnProfile);
@@ -54,17 +54,64 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(468, 515);
+            this.panel1.Size = new System.Drawing.Size(469, 515);
             this.panel1.TabIndex = 3;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(232)))), ((int)(((byte)(223)))));
+            this.panel2.Controls.Add(this.lblDateT);
+            this.panel2.Controls.Add(this.ptbApplicantPicture);
+            this.panel2.Controls.Add(this.lblApplicantNameT);
+            this.panel2.Controls.Add(this.lblEmailT);
+            this.panel2.Location = new System.Drawing.Point(11, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(442, 421);
+            this.panel2.TabIndex = 11;
+            // 
+            // lblDateT
+            // 
+            this.lblDateT.AutoSize = true;
+            this.lblDateT.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDateT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblDateT.Location = new System.Drawing.Point(13, 13);
+            this.lblDateT.Name = "lblDateT";
+            this.lblDateT.Size = new System.Drawing.Size(55, 23);
+            this.lblDateT.TabIndex = 7;
+            this.lblDateT.Text = "Date: ";
             // 
             // ptbApplicantPicture
             // 
-            this.ptbApplicantPicture.Location = new System.Drawing.Point(94, 54);
+            this.ptbApplicantPicture.Location = new System.Drawing.Point(115, 52);
             this.ptbApplicantPicture.Name = "ptbApplicantPicture";
-            this.ptbApplicantPicture.Size = new System.Drawing.Size(255, 255);
+            this.ptbApplicantPicture.Size = new System.Drawing.Size(219, 256);
             this.ptbApplicantPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbApplicantPicture.TabIndex = 10;
             this.ptbApplicantPicture.TabStop = false;
+            // 
+            // lblApplicantNameT
+            // 
+            this.lblApplicantNameT.AutoSize = true;
+            this.lblApplicantNameT.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblApplicantNameT.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblApplicantNameT.Location = new System.Drawing.Point(115, 323);
+            this.lblApplicantNameT.Name = "lblApplicantNameT";
+            this.lblApplicantNameT.Size = new System.Drawing.Size(247, 38);
+            this.lblApplicantNameT.TabIndex = 5;
+            this.lblApplicantNameT.Text = "Applicant\'s Name:";
+            this.lblApplicantNameT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblEmailT
+            // 
+            this.lblEmailT.AutoSize = true;
+            this.lblEmailT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblEmailT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblEmailT.Location = new System.Drawing.Point(191, 376);
+            this.lblEmailT.Name = "lblEmailT";
+            this.lblEmailT.Size = new System.Drawing.Size(64, 30);
+            this.lblEmailT.TabIndex = 1;
+            this.lblEmailT.Text = "Email";
+            this.lblEmailT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnApprove
             // 
@@ -93,7 +140,7 @@
             this.btnApprove.Lighting = true;
             this.btnApprove.LinearGradient_Background = false;
             this.btnApprove.LinearGradientPen = false;
-            this.btnApprove.Location = new System.Drawing.Point(170, 446);
+            this.btnApprove.Location = new System.Drawing.Point(170, 445);
             this.btnApprove.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnApprove.Name = "btnApprove";
             this.btnApprove.PenWidth = 15;
@@ -135,7 +182,7 @@
             this.btnProfile.Lighting = true;
             this.btnProfile.LinearGradient_Background = false;
             this.btnProfile.LinearGradientPen = false;
-            this.btnProfile.Location = new System.Drawing.Point(312, 446);
+            this.btnProfile.Location = new System.Drawing.Point(312, 445);
             this.btnProfile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.PenWidth = 15;
@@ -177,7 +224,7 @@
             this.btnDecline.Lighting = true;
             this.btnDecline.LinearGradient_Background = false;
             this.btnDecline.LinearGradientPen = false;
-            this.btnDecline.Location = new System.Drawing.Point(29, 446);
+            this.btnDecline.Location = new System.Drawing.Point(29, 445);
             this.btnDecline.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDecline.Name = "btnDecline";
             this.btnDecline.PenWidth = 15;
@@ -192,64 +239,17 @@
             this.btnDecline.Timer_Effect_1 = 5;
             this.btnDecline.Timer_RGB = 300;
             // 
-            // lblDateT
-            // 
-            this.lblDateT.AutoSize = true;
-            this.lblDateT.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDateT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblDateT.Location = new System.Drawing.Point(13, 13);
-            this.lblDateT.Name = "lblDateT";
-            this.lblDateT.Size = new System.Drawing.Size(55, 23);
-            this.lblDateT.TabIndex = 7;
-            this.lblDateT.Text = "Date: ";
-            // 
-            // lblApplicantNameT
-            // 
-            this.lblApplicantNameT.AutoSize = true;
-            this.lblApplicantNameT.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblApplicantNameT.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblApplicantNameT.Location = new System.Drawing.Point(94, 325);
-            this.lblApplicantNameT.Name = "lblApplicantNameT";
-            this.lblApplicantNameT.Size = new System.Drawing.Size(255, 38);
-            this.lblApplicantNameT.TabIndex = 5;
-            this.lblApplicantNameT.Text = "Applicant\'s Name: ";
-            this.lblApplicantNameT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblEmailT
-            // 
-            this.lblEmailT.AutoSize = true;
-            this.lblEmailT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblEmailT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblEmailT.Location = new System.Drawing.Point(185, 377);
-            this.lblEmailT.Name = "lblEmailT";
-            this.lblEmailT.Size = new System.Drawing.Size(64, 30);
-            this.lblEmailT.TabIndex = 1;
-            this.lblEmailT.Text = "Email";
-            this.lblEmailT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblEmailT.Click += new System.EventHandler(this.lblEmailT_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lblDateT);
-            this.panel2.Controls.Add(this.ptbApplicantPicture);
-            this.panel2.Controls.Add(this.lblApplicantNameT);
-            this.panel2.Controls.Add(this.lblEmailT);
-            this.panel2.Location = new System.Drawing.Point(12, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(442, 422);
-            this.panel2.TabIndex = 11;
-            // 
             // UCApplicant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Name = "UCApplicant";
-            this.Size = new System.Drawing.Size(468, 515);
+            this.Size = new System.Drawing.Size(469, 515);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbApplicantPicture)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbApplicantPicture)).EndInit();
             this.ResumeLayout(false);
 
         }

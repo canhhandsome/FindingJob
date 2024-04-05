@@ -168,7 +168,7 @@ namespace WinFormProject
 
                 while (reader.Read())
                 {
-                    alerts.Add(new Alert(reader["id"].ToString(), reader["senderID"].ToString(), reader["recipientID"].ToString(), reader["subject"].ToString(), reader["content"].ToString()));
+                    alerts.Add(new Alert(reader["id"].ToString(), reader["senderID"].ToString(), reader["recipientID"].ToString(), reader["subject"].ToString(), reader["content"].ToString(), reader["jobID"].ToString()));
                 }
             }
             catch (Exception ex)
