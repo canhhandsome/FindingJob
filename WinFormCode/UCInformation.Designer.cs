@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ptbCompanyPicture = new PictureBox();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblDateT = new Label();
             lblNameT = new Label();
             lblFromT = new Label();
@@ -44,7 +45,7 @@
             pnAddress = new FlowLayoutPanel();
             lblAddressT = new Label();
             btnDetails = new ReaLTaiizor.Controls.ParrotButton();
-            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).BeginInit();
+            ptbCompanyPicture = new Guna.UI2.WinForms.Guna2PictureBox();
             flpBody.SuspendLayout();
             pnPublish.SuspendLayout();
             pnName.SuspendLayout();
@@ -52,16 +53,8 @@
             pnWorkingForm.SuspendLayout();
             pnSkills.SuspendLayout();
             pnAddress.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).BeginInit();
             SuspendLayout();
-            // 
-            // ptbCompanyPicture
-            // 
-            ptbCompanyPicture.Location = new Point(3, 3);
-            ptbCompanyPicture.Name = "ptbCompanyPicture";
-            ptbCompanyPicture.Size = new Size(55, 57);
-            ptbCompanyPicture.SizeMode = PictureBoxSizeMode.StretchImage;
-            ptbCompanyPicture.TabIndex = 1;
-            ptbCompanyPicture.TabStop = false;
             // 
             // lblDateT
             // 
@@ -93,9 +86,9 @@
             lblFromT.Dock = DockStyle.Fill;
             lblFromT.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             lblFromT.ForeColor = SystemColors.ControlDarkDark;
-            lblFromT.Location = new Point(64, 0);
+            lblFromT.Location = new Point(78, 0);
             lblFromT.Name = "lblFromT";
-            lblFromT.Size = new Size(94, 63);
+            lblFromT.Size = new Size(94, 59);
             lblFromT.TabIndex = 0;
             lblFromT.Text = "From:";
             lblFromT.TextAlign = ContentAlignment.MiddleCenter;
@@ -242,6 +235,18 @@
             btnDetails.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             btnDetails.Vertical_Alignment = StringAlignment.Center;
             // 
+            // ptbCompanyPicture
+            // 
+            ptbCompanyPicture.CustomizableEdges = customizableEdges3;
+            ptbCompanyPicture.ImageRotate = 0F;
+            ptbCompanyPicture.Location = new Point(3, 3);
+            ptbCompanyPicture.Name = "ptbCompanyPicture";
+            ptbCompanyPicture.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            ptbCompanyPicture.Size = new Size(69, 53);
+            ptbCompanyPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbCompanyPicture.TabIndex = 2;
+            ptbCompanyPicture.TabStop = false;
+            // 
             // UCInformation
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -253,7 +258,6 @@
             Margin = new Padding(3, 3, 11, 13);
             Name = "UCInformation";
             Size = new Size(569, 481);
-            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).EndInit();
             flpBody.ResumeLayout(false);
             pnPublish.ResumeLayout(false);
             pnPublish.PerformLayout();
@@ -267,6 +271,7 @@
             pnSkills.PerformLayout();
             pnAddress.ResumeLayout(false);
             pnAddress.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).EndInit();
             ResumeLayout(false);
         }
 
@@ -274,7 +279,6 @@
         public Label lblDateT;
         public Label lblFromT;
         public Label lblNameT;
-        private PictureBox ptbCompanyPicture;
         public FlowLayoutPanel flpBody;
         private FlowLayoutPanel pnPublish;
         private Panel pnName;
@@ -287,5 +291,6 @@
         private FlowLayoutPanel pnSkills;
         public Label lblSkillsT;
         private ReaLTaiizor.Controls.ParrotButton btnDetails;
+        private Guna.UI2.WinForms.Guna2PictureBox ptbCompanyPicture;
     }
 }

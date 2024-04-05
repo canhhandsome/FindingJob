@@ -32,8 +32,9 @@ namespace WinFormProject
             this.txtTaxIdentification.Text = company.Taxidentification;
             this.cbbWTB.Text = company.WorkingTimeBegin;
             this.cbbWTEnd.Text = company.WorkingTimeEnd;
-            //if (company.Avatar != null) ImageHandler.DisplayImage(company.Avatar, ref ptbAvatar);
-            //if (company.BusinessLicense != null) ImageHandler.DisplayImage(company.BusinessLicense, ref ptbLicense);
+            this.txtWebsiteLink.Text = company.Websitelink;
+            if (company.Avatar != null) ImageHandler.DisplayImage(company.Avatar, ref ptbAvatar);
+            if (company.BusinessLicense != null) ImageHandler.DisplayImage(company.BusinessLicense, ref ptbLicense);
         }
         private void Enable_Save_Click()
         {
@@ -106,12 +107,12 @@ namespace WinFormProject
 
         private void btnChoosePicture_Click(object sender, EventArgs e)
         {
-            //ImageHandler.ChoosePicture(ref ptbAvatar);
+            ImageHandler.ChoosePicture(ref ptbAvatar);
         }
 
         private void btnChooseLicense_Click(object sender, EventArgs e)
         {
-            //ImageHandler.ChoosePicture(ref ptbLicense);
+            ImageHandler.ChoosePicture(ref ptbLicense);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -126,6 +127,11 @@ namespace WinFormProject
         }
 
         private void ptbAvatar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox11_Click(object sender, EventArgs e)
         {
 
         }

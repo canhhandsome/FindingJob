@@ -598,10 +598,10 @@ namespace WinFormProject
             ptbCV.BorderRadius = 20;
             ptbCV.CustomizableEdges = customizableEdges41;
             ptbCV.ImageRotate = 0F;
-            ptbCV.Location = new Point(947, 401);
+            ptbCV.Location = new Point(930, 401);
             ptbCV.Name = "ptbCV";
             ptbCV.ShadowDecoration.CustomizableEdges = customizableEdges42;
-            ptbCV.Size = new Size(230, 250);
+            ptbCV.Size = new Size(261, 265);
             ptbCV.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbCV.TabIndex = 57;
             ptbCV.TabStop = false;
