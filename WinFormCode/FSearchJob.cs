@@ -45,7 +45,7 @@ namespace WinFormProject
                     flpJob.Controls.Add(uCInformation);
                     if (count % 2 == 1)
                     {
-                        flpJob.Height += 481;
+                        flpJob.Height += 500;
                     }
                 }
                 if (count == 4)
