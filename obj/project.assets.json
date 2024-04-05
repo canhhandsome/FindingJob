@@ -60,7 +60,7 @@
           }
         }
       },
-      "ReaLTaiizor/3.8.0.2": {
+      "ReaLTaiizor/3.8.0.5": {
         "type": "package",
         "compile": {
           "lib/net6.0-windows7.0/ReaLTaiizor.dll": {
@@ -316,10 +316,10 @@
         "version.txt"
       ]
     },
-    "ReaLTaiizor/3.8.0.2": {
-      "sha512": "jlCo02R8T9Ks/hY95to+bA0aKsp2rv16yWn2+qjfzm6u6FOhPdiAmbUiKjaEv/kX1+HX5J9Ms9RCYNT6trrTfg==",
+    "ReaLTaiizor/3.8.0.5": {
+      "sha512": "l/LKMZXpfBwIEax7ZEXpRNlLmPAENN2OPf5sAYXVecjENvmlGhrgX0YKU72kFsw/Yjuzn+F01jMAAgs2mYsJIg==",
       "type": "package",
-      "path": "realtaiizor/3.8.0.2",
+      "path": "realtaiizor/3.8.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -340,7 +340,7 @@
         "lib/net9.0-windows7.0/ReaLTaiizor.xml",
         "lib/netcoreapp3.1/ReaLTaiizor.dll",
         "lib/netcoreapp3.1/ReaLTaiizor.xml",
-        "realtaiizor.3.8.0.2.nupkg.sha512",
+        "realtaiizor.3.8.0.5.nupkg.sha512",
         "realtaiizor.nuspec"
       ]
     },
@@ -661,26 +661,26 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "MaterialSkin >= 0.2.1",
-      "ReaLTaiizor >= 3.8.0.2",
+      "ReaLTaiizor >= 3.8.0.5",
       "Syncfusion.Pdf.WinForms >= 25.1.37",
       "System.Data.SqlClient >= 4.8.6",
       "dot-net-transitions >= 1.2.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TIEN TOAN\\.nuget\\packages\\": {}
+    "C:\\Users\\Canh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Window Programming\\Project\\FindingJob\\WinFormProject.csproj",
+      "projectUniqueName": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormProject.csproj",
       "projectName": "WinFormProject",
-      "projectPath": "D:\\Window Programming\\Project\\FindingJob\\WinFormProject.csproj",
-      "packagesPath": "C:\\Users\\TIEN TOAN\\.nuget\\packages\\",
-      "outputPath": "D:\\Window Programming\\Project\\FindingJob\\obj\\",
+      "projectPath": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormProject.csproj",
+      "packagesPath": "C:\\Users\\Canh\\.nuget\\packages\\",
+      "outputPath": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\TIEN TOAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Canh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -700,6 +700,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -712,7 +717,7 @@
           },
           "ReaLTaiizor": {
             "target": "Package",
-            "version": "[3.8.0.2, )"
+            "version": "[3.8.0.5, )"
           },
           "Syncfusion.Pdf.WinForms": {
             "target": "Package",
@@ -746,7 +751,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   },

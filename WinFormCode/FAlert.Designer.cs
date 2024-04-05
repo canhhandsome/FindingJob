@@ -30,7 +30,7 @@
         {
             hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
             flpAlert = new FlowLayoutPanel();
-            btnSearch = new ReaLTaiizor.Controls.CyberButton();
+            btnFilter = new ReaLTaiizor.Controls.CyberButton();
             SuspendLayout();
             // 
             // hopeTextBox1
@@ -42,7 +42,7 @@
             hopeTextBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             hopeTextBox1.ForeColor = Color.FromArgb(48, 49, 51);
             hopeTextBox1.Hint = "Enter Search";
-            hopeTextBox1.Location = new Point(24, 18);
+            hopeTextBox1.Location = new Point(24, 47);
             hopeTextBox1.MaxLength = 32767;
             hopeTextBox1.Multiline = false;
             hopeTextBox1.Name = "hopeTextBox1";
@@ -51,7 +51,7 @@
             hopeTextBox1.SelectedText = "";
             hopeTextBox1.SelectionLength = 0;
             hopeTextBox1.SelectionStart = 0;
-            hopeTextBox1.Size = new Size(736, 38);
+            hopeTextBox1.Size = new Size(946, 38);
             hopeTextBox1.TabIndex = 2;
             hopeTextBox1.TabStop = false;
             hopeTextBox1.UseSystemPasswordChar = false;
@@ -59,51 +59,51 @@
             // flpAlert
             // 
             flpAlert.AutoScroll = true;
-            flpAlert.Location = new Point(31, 86);
+            flpAlert.Location = new Point(24, 108);
             flpAlert.Name = "flpAlert";
-            flpAlert.Size = new Size(879, 124);
+            flpAlert.Size = new Size(1043, 124);
             flpAlert.TabIndex = 4;
             // 
-            // btnSearch
+            // btnFilter
             // 
-            btnSearch.Alpha = 20;
-            btnSearch.BackColor = Color.Transparent;
-            btnSearch.Background = true;
-            btnSearch.Background_WidthPen = 4F;
-            btnSearch.BackgroundPen = true;
-            btnSearch.ColorBackground = Color.FromArgb(176, 226, 243);
-            btnSearch.ColorBackground_1 = Color.FromArgb(128, 128, 255);
-            btnSearch.ColorBackground_2 = Color.FromArgb(128, 128, 255);
-            btnSearch.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
-            btnSearch.ColorLighting = Color.FromArgb(128, 128, 255);
-            btnSearch.ColorPen_1 = Color.FromArgb(128, 128, 255);
-            btnSearch.ColorPen_2 = Color.FromArgb(128, 128, 255);
-            btnSearch.Cursor = Cursors.Hand;
-            btnSearch.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            btnSearch.Effect_1 = true;
-            btnSearch.Effect_1_ColorBackground = Color.FromArgb(128, 128, 255);
-            btnSearch.Effect_1_Transparency = 25;
-            btnSearch.Effect_2 = true;
-            btnSearch.Effect_2_ColorBackground = Color.FromArgb(128, 128, 255);
-            btnSearch.Effect_2_Transparency = 20;
-            btnSearch.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSearch.ForeColor = Color.FromArgb(46, 54, 71);
-            btnSearch.Lighting = true;
-            btnSearch.LinearGradient_Background = false;
-            btnSearch.LinearGradientPen = false;
-            btnSearch.Location = new Point(780, 14);
-            btnSearch.Name = "btnSearch";
-            btnSearch.PenWidth = 15;
-            btnSearch.Rounding = true;
-            btnSearch.RoundingInt = 20;
-            btnSearch.Size = new Size(91, 40);
-            btnSearch.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            btnSearch.TabIndex = 44;
-            btnSearch.Tag = "Decline";
-            btnSearch.TextButton = "Search";
-            btnSearch.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            btnSearch.Timer_Effect_1 = 5;
-            btnSearch.Timer_RGB = 300;
+            btnFilter.Alpha = 20;
+            btnFilter.BackColor = Color.Transparent;
+            btnFilter.Background = true;
+            btnFilter.Background_WidthPen = 4F;
+            btnFilter.BackgroundPen = true;
+            btnFilter.ColorBackground = Color.FromArgb(176, 226, 243);
+            btnFilter.ColorBackground_1 = Color.FromArgb(128, 128, 255);
+            btnFilter.ColorBackground_2 = Color.FromArgb(128, 128, 255);
+            btnFilter.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
+            btnFilter.ColorLighting = Color.FromArgb(128, 128, 255);
+            btnFilter.ColorPen_1 = Color.FromArgb(128, 128, 255);
+            btnFilter.ColorPen_2 = Color.FromArgb(128, 128, 255);
+            btnFilter.Cursor = Cursors.Hand;
+            btnFilter.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            btnFilter.Effect_1 = true;
+            btnFilter.Effect_1_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnFilter.Effect_1_Transparency = 25;
+            btnFilter.Effect_2 = true;
+            btnFilter.Effect_2_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnFilter.Effect_2_Transparency = 20;
+            btnFilter.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnFilter.ForeColor = Color.FromArgb(46, 54, 71);
+            btnFilter.Lighting = true;
+            btnFilter.LinearGradient_Background = false;
+            btnFilter.LinearGradientPen = false;
+            btnFilter.Location = new Point(976, 47);
+            btnFilter.Name = "btnFilter";
+            btnFilter.PenWidth = 15;
+            btnFilter.Rounding = true;
+            btnFilter.RoundingInt = 20;
+            btnFilter.Size = new Size(91, 40);
+            btnFilter.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnFilter.TabIndex = 44;
+            btnFilter.Tag = "Decline";
+            btnFilter.TextButton = "Filter";
+            btnFilter.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnFilter.Timer_Effect_1 = 5;
+            btnFilter.Timer_RGB = 300;
             // 
             // FAlert
             // 
@@ -111,8 +111,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(900, 458);
-            Controls.Add(btnSearch);
+            ClientSize = new Size(1079, 635);
+            Controls.Add(btnFilter);
             Controls.Add(flpAlert);
             Controls.Add(hopeTextBox1);
             Name = "FAlert";
@@ -124,6 +124,6 @@
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox1;
         private UCAlert ucAlert1;
         private FlowLayoutPanel flpAlert;
-        private ReaLTaiizor.Controls.CyberButton btnSearch;
+        private ReaLTaiizor.Controls.CyberButton btnFilter;
     }
 }

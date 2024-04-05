@@ -28,133 +28,138 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblDateT = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.lblSubjectT = new System.Windows.Forms.Label();
-            this.lblSubject = new System.Windows.Forms.Label();
-            this.lblFromT = new System.Windows.Forms.Label();
-            this.lblForm = new System.Windows.Forms.Label();
-            this.lblJobNameT = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAlert));
+            panel1 = new Panel();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            lblFromT = new Label();
+            pictureBox1 = new PictureBox();
+            lblDateT = new Label();
+            ptbCompanyPicture = new PictureBox();
+            lblJobNameT = new Label();
+            lblSubjectT = new Label();
+            panel1.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(232)))), ((int)(((byte)(223)))));
-            this.panel1.Controls.Add(this.lblJobNameT);
-            this.panel1.Controls.Add(this.lblDateT);
-            this.panel1.Controls.Add(this.lblDate);
-            this.panel1.Controls.Add(this.lblSubjectT);
-            this.panel1.Controls.Add(this.lblSubject);
-            this.panel1.Controls.Add(this.lblFromT);
-            this.panel1.Controls.Add(this.lblForm);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel1.MaximumSize = new System.Drawing.Size(969, 225);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(968, 225);
-            this.panel1.TabIndex = 8;
+            panel1.BackColor = Color.FromArgb(254, 232, 223);
+            panel1.Controls.Add(flowLayoutPanel1);
+            panel1.Controls.Add(ptbCompanyPicture);
+            panel1.Controls.Add(lblJobNameT);
+            panel1.Controls.Add(lblSubjectT);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 0);
+            panel1.MaximumSize = new Size(531, 206);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(500, 159);
+            panel1.TabIndex = 8;
             // 
-            // lblDateT
+            // flowLayoutPanel1
             // 
-            this.lblDateT.AutoSize = true;
-            this.lblDateT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDateT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblDateT.Location = new System.Drawing.Point(91, 158);
-            this.lblDateT.Name = "lblDateT";
-            this.lblDateT.Size = new System.Drawing.Size(69, 30);
-            this.lblDateT.TabIndex = 0;
-            this.lblDateT.Text = "Date: ";
-            // 
-            // lblDate
-            // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblDate.Location = new System.Drawing.Point(16, 158);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(69, 30);
-            this.lblDate.TabIndex = 0;
-            this.lblDate.Text = "Date: ";
-            // 
-            // lblSubjectT
-            // 
-            this.lblSubjectT.AutoSize = true;
-            this.lblSubjectT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSubjectT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblSubjectT.Location = new System.Drawing.Point(117, 117);
-            this.lblSubjectT.Name = "lblSubjectT";
-            this.lblSubjectT.Size = new System.Drawing.Size(95, 30);
-            this.lblSubjectT.TabIndex = 0;
-            this.lblSubjectT.Text = "Subject: ";
-            // 
-            // lblSubject
-            // 
-            this.lblSubject.AutoSize = true;
-            this.lblSubject.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSubject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblSubject.Location = new System.Drawing.Point(16, 117);
-            this.lblSubject.Name = "lblSubject";
-            this.lblSubject.Size = new System.Drawing.Size(95, 30);
-            this.lblSubject.TabIndex = 0;
-            this.lblSubject.Text = "Subject: ";
+            flowLayoutPanel1.Controls.Add(lblFromT);
+            flowLayoutPanel1.Controls.Add(pictureBox1);
+            flowLayoutPanel1.Controls.Add(lblDateT);
+            flowLayoutPanel1.Location = new Point(14, 63);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(259, 30);
+            flowLayoutPanel1.TabIndex = 10;
             // 
             // lblFromT
             // 
-            this.lblFromT.AutoSize = true;
-            this.lblFromT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblFromT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblFromT.Location = new System.Drawing.Point(91, 76);
-            this.lblFromT.Name = "lblFromT";
-            this.lblFromT.Size = new System.Drawing.Size(69, 30);
-            this.lblFromT.TabIndex = 0;
-            this.lblFromT.Text = "From:";
+            lblFromT.AutoSize = true;
+            lblFromT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFromT.ForeColor = Color.FromArgb(64, 64, 64);
+            lblFromT.Location = new Point(3, 0);
+            lblFromT.Name = "lblFromT";
+            lblFromT.Size = new Size(58, 25);
+            lblFromT.TabIndex = 0;
+            lblFromT.Text = "From:";
+            lblFromT.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // lblForm
+            // pictureBox1
             // 
-            this.lblForm.AutoSize = true;
-            this.lblForm.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblForm.Location = new System.Drawing.Point(16, 76);
-            this.lblForm.Name = "lblForm";
-            this.lblForm.Size = new System.Drawing.Size(69, 30);
-            this.lblForm.TabIndex = 0;
-            this.lblForm.Text = "From:";
+            pictureBox1.Dock = DockStyle.Bottom;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(67, 2);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(30, 30);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            // 
+            // lblDateT
+            // 
+            lblDateT.AutoSize = true;
+            lblDateT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDateT.ForeColor = Color.FromArgb(64, 64, 64);
+            lblDateT.Location = new Point(103, 0);
+            lblDateT.Name = "lblDateT";
+            lblDateT.Size = new Size(58, 25);
+            lblDateT.TabIndex = 0;
+            lblDateT.Text = "Date: ";
+            lblDateT.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // ptbCompanyPicture
+            // 
+            ptbCompanyPicture.Location = new Point(409, 14);
+            ptbCompanyPicture.Margin = new Padding(3, 2, 3, 2);
+            ptbCompanyPicture.Name = "ptbCompanyPicture";
+            ptbCompanyPicture.Size = new Size(68, 68);
+            ptbCompanyPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbCompanyPicture.TabIndex = 9;
+            ptbCompanyPicture.TabStop = false;
             // 
             // lblJobNameT
             // 
-            this.lblJobNameT.AutoSize = true;
-            this.lblJobNameT.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblJobNameT.Location = new System.Drawing.Point(16, 18);
-            this.lblJobNameT.Name = "lblJobNameT";
-            this.lblJobNameT.Size = new System.Drawing.Size(174, 46);
-            this.lblJobNameT.TabIndex = 1;
-            this.lblJobNameT.Text = "Job Name";
+            lblJobNameT.AutoSize = true;
+            lblJobNameT.Font = new Font("Segoe UI Semibold", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblJobNameT.Location = new Point(14, 14);
+            lblJobNameT.Name = "lblJobNameT";
+            lblJobNameT.Size = new Size(140, 37);
+            lblJobNameT.TabIndex = 1;
+            lblJobNameT.Text = "Job Name";
+            // 
+            // lblSubjectT
+            // 
+            lblSubjectT.AutoSize = true;
+            lblSubjectT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSubjectT.ForeColor = Color.FromArgb(64, 64, 64);
+            lblSubjectT.Location = new Point(14, 111);
+            lblSubjectT.Name = "lblSubjectT";
+            lblSubjectT.Size = new Size(79, 25);
+            lblSubjectT.TabIndex = 0;
+            lblSubjectT.Text = "Subject: ";
             // 
             // UCAlert
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.Name = "UCAlert";
-            this.Size = new System.Drawing.Size(968, 225);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(panel1);
+            Margin = new Padding(3, 2, 10, 10);
+            Name = "UCAlert";
+            Size = new Size(500, 159);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
 
         public Panel panel1;
-        public Label lblDateT;
-        public Label lblDate;
         public Label lblSubjectT;
-        public Label lblSubject;
-        public Label lblFromT;
-        public Label lblForm;
         public Label lblJobNameT;
+        private PictureBox ptbCompanyPicture;
+        private FlowLayoutPanel flowLayoutPanel1;
+        public Label lblFromT;
+        public Label lblDateT;
+        private PictureBox pictureBox1;
     }
 }

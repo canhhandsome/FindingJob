@@ -13,9 +13,9 @@ namespace WinFormProject
 
         public void InsertAlert(Alert alert)
         {
-            string sqlUpdate = string.Format("INSERT INTO JobAlert (senderID, recipientID, subject, content, dateReply) " +
-                                     "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}')",
-                                     alert.SenderID, alert.RecipientID, alert.Subject, alert.Content, alert.DateReply);
+            string sqlUpdate = string.Format("INSERT INTO JobAlert (senderID, recipientID, subject, content, dateReply, jobID) " +
+                                     "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')",
+                                     alert.SenderID, alert.RecipientID, alert.Subject, alert.Content, alert.DateReply, alert.JobID);
             conn.CRUD(sqlUpdate);
         }
 
