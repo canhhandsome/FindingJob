@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -40,24 +38,13 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.pnBody = new System.Windows.Forms.Panel();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -71,10 +58,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dtpDateEnd = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtSalary = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.cbbExperience = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cbbWorkingForm = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtJobName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -88,6 +71,8 @@
             this.rtxtBenefit = new System.Windows.Forms.RichTextBox();
             this.btnCancel = new ReaLTaiizor.Controls.CyberButton();
             this.btnSave = new ReaLTaiizor.Controls.CyberButton();
+            this.label12 = new System.Windows.Forms.Label();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.pnBody.SuspendLayout();
             this.tabpage.SuspendLayout();
             this.tbprequirement.SuspendLayout();
@@ -98,13 +83,12 @@
             // pnBody
             // 
             this.pnBody.BackColor = System.Drawing.Color.White;
-            this.pnBody.Controls.Add(this.guna2Button6);
-            this.pnBody.Controls.Add(this.guna2Button5);
+            this.pnBody.Controls.Add(this.label12);
+            this.pnBody.Controls.Add(this.guna2Button4);
             this.pnBody.Controls.Add(this.label16);
             this.pnBody.Controls.Add(this.label15);
             this.pnBody.Controls.Add(this.label14);
             this.pnBody.Controls.Add(this.label13);
-            this.pnBody.Controls.Add(this.label12);
             this.pnBody.Controls.Add(this.label11);
             this.pnBody.Controls.Add(this.label10);
             this.pnBody.Controls.Add(this.label9);
@@ -118,10 +102,6 @@
             this.pnBody.Controls.Add(this.label1);
             this.pnBody.Controls.Add(this.dtpDateEnd);
             this.pnBody.Controls.Add(this.txtSalary);
-            this.pnBody.Controls.Add(this.guna2Button4);
-            this.pnBody.Controls.Add(this.guna2Button3);
-            this.pnBody.Controls.Add(this.guna2Button2);
-            this.pnBody.Controls.Add(this.guna2Button1);
             this.pnBody.Controls.Add(this.cbbExperience);
             this.pnBody.Controls.Add(this.cbbWorkingForm);
             this.pnBody.Controls.Add(this.txtJobName);
@@ -135,46 +115,6 @@
             this.pnBody.Name = "pnBody";
             this.pnBody.Size = new System.Drawing.Size(1233, 998);
             this.pnBody.TabIndex = 19;
-            // 
-            // guna2Button6
-            // 
-            this.guna2Button6.BorderRadius = 30;
-            this.guna2Button6.CustomizableEdges = customizableEdges1;
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button6.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button6.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.guna2Button6.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button6.Location = new System.Drawing.Point(596, 529);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.guna2Button6.Size = new System.Drawing.Size(130, 56);
-            this.guna2Button6.TabIndex = 104;
-            this.guna2Button6.Text = "Skill 1";
-            // 
-            // guna2Button5
-            // 
-            this.guna2Button5.BorderRadius = 30;
-            this.guna2Button5.CustomizableEdges = customizableEdges3;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button5.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button5.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.guna2Button5.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button5.Location = new System.Drawing.Point(460, 529);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            this.guna2Button5.Size = new System.Drawing.Size(130, 56);
-            this.guna2Button5.TabIndex = 103;
-            this.guna2Button5.Text = "Skill 1";
             // 
             // label16
             // 
@@ -218,23 +158,11 @@
             this.label13.BackColor = System.Drawing.Color.White;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.Color.Gray;
-            this.label13.Location = new System.Drawing.Point(52, 614);
+            this.label13.Location = new System.Drawing.Point(52, 594);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(218, 23);
             this.label13.TabIndex = 99;
             this.label13.Text = "Some detail about your job";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.Gray;
-            this.label12.Location = new System.Drawing.Point(52, 503);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(285, 23);
-            this.label12.TabIndex = 98;
-            this.label12.Text = "Popular skill (Pick 3 skill for your job)";
             // 
             // label11
             // 
@@ -372,7 +300,7 @@
             // 
             this.dtpDateEnd.BorderRadius = 15;
             this.dtpDateEnd.Checked = true;
-            this.dtpDateEnd.CustomizableEdges = customizableEdges5;
+            this.dtpDateEnd.CustomizableEdges = customizableEdges3;
             this.dtpDateEnd.FillColor = System.Drawing.Color.White;
             this.dtpDateEnd.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpDateEnd.ForeColor = System.Drawing.Color.Black;
@@ -381,7 +309,7 @@
             this.dtpDateEnd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpDateEnd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpDateEnd.Name = "dtpDateEnd";
-            this.dtpDateEnd.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.dtpDateEnd.ShadowDecoration.CustomizableEdges = customizableEdges4;
             this.dtpDateEnd.Size = new System.Drawing.Size(469, 45);
             this.dtpDateEnd.TabIndex = 86;
             this.dtpDateEnd.Value = new System.DateTime(2024, 4, 5, 19, 51, 38, 253);
@@ -389,7 +317,7 @@
             // txtSalary
             // 
             this.txtSalary.BorderRadius = 15;
-            this.txtSalary.CustomizableEdges = customizableEdges7;
+            this.txtSalary.CustomizableEdges = customizableEdges5;
             this.txtSalary.DefaultText = "";
             this.txtSalary.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtSalary.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -405,96 +333,15 @@
             this.txtSalary.PasswordChar = '\0';
             this.txtSalary.PlaceholderText = "Salary";
             this.txtSalary.SelectedText = "";
-            this.txtSalary.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            this.txtSalary.ShadowDecoration.CustomizableEdges = customizableEdges6;
             this.txtSalary.Size = new System.Drawing.Size(469, 52);
             this.txtSalary.TabIndex = 85;
-            // 
-            // guna2Button4
-            // 
-            this.guna2Button4.CustomizableEdges = customizableEdges9;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Button4.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button4.Location = new System.Drawing.Point(732, 550);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            this.guna2Button4.Size = new System.Drawing.Size(120, 35);
-            this.guna2Button4.TabIndex = 84;
-            this.guna2Button4.Text = "See more";
-            // 
-            // guna2Button3
-            // 
-            this.guna2Button3.BorderRadius = 30;
-            this.guna2Button3.CustomizableEdges = customizableEdges11;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button3.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button3.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.guna2Button3.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button3.Location = new System.Drawing.Point(324, 529);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            this.guna2Button3.Size = new System.Drawing.Size(130, 56);
-            this.guna2Button3.TabIndex = 83;
-            this.guna2Button3.Text = "Skill 1";
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.BorderRadius = 30;
-            this.guna2Button2.CustomizableEdges = customizableEdges13;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.Location = new System.Drawing.Point(188, 529);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            this.guna2Button2.Size = new System.Drawing.Size(130, 56);
-            this.guna2Button2.TabIndex = 82;
-            this.guna2Button2.Text = "Skill 1";
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 30;
-            this.guna2Button1.CustomizableEdges = customizableEdges15;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(52, 529);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            this.guna2Button1.Size = new System.Drawing.Size(130, 56);
-            this.guna2Button1.TabIndex = 81;
-            this.guna2Button1.Text = "Skill 1";
             // 
             // cbbExperience
             // 
             this.cbbExperience.BackColor = System.Drawing.Color.Transparent;
             this.cbbExperience.BorderRadius = 15;
-            this.cbbExperience.CustomizableEdges = customizableEdges17;
+            this.cbbExperience.CustomizableEdges = customizableEdges7;
             this.cbbExperience.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbbExperience.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbExperience.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -511,7 +358,7 @@
             "Expert"});
             this.cbbExperience.Location = new System.Drawing.Point(52, 440);
             this.cbbExperience.Name = "cbbExperience";
-            this.cbbExperience.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            this.cbbExperience.ShadowDecoration.CustomizableEdges = customizableEdges8;
             this.cbbExperience.Size = new System.Drawing.Size(469, 51);
             this.cbbExperience.TabIndex = 80;
             // 
@@ -519,7 +366,7 @@
             // 
             this.cbbWorkingForm.BackColor = System.Drawing.Color.Transparent;
             this.cbbWorkingForm.BorderRadius = 15;
-            this.cbbWorkingForm.CustomizableEdges = customizableEdges19;
+            this.cbbWorkingForm.CustomizableEdges = customizableEdges9;
             this.cbbWorkingForm.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbbWorkingForm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbWorkingForm.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -533,14 +380,14 @@
             "Hybrid"});
             this.cbbWorkingForm.Location = new System.Drawing.Point(52, 274);
             this.cbbWorkingForm.Name = "cbbWorkingForm";
-            this.cbbWorkingForm.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            this.cbbWorkingForm.ShadowDecoration.CustomizableEdges = customizableEdges10;
             this.cbbWorkingForm.Size = new System.Drawing.Size(469, 51);
             this.cbbWorkingForm.TabIndex = 79;
             // 
             // txtJobName
             // 
             this.txtJobName.BorderRadius = 15;
-            this.txtJobName.CustomizableEdges = customizableEdges21;
+            this.txtJobName.CustomizableEdges = customizableEdges11;
             this.txtJobName.DefaultText = "";
             this.txtJobName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtJobName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -556,7 +403,7 @@
             this.txtJobName.PasswordChar = '\0';
             this.txtJobName.PlaceholderText = "Job\'s Name";
             this.txtJobName.SelectedText = "";
-            this.txtJobName.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            this.txtJobName.ShadowDecoration.CustomizableEdges = customizableEdges12;
             this.txtJobName.Size = new System.Drawing.Size(469, 52);
             this.txtJobName.TabIndex = 78;
             // 
@@ -578,10 +425,10 @@
             this.tabpage.Controls.Add(this.tbpdescription);
             this.tabpage.Controls.Add(this.tbpbenefit);
             this.tabpage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tabpage.Location = new System.Drawing.Point(52, 640);
+            this.tabpage.Location = new System.Drawing.Point(52, 620);
             this.tabpage.Name = "tabpage";
             this.tabpage.SelectedIndex = 0;
-            this.tabpage.Size = new System.Drawing.Size(1107, 260);
+            this.tabpage.Size = new System.Drawing.Size(1107, 280);
             this.tabpage.TabIndex = 77;
             // 
             // tbprequirement
@@ -594,7 +441,7 @@
             this.tbprequirement.Location = new System.Drawing.Point(4, 37);
             this.tbprequirement.Name = "tbprequirement";
             this.tbprequirement.Padding = new System.Windows.Forms.Padding(3);
-            this.tbprequirement.Size = new System.Drawing.Size(1099, 219);
+            this.tbprequirement.Size = new System.Drawing.Size(1099, 239);
             this.tbprequirement.TabIndex = 0;
             this.tbprequirement.Text = "Job\'s Requirement";
             // 
@@ -606,7 +453,7 @@
             this.rtxtjobrequirement.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rtxtjobrequirement.Location = new System.Drawing.Point(3, 3);
             this.rtxtjobrequirement.Name = "rtxtjobrequirement";
-            this.rtxtjobrequirement.Size = new System.Drawing.Size(1089, 209);
+            this.rtxtjobrequirement.Size = new System.Drawing.Size(1089, 229);
             this.rtxtjobrequirement.TabIndex = 1;
             this.rtxtjobrequirement.Text = "";
             // 
@@ -746,6 +593,39 @@
             this.btnSave.Timer_Effect_1 = 5;
             this.btnSave.Timer_RGB = 300;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.White;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.ForeColor = System.Drawing.Color.Gray;
+            this.label12.Location = new System.Drawing.Point(52, 508);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(187, 23);
+            this.label12.TabIndex = 104;
+            this.label12.Text = "Pick 3 skills for your job";
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.BorderRadius = 15;
+            this.guna2Button4.CustomizableEdges = customizableEdges1;
+            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Button4.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button4.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button4.Location = new System.Drawing.Point(52, 534);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.guna2Button4.Size = new System.Drawing.Size(380, 47);
+            this.guna2Button4.TabIndex = 103;
+            this.guna2Button4.Text = "Click here to see some popular skills";
+            // 
             // FJobEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -773,7 +653,6 @@
         private Label label15;
         private Label label14;
         private Label label13;
-        private Label label12;
         private Label label11;
         private Label label10;
         private Label label9;
@@ -787,10 +666,6 @@
         private Label label1;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpDateEnd;
         private Guna.UI2.WinForms.Guna2TextBox txtSalary;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2ComboBox cbbExperience;
         private Guna.UI2.WinForms.Guna2ComboBox cbbWorkingForm;
         private Guna.UI2.WinForms.Guna2TextBox txtJobName;
@@ -802,7 +677,7 @@
         private RichTextBox rtxtdescription;
         private TabPage tbpbenefit;
         private RichTextBox rtxtBenefit;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Label label12;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
     }
 }
