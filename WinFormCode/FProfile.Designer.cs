@@ -70,8 +70,10 @@ namespace WinFormProject
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges41 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges42 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblGender = new Label();
-            ptbCV = new PictureBox();
             txtFullName = new Guna.UI2.WinForms.Guna2TextBox();
             txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
             txtPhoneNumber = new Guna.UI2.WinForms.Guna2TextBox();
@@ -93,7 +95,6 @@ namespace WinFormProject
             guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
-            ptbAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             btnChoosePicture = new Guna.UI2.WinForms.Guna2Button();
             btnChooseNewCV = new Guna.UI2.WinForms.Guna2Button();
             btnCV = new Guna.UI2.WinForms.Guna2Button();
@@ -101,7 +102,8 @@ namespace WinFormProject
             btnSave = new Guna.UI2.WinForms.Guna2Button();
             btnEdit = new Guna.UI2.WinForms.Guna2Button();
             lblProfile = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            ((System.ComponentModel.ISupportInitialize)ptbCV).BeginInit();
+            ptbAvatar = new Guna.UI2.WinForms.Guna2PictureBox();
+            ptbCV = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox3).BeginInit();
@@ -110,6 +112,7 @@ namespace WinFormProject
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ptbCV).BeginInit();
             SuspendLayout();
             // 
             // lblGender
@@ -122,16 +125,6 @@ namespace WinFormProject
             lblGender.Size = new Size(91, 31);
             lblGender.TabIndex = 11;
             lblGender.Text = "Gender";
-            // 
-            // ptbCV
-            // 
-            ptbCV.BackColor = Color.White;
-            ptbCV.Location = new Point(922, 426);
-            ptbCV.Name = "ptbCV";
-            ptbCV.Size = new Size(267, 230);
-            ptbCV.SizeMode = PictureBoxSizeMode.StretchImage;
-            ptbCV.TabIndex = 19;
-            ptbCV.TabStop = false;
             // 
             // txtFullName
             // 
@@ -466,24 +459,10 @@ namespace WinFormProject
             guna2PictureBox7.TabIndex = 48;
             guna2PictureBox7.TabStop = false;
             // 
-            // ptbAvatar
-            // 
-            ptbAvatar.ErrorImage = null;
-            ptbAvatar.Image = (Image)resources.GetObject("ptbAvatar.Image");
-            ptbAvatar.ImageRotate = 0F;
-            ptbAvatar.Location = new Point(911, 46);
-            ptbAvatar.Name = "ptbAvatar";
-            ptbAvatar.ShadowDecoration.CustomizableEdges = customizableEdges27;
-            ptbAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            ptbAvatar.Size = new Size(284, 217);
-            ptbAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
-            ptbAvatar.TabIndex = 35;
-            ptbAvatar.TabStop = false;
-            // 
             // btnChoosePicture
             // 
             btnChoosePicture.BorderRadius = 10;
-            btnChoosePicture.CustomizableEdges = customizableEdges28;
+            btnChoosePicture.CustomizableEdges = customizableEdges27;
             btnChoosePicture.DisabledState.BorderColor = Color.DarkGray;
             btnChoosePicture.DisabledState.CustomBorderColor = Color.DarkGray;
             btnChoosePicture.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -493,7 +472,7 @@ namespace WinFormProject
             btnChoosePicture.ForeColor = Color.Black;
             btnChoosePicture.Location = new Point(952, 297);
             btnChoosePicture.Name = "btnChoosePicture";
-            btnChoosePicture.ShadowDecoration.CustomizableEdges = customizableEdges29;
+            btnChoosePicture.ShadowDecoration.CustomizableEdges = customizableEdges28;
             btnChoosePicture.Size = new Size(225, 56);
             btnChoosePicture.TabIndex = 49;
             btnChoosePicture.Text = "Choose Picture";
@@ -501,7 +480,7 @@ namespace WinFormProject
             // btnChooseNewCV
             // 
             btnChooseNewCV.BorderRadius = 10;
-            btnChooseNewCV.CustomizableEdges = customizableEdges30;
+            btnChooseNewCV.CustomizableEdges = customizableEdges29;
             btnChooseNewCV.DisabledState.BorderColor = Color.DarkGray;
             btnChooseNewCV.DisabledState.CustomBorderColor = Color.DarkGray;
             btnChooseNewCV.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -511,7 +490,7 @@ namespace WinFormProject
             btnChooseNewCV.ForeColor = Color.Black;
             btnChooseNewCV.Location = new Point(943, 697);
             btnChooseNewCV.Name = "btnChooseNewCV";
-            btnChooseNewCV.ShadowDecoration.CustomizableEdges = customizableEdges31;
+            btnChooseNewCV.ShadowDecoration.CustomizableEdges = customizableEdges30;
             btnChooseNewCV.Size = new Size(225, 56);
             btnChooseNewCV.TabIndex = 50;
             btnChooseNewCV.Text = "Choose CV";
@@ -519,7 +498,7 @@ namespace WinFormProject
             // btnCV
             // 
             btnCV.BorderRadius = 10;
-            btnCV.CustomizableEdges = customizableEdges32;
+            btnCV.CustomizableEdges = customizableEdges31;
             btnCV.DisabledState.BorderColor = Color.DarkGray;
             btnCV.DisabledState.CustomBorderColor = Color.DarkGray;
             btnCV.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -529,7 +508,7 @@ namespace WinFormProject
             btnCV.ForeColor = Color.Black;
             btnCV.Location = new Point(943, 697);
             btnCV.Name = "btnCV";
-            btnCV.ShadowDecoration.CustomizableEdges = customizableEdges33;
+            btnCV.ShadowDecoration.CustomizableEdges = customizableEdges32;
             btnCV.Size = new Size(225, 56);
             btnCV.TabIndex = 51;
             btnCV.Text = "CV";
@@ -537,7 +516,7 @@ namespace WinFormProject
             // btnCancel
             // 
             btnCancel.BorderRadius = 10;
-            btnCancel.CustomizableEdges = customizableEdges34;
+            btnCancel.CustomizableEdges = customizableEdges33;
             btnCancel.DisabledState.BorderColor = Color.DarkGray;
             btnCancel.DisabledState.CustomBorderColor = Color.DarkGray;
             btnCancel.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -547,7 +526,7 @@ namespace WinFormProject
             btnCancel.ForeColor = Color.Black;
             btnCancel.Location = new Point(319, 700);
             btnCancel.Name = "btnCancel";
-            btnCancel.ShadowDecoration.CustomizableEdges = customizableEdges35;
+            btnCancel.ShadowDecoration.CustomizableEdges = customizableEdges34;
             btnCancel.Size = new Size(225, 56);
             btnCancel.TabIndex = 52;
             btnCancel.Text = "Cancel";
@@ -555,7 +534,7 @@ namespace WinFormProject
             // btnSave
             // 
             btnSave.BorderRadius = 10;
-            btnSave.CustomizableEdges = customizableEdges36;
+            btnSave.CustomizableEdges = customizableEdges35;
             btnSave.DisabledState.BorderColor = Color.DarkGray;
             btnSave.DisabledState.CustomBorderColor = Color.DarkGray;
             btnSave.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -565,7 +544,7 @@ namespace WinFormProject
             btnSave.ForeColor = Color.Black;
             btnSave.Location = new Point(41, 700);
             btnSave.Name = "btnSave";
-            btnSave.ShadowDecoration.CustomizableEdges = customizableEdges37;
+            btnSave.ShadowDecoration.CustomizableEdges = customizableEdges36;
             btnSave.Size = new Size(225, 56);
             btnSave.TabIndex = 53;
             btnSave.Text = "Save";
@@ -573,7 +552,7 @@ namespace WinFormProject
             // btnEdit
             // 
             btnEdit.BorderRadius = 10;
-            btnEdit.CustomizableEdges = customizableEdges38;
+            btnEdit.CustomizableEdges = customizableEdges37;
             btnEdit.DisabledState.BorderColor = Color.DarkGray;
             btnEdit.DisabledState.CustomBorderColor = Color.DarkGray;
             btnEdit.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -583,7 +562,7 @@ namespace WinFormProject
             btnEdit.ForeColor = Color.Black;
             btnEdit.Location = new Point(41, 700);
             btnEdit.Name = "btnEdit";
-            btnEdit.ShadowDecoration.CustomizableEdges = customizableEdges39;
+            btnEdit.ShadowDecoration.CustomizableEdges = customizableEdges38;
             btnEdit.Size = new Size(225, 56);
             btnEdit.TabIndex = 54;
             btnEdit.Text = "Edit";
@@ -598,12 +577,44 @@ namespace WinFormProject
             lblProfile.TabIndex = 55;
             lblProfile.Text = "Your Profile";
             // 
+            // ptbAvatar
+            // 
+            ptbAvatar.AutoRoundedCorners = true;
+            ptbAvatar.BackColor = Color.Transparent;
+            ptbAvatar.BorderRadius = 124;
+            ptbAvatar.CustomizableEdges = customizableEdges39;
+            ptbAvatar.Image = (Image)resources.GetObject("ptbAvatar.Image");
+            ptbAvatar.ImageRotate = 0F;
+            ptbAvatar.Location = new Point(914, 41);
+            ptbAvatar.Name = "ptbAvatar";
+            ptbAvatar.ShadowDecoration.CustomizableEdges = customizableEdges40;
+            ptbAvatar.Size = new Size(287, 250);
+            ptbAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbAvatar.TabIndex = 56;
+            ptbAvatar.TabStop = false;
+            // 
+            // ptbCV
+            // 
+            ptbCV.BorderRadius = 20;
+            ptbCV.CustomizableEdges = customizableEdges41;
+            ptbCV.ImageRotate = 0F;
+            ptbCV.Location = new Point(947, 401);
+            ptbCV.Name = "ptbCV";
+            ptbCV.ShadowDecoration.CustomizableEdges = customizableEdges42;
+            ptbCV.Size = new Size(230, 250);
+            ptbCV.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbCV.TabIndex = 57;
+            ptbCV.TabStop = false;
+            ptbCV.Click += guna2PictureBox8_Click;
+            // 
             // FProfile
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1233, 852);
+            Controls.Add(ptbCV);
+            Controls.Add(ptbAvatar);
             Controls.Add(lblProfile);
             Controls.Add(btnEdit);
             Controls.Add(btnSave);
@@ -611,7 +622,6 @@ namespace WinFormProject
             Controls.Add(btnCV);
             Controls.Add(btnChooseNewCV);
             Controls.Add(btnChoosePicture);
-            Controls.Add(ptbAvatar);
             Controls.Add(guna2PictureBox7);
             Controls.Add(guna2PictureBox6);
             Controls.Add(guna2PictureBox5);
@@ -633,13 +643,11 @@ namespace WinFormProject
             Controls.Add(txtFullName);
             Controls.Add(rdoFemale);
             Controls.Add(rdoMale);
-            Controls.Add(ptbCV);
             Controls.Add(lblGender);
             Margin = new Padding(3, 4, 3, 4);
             Name = "FProfile";
             StartPosition = FormStartPosition.CenterScreen;
             Load += FProfile_Load;
-            ((System.ComponentModel.ISupportInitialize)ptbCV).EndInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox3).EndInit();
@@ -648,13 +656,13 @@ namespace WinFormProject
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ptbCV).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
         private Label lblGender;
-        private PictureBox ptbCV;
         private Guna.UI2.WinForms.Guna2TextBox txtFullName;
         private Guna.UI2.WinForms.Guna2TextBox txtAddress;
         private Guna.UI2.WinForms.Guna2TextBox txtPhoneNumber;
@@ -676,7 +684,6 @@ namespace WinFormProject
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox ptbAvatar;
         private Guna.UI2.WinForms.Guna2Button btnChoosePicture;
         private Guna.UI2.WinForms.Guna2Button btnChooseNewCV;
         private Guna.UI2.WinForms.Guna2Button btnCV;
@@ -684,5 +691,7 @@ namespace WinFormProject
         private Guna.UI2.WinForms.Guna2Button btnSave;
         private Guna.UI2.WinForms.Guna2Button btnEdit;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblProfile;
+        private Guna.UI2.WinForms.Guna2PictureBox ptbAvatar;
+        private Guna.UI2.WinForms.Guna2PictureBox ptbCV;
     }
 }
