@@ -20,7 +20,7 @@ namespace WinFormProject
             InitializeComponent();
             this.currentFormChild = currentFormChild;
             this.pnBody = pnBody;
-            this.MaximumSize = new System.Drawing.Size(812, 212);
+            this.MaximumSize = new System.Drawing.Size(812, 246);
             this.job = job;
         }
 
