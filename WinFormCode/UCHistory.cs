@@ -23,7 +23,7 @@ namespace WinFormProject.WinFormCode
             this.job = job;
             lblJobNameT.Text = job.Name;
             lblDateT.Text = job.DatePublish.ToString();
-            lblDateEndT.Text = job.DateEnd.ToString();
+            lblEndT.Text = job.DateEnd.ToString();
             lblStatusT.Text = job.Status;
         }
         public Job Job { get { return job; } }

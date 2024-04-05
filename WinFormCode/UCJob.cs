@@ -120,5 +120,9 @@ namespace WinFormProject
             OpenChildForm(fJobEdit);
         }
 
+        private void lblJobNameT_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

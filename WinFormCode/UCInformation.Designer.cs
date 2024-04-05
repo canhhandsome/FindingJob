@@ -28,247 +28,247 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ptbCompanyPicture = new PictureBox();
-            lblDateT = new Label();
-            lblNameT = new Label();
-            lblFromT = new Label();
-            flpBody = new FlowLayoutPanel();
-            panel2 = new Panel();
-            pnPublish = new FlowLayoutPanel();
-            pnName = new Panel();
-            pnCompany = new FlowLayoutPanel();
-            pnWorkingForm = new FlowLayoutPanel();
-            lblWorkingFormT = new Label();
-            pnSkills = new FlowLayoutPanel();
-            lblSkillsT = new Label();
-            pnAddress = new FlowLayoutPanel();
-            lblAddressT = new Label();
-            btnDetails = new ReaLTaiizor.Controls.ParrotButton();
-            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).BeginInit();
-            flpBody.SuspendLayout();
-            pnPublish.SuspendLayout();
-            pnName.SuspendLayout();
-            pnCompany.SuspendLayout();
-            pnWorkingForm.SuspendLayout();
-            pnSkills.SuspendLayout();
-            pnAddress.SuspendLayout();
-            SuspendLayout();
+            this.ptbCompanyPicture = new System.Windows.Forms.PictureBox();
+            this.lblDateT = new System.Windows.Forms.Label();
+            this.lblNameT = new System.Windows.Forms.Label();
+            this.lblFromT = new System.Windows.Forms.Label();
+            this.flpBody = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnPublish = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnName = new System.Windows.Forms.Panel();
+            this.pnCompany = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnWorkingForm = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblWorkingFormT = new System.Windows.Forms.Label();
+            this.pnSkills = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblSkillsT = new System.Windows.Forms.Label();
+            this.pnAddress = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblAddressT = new System.Windows.Forms.Label();
+            this.btnDetails = new ReaLTaiizor.Controls.ParrotButton();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCompanyPicture)).BeginInit();
+            this.flpBody.SuspendLayout();
+            this.pnPublish.SuspendLayout();
+            this.pnName.SuspendLayout();
+            this.pnCompany.SuspendLayout();
+            this.pnWorkingForm.SuspendLayout();
+            this.pnSkills.SuspendLayout();
+            this.pnAddress.SuspendLayout();
+            this.SuspendLayout();
             // 
             // ptbCompanyPicture
             // 
-            ptbCompanyPicture.Location = new Point(3, 3);
-            ptbCompanyPicture.Name = "ptbCompanyPicture";
-            ptbCompanyPicture.Size = new Size(55, 57);
-            ptbCompanyPicture.SizeMode = PictureBoxSizeMode.StretchImage;
-            ptbCompanyPicture.TabIndex = 1;
-            ptbCompanyPicture.TabStop = false;
+            this.ptbCompanyPicture.Location = new System.Drawing.Point(3, 3);
+            this.ptbCompanyPicture.Name = "ptbCompanyPicture";
+            this.ptbCompanyPicture.Size = new System.Drawing.Size(55, 57);
+            this.ptbCompanyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbCompanyPicture.TabIndex = 1;
+            this.ptbCompanyPicture.TabStop = false;
             // 
             // lblDateT
             // 
-            lblDateT.AutoSize = true;
-            lblDateT.Dock = DockStyle.Right;
-            lblDateT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDateT.ForeColor = SystemColors.ControlDarkDark;
-            lblDateT.Location = new Point(3, 22);
-            lblDateT.Name = "lblDateT";
-            lblDateT.Size = new Size(69, 30);
-            lblDateT.TabIndex = 0;
-            lblDateT.Text = "Date: ";
-            lblDateT.TextAlign = ContentAlignment.BottomCenter;
+            this.lblDateT.AutoSize = true;
+            this.lblDateT.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblDateT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDateT.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblDateT.Location = new System.Drawing.Point(3, 22);
+            this.lblDateT.Name = "lblDateT";
+            this.lblDateT.Size = new System.Drawing.Size(69, 30);
+            this.lblDateT.TabIndex = 0;
+            this.lblDateT.Text = "Date: ";
+            this.lblDateT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // lblNameT
             // 
-            lblNameT.AutoSize = true;
-            lblNameT.Dock = DockStyle.Fill;
-            lblNameT.Font = new Font("Segoe UI Semibold", 25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblNameT.Location = new Point(0, 0);
-            lblNameT.Name = "lblNameT";
-            lblNameT.Size = new Size(160, 57);
-            lblNameT.TabIndex = 0;
-            lblNameT.Text = "Name: ";
+            this.lblNameT.AutoSize = true;
+            this.lblNameT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblNameT.Font = new System.Drawing.Font("Segoe UI Semibold", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblNameT.Location = new System.Drawing.Point(0, 0);
+            this.lblNameT.Name = "lblNameT";
+            this.lblNameT.Size = new System.Drawing.Size(160, 57);
+            this.lblNameT.TabIndex = 0;
+            this.lblNameT.Text = "Name: ";
             // 
             // lblFromT
             // 
-            lblFromT.AutoSize = true;
-            lblFromT.Dock = DockStyle.Fill;
-            lblFromT.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFromT.ForeColor = SystemColors.ControlDarkDark;
-            lblFromT.Location = new Point(64, 0);
-            lblFromT.Name = "lblFromT";
-            lblFromT.Size = new Size(94, 63);
-            lblFromT.TabIndex = 0;
-            lblFromT.Text = "From:";
-            lblFromT.TextAlign = ContentAlignment.MiddleCenter;
+            this.lblFromT.AutoSize = true;
+            this.lblFromT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblFromT.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFromT.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblFromT.Location = new System.Drawing.Point(64, 0);
+            this.lblFromT.Name = "lblFromT";
+            this.lblFromT.Size = new System.Drawing.Size(94, 63);
+            this.lblFromT.TabIndex = 0;
+            this.lblFromT.Text = "From:";
+            this.lblFromT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flpBody
             // 
-            flpBody.BackColor = Color.FromArgb(254, 232, 223);
-            flpBody.Controls.Add(panel2);
-            flpBody.Controls.Add(pnPublish);
-            flpBody.Controls.Add(pnName);
-            flpBody.Controls.Add(pnCompany);
-            flpBody.Controls.Add(pnWorkingForm);
-            flpBody.Controls.Add(pnSkills);
-            flpBody.FlowDirection = FlowDirection.TopDown;
-            flpBody.Location = new Point(7, 8);
-            flpBody.Margin = new Padding(3, 4, 3, 4);
-            flpBody.Name = "flpBody";
-            flpBody.Size = new Size(552, 397);
-            flpBody.TabIndex = 47;
+            this.flpBody.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(232)))), ((int)(((byte)(223)))));
+            this.flpBody.Controls.Add(this.panel2);
+            this.flpBody.Controls.Add(this.pnPublish);
+            this.flpBody.Controls.Add(this.pnName);
+            this.flpBody.Controls.Add(this.pnCompany);
+            this.flpBody.Controls.Add(this.pnWorkingForm);
+            this.flpBody.Controls.Add(this.pnSkills);
+            this.flpBody.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flpBody.Location = new System.Drawing.Point(7, 8);
+            this.flpBody.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.flpBody.Name = "flpBody";
+            this.flpBody.Size = new System.Drawing.Size(552, 397);
+            this.flpBody.TabIndex = 47;
             // 
             // panel2
             // 
-            panel2.Location = new Point(3, 4);
-            panel2.Margin = new Padding(3, 4, 3, 4);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(21, 455);
-            panel2.TabIndex = 48;
+            this.panel2.Location = new System.Drawing.Point(3, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(21, 455);
+            this.panel2.TabIndex = 48;
             // 
             // pnPublish
             // 
-            pnPublish.Controls.Add(lblDateT);
-            pnPublish.FlowDirection = FlowDirection.BottomUp;
-            pnPublish.Location = new Point(30, 4);
-            pnPublish.Margin = new Padding(3, 4, 3, 4);
-            pnPublish.Name = "pnPublish";
-            pnPublish.Size = new Size(1000, 52);
-            pnPublish.TabIndex = 49;
+            this.pnPublish.Controls.Add(this.lblDateT);
+            this.pnPublish.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
+            this.pnPublish.Location = new System.Drawing.Point(30, 4);
+            this.pnPublish.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnPublish.Name = "pnPublish";
+            this.pnPublish.Size = new System.Drawing.Size(1000, 52);
+            this.pnPublish.TabIndex = 49;
             // 
             // pnName
             // 
-            pnName.BackColor = Color.Transparent;
-            pnName.Controls.Add(lblNameT);
-            pnName.Location = new Point(30, 64);
-            pnName.Margin = new Padding(3, 4, 3, 4);
-            pnName.Name = "pnName";
-            pnName.Size = new Size(543, 67);
-            pnName.TabIndex = 48;
+            this.pnName.BackColor = System.Drawing.Color.Transparent;
+            this.pnName.Controls.Add(this.lblNameT);
+            this.pnName.Location = new System.Drawing.Point(30, 64);
+            this.pnName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnName.Name = "pnName";
+            this.pnName.Size = new System.Drawing.Size(543, 67);
+            this.pnName.TabIndex = 48;
             // 
             // pnCompany
             // 
-            pnCompany.Controls.Add(ptbCompanyPicture);
-            pnCompany.Controls.Add(lblFromT);
-            pnCompany.Location = new Point(30, 139);
-            pnCompany.Margin = new Padding(3, 4, 3, 4);
-            pnCompany.Name = "pnCompany";
-            pnCompany.Size = new Size(1000, 63);
-            pnCompany.TabIndex = 48;
+            this.pnCompany.Controls.Add(this.ptbCompanyPicture);
+            this.pnCompany.Controls.Add(this.lblFromT);
+            this.pnCompany.Location = new System.Drawing.Point(30, 139);
+            this.pnCompany.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnCompany.Name = "pnCompany";
+            this.pnCompany.Size = new System.Drawing.Size(1000, 63);
+            this.pnCompany.TabIndex = 48;
             // 
             // pnWorkingForm
             // 
-            pnWorkingForm.Controls.Add(lblWorkingFormT);
-            pnWorkingForm.Location = new Point(30, 210);
-            pnWorkingForm.Margin = new Padding(3, 4, 3, 4);
-            pnWorkingForm.Name = "pnWorkingForm";
-            pnWorkingForm.Size = new Size(1000, 52);
-            pnWorkingForm.TabIndex = 48;
+            this.pnWorkingForm.Controls.Add(this.lblWorkingFormT);
+            this.pnWorkingForm.Location = new System.Drawing.Point(30, 210);
+            this.pnWorkingForm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnWorkingForm.Name = "pnWorkingForm";
+            this.pnWorkingForm.Size = new System.Drawing.Size(1000, 52);
+            this.pnWorkingForm.TabIndex = 48;
             // 
             // lblWorkingFormT
             // 
-            lblWorkingFormT.AutoSize = true;
-            lblWorkingFormT.Dock = DockStyle.Fill;
-            lblWorkingFormT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblWorkingFormT.ForeColor = SystemColors.ControlDarkDark;
-            lblWorkingFormT.Location = new Point(3, 0);
-            lblWorkingFormT.Name = "lblWorkingFormT";
-            lblWorkingFormT.Size = new Size(181, 30);
-            lblWorkingFormT.TabIndex = 0;
-            lblWorkingFormT.Text = "lblWorkingFormT";
+            this.lblWorkingFormT.AutoSize = true;
+            this.lblWorkingFormT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblWorkingFormT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblWorkingFormT.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblWorkingFormT.Location = new System.Drawing.Point(3, 0);
+            this.lblWorkingFormT.Name = "lblWorkingFormT";
+            this.lblWorkingFormT.Size = new System.Drawing.Size(181, 30);
+            this.lblWorkingFormT.TabIndex = 0;
+            this.lblWorkingFormT.Text = "lblWorkingFormT";
             // 
             // pnSkills
             // 
-            pnSkills.Controls.Add(lblSkillsT);
-            pnSkills.Location = new Point(30, 270);
-            pnSkills.Margin = new Padding(3, 4, 3, 4);
-            pnSkills.Name = "pnSkills";
-            pnSkills.Size = new Size(1000, 52);
-            pnSkills.TabIndex = 48;
+            this.pnSkills.Controls.Add(this.lblSkillsT);
+            this.pnSkills.Location = new System.Drawing.Point(30, 270);
+            this.pnSkills.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnSkills.Name = "pnSkills";
+            this.pnSkills.Size = new System.Drawing.Size(1000, 52);
+            this.pnSkills.TabIndex = 48;
             // 
             // lblSkillsT
             // 
-            lblSkillsT.AutoSize = true;
-            lblSkillsT.Dock = DockStyle.Fill;
-            lblSkillsT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSkillsT.ForeColor = SystemColors.ControlDarkDark;
-            lblSkillsT.Location = new Point(3, 0);
-            lblSkillsT.Name = "lblSkillsT";
-            lblSkillsT.Size = new Size(83, 30);
-            lblSkillsT.TabIndex = 0;
-            lblSkillsT.Text = "lblSkills";
+            this.lblSkillsT.AutoSize = true;
+            this.lblSkillsT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSkillsT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSkillsT.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblSkillsT.Location = new System.Drawing.Point(3, 0);
+            this.lblSkillsT.Name = "lblSkillsT";
+            this.lblSkillsT.Size = new System.Drawing.Size(83, 30);
+            this.lblSkillsT.TabIndex = 0;
+            this.lblSkillsT.Text = "lblSkills";
             // 
             // pnAddress
             // 
-            pnAddress.Controls.Add(lblAddressT);
-            pnAddress.Location = new Point(7, 417);
-            pnAddress.Margin = new Padding(3, 4, 3, 4);
-            pnAddress.Name = "pnAddress";
-            pnAddress.Size = new Size(435, 48);
-            pnAddress.TabIndex = 48;
+            this.pnAddress.Controls.Add(this.lblAddressT);
+            this.pnAddress.Location = new System.Drawing.Point(7, 417);
+            this.pnAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnAddress.Name = "pnAddress";
+            this.pnAddress.Size = new System.Drawing.Size(435, 48);
+            this.pnAddress.TabIndex = 48;
             // 
             // lblAddressT
             // 
-            lblAddressT.AutoSize = true;
-            lblAddressT.Dock = DockStyle.Fill;
-            lblAddressT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblAddressT.ForeColor = SystemColors.ControlDarkDark;
-            lblAddressT.Location = new Point(3, 0);
-            lblAddressT.Name = "lblAddressT";
-            lblAddressT.Size = new Size(114, 30);
-            lblAddressT.TabIndex = 0;
-            lblAddressT.Text = "lblAddress";
+            this.lblAddressT.AutoSize = true;
+            this.lblAddressT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblAddressT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAddressT.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblAddressT.Location = new System.Drawing.Point(3, 0);
+            this.lblAddressT.Name = "lblAddressT";
+            this.lblAddressT.Size = new System.Drawing.Size(114, 30);
+            this.lblAddressT.TabIndex = 0;
+            this.lblAddressT.Text = "lblAddress";
             // 
             // btnDetails
             // 
-            btnDetails.BackgroundColor = Color.FromArgb(248, 212, 187);
-            btnDetails.ButtonImage = null;
-            btnDetails.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
-            btnDetails.ButtonText = "Details";
-            btnDetails.ClickBackColor = Color.FromArgb(255, 212, 180);
-            btnDetails.ClickTextColor = Color.Black;
-            btnDetails.CornerRadius = 20;
-            btnDetails.Cursor = Cursors.Hand;
-            btnDetails.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnDetails.Horizontal_Alignment = StringAlignment.Center;
-            btnDetails.HoverBackgroundColor = Color.FromArgb(248, 242, 197);
-            btnDetails.HoverTextColor = Color.Black;
-            btnDetails.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnDetails.Location = new Point(449, 417);
-            btnDetails.Margin = new Padding(3, 4, 3, 4);
-            btnDetails.Name = "btnDetails";
-            btnDetails.Size = new Size(101, 51);
-            btnDetails.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            btnDetails.TabIndex = 49;
-            btnDetails.TextColor = Color.Black;
-            btnDetails.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            btnDetails.Vertical_Alignment = StringAlignment.Center;
-            btnDetails.Click += panel1_Click;
+            this.btnDetails.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
+            this.btnDetails.ButtonImage = null;
+            this.btnDetails.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
+            this.btnDetails.ButtonText = "Details";
+            this.btnDetails.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(212)))), ((int)(((byte)(180)))));
+            this.btnDetails.ClickTextColor = System.Drawing.Color.Black;
+            this.btnDetails.CornerRadius = 20;
+            this.btnDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDetails.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDetails.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnDetails.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(242)))), ((int)(((byte)(197)))));
+            this.btnDetails.HoverTextColor = System.Drawing.Color.Black;
+            this.btnDetails.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            this.btnDetails.Location = new System.Drawing.Point(449, 417);
+            this.btnDetails.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDetails.Name = "btnDetails";
+            this.btnDetails.Size = new System.Drawing.Size(101, 51);
+            this.btnDetails.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btnDetails.TabIndex = 49;
+            this.btnDetails.TextColor = System.Drawing.Color.Black;
+            this.btnDetails.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btnDetails.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // UCInformation
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.AntiqueWhite;
-            Controls.Add(btnDetails);
-            Controls.Add(flpBody);
-            Controls.Add(pnAddress);
-            Margin = new Padding(3, 3, 11, 13);
-            Name = "UCInformation";
-            Size = new Size(569, 481);
-            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).EndInit();
-            flpBody.ResumeLayout(false);
-            pnPublish.ResumeLayout(false);
-            pnPublish.PerformLayout();
-            pnName.ResumeLayout(false);
-            pnName.PerformLayout();
-            pnCompany.ResumeLayout(false);
-            pnCompany.PerformLayout();
-            pnWorkingForm.ResumeLayout(false);
-            pnWorkingForm.PerformLayout();
-            pnSkills.ResumeLayout(false);
-            pnSkills.PerformLayout();
-            pnAddress.ResumeLayout(false);
-            pnAddress.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.Controls.Add(this.btnDetails);
+            this.Controls.Add(this.flpBody);
+            this.Controls.Add(this.pnAddress);
+            this.Margin = new System.Windows.Forms.Padding(3, 3, 11, 13);
+            this.Name = "UCInformation";
+            this.Size = new System.Drawing.Size(569, 481);
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCompanyPicture)).EndInit();
+            this.flpBody.ResumeLayout(false);
+            this.pnPublish.ResumeLayout(false);
+            this.pnPublish.PerformLayout();
+            this.pnName.ResumeLayout(false);
+            this.pnName.PerformLayout();
+            this.pnCompany.ResumeLayout(false);
+            this.pnCompany.PerformLayout();
+            this.pnWorkingForm.ResumeLayout(false);
+            this.pnWorkingForm.PerformLayout();
+            this.pnSkills.ResumeLayout(false);
+            this.pnSkills.PerformLayout();
+            this.pnAddress.ResumeLayout(false);
+            this.pnAddress.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

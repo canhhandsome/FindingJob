@@ -13,6 +13,7 @@ namespace WinFormProject
     public partial class UCAlert : UserControl
     {
         Alert alert = new Alert();
+        JobDAO jobDAO = new JobDAO();
         public UCAlert(Alert alert)
         {
             InitializeComponent();

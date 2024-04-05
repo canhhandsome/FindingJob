@@ -30,7 +30,7 @@ namespace WinFormProject
         public void FillInTemplate()
         {
             lblApplicantNameT.Text = jsDAO.FetchName(apply.JSeekerID);
-            lblJobT.Text = jobDAO.FetchName(apply.JobID);
+            lblEmailT.Text = jobDAO.FetchName(apply.JobID);
             lblDateT.Text = apply.DATE.ToString("dd/MM/yyyy");
             applicantAvatar = jsDAO.FetchImg(apply.JSeekerID);
             ImageHandler.DisplayImage(applicantAvatar, ref ptbApplicantPicture);
@@ -48,6 +48,11 @@ namespace WinFormProject
             applyDao.UpdateStatus(button.TextButton, apply);
             FAnswer fAnswer = new FAnswer(apply, job);
             fAnswer.Show();
+        }
+
+        private void lblEmailT_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
