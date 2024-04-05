@@ -33,7 +33,7 @@ namespace WinFormProject
             lblEmailT.Text = jobDAO.FetchName(apply.JobID);
             lblDateT.Text = apply.DATE.ToString("dd/MM/yyyy");
             applicantAvatar = jsDAO.FetchImg(apply.JSeekerID);
-            ImageHandler.DisplayImage(applicantAvatar, ref ptbApplicantPicture);
+            //ImageHandler.DisplayImage(applicantAvatar, ref ptbApplicantPicture);
         }
         private void btnProfile_Click(object sender, EventArgs e)
         {

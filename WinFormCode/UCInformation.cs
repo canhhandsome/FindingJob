@@ -37,7 +37,7 @@ namespace WinFormProject
             lblWorkingFormT.Text = company.WorkingTimeBegin;
             companyAvatar = companyDAO.FetchImg(job.CompanyID, "Avatar");
 
-            ImageHandler.DisplayImage(companyAvatar, ref ptbCompanyPicture);
+            //ImageHandler.DisplayImage(companyAvatar, ref ptbCompanyPicture);
 
         }
 

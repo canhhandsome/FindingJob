@@ -23,7 +23,7 @@ namespace WinFormProject
             lblDateT.Text = alert.DateReply.ToString("dd/MM/yyyy");
             CompanyDAO companyDAO = new CompanyDAO();
             companyAvatar = companyDAO.FetchImg(alert.SenderID, "Avarta");
-            ImageHandler.DisplayImage(companyAvatar, ref ptbCompanyPicture);
+            //ImageHandler.DisplayImage(companyAvatar, ref ptbCompanyPicture);
             lblJobNameT.Text = jobDAO.FetchName(alert.JobID);
             lblFromT.Text = companyDAO.FetchName(alert.SenderID);
             lblSubjectT.Text = alert.Subject;

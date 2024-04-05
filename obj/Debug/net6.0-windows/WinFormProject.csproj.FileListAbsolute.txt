@@ -300,3 +300,6 @@ D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FCompanyDetail.resources
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FHistory.resources
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.UCHistory.resources
+D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\Guna.UI2.dll
+D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\System.Management.dll
+D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll

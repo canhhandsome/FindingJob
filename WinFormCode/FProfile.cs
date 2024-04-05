@@ -110,7 +110,8 @@ namespace WinFormProject
             if (ptbCV.Image != null && Cv.Length > 0)
             {
                 CvData = Cv;
-            } else CvData = this.jobseeker.CV;
+            }
+            else CvData = this.jobseeker.CV;
             Information information = new Information(jobseeker.INFO.ID, txtFullName.Text, txtEmail.Text, txtAddress.Text, txtPhoneNumber.Text);
             if (rdoFemale.Checked) gender = "female"; else gender = "male";
             return new JobSeeker(information, dtpkBirthDate.Value, txtCitizenID.Text, gender, AvatarData, CvData);
@@ -127,6 +128,16 @@ namespace WinFormProject
         {
             FillInfor(); // Reload the form with the original data
             Enable_Save_Click(); // Re-enable the form for editing
+        }
+
+        private void FProfile_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdoFemale_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
