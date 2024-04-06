@@ -54,66 +54,10 @@ D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\obj\Debug\net6
 D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FCV.resources
 D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\MaterialSkin.dll
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\WinFormProject.exe
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\WinFormProject.dll.config
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\WinFormProject.deps.json
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\WinFormProject.runtimeconfig.json
 D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\WinFormProject.dll
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\WinFormProject.pdb
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\Transitions.dll
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\MaterialSkin.dll
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\ReaLTaiizor.dll
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.csproj.AssemblyReference.cache
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.Properties.Resources.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAdmin.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAlertView.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAnswer.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FApplicant.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FCompany.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FCV.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FFilter.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FFPassword.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobCreation.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobDetails.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobEdit.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobSeeker.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FLogin.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FManageUser.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FOTP.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FPostJob.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FProfile.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FProfileCompany.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FRegister.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FReportDetail.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FSearchJob.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FSupReportSection.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.UCAlert.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.UCApplicant.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.UCInformation.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.UCJob.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.csproj.GenerateResource.cache
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.GeneratedMSBuildEditorConfig.editorconfig
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.AssemblyInfoInputs.cache
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.AssemblyInfo.cs
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.csproj.CoreCompileInputs.cache
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.sourcelink.json
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormP.1FAEE5BD.Up2Date
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.dll
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\refint\WinFormProject.dll
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.pdb
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.genruntimeconfig.cache
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\ref\WinFormProject.dll
 D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Compression.Base.dll
 D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Licensing.dll
 D:\UTE\UTE 2023 - 2024\Ki 2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Pdf.Base.dll
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Compression.Base.dll
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Licensing.dll
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Pdf.Base.dll
 D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\WinFormProject.exe
 D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\WinFormProject.dll.config
 D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\WinFormProject.deps.json
@@ -171,7 +115,6 @@ D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.
 D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.pdb
 D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.genruntimeconfig.cache
 D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\ref\WinFormProject.dll
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAlert.resources
 D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAlert.resources
 D:\Window Programming\Project\New folder\FindingJob\bin\Debug\net6.0-windows\WinFormProject.exe
 D:\Window Programming\Project\New folder\FindingJob\bin\Debug\net6.0-windows\WinFormProject.dll.config
@@ -297,9 +240,70 @@ D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject
 D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\ref\WinFormProject.dll
 D:\Window Programming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FCompanyDetail.resources
 D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FCompanyDetail.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FCompanyDetail.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FHistory.resources
-D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.UCHistory.resources
 D:\Window Programming\Project\FindingJob\bin\Debug\net6.0-windows\Guna.UI2.dll
 D:\Window Programming\Project\FindingJob\bin\Debug\net6.0-windows\System.Management.dll
 D:\Window Programming\Project\FindingJob\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\Guna.UI2.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\WinFormProject.dll.config
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\WinFormProject.deps.json
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\WinFormProject.runtimeconfig.json
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\WinFormProject.pdb
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\Transitions.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\MaterialSkin.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\ReaLTaiizor.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Compression.Base.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Licensing.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\Syncfusion.Pdf.Base.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\System.Management.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.csproj.AssemblyReference.cache
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.Properties.Resources.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAdmin.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAlert.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAlertView.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAnswer.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FApplicant.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FCompany.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FCompanyDetail.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FCV.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FFilter.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FFPassword.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FHistory.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobCreation.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobDetails.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobEdit.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobSeeker.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FJobSKills.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FLogin.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FManageUser.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FOTP.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FPostJob.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FProfile.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FProfileCompany.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FRegister.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FReportDetail.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FSearchJob.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FSupReportSection.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.UCAlert.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.UCApplicant.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.UCHistory.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.UCInformation.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.UCJob.resources
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.csproj.GenerateResource.cache
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.AssemblyInfoInputs.cache
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.AssemblyInfo.cs
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.csproj.CoreCompileInputs.cache
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.sourcelink.json
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormP.1FAEE5BD.Up2Date
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\refint\WinFormProject.dll
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.pdb
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.genruntimeconfig.cache
+D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\ref\WinFormProject.dll
