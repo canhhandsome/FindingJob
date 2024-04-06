@@ -58,5 +58,9 @@ namespace WinFormProject
             OpenChildForm(new FPostJob(jobs, companyid));
         }
 
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

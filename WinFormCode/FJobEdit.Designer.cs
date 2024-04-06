@@ -41,6 +41,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.pnBody = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -71,7 +72,6 @@
             this.rtxtBenefit = new System.Windows.Forms.RichTextBox();
             this.btnCancel = new ReaLTaiizor.Controls.CyberButton();
             this.btnSave = new ReaLTaiizor.Controls.CyberButton();
-            this.label12 = new System.Windows.Forms.Label();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.pnBody.SuspendLayout();
             this.tabpage.SuspendLayout();
@@ -83,8 +83,8 @@
             // pnBody
             // 
             this.pnBody.BackColor = System.Drawing.Color.White;
-            this.pnBody.Controls.Add(this.label12);
             this.pnBody.Controls.Add(this.guna2Button4);
+            this.pnBody.Controls.Add(this.label12);
             this.pnBody.Controls.Add(this.label16);
             this.pnBody.Controls.Add(this.label15);
             this.pnBody.Controls.Add(this.label14);
@@ -115,6 +115,18 @@
             this.pnBody.Name = "pnBody";
             this.pnBody.Size = new System.Drawing.Size(1233, 998);
             this.pnBody.TabIndex = 19;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.White;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.ForeColor = System.Drawing.Color.Gray;
+            this.label12.Location = new System.Drawing.Point(52, 508);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(187, 23);
+            this.label12.TabIndex = 104;
+            this.label12.Text = "Pick 3 skills for your job";
             // 
             // label16
             // 
@@ -466,7 +478,7 @@
             this.tbpdescription.Location = new System.Drawing.Point(4, 37);
             this.tbpdescription.Name = "tbpdescription";
             this.tbpdescription.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpdescription.Size = new System.Drawing.Size(1099, 219);
+            this.tbpdescription.Size = new System.Drawing.Size(1099, 239);
             this.tbpdescription.TabIndex = 1;
             this.tbpdescription.Text = "Job\'s Description";
             this.tbpdescription.UseVisualStyleBackColor = true;
@@ -479,7 +491,7 @@
             this.rtxtdescription.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rtxtdescription.Location = new System.Drawing.Point(3, 3);
             this.rtxtdescription.Name = "rtxtdescription";
-            this.rtxtdescription.Size = new System.Drawing.Size(1089, 209);
+            this.rtxtdescription.Size = new System.Drawing.Size(1089, 229);
             this.rtxtdescription.TabIndex = 0;
             this.rtxtdescription.Text = "";
             // 
@@ -493,7 +505,7 @@
             this.tbpbenefit.Location = new System.Drawing.Point(4, 37);
             this.tbpbenefit.Name = "tbpbenefit";
             this.tbpbenefit.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpbenefit.Size = new System.Drawing.Size(1099, 219);
+            this.tbpbenefit.Size = new System.Drawing.Size(1099, 239);
             this.tbpbenefit.TabIndex = 2;
             this.tbpbenefit.Text = "Benefit";
             // 
@@ -505,7 +517,7 @@
             this.rtxtBenefit.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rtxtBenefit.Location = new System.Drawing.Point(3, 3);
             this.rtxtBenefit.Name = "rtxtBenefit";
-            this.rtxtBenefit.Size = new System.Drawing.Size(1089, 209);
+            this.rtxtBenefit.Size = new System.Drawing.Size(1089, 229);
             this.rtxtBenefit.TabIndex = 0;
             this.rtxtBenefit.Text = "";
             // 
@@ -593,18 +605,6 @@
             this.btnSave.Timer_Effect_1 = 5;
             this.btnSave.Timer_RGB = 300;
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.Gray;
-            this.label12.Location = new System.Drawing.Point(52, 508);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(187, 23);
-            this.label12.TabIndex = 104;
-            this.label12.Text = "Pick 3 skills for your job";
-            // 
             // guna2Button4
             // 
             this.guna2Button4.BorderRadius = 15;
@@ -613,17 +613,17 @@
             this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Button4.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.guna2Button4.HoverState.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button4.Location = new System.Drawing.Point(52, 534);
+            this.guna2Button4.Location = new System.Drawing.Point(34, 534);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges2;
             this.guna2Button4.Size = new System.Drawing.Size(380, 47);
-            this.guna2Button4.TabIndex = 103;
+            this.guna2Button4.TabIndex = 105;
             this.guna2Button4.Text = "Click here to see some popular skills";
             // 
             // FJobEdit
