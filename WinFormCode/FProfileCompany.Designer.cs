@@ -679,6 +679,7 @@
             ptbLicense.Name = "ptbLicense";
             ptbLicense.ShadowDecoration.CustomizableEdges = customizableEdges48;
             ptbLicense.Size = new Size(260, 276);
+            ptbLicense.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbLicense.TabIndex = 92;
             ptbLicense.TabStop = false;
             ptbLicense.Click += guna2PictureBox11_Click;

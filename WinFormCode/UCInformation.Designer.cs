@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblDateT = new Label();
             lblNameT = new Label();
             lblFromT = new Label();
@@ -38,6 +38,7 @@
             pnPublish = new FlowLayoutPanel();
             pnName = new Panel();
             pnCompany = new FlowLayoutPanel();
+            ptbCompanyPicture = new Guna.UI2.WinForms.Guna2PictureBox();
             pnWorkingForm = new FlowLayoutPanel();
             lblWorkingFormT = new Label();
             pnSkills = new FlowLayoutPanel();
@@ -45,15 +46,14 @@
             pnAddress = new FlowLayoutPanel();
             lblAddressT = new Label();
             btnDetails = new ReaLTaiizor.Controls.ParrotButton();
-            ptbCompanyPicture = new Guna.UI2.WinForms.Guna2PictureBox();
             flpBody.SuspendLayout();
             pnPublish.SuspendLayout();
             pnName.SuspendLayout();
             pnCompany.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).BeginInit();
             pnWorkingForm.SuspendLayout();
             pnSkills.SuspendLayout();
             pnAddress.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).BeginInit();
             SuspendLayout();
             // 
             // lblDateT
@@ -147,6 +147,18 @@
             pnCompany.Size = new Size(1000, 63);
             pnCompany.TabIndex = 48;
             // 
+            // ptbCompanyPicture
+            // 
+            ptbCompanyPicture.CustomizableEdges = customizableEdges1;
+            ptbCompanyPicture.ImageRotate = 0F;
+            ptbCompanyPicture.Location = new Point(3, 3);
+            ptbCompanyPicture.Name = "ptbCompanyPicture";
+            ptbCompanyPicture.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            ptbCompanyPicture.Size = new Size(69, 53);
+            ptbCompanyPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbCompanyPicture.TabIndex = 2;
+            ptbCompanyPicture.TabStop = false;
+            // 
             // pnWorkingForm
             // 
             pnWorkingForm.Controls.Add(lblWorkingFormT);
@@ -234,18 +246,7 @@
             btnDetails.TextColor = Color.Black;
             btnDetails.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             btnDetails.Vertical_Alignment = StringAlignment.Center;
-            // 
-            // ptbCompanyPicture
-            // 
-            ptbCompanyPicture.CustomizableEdges = customizableEdges3;
-            ptbCompanyPicture.ImageRotate = 0F;
-            ptbCompanyPicture.Location = new Point(3, 3);
-            ptbCompanyPicture.Name = "ptbCompanyPicture";
-            ptbCompanyPicture.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            ptbCompanyPicture.Size = new Size(69, 53);
-            ptbCompanyPicture.SizeMode = PictureBoxSizeMode.StretchImage;
-            ptbCompanyPicture.TabIndex = 2;
-            ptbCompanyPicture.TabStop = false;
+            btnDetails.Click += panel1_Click;
             // 
             // UCInformation
             // 
@@ -265,13 +266,13 @@
             pnName.PerformLayout();
             pnCompany.ResumeLayout(false);
             pnCompany.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).EndInit();
             pnWorkingForm.ResumeLayout(false);
             pnWorkingForm.PerformLayout();
             pnSkills.ResumeLayout(false);
             pnSkills.PerformLayout();
             pnAddress.ResumeLayout(false);
             pnAddress.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).EndInit();
             ResumeLayout(false);
         }
 
