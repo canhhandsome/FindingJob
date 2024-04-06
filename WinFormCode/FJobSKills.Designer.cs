@@ -157,9 +157,10 @@
             // 
             lblListSkill.BackColor = Color.Transparent;
             lblListSkill.Font = new Font("Verdana", 17.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblListSkill.Location = new Point(410, 12);
+            lblListSkill.Location = new Point(469, 16);
+            lblListSkill.Margin = new Padding(3, 4, 3, 4);
             lblListSkill.Name = "lblListSkill";
-            lblListSkill.Size = new Size(127, 30);
+            lblListSkill.Size = new Size(158, 37);
             lblListSkill.TabIndex = 1;
             lblListSkill.Text = "List Skills";
             // 
@@ -170,19 +171,21 @@
             guna2Panel1.Controls.Add(btnCancel);
             guna2Panel1.CustomizableEdges = customizableEdges73;
             guna2Panel1.Dock = DockStyle.Bottom;
-            guna2Panel1.Location = new Point(0, 490);
+            guna2Panel1.Location = new Point(0, 653);
+            guna2Panel1.Margin = new Padding(3, 4, 3, 4);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges74;
-            guna2Panel1.Size = new Size(988, 75);
+            guna2Panel1.Size = new Size(1129, 100);
             guna2Panel1.TabIndex = 2;
             // 
             // lblCountSkills
             // 
             lblCountSkills.BackColor = Color.Transparent;
             lblCountSkills.Font = new Font("Verdana", 14.25F, FontStyle.Italic, GraphicsUnit.Point);
-            lblCountSkills.Location = new Point(46, 17);
+            lblCountSkills.Location = new Point(53, 23);
+            lblCountSkills.Margin = new Padding(3, 4, 3, 4);
             lblCountSkills.Name = "lblCountSkills";
-            lblCountSkills.Size = new Size(190, 25);
+            lblCountSkills.Size = new Size(240, 31);
             lblCountSkills.TabIndex = 1;
             lblCountSkills.Text = "3 Skill(s) remaining";
             // 
@@ -196,10 +199,11 @@
             btnSave.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnSave.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnSave.ForeColor = Color.White;
-            btnSave.Location = new Point(706, 6);
+            btnSave.Location = new Point(807, 8);
+            btnSave.Margin = new Padding(3, 4, 3, 4);
             btnSave.Name = "btnSave";
             btnSave.ShadowDecoration.CustomizableEdges = customizableEdges70;
-            btnSave.Size = new Size(106, 45);
+            btnSave.Size = new Size(121, 60);
             btnSave.TabIndex = 0;
             btnSave.Text = "Save";
             btnSave.Click += btnSave_Click;
@@ -215,10 +219,11 @@
             btnCancel.FillColor = Color.FromArgb(255, 128, 128);
             btnCancel.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancel.ForeColor = Color.White;
-            btnCancel.Location = new Point(836, 6);
+            btnCancel.Location = new Point(955, 8);
+            btnCancel.Margin = new Padding(3, 4, 3, 4);
             btnCancel.Name = "btnCancel";
             btnCancel.ShadowDecoration.CustomizableEdges = customizableEdges72;
-            btnCancel.Size = new Size(106, 45);
+            btnCancel.Size = new Size(121, 60);
             btnCancel.TabIndex = 0;
             btnCancel.Text = "Cancel";
             btnCancel.Click += btnCancel_Click;
@@ -229,9 +234,10 @@
             guna2Panel2.CustomizableEdges = customizableEdges67;
             guna2Panel2.Dock = DockStyle.Top;
             guna2Panel2.Location = new Point(0, 0);
+            guna2Panel2.Margin = new Padding(3, 4, 3, 4);
             guna2Panel2.Name = "guna2Panel2";
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges68;
-            guna2Panel2.Size = new Size(988, 49);
+            guna2Panel2.Size = new Size(1129, 65);
             guna2Panel2.TabIndex = 3;
             // 
             // pnBody
@@ -270,10 +276,11 @@
             pnBody.Controls.Add(guna2Button1);
             pnBody.CustomizableEdges = customizableEdges65;
             pnBody.Dock = DockStyle.Fill;
-            pnBody.Location = new Point(0, 49);
+            pnBody.Location = new Point(0, 65);
+            pnBody.Margin = new Padding(3, 4, 3, 4);
             pnBody.Name = "pnBody";
             pnBody.ShadowDecoration.CustomizableEdges = customizableEdges66;
-            pnBody.Size = new Size(988, 441);
+            pnBody.Size = new Size(1129, 588);
             pnBody.TabIndex = 4;
             // 
             // guna2Button32
@@ -291,16 +298,16 @@
             guna2Button32.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button32.Image = Properties.Resources.plus;
             guna2Button32.ImageAlign = HorizontalAlignment.Right;
-            guna2Button32.Location = new Point(762, 378);
-            guna2Button32.Margin = new Padding(3, 3, 3, 15);
+            guna2Button32.Location = new Point(871, 504);
+            guna2Button32.Margin = new Padding(3, 4, 3, 20);
             guna2Button32.Name = "guna2Button32";
             guna2Button32.ShadowDecoration.BorderRadius = 10;
             guna2Button32.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Button32.ShadowDecoration.Depth = 10;
             guna2Button32.ShadowDecoration.Enabled = true;
-            guna2Button32.Size = new Size(180, 45);
+            guna2Button32.Size = new Size(206, 60);
             guna2Button32.TabIndex = 1;
-            guna2Button32.Text = "guna2Button1";
+            guna2Button32.Text = "J2EE";
             guna2Button32.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button24
@@ -318,16 +325,16 @@
             guna2Button24.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button24.Image = Properties.Resources.plus;
             guna2Button24.ImageAlign = HorizontalAlignment.Right;
-            guna2Button24.Location = new Point(526, 378);
-            guna2Button24.Margin = new Padding(3, 3, 3, 15);
+            guna2Button24.Location = new Point(601, 504);
+            guna2Button24.Margin = new Padding(3, 4, 3, 20);
             guna2Button24.Name = "guna2Button24";
             guna2Button24.ShadowDecoration.BorderRadius = 10;
             guna2Button24.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Button24.ShadowDecoration.Depth = 10;
             guna2Button24.ShadowDecoration.Enabled = true;
-            guna2Button24.Size = new Size(180, 45);
+            guna2Button24.Size = new Size(206, 60);
             guna2Button24.TabIndex = 30;
-            guna2Button24.Text = "guna2Button1";
+            guna2Button24.Text = "Designer";
             guna2Button24.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button16
@@ -345,16 +352,16 @@
             guna2Button16.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button16.Image = Properties.Resources.plus;
             guna2Button16.ImageAlign = HorizontalAlignment.Right;
-            guna2Button16.Location = new Point(286, 378);
-            guna2Button16.Margin = new Padding(3, 3, 3, 15);
+            guna2Button16.Location = new Point(327, 504);
+            guna2Button16.Margin = new Padding(3, 4, 3, 20);
             guna2Button16.Name = "guna2Button16";
             guna2Button16.ShadowDecoration.BorderRadius = 10;
             guna2Button16.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2Button16.ShadowDecoration.Depth = 10;
             guna2Button16.ShadowDecoration.Enabled = true;
-            guna2Button16.Size = new Size(180, 45);
+            guna2Button16.Size = new Size(206, 60);
             guna2Button16.TabIndex = 29;
-            guna2Button16.Text = "guna2Button1";
+            guna2Button16.Text = "QA QC";
             guna2Button16.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button8
@@ -372,16 +379,16 @@
             guna2Button8.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button8.Image = Properties.Resources.plus;
             guna2Button8.ImageAlign = HorizontalAlignment.Right;
-            guna2Button8.Location = new Point(46, 378);
-            guna2Button8.Margin = new Padding(3, 3, 3, 15);
+            guna2Button8.Location = new Point(53, 504);
+            guna2Button8.Margin = new Padding(3, 4, 3, 20);
             guna2Button8.Name = "guna2Button8";
             guna2Button8.ShadowDecoration.BorderRadius = 10;
             guna2Button8.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2Button8.ShadowDecoration.Depth = 10;
             guna2Button8.ShadowDecoration.Enabled = true;
-            guna2Button8.Size = new Size(180, 45);
+            guna2Button8.Size = new Size(206, 60);
             guna2Button8.TabIndex = 28;
-            guna2Button8.Text = "guna2Button1";
+            guna2Button8.Text = "iOS";
             guna2Button8.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button31
@@ -399,16 +406,16 @@
             guna2Button31.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button31.Image = Properties.Resources.plus;
             guna2Button31.ImageAlign = HorizontalAlignment.Right;
-            guna2Button31.Location = new Point(762, 327);
-            guna2Button31.Margin = new Padding(3, 3, 3, 15);
+            guna2Button31.Location = new Point(871, 436);
+            guna2Button31.Margin = new Padding(3, 4, 3, 20);
             guna2Button31.Name = "guna2Button31";
             guna2Button31.ShadowDecoration.BorderRadius = 10;
             guna2Button31.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2Button31.ShadowDecoration.Depth = 10;
             guna2Button31.ShadowDecoration.Enabled = true;
-            guna2Button31.Size = new Size(180, 45);
+            guna2Button31.Size = new Size(206, 60);
             guna2Button31.TabIndex = 27;
-            guna2Button31.Text = "guna2Button1";
+            guna2Button31.Text = "Embedded";
             guna2Button31.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button23
@@ -426,16 +433,16 @@
             guna2Button23.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button23.Image = Properties.Resources.plus;
             guna2Button23.ImageAlign = HorizontalAlignment.Right;
-            guna2Button23.Location = new Point(526, 327);
-            guna2Button23.Margin = new Padding(3, 3, 3, 15);
+            guna2Button23.Location = new Point(601, 436);
+            guna2Button23.Margin = new Padding(3, 4, 3, 20);
             guna2Button23.Name = "guna2Button23";
             guna2Button23.ShadowDecoration.BorderRadius = 10;
             guna2Button23.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2Button23.ShadowDecoration.Depth = 10;
             guna2Button23.ShadowDecoration.Enabled = true;
-            guna2Button23.Size = new Size(180, 45);
+            guna2Button23.Size = new Size(206, 60);
             guna2Button23.TabIndex = 26;
-            guna2Button23.Text = "guna2Button1";
+            guna2Button23.Text = "System Engineer";
             guna2Button23.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button15
@@ -453,16 +460,16 @@
             guna2Button15.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button15.Image = Properties.Resources.plus;
             guna2Button15.ImageAlign = HorizontalAlignment.Right;
-            guna2Button15.Location = new Point(286, 327);
-            guna2Button15.Margin = new Padding(3, 3, 3, 15);
+            guna2Button15.Location = new Point(327, 436);
+            guna2Button15.Margin = new Padding(3, 4, 3, 20);
             guna2Button15.Name = "guna2Button15";
             guna2Button15.ShadowDecoration.BorderRadius = 10;
             guna2Button15.ShadowDecoration.CustomizableEdges = customizableEdges14;
             guna2Button15.ShadowDecoration.Depth = 10;
             guna2Button15.ShadowDecoration.Enabled = true;
-            guna2Button15.Size = new Size(180, 45);
+            guna2Button15.Size = new Size(206, 60);
             guna2Button15.TabIndex = 25;
-            guna2Button15.Text = "guna2Button1";
+            guna2Button15.Text = "Ruby On Rails";
             guna2Button15.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button7
@@ -480,16 +487,16 @@
             guna2Button7.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button7.Image = Properties.Resources.plus;
             guna2Button7.ImageAlign = HorizontalAlignment.Right;
-            guna2Button7.Location = new Point(46, 327);
-            guna2Button7.Margin = new Padding(3, 3, 3, 15);
+            guna2Button7.Location = new Point(53, 436);
+            guna2Button7.Margin = new Padding(3, 4, 3, 20);
             guna2Button7.Name = "guna2Button7";
             guna2Button7.ShadowDecoration.BorderRadius = 10;
             guna2Button7.ShadowDecoration.CustomizableEdges = customizableEdges16;
             guna2Button7.ShadowDecoration.Depth = 10;
             guna2Button7.ShadowDecoration.Enabled = true;
-            guna2Button7.Size = new Size(180, 45);
+            guna2Button7.Size = new Size(206, 60);
             guna2Button7.TabIndex = 24;
-            guna2Button7.Text = "guna2Button1";
+            guna2Button7.Text = "Android";
             guna2Button7.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button30
@@ -507,16 +514,16 @@
             guna2Button30.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button30.Image = Properties.Resources.plus;
             guna2Button30.ImageAlign = HorizontalAlignment.Right;
-            guna2Button30.Location = new Point(762, 276);
-            guna2Button30.Margin = new Padding(3, 3, 3, 15);
+            guna2Button30.Location = new Point(871, 368);
+            guna2Button30.Margin = new Padding(3, 4, 3, 20);
             guna2Button30.Name = "guna2Button30";
             guna2Button30.ShadowDecoration.BorderRadius = 10;
             guna2Button30.ShadowDecoration.CustomizableEdges = customizableEdges18;
             guna2Button30.ShadowDecoration.Depth = 10;
             guna2Button30.ShadowDecoration.Enabled = true;
-            guna2Button30.Size = new Size(180, 45);
+            guna2Button30.Size = new Size(206, 60);
             guna2Button30.TabIndex = 23;
-            guna2Button30.Text = "guna2Button1";
+            guna2Button30.Text = "ReactJS";
             guna2Button30.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button22
@@ -534,16 +541,16 @@
             guna2Button22.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button22.Image = Properties.Resources.plus;
             guna2Button22.ImageAlign = HorizontalAlignment.Right;
-            guna2Button22.Location = new Point(526, 276);
-            guna2Button22.Margin = new Padding(3, 3, 3, 15);
+            guna2Button22.Location = new Point(601, 368);
+            guna2Button22.Margin = new Padding(3, 4, 3, 20);
             guna2Button22.Name = "guna2Button22";
             guna2Button22.ShadowDecoration.BorderRadius = 10;
             guna2Button22.ShadowDecoration.CustomizableEdges = customizableEdges20;
             guna2Button22.ShadowDecoration.Depth = 10;
             guna2Button22.ShadowDecoration.Enabled = true;
-            guna2Button22.Size = new Size(180, 45);
+            guna2Button22.Size = new Size(206, 60);
             guna2Button22.TabIndex = 22;
-            guna2Button22.Text = "guna2Button1";
+            guna2Button22.Text = "NodeJS";
             guna2Button22.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button14
@@ -561,16 +568,16 @@
             guna2Button14.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button14.Image = Properties.Resources.plus;
             guna2Button14.ImageAlign = HorizontalAlignment.Right;
-            guna2Button14.Location = new Point(286, 276);
-            guna2Button14.Margin = new Padding(3, 3, 3, 15);
+            guna2Button14.Location = new Point(327, 368);
+            guna2Button14.Margin = new Padding(3, 4, 3, 20);
             guna2Button14.Name = "guna2Button14";
             guna2Button14.ShadowDecoration.BorderRadius = 10;
             guna2Button14.ShadowDecoration.CustomizableEdges = customizableEdges22;
             guna2Button14.ShadowDecoration.Depth = 10;
             guna2Button14.ShadowDecoration.Enabled = true;
-            guna2Button14.Size = new Size(180, 45);
+            guna2Button14.Size = new Size(206, 60);
             guna2Button14.TabIndex = 21;
-            guna2Button14.Text = "guna2Button1";
+            guna2Button14.Text = "Mobile Apps";
             guna2Button14.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button6
@@ -588,16 +595,16 @@
             guna2Button6.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button6.Image = Properties.Resources.plus;
             guna2Button6.ImageAlign = HorizontalAlignment.Right;
-            guna2Button6.Location = new Point(46, 276);
-            guna2Button6.Margin = new Padding(3, 3, 3, 15);
+            guna2Button6.Location = new Point(53, 368);
+            guna2Button6.Margin = new Padding(3, 4, 3, 20);
             guna2Button6.Name = "guna2Button6";
             guna2Button6.ShadowDecoration.BorderRadius = 10;
             guna2Button6.ShadowDecoration.CustomizableEdges = customizableEdges24;
             guna2Button6.ShadowDecoration.Depth = 10;
             guna2Button6.ShadowDecoration.Enabled = true;
-            guna2Button6.Size = new Size(180, 45);
+            guna2Button6.Size = new Size(206, 60);
             guna2Button6.TabIndex = 20;
-            guna2Button6.Text = "guna2Button1";
+            guna2Button6.Text = "SQL";
             guna2Button6.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button29
@@ -615,16 +622,16 @@
             guna2Button29.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button29.Image = Properties.Resources.plus;
             guna2Button29.ImageAlign = HorizontalAlignment.Right;
-            guna2Button29.Location = new Point(762, 225);
-            guna2Button29.Margin = new Padding(3, 3, 3, 15);
+            guna2Button29.Location = new Point(871, 300);
+            guna2Button29.Margin = new Padding(3, 4, 3, 20);
             guna2Button29.Name = "guna2Button29";
             guna2Button29.ShadowDecoration.BorderRadius = 10;
             guna2Button29.ShadowDecoration.CustomizableEdges = customizableEdges26;
             guna2Button29.ShadowDecoration.Depth = 10;
             guna2Button29.ShadowDecoration.Enabled = true;
-            guna2Button29.Size = new Size(180, 45);
+            guna2Button29.Size = new Size(206, 60);
             guna2Button29.TabIndex = 19;
-            guna2Button29.Text = "guna2Button1";
+            guna2Button29.Text = "MVC";
             guna2Button29.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button21
@@ -642,16 +649,16 @@
             guna2Button21.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button21.Image = Properties.Resources.plus;
             guna2Button21.ImageAlign = HorizontalAlignment.Right;
-            guna2Button21.Location = new Point(526, 225);
-            guna2Button21.Margin = new Padding(3, 3, 3, 15);
+            guna2Button21.Location = new Point(601, 300);
+            guna2Button21.Margin = new Padding(3, 4, 3, 20);
             guna2Button21.Name = "guna2Button21";
             guna2Button21.ShadowDecoration.BorderRadius = 10;
             guna2Button21.ShadowDecoration.CustomizableEdges = customizableEdges28;
             guna2Button21.ShadowDecoration.Depth = 10;
             guna2Button21.ShadowDecoration.Enabled = true;
-            guna2Button21.Size = new Size(180, 45);
+            guna2Button21.Size = new Size(206, 60);
             guna2Button21.TabIndex = 18;
-            guna2Button21.Text = "guna2Button1";
+            guna2Button21.Text = "Team Leader";
             guna2Button21.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button13
@@ -669,16 +676,16 @@
             guna2Button13.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button13.Image = Properties.Resources.plus;
             guna2Button13.ImageAlign = HorizontalAlignment.Right;
-            guna2Button13.Location = new Point(286, 225);
-            guna2Button13.Margin = new Padding(3, 3, 3, 15);
+            guna2Button13.Location = new Point(327, 300);
+            guna2Button13.Margin = new Padding(3, 4, 3, 20);
             guna2Button13.Name = "guna2Button13";
             guna2Button13.ShadowDecoration.BorderRadius = 10;
             guna2Button13.ShadowDecoration.CustomizableEdges = customizableEdges30;
             guna2Button13.ShadowDecoration.Depth = 10;
             guna2Button13.ShadowDecoration.Enabled = true;
-            guna2Button13.Size = new Size(180, 45);
+            guna2Button13.Size = new Size(206, 60);
             guna2Button13.TabIndex = 17;
-            guna2Button13.Text = "guna2Button1";
+            guna2Button13.Text = "Python";
             guna2Button13.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button5
@@ -696,16 +703,16 @@
             guna2Button5.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button5.Image = Properties.Resources.plus;
             guna2Button5.ImageAlign = HorizontalAlignment.Right;
-            guna2Button5.Location = new Point(46, 225);
-            guna2Button5.Margin = new Padding(3, 3, 3, 15);
+            guna2Button5.Location = new Point(53, 300);
+            guna2Button5.Margin = new Padding(3, 4, 3, 20);
             guna2Button5.Name = "guna2Button5";
             guna2Button5.ShadowDecoration.BorderRadius = 10;
             guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges32;
             guna2Button5.ShadowDecoration.Depth = 10;
             guna2Button5.ShadowDecoration.Enabled = true;
-            guna2Button5.Size = new Size(180, 45);
+            guna2Button5.Size = new Size(206, 60);
             guna2Button5.TabIndex = 16;
-            guna2Button5.Text = "guna2Button1";
+            guna2Button5.Text = "Manager";
             guna2Button5.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button28
@@ -723,16 +730,16 @@
             guna2Button28.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button28.Image = Properties.Resources.plus;
             guna2Button28.ImageAlign = HorizontalAlignment.Right;
-            guna2Button28.Location = new Point(762, 174);
-            guna2Button28.Margin = new Padding(3, 3, 3, 15);
+            guna2Button28.Location = new Point(871, 232);
+            guna2Button28.Margin = new Padding(3, 4, 3, 20);
             guna2Button28.Name = "guna2Button28";
             guna2Button28.ShadowDecoration.BorderRadius = 10;
             guna2Button28.ShadowDecoration.CustomizableEdges = customizableEdges34;
             guna2Button28.ShadowDecoration.Depth = 10;
             guna2Button28.ShadowDecoration.Enabled = true;
-            guna2Button28.Size = new Size(180, 45);
+            guna2Button28.Size = new Size(206, 60);
             guna2Button28.TabIndex = 15;
-            guna2Button28.Text = "guna2Button1";
+            guna2Button28.Text = "Oracle";
             guna2Button28.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button20
@@ -750,16 +757,16 @@
             guna2Button20.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button20.Image = Properties.Resources.plus;
             guna2Button20.ImageAlign = HorizontalAlignment.Right;
-            guna2Button20.Location = new Point(526, 174);
-            guna2Button20.Margin = new Padding(3, 3, 3, 15);
+            guna2Button20.Location = new Point(601, 232);
+            guna2Button20.Margin = new Padding(3, 4, 3, 20);
             guna2Button20.Name = "guna2Button20";
             guna2Button20.ShadowDecoration.BorderRadius = 10;
             guna2Button20.ShadowDecoration.CustomizableEdges = customizableEdges36;
             guna2Button20.ShadowDecoration.Depth = 10;
             guna2Button20.ShadowDecoration.Enabled = true;
-            guna2Button20.Size = new Size(180, 45);
+            guna2Button20.Size = new Size(206, 60);
             guna2Button20.TabIndex = 14;
-            guna2Button20.Text = "guna2Button1";
+            guna2Button20.Text = "Linux";
             guna2Button20.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button12
@@ -777,16 +784,16 @@
             guna2Button12.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button12.Image = Properties.Resources.plus;
             guna2Button12.ImageAlign = HorizontalAlignment.Right;
-            guna2Button12.Location = new Point(286, 174);
-            guna2Button12.Margin = new Padding(3, 3, 3, 15);
+            guna2Button12.Location = new Point(327, 232);
+            guna2Button12.Margin = new Padding(3, 4, 3, 20);
             guna2Button12.Name = "guna2Button12";
             guna2Button12.ShadowDecoration.BorderRadius = 10;
             guna2Button12.ShadowDecoration.CustomizableEdges = customizableEdges38;
             guna2Button12.ShadowDecoration.Depth = 10;
             guna2Button12.ShadowDecoration.Enabled = true;
-            guna2Button12.Size = new Size(180, 45);
+            guna2Button12.Size = new Size(206, 60);
             guna2Button12.TabIndex = 13;
-            guna2Button12.Text = "guna2Button1";
+            guna2Button12.Text = "Ruby";
             guna2Button12.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button4
@@ -804,16 +811,16 @@
             guna2Button4.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button4.Image = Properties.Resources.plus;
             guna2Button4.ImageAlign = HorizontalAlignment.Right;
-            guna2Button4.Location = new Point(46, 174);
-            guna2Button4.Margin = new Padding(3, 3, 3, 15);
+            guna2Button4.Location = new Point(53, 232);
+            guna2Button4.Margin = new Padding(3, 4, 3, 20);
             guna2Button4.Name = "guna2Button4";
             guna2Button4.ShadowDecoration.BorderRadius = 10;
             guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges40;
             guna2Button4.ShadowDecoration.Depth = 10;
             guna2Button4.ShadowDecoration.Enabled = true;
-            guna2Button4.Size = new Size(180, 45);
+            guna2Button4.Size = new Size(206, 60);
             guna2Button4.TabIndex = 12;
-            guna2Button4.Text = "guna2Button1";
+            guna2Button4.Text = "HTML5";
             guna2Button4.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button27
@@ -831,16 +838,16 @@
             guna2Button27.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button27.Image = Properties.Resources.plus;
             guna2Button27.ImageAlign = HorizontalAlignment.Right;
-            guna2Button27.Location = new Point(762, 123);
-            guna2Button27.Margin = new Padding(3, 3, 3, 15);
+            guna2Button27.Location = new Point(871, 164);
+            guna2Button27.Margin = new Padding(3, 4, 3, 20);
             guna2Button27.Name = "guna2Button27";
             guna2Button27.ShadowDecoration.BorderRadius = 10;
             guna2Button27.ShadowDecoration.CustomizableEdges = customizableEdges42;
             guna2Button27.ShadowDecoration.Depth = 10;
             guna2Button27.ShadowDecoration.Enabled = true;
-            guna2Button27.Size = new Size(180, 45);
+            guna2Button27.Size = new Size(206, 60);
             guna2Button27.TabIndex = 11;
-            guna2Button27.Text = "guna2Button1";
+            guna2Button27.Text = "OOP";
             guna2Button27.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button19
@@ -858,16 +865,16 @@
             guna2Button19.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button19.Image = Properties.Resources.plus;
             guna2Button19.ImageAlign = HorizontalAlignment.Right;
-            guna2Button19.Location = new Point(526, 123);
-            guna2Button19.Margin = new Padding(3, 3, 3, 15);
+            guna2Button19.Location = new Point(601, 164);
+            guna2Button19.Margin = new Padding(3, 4, 3, 20);
             guna2Button19.Name = "guna2Button19";
             guna2Button19.ShadowDecoration.BorderRadius = 10;
             guna2Button19.ShadowDecoration.CustomizableEdges = customizableEdges44;
             guna2Button19.ShadowDecoration.Depth = 10;
             guna2Button19.ShadowDecoration.Enabled = true;
-            guna2Button19.Size = new Size(180, 45);
+            guna2Button19.Size = new Size(206, 60);
             guna2Button19.TabIndex = 10;
-            guna2Button19.Text = "guna2Button1";
+            guna2Button19.Text = "Business Analyst";
             guna2Button19.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button11
@@ -885,16 +892,16 @@
             guna2Button11.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button11.Image = Properties.Resources.plus;
             guna2Button11.ImageAlign = HorizontalAlignment.Right;
-            guna2Button11.Location = new Point(286, 123);
-            guna2Button11.Margin = new Padding(3, 3, 3, 15);
+            guna2Button11.Location = new Point(327, 164);
+            guna2Button11.Margin = new Padding(3, 4, 3, 20);
             guna2Button11.Name = "guna2Button11";
             guna2Button11.ShadowDecoration.BorderRadius = 10;
             guna2Button11.ShadowDecoration.CustomizableEdges = customizableEdges46;
             guna2Button11.ShadowDecoration.Depth = 10;
             guna2Button11.ShadowDecoration.Enabled = true;
-            guna2Button11.Size = new Size(180, 45);
+            guna2Button11.Size = new Size(206, 60);
             guna2Button11.TabIndex = 9;
-            guna2Button11.Text = "guna2Button1";
+            guna2Button11.Text = "English";
             guna2Button11.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button3
@@ -912,16 +919,16 @@
             guna2Button3.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button3.Image = Properties.Resources.plus;
             guna2Button3.ImageAlign = HorizontalAlignment.Right;
-            guna2Button3.Location = new Point(46, 123);
-            guna2Button3.Margin = new Padding(3, 3, 3, 15);
+            guna2Button3.Location = new Point(53, 164);
+            guna2Button3.Margin = new Padding(3, 4, 3, 20);
             guna2Button3.Name = "guna2Button3";
             guna2Button3.ShadowDecoration.BorderRadius = 10;
             guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges48;
             guna2Button3.ShadowDecoration.Depth = 10;
             guna2Button3.ShadowDecoration.Enabled = true;
-            guna2Button3.Size = new Size(180, 45);
+            guna2Button3.Size = new Size(206, 60);
             guna2Button3.TabIndex = 8;
-            guna2Button3.Text = "guna2Button1";
+            guna2Button3.Text = "JavaScript";
             guna2Button3.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button26
@@ -939,16 +946,16 @@
             guna2Button26.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button26.Image = Properties.Resources.plus;
             guna2Button26.ImageAlign = HorizontalAlignment.Right;
-            guna2Button26.Location = new Point(762, 72);
-            guna2Button26.Margin = new Padding(3, 3, 3, 15);
+            guna2Button26.Location = new Point(871, 96);
+            guna2Button26.Margin = new Padding(3, 4, 3, 20);
             guna2Button26.Name = "guna2Button26";
             guna2Button26.ShadowDecoration.BorderRadius = 10;
             guna2Button26.ShadowDecoration.CustomizableEdges = customizableEdges50;
             guna2Button26.ShadowDecoration.Depth = 10;
             guna2Button26.ShadowDecoration.Enabled = true;
-            guna2Button26.Size = new Size(180, 45);
+            guna2Button26.Size = new Size(206, 60);
             guna2Button26.TabIndex = 7;
-            guna2Button26.Text = "guna2Button1";
+            guna2Button26.Text = "Project Manager";
             guna2Button26.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button18
@@ -966,16 +973,16 @@
             guna2Button18.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button18.Image = Properties.Resources.plus;
             guna2Button18.ImageAlign = HorizontalAlignment.Right;
-            guna2Button18.Location = new Point(526, 72);
-            guna2Button18.Margin = new Padding(3, 3, 3, 15);
+            guna2Button18.Location = new Point(601, 96);
+            guna2Button18.Margin = new Padding(3, 4, 3, 20);
             guna2Button18.Name = "guna2Button18";
             guna2Button18.ShadowDecoration.BorderRadius = 10;
             guna2Button18.ShadowDecoration.CustomizableEdges = customizableEdges52;
             guna2Button18.ShadowDecoration.Depth = 10;
             guna2Button18.ShadowDecoration.Enabled = true;
-            guna2Button18.Size = new Size(180, 45);
+            guna2Button18.Size = new Size(206, 60);
             guna2Button18.TabIndex = 6;
-            guna2Button18.Text = "guna2Button1";
+            guna2Button18.Text = ".NET";
             guna2Button18.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button10
@@ -993,16 +1000,16 @@
             guna2Button10.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button10.Image = Properties.Resources.plus;
             guna2Button10.ImageAlign = HorizontalAlignment.Right;
-            guna2Button10.Location = new Point(286, 72);
-            guna2Button10.Margin = new Padding(3, 3, 3, 15);
+            guna2Button10.Location = new Point(327, 96);
+            guna2Button10.Margin = new Padding(3, 4, 3, 20);
             guna2Button10.Name = "guna2Button10";
             guna2Button10.ShadowDecoration.BorderRadius = 10;
             guna2Button10.ShadowDecoration.CustomizableEdges = customizableEdges54;
             guna2Button10.ShadowDecoration.Depth = 10;
             guna2Button10.ShadowDecoration.Enabled = true;
-            guna2Button10.Size = new Size(180, 45);
+            guna2Button10.Size = new Size(206, 60);
             guna2Button10.TabIndex = 5;
-            guna2Button10.Text = "guna2Button1";
+            guna2Button10.Text = "Tester";
             guna2Button10.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button2
@@ -1020,16 +1027,16 @@
             guna2Button2.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button2.Image = Properties.Resources.plus;
             guna2Button2.ImageAlign = HorizontalAlignment.Right;
-            guna2Button2.Location = new Point(46, 72);
-            guna2Button2.Margin = new Padding(3, 3, 3, 15);
+            guna2Button2.Location = new Point(53, 96);
+            guna2Button2.Margin = new Padding(3, 4, 3, 20);
             guna2Button2.Name = "guna2Button2";
             guna2Button2.ShadowDecoration.BorderRadius = 10;
             guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges56;
             guna2Button2.ShadowDecoration.Depth = 10;
             guna2Button2.ShadowDecoration.Enabled = true;
-            guna2Button2.Size = new Size(180, 45);
+            guna2Button2.Size = new Size(206, 60);
             guna2Button2.TabIndex = 4;
-            guna2Button2.Text = "guna2Button1";
+            guna2Button2.Text = "PHP";
             guna2Button2.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button25
@@ -1047,16 +1054,16 @@
             guna2Button25.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button25.Image = Properties.Resources.plus;
             guna2Button25.ImageAlign = HorizontalAlignment.Right;
-            guna2Button25.Location = new Point(762, 21);
-            guna2Button25.Margin = new Padding(3, 3, 3, 15);
+            guna2Button25.Location = new Point(871, 28);
+            guna2Button25.Margin = new Padding(3, 4, 3, 20);
             guna2Button25.Name = "guna2Button25";
             guna2Button25.ShadowDecoration.BorderRadius = 10;
             guna2Button25.ShadowDecoration.CustomizableEdges = customizableEdges58;
             guna2Button25.ShadowDecoration.Depth = 10;
             guna2Button25.ShadowDecoration.Enabled = true;
-            guna2Button25.Size = new Size(180, 45);
+            guna2Button25.Size = new Size(206, 60);
             guna2Button25.TabIndex = 3;
-            guna2Button25.Text = "guna2Button1";
+            guna2Button25.Text = "UI-UX";
             guna2Button25.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button17
@@ -1074,16 +1081,16 @@
             guna2Button17.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button17.Image = Properties.Resources.plus;
             guna2Button17.ImageAlign = HorizontalAlignment.Right;
-            guna2Button17.Location = new Point(526, 21);
-            guna2Button17.Margin = new Padding(3, 3, 3, 15);
+            guna2Button17.Location = new Point(601, 28);
+            guna2Button17.Margin = new Padding(3, 4, 3, 20);
             guna2Button17.Name = "guna2Button17";
             guna2Button17.ShadowDecoration.BorderRadius = 10;
             guna2Button17.ShadowDecoration.CustomizableEdges = customizableEdges60;
             guna2Button17.ShadowDecoration.Depth = 10;
             guna2Button17.ShadowDecoration.Enabled = true;
-            guna2Button17.Size = new Size(180, 45);
+            guna2Button17.Size = new Size(206, 60);
             guna2Button17.TabIndex = 2;
-            guna2Button17.Text = "guna2Button1";
+            guna2Button17.Text = "Database";
             guna2Button17.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button9
@@ -1101,16 +1108,16 @@
             guna2Button9.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button9.Image = Properties.Resources.plus;
             guna2Button9.ImageAlign = HorizontalAlignment.Right;
-            guna2Button9.Location = new Point(286, 21);
-            guna2Button9.Margin = new Padding(3, 3, 3, 15);
+            guna2Button9.Location = new Point(327, 28);
+            guna2Button9.Margin = new Padding(3, 4, 3, 20);
             guna2Button9.Name = "guna2Button9";
             guna2Button9.ShadowDecoration.BorderRadius = 10;
             guna2Button9.ShadowDecoration.CustomizableEdges = customizableEdges62;
             guna2Button9.ShadowDecoration.Depth = 10;
             guna2Button9.ShadowDecoration.Enabled = true;
-            guna2Button9.Size = new Size(180, 45);
+            guna2Button9.Size = new Size(206, 60);
             guna2Button9.TabIndex = 31;
-            guna2Button9.Text = "guna2Button1";
+            guna2Button9.Text = "MySQL";
             guna2Button9.TextAlign = HorizontalAlignment.Left;
             // 
             // guna2Button1
@@ -1128,28 +1135,29 @@
             guna2Button1.ForeColor = Color.FromArgb(64, 64, 64);
             guna2Button1.Image = Properties.Resources.plus;
             guna2Button1.ImageAlign = HorizontalAlignment.Right;
-            guna2Button1.Location = new Point(46, 21);
-            guna2Button1.Margin = new Padding(3, 3, 3, 15);
+            guna2Button1.Location = new Point(53, 28);
+            guna2Button1.Margin = new Padding(3, 4, 3, 20);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.BorderRadius = 10;
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges64;
             guna2Button1.ShadowDecoration.Depth = 10;
             guna2Button1.ShadowDecoration.Enabled = true;
-            guna2Button1.Size = new Size(180, 45);
+            guna2Button1.Size = new Size(206, 60);
             guna2Button1.TabIndex = 32;
-            guna2Button1.Text = "guna2Button1";
+            guna2Button1.Text = "Java";
             guna2Button1.TextAlign = HorizontalAlignment.Left;
             // 
             // FJobSKills
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(238, 238, 238);
-            ClientSize = new Size(988, 565);
+            ClientSize = new Size(1129, 753);
             Controls.Add(pnBody);
             Controls.Add(guna2Panel2);
             Controls.Add(guna2Panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FJobSKills";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FJobSkills";

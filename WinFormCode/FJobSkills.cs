@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms;
+using ReaLTaiizor.Controls;
 using Syncfusion.XPS;
 using System;
 using System.Collections.Generic;
@@ -14,20 +15,23 @@ namespace WinFormProject.WinFormCode
 {
     public partial class FJobSKills : Form
     {
+        const int maxSkills = 3;
         public event EventHandler<List<string>> ListReady;
         List<string> skills = new List<string>();
-        public FJobSKills()
+        public FJobSKills(List<string> skills)
         {
             InitializeComponent();
+            this.skills = skills;
         }
 
         private void FJobSKills_Load(object sender, EventArgs e)
         {
             SetAllButtonClick(pnBody);
+            CheckList(pnBody);
         }
 
 
-        public void SetAllButtonClick(Panel panel)
+        public void SetAllButtonClick(Guna2Panel panel)
         {
             foreach (Control control in panel.Controls)
             {
@@ -36,8 +40,42 @@ namespace WinFormProject.WinFormCode
                     Guna2Button button = (Guna2Button)control;
                     button.Click += button_Click;
                 }
-                else if (control is Panel)
-                    SetAllButtonClick((Panel)control);
+                else if (control is Guna2Panel)
+                    SetAllButtonClick((Guna2Panel)control);
+            }
+        }
+
+        public void FirstClicked(Guna2Button button)
+        {
+            button.Image = Properties.Resources.approve;
+            button.FillColor = Color.FromArgb(248, 212, 187);
+            lblCountSkills.Text = (maxSkills - skills.Count).ToString() + " Skill(s) remaining";
+        }
+
+        public void SecondClicked(Guna2Button button)
+        {
+            button.Image = Properties.Resources.plus;
+            button.FillColor = Color.Silver;
+            lblCountSkills.Text = (maxSkills - skills.Count).ToString() + " Skill(s) remaining";
+        }
+
+        public void CheckList(Guna2Panel panel)
+        {
+            List<string> skillsCopy = new List<string>(skills);
+            foreach (Control control in panel.Controls)
+            {
+                if (control is Guna2Button button)
+                {
+                    foreach(string s in skillsCopy)
+                    {
+                        if (button.Text == s)
+                        {
+                            FirstClicked(button);
+                        }
+                    }
+                }
+                else if (control is Guna2Panel)
+                    CheckList((Guna2Panel)control);
             }
         }
 
@@ -56,45 +94,23 @@ namespace WinFormProject.WinFormCode
 
             if (buttonClickCount == 2)
             {
-                clickedButton.Image = Properties.Resources.plus;
-                clickedButton.FillColor = Color.Silver;
-                buttonClickCount = 0;
                 skills.Remove(clickedButton.Text);
-                lblCountSkills.Text = (3 - skills.Count).ToString() + " Skill(s) remaining";
+                SecondClicked(clickedButton);
+                buttonClickCount = 0;
             }
             else if (buttonClickCount == 1)
             {
-                if(skills.Count >= 3)
+                if (skills.Count >= 3)
                 {
                     MessageBox.Show("You can only choose 3 skills for each job!");
                     return;
                 }
-                clickedButton.Image = Properties.Resources.approve;
-                clickedButton.FillColor = Color.FromArgb(248, 212, 187);
                 skills.Add(clickedButton.Text);
-                lblCountSkills.Text = (3 - skills.Count).ToString() + " Skill(s) remaining";
+                FirstClicked(clickedButton);
             }
             clickedButton.Tag = buttonClickCount;
         }
 
-        private void ResetAllControls(Control parentControl)
-        {
-            skills.Clear();
-            foreach (Control control in parentControl.Controls)
-            {
-                if (control is Guna2Button button)
-                {
-                    button.Image = Properties.Resources.plus; // Assuming this is the default image
-                    button.FillColor = Color.Silver; // Assuming this is the default background color
-                    button.Tag = 0;
-                }
-                else if (control is Panel)
-                {
-                    ResetAllControls(control);
-                }
-            }
-            lblCountSkills.Text = (3 - skills.Count).ToString() + " Skill(s) remaining";
-        }
         private void PassListBackToListener()
         {
             ListReady?.Invoke(this, skills);
@@ -102,7 +118,6 @@ namespace WinFormProject.WinFormCode
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            ResetAllControls(pnBody);
             PassListBackToListener();
             this.Hide();
         }

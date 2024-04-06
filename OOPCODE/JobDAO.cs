@@ -38,12 +38,12 @@ namespace WinFormProject
             string strFetch = string.Format("Select JobName From Job where jobid = '{0}'", jobid);
             return conn.FetchScalar(strFetch);
         }
-        public void AddNewJob(string companyid, string jobname, string position, string salary, string requirement, string description, string benefit, string DateEnd)
+        public string AddNewJob(Job job)
         {
-            string sqlUpdate = string.Format("INSERT INTO Job (companyid, jobname, position, salary, description, requirement, benefit, DateEnd) " +
-                                     "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')",
-                                     companyid, jobname, position, salary, description, requirement, benefit, DateEnd);
-            conn.CRUD(sqlUpdate);
+            //string sqlUpdate = string.Format("INSERT INTO Job (companyid, jobname, position, salary, description, requirement, benefit, DateEnd) " +
+            //                         "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')",
+            //                         job.CompanyID, job.Name, job.Position, job.Salary, job.Description, job.Requirement, job.Benefit, job.DateEnd.ToString());
+            return conn.GetTheJobID(job);
         }
         public void DoneJob(string jobid)
         {
@@ -52,8 +52,8 @@ namespace WinFormProject
         }
         public void EditJob(Job job)
         {
-            string sqlUpdate = string.Format("UPDATE Job SET  jobname = '{0}', position = '{1}', salary = '{2}', description = '{3}', requirement = '{4}', benefit = '{5}', DateEnd = '{6}' WHERE jobid = '{7}'",
-                                             job.Name, job.Position, job.Salary, job.Description, job.Requirement, job.Benefit, job.DateEnd.ToString("yyyy-MM-dd"), job.Jobid);
+            string sqlUpdate = string.Format("UPDATE Job SET  jobname = '{0}', position = '{1}', salary = '{2}', description = '{3}', requirement = '{4}', benefit = '{5}', DateEnd = '{6}', workingform = '{7}' WHERE jobid = '{8}'",
+                                             job.Name, job.Position, job.Salary, job.Description, job.Requirement, job.Benefit, job.DateEnd.ToString("yyyy-MM-dd"), job.WorkingForm,job.Jobid);
             conn.CRUD(sqlUpdate);
         }
 
