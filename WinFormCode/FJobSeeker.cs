@@ -15,7 +15,7 @@ namespace WinFormProject
     public partial class FJobSeeker : Form
     {
         private Form currentFormChild = new Form();
-        private ReaLTaiizor.Controls.ParrotButton selectedButton;
+        private Guna.UI2.WinForms.Guna2Button selectedButton;
         private Information information = new Information();
         private JobSeeker jobSeeker = new JobSeeker();
         InformationDAO informationDAO = new InformationDAO();
@@ -35,9 +35,9 @@ namespace WinFormProject
         {
             foreach (Control c in control.Controls)
             {
-                if (c is ReaLTaiizor.Controls.ParrotButton)
+                if (c is Guna.UI2.WinForms.Guna2Button)
                 {
-                    ReaLTaiizor.Controls.ParrotButton button = (ReaLTaiizor.Controls.ParrotButton)c;
+                    Guna.UI2.WinForms.Guna2Button button = (Guna.UI2.WinForms.Guna2Button)c;
                     button.Click += button_Click;
                 }
             }
@@ -46,19 +46,23 @@ namespace WinFormProject
 
         private void button_Click(object sender, EventArgs e)
         {
-            ReaLTaiizor.Controls.ParrotButton clickedButton = (ReaLTaiizor.Controls.ParrotButton)sender;
+            Guna.UI2.WinForms.Guna2Button clickedButton = (Guna.UI2.WinForms.Guna2Button)sender;
 
             if (clickedButton == selectedButton)
                 return;
 
             if (selectedButton != null)
             {
-                selectedButton.BackgroundColor = Color.FromArgb(236, 247, 251);
+                selectedButton.FillColor = Color.Transparent;
+                selectedButton.Font = new Font("Cooper Black", 12f);
+                selectedButton.ForeColor = Color.White;
                 selectedButton.Enabled = true;
             }
 
-            clickedButton.BackgroundColor = Color.White;
-            clickedButton.Enabled = false;
+            clickedButton.FillColor = Color.FromArgb(220, 251, 251);
+            clickedButton.Font = new Font("Cooper Black", 16.2f);
+            clickedButton.ForeColor = Color.Black;
+            //clickedButton.Enabled = false;
             selectedButton = clickedButton;
         }
 
@@ -116,7 +120,9 @@ namespace WinFormProject
             }
             else if (dialogResult == DialogResult.No)
             {
-                selectedButton.BackColor = Color.FromArgb(64, 64, 64);
+                selectedButton.BackColor = Color.Transparent;
+                selectedButton.Font = new Font("Cooper Black", 12f);
+                selectedButton.ForeColor = Color.White;
                 selectedButton.Enabled = true;
             }
         }

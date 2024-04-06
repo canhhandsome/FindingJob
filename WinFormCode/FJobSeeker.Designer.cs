@@ -28,15 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FJobSeeker));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroControlBox4 = new ReaLTaiizor.Controls.MetroControlBox();
             this.metroControlBox3 = new ReaLTaiizor.Controls.MetroControlBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnLogOut = new ReaLTaiizor.Controls.ParrotButton();
-            this.btnSetting = new ReaLTaiizor.Controls.ParrotButton();
-            this.btnJobAlert = new ReaLTaiizor.Controls.ParrotButton();
-            this.btnSearchJob = new ReaLTaiizor.Controls.ParrotButton();
+            this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSetting = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSearchJob = new Guna.UI2.WinForms.Guna2Button();
+            this.btnJobAlert = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnBody = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -114,8 +122,8 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(59)))), ((int)(((byte)(96)))));
             this.panel2.Controls.Add(this.btnLogOut);
             this.panel2.Controls.Add(this.btnSetting);
-            this.panel2.Controls.Add(this.btnJobAlert);
             this.panel2.Controls.Add(this.btnSearchJob);
+            this.panel2.Controls.Add(this.btnJobAlert);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 32);
@@ -126,99 +134,130 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.btnLogOut.ButtonImage = ((System.Drawing.Image)(resources.GetObject("btnLogOut.ButtonImage")));
-            this.btnLogOut.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
-            this.btnLogOut.ButtonText = "Log Out";
-            this.btnLogOut.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.btnLogOut.ClickTextColor = System.Drawing.Color.Black;
-            this.btnLogOut.CornerRadius = 5;
-            this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLogOut.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.btnLogOut.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.btnLogOut.HoverTextColor = System.Drawing.Color.Black;
-            this.btnLogOut.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.btnLogOut.Location = new System.Drawing.Point(14, 496);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLogOut.BorderRadius = 20;
+            this.btnLogOut.CustomizableEdges = customizableEdges1;
+            this.btnLogOut.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogOut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogOut.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLogOut.FillColor = System.Drawing.Color.Transparent;
+            this.btnLogOut.Font = new System.Drawing.Font("Cooper Black", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnLogOut.ForeColor = System.Drawing.Color.White;
+            this.btnLogOut.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.btnLogOut.HoverState.Font = new System.Drawing.Font("Cooper Black", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnLogOut.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnLogOut.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
+            this.btnLogOut.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLogOut.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnLogOut.Location = new System.Drawing.Point(0, 446);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(5);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(203, 95);
-            this.btnLogOut.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnLogOut.TabIndex = 13;
-            this.btnLogOut.TextColor = System.Drawing.Color.Black;
-            this.btnLogOut.TextRenderingType = System.Drawing.Text.TextRenderingHint.SingleBitPerPixel;
-            this.btnLogOut.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnLogOut.ShadowDecoration.Color = System.Drawing.Color.White;
+            this.btnLogOut.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.btnLogOut.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(2);
+            this.btnLogOut.Size = new System.Drawing.Size(231, 95);
+            this.btnLogOut.TabIndex = 4;
+            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnSetting
             // 
-            this.btnSetting.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.btnSetting.ButtonImage = ((System.Drawing.Image)(resources.GetObject("btnSetting.ButtonImage")));
-            this.btnSetting.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
-            this.btnSetting.ButtonText = "Profile";
-            this.btnSetting.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.btnSetting.ClickTextColor = System.Drawing.Color.Black;
-            this.btnSetting.CornerRadius = 5;
-            this.btnSetting.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSetting.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.btnSetting.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.btnSetting.HoverTextColor = System.Drawing.Color.Black;
-            this.btnSetting.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.btnSetting.Location = new System.Drawing.Point(14, 391);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSetting.BackColor = System.Drawing.Color.Transparent;
+            this.btnSetting.BorderRadius = 20;
+            this.btnSetting.CustomizableEdges = customizableEdges3;
+            this.btnSetting.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSetting.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSetting.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSetting.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSetting.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSetting.FillColor = System.Drawing.Color.Transparent;
+            this.btnSetting.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSetting.ForeColor = System.Drawing.Color.White;
+            this.btnSetting.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.btnSetting.HoverState.Font = new System.Drawing.Font("Cooper Black", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSetting.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnSetting.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
+            this.btnSetting.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSetting.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSetting.Location = new System.Drawing.Point(0, 351);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(5);
             this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(203, 95);
-            this.btnSetting.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnSetting.TabIndex = 13;
-            this.btnSetting.TextColor = System.Drawing.Color.Black;
-            this.btnSetting.TextRenderingType = System.Drawing.Text.TextRenderingHint.SingleBitPerPixel;
-            this.btnSetting.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            // 
-            // btnJobAlert
-            // 
-            this.btnJobAlert.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.btnJobAlert.ButtonImage = ((System.Drawing.Image)(resources.GetObject("btnJobAlert.ButtonImage")));
-            this.btnJobAlert.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
-            this.btnJobAlert.ButtonText = "Job Alert";
-            this.btnJobAlert.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.btnJobAlert.ClickTextColor = System.Drawing.Color.Black;
-            this.btnJobAlert.CornerRadius = 5;
-            this.btnJobAlert.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnJobAlert.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.btnJobAlert.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.btnJobAlert.HoverTextColor = System.Drawing.Color.Black;
-            this.btnJobAlert.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.btnJobAlert.Location = new System.Drawing.Point(14, 287);
-            this.btnJobAlert.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnJobAlert.Name = "btnJobAlert";
-            this.btnJobAlert.Size = new System.Drawing.Size(203, 95);
-            this.btnJobAlert.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnJobAlert.TabIndex = 13;
-            this.btnJobAlert.TextColor = System.Drawing.Color.Black;
-            this.btnJobAlert.TextRenderingType = System.Drawing.Text.TextRenderingHint.SingleBitPerPixel;
-            this.btnJobAlert.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnSetting.ShadowDecoration.Color = System.Drawing.Color.White;
+            this.btnSetting.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.btnSetting.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(2);
+            this.btnSetting.Size = new System.Drawing.Size(231, 95);
+            this.btnSetting.TabIndex = 16;
+            this.btnSetting.Text = "Profile";
+            this.btnSetting.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // btnSearchJob
             // 
-            this.btnSearchJob.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.btnSearchJob.ButtonImage = ((System.Drawing.Image)(resources.GetObject("btnSearchJob.ButtonImage")));
-            this.btnSearchJob.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
-            this.btnSearchJob.ButtonText = "Search Job";
-            this.btnSearchJob.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.btnSearchJob.ClickTextColor = System.Drawing.Color.Black;
-            this.btnSearchJob.CornerRadius = 5;
-            this.btnSearchJob.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSearchJob.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.btnSearchJob.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.btnSearchJob.HoverTextColor = System.Drawing.Color.Black;
-            this.btnSearchJob.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            this.btnSearchJob.Location = new System.Drawing.Point(14, 181);
-            this.btnSearchJob.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSearchJob.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearchJob.BorderRadius = 20;
+            this.btnSearchJob.CustomizableEdges = customizableEdges5;
+            this.btnSearchJob.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchJob.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchJob.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearchJob.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearchJob.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSearchJob.FillColor = System.Drawing.Color.Transparent;
+            this.btnSearchJob.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSearchJob.ForeColor = System.Drawing.Color.White;
+            this.btnSearchJob.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.btnSearchJob.HoverState.Font = new System.Drawing.Font("Cooper Black", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSearchJob.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnSearchJob.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btnSearchJob.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchJob.Image")));
+            this.btnSearchJob.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSearchJob.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSearchJob.Location = new System.Drawing.Point(0, 256);
+            this.btnSearchJob.Margin = new System.Windows.Forms.Padding(5);
             this.btnSearchJob.Name = "btnSearchJob";
-            this.btnSearchJob.Size = new System.Drawing.Size(203, 95);
-            this.btnSearchJob.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnSearchJob.TabIndex = 13;
-            this.btnSearchJob.TextColor = System.Drawing.Color.Black;
-            this.btnSearchJob.TextRenderingType = System.Drawing.Text.TextRenderingHint.SingleBitPerPixel;
-            this.btnSearchJob.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnSearchJob.ShadowDecoration.Color = System.Drawing.Color.White;
+            this.btnSearchJob.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.btnSearchJob.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(2);
+            this.btnSearchJob.Size = new System.Drawing.Size(231, 95);
+            this.btnSearchJob.TabIndex = 14;
+            this.btnSearchJob.Text = "Search Job";
+            this.btnSearchJob.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSearchJob.Click += new System.EventHandler(this.btnSearchJob_Click);
+            // 
+            // btnJobAlert
+            // 
+            this.btnJobAlert.BackColor = System.Drawing.Color.Transparent;
+            this.btnJobAlert.BorderRadius = 20;
+            this.btnJobAlert.CustomizableEdges = customizableEdges7;
+            this.btnJobAlert.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnJobAlert.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnJobAlert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnJobAlert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnJobAlert.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnJobAlert.FillColor = System.Drawing.Color.Transparent;
+            this.btnJobAlert.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnJobAlert.ForeColor = System.Drawing.Color.White;
+            this.btnJobAlert.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.btnJobAlert.HoverState.Font = new System.Drawing.Font("Cooper Black", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnJobAlert.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnJobAlert.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.btnJobAlert.Image = ((System.Drawing.Image)(resources.GetObject("btnJobAlert.Image")));
+            this.btnJobAlert.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnJobAlert.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnJobAlert.Location = new System.Drawing.Point(0, 161);
+            this.btnJobAlert.Margin = new System.Windows.Forms.Padding(5);
+            this.btnJobAlert.Name = "btnJobAlert";
+            this.btnJobAlert.ShadowDecoration.Color = System.Drawing.Color.White;
+            this.btnJobAlert.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            this.btnJobAlert.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(2);
+            this.btnJobAlert.Size = new System.Drawing.Size(231, 95);
+            this.btnJobAlert.TabIndex = 15;
+            this.btnJobAlert.Text = "Job Alert";
+            this.btnJobAlert.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnJobAlert.Click += new System.EventHandler(this.btnJobAlert_Click);
             // 
             // pictureBox2
             // 
@@ -255,6 +294,7 @@
             this.Name = "FJobSeeker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "d";
+            this.Load += new System.EventHandler(this.FJobSeeker_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -271,9 +311,9 @@
         private PictureBox pictureBox2;
         private ReaLTaiizor.Controls.MetroControlBox metroControlBox4;
         private Panel pnBody;
-        private ReaLTaiizor.Controls.ParrotButton btnSearchJob;
-        private ReaLTaiizor.Controls.ParrotButton btnLogOut;
-        private ReaLTaiizor.Controls.ParrotButton btnSetting;
-        private ReaLTaiizor.Controls.ParrotButton btnJobAlert;
+        private Guna.UI2.WinForms.Guna2Button btnSetting;
+        private Guna.UI2.WinForms.Guna2Button btnJobAlert;
+        private Guna.UI2.WinForms.Guna2Button btnSearchJob;
+        private Guna.UI2.WinForms.Guna2Button btnLogOut;
     }
 }
