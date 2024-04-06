@@ -8,7 +8,7 @@ namespace WinFormProject
 {
     public class Company
     {
-        string companytype, companysize,taxidentification,description,websitelink,workingtimebegin,workingtimeend;
+        string companytype, companysize,taxidentification,description,websitelink,workingtimebegin,workingtimeend,workingform;
         CompanyDAO companyDAO = new CompanyDAO();
         JobDAO jobDao = new JobDAO();
         Information information = new Information();

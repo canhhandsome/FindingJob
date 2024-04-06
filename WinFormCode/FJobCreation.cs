@@ -64,9 +64,9 @@ namespace WinFormProject
             List<string> skills = new List<string>();
             foreach (BtnSkill button in flpSkills.Controls.OfType<BtnSkill>())
             {
-                skills.Add(button.Text);   
+                skills.Add(button.Text);
             }
-            Job job = new Job(companyid,txtJobName.Text,cbbExperience.Text,txtSalary.Text,rtxtjobrequirement.Text,rtxtdescription.Text,rtxtBenefit.Text, cbbWorkingForm.Text, dtpDateEnd.Value);
+            Job job = new Job(companyid, txtJobName.Text, cbbExperience.Text, txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, rtxtBenefit.Text, cbbWorkingForm.Text, dtpDateEnd.Value);
             string jobID = jobDAO.AddNewJob(job);
             SkillList sll = new SkillList(jobID, skills);
             slDAO.AddSkillList(sll);

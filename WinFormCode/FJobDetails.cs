@@ -26,17 +26,18 @@ namespace WinFormProject
             this.job = job;
             this.jsID = jsID;
             company = companyDAO.FetchCompanyInformationBasedOnID(job.CompanyID);
-            SetForm();
+            FillForm();
             SetApplyButton();
         }
 
-        private void SetForm()
+        private void FillForm()
         {
             lblWorkingTime.ForeColor = Color.FromArgb(166, 166, 166);
             lblAddress.ForeColor = Color.FromArgb(166, 166, 166);
             lblWorkingTime.ForeColor = Color.FromArgb(166, 166, 166);
             lblCompanySize.ForeColor = Color.FromArgb(166, 166, 166);
             lblCompanyType.ForeColor = Color.FromArgb(166, 166, 166);
+            btnApply.ColorBackground = Color.FromArgb(237, 27, 47);
             lblJobName.Text = job.Name;
             lblCompany.Text = company.INFO.Name;
             lblSalary.Text = job.Salary;
@@ -52,12 +53,13 @@ namespace WinFormProject
             lblCompanyTypeText.Text = company.CompanyType;
             lblWorkingTimeText.Text = company.WorkingTimeBegin + " to " + company.WorkingTimeEnd;
             lblAddressText.Text = company.INFO.Address;
-            if(company.ImageForJob.Count == 0)
+            if (company.ImageForJob.Count == 0)
             {
                 UCCarousel carousel = new UCCarousel();
                 pnCarousel.Controls.Add(carousel);
                 carousel.Dock = DockStyle.Fill;
-            } else
+            }
+            else
             {
                 UCCarousel carousel = new UCCarousel(company.ImageForJob);
                 pnCarousel.Controls.Add(carousel);

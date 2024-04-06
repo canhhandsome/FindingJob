@@ -14,6 +14,7 @@ namespace WinFormProject
     public partial class FSearchJob : Form
     {
         private List<Job> jobs = new List<Job>();
+        private List<Job> filterjobs = new List<Job>();
         string jsID;
         FFilter fFilter;
         JobDAO jobDAO = new JobDAO();
@@ -25,6 +26,24 @@ namespace WinFormProject
             fFilter = new FFilter(jobs);
             FillJob(this.jobs);
             fFilter.ListReady += fFilter_ListReady;
+            
+        }
+        private void UCInformation_SkillButtonClicked(object sender, string skillText)
+        {
+            filterjobs.Clear();
+            foreach(Job job in jobs)
+            {
+                foreach(string s in job.SkillList)
+                {
+                    if(s == skillText)
+                    {
+                        filterjobs.Add(job);
+                        break;
+                    }
+                }
+            }
+
+            FillJob(this.filterjobs);
         }
         private void fFilter_ListReady(object sender, List<Job> e)
         {
@@ -51,6 +70,13 @@ namespace WinFormProject
                 if (count == 4)
                 {
                     count = 0;
+                }
+            }
+            foreach (Control control in flpJob.Controls)
+            {
+                if (control is UCInformation ucInfo)
+                {
+                    ucInfo.SkillButtonClicked += UCInformation_SkillButtonClicked;
                 }
             }
         }

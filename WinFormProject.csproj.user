@@ -5,6 +5,9 @@
     <Compile Update="WinFormCode\BtnSkill.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="WinFormCode\BtnSkillShow.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Update="WinFormCode\FAdmin.cs">
       <SubType>Form</SubType>
     </Compile>

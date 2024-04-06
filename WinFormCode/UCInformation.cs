@@ -14,6 +14,7 @@ namespace WinFormProject
 {
     public partial class UCInformation : UserControl
     {
+        public event EventHandler<string> SkillButtonClicked;
         private Job job = new Job();
         CompanyDAO companyDAO = new CompanyDAO();
         string jsID = string.Empty;
@@ -33,9 +34,20 @@ namespace WinFormProject
             lblDateT.Text = $"Posted {PublishTime()}";
             lblNameT.Text = job.Name;
             lblAddressT.Text = company.INFO.Address;
-            lblWorkingFormT.Text = company.WorkingTimeBegin;
+            lblWorkingFormT.Text = job.WorkingForm;
             if (company.Avatar != null) ptbCompanyPicture.Image = company.Avatar;
-
+            foreach (string s in job.SkillList)
+            {
+                if (s != "NULL")
+                {
+                    BtnSkillShow btnkillshow = new BtnSkillShow();
+                    btnkillshow.Click += BtnSkill_Click;
+                    btnkillshow.Text = s;
+                    btnkillshow.Show();
+                    flpSkills.Width += btnkillshow.Width + 10;
+                    flpSkills.Controls.Add(btnkillshow);
+                }
+            }
         }
 
         private string PublishTime()
@@ -65,6 +77,24 @@ namespace WinFormProject
             FJobDetails jobDetails = new FJobDetails(job, jsID);
             jobDetails.Show();
         }
+        private void BtnSkill_Click(object sender, EventArgs e)
+        {
+            // When a skill button is clicked, raise the event and pass the skill text
+            if (sender is BtnSkillShow btnSkill)
+            {
+                string skillText = btnSkill.Text;
+                SkillButtonClicked?.Invoke(this, skillText);
+            }
+        }
+
+
+
+
+
+
+
+
+
 
 
         private int radius = 60;
