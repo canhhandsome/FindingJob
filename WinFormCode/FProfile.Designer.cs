@@ -134,8 +134,8 @@ namespace WinFormProject
             txtFullName.CustomizableEdges = customizableEdges1;
             txtFullName.DefaultText = "";
             txtFullName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtFullName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtFullName.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtFullName.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtFullName.DisabledState.ForeColor = Color.Black;
             txtFullName.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtFullName.FillColor = Color.FromArgb(248, 212, 187);
             txtFullName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
@@ -158,8 +158,8 @@ namespace WinFormProject
             txtAddress.CustomizableEdges = customizableEdges3;
             txtAddress.DefaultText = "";
             txtAddress.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtAddress.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtAddress.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtAddress.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtAddress.DisabledState.ForeColor = Color.Black;
             txtAddress.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtAddress.FillColor = Color.FromArgb(248, 212, 187);
             txtAddress.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
@@ -182,8 +182,8 @@ namespace WinFormProject
             txtPhoneNumber.CustomizableEdges = customizableEdges5;
             txtPhoneNumber.DefaultText = "";
             txtPhoneNumber.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtPhoneNumber.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtPhoneNumber.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtPhoneNumber.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtPhoneNumber.DisabledState.ForeColor = Color.Black;
             txtPhoneNumber.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtPhoneNumber.FillColor = Color.FromArgb(248, 212, 187);
             txtPhoneNumber.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
@@ -206,8 +206,8 @@ namespace WinFormProject
             txtCitizenID.CustomizableEdges = customizableEdges7;
             txtCitizenID.DefaultText = "";
             txtCitizenID.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtCitizenID.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtCitizenID.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtCitizenID.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtCitizenID.DisabledState.ForeColor = Color.Black;
             txtCitizenID.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtCitizenID.FillColor = Color.FromArgb(248, 212, 187);
             txtCitizenID.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
@@ -230,8 +230,8 @@ namespace WinFormProject
             txtEmail.CustomizableEdges = customizableEdges9;
             txtEmail.DefaultText = "";
             txtEmail.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtEmail.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtEmail.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtEmail.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtEmail.DisabledState.ForeColor = Color.Black;
             txtEmail.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtEmail.FillColor = Color.FromArgb(248, 212, 187);
             txtEmail.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);

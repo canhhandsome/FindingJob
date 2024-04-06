@@ -55,12 +55,14 @@ namespace WinFormProject
             this.ptbCV.Visible = true;
             this.btnCV.Visible = false;
             this.btnCancel.Visible = true;
-            txtFullName.ReadOnly = false;
-            txtAddress.ReadOnly = false;
-            txtCitizenID.ReadOnly = false;
-            txtEmail.ReadOnly = false;
-            txtPhoneNumber.ReadOnly = false;
+            txtFullName.Enabled = false;
+            txtAddress.Enabled = false;
+            txtCitizenID.Enabled = false;
+            txtEmail.Enabled = false;
+            txtPhoneNumber.Enabled = false;
             dtpkBirthDate.Enabled = true;
+            rdoMale.Enabled = true;
+            rdoFemale.Enabled = true;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -79,12 +81,14 @@ namespace WinFormProject
             this.ptbCV.Visible = true;
             this.btnCV.Visible = true;
             this.btnCancel.Visible = false;
-            txtFullName.ReadOnly = true;
-            txtAddress.ReadOnly = true;
-            txtCitizenID.ReadOnly = true;
-            txtEmail.ReadOnly = true;
-            txtPhoneNumber.ReadOnly = true;
+            txtFullName.Enabled = true;
+            txtAddress.Enabled = true;
+            txtCitizenID.Enabled = true;
+            txtEmail.Enabled = true;
+            txtPhoneNumber.Enabled = true;
             dtpkBirthDate.Enabled = false;
+            rdoFemale.Enabled = false;
+            rdoMale.Enabled = false;
         }
         private void btnChooseNewCV_Click(object sender, EventArgs e)
         {

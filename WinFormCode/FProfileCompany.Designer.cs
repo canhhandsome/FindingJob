@@ -160,15 +160,15 @@
             txtCompanyName.CustomizableEdges = customizableEdges1;
             txtCompanyName.DefaultText = "";
             txtCompanyName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtCompanyName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtCompanyName.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtCompanyName.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtCompanyName.DisabledState.ForeColor = Color.Black;
             txtCompanyName.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtCompanyName.FillColor = Color.FromArgb(248, 212, 187);
             txtCompanyName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtCompanyName.Font = new Font("Verdana", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCompanyName.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtCompanyName.ForeColor = Color.Black;
             txtCompanyName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtCompanyName.Location = new Point(43, 86);
+            txtCompanyName.Location = new Point(43, 89);
             txtCompanyName.Margin = new Padding(5, 3, 5, 3);
             txtCompanyName.Multiline = true;
             txtCompanyName.Name = "txtCompanyName";
@@ -176,7 +176,7 @@
             txtCompanyName.PlaceholderText = "";
             txtCompanyName.SelectedText = "";
             txtCompanyName.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtCompanyName.Size = new Size(355, 59);
+            txtCompanyName.Size = new Size(355, 64);
             txtCompanyName.TabIndex = 59;
             // 
             // txtAddress
@@ -185,15 +185,15 @@
             txtAddress.CustomizableEdges = customizableEdges3;
             txtAddress.DefaultText = "";
             txtAddress.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtAddress.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtAddress.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtAddress.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtAddress.DisabledState.ForeColor = Color.Black;
             txtAddress.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtAddress.FillColor = Color.FromArgb(248, 212, 187);
             txtAddress.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtAddress.Font = new Font("Verdana", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point);
+            txtAddress.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtAddress.ForeColor = Color.Black;
             txtAddress.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtAddress.Location = new Point(492, 86);
+            txtAddress.Location = new Point(492, 93);
             txtAddress.Margin = new Padding(5, 3, 5, 3);
             txtAddress.Multiline = true;
             txtAddress.Name = "txtAddress";
@@ -201,7 +201,7 @@
             txtAddress.PlaceholderText = "";
             txtAddress.SelectedText = "";
             txtAddress.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtAddress.Size = new Size(355, 59);
+            txtAddress.Size = new Size(355, 64);
             txtAddress.TabIndex = 60;
             // 
             // txtPhoneNumber
@@ -210,12 +210,12 @@
             txtPhoneNumber.CustomizableEdges = customizableEdges5;
             txtPhoneNumber.DefaultText = "";
             txtPhoneNumber.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtPhoneNumber.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtPhoneNumber.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtPhoneNumber.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtPhoneNumber.DisabledState.ForeColor = Color.Black;
             txtPhoneNumber.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtPhoneNumber.FillColor = Color.FromArgb(248, 212, 187);
             txtPhoneNumber.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPhoneNumber.Font = new Font("Verdana", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPhoneNumber.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtPhoneNumber.ForeColor = Color.Black;
             txtPhoneNumber.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtPhoneNumber.Location = new Point(43, 204);
@@ -226,7 +226,7 @@
             txtPhoneNumber.PlaceholderText = "";
             txtPhoneNumber.SelectedText = "";
             txtPhoneNumber.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtPhoneNumber.Size = new Size(355, 59);
+            txtPhoneNumber.Size = new Size(355, 64);
             txtPhoneNumber.TabIndex = 61;
             // 
             // txtTaxIdentification
@@ -235,12 +235,12 @@
             txtTaxIdentification.CustomizableEdges = customizableEdges7;
             txtTaxIdentification.DefaultText = "";
             txtTaxIdentification.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtTaxIdentification.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtTaxIdentification.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtTaxIdentification.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtTaxIdentification.DisabledState.ForeColor = Color.Black;
             txtTaxIdentification.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtTaxIdentification.FillColor = Color.FromArgb(248, 212, 187);
             txtTaxIdentification.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTaxIdentification.Font = new Font("Verdana", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point);
+            txtTaxIdentification.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtTaxIdentification.ForeColor = Color.Black;
             txtTaxIdentification.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTaxIdentification.Location = new Point(492, 204);
@@ -251,7 +251,7 @@
             txtTaxIdentification.PlaceholderText = "";
             txtTaxIdentification.SelectedText = "";
             txtTaxIdentification.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            txtTaxIdentification.Size = new Size(355, 59);
+            txtTaxIdentification.Size = new Size(355, 64);
             txtTaxIdentification.TabIndex = 62;
             // 
             // txtEmail
@@ -260,15 +260,15 @@
             txtEmail.CustomizableEdges = customizableEdges9;
             txtEmail.DefaultText = "";
             txtEmail.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtEmail.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtEmail.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtEmail.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtEmail.DisabledState.ForeColor = Color.Black;
             txtEmail.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtEmail.FillColor = Color.FromArgb(248, 212, 187);
             txtEmail.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtEmail.Font = new Font("Verdana", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEmail.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtEmail.ForeColor = Color.Black;
             txtEmail.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtEmail.Location = new Point(43, 312);
+            txtEmail.Location = new Point(43, 315);
             txtEmail.Margin = new Padding(5, 3, 5, 3);
             txtEmail.Multiline = true;
             txtEmail.Name = "txtEmail";
@@ -276,7 +276,7 @@
             txtEmail.PlaceholderText = "";
             txtEmail.SelectedText = "";
             txtEmail.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtEmail.Size = new Size(355, 59);
+            txtEmail.Size = new Size(355, 64);
             txtEmail.TabIndex = 63;
             // 
             // txtWebsiteLink
@@ -285,15 +285,15 @@
             txtWebsiteLink.CustomizableEdges = customizableEdges11;
             txtWebsiteLink.DefaultText = "";
             txtWebsiteLink.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtWebsiteLink.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtWebsiteLink.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtWebsiteLink.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtWebsiteLink.DisabledState.ForeColor = Color.Black;
             txtWebsiteLink.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtWebsiteLink.FillColor = Color.FromArgb(248, 212, 187);
             txtWebsiteLink.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtWebsiteLink.Font = new Font("Verdana", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point);
+            txtWebsiteLink.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtWebsiteLink.ForeColor = Color.Black;
             txtWebsiteLink.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtWebsiteLink.Location = new Point(492, 312);
+            txtWebsiteLink.Location = new Point(492, 315);
             txtWebsiteLink.Margin = new Padding(5, 3, 5, 3);
             txtWebsiteLink.Multiline = true;
             txtWebsiteLink.Name = "txtWebsiteLink";
@@ -301,7 +301,7 @@
             txtWebsiteLink.PlaceholderText = "";
             txtWebsiteLink.SelectedText = "";
             txtWebsiteLink.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            txtWebsiteLink.Size = new Size(355, 59);
+            txtWebsiteLink.Size = new Size(355, 64);
             txtWebsiteLink.TabIndex = 64;
             // 
             // cbbCompanyType
@@ -309,6 +309,8 @@
             cbbCompanyType.BackColor = Color.Transparent;
             cbbCompanyType.BorderRadius = 10;
             cbbCompanyType.CustomizableEdges = customizableEdges13;
+            cbbCompanyType.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            cbbCompanyType.DisabledState.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             cbbCompanyType.DrawMode = DrawMode.OwnerDrawFixed;
             cbbCompanyType.DropDownStyle = ComboBoxStyle.DropDownList;
             cbbCompanyType.FillColor = Color.FromArgb(248, 212, 187);
@@ -319,6 +321,7 @@
             cbbCompanyType.ItemHeight = 50;
             cbbCompanyType.Items.AddRange(new object[] { "Outsource", "Product", "HeadHunter", "Non - IT", "Services and Consulting" });
             cbbCompanyType.Location = new Point(43, 426);
+            cbbCompanyType.Margin = new Padding(5, 3, 5, 3);
             cbbCompanyType.Name = "cbbCompanyType";
             cbbCompanyType.ShadowDecoration.CustomizableEdges = customizableEdges14;
             cbbCompanyType.Size = new Size(355, 56);
@@ -329,6 +332,8 @@
             cbbCompanySize.BackColor = Color.Transparent;
             cbbCompanySize.BorderRadius = 10;
             cbbCompanySize.CustomizableEdges = customizableEdges15;
+            cbbCompanySize.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            cbbCompanySize.DisabledState.ForeColor = Color.Black;
             cbbCompanySize.DrawMode = DrawMode.OwnerDrawFixed;
             cbbCompanySize.DropDownStyle = ComboBoxStyle.DropDownList;
             cbbCompanySize.FillColor = Color.FromArgb(248, 212, 187);
@@ -339,6 +344,7 @@
             cbbCompanySize.ItemHeight = 50;
             cbbCompanySize.Items.AddRange(new object[] { "Small", "Medium", "Large" });
             cbbCompanySize.Location = new Point(492, 426);
+            cbbCompanySize.Margin = new Padding(5, 3, 5, 3);
             cbbCompanySize.Name = "cbbCompanySize";
             cbbCompanySize.ShadowDecoration.CustomizableEdges = customizableEdges16;
             cbbCompanySize.Size = new Size(355, 56);
@@ -349,17 +355,21 @@
             cbbWTEnd.BackColor = Color.Transparent;
             cbbWTEnd.BorderRadius = 10;
             cbbWTEnd.CustomizableEdges = customizableEdges17;
+            cbbWTEnd.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            cbbWTEnd.DisabledState.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            cbbWTEnd.DisabledState.ForeColor = Color.Black;
             cbbWTEnd.Dock = DockStyle.Right;
             cbbWTEnd.DrawMode = DrawMode.OwnerDrawFixed;
             cbbWTEnd.DropDownStyle = ComboBoxStyle.DropDownList;
             cbbWTEnd.FillColor = Color.FromArgb(248, 212, 187);
             cbbWTEnd.FocusedColor = Color.FromArgb(94, 148, 255);
             cbbWTEnd.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            cbbWTEnd.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            cbbWTEnd.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             cbbWTEnd.ForeColor = Color.Black;
             cbbWTEnd.ItemHeight = 50;
             cbbWTEnd.Items.AddRange(new object[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" });
             cbbWTEnd.Location = new Point(296, 0);
+            cbbWTEnd.Margin = new Padding(5, 3, 5, 3);
             cbbWTEnd.Name = "cbbWTEnd";
             cbbWTEnd.ShadowDecoration.CustomizableEdges = customizableEdges18;
             cbbWTEnd.Size = new Size(175, 56);
@@ -370,17 +380,21 @@
             cbbWTB.BackColor = Color.Transparent;
             cbbWTB.BorderRadius = 10;
             cbbWTB.CustomizableEdges = customizableEdges19;
+            cbbWTB.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            cbbWTB.DisabledState.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            cbbWTB.DisabledState.ForeColor = Color.Black;
             cbbWTB.Dock = DockStyle.Left;
             cbbWTB.DrawMode = DrawMode.OwnerDrawFixed;
             cbbWTB.DropDownStyle = ComboBoxStyle.DropDownList;
             cbbWTB.FillColor = Color.FromArgb(248, 212, 187);
             cbbWTB.FocusedColor = Color.FromArgb(94, 148, 255);
             cbbWTB.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            cbbWTB.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            cbbWTB.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             cbbWTB.ForeColor = Color.Black;
             cbbWTB.ItemHeight = 50;
             cbbWTB.Items.AddRange(new object[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" });
             cbbWTB.Location = new Point(0, 0);
+            cbbWTB.Margin = new Padding(5, 3, 5, 3);
             cbbWTB.Name = "cbbWTB";
             cbbWTB.ShadowDecoration.CustomizableEdges = customizableEdges20;
             cbbWTB.Size = new Size(175, 56);
@@ -405,22 +419,22 @@
             txtDetail.CustomizableEdges = customizableEdges23;
             txtDetail.DefaultText = "";
             txtDetail.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtDetail.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtDetail.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtDetail.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtDetail.DisabledState.ForeColor = Color.Black;
             txtDetail.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtDetail.FillColor = Color.FromArgb(248, 212, 187);
             txtDetail.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtDetail.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtDetail.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtDetail.ForeColor = Color.Black;
             txtDetail.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtDetail.Location = new Point(39, 665);
-            txtDetail.Margin = new Padding(5, 5, 5, 5);
+            txtDetail.Location = new Point(43, 661);
+            txtDetail.Margin = new Padding(5, 3, 5, 3);
             txtDetail.Name = "txtDetail";
             txtDetail.PasswordChar = '\0';
             txtDetail.PlaceholderText = "";
             txtDetail.SelectedText = "";
             txtDetail.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            txtDetail.Size = new Size(670, 173);
+            txtDetail.Size = new Size(722, 183);
             txtDetail.TabIndex = 70;
             // 
             // lblCompanyName
