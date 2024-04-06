@@ -23,12 +23,14 @@ namespace WinFormProject
         private JobDAO jobDAO = new JobDAO();
         private SkillListDAO slDAO = new SkillListDAO();
         private List<string> skills;
+
         public FJobCreation(List<Job> jobs, string companyid)
         {
             InitializeComponent();
             this.jobs = jobs;
             this.companyid = companyid;
             fJobSKills.ListReady += FJobSkills_ListReady;
+
         }
         private void OpenChildForm(Form childForm)
         {

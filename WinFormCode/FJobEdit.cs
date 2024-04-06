@@ -29,6 +29,7 @@ namespace WinFormProject
             InitializeComponent();
             this.job = job;
             this.companyid = companyid;
+            fJobSKills.ListReady += FJobSkills_ListReady;
             FillForm();
         }
         private void FillForm()
@@ -91,7 +92,25 @@ namespace WinFormProject
             jobs = jobDAO.FetchCompanyJob(companyid);
             OpenChildForm(new FPostJob(jobs, companyid));
         }
+        private void FillSkills()
+        {
+            flpSkills.Controls.Clear();
+            flpSkills.Width = 0;
+            //foreach (string s in skills)
+            {
+                BtnSkill btnSkill = new BtnSkill();
+                btnSkill.Text = s;
+                btnSkill.Show();
+                flpSkills.Width += btnSkill.Width + 10;
+                flpSkills.Controls.Add(btnSkill);
+            }
+        }
 
+        private void FJobSkills_ListReady(object sender, List<string> e)
+        {
+            //= e;
+            //FillSkills();
+        }
         private void btnAddSkills_Click(object sender, EventArgs e)
         {
             fJobSKills.Show();
