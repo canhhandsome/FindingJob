@@ -9,6 +9,11 @@ using System.Diagnostics.CodeAnalysis;
 using System.CodeDom;
 using System.Security.Cryptography;
 using Syncfusion.XPS;
+using Guna.UI2.WinForms.Suite;
+using static Guna.UI2.WinForms.Helpers.GraphicsHelper;
+using System.ComponentModel.Design;
+using System.Data;
+using WinFormProject.OOPCODE;
 
 namespace WinFormProject
 {
@@ -117,6 +122,7 @@ namespace WinFormProject
 
         public void FetchHiringJob(string strFetch, List<Job> jobs)
         {
+            SkillListDAO sldao = new SkillListDAO();
             try
             {
                 conn.Open();
@@ -125,7 +131,20 @@ namespace WinFormProject
 
                 while(reader.Read())
                 {
-                    jobs.Add(new Job(reader["Jobid"].ToString().Trim(), reader["CompanyId"].ToString().Trim(), reader["JobName"].ToString().Trim(), reader["position"].ToString().Trim(), reader["salary"].ToString().Trim(), reader["requirement"].ToString().Trim(), reader["description"].ToString().Trim(), reader["benefit"].ToString().Trim(), Convert.ToDateTime(reader["datepublish"].ToString()), Convert.ToDateTime(reader["DateEnd"].ToString()), reader["status"].ToString().Trim(), reader["workingform"].ToString().Trim()));
+                    string jobId = reader["jobid"].ToString().Trim();
+                    string companyId = reader["CompanyId"].ToString().Trim();
+                    string jobName = reader["JobName"].ToString().Trim();
+                    string position = reader["position"].ToString().Trim();
+                    string salary = reader["salary"].ToString().Trim();
+                    string requirement = reader["requirement"].ToString().Trim();
+                    string description = reader["description"].ToString().Trim();
+                    string benefit = reader["benefit"].ToString().Trim();
+                    DateTime dataPublish = Convert.ToDateTime(reader["datepublish"].ToString());
+                    DateTime dateEnd = Convert.ToDateTime(reader["DateEnd"].ToString());
+                    string status = reader["status"].ToString().Trim();
+                    string workingForm = reader["workingform"].ToString().Trim();
+                    List<string> skillList = sldao.GetSkills(jobId); 
+                    jobs.Add(new Job(jobId, companyId, jobName, position, salary, requirement, description, benefit, dataPublish, dateEnd, status, workingForm, skillList));
                 }
             }
             catch(Exception ex)
@@ -137,7 +156,33 @@ namespace WinFormProject
                 conn.Close(); 
             }
         }
+        public List<string> FetchAllJobSkill(string SQL)
+        {
+            List<string> SkillList = new List<string>();
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(SQL, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
 
+                while (reader.Read())
+                {
+                    SkillList.Add(reader["Skill1"].ToString().Trim());
+                    SkillList.Add(reader["Skill2"].ToString().Trim());
+                    SkillList.Add(reader["Skill3"].ToString().Trim());
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("them that bai" + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return SkillList;
+        }
         public void FetchAllApplies(string strFetch, List<Apply> applies)
         {
             try
@@ -388,5 +433,49 @@ namespace WinFormProject
             }
             return null;
         }
+        public string GetTheJobID(Job job)
+        {
+            string jobId = string.Empty;
+
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("InsertJobAndGetID", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                // Input parameters
+                cmd.Parameters.AddWithValue("@CompanyID", job.CompanyID);
+                cmd.Parameters.AddWithValue("@JobName", job.Name);
+                cmd.Parameters.AddWithValue("@Position", job.Position);
+                cmd.Parameters.AddWithValue("@Salary", job.Salary);
+                cmd.Parameters.AddWithValue("@Requirement", job.Requirement);
+                cmd.Parameters.AddWithValue("@Description", job.Description);
+                cmd.Parameters.AddWithValue("@Benefit", job.Benefit);
+                cmd.Parameters.AddWithValue("@WorkingForm", job.WorkingForm);
+                cmd.Parameters.AddWithValue("@DateEnd",job.DateEnd);
+
+                // Output parameter
+                SqlParameter jobIdParam = new SqlParameter("@JobID", SqlDbType.VarChar, 4);
+                jobIdParam.Direction = ParameterDirection.Output;
+                cmd.Parameters.Add(jobIdParam);
+
+                // Execute the stored procedure
+                cmd.ExecuteNonQuery();
+
+                // Retrieve the output parameter value
+                jobId = Convert.ToString(jobIdParam.Value);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed, check again: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return jobId;
+        }
+
     }
 }

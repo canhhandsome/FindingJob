@@ -8,6 +8,7 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormProject.OOPCODE;
 using WinFormProject.WinFormCode;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
@@ -20,7 +21,8 @@ namespace WinFormProject
         private List<Job> jobs;
         private string companyid;
         private JobDAO jobDAO = new JobDAO();
-        private List<string> skills = new List<string>();
+        private SkillListDAO slDAO = new SkillListDAO();
+        private List<string> skills;
         public FJobCreation(List<Job> jobs, string companyid)
         {
             InitializeComponent();
@@ -57,7 +59,15 @@ namespace WinFormProject
 
         private void btnPostJob_Click(object sender, EventArgs e)
         {
-            jobDAO.AddNewJob(companyid, txtJobName.Text, cbbExperience.Text, txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, rtxtBenefit.Text, dtpDateEnd.Value.ToString("yyyy-MM-dd"));
+            List<string> skills = new List<string>();
+            foreach (BtnSkill button in flpSkills.Controls.OfType<BtnSkill>())
+            {
+                skills.Add(button.Text);   
+            }
+            Job job = new Job(companyid,txtJobName.Text,cbbExperience.Text,txtSalary.Text,rtxtjobrequirement.Text,rtxtdescription.Text,rtxtBenefit.Text, cbbWorkingForm.Text, dtpDateEnd.Value);
+            string jobID = jobDAO.AddNewJob(job);
+            SkillList sll = new SkillList(jobID, skills);
+            slDAO.AddSkillList(sll);
             jobs = jobDAO.FetchCompanyJob(companyid);
             OpenChildForm(new FPostJob(jobs, companyid));
         }
@@ -66,7 +76,7 @@ namespace WinFormProject
         {
             flpSkills.Controls.Clear();
             flpSkills.Width = 0;
-            foreach (string s in  skills)
+            foreach (string s in skills)
             {
                 BtnSkill btnSkill = new BtnSkill();
                 btnSkill.Text = s;

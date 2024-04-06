@@ -64,7 +64,7 @@ namespace WinFormProject.WinFormCode
             }
             else if (buttonClickCount == 1)
             {
-                if(skills.Count >= 3)
+                if (skills.Count >= 3)
                 {
                     MessageBox.Show("You can only choose 3 skills for each job!");
                     return;
