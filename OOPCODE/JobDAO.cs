@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Syncfusion.XPS;
+using System;
 using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,10 +19,10 @@ namespace WinFormProject
             
         }
 
-        public List<Job> FetchAvailableJobs()
+        public List<Job> FetchAvailableJobs(int limit,int offset)
         {
             List<Job> jobs = new List<Job>();
-            string strFetch = string.Format("Select * from job");
+            string strFetch = string.Format("SELECT * FROM job ORDER BY jobid OFFSET {0} ROWS FETCH NEXT {1} ROWS ONLY", offset, limit);
             conn.FetchHiringJob(strFetch, jobs);
             return jobs;
         }
@@ -55,6 +57,11 @@ namespace WinFormProject
             string sqlUpdate = string.Format("UPDATE Job SET jobname = '{0}', position = '{1}', salary = '{2}', description = '{3}', requirement = '{4}', benefit = '{5}', DateEnd = '{6:yyyy-MM-dd}', workingform = '{7}' WHERE jobid = '{8}'",
                                    job.Name, job.Position, job.Salary, job.Description, job.Requirement, job.Benefit, job.DateEnd, job.WorkingForm, job.Jobid);
             conn.CRUD(sqlUpdate);
+        }
+        public int TotalWaitingJob()
+        {
+            string SQL = string.Format("SELECT dbo.CountWaitingJobs() AS WaitingJobCount");
+            return conn.GetTotal(SQL);
         }
 
     }

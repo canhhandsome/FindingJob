@@ -18,24 +18,33 @@ namespace WinFormProject
         string jsID;
         FFilter fFilter;
         JobDAO jobDAO = new JobDAO();
+        int limit = 4;
+        int offset = 0;
+        int totalwaitingjob;
         public FSearchJob(string jsID)
         {
+            
             this.jsID = jsID;
             InitializeComponent();
-            jobs = jobDAO.FetchAvailableJobs();
+            jobs = jobDAO.FetchAvailableJobs(limit, offset);
+            totalwaitingjob = jobDAO.TotalWaitingJob();
+            if(limit > totalwaitingjob)
+            {
+                limit = totalwaitingjob;
+            }
+ 
             fFilter = new FFilter(jobs);
             FillJob(this.jobs);
             fFilter.ListReady += fFilter_ListReady;
-            
         }
         private void UCInformation_SkillButtonClicked(object sender, string skillText)
         {
             filterjobs.Clear();
-            foreach(Job job in jobs)
+            foreach (Job job in jobs)
             {
-                foreach(string s in job.SkillList)
+                foreach (string s in job.SkillList)
                 {
-                    if(s == skillText)
+                    if (s == skillText)
                     {
                         filterjobs.Add(job);
                         break;
@@ -54,6 +63,8 @@ namespace WinFormProject
         {
             flpJob.Controls.Clear();
             int count = 0;
+
+            // Add job information controls
             foreach (Job job in jobslist)
             {
                 if (job.Status == "waiting")
@@ -72,6 +83,8 @@ namespace WinFormProject
                     count = 0;
                 }
             }
+
+            // Attach event handler for skill button click
             foreach (Control control in flpJob.Controls)
             {
                 if (control is UCInformation ucInfo)
@@ -79,6 +92,12 @@ namespace WinFormProject
                     ucInfo.SkillButtonClicked += UCInformation_SkillButtonClicked;
                 }
             }
+            Guna.UI2.WinForms.Guna2Button BtnNext = btnNext;
+            Guna.UI2.WinForms.Guna2Button BtnBack = btnBack;
+            this.Controls.Remove(btnNext); this.Controls.Remove(btnBack);
+            flpJob.Controls.Add(btnBack);
+            flpJob.Controls.Add(btnNext);
+
         }
         private Color colorJob(int count)
         {
@@ -112,5 +131,56 @@ namespace WinFormProject
             fFilter.Show();
         }
 
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (limit == totalwaitingjob)
+            {
+                MessageBox.Show("No more job for you to next");
+            }
+            else if ((limit + 4) > totalwaitingjob)
+            {
+                int space = totalwaitingjob - limit;
+                limit += space;
+                offset += space;
+                jobs = jobDAO.FetchAvailableJobs(limit, offset);
+                FillJob(this.jobs);
+            }
+            else
+            {
+                limit += 4;
+                offset += 4;
+                jobs = jobDAO.FetchAvailableJobs(limit, offset);
+                FillJob(this.jobs);
+            }
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            if (offset == 0)
+            {
+                MessageBox.Show("You're already at the beginning of the job list.");
+            }
+            else
+            {
+                if (limit == totalwaitingjob)
+                {
+                    // If the last page was full, decrement both limit and offset by 4
+                    limit -= 4;
+                    offset -= 4;
+                }
+                else
+                {
+                    // Otherwise, just decrement offset by 4
+                    offset -= 4;
+                }
+
+                // Fetch the previous set of jobs
+                jobs = jobDAO.FetchAvailableJobs(limit, offset);
+
+                // Fill the job list with the fetched jobs
+                FillJob(this.jobs);
+            }
+        }
     }
 }

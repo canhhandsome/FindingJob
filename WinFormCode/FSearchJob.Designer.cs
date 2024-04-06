@@ -33,10 +33,16 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             flpJob = new FlowLayoutPanel();
             btnFilter = new ReaLTaiizor.Controls.ParrotButton();
             txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            btnNext = new Guna.UI2.WinForms.Guna2Button();
+            btnBack = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
             // 
             // flpJob
@@ -115,6 +121,44 @@
             guna2ComboBox1.Size = new Size(185, 36);
             guna2ComboBox1.TabIndex = 38;
             // 
+            // btnNext
+            // 
+            btnNext.AutoRoundedCorners = true;
+            btnNext.BorderRadius = 27;
+            btnNext.CustomizableEdges = customizableEdges5;
+            btnNext.DisabledState.BorderColor = Color.DarkGray;
+            btnNext.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnNext.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnNext.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnNext.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnNext.ForeColor = Color.White;
+            btnNext.Location = new Point(1036, 1018);
+            btnNext.Name = "btnNext";
+            btnNext.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnNext.Size = new Size(172, 56);
+            btnNext.TabIndex = 39;
+            btnNext.Text = "Next";
+            btnNext.Click += btnNext_Click;
+            // 
+            // btnBack
+            // 
+            btnBack.AutoRoundedCorners = true;
+            btnBack.BorderRadius = 27;
+            btnBack.CustomizableEdges = customizableEdges7;
+            btnBack.DisabledState.BorderColor = Color.DarkGray;
+            btnBack.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnBack.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnBack.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnBack.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBack.ForeColor = Color.White;
+            btnBack.Location = new Point(12, 1018);
+            btnBack.Name = "btnBack";
+            btnBack.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnBack.Size = new Size(172, 56);
+            btnBack.TabIndex = 40;
+            btnBack.Text = "Back";
+            btnBack.Click += btnBack_Click;
+            // 
             // FSearchJob
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -122,6 +166,8 @@
             AutoScroll = true;
             BackColor = Color.White;
             ClientSize = new Size(1233, 847);
+            Controls.Add(btnBack);
+            Controls.Add(btnNext);
             Controls.Add(guna2ComboBox1);
             Controls.Add(txtSearch);
             Controls.Add(btnFilter);
@@ -137,5 +183,7 @@
         private ReaLTaiizor.Controls.ParrotButton btnFilter;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2Button btnNext;
+        private Guna.UI2.WinForms.Guna2Button btnBack;
     }
 }
