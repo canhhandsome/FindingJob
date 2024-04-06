@@ -62,9 +62,9 @@
             lblDateT.Dock = DockStyle.Right;
             lblDateT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             lblDateT.ForeColor = SystemColors.ControlDarkDark;
-            lblDateT.Location = new Point(3, 22);
+            lblDateT.Location = new Point(3, 14);
             lblDateT.Name = "lblDateT";
-            lblDateT.Size = new Size(69, 30);
+            lblDateT.Size = new Size(58, 25);
             lblDateT.TabIndex = 0;
             lblDateT.Text = "Date: ";
             lblDateT.TextAlign = ContentAlignment.BottomCenter;
@@ -76,7 +76,7 @@
             lblNameT.Font = new Font("Segoe UI Semibold", 25F, FontStyle.Bold, GraphicsUnit.Point);
             lblNameT.Location = new Point(0, 0);
             lblNameT.Name = "lblNameT";
-            lblNameT.Size = new Size(160, 57);
+            lblNameT.Size = new Size(129, 46);
             lblNameT.TabIndex = 0;
             lblNameT.Text = "Name: ";
             // 
@@ -86,9 +86,9 @@
             lblFromT.Dock = DockStyle.Fill;
             lblFromT.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             lblFromT.ForeColor = SystemColors.ControlDarkDark;
-            lblFromT.Location = new Point(78, 0);
+            lblFromT.Location = new Point(69, 0);
             lblFromT.Name = "lblFromT";
-            lblFromT.Size = new Size(94, 59);
+            lblFromT.Size = new Size(74, 44);
             lblFromT.TabIndex = 0;
             lblFromT.Text = "From:";
             lblFromT.TextAlign = ContentAlignment.MiddleCenter;
@@ -103,58 +103,54 @@
             flpBody.Controls.Add(pnWorkingForm);
             flpBody.Controls.Add(pnSkills);
             flpBody.FlowDirection = FlowDirection.TopDown;
-            flpBody.Location = new Point(7, 8);
-            flpBody.Margin = new Padding(3, 4, 3, 4);
+            flpBody.Location = new Point(6, 6);
             flpBody.Name = "flpBody";
-            flpBody.Size = new Size(552, 397);
+            flpBody.Size = new Size(483, 298);
             flpBody.TabIndex = 47;
             // 
             // panel2
             // 
-            panel2.Location = new Point(3, 4);
-            panel2.Margin = new Padding(3, 4, 3, 4);
+            panel2.Location = new Point(3, 3);
             panel2.Name = "panel2";
-            panel2.Size = new Size(21, 455);
+            panel2.Size = new Size(18, 341);
             panel2.TabIndex = 48;
             // 
             // pnPublish
             // 
             pnPublish.Controls.Add(lblDateT);
             pnPublish.FlowDirection = FlowDirection.BottomUp;
-            pnPublish.Location = new Point(30, 4);
-            pnPublish.Margin = new Padding(3, 4, 3, 4);
+            pnPublish.Location = new Point(27, 3);
             pnPublish.Name = "pnPublish";
-            pnPublish.Size = new Size(1000, 52);
+            pnPublish.Size = new Size(875, 39);
             pnPublish.TabIndex = 49;
             // 
             // pnName
             // 
             pnName.BackColor = Color.Transparent;
             pnName.Controls.Add(lblNameT);
-            pnName.Location = new Point(30, 64);
-            pnName.Margin = new Padding(3, 4, 3, 4);
+            pnName.Location = new Point(27, 48);
             pnName.Name = "pnName";
-            pnName.Size = new Size(543, 67);
+            pnName.Size = new Size(475, 50);
             pnName.TabIndex = 48;
             // 
             // pnCompany
             // 
             pnCompany.Controls.Add(ptbCompanyPicture);
             pnCompany.Controls.Add(lblFromT);
-            pnCompany.Location = new Point(30, 139);
-            pnCompany.Margin = new Padding(3, 4, 3, 4);
+            pnCompany.Location = new Point(27, 104);
             pnCompany.Name = "pnCompany";
-            pnCompany.Size = new Size(1000, 63);
+            pnCompany.Size = new Size(875, 47);
             pnCompany.TabIndex = 48;
             // 
             // ptbCompanyPicture
             // 
             ptbCompanyPicture.CustomizableEdges = customizableEdges1;
             ptbCompanyPicture.ImageRotate = 0F;
-            ptbCompanyPicture.Location = new Point(3, 3);
+            ptbCompanyPicture.Location = new Point(3, 2);
+            ptbCompanyPicture.Margin = new Padding(3, 2, 3, 2);
             ptbCompanyPicture.Name = "ptbCompanyPicture";
             ptbCompanyPicture.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            ptbCompanyPicture.Size = new Size(69, 53);
+            ptbCompanyPicture.Size = new Size(60, 40);
             ptbCompanyPicture.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbCompanyPicture.TabIndex = 2;
             ptbCompanyPicture.TabStop = false;
@@ -162,10 +158,9 @@
             // pnWorkingForm
             // 
             pnWorkingForm.Controls.Add(lblWorkingFormT);
-            pnWorkingForm.Location = new Point(30, 210);
-            pnWorkingForm.Margin = new Padding(3, 4, 3, 4);
+            pnWorkingForm.Location = new Point(27, 157);
             pnWorkingForm.Name = "pnWorkingForm";
-            pnWorkingForm.Size = new Size(1000, 52);
+            pnWorkingForm.Size = new Size(875, 39);
             pnWorkingForm.TabIndex = 48;
             // 
             // lblWorkingFormT
@@ -176,17 +171,16 @@
             lblWorkingFormT.ForeColor = SystemColors.ControlDarkDark;
             lblWorkingFormT.Location = new Point(3, 0);
             lblWorkingFormT.Name = "lblWorkingFormT";
-            lblWorkingFormT.Size = new Size(181, 30);
+            lblWorkingFormT.Size = new Size(149, 25);
             lblWorkingFormT.TabIndex = 0;
             lblWorkingFormT.Text = "lblWorkingFormT";
             // 
             // pnSkills
             // 
             pnSkills.Controls.Add(lblSkillsT);
-            pnSkills.Location = new Point(30, 270);
-            pnSkills.Margin = new Padding(3, 4, 3, 4);
+            pnSkills.Location = new Point(27, 202);
             pnSkills.Name = "pnSkills";
-            pnSkills.Size = new Size(1000, 52);
+            pnSkills.Size = new Size(875, 39);
             pnSkills.TabIndex = 48;
             // 
             // lblSkillsT
@@ -197,17 +191,16 @@
             lblSkillsT.ForeColor = SystemColors.ControlDarkDark;
             lblSkillsT.Location = new Point(3, 0);
             lblSkillsT.Name = "lblSkillsT";
-            lblSkillsT.Size = new Size(83, 30);
+            lblSkillsT.Size = new Size(70, 25);
             lblSkillsT.TabIndex = 0;
             lblSkillsT.Text = "lblSkills";
             // 
             // pnAddress
             // 
             pnAddress.Controls.Add(lblAddressT);
-            pnAddress.Location = new Point(7, 417);
-            pnAddress.Margin = new Padding(3, 4, 3, 4);
+            pnAddress.Location = new Point(6, 313);
             pnAddress.Name = "pnAddress";
-            pnAddress.Size = new Size(435, 48);
+            pnAddress.Size = new Size(381, 36);
             pnAddress.TabIndex = 48;
             // 
             // lblAddressT
@@ -218,7 +211,7 @@
             lblAddressT.ForeColor = SystemColors.ControlDarkDark;
             lblAddressT.Location = new Point(3, 0);
             lblAddressT.Name = "lblAddressT";
-            lblAddressT.Size = new Size(114, 30);
+            lblAddressT.Size = new Size(96, 25);
             lblAddressT.TabIndex = 0;
             lblAddressT.Text = "lblAddress";
             // 
@@ -237,10 +230,9 @@
             btnDetails.HoverBackgroundColor = Color.FromArgb(248, 242, 197);
             btnDetails.HoverTextColor = Color.Black;
             btnDetails.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnDetails.Location = new Point(449, 417);
-            btnDetails.Margin = new Padding(3, 4, 3, 4);
+            btnDetails.Location = new Point(393, 313);
             btnDetails.Name = "btnDetails";
-            btnDetails.Size = new Size(101, 51);
+            btnDetails.Size = new Size(88, 38);
             btnDetails.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnDetails.TabIndex = 49;
             btnDetails.TextColor = Color.Black;
@@ -250,15 +242,15 @@
             // 
             // UCInformation
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AntiqueWhite;
             Controls.Add(btnDetails);
             Controls.Add(flpBody);
             Controls.Add(pnAddress);
-            Margin = new Padding(3, 3, 11, 13);
+            Margin = new Padding(3, 2, 10, 10);
             Name = "UCInformation";
-            Size = new Size(569, 481);
+            Size = new Size(498, 361);
             flpBody.ResumeLayout(false);
             pnPublish.ResumeLayout(false);
             pnPublish.PerformLayout();

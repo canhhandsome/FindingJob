@@ -19,6 +19,7 @@ namespace WinFormProject
         private Form currentFormChild = new Form();
         private FJobSKills fJobSKills;
         private List<Job> jobs;
+        private List<string> skills;
         private string companyid;
         private JobDAO jobDAO = new JobDAO();
         private Job job;
@@ -29,8 +30,10 @@ namespace WinFormProject
             InitializeComponent();
             this.job = job;
             this.companyid = companyid;
-            fJobSKills = new FJobSKills(job.SkillList);
+            skills = job.SkillList;
+            fJobSKills = new FJobSKills(skills);
             FillForm();
+            fJobSKills.ListReady += FJobSkills_ListReady;
         }
 
         private void FillForm()
@@ -42,7 +45,8 @@ namespace WinFormProject
             rtxtjobrequirement.Text = job.Requirement;
             rtxtBenefit.Text = job.Benefit;
             dtpDateEnd.Value = job.DateEnd;
-            foreach (string skill in job.SkillList)
+            flpSkills.Controls.Clear();
+            foreach (string skill in skills)
             {
                 BtnSkill btnSkill = new BtnSkill();
                 btnSkill.Text = skill;
@@ -78,14 +82,13 @@ namespace WinFormProject
         {
             OpenChildForm(new FPostJob(jobs, companyid));
         }
-
+        private void FJobSkills_ListReady(object sender, List<string> e)
+        {
+            skills = e;
+            FillForm();
+        }
         private void btnSave_Click(object sender, EventArgs e)
         {
-            List<string> skills = new List<string>();
-            foreach (BtnSkill button in flpSkills.Controls.OfType<BtnSkill>())
-            {
-                skills.Add(button.Text);
-            }
             Job job1 = new Job(job.Jobid, job.CompanyID, txtJobName.Text, cbbExperience.Text, txtSalary.Text, tbprequirement.Text, tbpdescription.Text, tbpbenefit.Text, job.DatePublish, dtpDateEnd.Value, job.Status, cbbWorkingForm.Text, skills);
             jobDAO.EditJob(job1);
             SkillList skillist = new SkillList(job.Jobid, skills);
@@ -97,6 +100,7 @@ namespace WinFormProject
         private void btnAddSkills_Click(object sender, EventArgs e)
         {
             fJobSKills.Show();
+            
         }
     }
 }

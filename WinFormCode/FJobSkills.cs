@@ -49,6 +49,7 @@ namespace WinFormProject.WinFormCode
         {
             button.Image = Properties.Resources.approve;
             button.FillColor = Color.FromArgb(248, 212, 187);
+            button.Tag = 1;
             lblCountSkills.Text = (maxSkills - skills.Count).ToString() + " Skill(s) remaining";
         }
 
