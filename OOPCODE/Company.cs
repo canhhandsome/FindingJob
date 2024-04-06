@@ -11,7 +11,6 @@ namespace WinFormProject
         string companytype, companysize,taxidentification,description,websitelink,workingtimebegin,workingtimeend;
         CompanyDAO companyDAO = new CompanyDAO();
         JobDAO jobDao = new JobDAO();
-        ApplyDAO applyDAO = new ApplyDAO();
         Information information = new Information();
         List<Job> jobs = new List<Job>();
         byte[] AvatarData = new byte[0];
