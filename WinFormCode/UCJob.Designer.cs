@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.flpSkill = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnSkill1 = new ReaLTaiizor.Controls.CyberButton();
             this.lblCountApplicants = new System.Windows.Forms.Label();
             this.btnApplicants = new ReaLTaiizor.Controls.CyberButton();
             this.btnDelete = new ReaLTaiizor.Controls.CyberButton();
@@ -38,8 +40,6 @@
             this.lblDateT = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblJobNameT = new System.Windows.Forms.Label();
-            this.flpSkill = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnSkill1 = new ReaLTaiizor.Controls.CyberButton();
             this.panel1.SuspendLayout();
             this.flpSkill.SuspendLayout();
             this.SuspendLayout();
@@ -63,6 +63,54 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(811, 246);
             this.panel1.TabIndex = 0;
+            // 
+            // flpSkill
+            // 
+            this.flpSkill.Controls.Add(this.btnSkill1);
+            this.flpSkill.Location = new System.Drawing.Point(17, 117);
+            this.flpSkill.Name = "flpSkill";
+            this.flpSkill.Size = new System.Drawing.Size(775, 53);
+            this.flpSkill.TabIndex = 13;
+            // 
+            // btnSkill1
+            // 
+            this.btnSkill1.Alpha = 20;
+            this.btnSkill1.BackColor = System.Drawing.Color.Transparent;
+            this.btnSkill1.Background = true;
+            this.btnSkill1.Background_WidthPen = 4F;
+            this.btnSkill1.BackgroundPen = true;
+            this.btnSkill1.ColorBackground = System.Drawing.Color.White;
+            this.btnSkill1.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btnSkill1.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.btnSkill1.ColorBackground_Pen = System.Drawing.Color.Black;
+            this.btnSkill1.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btnSkill1.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.btnSkill1.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
+            this.btnSkill1.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.btnSkill1.Effect_1 = true;
+            this.btnSkill1.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.btnSkill1.Effect_1_Transparency = 25;
+            this.btnSkill1.Effect_2 = true;
+            this.btnSkill1.Effect_2_ColorBackground = System.Drawing.Color.White;
+            this.btnSkill1.Effect_2_Transparency = 20;
+            this.btnSkill1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSkill1.ForeColor = System.Drawing.Color.Black;
+            this.btnSkill1.Lighting = false;
+            this.btnSkill1.LinearGradient_Background = false;
+            this.btnSkill1.LinearGradientPen = false;
+            this.btnSkill1.Location = new System.Drawing.Point(3, 3);
+            this.btnSkill1.Name = "btnSkill1";
+            this.btnSkill1.PenWidth = 15;
+            this.btnSkill1.Rounding = true;
+            this.btnSkill1.RoundingInt = 70;
+            this.btnSkill1.Size = new System.Drawing.Size(105, 43);
+            this.btnSkill1.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.btnSkill1.TabIndex = 1;
+            this.btnSkill1.Tag = "Cyber";
+            this.btnSkill1.TextButton = "Skill1";
+            this.btnSkill1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btnSkill1.Timer_Effect_1 = 5;
+            this.btnSkill1.Timer_RGB = 300;
             // 
             // lblCountApplicants
             // 
@@ -115,6 +163,7 @@
             this.btnApplicants.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btnApplicants.Timer_Effect_1 = 1;
             this.btnApplicants.Timer_RGB = 300;
+            this.btnApplicants.Click += new System.EventHandler(this.btnApplicants_Click);
             // 
             // btnDelete
             // 
@@ -157,6 +206,7 @@
             this.btnDelete.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btnDelete.Timer_Effect_1 = 1;
             this.btnDelete.Timer_RGB = 300;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
@@ -199,6 +249,7 @@
             this.btnEdit.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btnEdit.Timer_Effect_1 = 1;
             this.btnEdit.Timer_RGB = 300;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // lblStatusT
             // 
@@ -250,58 +301,10 @@
             this.lblJobNameT.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblJobNameT.Location = new System.Drawing.Point(17, 17);
             this.lblJobNameT.Name = "lblJobNameT";
-            this.lblJobNameT.Size = new System.Drawing.Size(182, 46);
+            this.lblJobNameT.Size = new System.Drawing.Size(179, 45);
             this.lblJobNameT.TabIndex = 8;
             this.lblJobNameT.Text = "Job Name:";
             this.lblJobNameT.Click += new System.EventHandler(this.lblJobNameT_Click);
-            // 
-            // flpSkill
-            // 
-            this.flpSkill.Controls.Add(this.btnSkill1);
-            this.flpSkill.Location = new System.Drawing.Point(17, 117);
-            this.flpSkill.Name = "flpSkill";
-            this.flpSkill.Size = new System.Drawing.Size(775, 53);
-            this.flpSkill.TabIndex = 13;
-            // 
-            // btnSkill1
-            // 
-            this.btnSkill1.Alpha = 20;
-            this.btnSkill1.BackColor = System.Drawing.Color.Transparent;
-            this.btnSkill1.Background = true;
-            this.btnSkill1.Background_WidthPen = 4F;
-            this.btnSkill1.BackgroundPen = true;
-            this.btnSkill1.ColorBackground = System.Drawing.Color.White;
-            this.btnSkill1.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.btnSkill1.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
-            this.btnSkill1.ColorBackground_Pen = System.Drawing.Color.Black;
-            this.btnSkill1.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.btnSkill1.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.btnSkill1.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
-            this.btnSkill1.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.btnSkill1.Effect_1 = true;
-            this.btnSkill1.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.btnSkill1.Effect_1_Transparency = 25;
-            this.btnSkill1.Effect_2 = true;
-            this.btnSkill1.Effect_2_ColorBackground = System.Drawing.Color.White;
-            this.btnSkill1.Effect_2_Transparency = 20;
-            this.btnSkill1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSkill1.ForeColor = System.Drawing.Color.Black;
-            this.btnSkill1.Lighting = false;
-            this.btnSkill1.LinearGradient_Background = false;
-            this.btnSkill1.LinearGradientPen = false;
-            this.btnSkill1.Location = new System.Drawing.Point(3, 3);
-            this.btnSkill1.Name = "btnSkill1";
-            this.btnSkill1.PenWidth = 15;
-            this.btnSkill1.Rounding = true;
-            this.btnSkill1.RoundingInt = 70;
-            this.btnSkill1.Size = new System.Drawing.Size(105, 43);
-            this.btnSkill1.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnSkill1.TabIndex = 1;
-            this.btnSkill1.Tag = "Cyber";
-            this.btnSkill1.TextButton = "Skill1";
-            this.btnSkill1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnSkill1.Timer_Effect_1 = 5;
-            this.btnSkill1.Timer_RGB = 300;
             // 
             // UCJob
             // 

@@ -23,8 +23,9 @@ namespace WinFormProject
             InitializeComponent();
             this.apply = apply;
             this.job = job;
-            this.MaximumSize = new System.Drawing.Size(950, 234);
+            this.MaximumSize = new System.Drawing.Size(469, 515);
             FillInTemplate();
+            PanelUtils.MakeRounded(this.panel2, 30);
             PanelUtils.MakeRounded(this.panel1, 30);
         }
         public void FillInTemplate()
