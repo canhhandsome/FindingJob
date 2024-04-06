@@ -32,6 +32,7 @@ namespace WinFormProject
             this.txtTaxIdentification.Text = company.Taxidentification;
             this.cbbWTB.Text = company.WorkingTimeBegin;
             this.cbbWTEnd.Text = company.WorkingTimeEnd;
+            this.txtWebsiteLink.Text = company.Websitelink;
             if (company.Avatar != null) ImageHandler.DisplayImage(company.Avatar, ref ptbAvatar);
             if (company.BusinessLicense != null) ImageHandler.DisplayImage(company.BusinessLicense, ref ptbLicense);
         }
@@ -126,6 +127,11 @@ namespace WinFormProject
         }
 
         private void ptbAvatar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox11_Click(object sender, EventArgs e)
         {
 
         }

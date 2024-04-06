@@ -27,7 +27,7 @@ namespace WinFormProject
         private void btnSend_Click(object sender, EventArgs e)
         {
             AlertDAO dAO = new AlertDAO();
-            Alert alert = new Alert(job.CompanyID, apply.JSeekerID, txtSubject.Text, txtContent.Text);
+            Alert alert = new Alert(job.CompanyID, apply.JSeekerID, txtSubject.Text, txtContent.Text, job.Jobid);
             dAO.InsertAlert(alert);
             this.Close();
         }

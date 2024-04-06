@@ -20,7 +20,7 @@ namespace WinFormProject
             InitializeComponent();
             this.currentFormChild = currentFormChild;
             this.pnBody = pnBody;
-            this.MaximumSize = new System.Drawing.Size(812, 212);
+            this.MaximumSize = new System.Drawing.Size(811, 246);
             this.job = job;
         }
 
@@ -120,5 +120,9 @@ namespace WinFormProject
             OpenChildForm(fJobEdit);
         }
 
+        private void lblJobNameT_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,3 +1,5 @@
+using WinFormProject.WinFormCode;
+
 namespace WinFormProject
 {
     internal static class Program

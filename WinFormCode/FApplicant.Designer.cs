@@ -35,9 +35,9 @@
             // 
             // flpApplicant
             // 
-            flpApplicant.Location = new Point(45, 104);
+            flpApplicant.Location = new Point(41, 104);
             flpApplicant.Name = "flpApplicant";
-            flpApplicant.Size = new Size(861, 204);
+            flpApplicant.Size = new Size(1000, 204);
             flpApplicant.TabIndex = 2;
             // 
             // materialTextBoxEdit1
@@ -77,7 +77,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.White;
-            ClientSize = new Size(917, 450);
+            ClientSize = new Size(1079, 635);
             Controls.Add(materialTextBoxEdit1);
             Controls.Add(flpApplicant);
             ForeColor = SystemColors.ControlText;

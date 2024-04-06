@@ -15,6 +15,21 @@
           }
         }
       },
+      "Guna.UI2.WinForms/2.0.4.6": {
+        "type": "package",
+        "dependencies": {
+          "System.Management": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/Guna.UI2.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Guna.UI2.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
       "MaterialSkin/0.2.1": {
         "type": "package",
         "compile": {
@@ -60,7 +75,7 @@
           }
         }
       },
-      "ReaLTaiizor/3.8.0.2": {
+      "ReaLTaiizor/3.8.0.5": {
         "type": "package",
         "compile": {
           "lib/net6.0-windows7.0/ReaLTaiizor.dll": {
@@ -150,6 +165,22 @@
           }
         }
       },
+      "System.CodeDom/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
       "System.Data.SqlClient/4.8.6": {
         "type": "package",
         "dependencies": {
@@ -173,6 +204,31 @@
             "rid": "unix"
           },
           "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Management/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Management.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -238,6 +294,28 @@
         "dot-net-transitions.nuspec",
         "lib/net40-full/Transitions.dll",
         "lib/net40-full/Transitions.pdb"
+      ]
+    },
+    "Guna.UI2.WinForms/2.0.4.6": {
+      "sha512": "NYzSJp7e47Cz3NgGCHvzadash8ycmxxUnpLg4Rr/MSYG9WDw0HOoTI4SkbDW+HbACrf6tsWYCuzWkgvjuM/O6w==",
+      "type": "package",
+      "path": "guna.ui2.winforms/2.0.4.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "guna.ui2.winforms.2.0.4.6.nupkg.sha512",
+        "guna.ui2.winforms.nuspec",
+        "icon.png",
+        "lib/net40/Guna.UI2.dll",
+        "lib/net45/Guna.UI2.dll",
+        "lib/net461/Guna.UI2.dll",
+        "lib/net472/Guna.UI2.dll",
+        "lib/net48/Guna.UI2.dll",
+        "lib/net6.0-windows7.0/Guna.UI2.dll",
+        "lib/net7.0-windows7.0/Guna.UI2.dll",
+        "lib/netcoreapp3.1/Guna.UI2.dll"
       ]
     },
     "MaterialSkin/0.2.1": {
@@ -316,10 +394,10 @@
         "version.txt"
       ]
     },
-    "ReaLTaiizor/3.8.0.2": {
-      "sha512": "jlCo02R8T9Ks/hY95to+bA0aKsp2rv16yWn2+qjfzm6u6FOhPdiAmbUiKjaEv/kX1+HX5J9Ms9RCYNT6trrTfg==",
+    "ReaLTaiizor/3.8.0.5": {
+      "sha512": "l/LKMZXpfBwIEax7ZEXpRNlLmPAENN2OPf5sAYXVecjENvmlGhrgX0YKU72kFsw/Yjuzn+F01jMAAgs2mYsJIg==",
       "type": "package",
-      "path": "realtaiizor/3.8.0.2",
+      "path": "realtaiizor/3.8.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -340,7 +418,7 @@
         "lib/net9.0-windows7.0/ReaLTaiizor.xml",
         "lib/netcoreapp3.1/ReaLTaiizor.dll",
         "lib/netcoreapp3.1/ReaLTaiizor.xml",
-        "realtaiizor.3.8.0.2.nupkg.sha512",
+        "realtaiizor.3.8.0.5.nupkg.sha512",
         "realtaiizor.nuspec"
       ]
     },
@@ -471,6 +549,29 @@
         "syncfusion_logo.png"
       ]
     },
+    "System.CodeDom/6.0.0": {
+      "sha512": "CPc6tWO1LAer3IzfZufDBRL+UZQcj5uS207NHALQzP84Vp/z6wF0Aa0YZImOQY8iStY0A2zI/e3ihKNPfUm8XA==",
+      "type": "package",
+      "path": "system.codedom/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.CodeDom.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.CodeDom.dll",
+        "lib/net461/System.CodeDom.xml",
+        "lib/net6.0/System.CodeDom.dll",
+        "lib/net6.0/System.CodeDom.xml",
+        "lib/netstandard2.0/System.CodeDom.dll",
+        "lib/netstandard2.0/System.CodeDom.xml",
+        "system.codedom.6.0.0.nupkg.sha512",
+        "system.codedom.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Data.SqlClient/4.8.6": {
       "sha512": "2Ij/LCaTQRyAi5lAv7UUTV9R2FobC8xN9mE0fXBZohum/xLl8IZVmE98Rq5ugQHjCgTBRKqpXRb4ORulRdA6Ig==",
       "type": "package",
@@ -555,6 +656,34 @@
         "system.data.sqlclient.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.Management/6.0.0": {
+      "sha512": "sHsESYMmPDhQuOC66h6AEOs/XowzKsbT9srMbX71TCXP58hkpn1BqBjdmKj1+DCA/WlBETX1K5WjQHwmV0Txrg==",
+      "type": "package",
+      "path": "system.management/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Management.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/_._",
+        "lib/net6.0/System.Management.dll",
+        "lib/net6.0/System.Management.xml",
+        "lib/netcoreapp3.1/System.Management.dll",
+        "lib/netcoreapp3.1/System.Management.xml",
+        "lib/netstandard2.0/System.Management.dll",
+        "lib/netstandard2.0/System.Management.xml",
+        "runtimes/win/lib/net6.0/System.Management.dll",
+        "runtimes/win/lib/net6.0/System.Management.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Management.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Management.xml",
+        "system.management.6.0.0.nupkg.sha512",
+        "system.management.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Security.AccessControl/4.7.0": {
@@ -660,8 +789,9 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "Guna.UI2.WinForms >= 2.0.4.6",
       "MaterialSkin >= 0.2.1",
-      "ReaLTaiizor >= 3.8.0.2",
+      "ReaLTaiizor >= 3.8.0.5",
       "Syncfusion.Pdf.WinForms >= 25.1.37",
       "System.Data.SqlClient >= 4.8.6",
       "dot-net-transitions >= 1.2.1"
@@ -711,13 +841,17 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
+          "Guna.UI2.WinForms": {
+            "target": "Package",
+            "version": "[2.0.4.6, )"
+          },
           "MaterialSkin": {
             "target": "Package",
             "version": "[0.2.1, )"
           },
           "ReaLTaiizor": {
             "target": "Package",
-            "version": "[3.8.0.2, )"
+            "version": "[3.8.0.5, )"
           },
           "Syncfusion.Pdf.WinForms": {
             "target": "Package",

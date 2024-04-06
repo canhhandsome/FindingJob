@@ -154,7 +154,7 @@
               "RelativeDocumentMoniker": "WinFormCode\\FJobCreation.cs",
               "ToolTip": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FJobCreation.cs",
               "RelativeToolTip": "WinFormCode\\FJobCreation.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAApwD4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-06T07:46:38.552Z",
               "EditorCaption": ""
@@ -162,14 +162,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FJobCreation.cs [Design]",
+              "Title": "FJobCreation.cs",
               "DocumentMoniker": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FJobCreation.cs",
               "RelativeDocumentMoniker": "WinFormCode\\FJobCreation.cs",
-              "ToolTip": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FJobCreation.cs [Design]",
-              "RelativeToolTip": "WinFormCode\\FJobCreation.cs [Design]",
+              "ToolTip": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FJobCreation.cs",
+              "RelativeToolTip": "WinFormCode\\FJobCreation.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T07:46:23.722Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-06T07:46:23.722Z"
             },
             {
               "$type": "Document",
@@ -208,14 +207,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "FPostJob.cs [Design]",
+              "Title": "FPostJob.cs",
               "DocumentMoniker": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FPostJob.cs",
               "RelativeDocumentMoniker": "WinFormCode\\FPostJob.cs",
-              "ToolTip": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FPostJob.cs [Design]",
-              "RelativeToolTip": "WinFormCode\\FPostJob.cs [Design]",
+              "ToolTip": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FPostJob.cs",
+              "RelativeToolTip": "WinFormCode\\FPostJob.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T07:46:10.555Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-06T07:46:10.555Z"
             },
             {
               "$type": "Document",
@@ -280,50 +278,46 @@
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "UCApplicant.cs [Design]",
+              "Title": "UCApplicant.cs",
               "DocumentMoniker": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\UCApplicant.cs",
               "RelativeDocumentMoniker": "WinFormCode\\UCApplicant.cs",
-              "ToolTip": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\UCApplicant.cs [Design]",
-              "RelativeToolTip": "WinFormCode\\UCApplicant.cs [Design]",
+              "ToolTip": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\UCApplicant.cs",
+              "RelativeToolTip": "WinFormCode\\UCApplicant.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T09:35:50.872Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-05T09:35:50.872Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "UCAlert.cs [Design]",
+              "Title": "UCAlert.cs",
               "DocumentMoniker": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\UCAlert.cs",
               "RelativeDocumentMoniker": "WinFormCode\\UCAlert.cs",
-              "ToolTip": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\UCAlert.cs [Design]",
-              "RelativeToolTip": "WinFormCode\\UCAlert.cs [Design]",
+              "ToolTip": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\UCAlert.cs",
+              "RelativeToolTip": "WinFormCode\\UCAlert.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T09:35:33.418Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-05T09:35:33.418Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "UCInformation.cs [Design]",
+              "Title": "UCInformation.cs",
               "DocumentMoniker": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\UCInformation.cs",
               "RelativeDocumentMoniker": "WinFormCode\\UCInformation.cs",
-              "ToolTip": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\UCInformation.cs [Design]",
-              "RelativeToolTip": "WinFormCode\\UCInformation.cs [Design]",
+              "ToolTip": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\UCInformation.cs",
+              "RelativeToolTip": "WinFormCode\\UCInformation.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T11:16:25.427Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-04T11:16:25.427Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "FJobSeeker.cs [Design]",
+              "Title": "FJobSeeker.cs",
               "DocumentMoniker": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FJobSeeker.cs",
               "RelativeDocumentMoniker": "WinFormCode\\FJobSeeker.cs",
-              "ToolTip": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FJobSeeker.cs [Design]",
-              "RelativeToolTip": "WinFormCode\\FJobSeeker.cs [Design]",
+              "ToolTip": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FJobSeeker.cs",
+              "RelativeToolTip": "WinFormCode\\FJobSeeker.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T06:58:16.361Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-04T06:58:16.361Z"
             },
             {
               "$type": "Document",
@@ -553,6 +547,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

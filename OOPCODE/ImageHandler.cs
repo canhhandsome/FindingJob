@@ -10,7 +10,7 @@ namespace WinFormProject
 {
     public static class ImageHandler
     {
-        public static void DisplayImage(byte[] imageData, ref PictureBox ptb)
+        public static void DisplayImage(byte[] imageData, ref Guna.UI2.WinForms.Guna2PictureBox ptb)
         {
             // Check if byte array is not null and has data
             if (imageData != null && imageData.Length > 0)
@@ -46,7 +46,7 @@ namespace WinFormProject
                 return ms.ToArray();
             }
         }
-        public static void ChoosePicture(ref PictureBox ptb)
+        public static void ChoosePicture(ref Guna.UI2.WinForms.Guna2PictureBox ptb)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {

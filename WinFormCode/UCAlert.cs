@@ -13,13 +13,18 @@ namespace WinFormProject
     public partial class UCAlert : UserControl
     {
         Alert alert = new Alert();
+        byte[] companyAvatar = new byte[100];
+        JobDAO jobDAO = new JobDAO();
         public UCAlert(Alert alert)
         {
             InitializeComponent();
             this.alert = alert;
-            this.MaximumSize = new System.Drawing.Size(968, 225);
+            this.MaximumSize = new System.Drawing.Size(531, 206);
             lblDateT.Text = alert.DateReply.ToString("dd/MM/yyyy");
             CompanyDAO companyDAO = new CompanyDAO();
+            companyAvatar = companyDAO.FetchImg(alert.SenderID, "Avarta");
+            //ImageHandler.DisplayImage(companyAvatar, ref ptbCompanyPicture);
+            lblJobNameT.Text = jobDAO.FetchName(alert.JobID);
             lblFromT.Text = companyDAO.FetchName(alert.SenderID);
             lblSubjectT.Text = alert.Subject;
             PanelUtils.MakeRounded(this.panel1, 20);

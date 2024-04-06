@@ -28,114 +28,138 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAlert));
             panel1 = new Panel();
-            lblDateT = new Label();
-            lblDate = new Label();
-            lblSubjectT = new Label();
-            lblSubject = new Label();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             lblFromT = new Label();
-            lblForm = new Label();
+            pictureBox1 = new PictureBox();
+            lblDateT = new Label();
+            ptbCompanyPicture = new PictureBox();
+            lblJobNameT = new Label();
+            lblSubjectT = new Label();
             panel1.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(254, 232, 223);
-            panel1.Controls.Add(lblDateT);
-            panel1.Controls.Add(lblDate);
+            panel1.Controls.Add(flowLayoutPanel1);
+            panel1.Controls.Add(ptbCompanyPicture);
+            panel1.Controls.Add(lblJobNameT);
             panel1.Controls.Add(lblSubjectT);
-            panel1.Controls.Add(lblSubject);
-            panel1.Controls.Add(lblFromT);
-            panel1.Controls.Add(lblForm);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 4, 3, 4);
-            panel1.MaximumSize = new Size(969, 225);
+            panel1.MaximumSize = new Size(531, 206);
             panel1.Name = "panel1";
-            panel1.Size = new Size(968, 225);
+            panel1.Size = new Size(500, 159);
             panel1.TabIndex = 8;
-            panel1.Click += panel1_Click;
             // 
-            // lblDateT
+            // flowLayoutPanel1
             // 
-            lblDateT.AutoSize = true;
-            lblDateT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDateT.Location = new Point(117, 121);
-            lblDateT.Name = "lblDateT";
-            lblDateT.Size = new Size(69, 30);
-            lblDateT.TabIndex = 0;
-            lblDateT.Text = "Date: ";
-            // 
-            // lblDate
-            // 
-            lblDate.AutoSize = true;
-            lblDate.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDate.Location = new Point(16, 121);
-            lblDate.Name = "lblDate";
-            lblDate.Size = new Size(69, 30);
-            lblDate.TabIndex = 0;
-            lblDate.Text = "Date: ";
-            // 
-            // lblSubjectT
-            // 
-            lblSubjectT.AutoSize = true;
-            lblSubjectT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSubjectT.Location = new Point(117, 71);
-            lblSubjectT.Name = "lblSubjectT";
-            lblSubjectT.Size = new Size(95, 30);
-            lblSubjectT.TabIndex = 0;
-            lblSubjectT.Text = "Subject: ";
-            // 
-            // lblSubject
-            // 
-            lblSubject.AutoSize = true;
-            lblSubject.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSubject.Location = new Point(16, 71);
-            lblSubject.Name = "lblSubject";
-            lblSubject.Size = new Size(95, 30);
-            lblSubject.TabIndex = 0;
-            lblSubject.Text = "Subject: ";
+            flowLayoutPanel1.Controls.Add(lblFromT);
+            flowLayoutPanel1.Controls.Add(pictureBox1);
+            flowLayoutPanel1.Controls.Add(lblDateT);
+            flowLayoutPanel1.Location = new Point(14, 63);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(259, 30);
+            flowLayoutPanel1.TabIndex = 10;
             // 
             // lblFromT
             // 
             lblFromT.AutoSize = true;
             lblFromT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFromT.Location = new Point(117, 21);
+            lblFromT.ForeColor = Color.FromArgb(64, 64, 64);
+            lblFromT.Location = new Point(3, 0);
             lblFromT.Name = "lblFromT";
-            lblFromT.Size = new Size(69, 30);
+            lblFromT.Size = new Size(58, 25);
             lblFromT.TabIndex = 0;
             lblFromT.Text = "From:";
+            lblFromT.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // lblForm
+            // pictureBox1
             // 
-            lblForm.AutoSize = true;
-            lblForm.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            lblForm.Location = new Point(16, 21);
-            lblForm.Name = "lblForm";
-            lblForm.Size = new Size(69, 30);
-            lblForm.TabIndex = 0;
-            lblForm.Text = "From:";
+            pictureBox1.Dock = DockStyle.Bottom;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(67, 2);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(30, 30);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            // 
+            // lblDateT
+            // 
+            lblDateT.AutoSize = true;
+            lblDateT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDateT.ForeColor = Color.FromArgb(64, 64, 64);
+            lblDateT.Location = new Point(103, 0);
+            lblDateT.Name = "lblDateT";
+            lblDateT.Size = new Size(58, 25);
+            lblDateT.TabIndex = 0;
+            lblDateT.Text = "Date: ";
+            lblDateT.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // ptbCompanyPicture
+            // 
+            ptbCompanyPicture.Location = new Point(409, 14);
+            ptbCompanyPicture.Margin = new Padding(3, 2, 3, 2);
+            ptbCompanyPicture.Name = "ptbCompanyPicture";
+            ptbCompanyPicture.Size = new Size(68, 68);
+            ptbCompanyPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbCompanyPicture.TabIndex = 9;
+            ptbCompanyPicture.TabStop = false;
+            // 
+            // lblJobNameT
+            // 
+            lblJobNameT.AutoSize = true;
+            lblJobNameT.Font = new Font("Segoe UI Semibold", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblJobNameT.Location = new Point(14, 14);
+            lblJobNameT.Name = "lblJobNameT";
+            lblJobNameT.Size = new Size(140, 37);
+            lblJobNameT.TabIndex = 1;
+            lblJobNameT.Text = "Job Name";
+            // 
+            // lblSubjectT
+            // 
+            lblSubjectT.AutoSize = true;
+            lblSubjectT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSubjectT.ForeColor = Color.FromArgb(64, 64, 64);
+            lblSubjectT.Location = new Point(14, 111);
+            lblSubjectT.Name = "lblSubjectT";
+            lblSubjectT.Size = new Size(79, 25);
+            lblSubjectT.TabIndex = 0;
+            lblSubjectT.Text = "Subject: ";
             // 
             // UCAlert
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 10, 10);
             Name = "UCAlert";
-            Size = new Size(968, 225);
+            Size = new Size(500, 159);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         public Panel panel1;
-        public Label lblDateT;
-        public Label lblDate;
         public Label lblSubjectT;
-        public Label lblSubject;
+        public Label lblJobNameT;
+        private PictureBox ptbCompanyPicture;
+        private FlowLayoutPanel flowLayoutPanel1;
         public Label lblFromT;
-        public Label lblForm;
+        public Label lblDateT;
+        private PictureBox pictureBox1;
     }
 }

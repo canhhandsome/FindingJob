@@ -22,15 +22,9 @@ namespace WinFormProject
             this.job = job;
             this.jsID = jsID;
             InitializeComponent();
-            lblCompanyT.Text = companyDAO.FetchName(job.CompanyID);
-            lblDateT.Text = job.DatePublish.ToString("dd/MM/yyyy");
-            lblNameT.Text = job.Name;
-            lblPositionT.Text = job.Position;
-            lblSalaryT.Text = job.Salary;
             rtxtDescription.Text = job.Description;
             rtxtRequirement.Text = job.Requirement;
             rtxtBenefit.Text = job.Benefit;
-            lblEndT.Text = job.DateEnd.ToString("dd/MM/yyyy");
             if (applyDAO.CheckApply(job.Jobid, jsID))
             {
                 btnApply.Enabled = false;
@@ -56,6 +50,21 @@ namespace WinFormProject
             btnApply.Enabled = false;
             btnApply.ColorBackground = Color.FromArgb(214, 204, 194);
             btnApply.ColorBackground_Pen = Color.FromArgb(214, 204, 194);
+        }
+
+        private void btnApply_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FJobDetails_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

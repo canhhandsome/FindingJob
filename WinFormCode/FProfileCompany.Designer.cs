@@ -28,762 +28,891 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FProfileCompany));
-            this.txtDetail = new ReaLTaiizor.Controls.HopeRichTextBox();
-            this.txtCompanyName = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
-            this.txtAddress = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
-            this.txtPhoneNumber = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
-            this.txtEmail = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.ptbAvatar = new System.Windows.Forms.PictureBox();
-            this.btnChoosePicture = new ReaLTaiizor.Controls.CyberButton();
-            this.btnSave = new ReaLTaiizor.Controls.CyberButton();
-            this.btnCancel = new ReaLTaiizor.Controls.CyberButton();
-            this.btnEdit = new ReaLTaiizor.Controls.CyberButton();
-            this.lblWorkingTime = new System.Windows.Forms.Label();
-            this.txtTaxIdentification = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
-            this.cbbWTB = new ReaLTaiizor.Controls.MaterialComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbbWTEnd = new ReaLTaiizor.Controls.MaterialComboBox();
-            this.txtWebsiteLink = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
-            this.btnChooseLicense = new ReaLTaiizor.Controls.CyberButton();
-            this.ptbLicense = new System.Windows.Forms.PictureBox();
-            this.cbbCompanyType = new ReaLTaiizor.Controls.MaterialComboBox();
-            this.cbbCompanySize = new ReaLTaiizor.Controls.MaterialComboBox();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAvatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbLicense)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // txtDetail
-            // 
-            this.txtDetail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.txtDetail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.txtDetail.Hint = "Details";
-            this.txtDetail.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.txtDetail.Location = new System.Drawing.Point(26, 384);
-            this.txtDetail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtDetail.MaxLength = 32767;
-            this.txtDetail.Multiline = true;
-            this.txtDetail.Name = "txtDetail";
-            this.txtDetail.PasswordChar = '\0';
-            this.txtDetail.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtDetail.SelectedText = "";
-            this.txtDetail.SelectionLength = 0;
-            this.txtDetail.SelectionStart = 0;
-            this.txtDetail.Size = new System.Drawing.Size(680, 174);
-            this.txtDetail.TabIndex = 22;
-            this.txtDetail.TabStop = false;
-            this.txtDetail.Text = "Details";
-            this.txtDetail.UseSystemPasswordChar = false;
-            // 
-            // txtCompanyName
-            // 
-            this.txtCompanyName.AllowPromptAsInput = true;
-            this.txtCompanyName.AnimateReadOnly = false;
-            this.txtCompanyName.AsciiOnly = false;
-            this.txtCompanyName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtCompanyName.BeepOnError = false;
-            this.txtCompanyName.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtCompanyName.Depth = 0;
-            this.txtCompanyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtCompanyName.HidePromptOnLeave = false;
-            this.txtCompanyName.HideSelection = true;
-            this.txtCompanyName.Hint = "Company Name";
-            this.txtCompanyName.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.txtCompanyName.LeadingIcon = null;
-            this.txtCompanyName.Location = new System.Drawing.Point(26, 32);
-            this.txtCompanyName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCompanyName.Mask = "";
-            this.txtCompanyName.MaxLength = 32767;
-            this.txtCompanyName.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.txtCompanyName.Name = "txtCompanyName";
-            this.txtCompanyName.PasswordChar = '\0';
-            this.txtCompanyName.PrefixSuffixText = null;
-            this.txtCompanyName.PromptChar = '_';
-            this.txtCompanyName.ReadOnly = false;
-            this.txtCompanyName.RejectInputOnFirstFailure = false;
-            this.txtCompanyName.ResetOnPrompt = true;
-            this.txtCompanyName.ResetOnSpace = true;
-            this.txtCompanyName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtCompanyName.SelectedText = "";
-            this.txtCompanyName.SelectionLength = 0;
-            this.txtCompanyName.SelectionStart = 0;
-            this.txtCompanyName.ShortcutsEnabled = true;
-            this.txtCompanyName.Size = new System.Drawing.Size(298, 48);
-            this.txtCompanyName.SkipLiterals = true;
-            this.txtCompanyName.TabIndex = 38;
-            this.txtCompanyName.TabStop = false;
-            this.txtCompanyName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtCompanyName.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtCompanyName.TrailingIcon = null;
-            this.txtCompanyName.UseSystemPasswordChar = false;
-            this.txtCompanyName.ValidatingType = null;
-            // 
-            // txtAddress
-            // 
-            this.txtAddress.AllowPromptAsInput = true;
-            this.txtAddress.AnimateReadOnly = false;
-            this.txtAddress.AsciiOnly = false;
-            this.txtAddress.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtAddress.BeepOnError = false;
-            this.txtAddress.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtAddress.Depth = 0;
-            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtAddress.HidePromptOnLeave = false;
-            this.txtAddress.HideSelection = true;
-            this.txtAddress.Hint = "Address";
-            this.txtAddress.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.txtAddress.LeadingIcon = null;
-            this.txtAddress.Location = new System.Drawing.Point(373, 32);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtAddress.Mask = "";
-            this.txtAddress.MaxLength = 32767;
-            this.txtAddress.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.PasswordChar = '\0';
-            this.txtAddress.PrefixSuffixText = null;
-            this.txtAddress.PromptChar = '_';
-            this.txtAddress.ReadOnly = false;
-            this.txtAddress.RejectInputOnFirstFailure = false;
-            this.txtAddress.ResetOnPrompt = true;
-            this.txtAddress.ResetOnSpace = true;
-            this.txtAddress.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtAddress.SelectedText = "";
-            this.txtAddress.SelectionLength = 0;
-            this.txtAddress.SelectionStart = 0;
-            this.txtAddress.ShortcutsEnabled = true;
-            this.txtAddress.Size = new System.Drawing.Size(298, 48);
-            this.txtAddress.SkipLiterals = true;
-            this.txtAddress.TabIndex = 39;
-            this.txtAddress.TabStop = false;
-            this.txtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtAddress.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtAddress.TrailingIcon = null;
-            this.txtAddress.UseSystemPasswordChar = false;
-            this.txtAddress.ValidatingType = null;
-            // 
-            // txtPhoneNumber
-            // 
-            this.txtPhoneNumber.AllowPromptAsInput = true;
-            this.txtPhoneNumber.AnimateReadOnly = false;
-            this.txtPhoneNumber.AsciiOnly = false;
-            this.txtPhoneNumber.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtPhoneNumber.BeepOnError = false;
-            this.txtPhoneNumber.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtPhoneNumber.Depth = 0;
-            this.txtPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtPhoneNumber.HidePromptOnLeave = false;
-            this.txtPhoneNumber.HideSelection = true;
-            this.txtPhoneNumber.Hint = "Phone Number";
-            this.txtPhoneNumber.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.txtPhoneNumber.LeadingIcon = null;
-            this.txtPhoneNumber.Location = new System.Drawing.Point(26, 100);
-            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtPhoneNumber.Mask = "";
-            this.txtPhoneNumber.MaxLength = 32767;
-            this.txtPhoneNumber.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.PasswordChar = '\0';
-            this.txtPhoneNumber.PrefixSuffixText = null;
-            this.txtPhoneNumber.PromptChar = '_';
-            this.txtPhoneNumber.ReadOnly = false;
-            this.txtPhoneNumber.RejectInputOnFirstFailure = false;
-            this.txtPhoneNumber.ResetOnPrompt = true;
-            this.txtPhoneNumber.ResetOnSpace = true;
-            this.txtPhoneNumber.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtPhoneNumber.SelectedText = "";
-            this.txtPhoneNumber.SelectionLength = 0;
-            this.txtPhoneNumber.SelectionStart = 0;
-            this.txtPhoneNumber.ShortcutsEnabled = true;
-            this.txtPhoneNumber.Size = new System.Drawing.Size(298, 48);
-            this.txtPhoneNumber.SkipLiterals = true;
-            this.txtPhoneNumber.TabIndex = 40;
-            this.txtPhoneNumber.TabStop = false;
-            this.txtPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtPhoneNumber.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtPhoneNumber.TrailingIcon = null;
-            this.txtPhoneNumber.UseSystemPasswordChar = false;
-            this.txtPhoneNumber.ValidatingType = null;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.AllowPromptAsInput = true;
-            this.txtEmail.AnimateReadOnly = false;
-            this.txtEmail.AsciiOnly = false;
-            this.txtEmail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtEmail.BeepOnError = false;
-            this.txtEmail.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtEmail.Depth = 0;
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtEmail.HidePromptOnLeave = false;
-            this.txtEmail.HideSelection = true;
-            this.txtEmail.Hint = "Email";
-            this.txtEmail.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.txtEmail.LeadingIcon = null;
-            this.txtEmail.Location = new System.Drawing.Point(26, 170);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtEmail.Mask = "";
-            this.txtEmail.MaxLength = 32767;
-            this.txtEmail.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.PasswordChar = '\0';
-            this.txtEmail.PrefixSuffixText = null;
-            this.txtEmail.PromptChar = '_';
-            this.txtEmail.ReadOnly = false;
-            this.txtEmail.RejectInputOnFirstFailure = false;
-            this.txtEmail.ResetOnPrompt = true;
-            this.txtEmail.ResetOnSpace = true;
-            this.txtEmail.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtEmail.SelectedText = "";
-            this.txtEmail.SelectionLength = 0;
-            this.txtEmail.SelectionStart = 0;
-            this.txtEmail.ShortcutsEnabled = true;
-            this.txtEmail.Size = new System.Drawing.Size(298, 48);
-            this.txtEmail.SkipLiterals = true;
-            this.txtEmail.TabIndex = 42;
-            this.txtEmail.TabStop = false;
-            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtEmail.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtEmail.TrailingIcon = null;
-            this.txtEmail.UseSystemPasswordChar = false;
-            this.txtEmail.ValidatingType = null;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
-            this.panel1.Controls.Add(this.ptbAvatar);
-            this.panel1.Location = new System.Drawing.Point(795, 32);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(183, 195);
-            this.panel1.TabIndex = 44;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // ptbAvatar
-            // 
-            this.ptbAvatar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
-            this.ptbAvatar.ErrorImage = ((System.Drawing.Image)(resources.GetObject("ptbAvatar.ErrorImage")));
-            this.ptbAvatar.Image = ((System.Drawing.Image)(resources.GetObject("ptbAvatar.Image")));
-            this.ptbAvatar.Location = new System.Drawing.Point(6, 7);
-            this.ptbAvatar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ptbAvatar.Name = "ptbAvatar";
-            this.ptbAvatar.Size = new System.Drawing.Size(171, 179);
-            this.ptbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbAvatar.TabIndex = 8;
-            this.ptbAvatar.TabStop = false;
-            this.ptbAvatar.Click += new System.EventHandler(this.ptbAvatar_Click);
-            // 
-            // btnChoosePicture
-            // 
-            this.btnChoosePicture.Alpha = 20;
-            this.btnChoosePicture.BackColor = System.Drawing.Color.Transparent;
-            this.btnChoosePicture.Background = true;
-            this.btnChoosePicture.Background_WidthPen = 4F;
-            this.btnChoosePicture.BackgroundPen = true;
-            this.btnChoosePicture.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnChoosePicture.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnChoosePicture.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnChoosePicture.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnChoosePicture.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnChoosePicture.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnChoosePicture.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnChoosePicture.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnChoosePicture.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.btnChoosePicture.Effect_1 = true;
-            this.btnChoosePicture.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnChoosePicture.Effect_1_Transparency = 25;
-            this.btnChoosePicture.Effect_2 = true;
-            this.btnChoosePicture.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnChoosePicture.Effect_2_Transparency = 20;
-            this.btnChoosePicture.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnChoosePicture.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
-            this.btnChoosePicture.Lighting = true;
-            this.btnChoosePicture.LinearGradient_Background = false;
-            this.btnChoosePicture.LinearGradientPen = false;
-            this.btnChoosePicture.Location = new System.Drawing.Point(801, 235);
-            this.btnChoosePicture.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnChoosePicture.Name = "btnChoosePicture";
-            this.btnChoosePicture.PenWidth = 15;
-            this.btnChoosePicture.Rounding = true;
-            this.btnChoosePicture.RoundingInt = 20;
-            this.btnChoosePicture.Size = new System.Drawing.Size(171, 56);
-            this.btnChoosePicture.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnChoosePicture.TabIndex = 45;
-            this.btnChoosePicture.Tag = "Decline";
-            this.btnChoosePicture.TextButton = "Choose Picture";
-            this.btnChoosePicture.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnChoosePicture.Timer_Effect_1 = 5;
-            this.btnChoosePicture.Timer_RGB = 300;
-            this.btnChoosePicture.Click += new System.EventHandler(this.btnChoosePicture_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.Alpha = 20;
-            this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.Background = true;
-            this.btnSave.Background_WidthPen = 4F;
-            this.btnSave.BackgroundPen = true;
-            this.btnSave.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnSave.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSave.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSave.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnSave.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSave.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSave.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.btnSave.Effect_1 = true;
-            this.btnSave.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSave.Effect_1_Transparency = 25;
-            this.btnSave.Effect_2 = true;
-            this.btnSave.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSave.Effect_2_Transparency = 20;
-            this.btnSave.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
-            this.btnSave.Lighting = true;
-            this.btnSave.LinearGradient_Background = false;
-            this.btnSave.LinearGradientPen = false;
-            this.btnSave.Location = new System.Drawing.Point(734, 502);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.PenWidth = 15;
-            this.btnSave.Rounding = true;
-            this.btnSave.RoundingInt = 20;
-            this.btnSave.Size = new System.Drawing.Size(148, 56);
-            this.btnSave.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnSave.TabIndex = 46;
-            this.btnSave.Tag = "Decline";
-            this.btnSave.TextButton = "Save";
-            this.btnSave.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnSave.Timer_Effect_1 = 5;
-            this.btnSave.Timer_RGB = 300;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Alpha = 20;
-            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancel.Background = true;
-            this.btnCancel.Background_WidthPen = 4F;
-            this.btnCancel.BackgroundPen = true;
-            this.btnCancel.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.btnCancel.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCancel.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCancel.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnCancel.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCancel.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCancel.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.btnCancel.Effect_1 = true;
-            this.btnCancel.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCancel.Effect_1_Transparency = 25;
-            this.btnCancel.Effect_2 = true;
-            this.btnCancel.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCancel.Effect_2_Transparency = 20;
-            this.btnCancel.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
-            this.btnCancel.Lighting = true;
-            this.btnCancel.LinearGradient_Background = false;
-            this.btnCancel.LinearGradientPen = false;
-            this.btnCancel.Location = new System.Drawing.Point(888, 502);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.PenWidth = 15;
-            this.btnCancel.Rounding = true;
-            this.btnCancel.RoundingInt = 20;
-            this.btnCancel.Size = new System.Drawing.Size(148, 56);
-            this.btnCancel.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnCancel.TabIndex = 47;
-            this.btnCancel.Tag = "Decline";
-            this.btnCancel.TextButton = "Cancel";
-            this.btnCancel.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnCancel.Timer_Effect_1 = 5;
-            this.btnCancel.Timer_RGB = 300;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Alpha = 20;
-            this.btnEdit.BackColor = System.Drawing.Color.Transparent;
-            this.btnEdit.Background = true;
-            this.btnEdit.Background_WidthPen = 4F;
-            this.btnEdit.BackgroundPen = true;
-            this.btnEdit.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnEdit.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnEdit.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnEdit.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnEdit.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnEdit.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnEdit.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.btnEdit.Effect_1 = true;
-            this.btnEdit.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnEdit.Effect_1_Transparency = 25;
-            this.btnEdit.Effect_2 = true;
-            this.btnEdit.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnEdit.Effect_2_Transparency = 20;
-            this.btnEdit.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
-            this.btnEdit.Lighting = true;
-            this.btnEdit.LinearGradient_Background = false;
-            this.btnEdit.LinearGradientPen = false;
-            this.btnEdit.Location = new System.Drawing.Point(812, 502);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.PenWidth = 15;
-            this.btnEdit.Rounding = true;
-            this.btnEdit.RoundingInt = 20;
-            this.btnEdit.Size = new System.Drawing.Size(148, 56);
-            this.btnEdit.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnEdit.TabIndex = 48;
-            this.btnEdit.Tag = "Decline";
-            this.btnEdit.TextButton = "Edit";
-            this.btnEdit.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnEdit.Timer_Effect_1 = 5;
-            this.btnEdit.Timer_RGB = 300;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // lblWorkingTime
-            // 
-            this.lblWorkingTime.AutoSize = true;
-            this.lblWorkingTime.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblWorkingTime.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblWorkingTime.Location = new System.Drawing.Point(26, 326);
-            this.lblWorkingTime.Name = "lblWorkingTime";
-            this.lblWorkingTime.Size = new System.Drawing.Size(138, 28);
-            this.lblWorkingTime.TabIndex = 49;
-            this.lblWorkingTime.Text = "Working Time:";
-            // 
-            // txtTaxIdentification
-            // 
-            this.txtTaxIdentification.AllowPromptAsInput = true;
-            this.txtTaxIdentification.AnimateReadOnly = false;
-            this.txtTaxIdentification.AsciiOnly = false;
-            this.txtTaxIdentification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtTaxIdentification.BeepOnError = false;
-            this.txtTaxIdentification.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtTaxIdentification.Depth = 0;
-            this.txtTaxIdentification.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtTaxIdentification.HidePromptOnLeave = false;
-            this.txtTaxIdentification.HideSelection = true;
-            this.txtTaxIdentification.Hint = "Tax Identification";
-            this.txtTaxIdentification.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.txtTaxIdentification.LeadingIcon = null;
-            this.txtTaxIdentification.Location = new System.Drawing.Point(373, 100);
-            this.txtTaxIdentification.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtTaxIdentification.Mask = "";
-            this.txtTaxIdentification.MaxLength = 32767;
-            this.txtTaxIdentification.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.txtTaxIdentification.Name = "txtTaxIdentification";
-            this.txtTaxIdentification.PasswordChar = '\0';
-            this.txtTaxIdentification.PrefixSuffixText = null;
-            this.txtTaxIdentification.PromptChar = '_';
-            this.txtTaxIdentification.ReadOnly = false;
-            this.txtTaxIdentification.RejectInputOnFirstFailure = false;
-            this.txtTaxIdentification.ResetOnPrompt = true;
-            this.txtTaxIdentification.ResetOnSpace = true;
-            this.txtTaxIdentification.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtTaxIdentification.SelectedText = "";
-            this.txtTaxIdentification.SelectionLength = 0;
-            this.txtTaxIdentification.SelectionStart = 0;
-            this.txtTaxIdentification.ShortcutsEnabled = true;
-            this.txtTaxIdentification.Size = new System.Drawing.Size(298, 48);
-            this.txtTaxIdentification.SkipLiterals = true;
-            this.txtTaxIdentification.TabIndex = 50;
-            this.txtTaxIdentification.TabStop = false;
-            this.txtTaxIdentification.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtTaxIdentification.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtTaxIdentification.TrailingIcon = null;
-            this.txtTaxIdentification.UseSystemPasswordChar = false;
-            this.txtTaxIdentification.ValidatingType = null;
-            // 
-            // cbbWTB
-            // 
-            this.cbbWTB.AutoResize = false;
-            this.cbbWTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbbWTB.Depth = 0;
-            this.cbbWTB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cbbWTB.DropDownHeight = 174;
-            this.cbbWTB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbWTB.DropDownWidth = 121;
-            this.cbbWTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cbbWTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cbbWTB.FormattingEnabled = true;
-            this.cbbWTB.IntegralHeight = false;
-            this.cbbWTB.ItemHeight = 43;
-            this.cbbWTB.Items.AddRange(new object[] {
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"});
-            this.cbbWTB.Location = new System.Drawing.Point(170, 315);
-            this.cbbWTB.MaxDropDownItems = 4;
-            this.cbbWTB.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.cbbWTB.Name = "cbbWTB";
-            this.cbbWTB.Size = new System.Drawing.Size(154, 49);
-            this.cbbWTB.StartIndex = 0;
-            this.cbbWTB.TabIndex = 51;
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges41 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges42 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges43 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges44 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges45 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges46 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges47 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges48 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges49 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges50 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges51 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges52 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges53 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges54 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges55 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges56 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges57 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges58 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            label1 = new Label();
+            txtCompanyName = new Guna.UI2.WinForms.Guna2TextBox();
+            txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
+            txtPhoneNumber = new Guna.UI2.WinForms.Guna2TextBox();
+            txtTaxIdentification = new Guna.UI2.WinForms.Guna2TextBox();
+            txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            txtWebsiteLink = new Guna.UI2.WinForms.Guna2TextBox();
+            cbbCompanyType = new Guna.UI2.WinForms.Guna2ComboBox();
+            cbbCompanySize = new Guna.UI2.WinForms.Guna2ComboBox();
+            cbbWTEnd = new Guna.UI2.WinForms.Guna2ComboBox();
+            cbbWTB = new Guna.UI2.WinForms.Guna2ComboBox();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            txtDetail = new Guna.UI2.WinForms.Guna2TextBox();
+            lblCompanyName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lblAddress = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lblPhoneNumber = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lblTax = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lblEmail = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lblWebsiteLink = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
+            guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            guna2PictureBox10 = new Guna.UI2.WinForms.Guna2PictureBox();
+            ptbAvatar = new Guna.UI2.WinForms.Guna2PictureBox();
+            ptbLicense = new Guna.UI2.WinForms.Guna2PictureBox();
+            btnChoosePicture = new Guna.UI2.WinForms.Guna2Button();
+            btnChooseLicense = new Guna.UI2.WinForms.Guna2Button();
+            btnCancel = new Guna.UI2.WinForms.Guna2Button();
+            btnSave = new Guna.UI2.WinForms.Guna2Button();
+            btnEdit = new Guna.UI2.WinForms.Guna2Button();
+            guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ptbAvatar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ptbLicense).BeginInit();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(333, 326);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 28);
-            this.label1.TabIndex = 52;
-            this.label1.Text = "to";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ControlText;
+            label1.Location = new Point(221, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(31, 28);
+            label1.TabIndex = 52;
+            label1.Text = "to";
             // 
-            // cbbWTEnd
+            // txtCompanyName
             // 
-            this.cbbWTEnd.AutoResize = false;
-            this.cbbWTEnd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbbWTEnd.Depth = 0;
-            this.cbbWTEnd.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cbbWTEnd.DropDownHeight = 174;
-            this.cbbWTEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbWTEnd.DropDownWidth = 121;
-            this.cbbWTEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cbbWTEnd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cbbWTEnd.FormattingEnabled = true;
-            this.cbbWTEnd.IntegralHeight = false;
-            this.cbbWTEnd.ItemHeight = 43;
-            this.cbbWTEnd.Items.AddRange(new object[] {
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"});
-            this.cbbWTEnd.Location = new System.Drawing.Point(373, 314);
-            this.cbbWTEnd.MaxDropDownItems = 4;
-            this.cbbWTEnd.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.cbbWTEnd.Name = "cbbWTEnd";
-            this.cbbWTEnd.Size = new System.Drawing.Size(154, 49);
-            this.cbbWTEnd.StartIndex = 0;
-            this.cbbWTEnd.TabIndex = 53;
+            txtCompanyName.BorderRadius = 10;
+            txtCompanyName.CustomizableEdges = customizableEdges1;
+            txtCompanyName.DefaultText = "";
+            txtCompanyName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtCompanyName.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtCompanyName.DisabledState.ForeColor = Color.Black;
+            txtCompanyName.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtCompanyName.FillColor = Color.FromArgb(248, 212, 187);
+            txtCompanyName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtCompanyName.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCompanyName.ForeColor = Color.Black;
+            txtCompanyName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtCompanyName.Location = new Point(43, 89);
+            txtCompanyName.Margin = new Padding(5, 3, 5, 3);
+            txtCompanyName.Multiline = true;
+            txtCompanyName.Name = "txtCompanyName";
+            txtCompanyName.PasswordChar = '\0';
+            txtCompanyName.PlaceholderText = "";
+            txtCompanyName.SelectedText = "";
+            txtCompanyName.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtCompanyName.Size = new Size(355, 64);
+            txtCompanyName.TabIndex = 59;
+            // 
+            // txtAddress
+            // 
+            txtAddress.BorderRadius = 10;
+            txtAddress.CustomizableEdges = customizableEdges3;
+            txtAddress.DefaultText = "";
+            txtAddress.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtAddress.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtAddress.DisabledState.ForeColor = Color.Black;
+            txtAddress.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtAddress.FillColor = Color.FromArgb(248, 212, 187);
+            txtAddress.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtAddress.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtAddress.ForeColor = Color.Black;
+            txtAddress.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtAddress.Location = new Point(492, 93);
+            txtAddress.Margin = new Padding(5, 3, 5, 3);
+            txtAddress.Multiline = true;
+            txtAddress.Name = "txtAddress";
+            txtAddress.PasswordChar = '\0';
+            txtAddress.PlaceholderText = "";
+            txtAddress.SelectedText = "";
+            txtAddress.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtAddress.Size = new Size(355, 64);
+            txtAddress.TabIndex = 60;
+            // 
+            // txtPhoneNumber
+            // 
+            txtPhoneNumber.BorderRadius = 10;
+            txtPhoneNumber.CustomizableEdges = customizableEdges5;
+            txtPhoneNumber.DefaultText = "";
+            txtPhoneNumber.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtPhoneNumber.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtPhoneNumber.DisabledState.ForeColor = Color.Black;
+            txtPhoneNumber.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtPhoneNumber.FillColor = Color.FromArgb(248, 212, 187);
+            txtPhoneNumber.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtPhoneNumber.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPhoneNumber.ForeColor = Color.Black;
+            txtPhoneNumber.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtPhoneNumber.Location = new Point(43, 204);
+            txtPhoneNumber.Margin = new Padding(5, 3, 5, 3);
+            txtPhoneNumber.Multiline = true;
+            txtPhoneNumber.Name = "txtPhoneNumber";
+            txtPhoneNumber.PasswordChar = '\0';
+            txtPhoneNumber.PlaceholderText = "";
+            txtPhoneNumber.SelectedText = "";
+            txtPhoneNumber.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txtPhoneNumber.Size = new Size(355, 64);
+            txtPhoneNumber.TabIndex = 61;
+            // 
+            // txtTaxIdentification
+            // 
+            txtTaxIdentification.BorderRadius = 10;
+            txtTaxIdentification.CustomizableEdges = customizableEdges7;
+            txtTaxIdentification.DefaultText = "";
+            txtTaxIdentification.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtTaxIdentification.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtTaxIdentification.DisabledState.ForeColor = Color.Black;
+            txtTaxIdentification.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtTaxIdentification.FillColor = Color.FromArgb(248, 212, 187);
+            txtTaxIdentification.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtTaxIdentification.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtTaxIdentification.ForeColor = Color.Black;
+            txtTaxIdentification.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtTaxIdentification.Location = new Point(492, 204);
+            txtTaxIdentification.Margin = new Padding(5, 3, 5, 3);
+            txtTaxIdentification.Multiline = true;
+            txtTaxIdentification.Name = "txtTaxIdentification";
+            txtTaxIdentification.PasswordChar = '\0';
+            txtTaxIdentification.PlaceholderText = "";
+            txtTaxIdentification.SelectedText = "";
+            txtTaxIdentification.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtTaxIdentification.Size = new Size(355, 64);
+            txtTaxIdentification.TabIndex = 62;
+            // 
+            // txtEmail
+            // 
+            txtEmail.BorderRadius = 10;
+            txtEmail.CustomizableEdges = customizableEdges9;
+            txtEmail.DefaultText = "";
+            txtEmail.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtEmail.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtEmail.DisabledState.ForeColor = Color.Black;
+            txtEmail.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtEmail.FillColor = Color.FromArgb(248, 212, 187);
+            txtEmail.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtEmail.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEmail.ForeColor = Color.Black;
+            txtEmail.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtEmail.Location = new Point(43, 315);
+            txtEmail.Margin = new Padding(5, 3, 5, 3);
+            txtEmail.Multiline = true;
+            txtEmail.Name = "txtEmail";
+            txtEmail.PasswordChar = '\0';
+            txtEmail.PlaceholderText = "";
+            txtEmail.SelectedText = "";
+            txtEmail.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtEmail.Size = new Size(355, 64);
+            txtEmail.TabIndex = 63;
             // 
             // txtWebsiteLink
             // 
-            this.txtWebsiteLink.AllowPromptAsInput = true;
-            this.txtWebsiteLink.AnimateReadOnly = false;
-            this.txtWebsiteLink.AsciiOnly = false;
-            this.txtWebsiteLink.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtWebsiteLink.BeepOnError = false;
-            this.txtWebsiteLink.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtWebsiteLink.Depth = 0;
-            this.txtWebsiteLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtWebsiteLink.HidePromptOnLeave = false;
-            this.txtWebsiteLink.HideSelection = true;
-            this.txtWebsiteLink.Hint = "Website Link";
-            this.txtWebsiteLink.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.txtWebsiteLink.LeadingIcon = null;
-            this.txtWebsiteLink.Location = new System.Drawing.Point(373, 170);
-            this.txtWebsiteLink.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtWebsiteLink.Mask = "";
-            this.txtWebsiteLink.MaxLength = 32767;
-            this.txtWebsiteLink.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.txtWebsiteLink.Name = "txtWebsiteLink";
-            this.txtWebsiteLink.PasswordChar = '\0';
-            this.txtWebsiteLink.PrefixSuffixText = null;
-            this.txtWebsiteLink.PromptChar = '_';
-            this.txtWebsiteLink.ReadOnly = false;
-            this.txtWebsiteLink.RejectInputOnFirstFailure = false;
-            this.txtWebsiteLink.ResetOnPrompt = true;
-            this.txtWebsiteLink.ResetOnSpace = true;
-            this.txtWebsiteLink.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtWebsiteLink.SelectedText = "";
-            this.txtWebsiteLink.SelectionLength = 0;
-            this.txtWebsiteLink.SelectionStart = 0;
-            this.txtWebsiteLink.ShortcutsEnabled = true;
-            this.txtWebsiteLink.Size = new System.Drawing.Size(298, 48);
-            this.txtWebsiteLink.SkipLiterals = true;
-            this.txtWebsiteLink.TabIndex = 54;
-            this.txtWebsiteLink.TabStop = false;
-            this.txtWebsiteLink.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtWebsiteLink.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtWebsiteLink.TrailingIcon = null;
-            this.txtWebsiteLink.UseSystemPasswordChar = false;
-            this.txtWebsiteLink.ValidatingType = null;
-            // 
-            // btnChooseLicense
-            // 
-            this.btnChooseLicense.Alpha = 20;
-            this.btnChooseLicense.BackColor = System.Drawing.Color.Transparent;
-            this.btnChooseLicense.Background = true;
-            this.btnChooseLicense.Background_WidthPen = 4F;
-            this.btnChooseLicense.BackgroundPen = true;
-            this.btnChooseLicense.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnChooseLicense.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnChooseLicense.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnChooseLicense.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnChooseLicense.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnChooseLicense.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnChooseLicense.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnChooseLicense.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnChooseLicense.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.btnChooseLicense.Effect_1 = true;
-            this.btnChooseLicense.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnChooseLicense.Effect_1_Transparency = 25;
-            this.btnChooseLicense.Effect_2 = true;
-            this.btnChooseLicense.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnChooseLicense.Effect_2_Transparency = 20;
-            this.btnChooseLicense.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnChooseLicense.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
-            this.btnChooseLicense.Lighting = true;
-            this.btnChooseLicense.LinearGradient_Background = false;
-            this.btnChooseLicense.LinearGradientPen = false;
-            this.btnChooseLicense.Location = new System.Drawing.Point(801, 440);
-            this.btnChooseLicense.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnChooseLicense.Name = "btnChooseLicense";
-            this.btnChooseLicense.PenWidth = 15;
-            this.btnChooseLicense.Rounding = true;
-            this.btnChooseLicense.RoundingInt = 20;
-            this.btnChooseLicense.Size = new System.Drawing.Size(171, 56);
-            this.btnChooseLicense.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnChooseLicense.TabIndex = 55;
-            this.btnChooseLicense.Tag = "Decline";
-            this.btnChooseLicense.TextButton = "Choose License";
-            this.btnChooseLicense.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnChooseLicense.Timer_Effect_1 = 5;
-            this.btnChooseLicense.Timer_RGB = 300;
-            this.btnChooseLicense.Click += new System.EventHandler(this.btnChooseLicense_Click);
-            // 
-            // ptbLicense
-            // 
-            this.ptbLicense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
-            this.ptbLicense.ErrorImage = ((System.Drawing.Image)(resources.GetObject("ptbLicense.ErrorImage")));
-            this.ptbLicense.Image = ((System.Drawing.Image)(resources.GetObject("ptbLicense.Image")));
-            this.ptbLicense.Location = new System.Drawing.Point(812, 299);
-            this.ptbLicense.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ptbLicense.Name = "ptbLicense";
-            this.ptbLicense.Size = new System.Drawing.Size(148, 131);
-            this.ptbLicense.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbLicense.TabIndex = 56;
-            this.ptbLicense.TabStop = false;
+            txtWebsiteLink.BorderRadius = 10;
+            txtWebsiteLink.CustomizableEdges = customizableEdges11;
+            txtWebsiteLink.DefaultText = "";
+            txtWebsiteLink.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtWebsiteLink.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtWebsiteLink.DisabledState.ForeColor = Color.Black;
+            txtWebsiteLink.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtWebsiteLink.FillColor = Color.FromArgb(248, 212, 187);
+            txtWebsiteLink.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtWebsiteLink.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtWebsiteLink.ForeColor = Color.Black;
+            txtWebsiteLink.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtWebsiteLink.Location = new Point(492, 315);
+            txtWebsiteLink.Margin = new Padding(5, 3, 5, 3);
+            txtWebsiteLink.Multiline = true;
+            txtWebsiteLink.Name = "txtWebsiteLink";
+            txtWebsiteLink.PasswordChar = '\0';
+            txtWebsiteLink.PlaceholderText = "";
+            txtWebsiteLink.SelectedText = "";
+            txtWebsiteLink.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtWebsiteLink.Size = new Size(355, 64);
+            txtWebsiteLink.TabIndex = 64;
             // 
             // cbbCompanyType
             // 
-            this.cbbCompanyType.AutoResize = false;
-            this.cbbCompanyType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbbCompanyType.Depth = 0;
-            this.cbbCompanyType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cbbCompanyType.DropDownHeight = 174;
-            this.cbbCompanyType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbCompanyType.DropDownWidth = 121;
-            this.cbbCompanyType.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cbbCompanyType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cbbCompanyType.FormattingEnabled = true;
-            this.cbbCompanyType.Hint = "Company Type";
-            this.cbbCompanyType.IntegralHeight = false;
-            this.cbbCompanyType.ItemHeight = 43;
-            this.cbbCompanyType.Items.AddRange(new object[] {
-            "Outsource",
-            "Product",
-            "HeadHunter",
-            "Non - IT",
-            "Services and Consulting"});
-            this.cbbCompanyType.Location = new System.Drawing.Point(26, 242);
-            this.cbbCompanyType.MaxDropDownItems = 4;
-            this.cbbCompanyType.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.cbbCompanyType.Name = "cbbCompanyType";
-            this.cbbCompanyType.Size = new System.Drawing.Size(298, 49);
-            this.cbbCompanyType.StartIndex = 0;
-            this.cbbCompanyType.TabIndex = 57;
+            cbbCompanyType.BackColor = Color.Transparent;
+            cbbCompanyType.BorderRadius = 10;
+            cbbCompanyType.CustomizableEdges = customizableEdges13;
+            cbbCompanyType.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            cbbCompanyType.DisabledState.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            cbbCompanyType.DrawMode = DrawMode.OwnerDrawFixed;
+            cbbCompanyType.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbbCompanyType.FillColor = Color.FromArgb(248, 212, 187);
+            cbbCompanyType.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbbCompanyType.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbbCompanyType.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            cbbCompanyType.ForeColor = Color.Black;
+            cbbCompanyType.ItemHeight = 50;
+            cbbCompanyType.Items.AddRange(new object[] { "Outsource", "Product", "HeadHunter", "Non - IT", "Services and Consulting" });
+            cbbCompanyType.Location = new Point(43, 426);
+            cbbCompanyType.Margin = new Padding(5, 3, 5, 3);
+            cbbCompanyType.Name = "cbbCompanyType";
+            cbbCompanyType.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            cbbCompanyType.Size = new Size(355, 56);
+            cbbCompanyType.TabIndex = 65;
             // 
             // cbbCompanySize
             // 
-            this.cbbCompanySize.AutoResize = false;
-            this.cbbCompanySize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbbCompanySize.Depth = 0;
-            this.cbbCompanySize.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cbbCompanySize.DropDownHeight = 174;
-            this.cbbCompanySize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbCompanySize.DropDownWidth = 121;
-            this.cbbCompanySize.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cbbCompanySize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cbbCompanySize.FormattingEnabled = true;
-            this.cbbCompanySize.Hint = "Company Size";
-            this.cbbCompanySize.IntegralHeight = false;
-            this.cbbCompanySize.ItemHeight = 43;
-            this.cbbCompanySize.Items.AddRange(new object[] {
-            "Small",
-            "Medium",
-            "Large"});
-            this.cbbCompanySize.Location = new System.Drawing.Point(373, 242);
-            this.cbbCompanySize.MaxDropDownItems = 4;
-            this.cbbCompanySize.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.cbbCompanySize.Name = "cbbCompanySize";
-            this.cbbCompanySize.Size = new System.Drawing.Size(298, 49);
-            this.cbbCompanySize.StartIndex = 0;
-            this.cbbCompanySize.TabIndex = 58;
+            cbbCompanySize.BackColor = Color.Transparent;
+            cbbCompanySize.BorderRadius = 10;
+            cbbCompanySize.CustomizableEdges = customizableEdges15;
+            cbbCompanySize.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            cbbCompanySize.DisabledState.ForeColor = Color.Black;
+            cbbCompanySize.DrawMode = DrawMode.OwnerDrawFixed;
+            cbbCompanySize.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbbCompanySize.FillColor = Color.FromArgb(248, 212, 187);
+            cbbCompanySize.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbbCompanySize.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbbCompanySize.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            cbbCompanySize.ForeColor = Color.Black;
+            cbbCompanySize.ItemHeight = 50;
+            cbbCompanySize.Items.AddRange(new object[] { "Small", "Medium", "Large" });
+            cbbCompanySize.Location = new Point(492, 426);
+            cbbCompanySize.Margin = new Padding(5, 3, 5, 3);
+            cbbCompanySize.Name = "cbbCompanySize";
+            cbbCompanySize.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            cbbCompanySize.Size = new Size(355, 56);
+            cbbCompanySize.TabIndex = 66;
+            // 
+            // cbbWTEnd
+            // 
+            cbbWTEnd.BackColor = Color.Transparent;
+            cbbWTEnd.BorderRadius = 10;
+            cbbWTEnd.CustomizableEdges = customizableEdges17;
+            cbbWTEnd.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            cbbWTEnd.DisabledState.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            cbbWTEnd.DisabledState.ForeColor = Color.Black;
+            cbbWTEnd.Dock = DockStyle.Right;
+            cbbWTEnd.DrawMode = DrawMode.OwnerDrawFixed;
+            cbbWTEnd.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbbWTEnd.FillColor = Color.FromArgb(248, 212, 187);
+            cbbWTEnd.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbbWTEnd.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbbWTEnd.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            cbbWTEnd.ForeColor = Color.Black;
+            cbbWTEnd.ItemHeight = 50;
+            cbbWTEnd.Items.AddRange(new object[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" });
+            cbbWTEnd.Location = new Point(296, 0);
+            cbbWTEnd.Margin = new Padding(5, 3, 5, 3);
+            cbbWTEnd.Name = "cbbWTEnd";
+            cbbWTEnd.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            cbbWTEnd.Size = new Size(175, 56);
+            cbbWTEnd.TabIndex = 67;
+            // 
+            // cbbWTB
+            // 
+            cbbWTB.BackColor = Color.Transparent;
+            cbbWTB.BorderRadius = 10;
+            cbbWTB.CustomizableEdges = customizableEdges19;
+            cbbWTB.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            cbbWTB.DisabledState.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            cbbWTB.DisabledState.ForeColor = Color.Black;
+            cbbWTB.Dock = DockStyle.Left;
+            cbbWTB.DrawMode = DrawMode.OwnerDrawFixed;
+            cbbWTB.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbbWTB.FillColor = Color.FromArgb(248, 212, 187);
+            cbbWTB.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbbWTB.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbbWTB.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            cbbWTB.ForeColor = Color.Black;
+            cbbWTB.ItemHeight = 50;
+            cbbWTB.Items.AddRange(new object[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" });
+            cbbWTB.Location = new Point(0, 0);
+            cbbWTB.Margin = new Padding(5, 3, 5, 3);
+            cbbWTB.Name = "cbbWTB";
+            cbbWTB.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            cbbWTB.Size = new Size(175, 56);
+            cbbWTB.TabIndex = 68;
+            // 
+            // guna2Panel1
+            // 
+            guna2Panel1.BorderRadius = 10;
+            guna2Panel1.Controls.Add(label1);
+            guna2Panel1.Controls.Add(cbbWTEnd);
+            guna2Panel1.Controls.Add(cbbWTB);
+            guna2Panel1.CustomizableEdges = customizableEdges21;
+            guna2Panel1.Location = new Point(43, 541);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            guna2Panel1.Size = new Size(471, 73);
+            guna2Panel1.TabIndex = 69;
+            // 
+            // txtDetail
+            // 
+            txtDetail.BorderRadius = 10;
+            txtDetail.CustomizableEdges = customizableEdges23;
+            txtDetail.DefaultText = "";
+            txtDetail.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtDetail.DisabledState.FillColor = Color.FromArgb(248, 212, 187);
+            txtDetail.DisabledState.ForeColor = Color.Black;
+            txtDetail.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtDetail.FillColor = Color.FromArgb(248, 212, 187);
+            txtDetail.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtDetail.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtDetail.ForeColor = Color.Black;
+            txtDetail.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtDetail.Location = new Point(43, 661);
+            txtDetail.Margin = new Padding(5, 3, 5, 3);
+            txtDetail.Name = "txtDetail";
+            txtDetail.PasswordChar = '\0';
+            txtDetail.PlaceholderText = "";
+            txtDetail.SelectedText = "";
+            txtDetail.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            txtDetail.Size = new Size(722, 183);
+            txtDetail.TabIndex = 70;
+            // 
+            // lblCompanyName
+            // 
+            lblCompanyName.BackColor = Color.Transparent;
+            lblCompanyName.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCompanyName.Location = new Point(43, 43);
+            lblCompanyName.Name = "lblCompanyName";
+            lblCompanyName.Size = new Size(167, 33);
+            lblCompanyName.TabIndex = 71;
+            lblCompanyName.Text = "CompanyName";
+            // 
+            // lblAddress
+            // 
+            lblAddress.BackColor = Color.Transparent;
+            lblAddress.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAddress.Location = new Point(492, 43);
+            lblAddress.Name = "lblAddress";
+            lblAddress.Size = new Size(88, 33);
+            lblAddress.TabIndex = 72;
+            lblAddress.Text = "Address";
+            // 
+            // lblPhoneNumber
+            // 
+            lblPhoneNumber.BackColor = Color.Transparent;
+            lblPhoneNumber.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPhoneNumber.Location = new Point(43, 159);
+            lblPhoneNumber.Name = "lblPhoneNumber";
+            lblPhoneNumber.Size = new Size(165, 33);
+            lblPhoneNumber.TabIndex = 73;
+            lblPhoneNumber.Text = "Phone Number";
+            // 
+            // lblTax
+            // 
+            lblTax.BackColor = Color.Transparent;
+            lblTax.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTax.Location = new Point(492, 159);
+            lblTax.Name = "lblTax";
+            lblTax.Size = new Size(193, 33);
+            lblTax.TabIndex = 74;
+            lblTax.Text = "Tax Identification";
+            // 
+            // lblEmail
+            // 
+            lblEmail.BackColor = Color.Transparent;
+            lblEmail.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblEmail.Location = new Point(43, 267);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(62, 33);
+            lblEmail.TabIndex = 75;
+            lblEmail.Text = "Email";
+            // 
+            // lblWebsiteLink
+            // 
+            lblWebsiteLink.BackColor = Color.Transparent;
+            lblWebsiteLink.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblWebsiteLink.Location = new Point(492, 269);
+            lblWebsiteLink.Name = "lblWebsiteLink";
+            lblWebsiteLink.Size = new Size(142, 33);
+            lblWebsiteLink.TabIndex = 76;
+            lblWebsiteLink.Text = "Website Link";
+            // 
+            // guna2HtmlLabel1
+            // 
+            guna2HtmlLabel1.BackColor = Color.Transparent;
+            guna2HtmlLabel1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel1.Location = new Point(43, 383);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(161, 33);
+            guna2HtmlLabel1.TabIndex = 77;
+            guna2HtmlLabel1.Text = "Company Type";
+            // 
+            // guna2HtmlLabel2
+            // 
+            guna2HtmlLabel2.BackColor = Color.Transparent;
+            guna2HtmlLabel2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel2.Location = new Point(492, 382);
+            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            guna2HtmlLabel2.Size = new Size(153, 33);
+            guna2HtmlLabel2.TabIndex = 78;
+            guna2HtmlLabel2.Text = "Company Size";
+            // 
+            // guna2HtmlLabel3
+            // 
+            guna2HtmlLabel3.BackColor = Color.Transparent;
+            guna2HtmlLabel3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel3.Location = new Point(43, 502);
+            guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            guna2HtmlLabel3.Size = new Size(156, 33);
+            guna2HtmlLabel3.TabIndex = 79;
+            guna2HtmlLabel3.Text = "Working Time";
+            // 
+            // guna2HtmlLabel4
+            // 
+            guna2HtmlLabel4.BackColor = Color.Transparent;
+            guna2HtmlLabel4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel4.Location = new Point(43, 620);
+            guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            guna2HtmlLabel4.Size = new Size(77, 33);
+            guna2HtmlLabel4.TabIndex = 80;
+            guna2HtmlLabel4.Text = "Details";
+            // 
+            // guna2PictureBox1
+            // 
+            guna2PictureBox1.CustomizableEdges = customizableEdges25;
+            guna2PictureBox1.Image = (Image)resources.GetObject("guna2PictureBox1.Image");
+            guna2PictureBox1.ImageRotate = 0F;
+            guna2PictureBox1.Location = new Point(35, 76);
+            guna2PictureBox1.Name = "guna2PictureBox1";
+            guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            guna2PictureBox1.Size = new Size(27, 25);
+            guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            guna2PictureBox1.TabIndex = 81;
+            guna2PictureBox1.TabStop = false;
+            // 
+            // guna2PictureBox2
+            // 
+            guna2PictureBox2.CustomizableEdges = customizableEdges27;
+            guna2PictureBox2.Image = (Image)resources.GetObject("guna2PictureBox2.Image");
+            guna2PictureBox2.ImageRotate = 0F;
+            guna2PictureBox2.Location = new Point(483, 76);
+            guna2PictureBox2.Name = "guna2PictureBox2";
+            guna2PictureBox2.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            guna2PictureBox2.Size = new Size(27, 25);
+            guna2PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            guna2PictureBox2.TabIndex = 82;
+            guna2PictureBox2.TabStop = false;
+            // 
+            // guna2PictureBox3
+            // 
+            guna2PictureBox3.CustomizableEdges = customizableEdges29;
+            guna2PictureBox3.Image = (Image)resources.GetObject("guna2PictureBox3.Image");
+            guna2PictureBox3.ImageRotate = 0F;
+            guna2PictureBox3.Location = new Point(37, 191);
+            guna2PictureBox3.Name = "guna2PictureBox3";
+            guna2PictureBox3.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            guna2PictureBox3.Size = new Size(27, 25);
+            guna2PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            guna2PictureBox3.TabIndex = 83;
+            guna2PictureBox3.TabStop = false;
+            // 
+            // guna2PictureBox4
+            // 
+            guna2PictureBox4.CustomizableEdges = customizableEdges31;
+            guna2PictureBox4.Image = (Image)resources.GetObject("guna2PictureBox4.Image");
+            guna2PictureBox4.ImageRotate = 0F;
+            guna2PictureBox4.Location = new Point(483, 191);
+            guna2PictureBox4.Name = "guna2PictureBox4";
+            guna2PictureBox4.ShadowDecoration.CustomizableEdges = customizableEdges32;
+            guna2PictureBox4.Size = new Size(27, 25);
+            guna2PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            guna2PictureBox4.TabIndex = 84;
+            guna2PictureBox4.TabStop = false;
+            // 
+            // guna2PictureBox5
+            // 
+            guna2PictureBox5.CustomizableEdges = customizableEdges33;
+            guna2PictureBox5.Image = (Image)resources.GetObject("guna2PictureBox5.Image");
+            guna2PictureBox5.ImageRotate = 0F;
+            guna2PictureBox5.Location = new Point(35, 299);
+            guna2PictureBox5.Name = "guna2PictureBox5";
+            guna2PictureBox5.ShadowDecoration.CustomizableEdges = customizableEdges34;
+            guna2PictureBox5.Size = new Size(27, 25);
+            guna2PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            guna2PictureBox5.TabIndex = 85;
+            guna2PictureBox5.TabStop = false;
+            // 
+            // guna2PictureBox6
+            // 
+            guna2PictureBox6.CustomizableEdges = customizableEdges35;
+            guna2PictureBox6.FillColor = Color.Transparent;
+            guna2PictureBox6.Image = (Image)resources.GetObject("guna2PictureBox6.Image");
+            guna2PictureBox6.ImageRotate = 0F;
+            guna2PictureBox6.Location = new Point(483, 299);
+            guna2PictureBox6.Name = "guna2PictureBox6";
+            guna2PictureBox6.ShadowDecoration.CustomizableEdges = customizableEdges36;
+            guna2PictureBox6.Size = new Size(27, 25);
+            guna2PictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            guna2PictureBox6.TabIndex = 86;
+            guna2PictureBox6.TabStop = false;
+            // 
+            // guna2PictureBox7
+            // 
+            guna2PictureBox7.CustomizableEdges = customizableEdges37;
+            guna2PictureBox7.Image = (Image)resources.GetObject("guna2PictureBox7.Image");
+            guna2PictureBox7.ImageRotate = 0F;
+            guna2PictureBox7.Location = new Point(35, 412);
+            guna2PictureBox7.Name = "guna2PictureBox7";
+            guna2PictureBox7.ShadowDecoration.CustomizableEdges = customizableEdges38;
+            guna2PictureBox7.Size = new Size(27, 25);
+            guna2PictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            guna2PictureBox7.TabIndex = 87;
+            guna2PictureBox7.TabStop = false;
+            // 
+            // guna2PictureBox8
+            // 
+            guna2PictureBox8.CustomizableEdges = customizableEdges39;
+            guna2PictureBox8.Image = (Image)resources.GetObject("guna2PictureBox8.Image");
+            guna2PictureBox8.ImageRotate = 0F;
+            guna2PictureBox8.Location = new Point(483, 412);
+            guna2PictureBox8.Name = "guna2PictureBox8";
+            guna2PictureBox8.ShadowDecoration.CustomizableEdges = customizableEdges40;
+            guna2PictureBox8.Size = new Size(27, 25);
+            guna2PictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            guna2PictureBox8.TabIndex = 88;
+            guna2PictureBox8.TabStop = false;
+            // 
+            // guna2PictureBox9
+            // 
+            guna2PictureBox9.CustomizableEdges = customizableEdges41;
+            guna2PictureBox9.Image = (Image)resources.GetObject("guna2PictureBox9.Image");
+            guna2PictureBox9.ImageRotate = 0F;
+            guna2PictureBox9.Location = new Point(35, 532);
+            guna2PictureBox9.Name = "guna2PictureBox9";
+            guna2PictureBox9.ShadowDecoration.CustomizableEdges = customizableEdges42;
+            guna2PictureBox9.Size = new Size(27, 25);
+            guna2PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
+            guna2PictureBox9.TabIndex = 89;
+            guna2PictureBox9.TabStop = false;
+            // 
+            // guna2PictureBox10
+            // 
+            guna2PictureBox10.CustomizableEdges = customizableEdges43;
+            guna2PictureBox10.Image = (Image)resources.GetObject("guna2PictureBox10.Image");
+            guna2PictureBox10.ImageRotate = 0F;
+            guna2PictureBox10.Location = new Point(35, 650);
+            guna2PictureBox10.Name = "guna2PictureBox10";
+            guna2PictureBox10.ShadowDecoration.CustomizableEdges = customizableEdges44;
+            guna2PictureBox10.Size = new Size(27, 25);
+            guna2PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
+            guna2PictureBox10.TabIndex = 90;
+            guna2PictureBox10.TabStop = false;
+            // 
+            // ptbAvatar
+            // 
+            ptbAvatar.AutoRoundedCorners = true;
+            ptbAvatar.BorderRadius = 124;
+            ptbAvatar.CustomizableEdges = customizableEdges45;
+            ptbAvatar.Image = (Image)resources.GetObject("ptbAvatar.Image");
+            ptbAvatar.ImageRotate = 0F;
+            ptbAvatar.Location = new Point(943, 43);
+            ptbAvatar.Name = "ptbAvatar";
+            ptbAvatar.ShadowDecoration.CustomizableEdges = customizableEdges46;
+            ptbAvatar.Size = new Size(261, 250);
+            ptbAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbAvatar.TabIndex = 91;
+            ptbAvatar.TabStop = false;
+            // 
+            // ptbLicense
+            // 
+            ptbLicense.BorderRadius = 10;
+            ptbLicense.CustomizableEdges = customizableEdges47;
+            ptbLicense.Image = (Image)resources.GetObject("ptbLicense.Image");
+            ptbLicense.ImageRotate = 0F;
+            ptbLicense.Location = new Point(943, 399);
+            ptbLicense.Name = "ptbLicense";
+            ptbLicense.ShadowDecoration.CustomizableEdges = customizableEdges48;
+            ptbLicense.Size = new Size(260, 276);
+            ptbLicense.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbLicense.TabIndex = 92;
+            ptbLicense.TabStop = false;
+            ptbLicense.Click += guna2PictureBox11_Click;
+            // 
+            // btnChoosePicture
+            // 
+            btnChoosePicture.AutoRoundedCorners = true;
+            btnChoosePicture.BorderRadius = 27;
+            btnChoosePicture.CustomizableEdges = customizableEdges49;
+            btnChoosePicture.DisabledState.BorderColor = Color.DarkGray;
+            btnChoosePicture.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnChoosePicture.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnChoosePicture.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnChoosePicture.FillColor = Color.FromArgb(176, 226, 243);
+            btnChoosePicture.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnChoosePicture.ForeColor = Color.Black;
+            btnChoosePicture.Location = new Point(956, 315);
+            btnChoosePicture.Name = "btnChoosePicture";
+            btnChoosePicture.ShadowDecoration.CustomizableEdges = customizableEdges50;
+            btnChoosePicture.Size = new Size(225, 56);
+            btnChoosePicture.TabIndex = 93;
+            btnChoosePicture.Text = "Choose Picture";
+            btnChoosePicture.Click += btnChoosePicture_Click;
+            // 
+            // btnChooseLicense
+            // 
+            btnChooseLicense.AutoRoundedCorners = true;
+            btnChooseLicense.BorderRadius = 27;
+            btnChooseLicense.CustomizableEdges = customizableEdges51;
+            btnChooseLicense.DisabledState.BorderColor = Color.DarkGray;
+            btnChooseLicense.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnChooseLicense.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnChooseLicense.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnChooseLicense.FillColor = Color.FromArgb(176, 226, 243);
+            btnChooseLicense.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnChooseLicense.ForeColor = Color.Black;
+            btnChooseLicense.Location = new Point(956, 694);
+            btnChooseLicense.Name = "btnChooseLicense";
+            btnChooseLicense.ShadowDecoration.CustomizableEdges = customizableEdges52;
+            btnChooseLicense.Size = new Size(225, 56);
+            btnChooseLicense.TabIndex = 94;
+            btnChooseLicense.Text = "Choose License";
+            btnChooseLicense.Click += btnChooseLicense_Click;
+            // 
+            // btnCancel
+            // 
+            btnCancel.AutoRoundedCorners = true;
+            btnCancel.BorderRadius = 27;
+            btnCancel.CustomizableEdges = customizableEdges53;
+            btnCancel.DisabledState.BorderColor = Color.DarkGray;
+            btnCancel.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnCancel.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnCancel.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnCancel.FillColor = Color.FromArgb(255, 150, 150);
+            btnCancel.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCancel.ForeColor = Color.Black;
+            btnCancel.Location = new Point(1060, 771);
+            btnCancel.Name = "btnCancel";
+            btnCancel.ShadowDecoration.CustomizableEdges = customizableEdges54;
+            btnCancel.Size = new Size(143, 56);
+            btnCancel.TabIndex = 95;
+            btnCancel.Text = "Cancel";
+            btnCancel.Click += btnCancel_Click;
+            // 
+            // btnSave
+            // 
+            btnSave.AutoRoundedCorners = true;
+            btnSave.BorderRadius = 27;
+            btnSave.CustomizableEdges = customizableEdges55;
+            btnSave.DisabledState.BorderColor = Color.DarkGray;
+            btnSave.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSave.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSave.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSave.FillColor = Color.FromArgb(176, 226, 243);
+            btnSave.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSave.ForeColor = Color.Black;
+            btnSave.Location = new Point(901, 771);
+            btnSave.Name = "btnSave";
+            btnSave.ShadowDecoration.CustomizableEdges = customizableEdges56;
+            btnSave.Size = new Size(143, 56);
+            btnSave.TabIndex = 96;
+            btnSave.Text = "Save";
+            btnSave.Click += btnSave_Click;
+            // 
+            // btnEdit
+            // 
+            btnEdit.AutoRoundedCorners = true;
+            btnEdit.BorderRadius = 27;
+            btnEdit.CustomizableEdges = customizableEdges57;
+            btnEdit.DisabledState.BorderColor = Color.DarkGray;
+            btnEdit.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnEdit.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnEdit.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnEdit.FillColor = Color.FromArgb(176, 226, 243);
+            btnEdit.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnEdit.ForeColor = Color.Black;
+            btnEdit.Location = new Point(901, 771);
+            btnEdit.Name = "btnEdit";
+            btnEdit.ShadowDecoration.CustomizableEdges = customizableEdges58;
+            btnEdit.Size = new Size(143, 56);
+            btnEdit.TabIndex = 97;
+            btnEdit.Text = "Edit";
+            btnEdit.Click += btnEdit_Click;
+            // 
+            // guna2HtmlLabel5
+            // 
+            guna2HtmlLabel5.BackColor = Color.Transparent;
+            guna2HtmlLabel5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel5.Location = new Point(12, 4);
+            guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            guna2HtmlLabel5.Size = new Size(132, 33);
+            guna2HtmlLabel5.TabIndex = 98;
+            guna2HtmlLabel5.Text = "Your Profile";
             // 
             // FProfileCompany
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1049, 585);
-            this.Controls.Add(this.cbbCompanySize);
-            this.Controls.Add(this.cbbCompanyType);
-            this.Controls.Add(this.ptbLicense);
-            this.Controls.Add(this.btnChooseLicense);
-            this.Controls.Add(this.txtWebsiteLink);
-            this.Controls.Add(this.cbbWTEnd);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbbWTB);
-            this.Controls.Add(this.txtTaxIdentification);
-            this.Controls.Add(this.lblWorkingTime);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnChoosePicture);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtPhoneNumber);
-            this.Controls.Add(this.txtAddress);
-            this.Controls.Add(this.txtCompanyName);
-            this.Controls.Add(this.txtDetail);
-            this.Name = "FProfileCompany";
-            this.Text = "FProfileCompany";
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAvatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbLicense)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(1233, 852);
+            Controls.Add(guna2HtmlLabel5);
+            Controls.Add(btnEdit);
+            Controls.Add(btnSave);
+            Controls.Add(btnCancel);
+            Controls.Add(btnChooseLicense);
+            Controls.Add(btnChoosePicture);
+            Controls.Add(ptbLicense);
+            Controls.Add(ptbAvatar);
+            Controls.Add(guna2PictureBox10);
+            Controls.Add(guna2PictureBox9);
+            Controls.Add(guna2PictureBox8);
+            Controls.Add(guna2PictureBox7);
+            Controls.Add(guna2PictureBox6);
+            Controls.Add(guna2PictureBox5);
+            Controls.Add(guna2PictureBox4);
+            Controls.Add(guna2PictureBox3);
+            Controls.Add(guna2PictureBox2);
+            Controls.Add(guna2PictureBox1);
+            Controls.Add(guna2HtmlLabel4);
+            Controls.Add(guna2HtmlLabel3);
+            Controls.Add(guna2HtmlLabel2);
+            Controls.Add(guna2HtmlLabel1);
+            Controls.Add(lblWebsiteLink);
+            Controls.Add(lblEmail);
+            Controls.Add(lblTax);
+            Controls.Add(lblPhoneNumber);
+            Controls.Add(lblAddress);
+            Controls.Add(lblCompanyName);
+            Controls.Add(txtDetail);
+            Controls.Add(guna2Panel1);
+            Controls.Add(cbbCompanySize);
+            Controls.Add(cbbCompanyType);
+            Controls.Add(txtWebsiteLink);
+            Controls.Add(txtEmail);
+            Controls.Add(txtTaxIdentification);
+            Controls.Add(txtPhoneNumber);
+            Controls.Add(txtAddress);
+            Controls.Add(txtCompanyName);
+            Name = "FProfileCompany";
+            Text = "FProfileCompany";
+            guna2Panel1.ResumeLayout(false);
+            guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ptbAvatar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ptbLicense).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-        private ReaLTaiizor.Controls.HopeRichTextBox txtDetail;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox txtCompanyName;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox txtAddress;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox txtPhoneNumber;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox txtEmail;
-        private Panel panel1;
-        private PictureBox ptbAvatar;
-        private ReaLTaiizor.Controls.CyberButton btnChoosePicture;
-        private ReaLTaiizor.Controls.CyberButton btnSave;
-        private ReaLTaiizor.Controls.CyberButton btnCancel;
-        private ReaLTaiizor.Controls.CyberButton btnEdit;
-        private Label lblWorkingTime;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox txtTaxIdentification;
-        private ReaLTaiizor.Controls.MaterialComboBox cbbWTB;
         private Label label1;
-        private ReaLTaiizor.Controls.MaterialComboBox cbbWTEnd;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox txtWebsiteLink;
-        private ReaLTaiizor.Controls.CyberButton btnChooseLicense;
-        private PictureBox ptbLicense;
-        private ReaLTaiizor.Controls.MaterialComboBox cbbCompanyType;
-        private ReaLTaiizor.Controls.MaterialComboBox cbbCompanySize;
+        private Guna.UI2.WinForms.Guna2TextBox txtCompanyName;
+        private Guna.UI2.WinForms.Guna2TextBox txtAddress;
+        private Guna.UI2.WinForms.Guna2TextBox txtPhoneNumber;
+        private Guna.UI2.WinForms.Guna2TextBox txtTaxIdentification;
+        private Guna.UI2.WinForms.Guna2TextBox txtEmail;
+        private Guna.UI2.WinForms.Guna2TextBox txtWebsiteLink;
+        private Guna.UI2.WinForms.Guna2ComboBox cbbCompanyType;
+        private Guna.UI2.WinForms.Guna2ComboBox cbbCompanySize;
+        private Guna.UI2.WinForms.Guna2ComboBox cbbWTEnd;
+        private Guna.UI2.WinForms.Guna2ComboBox cbbWTB;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2TextBox txtDetail;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCompanyName;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblAddress;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblPhoneNumber;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTax;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblEmail;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblWebsiteLink;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox10;
+        private Guna.UI2.WinForms.Guna2PictureBox ptbAvatar;
+        private Guna.UI2.WinForms.Guna2PictureBox ptbLicense;
+        private Guna.UI2.WinForms.Guna2Button btnChoosePicture;
+        private Guna.UI2.WinForms.Guna2Button btnChooseLicense;
+        private Guna.UI2.WinForms.Guna2Button btnCancel;
+        private Guna.UI2.WinForms.Guna2Button btnSave;
+        private Guna.UI2.WinForms.Guna2Button btnEdit;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
     }
 }

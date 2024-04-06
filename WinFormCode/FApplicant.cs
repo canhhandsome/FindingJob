@@ -23,7 +23,7 @@ namespace WinFormProject
             {
                 UCApplicant uCApplicant = new UCApplicant(apply, job);
                 flpApplicant.Controls.Add(uCApplicant);
-                flpApplicant.Height += 200;
+                flpApplicant.Height += 600;
             }
         }
 

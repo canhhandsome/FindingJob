@@ -45,13 +45,17 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "Guna.UI2.WinForms": {
+              "target": "Package",
+              "version": "[2.0.4.6, )"
+            },
             "MaterialSkin": {
               "target": "Package",
               "version": "[0.2.1, )"
             },
             "ReaLTaiizor": {
               "target": "Package",
-              "version": "[3.8.0.2, )"
+              "version": "[3.8.0.5, )"
             },
             "Syncfusion.Pdf.WinForms": {
               "target": "Package",
