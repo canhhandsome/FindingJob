@@ -7,6 +7,9 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Diagnostics.CodeAnalysis;
 using System.CodeDom;
+using System.Security.Cryptography;
+using Syncfusion.XPS;
+
 namespace WinFormProject
 {
     public class DBConnection
@@ -122,7 +125,7 @@ namespace WinFormProject
 
                 while(reader.Read())
                 {
-                    jobs.Add(new Job(reader["Jobid"].ToString().Trim(), reader["CompanyId"].ToString().Trim(), reader["JobName"].ToString().Trim(), reader["position"].ToString().Trim(), reader["salary"].ToString().Trim(), reader["requirement"].ToString().Trim(), reader["description"].ToString().Trim(), reader["benefit"].ToString().Trim(), Convert.ToDateTime(reader["datepublish"].ToString()), Convert.ToDateTime(reader["DateEnd"].ToString()), reader["status"].ToString().Trim()));
+                    jobs.Add(new Job(reader["Jobid"].ToString().Trim(), reader["CompanyId"].ToString().Trim(), reader["JobName"].ToString().Trim(), reader["position"].ToString().Trim(), reader["salary"].ToString().Trim(), reader["requirement"].ToString().Trim(), reader["description"].ToString().Trim(), reader["benefit"].ToString().Trim(), Convert.ToDateTime(reader["datepublish"].ToString()), Convert.ToDateTime(reader["DateEnd"].ToString()), reader["status"].ToString().Trim(), reader["workingform"].ToString().Trim()));
                 }
             }
             catch(Exception ex)
@@ -207,8 +210,9 @@ namespace WinFormProject
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(SQL, conn);
                 cmd.Parameters.AddWithValue("@BDate", jobseeker.BDate);
-                cmd.Parameters.AddWithValue("@Avatar", (object)jobseeker.Avatar ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@Avatar", (object)ImageHandler.ImageToByteArray(jobseeker.Avatar) ?? DBNull.Value);
                 cmd.Parameters.AddWithValue("@CV", (object)jobseeker.CV ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@CVPicture", (object)ImageHandler.ImageToByteArray(jobseeker.CVPicture) ?? DBNull.Value);
                 if (cmd.ExecuteNonQuery() > 0)
                     MessageBox.Show("Successfully");
                 else MessageBox.Show("Failed");
@@ -228,8 +232,8 @@ namespace WinFormProject
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(SQL, conn);
-                cmd.Parameters.AddWithValue("@Avatar", (object)company.Avatar ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@BusinessLicense", (object)company.BusinessLicense ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@Avatar", (object)ImageHandler.ImageToByteArray(company.Avatar) ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@BusinessLicense", (object)ImageHandler.ImageToByteArray(company.BusinessLicense) ?? DBNull.Value);
                 if (cmd.ExecuteNonQuery() > 0)
                     MessageBox.Show("Successfully");
                 else MessageBox.Show("Failed");
@@ -243,16 +247,27 @@ namespace WinFormProject
                 conn.Close();
             }
         }
-        public byte[] FetchBinaryData(string strFetch)
+        public Image FetchInfoImages(string strFetch)
         {
             try
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(strFetch, conn);
-                object result = cmd.ExecuteScalar();
-                if (result != DBNull.Value && result != null)
+                SqlDataReader reader = cmd.ExecuteReader();
+                byte[] result = null;
+
+                while (reader.Read())
                 {
-                    return (byte[])result;
+                    if (!reader.IsDBNull(0)) // Check if the value is not null
+                    {
+                        result = (byte[])reader[0];
+                        break; // Exit the loop after the first non-null value is found
+                    }
+                }
+
+                if (result != null)
+                {
+                    return ImageHandler.ByteArrayToImage(result);
                 }
             }
             catch (Exception ex)
@@ -265,6 +280,7 @@ namespace WinFormProject
             }
             return null;
         }
+
         public bool CheckApplyData(string SQL,string jobid,string jsid)
         {
             int rowsCount = 0;
@@ -321,6 +337,56 @@ namespace WinFormProject
                 conn.Close();
             }
             return company;
+        }
+        public List<Image> FetchAllImg(string strFetch)
+        {
+            List<Image> Images = new List<Image>();
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                List<string> list = new List<string>();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        byte[] imageData = (byte[])reader["img"];
+                        Images.Add(ImageHandler.ByteArrayToImage(imageData));
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Operation failed. Error: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return Images;
+        }
+        public  byte[] FetchBinaryData(string strFetch)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                object result = cmd.ExecuteScalar();
+                if (result != DBNull.Value && result != null)
+                {
+                    return (byte[])result;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to fetch binary data: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return null;
         }
     }
 }

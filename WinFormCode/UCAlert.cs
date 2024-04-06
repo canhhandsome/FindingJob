@@ -13,7 +13,7 @@ namespace WinFormProject
     public partial class UCAlert : UserControl
     {
         Alert alert = new Alert();
-        byte[] companyAvatar = new byte[100];
+        Image companyAvatar ;
         JobDAO jobDAO = new JobDAO();
         public UCAlert(Alert alert)
         {

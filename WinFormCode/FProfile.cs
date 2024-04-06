@@ -39,8 +39,8 @@ namespace WinFormProject
                 rdoMale.Checked = true;
             }
             else rdoFemale.Checked = true;
-            if (jobseeker.Avatar != null) ImageHandler.DisplayImage(jobseeker.Avatar, ref ptbAvatar);
-            if (jobseeker.CV != null) ImageHandler.DisplayPdfPreview(jobseeker.CV, ptbCV);
+            if (jobseeker.Avatar != null) ptbAvatar.Image = jobseeker.Avatar;
+            if (jobseeker.CVPicture != null) ptbCV.Image = jobseeker.CVPicture;
         }
         private void btnEdit_Click(object sender, EventArgs e)
         {
@@ -105,20 +105,26 @@ namespace WinFormProject
         private JobSeeker CreateJobSeeker()
         {
             string gender;
-            byte[] AvatarData = new byte[1];
+            Image AvatarData = null;
+            Image CVImage = null;
             if (ptbAvatar.Image != null)
             {
-                AvatarData = ImageHandler.ImageToByteArray(ptbAvatar.Image);
+                AvatarData = ptbAvatar.Image;
             }
             byte[] CvData;
             if (ptbCV.Image != null && Cv.Length > 0)
             {
                 CvData = Cv;
+                CVImage = ptbCV.Image;
             }
-            else CvData = this.jobseeker.CV;
+            else
+            {
+                CvData = this.jobseeker.CV;
+                CVImage = this.jobseeker.CVPicture;
+            }
             Information information = new Information(jobseeker.INFO.ID, txtFullName.Text, txtEmail.Text, txtAddress.Text, txtPhoneNumber.Text);
             if (rdoFemale.Checked) gender = "female"; else gender = "male";
-            return new JobSeeker(information, dtpkBirthDate.Value, txtCitizenID.Text, gender, AvatarData, CvData);
+            return new JobSeeker(information, dtpkBirthDate.Value, txtCitizenID.Text, gender, AvatarData, CvData, CVImage);
         }
 
         private void btnCV_Click(object sender, EventArgs e)
