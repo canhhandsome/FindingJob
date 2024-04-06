@@ -38,7 +38,7 @@ namespace WinFormProject
                 UCJob ucjob = new UCJob(job, currentFormChild, pnBody);
                 pnSubBody.Controls.Add(ucjob);
                 ucjob.Dock = DockStyle.Top;
-                pnSubBody.Height += 180;
+                pnSubBody.Height += 300;
             }
         }
         private void OpenChildForm(Form childForm)
@@ -62,8 +62,10 @@ namespace WinFormProject
 
         private void btnPostingJob_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FJobCreation(jobs, companyid));
-            PostJob_Load(sender, e);
+            //OpenChildForm(new FJobCreation(jobs, companyid));
+            //PostJob_Load(sender, e);
+            FJobCreation fJobCreation = new FJobCreation(jobs, companyid);
+            fJobCreation.Show();
         }
         private void btnEditJob_Click(object sender, EventArgs e)
         {
@@ -71,6 +73,11 @@ namespace WinFormProject
             //fJobEdit.LblTitle = "Editing a job";
             //fJobEdit.BtnPostJob = "Save";
             //OpenChildForm(fJobEdit);
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            PostJob_Load(sender, e);
         }
     }
 }
