@@ -113,7 +113,6 @@ namespace WinFormProject
         private void btnAddSkills_Click(object sender, EventArgs e)
         {
             fJobSKills.Show();
-            
         }
     }
 }

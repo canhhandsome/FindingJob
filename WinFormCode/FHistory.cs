@@ -25,7 +25,7 @@ namespace WinFormProject.WinFormCode
                 UCHistory uchistory = new UCHistory(job);
                 pnSubBody.Controls.Add(uchistory);
                 uchistory.Dock = DockStyle.Top;
-                pnSubBody.Height += 270;
+                pnSubBody.Height += 93;
             }
         }
     }

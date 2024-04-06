@@ -52,6 +52,7 @@
             panel1.Controls.Add(lblSubjectT);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 3, 10, 10);
             panel1.MaximumSize = new Size(531, 206);
             panel1.Name = "panel1";
             panel1.Size = new Size(500, 159);
@@ -138,6 +139,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Transparent;
             Controls.Add(panel1);
             Margin = new Padding(3, 2, 10, 10);
             Name = "UCAlert";

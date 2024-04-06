@@ -28,242 +28,181 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblDateT = new System.Windows.Forms.Label();
-            this.ptbApplicantPicture = new System.Windows.Forms.PictureBox();
-            this.lblApplicantNameT = new System.Windows.Forms.Label();
-            this.lblEmailT = new System.Windows.Forms.Label();
-            this.btnApprove = new ReaLTaiizor.Controls.CyberButton();
-            this.btnProfile = new ReaLTaiizor.Controls.CyberButton();
-            this.btnDecline = new ReaLTaiizor.Controls.CyberButton();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbApplicantPicture)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Tan;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.btnApprove);
-            this.panel1.Controls.Add(this.btnProfile);
-            this.panel1.Controls.Add(this.btnDecline);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(469, 515);
-            this.panel1.TabIndex = 3;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(232)))), ((int)(((byte)(223)))));
-            this.panel2.Controls.Add(this.lblDateT);
-            this.panel2.Controls.Add(this.ptbApplicantPicture);
-            this.panel2.Controls.Add(this.lblApplicantNameT);
-            this.panel2.Controls.Add(this.lblEmailT);
-            this.panel2.Location = new System.Drawing.Point(11, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(442, 421);
-            this.panel2.TabIndex = 11;
-            // 
-            // lblDateT
-            // 
-            this.lblDateT.AutoSize = true;
-            this.lblDateT.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDateT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblDateT.Location = new System.Drawing.Point(13, 13);
-            this.lblDateT.Name = "lblDateT";
-            this.lblDateT.Size = new System.Drawing.Size(55, 23);
-            this.lblDateT.TabIndex = 7;
-            this.lblDateT.Text = "Date: ";
-            // 
-            // ptbApplicantPicture
-            // 
-            this.ptbApplicantPicture.Location = new System.Drawing.Point(115, 52);
-            this.ptbApplicantPicture.Name = "ptbApplicantPicture";
-            this.ptbApplicantPicture.Size = new System.Drawing.Size(219, 256);
-            this.ptbApplicantPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbApplicantPicture.TabIndex = 10;
-            this.ptbApplicantPicture.TabStop = false;
-            // 
-            // lblApplicantNameT
-            // 
-            this.lblApplicantNameT.AutoSize = true;
-            this.lblApplicantNameT.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblApplicantNameT.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblApplicantNameT.Location = new System.Drawing.Point(115, 323);
-            this.lblApplicantNameT.Name = "lblApplicantNameT";
-            this.lblApplicantNameT.Size = new System.Drawing.Size(247, 38);
-            this.lblApplicantNameT.TabIndex = 5;
-            this.lblApplicantNameT.Text = "Applicant\'s Name:";
-            this.lblApplicantNameT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblEmailT
-            // 
-            this.lblEmailT.AutoSize = true;
-            this.lblEmailT.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblEmailT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblEmailT.Location = new System.Drawing.Point(191, 376);
-            this.lblEmailT.Name = "lblEmailT";
-            this.lblEmailT.Size = new System.Drawing.Size(64, 30);
-            this.lblEmailT.TabIndex = 1;
-            this.lblEmailT.Text = "Email";
-            this.lblEmailT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnApprove
-            // 
-            this.btnApprove.Alpha = 20;
-            this.btnApprove.BackColor = System.Drawing.Color.Transparent;
-            this.btnApprove.Background = true;
-            this.btnApprove.Background_WidthPen = 4F;
-            this.btnApprove.BackgroundPen = true;
-            this.btnApprove.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnApprove.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnApprove.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnApprove.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnApprove.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnApprove.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnApprove.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnApprove.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnApprove.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.btnApprove.Effect_1 = true;
-            this.btnApprove.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnApprove.Effect_1_Transparency = 25;
-            this.btnApprove.Effect_2 = true;
-            this.btnApprove.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnApprove.Effect_2_Transparency = 20;
-            this.btnApprove.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnApprove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
-            this.btnApprove.Lighting = true;
-            this.btnApprove.LinearGradient_Background = false;
-            this.btnApprove.LinearGradientPen = false;
-            this.btnApprove.Location = new System.Drawing.Point(170, 445);
-            this.btnApprove.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnApprove.Name = "btnApprove";
-            this.btnApprove.PenWidth = 15;
-            this.btnApprove.Rounding = true;
-            this.btnApprove.RoundingInt = 20;
-            this.btnApprove.Size = new System.Drawing.Size(122, 56);
-            this.btnApprove.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnApprove.TabIndex = 9;
-            this.btnApprove.Tag = "Cyber";
-            this.btnApprove.TextButton = "Approve";
-            this.btnApprove.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnApprove.Timer_Effect_1 = 1;
-            this.btnApprove.Timer_RGB = 300;
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            btnProfile = new Guna.UI2.WinForms.Guna2Button();
+            guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            lblDateT = new Label();
+            ptbApplicantPicture = new PictureBox();
+            lblApplicantNameT = new Label();
+            lblEmailT = new Label();
+            btnDecline = new Guna.UI2.WinForms.Guna2Button();
+            btnApprove = new Guna.UI2.WinForms.Guna2Button();
+            guna2ShadowPanel1.SuspendLayout();
+            guna2ShadowPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ptbApplicantPicture).BeginInit();
+            SuspendLayout();
             // 
             // btnProfile
             // 
-            this.btnProfile.Alpha = 20;
-            this.btnProfile.BackColor = System.Drawing.Color.Transparent;
-            this.btnProfile.Background = true;
-            this.btnProfile.Background_WidthPen = 4F;
-            this.btnProfile.BackgroundPen = true;
-            this.btnProfile.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnProfile.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnProfile.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnProfile.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnProfile.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnProfile.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnProfile.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnProfile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProfile.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.btnProfile.Effect_1 = true;
-            this.btnProfile.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnProfile.Effect_1_Transparency = 25;
-            this.btnProfile.Effect_2 = true;
-            this.btnProfile.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnProfile.Effect_2_Transparency = 20;
-            this.btnProfile.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
-            this.btnProfile.Lighting = true;
-            this.btnProfile.LinearGradient_Background = false;
-            this.btnProfile.LinearGradientPen = false;
-            this.btnProfile.Location = new System.Drawing.Point(312, 445);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnProfile.Name = "btnProfile";
-            this.btnProfile.PenWidth = 15;
-            this.btnProfile.Rounding = true;
-            this.btnProfile.RoundingInt = 20;
-            this.btnProfile.Size = new System.Drawing.Size(122, 56);
-            this.btnProfile.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnProfile.TabIndex = 9;
-            this.btnProfile.Tag = "Cyber";
-            this.btnProfile.TextButton = "Profile";
-            this.btnProfile.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnProfile.Timer_Effect_1 = 1;
-            this.btnProfile.Timer_RGB = 300;
+            btnProfile.BorderRadius = 10;
+            btnProfile.CustomizableEdges = customizableEdges1;
+            btnProfile.DisabledState.BorderColor = Color.DarkGray;
+            btnProfile.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnProfile.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnProfile.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnProfile.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnProfile.ForeColor = Color.White;
+            btnProfile.Location = new Point(279, 335);
+            btnProfile.Name = "btnProfile";
+            btnProfile.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnProfile.Size = new Size(92, 37);
+            btnProfile.TabIndex = 12;
+            btnProfile.Text = "Profile";
+            btnProfile.Click += btnProfile_Click;
+            // 
+            // guna2ShadowPanel1
+            // 
+            guna2ShadowPanel1.BackColor = Color.Transparent;
+            guna2ShadowPanel1.Controls.Add(guna2ShadowPanel2);
+            guna2ShadowPanel1.Controls.Add(btnDecline);
+            guna2ShadowPanel1.Controls.Add(btnApprove);
+            guna2ShadowPanel1.Controls.Add(btnProfile);
+            guna2ShadowPanel1.Dock = DockStyle.Fill;
+            guna2ShadowPanel1.FillColor = Color.White;
+            guna2ShadowPanel1.Location = new Point(0, 0);
+            guna2ShadowPanel1.Name = "guna2ShadowPanel1";
+            guna2ShadowPanel1.Radius = 10;
+            guna2ShadowPanel1.ShadowColor = Color.Black;
+            guna2ShadowPanel1.Size = new Size(418, 386);
+            guna2ShadowPanel1.TabIndex = 12;
+            // 
+            // guna2ShadowPanel2
+            // 
+            guna2ShadowPanel2.BackColor = Color.Transparent;
+            guna2ShadowPanel2.Controls.Add(lblDateT);
+            guna2ShadowPanel2.Controls.Add(ptbApplicantPicture);
+            guna2ShadowPanel2.Controls.Add(lblApplicantNameT);
+            guna2ShadowPanel2.Controls.Add(lblEmailT);
+            guna2ShadowPanel2.FillColor = Color.MistyRose;
+            guna2ShadowPanel2.Location = new Point(15, 14);
+            guna2ShadowPanel2.Name = "guna2ShadowPanel2";
+            guna2ShadowPanel2.Radius = 10;
+            guna2ShadowPanel2.ShadowColor = Color.Black;
+            guna2ShadowPanel2.Size = new Size(390, 313);
+            guna2ShadowPanel2.TabIndex = 13;
+            // 
+            // lblDateT
+            // 
+            lblDateT.AutoSize = true;
+            lblDateT.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDateT.ForeColor = Color.FromArgb(64, 64, 64);
+            lblDateT.Location = new Point(16, 14);
+            lblDateT.Name = "lblDateT";
+            lblDateT.Size = new Size(45, 19);
+            lblDateT.TabIndex = 13;
+            lblDateT.Text = "Date: ";
+            // 
+            // ptbApplicantPicture
+            // 
+            ptbApplicantPicture.Location = new Point(101, 39);
+            ptbApplicantPicture.Margin = new Padding(3, 2, 3, 2);
+            ptbApplicantPicture.Name = "ptbApplicantPicture";
+            ptbApplicantPicture.Size = new Size(192, 192);
+            ptbApplicantPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbApplicantPicture.TabIndex = 14;
+            ptbApplicantPicture.TabStop = false;
+            // 
+            // lblApplicantNameT
+            // 
+            lblApplicantNameT.AutoSize = true;
+            lblApplicantNameT.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblApplicantNameT.ForeColor = SystemColors.ControlText;
+            lblApplicantNameT.Location = new Point(101, 238);
+            lblApplicantNameT.Name = "lblApplicantNameT";
+            lblApplicantNameT.Size = new Size(192, 30);
+            lblApplicantNameT.TabIndex = 12;
+            lblApplicantNameT.Text = "Applicant's Name:";
+            lblApplicantNameT.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblEmailT
+            // 
+            lblEmailT.AutoSize = true;
+            lblEmailT.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblEmailT.ForeColor = Color.FromArgb(64, 64, 64);
+            lblEmailT.Location = new Point(167, 278);
+            lblEmailT.Name = "lblEmailT";
+            lblEmailT.Size = new Size(54, 25);
+            lblEmailT.TabIndex = 11;
+            lblEmailT.Text = "Email";
+            lblEmailT.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnDecline
             // 
-            this.btnDecline.Alpha = 20;
-            this.btnDecline.BackColor = System.Drawing.Color.Transparent;
-            this.btnDecline.Background = true;
-            this.btnDecline.Background_WidthPen = 4F;
-            this.btnDecline.BackgroundPen = true;
-            this.btnDecline.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnDecline.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnDecline.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnDecline.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnDecline.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnDecline.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnDecline.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnDecline.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDecline.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.btnDecline.Effect_1 = true;
-            this.btnDecline.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnDecline.Effect_1_Transparency = 25;
-            this.btnDecline.Effect_2 = true;
-            this.btnDecline.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnDecline.Effect_2_Transparency = 20;
-            this.btnDecline.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDecline.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
-            this.btnDecline.Lighting = true;
-            this.btnDecline.LinearGradient_Background = false;
-            this.btnDecline.LinearGradientPen = false;
-            this.btnDecline.Location = new System.Drawing.Point(29, 445);
-            this.btnDecline.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnDecline.Name = "btnDecline";
-            this.btnDecline.PenWidth = 15;
-            this.btnDecline.Rounding = true;
-            this.btnDecline.RoundingInt = 20;
-            this.btnDecline.Size = new System.Drawing.Size(122, 56);
-            this.btnDecline.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnDecline.TabIndex = 9;
-            this.btnDecline.Tag = "Decline";
-            this.btnDecline.TextButton = "Decline";
-            this.btnDecline.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnDecline.Timer_Effect_1 = 5;
-            this.btnDecline.Timer_RGB = 300;
+            btnDecline.BorderRadius = 10;
+            btnDecline.CustomizableEdges = customizableEdges3;
+            btnDecline.DisabledState.BorderColor = Color.DarkGray;
+            btnDecline.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnDecline.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnDecline.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnDecline.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDecline.ForeColor = Color.White;
+            btnDecline.Location = new Point(50, 335);
+            btnDecline.Name = "btnDecline";
+            btnDecline.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnDecline.Size = new Size(92, 37);
+            btnDecline.TabIndex = 12;
+            btnDecline.Text = "Decline";
+            btnDecline.Click += btnAnswer_Click;
+            // 
+            // btnApprove
+            // 
+            btnApprove.BorderRadius = 10;
+            btnApprove.CustomizableEdges = customizableEdges5;
+            btnApprove.DisabledState.BorderColor = Color.DarkGray;
+            btnApprove.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnApprove.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnApprove.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnApprove.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnApprove.ForeColor = Color.White;
+            btnApprove.Location = new Point(164, 335);
+            btnApprove.Name = "btnApprove";
+            btnApprove.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnApprove.Size = new Size(92, 37);
+            btnApprove.TabIndex = 12;
+            btnApprove.Text = "Approve";
+            btnApprove.Click += btnAnswer_Click;
             // 
             // UCApplicant
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.Name = "UCApplicant";
-            this.Size = new System.Drawing.Size(469, 515);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbApplicantPicture)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Transparent;
+            Controls.Add(guna2ShadowPanel1);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "UCApplicant";
+            Size = new Size(418, 386);
+            guna2ShadowPanel1.ResumeLayout(false);
+            guna2ShadowPanel2.ResumeLayout(false);
+            guna2ShadowPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)ptbApplicantPicture).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
-
-        private Panel panel1;
-        private Label lblEmailT;
+        private Guna.UI2.WinForms.Guna2Button btnProfile;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel2;
         private Label lblDateT;
-        private Label lblApplicantNameT;
-        private ReaLTaiizor.Controls.CyberButton btnProfile;
-        private ReaLTaiizor.Controls.CyberButton btnDecline;
-        private ReaLTaiizor.Controls.CyberButton btnApprove;
         private PictureBox ptbApplicantPicture;
-        private Panel panel2;
+        private Label lblApplicantNameT;
+        private Label lblEmailT;
+        private Guna.UI2.WinForms.Guna2Button btnDecline;
+        private Guna.UI2.WinForms.Guna2Button btnApprove;
     }
 }

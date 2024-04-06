@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FJobSeeker));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -37,6 +36,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FJobSeeker));
             panel1 = new Panel();
             metroControlBox4 = new ReaLTaiizor.Controls.MetroControlBox();
             metroControlBox3 = new ReaLTaiizor.Controls.MetroControlBox();
@@ -59,8 +59,9 @@
             panel1.Controls.Add(metroControlBox3);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1482, 32);
+            panel1.Size = new Size(1297, 24);
             panel1.TabIndex = 5;
             // 
             // metroControlBox4
@@ -72,7 +73,8 @@
             metroControlBox4.DisabledForeColor = Color.DimGray;
             metroControlBox4.Dock = DockStyle.Right;
             metroControlBox4.IsDerivedStyle = true;
-            metroControlBox4.Location = new Point(1382, 0);
+            metroControlBox4.Location = new Point(1197, 0);
+            metroControlBox4.Margin = new Padding(3, 2, 3, 2);
             metroControlBox4.MaximizeBox = true;
             metroControlBox4.MaximizeHoverBackColor = Color.FromArgb(238, 238, 238);
             metroControlBox4.MaximizeHoverForeColor = Color.Gray;
@@ -99,7 +101,8 @@
             metroControlBox3.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
             metroControlBox3.DisabledForeColor = Color.DimGray;
             metroControlBox3.IsDerivedStyle = true;
-            metroControlBox3.Location = new Point(2861, -4);
+            metroControlBox3.Location = new Point(2503, -3);
+            metroControlBox3.Margin = new Padding(3, 2, 3, 2);
             metroControlBox3.MaximizeBox = true;
             metroControlBox3.MaximizeHoverBackColor = Color.FromArgb(238, 238, 238);
             metroControlBox3.MaximizeHoverForeColor = Color.Gray;
@@ -126,10 +129,9 @@
             panel2.Controls.Add(btnJobAlert);
             panel2.Controls.Add(pictureBox2);
             panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 32);
-            panel2.Margin = new Padding(3, 4, 3, 4);
+            panel2.Location = new Point(0, 24);
             panel2.Name = "panel2";
-            panel2.Size = new Size(231, 899);
+            panel2.Size = new Size(202, 674);
             panel2.TabIndex = 6;
             // 
             // btnLogOut
@@ -147,17 +149,15 @@
             btnLogOut.HoverState.FillColor = Color.FromArgb(220, 251, 251);
             btnLogOut.HoverState.Font = new Font("Cooper Black", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
             btnLogOut.HoverState.ForeColor = Color.Black;
-            btnLogOut.HoverState.Image = (Image)resources.GetObject("resource.Image");
-            btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
             btnLogOut.ImageAlign = HorizontalAlignment.Left;
             btnLogOut.ImageSize = new Size(50, 50);
-            btnLogOut.Location = new Point(0, 446);
-            btnLogOut.Margin = new Padding(5);
+            btnLogOut.Location = new Point(0, 334);
+            btnLogOut.Margin = new Padding(4, 4, 4, 4);
             btnLogOut.Name = "btnLogOut";
             btnLogOut.ShadowDecoration.Color = Color.White;
             btnLogOut.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnLogOut.ShadowDecoration.Shadow = new Padding(2);
-            btnLogOut.Size = new Size(231, 95);
+            btnLogOut.Size = new Size(202, 71);
             btnLogOut.TabIndex = 4;
             btnLogOut.Text = "Log Out";
             btnLogOut.TextAlign = HorizontalAlignment.Left;
@@ -179,17 +179,15 @@
             btnSetting.HoverState.FillColor = Color.FromArgb(220, 251, 251);
             btnSetting.HoverState.Font = new Font("Cooper Black", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
             btnSetting.HoverState.ForeColor = Color.Black;
-            btnSetting.HoverState.Image = (Image)resources.GetObject("resource.Image1");
-            btnSetting.Image = (Image)resources.GetObject("btnSetting.Image");
             btnSetting.ImageAlign = HorizontalAlignment.Left;
             btnSetting.ImageSize = new Size(50, 50);
-            btnSetting.Location = new Point(0, 351);
-            btnSetting.Margin = new Padding(5);
+            btnSetting.Location = new Point(0, 263);
+            btnSetting.Margin = new Padding(4, 4, 4, 4);
             btnSetting.Name = "btnSetting";
             btnSetting.ShadowDecoration.Color = Color.White;
             btnSetting.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnSetting.ShadowDecoration.Shadow = new Padding(2);
-            btnSetting.Size = new Size(231, 95);
+            btnSetting.Size = new Size(202, 71);
             btnSetting.TabIndex = 16;
             btnSetting.Text = "Profile";
             btnSetting.TextAlign = HorizontalAlignment.Left;
@@ -211,17 +209,15 @@
             btnSearchJob.HoverState.FillColor = Color.FromArgb(220, 251, 251);
             btnSearchJob.HoverState.Font = new Font("Cooper Black", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
             btnSearchJob.HoverState.ForeColor = Color.Black;
-            btnSearchJob.HoverState.Image = (Image)resources.GetObject("resource.Image2");
-            btnSearchJob.Image = (Image)resources.GetObject("btnSearchJob.Image");
             btnSearchJob.ImageAlign = HorizontalAlignment.Left;
             btnSearchJob.ImageSize = new Size(50, 50);
-            btnSearchJob.Location = new Point(0, 256);
-            btnSearchJob.Margin = new Padding(5);
+            btnSearchJob.Location = new Point(0, 192);
+            btnSearchJob.Margin = new Padding(4, 4, 4, 4);
             btnSearchJob.Name = "btnSearchJob";
             btnSearchJob.ShadowDecoration.Color = Color.White;
             btnSearchJob.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnSearchJob.ShadowDecoration.Shadow = new Padding(2);
-            btnSearchJob.Size = new Size(231, 95);
+            btnSearchJob.Size = new Size(202, 71);
             btnSearchJob.TabIndex = 14;
             btnSearchJob.Text = "Search Job";
             btnSearchJob.TextAlign = HorizontalAlignment.Left;
@@ -243,17 +239,15 @@
             btnJobAlert.HoverState.FillColor = Color.FromArgb(220, 251, 251);
             btnJobAlert.HoverState.Font = new Font("Cooper Black", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
             btnJobAlert.HoverState.ForeColor = Color.Black;
-            btnJobAlert.HoverState.Image = (Image)resources.GetObject("resource.Image3");
-            btnJobAlert.Image = (Image)resources.GetObject("btnJobAlert.Image");
             btnJobAlert.ImageAlign = HorizontalAlignment.Left;
             btnJobAlert.ImageSize = new Size(50, 50);
-            btnJobAlert.Location = new Point(0, 161);
-            btnJobAlert.Margin = new Padding(5);
+            btnJobAlert.Location = new Point(0, 121);
+            btnJobAlert.Margin = new Padding(4, 4, 4, 4);
             btnJobAlert.Name = "btnJobAlert";
             btnJobAlert.ShadowDecoration.Color = Color.White;
             btnJobAlert.ShadowDecoration.CustomizableEdges = customizableEdges8;
             btnJobAlert.ShadowDecoration.Shadow = new Padding(2);
-            btnJobAlert.Size = new Size(231, 95);
+            btnJobAlert.Size = new Size(202, 71);
             btnJobAlert.TabIndex = 15;
             btnJobAlert.Text = "Job Alert";
             btnJobAlert.TextAlign = HorizontalAlignment.Left;
@@ -264,9 +258,8 @@
             pictureBox2.Dock = DockStyle.Top;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(231, 161);
+            pictureBox2.Size = new Size(202, 121);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
@@ -275,26 +268,25 @@
             // 
             pnBody.BorderStyle = BorderStyle.FixedSingle;
             pnBody.Dock = DockStyle.Fill;
-            pnBody.Location = new Point(231, 32);
-            pnBody.Margin = new Padding(3, 4, 3, 4);
+            pnBody.Location = new Point(202, 24);
             pnBody.Name = "pnBody";
-            pnBody.Size = new Size(1251, 899);
+            pnBody.Size = new Size(1095, 674);
             pnBody.TabIndex = 7;
             // 
             // FJobSeeker
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1482, 931);
+            ClientSize = new Size(1297, 698);
             Controls.Add(pnBody);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FJobSeeker";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "d";
-            Load += FJobSeeker_Load;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

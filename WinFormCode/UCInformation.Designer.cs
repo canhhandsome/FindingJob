@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblDateT = new Label();
             lblNameT = new Label();
             lblFromT = new Label();
@@ -38,19 +36,16 @@
             pnPublish = new FlowLayoutPanel();
             pnName = new Panel();
             pnCompany = new FlowLayoutPanel();
-            ptbCompanyPicture = new Guna.UI2.WinForms.Guna2PictureBox();
             pnWorkingForm = new FlowLayoutPanel();
             lblWorkingFormT = new Label();
             pnSkills = new FlowLayoutPanel();
             lblSkillsT = new Label();
             pnAddress = new FlowLayoutPanel();
             lblAddressT = new Label();
-            btnDetails = new ReaLTaiizor.Controls.ParrotButton();
             flpBody.SuspendLayout();
             pnPublish.SuspendLayout();
             pnName.SuspendLayout();
             pnCompany.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).BeginInit();
             pnWorkingForm.SuspendLayout();
             pnSkills.SuspendLayout();
             pnAddress.SuspendLayout();
@@ -86,9 +81,9 @@
             lblFromT.Dock = DockStyle.Fill;
             lblFromT.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             lblFromT.ForeColor = SystemColors.ControlDarkDark;
-            lblFromT.Location = new Point(69, 0);
+            lblFromT.Location = new Point(3, 0);
             lblFromT.Name = "lblFromT";
-            lblFromT.Size = new Size(74, 44);
+            lblFromT.Size = new Size(74, 32);
             lblFromT.TabIndex = 0;
             lblFromT.Text = "From:";
             lblFromT.TextAlign = ContentAlignment.MiddleCenter;
@@ -135,25 +130,11 @@
             // 
             // pnCompany
             // 
-            pnCompany.Controls.Add(ptbCompanyPicture);
             pnCompany.Controls.Add(lblFromT);
             pnCompany.Location = new Point(27, 104);
             pnCompany.Name = "pnCompany";
             pnCompany.Size = new Size(875, 47);
             pnCompany.TabIndex = 48;
-            // 
-            // ptbCompanyPicture
-            // 
-            ptbCompanyPicture.CustomizableEdges = customizableEdges1;
-            ptbCompanyPicture.ImageRotate = 0F;
-            ptbCompanyPicture.Location = new Point(3, 2);
-            ptbCompanyPicture.Margin = new Padding(3, 2, 3, 2);
-            ptbCompanyPicture.Name = "ptbCompanyPicture";
-            ptbCompanyPicture.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            ptbCompanyPicture.Size = new Size(60, 40);
-            ptbCompanyPicture.SizeMode = PictureBoxSizeMode.StretchImage;
-            ptbCompanyPicture.TabIndex = 2;
-            ptbCompanyPicture.TabStop = false;
             // 
             // pnWorkingForm
             // 
@@ -215,37 +196,11 @@
             lblAddressT.TabIndex = 0;
             lblAddressT.Text = "lblAddress";
             // 
-            // btnDetails
-            // 
-            btnDetails.BackgroundColor = Color.FromArgb(248, 212, 187);
-            btnDetails.ButtonImage = null;
-            btnDetails.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.MaterialRounded;
-            btnDetails.ButtonText = "Details";
-            btnDetails.ClickBackColor = Color.FromArgb(255, 212, 180);
-            btnDetails.ClickTextColor = Color.Black;
-            btnDetails.CornerRadius = 20;
-            btnDetails.Cursor = Cursors.Hand;
-            btnDetails.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnDetails.Horizontal_Alignment = StringAlignment.Center;
-            btnDetails.HoverBackgroundColor = Color.FromArgb(248, 242, 197);
-            btnDetails.HoverTextColor = Color.Black;
-            btnDetails.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnDetails.Location = new Point(393, 313);
-            btnDetails.Name = "btnDetails";
-            btnDetails.Size = new Size(88, 38);
-            btnDetails.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            btnDetails.TabIndex = 49;
-            btnDetails.TextColor = Color.Black;
-            btnDetails.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            btnDetails.Vertical_Alignment = StringAlignment.Center;
-            btnDetails.Click += panel1_Click;
-            // 
             // UCInformation
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AntiqueWhite;
-            Controls.Add(btnDetails);
             Controls.Add(flpBody);
             Controls.Add(pnAddress);
             Margin = new Padding(3, 2, 10, 10);
@@ -258,7 +213,6 @@
             pnName.PerformLayout();
             pnCompany.ResumeLayout(false);
             pnCompany.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).EndInit();
             pnWorkingForm.ResumeLayout(false);
             pnWorkingForm.PerformLayout();
             pnSkills.ResumeLayout(false);

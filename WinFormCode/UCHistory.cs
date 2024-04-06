@@ -22,9 +22,17 @@ namespace WinFormProject.WinFormCode
             this.MaximumSize = new System.Drawing.Size(811, 260);
             this.job = job;
             lblJobNameT.Text = job.Name;
-            lblDateT.Text = job.DatePublish.ToString();
-            lblEndT.Text = job.DateEnd.ToString();
+            lblDateT.Text = job.DatePublish.ToString("dd/MM/yyyy") + " :Pusblished";
+            lblEndT.Text = job.DateEnd.ToString("dd/MM/yyyy") + " :Expired";
             lblStatusT.Text = job.Status;
+            foreach (string s in job.SkillList)
+            {
+                BtnSkill btnSkill = new BtnSkill();
+                btnSkill.Text = s;
+                btnSkill.Show();
+                flpSkills.Width += btnSkill.Width + 10;
+                flpSkills.Controls.Add(btnSkill);
+            }
         }
         public Job Job { get { return job; } }
 

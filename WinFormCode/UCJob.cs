@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Drawing.Drawing2D;
 using System.Threading.Tasks.Dataflow;
 using System.Windows.Forms;
+using WinFormProject.WinFormCode;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace WinFormProject
@@ -13,27 +14,87 @@ namespace WinFormProject
     {
         Job job = new Job();
         JobDAO jobDAO = new JobDAO();
-        Form currentFormChild;
-        Panel pnBody;
-        public UCJob(Job job, Form currentFormChild, Panel pnBody)
+        public UCJob(Job job)
         {
             InitializeComponent();
-            this.currentFormChild = currentFormChild;
-            this.pnBody = pnBody;
-            this.MaximumSize = new System.Drawing.Size(811, 246);
+            this.MaximumSize = new System.Drawing.Size(508, 184);
             this.job = job;
         }
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            FJobEdit fJobEdit = new FJobEdit(job, job.CompanyID);
+            fJobEdit.Show();
+        }
 
-        public Job Job { get { return job; } }
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnDone_Click(object sender, EventArgs e)
         {
             jobDAO.DoneJob(job.Jobid);
         }
 
         private void btnApplicants_Click(object sender, EventArgs e)
         {
-            FApplicant fApplicant = new FApplicant(Job);
+            FApplicant fApplicant = new FApplicant(job);
             fApplicant.Show();
+        }
+
+        private void UCJob_Load(object sender, EventArgs e)
+        {
+            lblJobNameT.Text = job.Name;
+            lblStatusT.Text = job.Status;
+            lblDateT.Text = "Posted " + PublishTime();
+            lblEndT.Text = "Expired after " + ExpiredTime();
+            foreach (string s in job.SkillList)
+            {
+                BtnSkill btnSkill = new BtnSkill();
+                btnSkill.Text = s;
+                btnSkill.Show();
+                flpSkills.Width += btnSkill.Width + 10;
+                flpSkills.Controls.Add(btnSkill);
+            }
+        }
+
+        private string PublishTime()
+        {
+            TimeSpan timeDifference = DateTime.Now - job.DatePublish;
+
+            if (timeDifference.TotalMinutes < 1)
+            {
+                return "Just now";
+            }
+            else if (timeDifference.TotalMinutes < 60)
+            {
+                return $"{(int)timeDifference.TotalMinutes} minute(s) ago";
+            }
+            else if (timeDifference.TotalHours < 24)
+            {
+                return $"{(int)timeDifference.TotalHours} hour(s) ago";
+            }
+            else
+            {
+                return $"{(int)timeDifference.TotalDays} day(s) ago";
+            }
+        }
+
+        private string ExpiredTime()
+        {
+            TimeSpan timeDifference =job.DateEnd - DateTime.Now;
+
+            if (timeDifference.TotalMinutes < 0)
+            {
+                return $"{(int)timeDifference.TotalSeconds} second(s)";
+            }
+            else if (timeDifference.TotalMinutes < 60)
+            {
+                return $"{(int)timeDifference.TotalMinutes} minute(s)";
+            }
+            else if (timeDifference.TotalHours < 24)
+            {
+                return $"{(int)timeDifference.TotalHours} hour(s)";
+            }
+            else
+            {
+                return $"{(int)timeDifference.TotalDays} day(s)";
+            }
         }
 
         private int radius = 20;
@@ -82,47 +143,6 @@ namespace WinFormProject
         {
             base.OnSizeChanged(e);
             this.RecreateRegion();
-        }
-
-        private void UCJob_Load(object sender, EventArgs e)
-        {
-            lblJobNameT.Text = job.Name;
-            lblDateT.Text = job.DatePublish.ToString();
-            lblEndT.Text = job.DateEnd.ToString("dd/MM/yyyy");
-            lblStatusT.Text = job.Status;
-        }
-        private void OpenChildForm(Form childForm)
-        {
-            foreach (Control control in this.Controls)
-            {
-                if (control == pnBody)
-                    continue;
-                control.Visible = false;
-            }
-            if (currentFormChild != null)
-            {
-                currentFormChild.Close();
-            }
-            currentFormChild = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            pnBody.Controls.Add(childForm);
-            pnBody.Tag = childForm;
-            pnBody.BackColor = Color.FromArgb(32, 41, 58);
-            childForm.BringToFront();
-            childForm.Show();
-        }
-
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-            FJobEdit fJobEdit = new FJobEdit(job, job.CompanyID);
-            OpenChildForm(fJobEdit);
-        }
-
-        private void lblJobNameT_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
