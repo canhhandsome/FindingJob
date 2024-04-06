@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormProject.WinFormCode;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace WinFormProject
@@ -14,15 +16,17 @@ namespace WinFormProject
     public partial class FJobCreation : Form
     {
         private Form currentFormChild = new Form();
+        private FJobSKills fJobSKills = new FJobSKills();
         private List<Job> jobs;
         private string companyid;
         private JobDAO jobDAO = new JobDAO();
-
-        public FJobCreation(List<Job> jobs,string companyid)
+        private List<string> skills = new List<string>();
+        public FJobCreation(List<Job> jobs, string companyid)
         {
             InitializeComponent();
             this.jobs = jobs;
             this.companyid = companyid;
+            fJobSKills.ListReady += FJobSkills_ListReady;
         }
         private void OpenChildForm(Form childForm)
         {
@@ -48,7 +52,7 @@ namespace WinFormProject
         }
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FPostJob(jobs,companyid));
+            OpenChildForm(new FPostJob(jobs, companyid));
         }
 
         private void btnPostJob_Click(object sender, EventArgs e)
@@ -58,9 +62,29 @@ namespace WinFormProject
             OpenChildForm(new FPostJob(jobs, companyid));
         }
 
-        private void guna2Button4_Click(object sender, EventArgs e)
+        private void FillSkills()
         {
+            flpSkills.Controls.Clear();
+            flpSkills.Width = 0;
+            foreach (string s in  skills)
+            {
+                BtnSkill btnSkill = new BtnSkill();
+                btnSkill.Text = s;
+                btnSkill.Show();
+                flpSkills.Width += btnSkill.Width + 10;
+                flpSkills.Controls.Add(btnSkill);
+            }
+        }
 
+        private void FJobSkills_ListReady(object sender, List<string> e)
+        {
+            skills = e;
+            FillSkills();
+        }
+
+        private void btnAddSkills_Click(object sender, EventArgs e)
+        {
+            fJobSKills.Show();
         }
     }
 }
