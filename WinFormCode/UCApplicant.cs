@@ -17,7 +17,7 @@ namespace WinFormProject
         JobDAO jobDAO = new JobDAO();
         Apply apply = new Apply();
         Job job = new Job();
-        byte[] applicantAvatar = new byte[0];
+        Image applicantAvatar = null;
         public UCApplicant(Apply apply, Job job)
         {
             InitializeComponent();
@@ -33,8 +33,8 @@ namespace WinFormProject
             lblApplicantNameT.Text = jsDAO.FetchName(apply.JSeekerID);
             lblEmailT.Text = jobDAO.FetchName(apply.JobID);
             lblDateT.Text = apply.DATE.ToString("dd/MM/yyyy");
-            applicantAvatar = jsDAO.FetchImg(apply.JSeekerID);
-            //ImageHandler.DisplayImage(applicantAvatar, ref ptbApplicantPicture);
+            applicantAvatar = jsDAO.FetchImg(apply.JSeekerID, "Avatar");
+            if(applicantAvatar != null)  ptbApplicantPicture.Image = applicantAvatar; 
         }
         private void btnProfile_Click(object sender, EventArgs e)
         {

@@ -26,11 +26,12 @@ namespace WinFormProject
             string strFetch = string.Format("SELECT DateOfBirth FROM {0} where id = '{1}'", "jobseeker", jobseeker.INFO.ID);
             return conn.FetchScalar(strFetch);
         }
-        public byte[] FetchImg(string jobseekerid)
+        public Image FetchImg(string jobseekerid, string whattotake)
         {
-            string strFetch = string.Format("SELECT Avatar FROM JobSeeker WHERE id = '{0}'", jobseekerid);
-            return conn.FetchBinaryData(strFetch);
+            string strFetch = string.Format("SELECT {0} FROM JobSeeker WHERE id = '{1}'", whattotake, jobseekerid);
+            return conn.FetchInfoImages(strFetch);
         }
+
 
         public byte[] FetchCV(string jobseekerid)
         {
@@ -39,7 +40,7 @@ namespace WinFormProject
         }
         public void UpdateJobSeeker(JobSeeker jobseeker)
         {
-            string sqlUpdate = string.Format("UPDATE JobSeeker SET name = '{1}', email = '{2}', address = '{3}', phonenumber = '{4}', dateofbirth = @BDate, nationalid = '{5}', avatar = @Avatar, cv = @CV, gender = '{6}' WHERE id = '{0}'",
+            string sqlUpdate = string.Format("UPDATE JobSeeker SET name = '{1}', email = '{2}', address = '{3}', phonenumber = '{4}', dateofbirth = @BDate, nationalid = '{5}', avatar = @Avatar, cv = @CV,cvpicture = @CVPicture, gender = '{6}' WHERE id = '{0}'",
             jobseeker.INFO.ID, jobseeker.INFO.Name, jobseeker.INFO.Email, jobseeker.INFO.Address, jobseeker.INFO.Phone, jobseeker.NationalID, jobseeker.Gender);
             conn.CRUD(sqlUpdate, jobseeker);
         }
