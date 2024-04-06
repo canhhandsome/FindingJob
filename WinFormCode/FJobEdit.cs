@@ -9,16 +9,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormProject.WinFormCode;
 
 namespace WinFormProject
 {
     public partial class FJobEdit : Form
     {
         private Form currentFormChild = new Form();
+        private FJobSKills fJobSKills = new FJobSKills();
         private List<Job> jobs;
         private string companyid;
         private JobDAO jobDAO = new JobDAO();
         private Job job;
+        private List<string> skills = new List<string>();
 
         public FJobEdit(Job job, string companyid)
         {
@@ -32,6 +35,7 @@ namespace WinFormProject
             rtxtjobrequirement.Text = job.Requirement;
             rtxtBenefit.Text = job.Benefit;
             dtpDateEnd.Value = job.DateEnd;
+            fJobSKills.ListReady += FJobSkills_ListReady;
         }
         private void OpenChildForm(Form childForm)
         {
@@ -66,6 +70,30 @@ namespace WinFormProject
             jobDAO.EditJob(job1);
             jobs = jobDAO.FetchCompanyJob(companyid);
             OpenChildForm(new FPostJob(jobs, companyid));
+        }
+        private void FillSkills()
+        {
+            flpSkills.Controls.Clear();
+            flpSkills.Width = 0;
+            foreach (string s in skills)
+            {
+                BtnSkill btnSkill = new BtnSkill();
+                btnSkill.Text = s;
+                btnSkill.Show();
+                flpSkills.Width += btnSkill.Width + 10;
+                flpSkills.Controls.Add(btnSkill);
+            }
+        }
+
+        private void FJobSkills_ListReady(object sender, List<string> e)
+        {
+            skills = e;
+            FillSkills();
+        }
+
+        private void btnAddSkills_Click(object sender, EventArgs e)
+        {
+            fJobSKills.Show();
         }
     }
 }

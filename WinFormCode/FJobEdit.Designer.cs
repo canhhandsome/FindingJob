@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -38,9 +40,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.pnBody = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpSkills = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnAddSkills = new Guna.UI2.WinForms.Guna2Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -72,8 +75,8 @@
             this.rtxtBenefit = new System.Windows.Forms.RichTextBox();
             this.btnCancel = new ReaLTaiizor.Controls.CyberButton();
             this.btnSave = new ReaLTaiizor.Controls.CyberButton();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.pnBody.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.tabpage.SuspendLayout();
             this.tbprequirement.SuspendLayout();
             this.tbpdescription.SuspendLayout();
@@ -82,8 +85,9 @@
             // 
             // pnBody
             // 
+            this.pnBody.AutoScroll = true;
             this.pnBody.BackColor = System.Drawing.Color.White;
-            this.pnBody.Controls.Add(this.guna2Button4);
+            this.pnBody.Controls.Add(this.flowLayoutPanel1);
             this.pnBody.Controls.Add(this.label12);
             this.pnBody.Controls.Add(this.label16);
             this.pnBody.Controls.Add(this.label15);
@@ -115,6 +119,47 @@
             this.pnBody.Name = "pnBody";
             this.pnBody.Size = new System.Drawing.Size(1233, 998);
             this.pnBody.TabIndex = 19;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.flpSkills);
+            this.flowLayoutPanel1.Controls.Add(this.btnAddSkills);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(48, 535);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1129, 55);
+            this.flowLayoutPanel1.TabIndex = 106;
+            // 
+            // flpSkills
+            // 
+            this.flpSkills.Location = new System.Drawing.Point(3, 4);
+            this.flpSkills.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.flpSkills.Name = "flpSkills";
+            this.flpSkills.Size = new System.Drawing.Size(0, 56);
+            this.flpSkills.TabIndex = 76;
+            // 
+            // btnAddSkills
+            // 
+            this.btnAddSkills.BorderRadius = 15;
+            this.btnAddSkills.CustomizableEdges = customizableEdges1;
+            this.btnAddSkills.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddSkills.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddSkills.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddSkills.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddSkills.FillColor = System.Drawing.Color.Transparent;
+            this.btnAddSkills.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.btnAddSkills.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAddSkills.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.btnAddSkills.HoverState.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.btnAddSkills.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnAddSkills.Location = new System.Drawing.Point(9, 3);
+            this.btnAddSkills.Name = "btnAddSkills";
+            this.btnAddSkills.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.btnAddSkills.Size = new System.Drawing.Size(344, 52);
+            this.btnAddSkills.TabIndex = 50;
+            this.btnAddSkills.Text = "Click here to see some popular skills";
+            this.btnAddSkills.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAddSkills.Click += new System.EventHandler(this.btnAddSkills_Click);
             // 
             // label12
             // 
@@ -605,27 +650,6 @@
             this.btnSave.Timer_Effect_1 = 5;
             this.btnSave.Timer_RGB = 300;
             // 
-            // guna2Button4
-            // 
-            this.guna2Button4.BorderRadius = 15;
-            this.guna2Button4.CustomizableEdges = customizableEdges1;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Button4.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.HoverState.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button4.Location = new System.Drawing.Point(34, 534);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.guna2Button4.Size = new System.Drawing.Size(380, 47);
-            this.guna2Button4.TabIndex = 105;
-            this.guna2Button4.Text = "Click here to see some popular skills";
-            // 
             // FJobEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -637,6 +661,7 @@
             this.Text = "FJobEdit";
             this.pnBody.ResumeLayout(false);
             this.pnBody.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.tabpage.ResumeLayout(false);
             this.tbprequirement.ResumeLayout(false);
             this.tbpdescription.ResumeLayout(false);
@@ -678,6 +703,8 @@
         private TabPage tbpbenefit;
         private RichTextBox rtxtBenefit;
         private Label label12;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private FlowLayoutPanel flpSkills;
+        private Guna.UI2.WinForms.Guna2Button btnAddSkills;
     }
 }

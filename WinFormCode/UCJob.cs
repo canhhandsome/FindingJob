@@ -91,33 +91,12 @@ namespace WinFormProject
             lblEndT.Text = job.DateEnd.ToString("dd/MM/yyyy");
             lblStatusT.Text = job.Status;
         }
-        private void OpenChildForm(Form childForm)
-        {
-            foreach (Control control in this.Controls)
-            {
-                if (control == pnBody)
-                    continue;
-                control.Visible = false;
-            }
-            if (currentFormChild != null)
-            {
-                currentFormChild.Close();
-            }
-            currentFormChild = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            pnBody.Controls.Add(childForm);
-            pnBody.Tag = childForm;
-            pnBody.BackColor = Color.FromArgb(32, 41, 58);
-            childForm.BringToFront();
-            childForm.Show();
-        }
+        
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
             FJobEdit fJobEdit = new FJobEdit(job, job.CompanyID);
-            OpenChildForm(fJobEdit);
+            fJobEdit.Show();
         }
 
         private void lblJobNameT_Click(object sender, EventArgs e)
