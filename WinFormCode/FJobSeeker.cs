@@ -16,6 +16,7 @@ namespace WinFormProject
     {
         private Form currentFormChild = new Form();
         private Guna.UI2.WinForms.Guna2Button selectedButton;
+        private Image imageclicked;
         private Information information = new Information();
         private JobSeeker jobSeeker = new JobSeeker();
         InformationDAO informationDAO = new InformationDAO();
@@ -47,7 +48,6 @@ namespace WinFormProject
         private void button_Click(object sender, EventArgs e)
         {
             Guna.UI2.WinForms.Guna2Button clickedButton = (Guna.UI2.WinForms.Guna2Button)sender;
-
             if (clickedButton == selectedButton)
                 return;
 
@@ -56,14 +56,19 @@ namespace WinFormProject
                 selectedButton.FillColor = Color.Transparent;
                 selectedButton.Font = new Font("Cooper Black", 12f);
                 selectedButton.ForeColor = Color.White;
+                selectedButton.Image = imageclicked;
                 selectedButton.Enabled = true;
             }
 
+            imageclicked = clickedButton.Image;
             clickedButton.FillColor = Color.FromArgb(220, 251, 251);
             clickedButton.Font = new Font("Cooper Black", 16.2f);
             clickedButton.ForeColor = Color.Black;
-            //clickedButton.Enabled = false;
+            clickedButton.Image = clickedButton.HoverState.Image;
+            clickedButton.Enabled = true;
+
             selectedButton = clickedButton;
+            //clickedButton.Enabled = false;
         }
 
         private void OpenChildForm(Panel panel, Form childForm)
