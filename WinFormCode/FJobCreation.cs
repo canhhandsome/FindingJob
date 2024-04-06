@@ -17,18 +17,18 @@ namespace WinFormProject
     public partial class FJobCreation : Form
     {
         private Form currentFormChild = new Form();
-        private FJobSKills fJobSKills = new FJobSKills();
+        private FJobSKills fJobSKills;
         private List<Job> jobs;
         private string companyid;
         private JobDAO jobDAO = new JobDAO();
         private SkillListDAO slDAO = new SkillListDAO();
-        private List<string> skills;
-
+        private List<string> skills = new List<string>();
         public FJobCreation(List<Job> jobs, string companyid)
         {
             InitializeComponent();
             this.jobs = jobs;
             this.companyid = companyid;
+            fJobSKills = new FJobSKills(skills);
             fJobSKills.ListReady += FJobSkills_ListReady;
 
         }
