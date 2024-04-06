@@ -15,7 +15,7 @@ namespace WinFormProject
         Company company;
         ApplyDAO applyDAO = new ApplyDAO();
         List<Apply> applies = new List<Apply> { };
-        public FApplicant(Job job) 
+        public FApplicant(Job job)
         {
             InitializeComponent();
             applies = applyDAO.AllApplies(job.Jobid);

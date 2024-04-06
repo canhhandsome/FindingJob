@@ -22,10 +22,15 @@ namespace WinFormProject
             string strFetch = string.Format("Select Name from company where id = '{0}'", companyid);
             return conn.FetchScalar(strFetch);
         }
-        public byte[] FetchImg(string companyid, string whattotake)
+        public Image FetchImg(string companyid, string whattotake)
         {
             string strFetch = string.Format("SELECT {0}  FROM Company WHERE id = '{1}'", whattotake,companyid);
-            return conn.FetchBinaryData(strFetch);
+            return conn.FetchInfoImages(strFetch);
+        }
+        public List<Image> FetchAllPictures(string companyid)
+        {
+            string strFetch = string.Format("Select Img From ImgCompany where companyid = '{0}'", companyid);
+            return conn.FetchAllImg(strFetch);
         }
         public void UpdateCompany(Company company)
         {
@@ -39,6 +44,7 @@ namespace WinFormProject
             string strFetch = string.Format("Select * from Company where id = '{0}'", id);
             return conn.FetchCompanyById(strFetch, id);
         }
+
     }
     
 }

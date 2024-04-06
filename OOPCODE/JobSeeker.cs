@@ -13,15 +13,15 @@ namespace WinFormProject
         private DateTime bdate = new DateTime();
         private string nationalid = string.Empty;
         private string gender = string.Empty;
-        private byte[] AvatarData;
+        private Image AvatarData = null;
         private byte[] CvData;
-
+        private Image CVpicture = null;
 
         public JobSeeker()
         {
 
         }
-        public JobSeeker(Information information, DateTime bdate, string nationalid, string gender, byte[] avatarData, byte[] cvData)
+        public JobSeeker(Information information, DateTime bdate, string nationalid, string gender, Image avatarData, byte[] cvData, Image cVPicture)
         {
             this.information = information;
             this.bdate = bdate;
@@ -29,6 +29,7 @@ namespace WinFormProject
             this.gender = gender;
             AvatarData = avatarData;
             CvData = cvData;
+            CVpicture = cVPicture;
         }
 
         public JobSeeker(Information information)
@@ -39,8 +40,10 @@ namespace WinFormProject
             nationalid = list[0];
             gender = list[1];
             bdate = DateTime.Parse(jobseekerdao.FetchBdate(this));
-            AvatarData = jobseekerdao.FetchImg(this.INFO.ID);
+            AvatarData = jobseekerdao.FetchImg(this.INFO.ID, "Avatar");
+            CVpicture = jobseekerdao.FetchImg(this.INFO.ID, "CVPicture");
             CvData = jobseekerdao.FetchCV(this.INFO.ID);
+
         }
 
         public Information INFO
@@ -63,7 +66,7 @@ namespace WinFormProject
             get { return gender; }
         }
 
-        public byte[] Avatar
+        public Image Avatar
         {
             get { return AvatarData; }
         }
@@ -71,6 +74,10 @@ namespace WinFormProject
         public byte[] CV
         {
             get { return CvData; }
+        }
+        public Image CVPicture
+        {
+            get { return CVpicture; }
         }
     }
 }

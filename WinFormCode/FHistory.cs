@@ -20,7 +20,7 @@ namespace WinFormProject.WinFormCode
             InitializeComponent();
             this.jobs = jobs;
             this.companyid = companyid;
-            foreach(Job job in jobs)
+            foreach (Job job in jobs)
             {
                 UCHistory uchistory = new UCHistory(job);
                 pnSubBody.Controls.Add(uchistory);

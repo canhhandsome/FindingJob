@@ -32,9 +32,8 @@ namespace WinFormProject
             this.txtTaxIdentification.Text = company.Taxidentification;
             this.cbbWTB.Text = company.WorkingTimeBegin;
             this.cbbWTEnd.Text = company.WorkingTimeEnd;
-            this.txtWebsiteLink.Text = company.Websitelink;
-            if (company.Avatar != null) ImageHandler.DisplayImage(company.Avatar, ref ptbAvatar);
-            if (company.BusinessLicense != null) ImageHandler.DisplayImage(company.BusinessLicense, ref ptbLicense);
+            if (company.Avatar != null) ptbAvatar.Image = company.Avatar;
+            if (company.BusinessLicense != null) ptbLicense.Image = company.BusinessLicense;
         }
         private void Enable_Save_Click()
         {
@@ -81,19 +80,20 @@ namespace WinFormProject
         }
         private Company CompanyCreation()
         {
-            byte[] AvatarData = new byte[0];
-            byte[] BusinessData = new byte[0];
+            Image AvatarData = null;
+            Image BusinessData = null;
+            List<Image> Images = new List<Image>(); 
             if (ptbAvatar.Image != null)
             {
-                AvatarData = ImageHandler.ImageToByteArray(ptbAvatar.Image);
+                AvatarData = ptbAvatar.Image;
             }
             if (ptbLicense.Image != null)
             {
-                BusinessData = ImageHandler.ImageToByteArray(ptbLicense.Image);
+                BusinessData = ptbLicense.Image;
             }
             Information information = new Information(company.INFO.ID, txtCompanyName.Text, txtEmail.Text, txtAddress.Text, txtPhoneNumber.Text);
             return new Company(information, cbbCompanyType.Text, cbbCompanySize.Text, txtTaxIdentification.Text,
-                txtDetail.Text, txtWebsiteLink.Text, cbbWTB.Text, cbbWTEnd.Text, AvatarData, BusinessData); ;
+                txtDetail.Text, txtWebsiteLink.Text, cbbWTB.Text, cbbWTEnd.Text, AvatarData, BusinessData,Images); ;
         }
 
         private void btnSave_Click(object sender, EventArgs e)

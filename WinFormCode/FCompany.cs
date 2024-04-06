@@ -82,8 +82,8 @@ namespace WinFormProject
             clickedButton.FillColor = Color.FromArgb(220, 251, 251);
             clickedButton.Font = new Font("Cooper Black", 16.2f);
             clickedButton.ForeColor = Color.Black;
-            clickedButton.Image = clickedButton.HoverState.Image; 
-            clickedButton.Enabled = true; 
+            clickedButton.Image = clickedButton.HoverState.Image;
+            clickedButton.Enabled = true;
 
             selectedButton = clickedButton;
             //clickedButton.Enabled = false;

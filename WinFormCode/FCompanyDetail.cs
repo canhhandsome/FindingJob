@@ -45,7 +45,7 @@ namespace WinFormProject.WinFormCode
             this.cbbWTB.Text = company.WorkingTimeBegin;
             this.cbbWTEnd.Text = company.WorkingTimeEnd;
             this.txtWebsiteLink.Text = company.Websitelink;
-            //if (company.Avatar != null) ImageHandler.DisplayImage(company.Avatar, ref ptbAvatar);
+            if (company.Avatar != null) ptbAvatar.Image = company.Avatar;
         }
     }
 }

@@ -476,6 +476,7 @@ namespace WinFormProject
             btnChoosePicture.Size = new Size(225, 56);
             btnChoosePicture.TabIndex = 49;
             btnChoosePicture.Text = "Choose Picture";
+            btnChoosePicture.Click += btnChoosePicture_Click;
             // 
             // btnChooseNewCV
             // 
@@ -494,6 +495,7 @@ namespace WinFormProject
             btnChooseNewCV.Size = new Size(225, 56);
             btnChooseNewCV.TabIndex = 50;
             btnChooseNewCV.Text = "Choose CV";
+            btnChooseNewCV.Click += btnChooseNewCV_Click;
             // 
             // btnCV
             // 
@@ -512,6 +514,7 @@ namespace WinFormProject
             btnCV.Size = new Size(225, 56);
             btnCV.TabIndex = 51;
             btnCV.Text = "CV";
+            btnCV.Click += btnCV_Click;
             // 
             // btnCancel
             // 
@@ -530,6 +533,7 @@ namespace WinFormProject
             btnCancel.Size = new Size(225, 56);
             btnCancel.TabIndex = 52;
             btnCancel.Text = "Cancel";
+            btnCancel.Click += btnCancel_Click;
             // 
             // btnSave
             // 
@@ -548,6 +552,7 @@ namespace WinFormProject
             btnSave.Size = new Size(225, 56);
             btnSave.TabIndex = 53;
             btnSave.Text = "Save";
+            btnSave.Click += btnSave_Click;
             // 
             // btnEdit
             // 
@@ -566,6 +571,7 @@ namespace WinFormProject
             btnEdit.Size = new Size(225, 56);
             btnEdit.TabIndex = 54;
             btnEdit.Text = "Edit";
+            btnEdit.Click += btnEdit_Click;
             // 
             // lblProfile
             // 

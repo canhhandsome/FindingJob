@@ -28,59 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FApplicant));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             flpApplicant = new FlowLayoutPanel();
-            materialTextBoxEdit1 = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             SuspendLayout();
             // 
             // flpApplicant
             // 
-            flpApplicant.Location = new Point(41, 104);
+            flpApplicant.Location = new Point(47, 139);
+            flpApplicant.Margin = new Padding(3, 4, 3, 4);
             flpApplicant.Name = "flpApplicant";
-            flpApplicant.Size = new Size(1000, 204);
+            flpApplicant.Size = new Size(1143, 272);
             flpApplicant.TabIndex = 2;
             // 
-            // materialTextBoxEdit1
+            // txtSearch
             // 
-            materialTextBoxEdit1.AnimateReadOnly = false;
-            materialTextBoxEdit1.AutoCompleteMode = AutoCompleteMode.None;
-            materialTextBoxEdit1.AutoCompleteSource = AutoCompleteSource.None;
-            materialTextBoxEdit1.BackgroundImageLayout = ImageLayout.None;
-            materialTextBoxEdit1.CharacterCasing = CharacterCasing.Normal;
-            materialTextBoxEdit1.Depth = 0;
-            materialTextBoxEdit1.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            materialTextBoxEdit1.HideSelection = true;
-            materialTextBoxEdit1.Hint = "Search Applicant";
-            materialTextBoxEdit1.LeadingIcon = (Image)resources.GetObject("materialTextBoxEdit1.LeadingIcon");
-            materialTextBoxEdit1.Location = new Point(166, 31);
-            materialTextBoxEdit1.MaxLength = 32767;
-            materialTextBoxEdit1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            materialTextBoxEdit1.Name = "materialTextBoxEdit1";
-            materialTextBoxEdit1.PasswordChar = '\0';
-            materialTextBoxEdit1.PrefixSuffixText = null;
-            materialTextBoxEdit1.ReadOnly = false;
-            materialTextBoxEdit1.RightToLeft = RightToLeft.No;
-            materialTextBoxEdit1.SelectedText = "";
-            materialTextBoxEdit1.SelectionLength = 0;
-            materialTextBoxEdit1.SelectionStart = 0;
-            materialTextBoxEdit1.ShortcutsEnabled = true;
-            materialTextBoxEdit1.Size = new Size(619, 48);
-            materialTextBoxEdit1.TabIndex = 3;
-            materialTextBoxEdit1.TabStop = false;
-            materialTextBoxEdit1.TextAlign = HorizontalAlignment.Left;
-            materialTextBoxEdit1.TrailingIcon = null;
-            materialTextBoxEdit1.UseSystemPasswordChar = false;
+            txtSearch.AutoRoundedCorners = true;
+            txtSearch.BorderRadius = 23;
+            txtSearch.CustomizableEdges = customizableEdges1;
+            txtSearch.DefaultText = "";
+            txtSearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtSearch.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtSearch.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtSearch.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtSearch.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtSearch.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSearch.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtSearch.IconLeft = (Image)resources.GetObject("txtSearch.IconLeft");
+            txtSearch.Location = new Point(175, 44);
+            txtSearch.Margin = new Padding(4, 4, 4, 4);
+            txtSearch.Name = "txtSearch";
+            txtSearch.PasswordChar = '\0';
+            txtSearch.PlaceholderText = "Search for jobs";
+            txtSearch.SelectedText = "";
+            txtSearch.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtSearch.Size = new Size(813, 48);
+            txtSearch.TabIndex = 38;
             // 
             // FApplicant
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.White;
-            ClientSize = new Size(1079, 635);
-            Controls.Add(materialTextBoxEdit1);
+            ClientSize = new Size(1233, 847);
+            Controls.Add(txtSearch);
             Controls.Add(flpApplicant);
             ForeColor = SystemColors.ControlText;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FApplicant";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FApplicant";
@@ -90,6 +87,6 @@
         #endregion
         private UCApplicant ucApplicant1;
         private FlowLayoutPanel flpApplicant;
-        private ReaLTaiizor.Controls.MaterialTextBoxEdit materialTextBoxEdit1;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearch;
     }
 }
