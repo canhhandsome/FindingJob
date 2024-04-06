@@ -30,6 +30,7 @@ namespace WinFormProject
             this.companyid = companyid;
             fJobSKills = new FJobSKills(skills);
             fJobSKills.ListReady += FJobSkills_ListReady;
+
         }
         private void OpenChildForm(Form childForm)
         {

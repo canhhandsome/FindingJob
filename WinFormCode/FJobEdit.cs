@@ -19,12 +19,11 @@ namespace WinFormProject
         private Form currentFormChild = new Form();
         private FJobSKills fJobSKills;
         private List<Job> jobs;
-        private List<string> skills;
         private string companyid;
         private JobDAO jobDAO = new JobDAO();
         private Job job;
         private SkillListDAO sldao = new SkillListDAO();
-
+        private List<string> skills = new List<string>();
         public FJobEdit(Job job, string companyid)
         {
             InitializeComponent();
@@ -46,6 +45,7 @@ namespace WinFormProject
             rtxtBenefit.Text = job.Benefit;
             dtpDateEnd.Value = job.DateEnd;
             flpSkills.Controls.Clear();
+            flpSkills.Width = 0;
             foreach (string skill in skills)
             {
                 BtnSkill btnSkill = new BtnSkill();
@@ -89,12 +89,25 @@ namespace WinFormProject
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Job job1 = new Job(job.Jobid, job.CompanyID, txtJobName.Text, cbbExperience.Text, txtSalary.Text, tbprequirement.Text, tbpdescription.Text, tbpbenefit.Text, job.DatePublish, dtpDateEnd.Value, job.Status, cbbWorkingForm.Text, skills);
+            Job job1 = new Job(job.Jobid, job.CompanyID, txtJobName.Text, cbbExperience.Text, txtSalary.Text, rtxtjobrequirement.Text, rtxtdescription.Text, rtxtBenefit.Text, job.DatePublish, dtpDateEnd.Value, job.Status, cbbWorkingForm.Text, skills);
             jobDAO.EditJob(job1);
             SkillList skillist = new SkillList(job.Jobid, skills);
             sldao.UpdateSkillList(skillist);
             jobs = jobDAO.FetchCompanyJob(companyid);
             OpenChildForm(new FPostJob(jobs, companyid));
+        }
+        private void FillSkills()
+        {
+            flpSkills.Controls.Clear();
+            flpSkills.Width = 0;
+            foreach (string s in skills)
+            {
+                BtnSkill btnSkill = new BtnSkill();
+                btnSkill.Text = s;
+                btnSkill.Show();
+                flpSkills.Width += btnSkill.Width + 10;
+                flpSkills.Controls.Add(btnSkill);
+            }
         }
 
         private void btnAddSkills_Click(object sender, EventArgs e)

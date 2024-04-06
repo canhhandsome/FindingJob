@@ -29,7 +29,7 @@ namespace WinFormProject.OOPCODE
             {
                 skilllist.skillList.Add("NULL");
             }
-            string SQL = string.Format("UDDATE JobSkill SET skill1 = '{0}', skill2 = '{1}',skill3 ='{2}' where jobid ='{3}'", skilllist.skillList[0], skilllist.skillList[1], skilllist.skillList[2], skilllist.JobID);
+            string SQL = string.Format("UPDATE JobSkill SET skill1 = '{0}', skill2 = '{1}', skill3 = '{2}' WHERE jobid = '{3}'", skilllist.skillList[0], skilllist.skillList[1], skilllist.skillList[2], skilllist.JobID);
             conn.CRUD(SQL);
         }
         public List<string> GetSkills(string  jobID)
