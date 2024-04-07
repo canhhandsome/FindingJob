@@ -24,7 +24,7 @@ namespace WinFormProject
             InitializeComponent();
             this.apply = apply;
             this.job = job;
-            this.MaximumSize = new System.Drawing.Size(469, 515);
+            this.MaximumSize = new System.Drawing.Size(469, 543);
             FillInTemplate();
         }
         public void FillInTemplate()

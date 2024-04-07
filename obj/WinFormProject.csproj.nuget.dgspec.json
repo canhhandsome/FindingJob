@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormProject.csproj": {}
+    "D:\\Window Programming\\Project\\New folder\\FindingJob\\WinFormProject.csproj": {}
   },
   "projects": {
-    "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormProject.csproj": {
+    "D:\\Window Programming\\Project\\New folder\\FindingJob\\WinFormProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormProject.csproj",
+        "projectUniqueName": "D:\\Window Programming\\Project\\New folder\\FindingJob\\WinFormProject.csproj",
         "projectName": "WinFormProject",
-        "projectPath": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormProject.csproj",
-        "packagesPath": "C:\\Users\\Canh\\.nuget\\packages\\",
-        "outputPath": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\obj\\",
+        "projectPath": "D:\\Window Programming\\Project\\New folder\\FindingJob\\WinFormProject.csproj",
+        "packagesPath": "C:\\Users\\TIEN TOAN\\.nuget\\packages\\",
+        "outputPath": "D:\\Window Programming\\Project\\New folder\\FindingJob\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Canh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TIEN TOAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -89,7 +84,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

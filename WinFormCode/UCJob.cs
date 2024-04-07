@@ -17,7 +17,7 @@ namespace WinFormProject
         public UCJob(Job job)
         {
             InitializeComponent();
-            this.MaximumSize = new System.Drawing.Size(481, 316);
+            this.MaximumSize = new System.Drawing.Size(550, 421);
             this.job = job;
         }
 
