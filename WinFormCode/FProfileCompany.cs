@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormProject.OOPCODE;
+using WinFormProject.WinFormCode;
 
 namespace WinFormProject
 {
@@ -14,11 +16,15 @@ namespace WinFormProject
     {
         Company company = new Company();
         CompanyDAO companyDao = new CompanyDAO();
+        List<Image> imageList;
+        CompanyAddtionalImageDAO addtional = new CompanyAddtionalImageDAO();
+        UCCarousel uCCarousel;
         public FProfileCompany(Company company)
         {
             InitializeComponent();
             Enable_Save_Click();
             this.company = company;
+            imageList = addtional.FetchAllPictures(company.INFO.ID);
             FillInfor();
         }
         private void FillInfor()
@@ -34,6 +40,12 @@ namespace WinFormProject
             this.cbbWTEnd.Text = company.WorkingTimeEnd;
             if (company.Avatar != null) ptbAvatar.Image = company.Avatar;
             if (company.BusinessLicense != null) ptbLicense.Image = company.BusinessLicense;
+
+
+            // Position and size of the UCCarousel control
+            uCCarousel = new UCCarousel(imageList);
+            this.Controls.Add(uCCarousel);
+            uCCarousel.Location = new Point(43, 868);
         }
         private void Enable_Save_Click()
         {
@@ -53,6 +65,8 @@ namespace WinFormProject
             cbbWTB.Enabled = false;
             cbbWTEnd.Enabled = false;
             cbbCompanySize.Enabled = false;
+            btnAdd.Visible = false;
+            btnRemove.Visible = false;
         }
         private void Enable_Edit_Click()
         {
@@ -72,6 +86,8 @@ namespace WinFormProject
             txtWebsiteLink.Enabled = true;
             cbbWTB.Enabled = true;
             cbbWTEnd.Enabled = true;
+            btnAdd.Visible = true;
+            btnRemove.Visible = true;
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -82,7 +98,7 @@ namespace WinFormProject
         {
             Image AvatarData = null;
             Image BusinessData = null;
-            List<Image> Images = new List<Image>(); 
+            List<Image> Images = new List<Image>();
             if (ptbAvatar.Image != null)
             {
                 AvatarData = ptbAvatar.Image;
@@ -93,7 +109,7 @@ namespace WinFormProject
             }
             Information information = new Information(company.INFO.ID, txtCompanyName.Text, txtEmail.Text, txtAddress.Text, txtPhoneNumber.Text);
             return new Company(information, cbbCompanyType.Text, cbbCompanySize.Text, txtTaxIdentification.Text,
-                txtDetail.Text, txtWebsiteLink.Text, cbbWTB.Text, cbbWTEnd.Text, AvatarData, BusinessData,Images); ;
+                txtDetail.Text, txtWebsiteLink.Text, cbbWTB.Text, cbbWTEnd.Text, AvatarData, BusinessData, Images); ;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -101,8 +117,9 @@ namespace WinFormProject
             Enable_Save_Click();
             Company newcompany = CompanyCreation();
             companyDao.UpdateCompany(newcompany);
+            addtional.InsertImage(company.INFO.ID, uCCarousel.images);
+            imageList = uCCarousel.images;
             this.company = newcompany;
-
         }
 
         private void btnChoosePicture_Click(object sender, EventArgs e)
@@ -121,19 +138,14 @@ namespace WinFormProject
             Enable_Save_Click(); // Re-enable the form for editing
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-
+            uCCarousel.Add();
         }
 
-        private void ptbAvatar_Click(object sender, EventArgs e)
+        private void btnRemove_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void guna2PictureBox11_Click(object sender, EventArgs e)
-        {
-
+            uCCarousel.Delete();
         }
     }
 }

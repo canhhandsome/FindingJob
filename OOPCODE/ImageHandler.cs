@@ -59,6 +59,20 @@ namespace WinFormProject
                 }
             }
         }
+        public static Image ChoosePicture()
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "Image Files (*.png;*.jpg;*.jpeg)|*.png;*.jpg;*.jpeg";
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Load the selected image and set it as the background image of the panel
+                    return Image.FromFile(openFileDialog.FileName);
+                }
+            }
+            return null;
+        }
+
         public static void DisplayPdfPreview(byte[] pdfBytes, PictureBox ptbCv)
         {
             // Convert PDF to image

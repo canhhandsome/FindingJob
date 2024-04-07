@@ -27,11 +27,7 @@ namespace WinFormProject
             string strFetch = string.Format("SELECT {0}  FROM Company WHERE id = '{1}'", whattotake,companyid);
             return conn.FetchInfoImages(strFetch);
         }
-        public List<Image> FetchAllPictures(string companyid)
-        {
-            string strFetch = string.Format("Select Img From ImgCompany where companyid = '{0}'", companyid);
-            return conn.FetchAllImg(strFetch);
-        }
+        
         public void UpdateCompany(Company company)
         {
             string sqlUpdate = string.Format("UPDATE Company SET Name = '{1}', Address = '{2}', Phonenumber = '{3}', CompanyType = '{4}', Email = '{5}', WebsiteLink = '{6}', TaxIdentification = '{7}', CompanySize = '{8}', WorkingTimeBegin = '{9}', WorkingTimeEnd = '{10}', Detail = '{11}', Avatar = @Avatar, BusinessLicense = @BusinessLicense WHERE ID = '{0}' ",

@@ -1,18 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Diagnostics.CodeAnalysis;
-using System.CodeDom;
-using System.Security.Cryptography;
-using Syncfusion.XPS;
-using Guna.UI2.WinForms.Suite;
-using static Guna.UI2.WinForms.Helpers.GraphicsHelper;
-using System.ComponentModel.Design;
-using System.Data;
 using WinFormProject.OOPCODE;
 
 namespace WinFormProject
@@ -113,9 +100,9 @@ namespace WinFormProject
             {
 
             }
-            finally 
+            finally
             {
-                conn.Close(); 
+                conn.Close();
             }
             return "";
         }
@@ -129,7 +116,7 @@ namespace WinFormProject
                 SqlCommand cmd = new SqlCommand(strFetch, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
 
-                while(reader.Read())
+                while (reader.Read())
                 {
                     string jobId = reader["jobid"].ToString().Trim();
                     string companyId = reader["CompanyId"].ToString().Trim();
@@ -143,17 +130,17 @@ namespace WinFormProject
                     DateTime dateEnd = Convert.ToDateTime(reader["DateEnd"].ToString());
                     string status = reader["status"].ToString().Trim();
                     string workingForm = reader["workingform"].ToString().Trim();
-                    List<string> skillList = sldao.GetSkills(jobId); 
+                    List<string> skillList = sldao.GetSkills(jobId);
                     jobs.Add(new Job(jobId, companyId, jobName, position, salary, requirement, description, benefit, dataPublish, dateEnd, status, workingForm, skillList));
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("them that bai" + ex);
             }
-            finally 
-            { 
-                conn.Close(); 
+            finally
+            {
+                conn.Close();
             }
         }
         public List<string> FetchAllJobSkill(string SQL)
@@ -326,7 +313,7 @@ namespace WinFormProject
             return null;
         }
 
-        public bool CheckApplyData(string SQL,string jobid,string jsid)
+        public bool CheckApplyData(string SQL, string jobid, string jsid)
         {
             int rowsCount = 0;
             try
@@ -341,11 +328,12 @@ namespace WinFormProject
                     {
                         list.Add(reader["jobseekerID"].ToString());
                         list.Add(reader["JobID"].ToString());
-                     }
+                    }
                     if (list[0] == jsid && list[1] == jobid) rowsCount = 1;
                     else rowsCount = 0;
-                } else rowsCount = 0;
-                
+                }
+                else rowsCount = 0;
+
             }
             catch (Exception ex)
             {
@@ -357,7 +345,7 @@ namespace WinFormProject
             }
             return rowsCount > 0;
         }
-        public Company FetchCompanyById(string strFetch,string id)
+        public Company FetchCompanyById(string strFetch, string id)
         {
             Company company = new Company();
             List<string> seperatedinfo = new List<string>(2);
@@ -366,7 +354,7 @@ namespace WinFormProject
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(strFetch, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
-                while(reader.Read())
+                while (reader.Read())
                 {
                     Information information = new Information(reader["ID"].ToString(), reader["Name"].ToString(),
                         reader["Email"].ToString(), reader["Address"].ToString(), reader["Phonenumber"].ToString());
@@ -388,30 +376,48 @@ namespace WinFormProject
             List<Image> Images = new List<Image>();
             try
             {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand(strFetch, conn);
-                SqlDataReader reader = cmd.ExecuteReader();
-                List<string> list = new List<string>();
-                if (reader.HasRows)
-                {
-                    while (reader.Read())
+               
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(strFetch, conn);
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    if (reader.HasRows)
                     {
-                        byte[] imageData = (byte[])reader["img"];
-                        Images.Add(ImageHandler.ByteArrayToImage(imageData));
+                        while (reader.Read())
+                        {
+                            // Check if the value retrieved from the database is DBNull.Value
+                            object img1 = reader["imgid1"];
+                            object img2 = reader["imgid2"];
+                            object img3 = reader["imgid3"];
+                            object img4 = reader["imgid4"];
+                            object img5 = reader["imgid5"];
+
+                            if (img1 != DBNull.Value && img1!=null)
+                                Images.Add(ImageHandler.ByteArrayToImage((byte[])img1));
+
+                            if (img2 != DBNull.Value && img2 != null)
+                                Images.Add(ImageHandler.ByteArrayToImage((byte[])img2));
+
+                            if (img3 != DBNull.Value && img3 != null)
+                                Images.Add(ImageHandler.ByteArrayToImage((byte[])img3));
+
+                            if (img4 != DBNull.Value && img4 != null)
+                                Images.Add(ImageHandler.ByteArrayToImage((byte[])img4));
+
+                            if (img5 != DBNull.Value && img5 != null)
+                                Images.Add(ImageHandler.ByteArrayToImage((byte[])img5));
+                        }
                     }
-                }
+                
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Operation failed. Error: " + ex.Message);
-            }
-            finally
-            {
-                conn.Close();
+                // Log the error or handle it appropriately
+                Console.WriteLine("Operation failed. Error: " + ex.Message);
             }
             return Images;
         }
-        public  byte[] FetchBinaryData(string strFetch)
+        public byte[] FetchBinaryData(string strFetch)
         {
             try
             {
@@ -452,7 +458,7 @@ namespace WinFormProject
                 cmd.Parameters.AddWithValue("@Description", job.Description);
                 cmd.Parameters.AddWithValue("@Benefit", job.Benefit);
                 cmd.Parameters.AddWithValue("@WorkingForm", job.WorkingForm);
-                cmd.Parameters.AddWithValue("@DateEnd",job.DateEnd);
+                cmd.Parameters.AddWithValue("@DateEnd", job.DateEnd);
 
                 // Output parameter
                 SqlParameter jobIdParam = new SqlParameter("@JobID", SqlDbType.VarChar, 4);
@@ -476,5 +482,31 @@ namespace WinFormProject
 
             return jobId;
         }
+        public void InsertImageIntoImgCompany(string SQL, string companyid, List<byte[]> imageBytes)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(SQL, conn);
+                cmd.Parameters.AddWithValue("@companyId", companyid);
+                cmd.Parameters.AddWithValue("@img1", (imageBytes[0] != null) ? (object)imageBytes[0] : DBNull.Value);
+                cmd.Parameters.AddWithValue("@img2", (imageBytes[1] != null) ? (object)imageBytes[1] : DBNull.Value);
+                cmd.Parameters.AddWithValue("@img3", (imageBytes[2] != null) ? (object)imageBytes[2] : DBNull.Value);
+                cmd.Parameters.AddWithValue("@img4", (imageBytes[3] != null) ? (object)imageBytes[3] : DBNull.Value);
+                cmd.Parameters.AddWithValue("@img5", (imageBytes[4] != null) ? (object)imageBytes[4] : DBNull.Value);
+
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Fail" + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }
+

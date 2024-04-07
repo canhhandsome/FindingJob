@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormProject.OOPCODE;
 using WinFormProject.WinFormCode;
 
 namespace WinFormProject
@@ -18,7 +19,7 @@ namespace WinFormProject
         Job job;
         Company company;
         ApplyDAO applyDAO = new ApplyDAO();
-
+        CompanyAddtionalImageDAO cadi = new CompanyAddtionalImageDAO();
         public FJobDetails(Job job, string jsID)
         {
             InitializeComponent();
@@ -53,18 +54,8 @@ namespace WinFormProject
             lblCompanyTypeText.Text = company.CompanyType;
             lblWorkingTimeText.Text = company.WorkingTimeBegin + " to " + company.WorkingTimeEnd;
             lblAddressText.Text = company.INFO.Address;
-            if (company.ImageForJob.Count == 0)
-            {
-                UCCarousel carousel = new UCCarousel();
-                pnCarousel.Controls.Add(carousel);
-                carousel.Dock = DockStyle.Fill;
-            }
-            else
-            {
-                UCCarousel carousel = new UCCarousel(company.ImageForJob);
-                pnCarousel.Controls.Add(carousel);
-                carousel.Dock = DockStyle.Fill;
-            }
+            UCCarousel ucc = new UCCarousel(cadi.FetchAllPictures(company.INFO.ID));
+            pnCarousel.Controls.Add(ucc);
         }
         private void SetApplyButton()
         {
