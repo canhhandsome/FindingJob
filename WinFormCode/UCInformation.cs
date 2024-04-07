@@ -69,7 +69,6 @@ namespace WinFormProject
             {
                 return $"{(int)timeDifference.TotalDays} day(s) ago";
             }
-
         }
         private void panel1_Click(object sender, EventArgs e)
         {

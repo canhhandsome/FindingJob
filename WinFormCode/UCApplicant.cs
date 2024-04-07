@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,8 +26,6 @@ namespace WinFormProject
             this.job = job;
             this.MaximumSize = new System.Drawing.Size(469, 515);
             FillInTemplate();
-            PanelUtils.MakeRounded(this.panel2, 30);
-            PanelUtils.MakeRounded(this.panel1, 30);
         }
         public void FillInTemplate()
         {
@@ -44,13 +43,12 @@ namespace WinFormProject
         }
         private void btnAnswer_Click(object sender, EventArgs e)
         {
-            ReaLTaiizor.Controls.CyberButton button = (ReaLTaiizor.Controls.CyberButton)sender;
+            Guna2Button button = (Guna2Button)sender;
             ApplyDAO applyDao = new ApplyDAO();
-            applyDao.UpdateStatus(button.TextButton, apply);
+            applyDao.UpdateStatus(button.Text, apply);
             FAnswer fAnswer = new FAnswer(apply, job);
             fAnswer.Show();
         }
-
 
         private int radius = 60;
         [DefaultValue(60)]
