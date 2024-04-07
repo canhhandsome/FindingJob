@@ -50,7 +50,7 @@ namespace WinFormProject
                 {
                     count++;
                     UCInformation uCInformation = new UCInformation(job, jsID);
-                    uCInformation.flpBody.BackColor = colorJob(count);
+                    uCInformation.pnBody.FillColor = colorJob(count);
                     flpJob.Controls.Add(uCInformation);
                     if (count % 2 == 1)
                     {

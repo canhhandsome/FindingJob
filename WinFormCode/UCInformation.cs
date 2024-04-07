@@ -26,15 +26,14 @@ namespace WinFormProject
             this.job = job;
             company = companyDAO.FetchCompanyInformationBasedOnID(job.CompanyID);
             FillInTemplate();
-            //PanelUtils.MakeRounded(this.flpBody, 30);
         }
         public void FillInTemplate()
         {
-            lblFromT.Text = companyDAO.FetchName(job.CompanyID);
-            lblDateT.Text = $"Posted {PublishTime()}";
-            lblNameT.Text = job.Name;
-            lblAddressT.Text = company.INFO.Address;
-            lblWorkingFormT.Text = job.WorkingForm;
+            lblCompany.Text = companyDAO.FetchName(job.CompanyID);
+            lblDatePuslish.Text = $"Posted {PublishTime()}";
+            lblNameJob.Text = job.Name;
+            lblAddress.Text = company.INFO.Address;
+            lblWorkingType.Text = job.WorkingForm;
             if (company.Avatar != null) ptbCompanyPicture.Image = company.Avatar;
             foreach (string s in job.SkillList)
             {
@@ -86,6 +85,7 @@ namespace WinFormProject
                 SkillButtonClicked?.Invoke(this, skillText);
             }
         }
+
     }
 }
 
