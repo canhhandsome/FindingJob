@@ -12,7 +12,7 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\TIEN TOAN\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\OS\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\TIEN TOAN\\.nuget\\packages"
     ],
     "configProperties": {
