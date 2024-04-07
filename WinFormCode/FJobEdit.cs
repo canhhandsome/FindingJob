@@ -56,31 +56,32 @@ namespace WinFormProject
             }
             cbbWorkingForm.Text = job.WorkingForm;
         }
-        private void OpenChildForm(Form childForm)
-        {
-            foreach (Control control in this.Controls)
-            {
-                if (control == pnBody)
-                    continue;
-                control.Visible = false;
-            }
-            if (currentFormChild != null)
-            {
-                currentFormChild.Close();
-            }
-            currentFormChild = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            pnBody.Controls.Add(childForm);
-            pnBody.Tag = childForm;
-            pnBody.BackColor = Color.FromArgb(32, 41, 58);
-            childForm.BringToFront();
-            childForm.Show();
-        }
+        //private void OpenChildForm(Form childForm)
+        //{
+        //    foreach (Control control in this.Controls)
+        //    {
+        //        if (control == pnBody)
+        //            continue;
+        //        control.Visible = false;
+        //    }
+        //    if (currentFormChild != null)
+        //    {
+        //        currentFormChild.Close();
+        //    }
+        //    currentFormChild = childForm;
+        //    childForm.TopLevel = false;
+        //    childForm.FormBorderStyle = FormBorderStyle.None;
+        //    childForm.Dock = DockStyle.Fill;
+        //    pnBody.Controls.Add(childForm);
+        //    pnBody.Tag = childForm;
+        //    pnBody.BackColor = Color.FromArgb(32, 41, 58);
+        //    childForm.BringToFront();
+        //    childForm.Show();
+        //}
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FPostJob(jobs, companyid));
+            //OpenChildForm(new FPostJob(jobs, companyid));
+            this.Hide();
         }
         private void FJobSkills_ListReady(object sender, List<string> e)
         {
@@ -94,7 +95,7 @@ namespace WinFormProject
             SkillList skillist = new SkillList(job.Jobid, skills);
             sldao.UpdateSkillList(skillist);
             jobs = jobDAO.FetchCompanyJob(companyid);
-            OpenChildForm(new FPostJob(jobs, companyid));
+            this.Close();
         }
         private void FillSkills()
         {

@@ -119,8 +119,8 @@
             lblAddress.AutoSize = false;
             lblAddress.BackColor = Color.Transparent;
             lblAddress.Dock = DockStyle.Fill;
-            lblAddress.Font = new Font("Arial Narrow", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblAddress.ForeColor = Color.FromArgb(64, 64, 64);
+            lblAddress.Font = new Font("Verdana", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAddress.ForeColor = Color.FromArgb(65, 64, 66);
             lblAddress.Location = new Point(0, 0);
             lblAddress.Name = "lblAddress";
             lblAddress.Size = new Size(289, 39);
@@ -139,7 +139,7 @@
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button1.FillColor = Color.FromArgb(248, 212, 187);
-            guna2Button1.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2Button1.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point);
             guna2Button1.ForeColor = Color.DimGray;
             guna2Button1.Location = new Point(341, 264);
             guna2Button1.Name = "guna2Button1";
@@ -194,8 +194,8 @@
             lblWorkingType.AutoSize = false;
             lblWorkingType.BackColor = Color.Transparent;
             lblWorkingType.Dock = DockStyle.Fill;
-            lblWorkingType.Font = new Font("Arial Narrow", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblWorkingType.ForeColor = Color.FromArgb(64, 64, 64);
+            lblWorkingType.Font = new Font("Arial", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblWorkingType.ForeColor = Color.FromArgb(65, 64, 66);
             lblWorkingType.Location = new Point(0, 0);
             lblWorkingType.Name = "lblWorkingType";
             lblWorkingType.Size = new Size(427, 40);
@@ -221,7 +221,8 @@
             lblCompany.AutoSize = false;
             lblCompany.BackColor = Color.Transparent;
             lblCompany.Dock = DockStyle.Fill;
-            lblCompany.Font = new Font("Arial Narrow", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCompany.Font = new Font("Arial", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCompany.ForeColor = Color.FromArgb(65, 64, 66);
             lblCompany.Location = new Point(67, 0);
             lblCompany.Margin = new Padding(15, 3, 3, 3);
             lblCompany.Name = "lblCompany";
@@ -256,7 +257,7 @@
             lblNameJob.AutoSize = false;
             lblNameJob.BackColor = Color.Transparent;
             lblNameJob.Dock = DockStyle.Fill;
-            lblNameJob.Font = new Font("Arial Narrow", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblNameJob.Font = new Font("Arial", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblNameJob.Location = new Point(0, 0);
             lblNameJob.Name = "lblNameJob";
             lblNameJob.Size = new Size(427, 60);
@@ -280,8 +281,8 @@
             lblDatePuslish.AutoSize = false;
             lblDatePuslish.BackColor = Color.Transparent;
             lblDatePuslish.Dock = DockStyle.Fill;
-            lblDatePuslish.Font = new Font("Arial Narrow", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDatePuslish.ForeColor = Color.FromArgb(64, 64, 64);
+            lblDatePuslish.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDatePuslish.ForeColor = Color.FromArgb(65, 64, 66);
             lblDatePuslish.Location = new Point(0, 0);
             lblDatePuslish.Name = "lblDatePuslish";
             lblDatePuslish.Size = new Size(427, 36);

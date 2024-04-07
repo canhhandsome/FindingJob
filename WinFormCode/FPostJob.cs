@@ -35,10 +35,13 @@ namespace WinFormProject
             pnSubBody.Controls.Clear();
             foreach (Job job in jobs)
             {
-                UCJob ucjob = new UCJob(job);
-                pnSubBody.Controls.Add(ucjob);
-                ucjob.Dock = DockStyle.Top;
-                pnSubBody.Height += 180;
+                if(job.Status == "waiting")
+                {
+                    UCJob ucjob = new UCJob(job);
+                    pnSubBody.Controls.Add(ucjob);
+                    ucjob.Dock = DockStyle.Top;
+                    pnSubBody.Height += 150;
+                }
             }
         }
         private void OpenChildForm(Form childForm)

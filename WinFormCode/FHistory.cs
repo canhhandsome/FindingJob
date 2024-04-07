@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace WinFormProject.WinFormCode
 {
@@ -25,8 +26,26 @@ namespace WinFormProject.WinFormCode
                 UCHistory uchistory = new UCHistory(job);
                 pnSubBody.Controls.Add(uchistory);
                 uchistory.Dock = DockStyle.Top;
+                pnSubBody.Height += 150;
+            }
+        }
+        private void Job_Load(object sender, EventArgs e)
+        {
+            JobDAO jobDAO = new JobDAO();
+            jobs = jobDAO.FetchCompanyJob(companyid);
+            pnSubBody.Controls.Clear();
+            foreach (Job job in jobs)
+            {
+                UCHistory uchistory = new UCHistory(job);
+                pnSubBody.Controls.Add(uchistory);
+                uchistory.Dock = DockStyle.Top;
                 pnSubBody.Height += 270;
             }
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            Job_Load(sender, e);
         }
     }
 }

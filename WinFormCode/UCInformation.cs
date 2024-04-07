@@ -26,7 +26,6 @@ namespace WinFormProject
             this.job = job;
             company = companyDAO.FetchCompanyInformationBasedOnID(job.CompanyID);
             FillInTemplate();
-            //PanelUtils.MakeRounded(this.flpBody, 30);
         }
         public void FillInTemplate()
         {
@@ -70,7 +69,6 @@ namespace WinFormProject
             {
                 return $"{(int)timeDifference.TotalDays} day(s) ago";
             }
-
         }
         private void panel1_Click(object sender, EventArgs e)
         {

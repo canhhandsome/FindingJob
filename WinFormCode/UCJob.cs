@@ -29,28 +29,67 @@ namespace WinFormProject
 
         private void btnApplicants_Click(object sender, EventArgs e)
         {
-            FApplicant fApplicant = new FApplicant(Job);
+            FApplicant fApplicant = new FApplicant(job);
             fApplicant.Show();
         }
 
         private void UCJob_Load(object sender, EventArgs e)
         {
-            lblDateEnd.Text = "Expired at: " + job.DateEnd.ToString("dd/MM/yyyy");
-            lblDatePuslish.Text = "Publish at: " + job.DatePublish.ToString("dd/MM/yyyy");
             lblNameJob.Text = job.Name;
             lblStatus.Text = job.Status;
-            lblWorkingType.Text = job.WorkingForm;
+            lblDatePuslish.Text = "Posted " + PublishTime();
+            lblDateEnd.Text = "Expired after " + ExpiredTime();
             foreach (string s in job.SkillList)
             {
-                if (s != "NULL")
-                {
-                    BtnSkillShow btnkillshow = new BtnSkillShow();
-                    //btnkillshow.Click += BtnSkill_Click;
-                    btnkillshow.Text = s;
-                    btnkillshow.Show();
-                    flpSkills.Width += btnkillshow.Width + 10;
-                    flpSkills.Controls.Add(btnkillshow);
-                }
+                BtnSkill btnSkill = new BtnSkill();
+                btnSkill.Text = s;
+                btnSkill.Show();
+                flpSkills.Width += btnSkill.Width + 10;
+                flpSkills.Controls.Add(btnSkill);
+            }
+        }
+
+        private string PublishTime()
+        {
+            TimeSpan timeDifference = DateTime.Now - job.DatePublish;
+
+            if (timeDifference.TotalMinutes < 1)
+            {
+                return "Just now";
+            }
+            else if (timeDifference.TotalMinutes < 60)
+            {
+                return $"{(int)timeDifference.TotalMinutes} minute(s) ago";
+            }
+            else if (timeDifference.TotalHours < 24)
+            {
+                return $"{(int)timeDifference.TotalHours} hour(s) ago";
+            }
+            else
+            {
+                return $"{(int)timeDifference.TotalDays} day(s) ago";
+            }
+        }
+
+        private string ExpiredTime()
+        {
+            TimeSpan timeDifference =job.DateEnd - DateTime.Now;
+
+            if (timeDifference.TotalMinutes < 0)
+            {
+                return $"{(int)timeDifference.TotalSeconds} second(s)";
+            }
+            else if (timeDifference.TotalMinutes < 60)
+            {
+                return $"{(int)timeDifference.TotalMinutes} minute(s)";
+            }
+            else if (timeDifference.TotalHours < 24)
+            {
+                return $"{(int)timeDifference.TotalHours} hour(s)";
+            }
+            else
+            {
+                return $"{(int)timeDifference.TotalDays} day(s)";
             }
         }
 

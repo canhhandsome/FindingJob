@@ -232,8 +232,6 @@
         }
 
         #endregion
-
-        private Panel panel1;
         private Label lblEmailT;
         private Label lblDateT;
         private Label lblApplicantNameT;
