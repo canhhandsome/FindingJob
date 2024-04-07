@@ -476,13 +476,5 @@ namespace WinFormProject
 
             return jobId;
         }
-        public int GetTotal(string SQL )
-        {
-            int waitingJobCount = 0;
-            SqlCommand command = new SqlCommand(SQL, conn);
-            conn.Open();
-            waitingJobCount = (int)command.ExecuteScalar();
-            return waitingJobCount;
-        }
     }
 }

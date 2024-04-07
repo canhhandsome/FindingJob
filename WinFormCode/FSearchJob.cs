@@ -13,55 +13,34 @@ namespace WinFormProject
 {
     public partial class FSearchJob : Form
     {
-        private List<Job> jobs = new List<Job>();
         private List<Job> filterjobs = new List<Job>();
         string jsID;
         FFilter fFilter;
         JobDAO jobDAO = new JobDAO();
-        int limit = 4;
-        int offset = 0;
-        int totalwaitingjob;
+        Size oldSize = new Size(1095, 673);
+        int limit, offset, totalwaitingjob;
         public FSearchJob(string jsID)
         {
-            
+
             this.jsID = jsID;
             InitializeComponent();
-            jobs = jobDAO.FetchAvailableJobs(limit, offset);
-            totalwaitingjob = jobDAO.TotalWaitingJob();
-            if(limit > totalwaitingjob)
-            {
-                limit = totalwaitingjob;
-            }
- 
-            fFilter = new FFilter(jobs);
-            FillJob(this.jobs);
+            filterjobs = jobDAO.FetchAvailableJobs();
+            SetLimit();
+            FillJob(this.filterjobs);
+            fFilter = new FFilter(filterjobs);
             fFilter.ListReady += fFilter_ListReady;
         }
         private void UCInformation_SkillButtonClicked(object sender, string skillText)
         {
-            filterjobs.Clear();
-            foreach (Job job in jobs)
-            {
-                foreach (string s in job.SkillList)
-                {
-                    if (s == skillText)
-                    {
-                        filterjobs.Add(job);
-                        break;
-                    }
-                }
-            }
-
+            filterjobs = jobDAO.FetchAvailableJobs();
+            filterjobs = filterjobs.Where(job => job.SkillList.Any(skill => skill == skillText)).ToList();
+            SetLimit();
             FillJob(this.filterjobs);
-        }
-        private void fFilter_ListReady(object sender, List<Job> e)
-        {
-            jobs = e;
-            FillJob(this.jobs);
         }
         private void FillJob(List<Job> jobslist)
         {
             flpJob.Controls.Clear();
+            this.Size = oldSize;
             int count = 0;
 
             // Add job information controls
@@ -92,9 +71,14 @@ namespace WinFormProject
                     ucInfo.SkillButtonClicked += UCInformation_SkillButtonClicked;
                 }
             }
-            Guna.UI2.WinForms.Guna2Button BtnNext = btnNext;
-            Guna.UI2.WinForms.Guna2Button BtnBack = btnBack;
-            this.Controls.Remove(btnNext); this.Controls.Remove(btnBack);
+            // Add buttons to a new line after the last element
+            flpJob.SetFlowBreak(flpJob.Controls[flpJob.Controls.Count - 1], true);
+
+            // Left align the buttons
+            btnBack.Anchor = AnchorStyles.Left;
+            btnNext.Anchor = AnchorStyles.Left;
+
+            // Add the buttons to the FlowLayoutPanel
             flpJob.Controls.Add(btnBack);
             flpJob.Controls.Add(btnNext);
 
@@ -114,7 +98,7 @@ namespace WinFormProject
             if (e.KeyCode == Keys.Enter)
             {
                 string search = txtSearch.Text.ToLower();
-                List<Job> searchJob = this.jobs.Where(job =>
+                List<Job> searchJob = this.filterjobs.Where(job =>
                 {
                     CompanyDAO companyDAO = new CompanyDAO();
                     string namecompany = companyDAO.FetchName(job.CompanyID).ToLower();
@@ -130,29 +114,24 @@ namespace WinFormProject
         {
             fFilter.Show();
         }
-
-        private void btnNext_Click(object sender, EventArgs e)
+        private void fFilter_ListReady(object sender, List<Job> e)
         {
-            if (limit == totalwaitingjob)
+            filterjobs = e;
+            FillJob(this.filterjobs);
+        }
+        private void SetLimit()
+        {
+            totalwaitingjob = filterjobs.Count();
+            if (limit > totalwaitingjob)
             {
-                MessageBox.Show("No more job for you to next");
-            }
-            else if ((limit + 4) > totalwaitingjob)
-            {
-                int space = totalwaitingjob - limit;
-                limit += space;
-                offset += space;
-                jobs = jobDAO.FetchAvailableJobs(limit, offset);
-                FillJob(this.jobs);
+                limit = totalwaitingjob;
+                offset = 0;
             }
             else
             {
-                limit += 4;
-                offset += 4;
-                jobs = jobDAO.FetchAvailableJobs(limit, offset);
-                FillJob(this.jobs);
+                limit = 4;
+                offset = 0;
             }
-
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -165,22 +144,39 @@ namespace WinFormProject
             {
                 if (limit == totalwaitingjob)
                 {
-                    // If the last page was full, decrement both limit and offset by 4
                     limit -= 4;
                     offset -= 4;
                 }
                 else
                 {
-                    // Otherwise, just decrement offset by 4
                     offset -= 4;
+                    
                 }
+                FillJob(filterjobs.Skip(offset).Take(limit).ToList());
 
-                // Fetch the previous set of jobs
-                jobs = jobDAO.FetchAvailableJobs(limit, offset);
-
-                // Fill the job list with the fetched jobs
-                FillJob(this.jobs);
             }
         }
-    }
-}
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (limit == totalwaitingjob)
+            {
+                MessageBox.Show("No more job for you to next");
+            }
+            else if ((limit + 4) > totalwaitingjob)
+            {
+                int space = totalwaitingjob - limit;
+                limit += space;
+                offset += space;
+                FillJob(filterjobs.Skip(offset).Take(limit).ToList());
+            }
+            else
+            {
+                limit += 4;
+                offset += 4;
+                FillJob(filterjobs.Skip(offset).Take(limit).ToList());
+            } 
+            }
+        }
+  }
+

@@ -333,6 +333,7 @@
             // 
             // panel4
             // 
+            panel4.AutoScroll = true;
             panel4.Controls.Add(lbLocation);
             panel4.Controls.Add(pictureBox1);
             panel4.Dock = DockStyle.Top;
@@ -376,6 +377,7 @@
             // 
             // panel6
             // 
+            panel6.AutoScroll = true;
             panel6.Controls.Add(lblWorkingForm);
             panel6.Controls.Add(pictureBox4);
             panel6.Dock = DockStyle.Top;
@@ -418,6 +420,7 @@
             // 
             // panel7
             // 
+            panel7.AutoScroll = true;
             panel7.Controls.Add(lblDate);
             panel7.Controls.Add(pictureBox5);
             panel7.Dock = DockStyle.Top;
@@ -565,6 +568,7 @@
             // 
             // panel2
             // 
+            panel2.AutoScroll = true;
             panel2.Controls.Add(lblCompanyTypeText);
             panel2.Controls.Add(lblCompanyType);
             panel2.Location = new Point(3, 192);
@@ -606,6 +610,7 @@
             // 
             // panel9
             // 
+            panel9.AutoScroll = true;
             panel9.Controls.Add(lblCompanySizeText);
             panel9.Controls.Add(lblCompanySize);
             panel9.Location = new Point(3, 305);
@@ -647,6 +652,7 @@
             // 
             // panel11
             // 
+            panel11.AutoScroll = true;
             panel11.Controls.Add(lblAddressText);
             panel11.Controls.Add(lblAddress);
             panel11.Location = new Point(3, 418);
@@ -688,6 +694,7 @@
             // 
             // panel12
             // 
+            panel12.AutoScroll = true;
             panel12.Controls.Add(lblWorkingTimeText);
             panel12.Controls.Add(lblWorkingTime);
             panel12.Location = new Point(3, 531);
