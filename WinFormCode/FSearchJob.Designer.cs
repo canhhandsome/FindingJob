@@ -47,10 +47,9 @@
             // 
             // flpJob
             // 
-            flpJob.Location = new Point(35, 137);
-            flpJob.Margin = new Padding(3, 4, 3, 4);
+            flpJob.Location = new Point(43, 103);
             flpJob.Name = "flpJob";
-            flpJob.Size = new Size(1184, 1);
+            flpJob.Size = new Size(1036, 1);
             flpJob.TabIndex = 4;
             // 
             // btnFilter
@@ -68,10 +67,9 @@
             btnFilter.HoverBackgroundColor = Color.FromArgb(248, 242, 197);
             btnFilter.HoverTextColor = Color.Black;
             btnFilter.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnFilter.Location = new Point(1075, 23);
-            btnFilter.Margin = new Padding(3, 4, 3, 4);
+            btnFilter.Location = new Point(941, 26);
             btnFilter.Name = "btnFilter";
-            btnFilter.Size = new Size(145, 48);
+            btnFilter.Size = new Size(127, 36);
             btnFilter.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnFilter.TabIndex = 36;
             btnFilter.TextColor = Color.Black;
@@ -81,7 +79,7 @@
             // txtSearch
             // 
             txtSearch.AutoRoundedCorners = true;
-            txtSearch.BorderRadius = 23;
+            txtSearch.BorderRadius = 17;
             txtSearch.CustomizableEdges = customizableEdges1;
             txtSearch.DefaultText = "";
             txtSearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -92,14 +90,14 @@
             txtSearch.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtSearch.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSearch.IconLeft = (Image)resources.GetObject("txtSearch.IconLeft");
-            txtSearch.Location = new Point(242, 23);
-            txtSearch.Margin = new Padding(4, 4, 4, 4);
+            txtSearch.Location = new Point(212, 26);
+            txtSearch.Margin = new Padding(4, 3, 4, 3);
             txtSearch.Name = "txtSearch";
             txtSearch.PasswordChar = '\0';
             txtSearch.PlaceholderText = "Search for jobs";
             txtSearch.SelectedText = "";
             txtSearch.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtSearch.Size = new Size(813, 48);
+            txtSearch.Size = new Size(711, 36);
             txtSearch.TabIndex = 37;
             // 
             // guna2ComboBox1
@@ -115,16 +113,17 @@
             guna2ComboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             guna2ComboBox1.ForeColor = Color.FromArgb(68, 88, 112);
             guna2ComboBox1.ItemHeight = 30;
-            guna2ComboBox1.Location = new Point(35, 35);
+            guna2ComboBox1.Location = new Point(31, 26);
+            guna2ComboBox1.Margin = new Padding(3, 2, 3, 2);
             guna2ComboBox1.Name = "guna2ComboBox1";
             guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2ComboBox1.Size = new Size(185, 36);
+            guna2ComboBox1.Size = new Size(162, 36);
             guna2ComboBox1.TabIndex = 38;
             // 
             // btnBack
             // 
             btnBack.AutoRoundedCorners = true;
-            btnBack.BorderRadius = 27;
+            btnBack.BorderRadius = 20;
             btnBack.CustomizableEdges = customizableEdges5;
             btnBack.DisabledState.BorderColor = Color.DarkGray;
             btnBack.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -132,10 +131,11 @@
             btnBack.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnBack.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(25, 657);
+            btnBack.Location = new Point(21, 582);
+            btnBack.Margin = new Padding(3, 2, 3, 2);
             btnBack.Name = "btnBack";
             btnBack.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btnBack.Size = new Size(161, 56);
+            btnBack.Size = new Size(141, 42);
             btnBack.TabIndex = 39;
             btnBack.Text = "Back";
             btnBack.Click += btnBack_Click;
@@ -143,7 +143,7 @@
             // btnNext
             // 
             btnNext.AutoRoundedCorners = true;
-            btnNext.BorderRadius = 27;
+            btnNext.BorderRadius = 20;
             btnNext.CustomizableEdges = customizableEdges7;
             btnNext.DisabledState.BorderColor = Color.DarkGray;
             btnNext.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -151,28 +151,28 @@
             btnNext.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnNext.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnNext.ForeColor = Color.White;
-            btnNext.Location = new Point(215, 657);
+            btnNext.Location = new Point(187, 582);
+            btnNext.Margin = new Padding(3, 2, 3, 2);
             btnNext.Name = "btnNext";
             btnNext.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btnNext.Size = new Size(161, 56);
+            btnNext.Size = new Size(141, 42);
             btnNext.TabIndex = 40;
             btnNext.Text = "Next";
             btnNext.Click += btnNext_Click;
             // 
             // FSearchJob
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.White;
-            ClientSize = new Size(1233, 847);
+            ClientSize = new Size(1079, 635);
             Controls.Add(btnNext);
             Controls.Add(btnBack);
             Controls.Add(guna2ComboBox1);
             Controls.Add(txtSearch);
             Controls.Add(btnFilter);
             Controls.Add(flpJob);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FSearchJob";
             Text = "FSearchJob";
             ResumeLayout(false);

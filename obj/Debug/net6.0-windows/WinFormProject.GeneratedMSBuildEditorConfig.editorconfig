@@ -14,4 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WinFormProject
-build_property.ProjectDir = D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\
+build_property.ProjectDir = D:\Learning\Second Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
