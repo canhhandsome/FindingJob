@@ -152,7 +152,7 @@
             btnLogOut.ImageAlign = HorizontalAlignment.Left;
             btnLogOut.ImageSize = new Size(50, 50);
             btnLogOut.Location = new Point(0, 334);
-            btnLogOut.Margin = new Padding(4, 4, 4, 4);
+            btnLogOut.Margin = new Padding(4);
             btnLogOut.Name = "btnLogOut";
             btnLogOut.ShadowDecoration.Color = Color.White;
             btnLogOut.ShadowDecoration.CustomizableEdges = customizableEdges2;
@@ -182,7 +182,7 @@
             btnSetting.ImageAlign = HorizontalAlignment.Left;
             btnSetting.ImageSize = new Size(50, 50);
             btnSetting.Location = new Point(0, 263);
-            btnSetting.Margin = new Padding(4, 4, 4, 4);
+            btnSetting.Margin = new Padding(4);
             btnSetting.Name = "btnSetting";
             btnSetting.ShadowDecoration.Color = Color.White;
             btnSetting.ShadowDecoration.CustomizableEdges = customizableEdges4;
@@ -212,7 +212,7 @@
             btnSearchJob.ImageAlign = HorizontalAlignment.Left;
             btnSearchJob.ImageSize = new Size(50, 50);
             btnSearchJob.Location = new Point(0, 192);
-            btnSearchJob.Margin = new Padding(4, 4, 4, 4);
+            btnSearchJob.Margin = new Padding(4);
             btnSearchJob.Name = "btnSearchJob";
             btnSearchJob.ShadowDecoration.Color = Color.White;
             btnSearchJob.ShadowDecoration.CustomizableEdges = customizableEdges6;
@@ -242,7 +242,7 @@
             btnJobAlert.ImageAlign = HorizontalAlignment.Left;
             btnJobAlert.ImageSize = new Size(50, 50);
             btnJobAlert.Location = new Point(0, 121);
-            btnJobAlert.Margin = new Padding(4, 4, 4, 4);
+            btnJobAlert.Margin = new Padding(4);
             btnJobAlert.Name = "btnJobAlert";
             btnJobAlert.ShadowDecoration.Color = Color.White;
             btnJobAlert.ShadowDecoration.CustomizableEdges = customizableEdges8;
