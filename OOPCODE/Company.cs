@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WinFormProject.OOPCODE;
 
 namespace WinFormProject
 {
     public class Company
     {
-        string companytype, companysize,taxidentification,description,websitelink,workingtimebegin,workingtimeend;
+        string companytype, companysize,taxidentification,description,websitelink,workingtimebegin,workingtimeend,workingform;
         CompanyDAO companyDAO = new CompanyDAO();
         JobDAO jobDao = new JobDAO();
         Information information = new Information();
         List<Job> jobs = new List<Job>();
         Image AvatarData = null;
         Image BusinessLicenseData = null;
-        List<Image> Images = new List<Image>();
         public Company()
         {
 
@@ -32,7 +32,6 @@ namespace WinFormProject
             this.workingtimeend = workingtimeend;
             this.AvatarData = AvatarData;
             this.BusinessLicenseData = BusinessLicenseData;
-            this.Images = Images;
         }
         public Company(Information information)
         {
@@ -40,10 +39,8 @@ namespace WinFormProject
             List<string> otherinfo = companyDAO.FetchInformation(this.INFO.ID);
             FillOtherInfor(otherinfo);
             jobs = jobDao.FetchCompanyJob(this.INFO.ID);
-            AvatarData = companyDAO.FetchImg(this.INFO.ID,"Avatar");
-            BusinessLicenseData = companyDAO.FetchImg(this.INFO.ID, "BusinessLicense");
-            Images = companyDAO.FetchAllPictures(this.INFO.ID);
-            
+            AvatarData = companyDAO.FetchImg(this.INFO.ID,"Avatar"); 
+            BusinessLicenseData = companyDAO.FetchImg(this.INFO.ID, "BusinessLicense");   
         }
         private void FillOtherInfor(List<String> otherinfo)
         {
@@ -99,9 +96,6 @@ namespace WinFormProject
         {
             get { return AvatarData;  }
         }
-        public List<Image> ImageForJob
-        {
-            get { return Images; }
-        }
+
     }
 }

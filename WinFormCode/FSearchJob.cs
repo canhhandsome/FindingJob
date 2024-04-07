@@ -13,35 +13,44 @@ namespace WinFormProject
 {
     public partial class FSearchJob : Form
     {
-        private List<Job> jobs = new List<Job>();
+        private List<Job> filterjobs = new List<Job>();
         string jsID;
         FFilter fFilter;
         JobDAO jobDAO = new JobDAO();
+        Size oldSize = new Size(1095, 673);
+        int limit, offset, totalwaitingjob;
         public FSearchJob(string jsID)
         {
+
             this.jsID = jsID;
             InitializeComponent();
-            jobs = jobDAO.FetchAvailableJobs();
-            fFilter = new FFilter(jobs);
-            FillJob(this.jobs);
+            filterjobs = jobDAO.FetchAvailableJobs();
+            SetLimit();
+            FillJob(this.filterjobs);
+            fFilter = new FFilter(filterjobs);
             fFilter.ListReady += fFilter_ListReady;
         }
-        private void fFilter_ListReady(object sender, List<Job> e)
+        private void UCInformation_SkillButtonClicked(object sender, string skillText)
         {
-            jobs = e;
-            FillJob(this.jobs);
+            filterjobs = jobDAO.FetchAvailableJobs();
+            filterjobs = filterjobs.Where(job => job.SkillList.Any(skill => skill == skillText)).ToList();
+            SetLimit();
+            FillJob(this.filterjobs);
         }
         private void FillJob(List<Job> jobslist)
         {
             flpJob.Controls.Clear();
+            this.Size = oldSize;
             int count = 0;
+
+            // Add job information controls
             foreach (Job job in jobslist)
             {
                 if (job.Status == "waiting")
                 {
                     count++;
                     UCInformation uCInformation = new UCInformation(job, jsID);
-                    uCInformation.flpBody.BackColor = colorJob(count);
+                    uCInformation.pnBody.FillColor = colorJob(count);
                     flpJob.Controls.Add(uCInformation);
                     if (count % 2 == 1)
                     {
@@ -53,6 +62,26 @@ namespace WinFormProject
                     count = 0;
                 }
             }
+
+            // Attach event handler for skill button click
+            foreach (Control control in flpJob.Controls)
+            {
+                if (control is UCInformation ucInfo)
+                {
+                    ucInfo.SkillButtonClicked += UCInformation_SkillButtonClicked;
+                }
+            }
+            // Add buttons to a new line after the last element
+            flpJob.SetFlowBreak(flpJob.Controls[flpJob.Controls.Count - 1], true);
+
+            // Left align the buttons
+            btnBack.Anchor = AnchorStyles.Left;
+            btnNext.Anchor = AnchorStyles.Left;
+
+            // Add the buttons to the FlowLayoutPanel
+            flpJob.Controls.Add(btnBack);
+            flpJob.Controls.Add(btnNext);
+
         }
         private Color colorJob(int count)
         {
@@ -69,7 +98,7 @@ namespace WinFormProject
             if (e.KeyCode == Keys.Enter)
             {
                 string search = txtSearch.Text.ToLower();
-                List<Job> searchJob = this.jobs.Where(job =>
+                List<Job> searchJob = this.filterjobs.Where(job =>
                 {
                     CompanyDAO companyDAO = new CompanyDAO();
                     string namecompany = companyDAO.FetchName(job.CompanyID).ToLower();
@@ -85,6 +114,69 @@ namespace WinFormProject
         {
             fFilter.Show();
         }
+        private void fFilter_ListReady(object sender, List<Job> e)
+        {
+            filterjobs = e;
+            FillJob(this.filterjobs);
+        }
+        private void SetLimit()
+        {
+            totalwaitingjob = filterjobs.Count();
+            if (limit > totalwaitingjob)
+            {
+                limit = totalwaitingjob;
+                offset = 0;
+            }
+            else
+            {
+                limit = 4;
+                offset = 0;
+            }
+        }
 
-    }
-}
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            if (offset == 0)
+            {
+                MessageBox.Show("You're already at the beginning of the job list.");
+            }
+            else
+            {
+                if (limit == totalwaitingjob)
+                {
+                    limit -= 4;
+                    offset -= 4;
+                }
+                else
+                {
+                    offset -= 4;
+                    
+                }
+                FillJob(filterjobs.Skip(offset).Take(limit).ToList());
+
+            }
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (limit == totalwaitingjob)
+            {
+                MessageBox.Show("No more job for you to next");
+            }
+            else if ((limit + 4) > totalwaitingjob)
+            {
+                int space = totalwaitingjob - limit;
+                limit += space;
+                offset += space;
+                FillJob(filterjobs.Skip(offset).Take(limit).ToList());
+            }
+            else
+            {
+                limit += 4;
+                offset += 4;
+                FillJob(filterjobs.Skip(offset).Take(limit).ToList());
+            } 
+            }
+        }
+  }
+

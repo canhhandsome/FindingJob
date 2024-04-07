@@ -26,7 +26,7 @@ namespace WinFormProject.WinFormCode
             Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.FromArgb(64, 64, 64);
             Location = new Point(46, 72);
-            Margin = new Padding(3, 3, 3, 15);
+            Margin = new Padding(10, 3, 10, 15);
             Name = "guna2Button2";
             ShadowDecoration.BorderRadius = 10;
             ShadowDecoration.CustomizableEdges = customizableEdges;

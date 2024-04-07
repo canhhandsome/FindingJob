@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FJobDetails));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblSalary = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
@@ -57,15 +59,11 @@
             panel7 = new Panel();
             lblDate = new Label();
             pictureBox5 = new PictureBox();
-            panel8 = new Panel();
-            btnSkill2 = new ReaLTaiizor.Controls.CyberButton();
-            btnSkill3 = new ReaLTaiizor.Controls.CyberButton();
-            metroLabel1 = new ReaLTaiizor.Controls.MetroLabel();
-            btnSkill1 = new ReaLTaiizor.Controls.CyberButton();
+            flowLayoutPanel4 = new FlowLayoutPanel();
+            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             lblCompanyNameLeft = new ReaLTaiizor.Controls.MetroLabel();
             panel10 = new Panel();
-            panel13 = new Panel();
-            ptbAvatar = new PictureBox();
+            ptbAvatar = new Guna.UI2.WinForms.Guna2PictureBox();
             btnCompanyDetail = new ReaLTaiizor.Controls.CyberButton();
             flowLayoutPanel3 = new FlowLayoutPanel();
             panel2 = new Panel();
@@ -96,9 +94,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            panel8.SuspendLayout();
+            flowLayoutPanel4.SuspendLayout();
             panel10.SuspendLayout();
-            panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).BeginInit();
             flowLayoutPanel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -319,7 +316,7 @@
             flowLayoutPanel2.Controls.Add(panel4);
             flowLayoutPanel2.Controls.Add(panel5);
             flowLayoutPanel2.Controls.Add(panel7);
-            flowLayoutPanel2.Controls.Add(panel8);
+            flowLayoutPanel2.Controls.Add(flowLayoutPanel4);
             flowLayoutPanel2.Dock = DockStyle.Top;
             flowLayoutPanel2.Location = new Point(3, 225);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
@@ -336,6 +333,7 @@
             // 
             // panel4
             // 
+            panel4.AutoScroll = true;
             panel4.Controls.Add(lbLocation);
             panel4.Controls.Add(pictureBox1);
             panel4.Dock = DockStyle.Top;
@@ -346,8 +344,9 @@
             // 
             // lbLocation
             // 
+            lbLocation.AutoEllipsis = true;
             lbLocation.Dock = DockStyle.Right;
-            lbLocation.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbLocation.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             lbLocation.ForeColor = SystemColors.ControlText;
             lbLocation.Location = new Point(78, 0);
             lbLocation.Name = "lbLocation";
@@ -378,6 +377,7 @@
             // 
             // panel6
             // 
+            panel6.AutoScroll = true;
             panel6.Controls.Add(lblWorkingForm);
             panel6.Controls.Add(pictureBox4);
             panel6.Dock = DockStyle.Top;
@@ -389,7 +389,7 @@
             // lblWorkingForm
             // 
             lblWorkingForm.Dock = DockStyle.Right;
-            lblWorkingForm.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblWorkingForm.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             lblWorkingForm.ForeColor = SystemColors.ControlText;
             lblWorkingForm.Location = new Point(78, 0);
             lblWorkingForm.Name = "lblWorkingForm";
@@ -420,6 +420,7 @@
             // 
             // panel7
             // 
+            panel7.AutoScroll = true;
             panel7.Controls.Add(lblDate);
             panel7.Controls.Add(pictureBox5);
             panel7.Dock = DockStyle.Top;
@@ -431,7 +432,7 @@
             // lblDate
             // 
             lblDate.Dock = DockStyle.Right;
-            lblDate.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDate.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             lblDate.ForeColor = SystemColors.ControlText;
             lblDate.Location = new Point(78, 0);
             lblDate.Name = "lblDate";
@@ -450,156 +451,32 @@
             pictureBox5.TabIndex = 0;
             pictureBox5.TabStop = false;
             // 
-            // panel8
+            // flowLayoutPanel4
             // 
-            panel8.Controls.Add(btnSkill2);
-            panel8.Controls.Add(btnSkill3);
-            panel8.Controls.Add(metroLabel1);
-            panel8.Controls.Add(btnSkill1);
-            panel8.Location = new Point(3, 456);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(807, 65);
-            panel8.TabIndex = 5;
+            flowLayoutPanel4.Controls.Add(guna2HtmlLabel1);
+            flowLayoutPanel4.Dock = DockStyle.Bottom;
+            flowLayoutPanel4.Location = new Point(3, 456);
+            flowLayoutPanel4.Name = "flowLayoutPanel4";
+            flowLayoutPanel4.Size = new Size(803, 59);
+            flowLayoutPanel4.TabIndex = 5;
             // 
-            // btnSkill2
+            // guna2HtmlLabel1
             // 
-            btnSkill2.Alpha = 20;
-            btnSkill2.BackColor = Color.Transparent;
-            btnSkill2.Background = true;
-            btnSkill2.Background_WidthPen = 4F;
-            btnSkill2.BackgroundPen = true;
-            btnSkill2.ColorBackground = Color.White;
-            btnSkill2.ColorBackground_1 = Color.FromArgb(37, 52, 68);
-            btnSkill2.ColorBackground_2 = Color.FromArgb(41, 63, 86);
-            btnSkill2.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
-            btnSkill2.ColorLighting = Color.FromArgb(29, 200, 238);
-            btnSkill2.ColorPen_1 = Color.FromArgb(37, 52, 68);
-            btnSkill2.ColorPen_2 = Color.FromArgb(41, 63, 86);
-            btnSkill2.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            btnSkill2.Effect_1 = true;
-            btnSkill2.Effect_1_ColorBackground = Color.FromArgb(29, 200, 238);
-            btnSkill2.Effect_1_Transparency = 25;
-            btnSkill2.Effect_2 = true;
-            btnSkill2.Effect_2_ColorBackground = Color.White;
-            btnSkill2.Effect_2_Transparency = 20;
-            btnSkill2.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSkill2.ForeColor = Color.Black;
-            btnSkill2.Lighting = false;
-            btnSkill2.LinearGradient_Background = false;
-            btnSkill2.LinearGradientPen = false;
-            btnSkill2.Location = new Point(187, 19);
-            btnSkill2.Name = "btnSkill2";
-            btnSkill2.PenWidth = 15;
-            btnSkill2.Rounding = true;
-            btnSkill2.RoundingInt = 70;
-            btnSkill2.Size = new Size(105, 43);
-            btnSkill2.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            btnSkill2.TabIndex = 5;
-            btnSkill2.Tag = "Cyber";
-            btnSkill2.TextButton = "Skill2";
-            btnSkill2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            btnSkill2.Timer_Effect_1 = 5;
-            btnSkill2.Timer_RGB = 300;
-            // 
-            // btnSkill3
-            // 
-            btnSkill3.Alpha = 20;
-            btnSkill3.BackColor = Color.Transparent;
-            btnSkill3.Background = true;
-            btnSkill3.Background_WidthPen = 4F;
-            btnSkill3.BackgroundPen = true;
-            btnSkill3.ColorBackground = Color.White;
-            btnSkill3.ColorBackground_1 = Color.FromArgb(37, 52, 68);
-            btnSkill3.ColorBackground_2 = Color.FromArgb(41, 63, 86);
-            btnSkill3.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
-            btnSkill3.ColorLighting = Color.FromArgb(29, 200, 238);
-            btnSkill3.ColorPen_1 = Color.FromArgb(37, 52, 68);
-            btnSkill3.ColorPen_2 = Color.FromArgb(41, 63, 86);
-            btnSkill3.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            btnSkill3.Effect_1 = true;
-            btnSkill3.Effect_1_ColorBackground = Color.FromArgb(29, 200, 238);
-            btnSkill3.Effect_1_Transparency = 25;
-            btnSkill3.Effect_2 = true;
-            btnSkill3.Effect_2_ColorBackground = Color.White;
-            btnSkill3.Effect_2_Transparency = 20;
-            btnSkill3.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSkill3.ForeColor = Color.Black;
-            btnSkill3.Lighting = false;
-            btnSkill3.LinearGradient_Background = false;
-            btnSkill3.LinearGradientPen = false;
-            btnSkill3.Location = new Point(298, 19);
-            btnSkill3.Name = "btnSkill3";
-            btnSkill3.PenWidth = 15;
-            btnSkill3.Rounding = true;
-            btnSkill3.RoundingInt = 70;
-            btnSkill3.Size = new Size(105, 43);
-            btnSkill3.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            btnSkill3.TabIndex = 4;
-            btnSkill3.Tag = "Cyber";
-            btnSkill3.TextButton = "Skill3";
-            btnSkill3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            btnSkill3.Timer_Effect_1 = 5;
-            btnSkill3.Timer_RGB = 300;
-            // 
-            // metroLabel1
-            // 
-            metroLabel1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            metroLabel1.IsDerivedStyle = true;
-            metroLabel1.Location = new Point(5, 25);
-            metroLabel1.Name = "metroLabel1";
-            metroLabel1.Size = new Size(67, 40);
-            metroLabel1.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            metroLabel1.StyleManager = null;
-            metroLabel1.TabIndex = 3;
-            metroLabel1.Text = "Skill";
-            metroLabel1.ThemeAuthor = "Taiizor";
-            metroLabel1.ThemeName = "MetroLight";
-            // 
-            // btnSkill1
-            // 
-            btnSkill1.Alpha = 20;
-            btnSkill1.BackColor = Color.Transparent;
-            btnSkill1.Background = true;
-            btnSkill1.Background_WidthPen = 4F;
-            btnSkill1.BackgroundPen = true;
-            btnSkill1.ColorBackground = Color.White;
-            btnSkill1.ColorBackground_1 = Color.FromArgb(37, 52, 68);
-            btnSkill1.ColorBackground_2 = Color.FromArgb(41, 63, 86);
-            btnSkill1.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
-            btnSkill1.ColorLighting = Color.FromArgb(29, 200, 238);
-            btnSkill1.ColorPen_1 = Color.FromArgb(37, 52, 68);
-            btnSkill1.ColorPen_2 = Color.FromArgb(41, 63, 86);
-            btnSkill1.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            btnSkill1.Effect_1 = true;
-            btnSkill1.Effect_1_ColorBackground = Color.FromArgb(29, 200, 238);
-            btnSkill1.Effect_1_Transparency = 25;
-            btnSkill1.Effect_2 = true;
-            btnSkill1.Effect_2_ColorBackground = Color.White;
-            btnSkill1.Effect_2_Transparency = 20;
-            btnSkill1.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSkill1.ForeColor = Color.Black;
-            btnSkill1.Lighting = false;
-            btnSkill1.LinearGradient_Background = false;
-            btnSkill1.LinearGradientPen = false;
-            btnSkill1.Location = new Point(75, 19);
-            btnSkill1.Name = "btnSkill1";
-            btnSkill1.PenWidth = 15;
-            btnSkill1.Rounding = true;
-            btnSkill1.RoundingInt = 70;
-            btnSkill1.Size = new Size(105, 43);
-            btnSkill1.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            btnSkill1.TabIndex = 0;
-            btnSkill1.Tag = "Cyber";
-            btnSkill1.TextButton = "Skill1";
-            btnSkill1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            btnSkill1.Timer_Effect_1 = 5;
-            btnSkill1.Timer_RGB = 300;
+            guna2HtmlLabel1.AutoSize = false;
+            guna2HtmlLabel1.BackColor = Color.Transparent;
+            guna2HtmlLabel1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel1.Location = new Point(10, 10);
+            guna2HtmlLabel1.Margin = new Padding(10);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(107, 58);
+            guna2HtmlLabel1.TabIndex = 0;
+            guna2HtmlLabel1.Text = "Skill";
             // 
             // lblCompanyNameLeft
             // 
-            lblCompanyNameLeft.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCompanyNameLeft.Font = new Font("Segoe UI Variable Text Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblCompanyNameLeft.IsDerivedStyle = true;
-            lblCompanyNameLeft.Location = new Point(159, 11);
+            lblCompanyNameLeft.Location = new Point(170, 25);
             lblCompanyNameLeft.Name = "lblCompanyNameLeft";
             lblCompanyNameLeft.Size = new Size(278, 67);
             lblCompanyNameLeft.Style = ReaLTaiizor.Enum.Metro.Style.Light;
@@ -611,7 +488,7 @@
             // 
             // panel10
             // 
-            panel10.Controls.Add(panel13);
+            panel10.Controls.Add(ptbAvatar);
             panel10.Controls.Add(btnCompanyDetail);
             panel10.Controls.Add(lblCompanyNameLeft);
             panel10.Dock = DockStyle.Top;
@@ -620,27 +497,17 @@
             panel10.Size = new Size(448, 183);
             panel10.TabIndex = 51;
             // 
-            // panel13
-            // 
-            panel13.BackColor = Color.FromArgb(248, 212, 187);
-            panel13.Controls.Add(ptbAvatar);
-            panel13.Location = new Point(17, 11);
-            panel13.Margin = new Padding(3, 4, 3, 4);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(138, 128);
-            panel13.TabIndex = 51;
-            // 
             // ptbAvatar
             // 
-            ptbAvatar.BackColor = Color.FromArgb(248, 212, 187);
-            ptbAvatar.ErrorImage = (Image)resources.GetObject("ptbAvatar.ErrorImage");
+            ptbAvatar.CustomizableEdges = customizableEdges1;
             ptbAvatar.Image = (Image)resources.GetObject("ptbAvatar.Image");
-            ptbAvatar.Location = new Point(6, 7);
-            ptbAvatar.Margin = new Padding(3, 4, 3, 4);
+            ptbAvatar.ImageRotate = 0F;
+            ptbAvatar.Location = new Point(16, 25);
             ptbAvatar.Name = "ptbAvatar";
-            ptbAvatar.Size = new Size(129, 117);
+            ptbAvatar.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            ptbAvatar.Size = new Size(137, 123);
             ptbAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
-            ptbAvatar.TabIndex = 8;
+            ptbAvatar.TabIndex = 51;
             ptbAvatar.TabStop = false;
             // 
             // btnCompanyDetail
@@ -701,6 +568,7 @@
             // 
             // panel2
             // 
+            panel2.AutoScroll = true;
             panel2.Controls.Add(lblCompanyTypeText);
             panel2.Controls.Add(lblCompanyType);
             panel2.Location = new Point(3, 192);
@@ -711,7 +579,7 @@
             // lblCompanyTypeText
             // 
             lblCompanyTypeText.Dock = DockStyle.Right;
-            lblCompanyTypeText.Font = new Font("Segoe UI Variable Display", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCompanyTypeText.Font = new Font("Segoe UI Variable Text Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             lblCompanyTypeText.IsDerivedStyle = true;
             lblCompanyTypeText.Location = new Point(174, 0);
             lblCompanyTypeText.Name = "lblCompanyTypeText";
@@ -742,6 +610,7 @@
             // 
             // panel9
             // 
+            panel9.AutoScroll = true;
             panel9.Controls.Add(lblCompanySizeText);
             panel9.Controls.Add(lblCompanySize);
             panel9.Location = new Point(3, 305);
@@ -752,7 +621,7 @@
             // lblCompanySizeText
             // 
             lblCompanySizeText.Dock = DockStyle.Right;
-            lblCompanySizeText.Font = new Font("Segoe UI Variable Display", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCompanySizeText.Font = new Font("Segoe UI Variable Text Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblCompanySizeText.IsDerivedStyle = true;
             lblCompanySizeText.Location = new Point(174, 0);
             lblCompanySizeText.Name = "lblCompanySizeText";
@@ -783,6 +652,7 @@
             // 
             // panel11
             // 
+            panel11.AutoScroll = true;
             panel11.Controls.Add(lblAddressText);
             panel11.Controls.Add(lblAddress);
             panel11.Location = new Point(3, 418);
@@ -793,7 +663,7 @@
             // lblAddressText
             // 
             lblAddressText.Dock = DockStyle.Right;
-            lblAddressText.Font = new Font("Segoe UI Variable Display", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lblAddressText.Font = new Font("Segoe UI Variable Text Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lblAddressText.IsDerivedStyle = true;
             lblAddressText.Location = new Point(174, 0);
             lblAddressText.Name = "lblAddressText";
@@ -824,6 +694,7 @@
             // 
             // panel12
             // 
+            panel12.AutoScroll = true;
             panel12.Controls.Add(lblWorkingTimeText);
             panel12.Controls.Add(lblWorkingTime);
             panel12.Location = new Point(3, 531);
@@ -834,7 +705,7 @@
             // lblWorkingTimeText
             // 
             lblWorkingTimeText.Dock = DockStyle.Right;
-            lblWorkingTimeText.Font = new Font("Segoe UI Variable Display", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lblWorkingTimeText.Font = new Font("Segoe UI Variable Text Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lblWorkingTimeText.IsDerivedStyle = true;
             lblWorkingTimeText.Location = new Point(174, 0);
             lblWorkingTimeText.Name = "lblWorkingTimeText";
@@ -894,9 +765,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            panel8.ResumeLayout(false);
+            flowLayoutPanel4.ResumeLayout(false);
             panel10.ResumeLayout(false);
-            panel13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).EndInit();
             flowLayoutPanel3.ResumeLayout(false);
             panel2.ResumeLayout(false);
@@ -922,24 +792,6 @@
         private Label lblCompany;
         private Label lblJobName;
         private ReaLTaiizor.Controls.CyberButton btnApply;
-        private Panel pnCarousel;
-        private FlowLayoutPanel flowLayoutPanel2;
-        private Panel panel4;
-        private PictureBox pictureBox1;
-        private Panel panel5;
-        private Panel panel6;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox3;
-        private Panel panel7;
-        private PictureBox pictureBox5;
-        private Panel panel8;
-        private ReaLTaiizor.Controls.CyberButton btnSkill1;
-        private ReaLTaiizor.Controls.CyberButton btnSkill2;
-        private ReaLTaiizor.Controls.CyberButton btnSkill3;
-        private ReaLTaiizor.Controls.MetroLabel metroLabel1;
-        private Label lbLocation;
-        private Label lblWorkingForm;
-        private Label lblDate;
         private ReaLTaiizor.Controls.MetroLabel lblCompanyNameLeft;
         private ReaLTaiizor.Controls.MetroLabel lblCompanyNameDown;
         private Panel panel10;
@@ -957,7 +809,21 @@
         private ReaLTaiizor.Controls.MetroLabel lblWorkingTimeText;
         private ReaLTaiizor.Controls.MetroLabel lblWorkingTime;
         private ReaLTaiizor.Controls.CyberButton btnCompanyDetail;
-        private Panel panel13;
-        private PictureBox ptbAvatar;
+        private FlowLayoutPanel flowLayoutPanel2;
+        private Panel pnCarousel;
+        private Panel panel4;
+        private Label lbLocation;
+        private PictureBox pictureBox1;
+        private Panel panel5;
+        private Panel panel6;
+        private Label lblWorkingForm;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox3;
+        private Panel panel7;
+        private Label lblDate;
+        private PictureBox pictureBox5;
+        private FlowLayoutPanel flowLayoutPanel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2PictureBox ptbAvatar;
     }
 }

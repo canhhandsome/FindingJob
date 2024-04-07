@@ -13,7 +13,7 @@ namespace WinFormProject
     public partial class UCAlert : UserControl
     {
         Alert alert = new Alert();
-        Image companyAvatar ;
+        Image companyAvatar;
         JobDAO jobDAO = new JobDAO();
         public UCAlert(Alert alert)
         {
@@ -23,7 +23,7 @@ namespace WinFormProject
             lblDateT.Text = alert.DateReply.ToString("dd/MM/yyyy");
             CompanyDAO companyDAO = new CompanyDAO();
             companyAvatar = companyDAO.FetchImg(alert.SenderID, "Avarta");
-            //ImageHandler.DisplayImage(companyAvatar, ref ptbCompanyPicture);
+            if (companyAvatar != null)  ptbCompanyPicture.Image = companyAvatar;
             lblJobNameT.Text = jobDAO.FetchName(alert.JobID);
             lblFromT.Text = companyDAO.FetchName(alert.SenderID);
             lblSubjectT.Text = alert.Subject;

@@ -1,26 +1,31 @@
-﻿using System;
+﻿using Syncfusion.XPS;
+using System;
 using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static TheArtOfDevHtmlRenderer.Adapters.RGraphicsPath;
 
 namespace WinFormProject
 {
     public class JobDAO
     {
         DBConnection conn = new DBConnection();
-
-        public JobDAO() 
+        public JobDAO()
         {
-            
         }
-
         public List<Job> FetchAvailableJobs()
         {
             List<Job> jobs = new List<Job>();
-            string strFetch = string.Format("Select * from job");
+
+           
+            string strFetch = string.Format("SELECT* FROM job WHERE status = 'waiting' ORDER BY datepublish DESC");
             conn.FetchHiringJob(strFetch, jobs);
             return jobs;
         }
@@ -56,6 +61,11 @@ namespace WinFormProject
                                    job.Name, job.Position, job.Salary, job.Description, job.Requirement, job.Benefit, job.DateEnd, job.WorkingForm, job.Jobid);
             conn.CRUD(sqlUpdate);
         }
+        //public int TotalWaitingJob()
+        ////{
+        ////    string SQL = string.Format("SELECT dbo.CountWaitingJobs() AS WaitingJobCount");
+        ////    return conn.GetTotal(SQL);
+        ////}
 
     }
 }
