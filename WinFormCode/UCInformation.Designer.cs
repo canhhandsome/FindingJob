@@ -257,7 +257,7 @@
             lblNameJob.AutoSize = false;
             lblNameJob.BackColor = Color.Transparent;
             lblNameJob.Dock = DockStyle.Fill;
-            lblNameJob.Font = new Font("Arial", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNameJob.Font = new Font("Arial", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
             lblNameJob.Location = new Point(0, 0);
             lblNameJob.Name = "lblNameJob";
             lblNameJob.Size = new Size(427, 60);

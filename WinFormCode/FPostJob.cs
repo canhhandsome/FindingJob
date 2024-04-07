@@ -65,8 +65,8 @@ namespace WinFormProject
 
         private void btnPostingJob_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FJobCreation(jobs, companyid));
-            PostJob_Load(sender, e);
+            FJobCreation fJobCreation = new FJobCreation(jobs, companyid);
+            fJobCreation.Show();
         }
         private void btnEditJob_Click(object sender, EventArgs e)
         {
@@ -74,6 +74,11 @@ namespace WinFormProject
             //fJobEdit.LblTitle = "Editing a job";
             //fJobEdit.BtnPostJob = "Save";
             //OpenChildForm(fJobEdit);
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            PostJob_Load(sender, e);
         }
     }
 }

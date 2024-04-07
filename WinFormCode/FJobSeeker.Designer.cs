@@ -54,85 +54,85 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.WhiteSmoke;
-            panel1.Controls.Add(metroControlBox4);
-            panel1.Controls.Add(metroControlBox3);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 2, 3, 2);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1297, 24);
-            panel1.TabIndex = 5;
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.metroControlBox4);
+            this.panel1.Controls.Add(this.metroControlBox3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1482, 24);
+            this.panel1.TabIndex = 5;
             // 
             // metroControlBox4
             // 
-            metroControlBox4.CloseHoverBackColor = Color.FromArgb(183, 40, 40);
-            metroControlBox4.CloseHoverForeColor = Color.White;
-            metroControlBox4.CloseNormalForeColor = Color.Gray;
-            metroControlBox4.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
-            metroControlBox4.DisabledForeColor = Color.DimGray;
-            metroControlBox4.Dock = DockStyle.Right;
-            metroControlBox4.IsDerivedStyle = true;
-            metroControlBox4.Location = new Point(1197, 0);
-            metroControlBox4.Margin = new Padding(3, 2, 3, 2);
-            metroControlBox4.MaximizeBox = true;
-            metroControlBox4.MaximizeHoverBackColor = Color.FromArgb(238, 238, 238);
-            metroControlBox4.MaximizeHoverForeColor = Color.Gray;
-            metroControlBox4.MaximizeNormalForeColor = Color.Gray;
-            metroControlBox4.MinimizeBox = true;
-            metroControlBox4.MinimizeHoverBackColor = Color.FromArgb(238, 238, 238);
-            metroControlBox4.MinimizeHoverForeColor = Color.Gray;
-            metroControlBox4.MinimizeNormalForeColor = Color.Gray;
-            metroControlBox4.Name = "metroControlBox4";
-            metroControlBox4.Size = new Size(100, 25);
-            metroControlBox4.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            metroControlBox4.StyleManager = null;
-            metroControlBox4.TabIndex = 6;
-            metroControlBox4.Text = "metroControlBox4";
-            metroControlBox4.ThemeAuthor = "Taiizor";
-            metroControlBox4.ThemeName = "MetroLight";
+            this.metroControlBox4.CloseHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.metroControlBox4.CloseHoverForeColor = System.Drawing.Color.White;
+            this.metroControlBox4.CloseNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox4.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
+            this.metroControlBox4.DisabledForeColor = System.Drawing.Color.DimGray;
+            this.metroControlBox4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.metroControlBox4.IsDerivedStyle = true;
+            this.metroControlBox4.Location = new System.Drawing.Point(1382, 0);
+            this.metroControlBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.metroControlBox4.MaximizeBox = true;
+            this.metroControlBox4.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroControlBox4.MaximizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox4.MaximizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox4.MinimizeBox = true;
+            this.metroControlBox4.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroControlBox4.MinimizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox4.MinimizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox4.Name = "metroControlBox4";
+            this.metroControlBox4.Size = new System.Drawing.Size(100, 25);
+            this.metroControlBox4.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            this.metroControlBox4.StyleManager = null;
+            this.metroControlBox4.TabIndex = 6;
+            this.metroControlBox4.Text = "metroControlBox4";
+            this.metroControlBox4.ThemeAuthor = "Taiizor";
+            this.metroControlBox4.ThemeName = "MetroLight";
             // 
             // metroControlBox3
             // 
-            metroControlBox3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            metroControlBox3.CloseHoverBackColor = Color.FromArgb(183, 40, 40);
-            metroControlBox3.CloseHoverForeColor = Color.White;
-            metroControlBox3.CloseNormalForeColor = Color.Gray;
-            metroControlBox3.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
-            metroControlBox3.DisabledForeColor = Color.DimGray;
-            metroControlBox3.IsDerivedStyle = true;
-            metroControlBox3.Location = new Point(2503, -3);
-            metroControlBox3.Margin = new Padding(3, 2, 3, 2);
-            metroControlBox3.MaximizeBox = true;
-            metroControlBox3.MaximizeHoverBackColor = Color.FromArgb(238, 238, 238);
-            metroControlBox3.MaximizeHoverForeColor = Color.Gray;
-            metroControlBox3.MaximizeNormalForeColor = Color.Gray;
-            metroControlBox3.MinimizeBox = true;
-            metroControlBox3.MinimizeHoverBackColor = Color.FromArgb(238, 238, 238);
-            metroControlBox3.MinimizeHoverForeColor = Color.Gray;
-            metroControlBox3.MinimizeNormalForeColor = Color.Gray;
-            metroControlBox3.Name = "metroControlBox3";
-            metroControlBox3.Size = new Size(100, 25);
-            metroControlBox3.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            metroControlBox3.StyleManager = null;
-            metroControlBox3.TabIndex = 5;
-            metroControlBox3.Text = "metroControlBox3";
-            metroControlBox3.ThemeAuthor = "Taiizor";
-            metroControlBox3.ThemeName = "MetroLight";
+            this.metroControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroControlBox3.CloseHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.metroControlBox3.CloseHoverForeColor = System.Drawing.Color.White;
+            this.metroControlBox3.CloseNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox3.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
+            this.metroControlBox3.DisabledForeColor = System.Drawing.Color.DimGray;
+            this.metroControlBox3.IsDerivedStyle = true;
+            this.metroControlBox3.Location = new System.Drawing.Point(2688, -3);
+            this.metroControlBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.metroControlBox3.MaximizeBox = true;
+            this.metroControlBox3.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroControlBox3.MaximizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox3.MaximizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox3.MinimizeBox = true;
+            this.metroControlBox3.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroControlBox3.MinimizeHoverForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox3.MinimizeNormalForeColor = System.Drawing.Color.Gray;
+            this.metroControlBox3.Name = "metroControlBox3";
+            this.metroControlBox3.Size = new System.Drawing.Size(100, 25);
+            this.metroControlBox3.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            this.metroControlBox3.StyleManager = null;
+            this.metroControlBox3.TabIndex = 5;
+            this.metroControlBox3.Text = "metroControlBox3";
+            this.metroControlBox3.ThemeAuthor = "Taiizor";
+            this.metroControlBox3.ThemeName = "MetroLight";
             // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(65, 59, 96);
-            panel2.Controls.Add(btnLogOut);
-            panel2.Controls.Add(btnSetting);
-            panel2.Controls.Add(btnSearchJob);
-            panel2.Controls.Add(btnJobAlert);
-            panel2.Controls.Add(pictureBox2);
-            panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 24);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(202, 674);
-            panel2.TabIndex = 6;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(59)))), ((int)(((byte)(96)))));
+            this.panel2.Controls.Add(this.btnLogOut);
+            this.panel2.Controls.Add(this.btnSetting);
+            this.panel2.Controls.Add(this.btnSearchJob);
+            this.panel2.Controls.Add(this.btnJobAlert);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 24);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(231, 907);
+            this.panel2.TabIndex = 6;
             // 
             // btnLogOut
             // 
@@ -153,7 +153,7 @@
             this.btnLogOut.Image = global::WinFormProject.Properties.Resources.icons8_log_out_50__1_;
             this.btnLogOut.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogOut.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnLogOut.Location = new System.Drawing.Point(0, 446);
+            this.btnLogOut.Location = new System.Drawing.Point(0, 406);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(5);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.ShadowDecoration.Color = System.Drawing.Color.White;
@@ -185,7 +185,7 @@
             this.btnSetting.Image = global::WinFormProject.Properties.Resources.icons8_test_account_32;
             this.btnSetting.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSetting.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnSetting.Location = new System.Drawing.Point(0, 351);
+            this.btnSetting.Location = new System.Drawing.Point(0, 311);
             this.btnSetting.Margin = new System.Windows.Forms.Padding(5);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.ShadowDecoration.Color = System.Drawing.Color.White;
@@ -217,7 +217,7 @@
             this.btnSearchJob.Image = global::WinFormProject.Properties.Resources.icons8_job_seeker_50;
             this.btnSearchJob.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSearchJob.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnSearchJob.Location = new System.Drawing.Point(0, 256);
+            this.btnSearchJob.Location = new System.Drawing.Point(0, 216);
             this.btnSearchJob.Margin = new System.Windows.Forms.Padding(5);
             this.btnSearchJob.Name = "btnSearchJob";
             this.btnSearchJob.ShadowDecoration.Color = System.Drawing.Color.White;
@@ -249,7 +249,7 @@
             this.btnJobAlert.Image = global::WinFormProject.Properties.Resources.icons8_job_alert_66;
             this.btnJobAlert.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnJobAlert.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnJobAlert.Location = new System.Drawing.Point(0, 161);
+            this.btnJobAlert.Location = new System.Drawing.Point(0, 121);
             this.btnJobAlert.Margin = new System.Windows.Forms.Padding(5);
             this.btnJobAlert.Name = "btnJobAlert";
             this.btnJobAlert.ShadowDecoration.Color = System.Drawing.Color.White;
@@ -263,23 +263,23 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Dock = DockStyle.Top;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(202, 121);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 0;
-            pictureBox2.TabStop = false;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(231, 121);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // pnBody
             // 
-            pnBody.BorderStyle = BorderStyle.FixedSingle;
-            pnBody.Dock = DockStyle.Fill;
-            pnBody.Location = new Point(202, 24);
-            pnBody.Name = "pnBody";
-            pnBody.Size = new Size(1095, 674);
-            pnBody.TabIndex = 7;
+            this.pnBody.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnBody.Location = new System.Drawing.Point(231, 24);
+            this.pnBody.Name = "pnBody";
+            this.pnBody.Size = new System.Drawing.Size(1251, 907);
+            this.pnBody.TabIndex = 7;
             // 
             // FJobSeeker
             // 

@@ -17,7 +17,7 @@ namespace WinFormProject
         public UCJob(Job job)
         {
             InitializeComponent();
-            this.MaximumSize = new System.Drawing.Size(481, 316);
+            this.MaximumSize = new System.Drawing.Size(550, 421);
             this.job = job;
         }
 
@@ -41,11 +41,14 @@ namespace WinFormProject
             lblDateEnd.Text = "Expired after " + ExpiredTime();
             foreach (string s in job.SkillList)
             {
-                BtnSkill btnSkill = new BtnSkill();
-                btnSkill.Text = s;
-                btnSkill.Show();
-                flpSkills.Width += btnSkill.Width + 10;
-                flpSkills.Controls.Add(btnSkill);
+                if (s != "NULL")
+                {
+                    BtnSkill btnSkill = new BtnSkill();
+                    btnSkill.Text = s;
+                    btnSkill.Show();
+                    flpSkills.Width += btnSkill.Width + 10;
+                    flpSkills.Controls.Add(btnSkill);
+                }
             }
         }
 
