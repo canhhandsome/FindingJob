@@ -18,7 +18,7 @@ namespace WinFormProject.WinFormCode
         {
             InitializeComponent();
             this.images = Images;
-            this.BackgroundImage = images[0]; 
+            //this.BackgroundImage = images[0]; 
         }
         public UCCarousel()
         {
