@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FJobSeeker));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -37,6 +36,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FJobSeeker));
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroControlBox4 = new ReaLTaiizor.Controls.MetroControlBox();
             this.metroControlBox3 = new ReaLTaiizor.Controls.MetroControlBox();
@@ -147,8 +147,8 @@
             this.btnLogOut.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.btnLogOut.HoverState.Font = new System.Drawing.Font("Cooper Black", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLogOut.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnLogOut.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
+            this.btnLogOut.HoverState.Image = global::WinFormProject.Properties.Resources.icons8_log_out_50__2_;
+            this.btnLogOut.Image = global::WinFormProject.Properties.Resources.icons8_log_out_50__1_;
             this.btnLogOut.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogOut.ImageSize = new System.Drawing.Size(50, 50);
             this.btnLogOut.Location = new System.Drawing.Point(0, 446);
@@ -179,8 +179,8 @@
             this.btnSetting.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.btnSetting.HoverState.Font = new System.Drawing.Font("Cooper Black", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSetting.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnSetting.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
+            this.btnSetting.HoverState.Image = global::WinFormProject.Properties.Resources.icons8_test_account_32__1_;
+            this.btnSetting.Image = global::WinFormProject.Properties.Resources.icons8_test_account_32;
             this.btnSetting.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSetting.ImageSize = new System.Drawing.Size(50, 50);
             this.btnSetting.Location = new System.Drawing.Point(0, 351);
@@ -211,8 +211,8 @@
             this.btnSearchJob.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.btnSearchJob.HoverState.Font = new System.Drawing.Font("Cooper Black", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSearchJob.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnSearchJob.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
-            this.btnSearchJob.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchJob.Image")));
+            this.btnSearchJob.HoverState.Image = global::WinFormProject.Properties.Resources.icons8_job_seeker_50__1_;
+            this.btnSearchJob.Image = global::WinFormProject.Properties.Resources.icons8_job_seeker_50;
             this.btnSearchJob.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSearchJob.ImageSize = new System.Drawing.Size(50, 50);
             this.btnSearchJob.Location = new System.Drawing.Point(0, 256);
@@ -243,8 +243,8 @@
             this.btnJobAlert.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.btnJobAlert.HoverState.Font = new System.Drawing.Font("Cooper Black", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnJobAlert.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnJobAlert.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
-            this.btnJobAlert.Image = ((System.Drawing.Image)(resources.GetObject("btnJobAlert.Image")));
+            this.btnJobAlert.HoverState.Image = global::WinFormProject.Properties.Resources.icons8_job_alert_66__1_;
+            this.btnJobAlert.Image = global::WinFormProject.Properties.Resources.icons8_job_alert_66;
             this.btnJobAlert.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnJobAlert.ImageSize = new System.Drawing.Size(50, 50);
             this.btnJobAlert.Location = new System.Drawing.Point(0, 161);
@@ -294,6 +294,7 @@
             this.Name = "FJobSeeker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "d";
+            this.Load += new System.EventHandler(this.FJobSeeker_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
