@@ -35,7 +35,7 @@ namespace WinFormProject
             pnSubBody.Controls.Clear();
             foreach (Job job in jobs)
             {
-                UCJob ucjob = new UCJob(job, currentFormChild, pnBody);
+                UCJob ucjob = new UCJob(job);
                 pnSubBody.Controls.Add(ucjob);
                 ucjob.Dock = DockStyle.Top;
                 pnSubBody.Height += 180;

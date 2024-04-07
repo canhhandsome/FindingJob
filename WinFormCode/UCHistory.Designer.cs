@@ -28,216 +28,272 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.flpSkill = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnSkill1 = new ReaLTaiizor.Controls.CyberButton();
-            this.lblCountApplicants = new System.Windows.Forms.Label();
-            this.lblStatusT = new System.Windows.Forms.Label();
-            this.btnApplicants = new ReaLTaiizor.Controls.CyberButton();
-            this.lblEndT = new System.Windows.Forms.Label();
-            this.lblDateT = new System.Windows.Forms.Label();
-            this.lblStatus = new System.Windows.Forms.Label();
-            this.lblJobNameT = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.flpSkill.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(232)))), ((int)(((byte)(223)))));
-            this.panel1.Controls.Add(this.flpSkill);
-            this.panel1.Controls.Add(this.lblCountApplicants);
-            this.panel1.Controls.Add(this.lblStatusT);
-            this.panel1.Controls.Add(this.btnApplicants);
-            this.panel1.Controls.Add(this.lblEndT);
-            this.panel1.Controls.Add(this.lblDateT);
-            this.panel1.Controls.Add(this.lblStatus);
-            this.panel1.Controls.Add(this.lblJobNameT);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(811, 235);
-            this.panel1.TabIndex = 1;
-            // 
-            // flpSkill
-            // 
-            this.flpSkill.Controls.Add(this.btnSkill1);
-            this.flpSkill.Location = new System.Drawing.Point(16, 115);
-            this.flpSkill.Name = "flpSkill";
-            this.flpSkill.Size = new System.Drawing.Size(775, 53);
-            this.flpSkill.TabIndex = 19;
-            // 
-            // btnSkill1
-            // 
-            this.btnSkill1.Alpha = 20;
-            this.btnSkill1.BackColor = System.Drawing.Color.Transparent;
-            this.btnSkill1.Background = true;
-            this.btnSkill1.Background_WidthPen = 4F;
-            this.btnSkill1.BackgroundPen = true;
-            this.btnSkill1.ColorBackground = System.Drawing.Color.White;
-            this.btnSkill1.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.btnSkill1.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
-            this.btnSkill1.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnSkill1.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.btnSkill1.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.btnSkill1.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(63)))), ((int)(((byte)(86)))));
-            this.btnSkill1.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.btnSkill1.Effect_1 = true;
-            this.btnSkill1.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.btnSkill1.Effect_1_Transparency = 25;
-            this.btnSkill1.Effect_2 = true;
-            this.btnSkill1.Effect_2_ColorBackground = System.Drawing.Color.White;
-            this.btnSkill1.Effect_2_Transparency = 20;
-            this.btnSkill1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSkill1.ForeColor = System.Drawing.Color.Black;
-            this.btnSkill1.Lighting = false;
-            this.btnSkill1.LinearGradient_Background = false;
-            this.btnSkill1.LinearGradientPen = false;
-            this.btnSkill1.Location = new System.Drawing.Point(3, 3);
-            this.btnSkill1.Name = "btnSkill1";
-            this.btnSkill1.PenWidth = 15;
-            this.btnSkill1.Rounding = true;
-            this.btnSkill1.RoundingInt = 70;
-            this.btnSkill1.Size = new System.Drawing.Size(105, 43);
-            this.btnSkill1.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnSkill1.TabIndex = 1;
-            this.btnSkill1.Tag = "Cyber";
-            this.btnSkill1.TextButton = "Skill1";
-            this.btnSkill1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnSkill1.Timer_Effect_1 = 5;
-            this.btnSkill1.Timer_RGB = 300;
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            lblCountApplicants = new Label();
+            btnApplicants = new Guna.UI2.WinForms.Guna2Button();
+            lblStatus = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
+            pnBody = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            flpSkills = new FlowLayoutPanel();
+            guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
+            lblWorkingType = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            lblNameJob = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            lblDateEnd = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lblDatePuslish = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            pnWrap = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            guna2Panel7.SuspendLayout();
+            pnBody.SuspendLayout();
+            guna2Panel9.SuspendLayout();
+            guna2Panel6.SuspendLayout();
+            guna2Panel4.SuspendLayout();
+            pnWrap.SuspendLayout();
+            SuspendLayout();
             // 
             // lblCountApplicants
             // 
-            this.lblCountApplicants.AutoSize = true;
-            this.lblCountApplicants.BackColor = System.Drawing.Color.IndianRed;
-            this.lblCountApplicants.Location = new System.Drawing.Point(774, 175);
-            this.lblCountApplicants.Name = "lblCountApplicants";
-            this.lblCountApplicants.Size = new System.Drawing.Size(17, 20);
-            this.lblCountApplicants.TabIndex = 14;
-            this.lblCountApplicants.Text = "0";
-            // 
-            // lblStatusT
-            // 
-            this.lblStatusT.AutoSize = true;
-            this.lblStatusT.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblStatusT.Location = new System.Drawing.Point(105, 70);
-            this.lblStatusT.Name = "lblStatusT";
-            this.lblStatusT.Size = new System.Drawing.Size(83, 32);
-            this.lblStatusT.TabIndex = 16;
-            this.lblStatusT.Text = "Status:";
+            lblCountApplicants.AutoSize = true;
+            lblCountApplicants.BackColor = Color.IndianRed;
+            lblCountApplicants.Location = new Point(287, 261);
+            lblCountApplicants.Name = "lblCountApplicants";
+            lblCountApplicants.Size = new Size(13, 15);
+            lblCountApplicants.TabIndex = 12;
+            lblCountApplicants.Text = "0";
             // 
             // btnApplicants
             // 
-            this.btnApplicants.Alpha = 20;
-            this.btnApplicants.BackColor = System.Drawing.Color.Transparent;
-            this.btnApplicants.Background = true;
-            this.btnApplicants.Background_WidthPen = 4F;
-            this.btnApplicants.BackgroundPen = true;
-            this.btnApplicants.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnApplicants.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnApplicants.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnApplicants.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnApplicants.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnApplicants.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnApplicants.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnApplicants.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnApplicants.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.btnApplicants.Effect_1 = true;
-            this.btnApplicants.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnApplicants.Effect_1_Transparency = 25;
-            this.btnApplicants.Effect_2 = true;
-            this.btnApplicants.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnApplicants.Effect_2_Transparency = 20;
-            this.btnApplicants.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnApplicants.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
-            this.btnApplicants.Lighting = true;
-            this.btnApplicants.LinearGradient_Background = false;
-            this.btnApplicants.LinearGradientPen = false;
-            this.btnApplicants.Location = new System.Drawing.Point(669, 175);
-            this.btnApplicants.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnApplicants.Name = "btnApplicants";
-            this.btnApplicants.PenWidth = 15;
-            this.btnApplicants.Rounding = true;
-            this.btnApplicants.RoundingInt = 20;
-            this.btnApplicants.Size = new System.Drawing.Size(122, 56);
-            this.btnApplicants.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnApplicants.TabIndex = 13;
-            this.btnApplicants.Tag = "Cyber";
-            this.btnApplicants.TextButton = "Applicants";
-            this.btnApplicants.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnApplicants.Timer_Effect_1 = 1;
-            this.btnApplicants.Timer_RGB = 300;
-            // 
-            // lblEndT
-            // 
-            this.lblEndT.AutoSize = true;
-            this.lblEndT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblEndT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblEndT.Location = new System.Drawing.Point(696, 15);
-            this.lblEndT.Name = "lblEndT";
-            this.lblEndT.Size = new System.Drawing.Size(95, 28);
-            this.lblEndT.TabIndex = 17;
-            this.lblEndT.Text = "Date End:";
-            this.lblEndT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblDateT
-            // 
-            this.lblDateT.AutoSize = true;
-            this.lblDateT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDateT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblDateT.Location = new System.Drawing.Point(734, 52);
-            this.lblDateT.Name = "lblDateT";
-            this.lblDateT.Size = new System.Drawing.Size(57, 28);
-            this.lblDateT.TabIndex = 18;
-            this.lblDateT.Text = "Date:";
-            this.lblDateT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            btnApplicants.BorderRadius = 10;
+            btnApplicants.Cursor = Cursors.Hand;
+            btnApplicants.CustomizableEdges = customizableEdges1;
+            btnApplicants.DisabledState.BorderColor = Color.DarkGray;
+            btnApplicants.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnApplicants.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnApplicants.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnApplicants.FillColor = Color.FromArgb(176, 226, 243);
+            btnApplicants.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnApplicants.ForeColor = Color.Black;
+            btnApplicants.Location = new Point(191, 266);
+            btnApplicants.Name = "btnApplicants";
+            btnApplicants.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnApplicants.Size = new Size(107, 36);
+            btnApplicants.TabIndex = 13;
+            btnApplicants.Text = "Applicants";
+            btnApplicants.Click += btnApplicants_Click;
             // 
             // lblStatus
             // 
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblStatus.Location = new System.Drawing.Point(16, 70);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(83, 32);
-            this.lblStatus.TabIndex = 14;
-            this.lblStatus.Text = "Status:";
+            lblStatus.AutoSize = false;
+            lblStatus.BackColor = Color.Transparent;
+            lblStatus.Dock = DockStyle.Fill;
+            lblStatus.Font = new Font("Arial Narrow", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblStatus.ForeColor = Color.FromArgb(64, 64, 64);
+            lblStatus.Location = new Point(0, 0);
+            lblStatus.Name = "lblStatus";
+            lblStatus.Size = new Size(427, 55);
+            lblStatus.TabIndex = 54;
+            lblStatus.Text = "Status";
+            lblStatus.TextAlignment = ContentAlignment.MiddleLeft;
             // 
-            // lblJobNameT
+            // guna2Panel7
             // 
-            this.lblJobNameT.AutoSize = true;
-            this.lblJobNameT.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblJobNameT.Location = new System.Drawing.Point(16, 15);
-            this.lblJobNameT.Name = "lblJobNameT";
-            this.lblJobNameT.Size = new System.Drawing.Size(179, 45);
-            this.lblJobNameT.TabIndex = 15;
-            this.lblJobNameT.Text = "Job Name:";
+            guna2Panel7.Controls.Add(lblStatus);
+            guna2Panel7.CustomizableEdges = customizableEdges3;
+            guna2Panel7.Dock = DockStyle.Top;
+            guna2Panel7.Location = new Point(25, 136);
+            guna2Panel7.Name = "guna2Panel7";
+            guna2Panel7.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2Panel7.Size = new Size(427, 55);
+            guna2Panel7.TabIndex = 54;
+            // 
+            // pnBody
+            // 
+            pnBody.BackColor = Color.Transparent;
+            pnBody.Controls.Add(guna2Panel7);
+            pnBody.Controls.Add(flpSkills);
+            pnBody.Controls.Add(guna2Panel9);
+            pnBody.Controls.Add(guna2Panel6);
+            pnBody.Controls.Add(guna2Panel4);
+            pnBody.Controls.Add(guna2Panel5);
+            pnBody.FillColor = Color.MistyRose;
+            pnBody.Location = new Point(16, 12);
+            pnBody.Name = "pnBody";
+            pnBody.Radius = 15;
+            pnBody.ShadowColor = Color.Black;
+            pnBody.Size = new Size(452, 246);
+            pnBody.TabIndex = 0;
+            // 
+            // flpSkills
+            // 
+            flpSkills.Location = new Point(25, 188);
+            flpSkills.Name = "flpSkills";
+            flpSkills.Size = new Size(427, 58);
+            flpSkills.TabIndex = 53;
+            // 
+            // guna2Panel9
+            // 
+            guna2Panel9.Controls.Add(lblWorkingType);
+            guna2Panel9.CustomizableEdges = customizableEdges5;
+            guna2Panel9.Dock = DockStyle.Top;
+            guna2Panel9.Location = new Point(25, 96);
+            guna2Panel9.Name = "guna2Panel9";
+            guna2Panel9.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2Panel9.Size = new Size(427, 40);
+            guna2Panel9.TabIndex = 4;
+            // 
+            // lblWorkingType
+            // 
+            lblWorkingType.AutoSize = false;
+            lblWorkingType.BackColor = Color.Transparent;
+            lblWorkingType.Dock = DockStyle.Fill;
+            lblWorkingType.Font = new Font("Arial Narrow", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblWorkingType.ForeColor = Color.FromArgb(64, 64, 64);
+            lblWorkingType.Location = new Point(0, 0);
+            lblWorkingType.Name = "lblWorkingType";
+            lblWorkingType.Size = new Size(427, 40);
+            lblWorkingType.TabIndex = 54;
+            lblWorkingType.Text = "Working Type";
+            lblWorkingType.TextAlignment = ContentAlignment.MiddleLeft;
+            // 
+            // guna2Panel6
+            // 
+            guna2Panel6.Controls.Add(lblNameJob);
+            guna2Panel6.CustomizableEdges = customizableEdges7;
+            guna2Panel6.Dock = DockStyle.Top;
+            guna2Panel6.Location = new Point(25, 36);
+            guna2Panel6.Name = "guna2Panel6";
+            guna2Panel6.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2Panel6.Size = new Size(427, 60);
+            guna2Panel6.TabIndex = 2;
+            // 
+            // lblNameJob
+            // 
+            lblNameJob.AutoSize = false;
+            lblNameJob.BackColor = Color.Transparent;
+            lblNameJob.Dock = DockStyle.Fill;
+            lblNameJob.Font = new Font("Arial Narrow", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblNameJob.Location = new Point(0, 0);
+            lblNameJob.Name = "lblNameJob";
+            lblNameJob.Size = new Size(427, 60);
+            lblNameJob.TabIndex = 0;
+            lblNameJob.Text = "Name Job";
+            lblNameJob.TextAlignment = ContentAlignment.MiddleLeft;
+            // 
+            // guna2Panel4
+            // 
+            guna2Panel4.Controls.Add(lblDateEnd);
+            guna2Panel4.Controls.Add(lblDatePuslish);
+            guna2Panel4.CustomizableEdges = customizableEdges9;
+            guna2Panel4.Dock = DockStyle.Top;
+            guna2Panel4.Location = new Point(25, 0);
+            guna2Panel4.Name = "guna2Panel4";
+            guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2Panel4.Size = new Size(427, 36);
+            guna2Panel4.TabIndex = 1;
+            // 
+            // lblDateEnd
+            // 
+            lblDateEnd.AutoSize = false;
+            lblDateEnd.BackColor = Color.Transparent;
+            lblDateEnd.Dock = DockStyle.Right;
+            lblDateEnd.Font = new Font("Arial Narrow", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDateEnd.ForeColor = Color.FromArgb(64, 64, 64);
+            lblDateEnd.Location = new Point(226, 0);
+            lblDateEnd.Margin = new Padding(3, 3, 50, 3);
+            lblDateEnd.Name = "lblDateEnd";
+            lblDateEnd.Size = new Size(201, 36);
+            lblDateEnd.TabIndex = 54;
+            lblDateEnd.Text = "Date End";
+            lblDateEnd.TextAlignment = ContentAlignment.BottomLeft;
+            // 
+            // lblDatePuslish
+            // 
+            lblDatePuslish.AutoSize = false;
+            lblDatePuslish.BackColor = Color.Transparent;
+            lblDatePuslish.Dock = DockStyle.Left;
+            lblDatePuslish.Font = new Font("Arial Narrow", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDatePuslish.ForeColor = Color.FromArgb(64, 64, 64);
+            lblDatePuslish.Location = new Point(0, 0);
+            lblDatePuslish.Name = "lblDatePuslish";
+            lblDatePuslish.Size = new Size(201, 36);
+            lblDatePuslish.TabIndex = 54;
+            lblDatePuslish.Text = "date publish";
+            lblDatePuslish.TextAlignment = ContentAlignment.BottomLeft;
+            // 
+            // guna2Panel5
+            // 
+            guna2Panel5.CustomizableEdges = customizableEdges11;
+            guna2Panel5.Dock = DockStyle.Left;
+            guna2Panel5.Location = new Point(0, 0);
+            guna2Panel5.Name = "guna2Panel5";
+            guna2Panel5.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2Panel5.Size = new Size(25, 246);
+            guna2Panel5.TabIndex = 0;
+            // 
+            // pnWrap
+            // 
+            pnWrap.BackColor = Color.Transparent;
+            pnWrap.Controls.Add(lblCountApplicants);
+            pnWrap.Controls.Add(pnBody);
+            pnWrap.Controls.Add(btnApplicants);
+            pnWrap.Dock = DockStyle.Fill;
+            pnWrap.FillColor = Color.White;
+            pnWrap.Location = new Point(0, 0);
+            pnWrap.Name = "pnWrap";
+            pnWrap.Radius = 15;
+            pnWrap.ShadowColor = Color.Black;
+            pnWrap.ShadowDepth = 110;
+            pnWrap.Size = new Size(481, 316);
+            pnWrap.TabIndex = 54;
             // 
             // UCHistory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.Name = "UCHistory";
-            this.Size = new System.Drawing.Size(811, 235);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.flpSkill.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Transparent;
+            Controls.Add(pnWrap);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "UCHistory";
+            Size = new Size(481, 316);
+            Load += UCHistory_Load;
+            guna2Panel7.ResumeLayout(false);
+            pnBody.ResumeLayout(false);
+            guna2Panel9.ResumeLayout(false);
+            guna2Panel6.ResumeLayout(false);
+            guna2Panel4.ResumeLayout(false);
+            pnWrap.ResumeLayout(false);
+            pnWrap.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
-        private Panel panel1;
-        private FlowLayoutPanel flpSkill;
-        private ReaLTaiizor.Controls.CyberButton btnSkill1;
-        public Label lblStatusT;
-        public Label lblEndT;
-        public Label lblDateT;
-        private Label lblStatus;
-        public Label lblJobNameT;
+
         private Label lblCountApplicants;
-        private ReaLTaiizor.Controls.CyberButton btnApplicants;
+        private Guna.UI2.WinForms.Guna2Button btnApplicants;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblStatus;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
+        public Guna.UI2.WinForms.Guna2ShadowPanel pnBody;
+        private FlowLayoutPanel flpSkills;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblWorkingType;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblNameJob;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblDateEnd;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblDatePuslish;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
+        private Guna.UI2.WinForms.Guna2ShadowPanel pnWrap;
     }
 }

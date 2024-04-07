@@ -20,7 +20,7 @@ namespace WinFormProject.WinFormCode
             this.images = Images;
             if(Images.Count == 0)
             {
-               this.BackgroundImage = Image.FromFile(@"D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\Resources\noimg.jpg");
+               this.BackgroundImage = Properties.Resources.ErrorImage;
             }
             else
             {

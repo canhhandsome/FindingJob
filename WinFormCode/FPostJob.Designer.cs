@@ -33,10 +33,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             btnPostingJob = new Button();
             pnBody = new Panel();
+            txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             btnFilter = new ReaLTaiizor.Controls.ParrotButton();
             pnSubBody = new FlowLayoutPanel();
             lblListJobs = new Label();
-            txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             pnBody.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,10 +47,9 @@
             btnPostingJob.FlatStyle = FlatStyle.System;
             btnPostingJob.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btnPostingJob.ForeColor = SystemColors.ControlLightLight;
-            btnPostingJob.Location = new Point(830, 37);
-            btnPostingJob.Margin = new Padding(3, 4, 3, 4);
+            btnPostingJob.Location = new Point(737, 28);
             btnPostingJob.Name = "btnPostingJob";
-            btnPostingJob.Size = new Size(190, 52);
+            btnPostingJob.Size = new Size(166, 39);
             btnPostingJob.TabIndex = 1;
             btnPostingJob.Text = "Posting a job";
             btnPostingJob.UseVisualStyleBackColor = false;
@@ -68,10 +67,33 @@
             pnBody.Controls.Add(btnPostingJob);
             pnBody.Dock = DockStyle.Fill;
             pnBody.Location = new Point(0, 0);
-            pnBody.Margin = new Padding(3, 4, 3, 4);
             pnBody.Name = "pnBody";
-            pnBody.Size = new Size(1048, 600);
+            pnBody.Size = new Size(1079, 635);
             pnBody.TabIndex = 2;
+            // 
+            // txtSearch
+            // 
+            txtSearch.AutoRoundedCorners = true;
+            txtSearch.BorderRadius = 17;
+            txtSearch.CustomizableEdges = customizableEdges1;
+            txtSearch.DefaultText = "";
+            txtSearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtSearch.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtSearch.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtSearch.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtSearch.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtSearch.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSearch.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtSearch.IconLeft = (Image)resources.GetObject("txtSearch.IconLeft");
+            txtSearch.Location = new Point(79, 83);
+            txtSearch.Margin = new Padding(4, 3, 4, 3);
+            txtSearch.Name = "txtSearch";
+            txtSearch.PasswordChar = '\0';
+            txtSearch.PlaceholderText = "Search for jobs";
+            txtSearch.SelectedText = "";
+            txtSearch.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtSearch.Size = new Size(711, 36);
+            txtSearch.TabIndex = 39;
             // 
             // btnFilter
             // 
@@ -88,10 +110,9 @@
             btnFilter.HoverBackgroundColor = Color.FromArgb(248, 242, 197);
             btnFilter.HoverTextColor = Color.Black;
             btnFilter.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnFilter.Location = new Point(898, 111);
-            btnFilter.Margin = new Padding(3, 4, 3, 4);
+            btnFilter.Location = new Point(797, 83);
             btnFilter.Name = "btnFilter";
-            btnFilter.Size = new Size(83, 48);
+            btnFilter.Size = new Size(73, 36);
             btnFilter.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnFilter.TabIndex = 38;
             btnFilter.TextColor = Color.Black;
@@ -100,10 +121,9 @@
             // 
             // pnSubBody
             // 
-            pnSubBody.Location = new Point(62, 167);
-            pnSubBody.Margin = new Padding(3, 4, 3, 4);
+            pnSubBody.Location = new Point(60, 136);
             pnSubBody.Name = "pnSubBody";
-            pnSubBody.Size = new Size(919, 276);
+            pnSubBody.Size = new Size(1000, 207);
             pnSubBody.TabIndex = 4;
             // 
             // lblListJobs
@@ -112,45 +132,20 @@
             lblListJobs.BackColor = Color.White;
             lblListJobs.Font = new Font("Times New Roman", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             lblListJobs.ForeColor = SystemColors.ControlText;
-            lblListJobs.Location = new Point(40, 39);
+            lblListJobs.Location = new Point(46, 29);
             lblListJobs.Name = "lblListJobs";
-            lblListJobs.Size = new Size(348, 42);
+            lblListJobs.Size = new Size(281, 35);
             lblListJobs.TabIndex = 3;
             lblListJobs.Text = "List Of Current Jobs";
             // 
-            // txtSearch
-            // 
-            txtSearch.AutoRoundedCorners = true;
-            txtSearch.BorderRadius = 23;
-            txtSearch.CustomizableEdges = customizableEdges1;
-            txtSearch.DefaultText = "";
-            txtSearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtSearch.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtSearch.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtSearch.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtSearch.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtSearch.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtSearch.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtSearch.IconLeft = (Image)resources.GetObject("txtSearch.IconLeft");
-            txtSearch.Location = new Point(78, 111);
-            txtSearch.Margin = new Padding(4, 4, 4, 4);
-            txtSearch.Name = "txtSearch";
-            txtSearch.PasswordChar = '\0';
-            txtSearch.PlaceholderText = "Search for jobs";
-            txtSearch.SelectedText = "";
-            txtSearch.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtSearch.Size = new Size(813, 48);
-            txtSearch.TabIndex = 39;
-            // 
             // FPostJob
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.FromArgb(32, 41, 58);
-            ClientSize = new Size(1048, 600);
+            ClientSize = new Size(1079, 635);
             Controls.Add(pnBody);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FPostJob";
             Text = "PostJob";
             Load += PostJob_Load;
