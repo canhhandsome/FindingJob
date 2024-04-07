@@ -41,11 +41,14 @@ namespace WinFormProject
             lblDateEnd.Text = "Expired after " + ExpiredTime();
             foreach (string s in job.SkillList)
             {
-                BtnSkill btnSkill = new BtnSkill();
-                btnSkill.Text = s;
-                btnSkill.Show();
-                flpSkills.Width += btnSkill.Width + 10;
-                flpSkills.Controls.Add(btnSkill);
+                if (s != "NULL")
+                {
+                    BtnSkill btnSkill = new BtnSkill();
+                    btnSkill.Text = s;
+                    btnSkill.Show();
+                    flpSkills.Width += btnSkill.Width + 10;
+                    flpSkills.Controls.Add(btnSkill);
+                }
             }
         }
 

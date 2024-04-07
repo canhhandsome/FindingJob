@@ -155,6 +155,7 @@
             this.guna2Button1.TabIndex = 53;
             this.guna2Button1.Text = "Details";
             this.guna2Button1.UseWaitCursor = true;
+            this.guna2Button1.Click += new System.EventHandler(this.panel1_Click);
             // 
             // pnBody
             // 
