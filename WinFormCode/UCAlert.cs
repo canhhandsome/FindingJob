@@ -22,7 +22,7 @@ namespace WinFormProject
             this.MaximumSize = new System.Drawing.Size(531, 206);
             lblDateT.Text = alert.DateReply.ToString("dd/MM/yyyy");
             CompanyDAO companyDAO = new CompanyDAO();
-            companyAvatar = companyDAO.FetchImg(alert.SenderID, "Avarta");
+            companyAvatar = companyDAO.FetchImg(alert.SenderID, "Avatar");
             if (companyAvatar != null)  ptbCompanyPicture.Image = companyAvatar;
             lblJobNameT.Text = jobDAO.FetchName(alert.JobID);
             lblFromT.Text = companyDAO.FetchName(alert.SenderID);
