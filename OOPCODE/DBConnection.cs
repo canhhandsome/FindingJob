@@ -154,11 +154,16 @@ namespace WinFormProject
 
                 while (reader.Read())
                 {
-                    SkillList.Add(reader["Skill1"].ToString().Trim());
-                    SkillList.Add(reader["Skill2"].ToString().Trim());
-                    SkillList.Add(reader["Skill3"].ToString().Trim());
+                    if (!reader.IsDBNull(reader.GetOrdinal("Skill1")) && reader["Skill1"].ToString().Trim() != "NULL")
+                        SkillList.Add(reader["Skill1"].ToString().Trim());
 
+                    if (!reader.IsDBNull(reader.GetOrdinal("Skill2")) && reader["Skill2"].ToString().Trim() != "NULL")
+                        SkillList.Add(reader["Skill2"].ToString().Trim());
+
+                    if (!reader.IsDBNull(reader.GetOrdinal("Skill3")) && reader["Skill3"].ToString().Trim() != "NULL")
+                        SkillList.Add(reader["Skill3"].ToString().Trim());
                 }
+
             }
             catch (Exception ex)
             {

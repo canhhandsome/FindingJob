@@ -48,7 +48,7 @@ namespace WinFormProject
                     btnSkill.Show();
                     flpSkills.Width += btnSkill.Width + 10;
                     flpSkills.Controls.Add(btnSkill);
-                }
+                } 
             }
         }
 

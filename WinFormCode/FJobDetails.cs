@@ -56,6 +56,17 @@ namespace WinFormProject
             lblAddressText.Text = company.INFO.Address;
             UCCarousel ucc = new UCCarousel(cadi.FetchAllPictures(company.INFO.ID));
             pnCarousel.Controls.Add(ucc);
+            foreach (string s in job.SkillList)
+            {
+                if (s != "NULL")
+                {
+                    BtnSkill btnSkill = new BtnSkill();
+                    btnSkill.Text = s;
+                    btnSkill.Show();
+                    flowLayoutPanel4.Controls.Add(btnSkill);
+                    flowLayoutPanel4.Width += btnSkill.Width + 20;
+                }
+            }
         }
         private void SetApplyButton()
         {
