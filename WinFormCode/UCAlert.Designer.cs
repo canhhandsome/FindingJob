@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAlert));
             panel1 = new Panel();
             flowLayoutPanel1 = new FlowLayoutPanel();
@@ -37,6 +38,7 @@
             ptbCompanyPicture = new PictureBox();
             lblJobNameT = new Label();
             lblSubjectT = new Label();
+            guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             panel1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -57,6 +59,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(500, 159);
             panel1.TabIndex = 8;
+            panel1.Click += panel1_Click;
             // 
             // flowLayoutPanel1
             // 
@@ -106,10 +109,10 @@
             // 
             // ptbCompanyPicture
             // 
-            ptbCompanyPicture.Location = new Point(409, 14);
+            ptbCompanyPicture.Location = new Point(384, 14);
             ptbCompanyPicture.Margin = new Padding(3, 2, 3, 2);
             ptbCompanyPicture.Name = "ptbCompanyPicture";
-            ptbCompanyPicture.Size = new Size(68, 68);
+            ptbCompanyPicture.Size = new Size(91, 91);
             ptbCompanyPicture.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbCompanyPicture.TabIndex = 9;
             ptbCompanyPicture.TabStop = false;
@@ -134,6 +137,11 @@
             lblSubjectT.Size = new Size(79, 25);
             lblSubjectT.TabIndex = 0;
             lblSubjectT.Text = "Subject: ";
+            // 
+            // guna2Elipse1
+            // 
+            guna2Elipse1.BorderRadius = 15;
+            guna2Elipse1.TargetControl = panel1;
             // 
             // UCAlert
             // 
@@ -163,5 +171,6 @@
         public Label lblFromT;
         public Label lblDateT;
         private PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

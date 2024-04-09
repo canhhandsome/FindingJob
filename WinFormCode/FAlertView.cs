@@ -21,6 +21,7 @@ namespace WinFormProject
             lblContentT.Text = alert.Content;
             lblDateT.Text = alert.DateReply.ToString("dd/MM/yyyy");
             lblSubjectT.Text = alert.Subject;
+            lblJobT.Text = jobDAO.FetchName(alert.JobID);
         }
 
         private void btnDone_Click(object sender, EventArgs e)
