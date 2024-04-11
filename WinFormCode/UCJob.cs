@@ -39,6 +39,7 @@ namespace WinFormProject
             lblStatus.Text = job.Status;
             lblDatePuslish.Text = "Posted " + PublishTime();
             lblDateEnd.Text = "Expired after " + ExpiredTime();
+            lblWorkingType.Text = job.WorkingForm;
             foreach (string s in job.SkillList)
             {
                 if (s != "NULL")
@@ -48,7 +49,7 @@ namespace WinFormProject
                     btnSkill.Show();
                     flpSkills.Width += btnSkill.Width + 10;
                     flpSkills.Controls.Add(btnSkill);
-                }
+                } 
             }
         }
 

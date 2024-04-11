@@ -46,23 +46,23 @@ namespace WinFormProject
         {
             Enable_Edit_Click();
         }
-        private void Enable_Edit_Click()
+        private void Enable_Save_Click()
         {
-            this.btnChoosePicture.Visible = true;
-            this.btnEdit.Visible = false;
-            this.btnSave.Visible = true;
-            this.btnChooseNewCV.Visible = true;
+            this.btnEdit.Visible = true;
+            this.btnChoosePicture.Visible = false;
+            this.btnSave.Visible = false;
+            this.btnChooseNewCV.Visible = false;
+            this.btnCancel.Visible = false;
             this.ptbCV.Visible = true;
-            this.btnCV.Visible = false;
-            this.btnCancel.Visible = true;
+            this.btnCV.Visible = true;
             txtFullName.Enabled = false;
             txtAddress.Enabled = false;
             txtCitizenID.Enabled = false;
             txtEmail.Enabled = false;
             txtPhoneNumber.Enabled = false;
-            dtpkBirthDate.Enabled = true;
-            rdoMale.Enabled = true;
-            rdoFemale.Enabled = true;
+            dtpkBirthDate.Enabled = false;
+            rdoFemale.Enabled = false;
+            rdoMale.Enabled = false;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -72,23 +72,23 @@ namespace WinFormProject
             jsDAO.UpdateJobSeeker(newjseeker);
             jobseeker = newjseeker;
         }
-        private void Enable_Save_Click()
+        private void Enable_Edit_Click()
         {
-            this.btnEdit.Visible = true;
-            this.btnChoosePicture.Visible = false;
-            this.btnSave.Visible = false;
-            this.btnChooseNewCV.Visible = false;
+            this.btnChoosePicture.Visible = true;
+            this.btnEdit.Visible = false;
+            this.btnSave.Visible = true;
+            this.btnCancel.Visible = true;
+            this.btnChooseNewCV.Visible = true;
             this.ptbCV.Visible = true;
-            this.btnCV.Visible = true;
-            this.btnCancel.Visible = false;
+            this.btnCV.Visible = false;
             txtFullName.Enabled = true;
             txtAddress.Enabled = true;
             txtCitizenID.Enabled = true;
             txtEmail.Enabled = true;
             txtPhoneNumber.Enabled = true;
-            dtpkBirthDate.Enabled = false;
-            rdoFemale.Enabled = false;
-            rdoMale.Enabled = false;
+            dtpkBirthDate.Enabled = true;
+            rdoMale.Enabled = true;
+            rdoFemale.Enabled = true;
         }
         private void btnChooseNewCV_Click(object sender, EventArgs e)
         {

@@ -32,47 +32,9 @@ namespace WinFormProject
             fJobSKills.ListReady += FJobSkills_ListReady;
 
         }
-        //private void OpenChildForm(Form childForm)
-        //{
-        //    foreach (Control control in this.Controls)
-        //    {
-        //        if (control == pnBody)
-        //            continue;
-        //        control.Visible = false;
-        //    }
-        //    if (currentFormChild != null)
-        //    {
-        //        currentFormChild.Close();
-        //    }
-        //    currentFormChild = childForm;
-        //    childForm.TopLevel = false;
-        //    childForm.FormBorderStyle = FormBorderStyle.None;
-        //    childForm.Dock = DockStyle.Fill;
-        //    pnBody.Controls.Add(childForm);
-        //    pnBody.Tag = childForm;
-        //    pnBody.BackColor = Color.FromArgb(32, 41, 58);
-        //    childForm.BringToFront();
-        //    childForm.Show();
-        //}
-        private void OpenChildForm(Form childForm)
-        {
-            if (currentFormChild != null)
-            {
-                currentFormChild.Close();
-            }
-            currentFormChild = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            pnBody.Controls.Add(childForm);
-            pnBody.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new FPostJob(jobs, companyid));
-            this.Hide();
+            this.Close();
         }
 
         private void btnPostJob_Click(object sender, EventArgs e)
@@ -96,11 +58,14 @@ namespace WinFormProject
             flpSkills.Width = 0;
             foreach (string s in skills)
             {
-                BtnSkill btnSkill = new BtnSkill();
-                btnSkill.Text = s;
-                btnSkill.Show();
-                flpSkills.Width += btnSkill.Width + 10;
-                flpSkills.Controls.Add(btnSkill);
+                if (s != "NULL")
+                {
+                    BtnSkill btnSkill = new BtnSkill();
+                    btnSkill.Text = s;
+                    btnSkill.Show();
+                    flpSkills.Controls.Add(btnSkill);
+                    flpSkills.Width += btnSkill.Width + 20;
+                }
             }
         }
 

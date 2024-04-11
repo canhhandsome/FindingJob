@@ -46,294 +46,293 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            this.ptbCompanyPicture = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.pnWrap = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblAddress = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.pnBody = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.flpSkills = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblWorkingType = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblCompany = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblNameJob = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblDatePuslish = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCompanyPicture)).BeginInit();
-            this.pnWrap.SuspendLayout();
-            this.guna2Panel7.SuspendLayout();
-            this.pnBody.SuspendLayout();
-            this.guna2Panel5.SuspendLayout();
-            this.guna2Panel4.SuspendLayout();
-            this.guna2Panel3.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
-            this.SuspendLayout();
+            ptbCompanyPicture = new Guna.UI2.WinForms.Guna2PictureBox();
+            pnWrap = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
+            lblAddress = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            pnBody = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            flpSkills = new FlowLayoutPanel();
+            guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            lblWorkingType = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            lblCompany = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            lblNameJob = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            lblDatePuslish = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).BeginInit();
+            pnWrap.SuspendLayout();
+            guna2Panel7.SuspendLayout();
+            pnBody.SuspendLayout();
+            guna2Panel5.SuspendLayout();
+            guna2Panel4.SuspendLayout();
+            guna2Panel3.SuspendLayout();
+            guna2Panel2.SuspendLayout();
+            SuspendLayout();
             // 
             // ptbCompanyPicture
             // 
-            this.ptbCompanyPicture.CustomizableEdges = customizableEdges1;
-            this.ptbCompanyPicture.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ptbCompanyPicture.FillColor = System.Drawing.Color.Transparent;
-            this.ptbCompanyPicture.ImageRotate = 0F;
-            this.ptbCompanyPicture.Location = new System.Drawing.Point(0, 0);
-            this.ptbCompanyPicture.Margin = new System.Windows.Forms.Padding(3, 3, 17, 3);
-            this.ptbCompanyPicture.Name = "ptbCompanyPicture";
-            this.ptbCompanyPicture.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.ptbCompanyPicture.Size = new System.Drawing.Size(59, 69);
-            this.ptbCompanyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbCompanyPicture.TabIndex = 2;
-            this.ptbCompanyPicture.TabStop = false;
+            ptbCompanyPicture.CustomizableEdges = customizableEdges1;
+            ptbCompanyPicture.Dock = DockStyle.Left;
+            ptbCompanyPicture.FillColor = Color.Transparent;
+            ptbCompanyPicture.ImageRotate = 0F;
+            ptbCompanyPicture.Location = new Point(0, 0);
+            ptbCompanyPicture.Margin = new Padding(3, 3, 17, 3);
+            ptbCompanyPicture.Name = "ptbCompanyPicture";
+            ptbCompanyPicture.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            ptbCompanyPicture.Size = new Size(59, 69);
+            ptbCompanyPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbCompanyPicture.TabIndex = 2;
+            ptbCompanyPicture.TabStop = false;
             // 
             // pnWrap
             // 
-            this.pnWrap.BackColor = System.Drawing.Color.Transparent;
-            this.pnWrap.Controls.Add(this.guna2Panel7);
-            this.pnWrap.Controls.Add(this.guna2Button1);
-            this.pnWrap.Controls.Add(this.pnBody);
-            this.pnWrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnWrap.FillColor = System.Drawing.Color.White;
-            this.pnWrap.Location = new System.Drawing.Point(0, 0);
-            this.pnWrap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pnWrap.Name = "pnWrap";
-            this.pnWrap.Radius = 15;
-            this.pnWrap.ShadowColor = System.Drawing.Color.Black;
-            this.pnWrap.ShadowDepth = 110;
-            this.pnWrap.Size = new System.Drawing.Size(550, 421);
-            this.pnWrap.TabIndex = 52;
+            pnWrap.BackColor = Color.Transparent;
+            pnWrap.Controls.Add(guna2Panel7);
+            pnWrap.Controls.Add(guna2Button1);
+            pnWrap.Controls.Add(pnBody);
+            pnWrap.Dock = DockStyle.Fill;
+            pnWrap.FillColor = Color.White;
+            pnWrap.Location = new Point(0, 0);
+            pnWrap.Margin = new Padding(3, 4, 3, 4);
+            pnWrap.Name = "pnWrap";
+            pnWrap.Radius = 15;
+            pnWrap.ShadowColor = Color.Black;
+            pnWrap.ShadowDepth = 110;
+            pnWrap.Size = new Size(550, 421);
+            pnWrap.TabIndex = 52;
             // 
             // guna2Panel7
             // 
-            this.guna2Panel7.Controls.Add(this.lblAddress);
-            this.guna2Panel7.CustomizableEdges = customizableEdges3;
-            this.guna2Panel7.Location = new System.Drawing.Point(47, 352);
-            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Panel7.Name = "guna2Panel7";
-            this.guna2Panel7.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            this.guna2Panel7.Size = new System.Drawing.Size(330, 52);
-            this.guna2Panel7.TabIndex = 55;
+            guna2Panel7.Controls.Add(lblAddress);
+            guna2Panel7.CustomizableEdges = customizableEdges3;
+            guna2Panel7.Location = new Point(47, 352);
+            guna2Panel7.Margin = new Padding(3, 4, 3, 4);
+            guna2Panel7.Name = "guna2Panel7";
+            guna2Panel7.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2Panel7.Size = new Size(330, 52);
+            guna2Panel7.TabIndex = 55;
             // 
             // lblAddress
             // 
-            this.lblAddress.AutoSize = false;
-            this.lblAddress.BackColor = System.Drawing.Color.Transparent;
-            this.lblAddress.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAddress.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
-            this.lblAddress.Location = new System.Drawing.Point(0, 0);
-            this.lblAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(330, 52);
-            this.lblAddress.TabIndex = 54;
-            this.lblAddress.Text = "Address";
-            this.lblAddress.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            lblAddress.AutoSize = false;
+            lblAddress.BackColor = Color.Transparent;
+            lblAddress.Dock = DockStyle.Fill;
+            lblAddress.Font = new Font("Verdana", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAddress.ForeColor = Color.FromArgb(65, 64, 66);
+            lblAddress.Location = new Point(0, 0);
+            lblAddress.Margin = new Padding(3, 4, 3, 4);
+            lblAddress.Name = "lblAddress";
+            lblAddress.Size = new Size(330, 52);
+            lblAddress.TabIndex = 54;
+            lblAddress.Text = "Address";
+            lblAddress.TextAlignment = ContentAlignment.MiddleLeft;
             // 
             // guna2Button1
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 15;
-            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button1.CustomizableEdges = customizableEdges5;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button1.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Button1.Location = new System.Drawing.Point(390, 352);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.BorderRadius = 15;
-            this.guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            this.guna2Button1.ShadowDecoration.Depth = 10;
-            this.guna2Button1.ShadowDecoration.Enabled = true;
-            this.guna2Button1.Size = new System.Drawing.Size(122, 52);
-            this.guna2Button1.TabIndex = 53;
-            this.guna2Button1.Text = "Details";
-            this.guna2Button1.UseWaitCursor = true;
-            this.guna2Button1.Click += new System.EventHandler(this.panel1_Click);
+            guna2Button1.BackColor = Color.Transparent;
+            guna2Button1.BorderRadius = 15;
+            guna2Button1.Cursor = Cursors.Hand;
+            guna2Button1.CustomizableEdges = customizableEdges5;
+            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button1.FillColor = Color.FromArgb(248, 212, 187);
+            guna2Button1.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2Button1.ForeColor = Color.DimGray;
+            guna2Button1.Location = new Point(390, 352);
+            guna2Button1.Margin = new Padding(3, 4, 3, 4);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.ShadowDecoration.BorderRadius = 15;
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2Button1.ShadowDecoration.Depth = 10;
+            guna2Button1.ShadowDecoration.Enabled = true;
+            guna2Button1.Size = new Size(122, 52);
+            guna2Button1.TabIndex = 53;
+            guna2Button1.Text = "Details";
+            guna2Button1.UseWaitCursor = true;
+            guna2Button1.Click += panel1_Click;
             // 
             // pnBody
             // 
-            this.pnBody.BackColor = System.Drawing.Color.Transparent;
-            this.pnBody.Controls.Add(this.flpSkills);
-            this.pnBody.Controls.Add(this.guna2Panel5);
-            this.pnBody.Controls.Add(this.guna2Panel4);
-            this.pnBody.Controls.Add(this.guna2Panel3);
-            this.pnBody.Controls.Add(this.guna2Panel2);
-            this.pnBody.Controls.Add(this.guna2Panel1);
-            this.pnBody.FillColor = System.Drawing.Color.MistyRose;
-            this.pnBody.Location = new System.Drawing.Point(18, 16);
-            this.pnBody.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pnBody.Name = "pnBody";
-            this.pnBody.Radius = 15;
-            this.pnBody.ShadowColor = System.Drawing.Color.Black;
-            this.pnBody.Size = new System.Drawing.Size(517, 328);
-            this.pnBody.TabIndex = 0;
+            pnBody.BackColor = Color.Transparent;
+            pnBody.Controls.Add(flpSkills);
+            pnBody.Controls.Add(guna2Panel5);
+            pnBody.Controls.Add(guna2Panel4);
+            pnBody.Controls.Add(guna2Panel3);
+            pnBody.Controls.Add(guna2Panel2);
+            pnBody.Controls.Add(guna2Panel1);
+            pnBody.FillColor = Color.MistyRose;
+            pnBody.Location = new Point(18, 16);
+            pnBody.Margin = new Padding(3, 4, 3, 4);
+            pnBody.Name = "pnBody";
+            pnBody.Radius = 15;
+            pnBody.ShadowColor = Color.Black;
+            pnBody.Size = new Size(517, 328);
+            pnBody.TabIndex = 0;
             // 
             // flpSkills
             // 
-            this.flpSkills.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpSkills.Location = new System.Drawing.Point(29, 250);
-            this.flpSkills.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.flpSkills.Name = "flpSkills";
-            this.flpSkills.Size = new System.Drawing.Size(488, 78);
-            this.flpSkills.TabIndex = 53;
+            flpSkills.Dock = DockStyle.Fill;
+            flpSkills.Location = new Point(29, 250);
+            flpSkills.Margin = new Padding(3, 4, 3, 4);
+            flpSkills.Name = "flpSkills";
+            flpSkills.Size = new Size(488, 78);
+            flpSkills.TabIndex = 53;
             // 
             // guna2Panel5
             // 
-            this.guna2Panel5.Controls.Add(this.lblWorkingType);
-            this.guna2Panel5.CustomizableEdges = customizableEdges7;
-            this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel5.Location = new System.Drawing.Point(29, 197);
-            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            this.guna2Panel5.Size = new System.Drawing.Size(488, 53);
-            this.guna2Panel5.TabIndex = 4;
+            guna2Panel5.Controls.Add(lblWorkingType);
+            guna2Panel5.CustomizableEdges = customizableEdges7;
+            guna2Panel5.Dock = DockStyle.Top;
+            guna2Panel5.Location = new Point(29, 197);
+            guna2Panel5.Margin = new Padding(3, 4, 3, 4);
+            guna2Panel5.Name = "guna2Panel5";
+            guna2Panel5.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2Panel5.Size = new Size(488, 53);
+            guna2Panel5.TabIndex = 4;
             // 
             // lblWorkingType
             // 
-            this.lblWorkingType.AutoSize = false;
-            this.lblWorkingType.BackColor = System.Drawing.Color.Transparent;
-            this.lblWorkingType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblWorkingType.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblWorkingType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
-            this.lblWorkingType.Location = new System.Drawing.Point(0, 0);
-            this.lblWorkingType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.lblWorkingType.Name = "lblWorkingType";
-            this.lblWorkingType.Size = new System.Drawing.Size(488, 53);
-            this.lblWorkingType.TabIndex = 54;
-            this.lblWorkingType.Text = "Working Type";
-            this.lblWorkingType.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            lblWorkingType.AutoSize = false;
+            lblWorkingType.BackColor = Color.Transparent;
+            lblWorkingType.Dock = DockStyle.Fill;
+            lblWorkingType.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblWorkingType.ForeColor = Color.FromArgb(65, 64, 66);
+            lblWorkingType.Location = new Point(0, 0);
+            lblWorkingType.Margin = new Padding(3, 4, 3, 4);
+            lblWorkingType.Name = "lblWorkingType";
+            lblWorkingType.Size = new Size(488, 53);
+            lblWorkingType.TabIndex = 54;
+            lblWorkingType.Text = "Working Type";
+            lblWorkingType.TextAlignment = ContentAlignment.MiddleLeft;
             // 
             // guna2Panel4
             // 
-            this.guna2Panel4.Controls.Add(this.lblCompany);
-            this.guna2Panel4.Controls.Add(this.guna2Panel6);
-            this.guna2Panel4.Controls.Add(this.ptbCompanyPicture);
-            this.guna2Panel4.CustomizableEdges = customizableEdges11;
-            this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel4.Location = new System.Drawing.Point(29, 128);
-            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            this.guna2Panel4.Size = new System.Drawing.Size(488, 69);
-            this.guna2Panel4.TabIndex = 3;
+            guna2Panel4.Controls.Add(lblCompany);
+            guna2Panel4.Controls.Add(guna2Panel6);
+            guna2Panel4.Controls.Add(ptbCompanyPicture);
+            guna2Panel4.CustomizableEdges = customizableEdges11;
+            guna2Panel4.Dock = DockStyle.Top;
+            guna2Panel4.Location = new Point(29, 128);
+            guna2Panel4.Margin = new Padding(3, 4, 3, 4);
+            guna2Panel4.Name = "guna2Panel4";
+            guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2Panel4.Size = new Size(488, 69);
+            guna2Panel4.TabIndex = 3;
             // 
             // lblCompany
             // 
-            this.lblCompany.AutoSize = false;
-            this.lblCompany.BackColor = System.Drawing.Color.Transparent;
-            this.lblCompany.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCompany.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCompany.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
-            this.lblCompany.Location = new System.Drawing.Point(76, 0);
-            this.lblCompany.Margin = new System.Windows.Forms.Padding(17, 4, 3, 4);
-            this.lblCompany.Name = "lblCompany";
-            this.lblCompany.Size = new System.Drawing.Size(412, 69);
-            this.lblCompany.TabIndex = 3;
-            this.lblCompany.Text = "Company";
-            this.lblCompany.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            lblCompany.AutoSize = false;
+            lblCompany.BackColor = Color.Transparent;
+            lblCompany.Dock = DockStyle.Fill;
+            lblCompany.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCompany.ForeColor = Color.FromArgb(65, 64, 66);
+            lblCompany.Location = new Point(76, 0);
+            lblCompany.Margin = new Padding(17, 4, 3, 4);
+            lblCompany.Name = "lblCompany";
+            lblCompany.Size = new Size(412, 69);
+            lblCompany.TabIndex = 3;
+            lblCompany.Text = "Company";
+            lblCompany.TextAlignment = ContentAlignment.MiddleLeft;
             // 
             // guna2Panel6
             // 
-            this.guna2Panel6.CustomizableEdges = customizableEdges9;
-            this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel6.Location = new System.Drawing.Point(59, 0);
-            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            this.guna2Panel6.Size = new System.Drawing.Size(17, 69);
-            this.guna2Panel6.TabIndex = 3;
+            guna2Panel6.CustomizableEdges = customizableEdges9;
+            guna2Panel6.Dock = DockStyle.Left;
+            guna2Panel6.Location = new Point(59, 0);
+            guna2Panel6.Margin = new Padding(3, 4, 3, 4);
+            guna2Panel6.Name = "guna2Panel6";
+            guna2Panel6.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2Panel6.Size = new Size(17, 69);
+            guna2Panel6.TabIndex = 3;
             // 
             // guna2Panel3
             // 
-            this.guna2Panel3.Controls.Add(this.lblNameJob);
-            this.guna2Panel3.CustomizableEdges = customizableEdges13;
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel3.Location = new System.Drawing.Point(29, 48);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            this.guna2Panel3.Size = new System.Drawing.Size(488, 80);
-            this.guna2Panel3.TabIndex = 2;
+            guna2Panel3.Controls.Add(lblNameJob);
+            guna2Panel3.CustomizableEdges = customizableEdges13;
+            guna2Panel3.Dock = DockStyle.Top;
+            guna2Panel3.Location = new Point(29, 48);
+            guna2Panel3.Margin = new Padding(3, 4, 3, 4);
+            guna2Panel3.Name = "guna2Panel3";
+            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            guna2Panel3.Size = new Size(488, 80);
+            guna2Panel3.TabIndex = 2;
             // 
             // lblNameJob
             // 
-            this.lblNameJob.AutoSize = false;
-            this.lblNameJob.BackColor = System.Drawing.Color.Transparent;
-            this.lblNameJob.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblNameJob.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNameJob.Location = new System.Drawing.Point(0, 0);
-            this.lblNameJob.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.lblNameJob.Name = "lblNameJob";
-            this.lblNameJob.Size = new System.Drawing.Size(488, 80);
-            this.lblNameJob.TabIndex = 0;
-            this.lblNameJob.Text = "Name Job";
-            this.lblNameJob.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            lblNameJob.AutoSize = false;
+            lblNameJob.BackColor = Color.Transparent;
+            lblNameJob.Dock = DockStyle.Fill;
+            lblNameJob.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNameJob.Location = new Point(0, 0);
+            lblNameJob.Margin = new Padding(3, 4, 3, 4);
+            lblNameJob.Name = "lblNameJob";
+            lblNameJob.Size = new Size(488, 80);
+            lblNameJob.TabIndex = 0;
+            lblNameJob.Text = "Name Job";
+            lblNameJob.TextAlignment = ContentAlignment.MiddleLeft;
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.Controls.Add(this.lblDatePuslish);
-            this.guna2Panel2.CustomizableEdges = customizableEdges15;
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.Location = new System.Drawing.Point(29, 0);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            this.guna2Panel2.Size = new System.Drawing.Size(488, 48);
-            this.guna2Panel2.TabIndex = 1;
+            guna2Panel2.Controls.Add(lblDatePuslish);
+            guna2Panel2.CustomizableEdges = customizableEdges15;
+            guna2Panel2.Dock = DockStyle.Top;
+            guna2Panel2.Location = new Point(29, 0);
+            guna2Panel2.Margin = new Padding(3, 4, 3, 4);
+            guna2Panel2.Name = "guna2Panel2";
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2Panel2.Size = new Size(488, 48);
+            guna2Panel2.TabIndex = 1;
             // 
             // lblDatePuslish
             // 
-            this.lblDatePuslish.AutoSize = false;
-            this.lblDatePuslish.BackColor = System.Drawing.Color.Transparent;
-            this.lblDatePuslish.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDatePuslish.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDatePuslish.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
-            this.lblDatePuslish.Location = new System.Drawing.Point(0, 0);
-            this.lblDatePuslish.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.lblDatePuslish.Name = "lblDatePuslish";
-            this.lblDatePuslish.Size = new System.Drawing.Size(488, 48);
-            this.lblDatePuslish.TabIndex = 54;
-            this.lblDatePuslish.Text = "date publish";
-            this.lblDatePuslish.TextAlignment = System.Drawing.ContentAlignment.BottomLeft;
+            lblDatePuslish.AutoSize = false;
+            lblDatePuslish.BackColor = Color.Transparent;
+            lblDatePuslish.Dock = DockStyle.Fill;
+            lblDatePuslish.Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDatePuslish.ForeColor = Color.FromArgb(65, 64, 66);
+            lblDatePuslish.Location = new Point(0, 0);
+            lblDatePuslish.Margin = new Padding(3, 4, 3, 4);
+            lblDatePuslish.Name = "lblDatePuslish";
+            lblDatePuslish.Size = new Size(488, 48);
+            lblDatePuslish.TabIndex = 54;
+            lblDatePuslish.Text = "date publish";
+            lblDatePuslish.TextAlignment = ContentAlignment.BottomLeft;
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.CustomizableEdges = customizableEdges17;
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            this.guna2Panel1.Size = new System.Drawing.Size(29, 328);
-            this.guna2Panel1.TabIndex = 0;
+            guna2Panel1.CustomizableEdges = customizableEdges17;
+            guna2Panel1.Dock = DockStyle.Left;
+            guna2Panel1.Location = new Point(0, 0);
+            guna2Panel1.Margin = new Padding(3, 4, 3, 4);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            guna2Panel1.Size = new Size(29, 328);
+            guna2Panel1.TabIndex = 0;
             // 
             // UCInformation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.pnWrap);
-            this.Margin = new System.Windows.Forms.Padding(11, 3, 11, 13);
-            this.Name = "UCInformation";
-            this.Size = new System.Drawing.Size(550, 421);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCompanyPicture)).EndInit();
-            this.pnWrap.ResumeLayout(false);
-            this.guna2Panel7.ResumeLayout(false);
-            this.pnBody.ResumeLayout(false);
-            this.guna2Panel5.ResumeLayout(false);
-            this.guna2Panel4.ResumeLayout(false);
-            this.guna2Panel3.ResumeLayout(false);
-            this.guna2Panel2.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Transparent;
+            Controls.Add(pnWrap);
+            Margin = new Padding(11, 3, 11, 13);
+            Name = "UCInformation";
+            Size = new Size(550, 421);
+            ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).EndInit();
+            pnWrap.ResumeLayout(false);
+            guna2Panel7.ResumeLayout(false);
+            pnBody.ResumeLayout(false);
+            guna2Panel5.ResumeLayout(false);
+            guna2Panel4.ResumeLayout(false);
+            guna2Panel3.ResumeLayout(false);
+            guna2Panel2.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion

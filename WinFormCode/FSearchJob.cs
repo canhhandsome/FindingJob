@@ -27,7 +27,7 @@ namespace WinFormProject
             filterjobs = jobDAO.FetchAvailableJobs();
             SetLimit();
             FillJob(this.filterjobs);
-            fFilter = new FFilter(filterjobs);
+            fFilter = new FFilter(filterjobs.Skip(offset).Take(limit).ToList());
             fFilter.ListReady += fFilter_ListReady;
         }
         private void UCInformation_SkillButtonClicked(object sender, string skillText)
