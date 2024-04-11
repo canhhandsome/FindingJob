@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jVQ1FSZ+oFF1goLjqodDc+BNZuQyp0nnw/kmDyaqh06k8hFBPKxh3K5tO05vu0h1w8SoYsSx500hRKYjF1NFGQ==",
+  "dgSpecHash": "lA0cR47ImvUuN56HRx2JtuTBUE4rZhVxLJfPArKRa/SMrJ++NwOjz6EHbf33FyBnrjTTA+TVCQuwhLNSmDT+AQ==",
   "success": true,
-  "projectFilePath": "D:\\Window Programming\\Project\\New folder\\FindingJob\\WinFormProject.csproj",
+  "projectFilePath": "D:\\Window Programming\\Project\\FindingJob\\WinFormProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TIEN TOAN\\.nuget\\packages\\dot-net-transitions\\1.2.1\\dot-net-transitions.1.2.1.nupkg.sha512",
     "C:\\Users\\TIEN TOAN\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",

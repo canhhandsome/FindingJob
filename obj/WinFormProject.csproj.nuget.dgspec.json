@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Window Programming\\Project\\New folder\\FindingJob\\WinFormProject.csproj": {}
+    "D:\\Window Programming\\Project\\FindingJob\\WinFormProject.csproj": {}
   },
   "projects": {
-    "D:\\Window Programming\\Project\\New folder\\FindingJob\\WinFormProject.csproj": {
+    "D:\\Window Programming\\Project\\FindingJob\\WinFormProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Window Programming\\Project\\New folder\\FindingJob\\WinFormProject.csproj",
+        "projectUniqueName": "D:\\Window Programming\\Project\\FindingJob\\WinFormProject.csproj",
         "projectName": "WinFormProject",
-        "projectPath": "D:\\Window Programming\\Project\\New folder\\FindingJob\\WinFormProject.csproj",
+        "projectPath": "D:\\Window Programming\\Project\\FindingJob\\WinFormProject.csproj",
         "packagesPath": "C:\\Users\\TIEN TOAN\\.nuget\\packages\\",
-        "outputPath": "D:\\Window Programming\\Project\\New folder\\FindingJob\\obj\\",
+        "outputPath": "D:\\Window Programming\\Project\\FindingJob\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TIEN TOAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
