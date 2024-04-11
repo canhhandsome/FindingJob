@@ -35,7 +35,7 @@ namespace WinFormProject.WinFormCode
             lblDateEnd.Text = "Expired at: " + job.DateEnd.ToString("dd/MM/yyyy");
             lblDatePuslish.Text = "Publish at: " + job.DatePublish.ToString("dd/MM/yyyy");
             lblNameJob.Text = job.Name;
-            lblStatus.Text = job.Status;
+            lblStatus.Text = job.Status.ToUpper();
             lblWorkingType.Text = job.WorkingForm;
             foreach (string s in job.SkillList)
             {

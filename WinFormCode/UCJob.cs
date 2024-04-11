@@ -36,7 +36,7 @@ namespace WinFormProject
         private void UCJob_Load(object sender, EventArgs e)
         {
             lblNameJob.Text = job.Name;
-            lblStatus.Text = job.Status;
+            lblStatus.Text = job.Status.ToUpper();
             lblDatePuslish.Text = "Posted " + PublishTime();
             lblDateEnd.Text = "Expired after " + ExpiredTime();
             lblWorkingType.Text = job.WorkingForm;
@@ -49,7 +49,7 @@ namespace WinFormProject
                     btnSkill.Show();
                     flpSkills.Width += btnSkill.Width + 10;
                     flpSkills.Controls.Add(btnSkill);
-                } 
+                }
             }
         }
 
@@ -77,7 +77,7 @@ namespace WinFormProject
 
         private string ExpiredTime()
         {
-            TimeSpan timeDifference =job.DateEnd - DateTime.Now;
+            TimeSpan timeDifference = job.DateEnd - DateTime.Now;
 
             if (timeDifference.TotalMinutes < 0)
             {
