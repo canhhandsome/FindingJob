@@ -63,6 +63,8 @@ namespace WinFormProject
             dtpkBirthDate.Enabled = false;
             rdoFemale.Enabled = false;
             rdoMale.Enabled = false;
+            btnEditJobPreferences.Visible = false;
+            btnJobPreference.Visible = true;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -89,6 +91,8 @@ namespace WinFormProject
             dtpkBirthDate.Enabled = true;
             rdoMale.Enabled = true;
             rdoFemale.Enabled = true;
+            btnEditJobPreferences.Visible = true;
+            btnJobPreference.Visible = false;
         }
         private void btnChooseNewCV_Click(object sender, EventArgs e)
         {
