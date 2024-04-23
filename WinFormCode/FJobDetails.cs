@@ -38,7 +38,6 @@ namespace WinFormProject
             lblWorkingTime.ForeColor = Color.FromArgb(166, 166, 166);
             lblCompanySize.ForeColor = Color.FromArgb(166, 166, 166);
             lblCompanyType.ForeColor = Color.FromArgb(166, 166, 166);
-            btnApply.ColorBackground = Color.FromArgb(237, 27, 47);
             lblJobName.Text = job.Name;
             lblCompany.Text = company.INFO.Name;
             lblSalary.Text = job.Salary;
@@ -79,8 +78,6 @@ namespace WinFormProject
             else
             {
                 btnApply.Enabled = true;
-                btnApply.ColorBackground = Color.FromArgb(176, 226, 243);
-                btnApply.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
             }
         }
         private void btnBack_Click(object sender, EventArgs e)
