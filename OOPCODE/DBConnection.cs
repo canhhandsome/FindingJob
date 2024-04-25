@@ -507,6 +507,42 @@ namespace WinFormProject
                 conn.Close();
             }
         }
+
+        public List<Interview> FetchAllInterviews(string strFetch)
+        {
+            List<Interview> lst = new List<Interview> ();
+            try
+            {
+
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        object idjs = reader["IdJSeeker"];
+                        object idj = reader["IdJob"];
+                        object tinter = reader["TimeInterview"];
+                        object dinter = reader["DateInterview"];
+
+                        Interview inter = new Interview(idjs.ToString().Trim(), idj.ToString().Trim(), tinter.ToString().Trim(), (DateTime)dinter);
+                        lst.Add(inter);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Operation failed. Error: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return lst;
+        }
     }
 }
 

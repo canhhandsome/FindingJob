@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormProject.WinFormCode;
 
 namespace WinFormProject
 {
@@ -43,11 +44,15 @@ namespace WinFormProject
         }
         private void btnAnswer_Click(object sender, EventArgs e)
         {
-            Guna2Button button = (Guna2Button)sender;
             ApplyDAO applyDao = new ApplyDAO();
-            applyDao.UpdateStatus(button.Text, apply);
             FAnswer fAnswer = new FAnswer(apply, job);
             fAnswer.Show();
+        }
+
+        private void btnInterview_Click(object sender, EventArgs e)
+        {
+            FScheduleInterview fScheduleInterview = new FScheduleInterview(apply);
+            fScheduleInterview.Show();
         }
     }
 }

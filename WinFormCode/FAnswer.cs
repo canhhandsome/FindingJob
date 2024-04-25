@@ -28,15 +28,16 @@ namespace WinFormProject
         {
             AlertDAO dAO = new AlertDAO();
             Alert alert = new Alert(job.CompanyID, apply.JSeekerID, txtSubject.Text, txtContent.Text, job.Jobid);
+            ApplyDAO applyDAO = new ApplyDAO();
+            applyDAO.UpdateStatus(cbbStatus.Text, apply);
             dAO.InsertAlert(alert);
             this.Close();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            ApplyDAO applyDAO = new ApplyDAO();
-            applyDAO.UpdateStatus("Waiting", apply);
             this.Close();
         }
+
     }
 }

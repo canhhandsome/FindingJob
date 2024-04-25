@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblTo = new Label();
             lblToT = new Label();
             lblSubject = new Label();
@@ -36,6 +39,9 @@
             btnCancel = new Button();
             btnSend = new Button();
             txtSubject = new ReaLTaiizor.Controls.HopeTextBox();
+            cbbStatus = new Guna.UI2.WinForms.Guna2ComboBox();
+            guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(components);
             SuspendLayout();
             // 
             // lblTo
@@ -95,7 +101,7 @@
             txtContent.SelectedText = "";
             txtContent.SelectionLength = 0;
             txtContent.SelectionStart = 0;
-            txtContent.Size = new Size(769, 226);
+            txtContent.Size = new Size(769, 177);
             txtContent.TabIndex = 14;
             txtContent.TabStop = false;
             txtContent.Text = "Enter content";
@@ -110,7 +116,7 @@
             btnCancel.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
             btnCancel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancel.ForeColor = SystemColors.Control;
-            btnCancel.Location = new Point(756, 368);
+            btnCancel.Location = new Point(747, 321);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(134, 37);
             btnCancel.TabIndex = 28;
@@ -127,7 +133,7 @@
             btnSend.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
             btnSend.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnSend.ForeColor = SystemColors.ControlText;
-            btnSend.Location = new Point(598, 368);
+            btnSend.Location = new Point(589, 321);
             btnSend.Name = "btnSend";
             btnSend.Size = new Size(134, 37);
             btnSend.TabIndex = 29;
@@ -155,17 +161,46 @@
             txtSubject.SelectedText = "";
             txtSubject.SelectionLength = 0;
             txtSubject.SelectionStart = 0;
-            txtSubject.Size = new Size(389, 38);
+            txtSubject.Size = new Size(599, 38);
             txtSubject.TabIndex = 13;
             txtSubject.TabStop = false;
             txtSubject.UseSystemPasswordChar = false;
+            // 
+            // cbbStatus
+            // 
+            cbbStatus.BackColor = Color.Transparent;
+            cbbStatus.CustomizableEdges = customizableEdges3;
+            cbbStatus.DrawMode = DrawMode.OwnerDrawFixed;
+            cbbStatus.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbbStatus.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbbStatus.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbbStatus.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            cbbStatus.ForeColor = Color.FromArgb(68, 88, 112);
+            cbbStatus.ItemHeight = 30;
+            cbbStatus.Items.AddRange(new object[] { "Approve", "Decline" });
+            cbbStatus.Location = new Point(729, 56);
+            cbbStatus.Name = "cbbStatus";
+            cbbStatus.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            cbbStatus.Size = new Size(152, 36);
+            cbbStatus.TabIndex = 30;
+            // 
+            // guna2Elipse1
+            // 
+            guna2Elipse1.BorderRadius = 30;
+            guna2Elipse1.TargetControl = this;
+            // 
+            // guna2ShadowForm1
+            // 
+            guna2ShadowForm1.BorderRadius = 30;
+            guna2ShadowForm1.TargetForm = this;
             // 
             // FAnswer
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(918, 439);
+            ClientSize = new Size(918, 386);
+            Controls.Add(cbbStatus);
             Controls.Add(btnSend);
             Controls.Add(btnCancel);
             Controls.Add(txtContent);
@@ -174,6 +209,7 @@
             Controls.Add(lblSubject);
             Controls.Add(lblToT);
             Controls.Add(lblTo);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "FAnswer";
             StartPosition = FormStartPosition.CenterScreen;
@@ -191,5 +227,8 @@
         private Button btnCancel;
         private Button btnSend;
         private ReaLTaiizor.Controls.HopeTextBox txtSubject;
+        private Guna.UI2.WinForms.Guna2ComboBox cbbStatus;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
     }
 }
