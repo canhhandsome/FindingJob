@@ -512,6 +512,33 @@ namespace WinFormProject
                 conn.Close();
             }
         }
+        public List<string> FetchList(string strFetch)
+        {
+            List<string> resultList = new List<string>();
+
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string status = reader["status"].ToString();
+                    resultList.Add(status);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to fetch list: {ex.Message}");
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return resultList;
+        }
     }
 }
 

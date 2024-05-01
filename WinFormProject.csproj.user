@@ -38,6 +38,9 @@
     <Compile Update="WinFormCode\FHistory.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="WinFormCode\FJobByCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="WinFormCode\FJobCreation.cs">
       <SubType>Form</SubType>
     </Compile>

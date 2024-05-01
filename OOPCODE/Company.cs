@@ -12,6 +12,7 @@ namespace WinFormProject
         string companytype, companysize,taxidentification,description,websitelink,workingtimebegin,workingtimeend,workingform;
         CompanyDAO companyDAO = new CompanyDAO();
         JobDAO jobDao = new JobDAO();
+        ApplyDAO applyDAO = new ApplyDAO();
         Information information = new Information();
         List<Job> jobs = new List<Job>();
         Image AvatarData = null;
@@ -52,6 +53,22 @@ namespace WinFormProject
             workingtimebegin = otherinfo[5];
             workingtimeend = otherinfo[6];
         }
+
+        public bool CheckDownTrend()
+        {
+            foreach (Job j in jobs)
+            {
+                foreach (string str in applyDAO.FetchStatusApply(j.Jobid))
+                {
+                    if (str.ToLower() == "approve")
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
         public List<Job> Jobs
         {
             get { return jobs; }

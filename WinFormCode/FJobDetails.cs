@@ -17,6 +17,7 @@ namespace WinFormProject
     {
         string jsID;
         Job job;
+        JobDAO jobDAO = new JobDAO();
         Company company;
         ApplyDAO applyDAO = new ApplyDAO();
         CompanyAddtionalImageDAO cadi = new CompanyAddtionalImageDAO();
@@ -66,6 +67,11 @@ namespace WinFormProject
                     flowLayoutPanel4.Width += btnSkill.Width + 20;
                 }
             }
+            if (!company.CheckDownTrend())
+            {
+                lblStatus.Visible = false;
+            }
+            else lblStatus.Visible = true;
         }
         private void SetApplyButton()
         {
@@ -97,6 +103,12 @@ namespace WinFormProject
         {
             FCompanyDetail companydetail = new FCompanyDetail(company.INFO.ID);
             companydetail.Show();
+        }
+
+        private void btnSeeMore_Click(object sender, EventArgs e)
+        {
+            FJobByCompany fJobByCompany = new FJobByCompany(company.INFO.ID, jsID);
+            fJobByCompany.Show();
         }
     }
 }
