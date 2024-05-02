@@ -20,7 +20,13 @@ namespace WinFormProject
             InitializeComponent();
             this.Controls.Add(pdfViewer);
             pdfViewer.Dock = DockStyle.Fill;
-            PDFHandler.DisplayPDFInWebBrowser(jobseeker.CV, ref pdfViewer);
+            PDFHandler.DisplayPDFInWebBrowser(jobseeker.CVData.CVDataProperty, ref pdfViewer);
+            this.lblLikeCount.Text = jobseeker.CVData.Likes.ToString();
+        }
+
+        private void FCV_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

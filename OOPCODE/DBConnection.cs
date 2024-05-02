@@ -106,6 +106,85 @@ namespace WinFormProject
             }
             return "";
         }
+        public void FetchCV(string SQL, CV cv)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(SQL, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    cv.CVDataProperty = reader["CV"] as byte[];
+                    byte[] CvPicture = reader["CVPicture"] as byte[];
+                    cv.CVPictureProperty = ImageHandler.ByteArrayToImage(CvPicture);
+                    // Check if "Likes" column is DBNull
+                    if (!reader.IsDBNull(reader.GetOrdinal("LikeCount"))) // Ensure "LikeCount" is used instead of "Likes" if it's the correct column name
+                    {
+                        cv.Likes = (int)reader["LikeCount"]; // Use "LikeCount" if it's the correct column name
+                    }
+                    else
+                    {
+                        cv.Likes = 0; // Assign 0 if "LikeCount" is NULL
+                    }
+                    cv.JobSeekerID = reader["JobSeekerID"].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to fetch CV: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+
+        public void UpdateCV(string SQL, CV cv)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(SQL, conn);
+                cmd.Parameters.AddWithValue("@CV", cv.CVDataProperty);
+                cmd.Parameters.AddWithValue("@CVPicture", ImageHandler.ImageToByteArray(cv.CVPictureProperty)); // Assuming CVPicture is an Image object
+                cmd.Parameters.AddWithValue("@LikeCount", cv.Likes); // Change parameter name to match column name
+                cmd.Parameters.AddWithValue("@JobSeekerID", cv.JobSeekerID);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Fail to Update CV: " + e.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+        public void FetchCompanyLikeCV(string SQL, CompanyLikeCV companylikecv)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(SQL, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    // Populate the CompanyLikeCV object
+                    companylikecv.CompanyId = reader["CompanyID"].ToString();
+                    companylikecv.JobseekerId = reader["JobSeekerID"].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to fetch CompanyLikeCV: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
 
         public void FetchHiringJob(string strFetch, List<Job> jobs)
         {
@@ -248,8 +327,6 @@ namespace WinFormProject
                 SqlCommand cmd = new SqlCommand(SQL, conn);
                 cmd.Parameters.AddWithValue("@BDate", jobseeker.BDate);
                 cmd.Parameters.AddWithValue("@Avatar", (object)ImageHandler.ImageToByteArray(jobseeker.Avatar) ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@CV", (object)jobseeker.CV ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@CVPicture", (object)ImageHandler.ImageToByteArray(jobseeker.CVPicture) ?? DBNull.Value);
                 if (cmd.ExecuteNonQuery() > 0)
                     MessageBox.Show("Successfully");
                 else MessageBox.Show("Failed");

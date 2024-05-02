@@ -320,3 +320,4 @@ D:\Window Programming\Project\New folder\FindingJob\bin\Debug\net6.0-windows\run
 D:\Window Programming\Project\New folder\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FCompanyDetail.resources
 D:\Window Programming\Project\New folder\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FJobSKills.resources
 D:\Window Programming\Project\New folder\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.UCCarousel.resources
+D:\UTE\UTE 2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FCompanyCVView.resources

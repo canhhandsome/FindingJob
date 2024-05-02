@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormProject.OOPCODE;
+using WinFormProject.WinFormCode;
 
 namespace WinFormProject
 {
@@ -38,8 +40,12 @@ namespace WinFormProject
         private void btnProfile_Click(object sender, EventArgs e)
         {
             InformationDAO informationDAO = new InformationDAO();
-            FCV fcv = new FCV(new JobSeeker(informationDAO.GetCommonByID(apply.JSeekerID, "JobSeeker")));
-            fcv.Show();
+            CVDao cVDao = new CVDao();
+            //FCV fcv = new FCV(new JobSeeker(informationDAO.GetCommonByID(apply.JSeekerID, "JobSeeker")));
+            CV cv = new CV();
+            cVDao.FetchAllInformationOfCV(apply.JSeekerID, cv);
+            FCompanyCVView fCompanyCVView = new FCompanyCVView(cv,job.CompanyID);
+            fCompanyCVView.Show();
         }
         private void btnAnswer_Click(object sender, EventArgs e)
         {

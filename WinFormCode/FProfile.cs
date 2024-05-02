@@ -16,6 +16,7 @@ namespace WinFormProject
     {
         JobSeeker jobseeker;
         JobSeekerDAO jsDAO = new JobSeekerDAO();
+        CVDao cvdao = new CVDao();
         byte[] Cv = new byte[0];
         public FProfile(JobSeeker jobSeeker)
         {
@@ -40,7 +41,7 @@ namespace WinFormProject
             }
             else rdoFemale.Checked = true;
             if (jobseeker.Avatar != null) ptbAvatar.Image = jobseeker.Avatar;
-            if (jobseeker.CVPicture != null) ptbCV.Image = jobseeker.CVPicture;
+            if (jobseeker.CVData.CVPictureProperty != null) ptbCV.Image = jobseeker.CVData.CVPictureProperty;
         }
         private void btnEdit_Click(object sender, EventArgs e)
         {
@@ -70,6 +71,7 @@ namespace WinFormProject
             Enable_Save_Click();
             JobSeeker newjseeker = CreateJobSeeker();
             jsDAO.UpdateJobSeeker(newjseeker);
+            cvdao.UpdateCV(newjseeker.CVData);
             jobseeker = newjseeker;
         }
         private void Enable_Edit_Click()
@@ -119,12 +121,16 @@ namespace WinFormProject
             }
             else
             {
-                CvData = this.jobseeker.CV;
-                CVImage = this.jobseeker.CVPicture;
+                CvData = this.jobseeker.CVData.CVDataProperty;
+                CVImage = this.jobseeker.CVData.CVPictureProperty;
             }
+
             Information information = new Information(jobseeker.INFO.ID, txtFullName.Text, txtEmail.Text, txtAddress.Text, txtPhoneNumber.Text);
             if (rdoFemale.Checked) gender = "female"; else gender = "male";
-            return new JobSeeker(information, dtpkBirthDate.Value, txtCitizenID.Text, gender, AvatarData, CvData, CVImage);
+            jobseeker.CVData.CVDataProperty = CvData;
+            jobseeker.CVData.CVPictureProperty = CVImage;
+            jobseeker.CVData.JobSeekerID = information.ID;
+            return new JobSeeker(information, dtpkBirthDate.Value, txtCitizenID.Text, gender, AvatarData, jobseeker.CVData);
         }
 
         private void btnCV_Click(object sender, EventArgs e)
