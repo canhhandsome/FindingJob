@@ -28,16 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblDateT = new Label();
             ptbApplicantPicture = new PictureBox();
             lblApplicantNameT = new Label();
@@ -48,7 +46,6 @@
             guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            btnInterview = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)ptbApplicantPicture).BeginInit();
             guna2ShadowPanel1.SuspendLayout();
             guna2ShadowPanel2.SuspendLayout();
@@ -104,7 +101,6 @@
             // guna2ShadowPanel1
             // 
             guna2ShadowPanel1.BackColor = Color.Transparent;
-            guna2ShadowPanel1.Controls.Add(btnInterview);
             guna2ShadowPanel1.Controls.Add(btnAnswer);
             guna2ShadowPanel1.Controls.Add(btnProfile);
             guna2ShadowPanel1.Controls.Add(guna2ShadowPanel2);
@@ -121,7 +117,7 @@
             // 
             btnAnswer.BorderRadius = 10;
             btnAnswer.Cursor = Cursors.Hand;
-            btnAnswer.CustomizableEdges = customizableEdges3;
+            btnAnswer.CustomizableEdges = customizableEdges1;
             btnAnswer.DisabledState.BorderColor = Color.DarkGray;
             btnAnswer.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAnswer.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -129,9 +125,9 @@
             btnAnswer.FillColor = Color.FromArgb(176, 226, 243);
             btnAnswer.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
             btnAnswer.ForeColor = Color.Black;
-            btnAnswer.Location = new Point(151, 354);
+            btnAnswer.Location = new Point(54, 354);
             btnAnswer.Name = "btnAnswer";
-            btnAnswer.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnAnswer.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnAnswer.Size = new Size(107, 36);
             btnAnswer.TabIndex = 14;
             btnAnswer.Text = "Answer";
@@ -141,7 +137,7 @@
             // 
             btnProfile.BorderRadius = 10;
             btnProfile.Cursor = Cursors.Hand;
-            btnProfile.CustomizableEdges = customizableEdges5;
+            btnProfile.CustomizableEdges = customizableEdges3;
             btnProfile.DisabledState.BorderColor = Color.DarkGray;
             btnProfile.DisabledState.CustomBorderColor = Color.DarkGray;
             btnProfile.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -149,9 +145,9 @@
             btnProfile.FillColor = Color.FromArgb(176, 226, 243);
             btnProfile.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
             btnProfile.ForeColor = Color.Black;
-            btnProfile.Location = new Point(274, 354);
+            btnProfile.Location = new Point(247, 354);
             btnProfile.Name = "btnProfile";
-            btnProfile.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnProfile.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnProfile.Size = new Size(107, 36);
             btnProfile.TabIndex = 14;
             btnProfile.Text = "Profile";
@@ -175,44 +171,24 @@
             // guna2Panel2
             // 
             guna2Panel2.Controls.Add(lblApplicantNameT);
-            guna2Panel2.CustomizableEdges = customizableEdges7;
+            guna2Panel2.CustomizableEdges = customizableEdges5;
             guna2Panel2.Dock = DockStyle.Bottom;
             guna2Panel2.Location = new Point(0, 232);
             guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2Panel2.Size = new Size(387, 60);
             guna2Panel2.TabIndex = 12;
             // 
             // guna2Panel1
             // 
             guna2Panel1.Controls.Add(lblEmailT);
-            guna2Panel1.CustomizableEdges = customizableEdges9;
+            guna2Panel1.CustomizableEdges = customizableEdges7;
             guna2Panel1.Dock = DockStyle.Bottom;
             guna2Panel1.Location = new Point(0, 292);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2Panel1.Size = new Size(387, 42);
             guna2Panel1.TabIndex = 11;
-            // 
-            // btnInterview
-            // 
-            btnInterview.BorderRadius = 10;
-            btnInterview.Cursor = Cursors.Hand;
-            btnInterview.CustomizableEdges = customizableEdges1;
-            btnInterview.DisabledState.BorderColor = Color.DarkGray;
-            btnInterview.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnInterview.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnInterview.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnInterview.FillColor = Color.FromArgb(176, 226, 243);
-            btnInterview.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            btnInterview.ForeColor = Color.Black;
-            btnInterview.Location = new Point(30, 354);
-            btnInterview.Name = "btnInterview";
-            btnInterview.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnInterview.Size = new Size(107, 36);
-            btnInterview.TabIndex = 14;
-            btnInterview.Text = "Interview";
-            btnInterview.Click += btnInterview_Click;
             // 
             // UCApplicant
             // 
@@ -242,6 +218,5 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Button btnAnswer;
         private Guna.UI2.WinForms.Guna2Button btnProfile;
-        private Guna.UI2.WinForms.Guna2Button btnInterview;
     }
 }

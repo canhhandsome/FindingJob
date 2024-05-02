@@ -52,10 +52,12 @@
             guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             flpBody = new FlowLayoutPanel();
             guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            panel6 = new Panel();
-            lblTimeAdd = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            panel8 = new Panel();
+            guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             panel5 = new Panel();
             lblTime = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            panel6 = new Panel();
+            lblTimeAdd = new Guna.UI2.WinForms.Guna2HtmlLabel();
             panel4 = new Panel();
             lblJob = new Guna.UI2.WinForms.Guna2HtmlLabel();
             panel2 = new Panel();
@@ -70,8 +72,9 @@
             guna2Panel3.SuspendLayout();
             flpBody.SuspendLayout();
             guna2Panel4.SuspendLayout();
-            panel6.SuspendLayout();
+            panel8.SuspendLayout();
             panel5.SuspendLayout();
+            panel6.SuspendLayout();
             panel4.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -244,9 +247,9 @@
             // 
             flpBody.BackColor = Color.Transparent;
             flpBody.Controls.Add(guna2Panel4);
-            flpBody.Location = new Point(73, 31);
+            flpBody.Location = new Point(33, 22);
             flpBody.Name = "flpBody";
-            flpBody.Size = new Size(950, 233);
+            flpBody.Size = new Size(1036, 233);
             flpBody.TabIndex = 3;
             // 
             // guna2Panel4
@@ -254,8 +257,9 @@
             guna2Panel4.BackColor = Color.Transparent;
             guna2Panel4.BorderColor = Color.Black;
             guna2Panel4.BorderThickness = 1;
-            guna2Panel4.Controls.Add(panel6);
+            guna2Panel4.Controls.Add(panel8);
             guna2Panel4.Controls.Add(panel5);
+            guna2Panel4.Controls.Add(panel6);
             guna2Panel4.Controls.Add(panel4);
             guna2Panel4.Controls.Add(panel2);
             guna2Panel4.CustomizableEdges = customizableEdges1;
@@ -266,16 +270,58 @@
             guna2Panel4.Name = "guna2Panel4";
             guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Panel4.ShadowDecoration.Depth = 15;
-            guna2Panel4.Size = new Size(950, 34);
-            guna2Panel4.TabIndex = 1;
+            guna2Panel4.Size = new Size(1036, 34);
+            guna2Panel4.TabIndex = 2;
+            // 
+            // panel8
+            // 
+            panel8.Controls.Add(guna2HtmlLabel3);
+            panel8.Dock = DockStyle.Left;
+            panel8.Location = new Point(930, 0);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(106, 34);
+            panel8.TabIndex = 7;
+            // 
+            // guna2HtmlLabel3
+            // 
+            guna2HtmlLabel3.AutoSize = false;
+            guna2HtmlLabel3.BackColor = Color.Transparent;
+            guna2HtmlLabel3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel3.Location = new Point(0, 0);
+            guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            guna2HtmlLabel3.Size = new Size(129, 34);
+            guna2HtmlLabel3.TabIndex = 0;
+            guna2HtmlLabel3.Text = "Status";
+            guna2HtmlLabel3.TextAlignment = ContentAlignment.MiddleLeft;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(lblTime);
+            panel5.Dock = DockStyle.Left;
+            panel5.Location = new Point(810, 0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(120, 34);
+            panel5.TabIndex = 5;
+            // 
+            // lblTime
+            // 
+            lblTime.AutoSize = false;
+            lblTime.BackColor = Color.Transparent;
+            lblTime.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTime.Location = new Point(0, 0);
+            lblTime.Name = "lblTime";
+            lblTime.Size = new Size(129, 34);
+            lblTime.TabIndex = 0;
+            lblTime.Text = "Interview";
+            lblTime.TextAlignment = ContentAlignment.MiddleLeft;
             // 
             // panel6
             // 
             panel6.Controls.Add(lblTimeAdd);
-            panel6.Dock = DockStyle.Fill;
+            panel6.Dock = DockStyle.Left;
             panel6.Location = new Point(695, 0);
             panel6.Name = "panel6";
-            panel6.Size = new Size(126, 34);
+            panel6.Size = new Size(115, 34);
             panel6.TabIndex = 6;
             // 
             // lblTimeAdd
@@ -286,32 +332,10 @@
             lblTimeAdd.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblTimeAdd.Location = new Point(0, 0);
             lblTimeAdd.Name = "lblTimeAdd";
-            lblTimeAdd.Size = new Size(126, 34);
+            lblTimeAdd.Size = new Size(115, 34);
             lblTimeAdd.TabIndex = 0;
             lblTimeAdd.Text = "Date Add";
             lblTimeAdd.TextAlignment = ContentAlignment.MiddleLeft;
-            // 
-            // panel5
-            // 
-            panel5.Controls.Add(lblTime);
-            panel5.Dock = DockStyle.Right;
-            panel5.Location = new Point(821, 0);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(129, 34);
-            panel5.TabIndex = 5;
-            // 
-            // lblTime
-            // 
-            lblTime.AutoSize = false;
-            lblTime.BackColor = Color.Transparent;
-            lblTime.Dock = DockStyle.Fill;
-            lblTime.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTime.Location = new Point(0, 0);
-            lblTime.Name = "lblTime";
-            lblTime.Size = new Size(129, 34);
-            lblTime.TabIndex = 0;
-            lblTime.Text = "Interview";
-            lblTime.TextAlignment = ContentAlignment.MiddleLeft;
             // 
             // panel4
             // 
@@ -424,8 +448,9 @@
             guna2Panel3.ResumeLayout(false);
             flpBody.ResumeLayout(false);
             guna2Panel4.ResumeLayout(false);
-            panel6.ResumeLayout(false);
+            panel8.ResumeLayout(false);
             panel5.ResumeLayout(false);
+            panel6.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
@@ -449,10 +474,12 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private FlowLayoutPanel flpBody;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
-        public Panel panel6;
-        public Guna.UI2.WinForms.Guna2HtmlLabel lblTimeAdd;
+        public Panel panel8;
+        public Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         public Panel panel5;
         public Guna.UI2.WinForms.Guna2HtmlLabel lblTime;
+        public Panel panel6;
+        public Guna.UI2.WinForms.Guna2HtmlLabel lblTimeAdd;
         public Panel panel4;
         public Guna.UI2.WinForms.Guna2HtmlLabel lblJob;
         public Panel panel2;

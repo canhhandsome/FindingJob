@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jSO87vlvztCkTfS5ZN9cZXSGemGwE2zV1ICAGGuUx42vxOMeBKaVsgRevBdXsonJ2PfsSUewUZSe1H3JXtQn0g==",
+  "dgSpecHash": "SM8TdERgKMAYIjSs2j94BeWaKBtNWOPW0Z0sgJfenS0J3eGhuqRhgT3bE7S0jj3RT81FFONdErPWP6UKNYPDXA==",
   "success": true,
-  "projectFilePath": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormProject.csproj",
+  "projectFilePath": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Canh\\.nuget\\packages\\dot-net-transitions\\1.2.1\\dot-net-transitions.1.2.1.nupkg.sha512",
     "C:\\Users\\Canh\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",

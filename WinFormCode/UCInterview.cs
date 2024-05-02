@@ -29,7 +29,12 @@ namespace WinFormProject.WinFormCode
             ptbAvatar.Image = jsDAO.FetchImg(interview.IdJSeeker, "Avatar");
             lblTime.Text = interview.TimeInterview;
             lblTimeAdd.Text = interview.DateInterview.ToString("dd/MM/yyyy");
+            lblStatus.Text = interview.Status;
         }
 
+        private void lblJob_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

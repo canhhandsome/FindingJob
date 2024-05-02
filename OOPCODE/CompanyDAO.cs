@@ -41,6 +41,11 @@ namespace WinFormProject
             return conn.FetchCompanyById(strFetch, id);
         }
 
+        public string GetCompanyWithMostRecruitedCandidates()
+        {
+            string strFetch = string.Format($"Select IDcompany From GetCompanyWithMostRecruitedCandidates();");
+            return conn.FetchScalar(strFetch);
+        }
     }
     
 }

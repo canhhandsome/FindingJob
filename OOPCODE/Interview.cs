@@ -11,6 +11,7 @@ namespace WinFormProject
         private string idJSeeker = string.Empty;
         private string idJob = string.Empty;
         private string timeInterview = string.Empty;
+        private string status = string.Empty;   
         private DateTime dateInterview = DateTime.MinValue;
 
         public Interview() { }
@@ -21,6 +22,15 @@ namespace WinFormProject
             this.idJob = idJob;
             this.timeInterview = timeInterview;
             this.dateInterview = dateInterview;
+            this.status = "waiting";
+        }
+        public Interview(string idJSeeker, string idJob, string timeInterview, string status, DateTime dateInterview)
+        {
+            this.idJSeeker = idJSeeker;
+            this.idJob = idJob;
+            this.timeInterview = timeInterview;
+            this.dateInterview = dateInterview;
+            this.status = status;
         }
 
         public string IdJSeeker 
@@ -31,6 +41,9 @@ namespace WinFormProject
 
         public string TimeInterview 
         { get {  return timeInterview; } }
+
+        public string Status
+        { get { return status; } }
 
         public DateTime DateInterview 
         { get { return dateInterview; } }

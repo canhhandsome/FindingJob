@@ -15,7 +15,7 @@ namespace WinFormProject
         private string gender = string.Empty;
         private Image AvatarData = null;
         private byte[] CvData;
-        private Image CVpicture = null;
+        private Image CVpicture = null; 
 
         public JobSeeker()
         {

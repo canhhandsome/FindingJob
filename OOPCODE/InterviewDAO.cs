@@ -20,10 +20,28 @@ namespace WinFormProject
             conn.CRUD(strCRUD);
         }
 
+        public List<Interview> FetchInterviewByID(string jobID)
+        {
+            string strFetch = string.Format(@$"Select * FROM Interview WHERE idJob = '{jobID}'");
+            return conn.FetchAllInterviews(strFetch);
+        }
+        public List<Interview> FetchInterviewByID(string jsID, string jobID)
+        {
+            string strFetch = string.Format(@$"Select * FROM Interview WHERE idJob = '{jobID}' and idJSeeker = '{jsID}'");
+            return conn.FetchAllInterviews(strFetch);
+        }
+
         public List<Interview> AllInterview()
         {
             string strFetch = string.Format(@$"Select * FROM Interview");
             return conn.FetchAllInterviews(strFetch);
         }
+
+        public Interview FetchInterview(string jsID, string jobID)
+        {
+            string strFetch = string.Format(@$"Select * FROM Interview WHERE idJob = '{jobID}' and idJSeeker = '{jsID}'");
+            return conn.FetchInterview(strFetch);
+        }
+
     }
 }

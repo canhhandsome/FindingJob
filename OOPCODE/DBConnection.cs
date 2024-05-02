@@ -1,5 +1,6 @@
 ﻿using System.Data;
 using System.Data.SqlClient;
+using System.Text.Json.Serialization;
 using WinFormProject.OOPCODE;
 
 namespace WinFormProject
@@ -526,8 +527,9 @@ namespace WinFormProject
                         object idj = reader["IdJob"];
                         object tinter = reader["TimeInterview"];
                         object dinter = reader["DateInterview"];
+                        object status = reader["Status"];
 
-                        Interview inter = new Interview(idjs.ToString().Trim(), idj.ToString().Trim(), tinter.ToString().Trim(), (DateTime)dinter);
+                        Interview inter = new Interview(idjs.ToString().Trim(), idj.ToString().Trim(), tinter.ToString().Trim(), status.ToString().Trim(),(DateTime)dinter);
                         lst.Add(inter);
                     }
                 }
@@ -542,6 +544,41 @@ namespace WinFormProject
                 conn.Close();
             }
             return lst;
+        }
+
+        public Interview FetchInterview(string strFetch)
+        {
+            Interview interview = new Interview();
+            try
+            {
+
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        object idjs = reader["IdJSeeker"];
+                        object idj = reader["IdJob"];
+                        object tinter = reader["TimeInterview"];
+                        object dinter = reader["DateInterview"];
+                        object status = reader["Status"];
+
+                        interview = new Interview(idjs.ToString().Trim(), idj.ToString().Trim(), tinter.ToString().Trim(), status.ToString().Trim(), (DateTime)dinter);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Operation failed. Error: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return interview;
         }
     }
 }

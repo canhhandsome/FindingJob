@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormProject.WinFormCode;
 
 namespace WinFormProject
 {
@@ -27,9 +28,9 @@ namespace WinFormProject
         private void btnSend_Click(object sender, EventArgs e)
         {
             AlertDAO dAO = new AlertDAO();
-            Alert alert = new Alert(job.CompanyID, apply.JSeekerID, txtSubject.Text, txtContent.Text, job.Jobid);
+            Alert alert = new Alert(job.CompanyID, apply.JSeekerID, cbbSubject.Text, txtContent.Text, job.Jobid);
             ApplyDAO applyDAO = new ApplyDAO();
-            applyDAO.UpdateStatus(cbbStatus.Text, apply);
+            applyDAO.UpdateStatus(cbbSubject.Text, apply);
             dAO.InsertAlert(alert);
             this.Close();
         }
@@ -39,5 +40,19 @@ namespace WinFormProject
             this.Close();
         }
 
+        private void cbbSubject_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cbbSubject.SelectedIndex == 0)
+            {
+                btnInterview.Visible = true;
+            }
+            else btnInterview .Visible = false;
+        }
+
+        private void btnInterview_Click(object sender, EventArgs e)
+        {
+            FScheduleInterview fScheduleInterview = new FScheduleInterview(apply);
+            fScheduleInterview.Show();
+        }
     }
 }

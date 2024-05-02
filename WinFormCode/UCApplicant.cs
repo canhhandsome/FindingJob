@@ -19,6 +19,7 @@ namespace WinFormProject
         JobDAO jobDAO = new JobDAO();
         Apply apply = new Apply();
         Job job = new Job();
+        InformationDAO info = new InformationDAO();
         Image applicantAvatar = null;
         public UCApplicant(Apply apply, Job job)
         {
@@ -26,15 +27,15 @@ namespace WinFormProject
             this.apply = apply;
             this.job = job;
             this.MaximumSize = new System.Drawing.Size(469, 543);
-            FillInTemplate();
+            FillInfor();
         }
-        public void FillInTemplate()
+        public void FillInfor()
         {
             lblApplicantNameT.Text = jsDAO.FetchName(apply.JSeekerID);
-            lblEmailT.Text = jobDAO.FetchName(apply.JobID);
             lblDateT.Text = "Apply at " + apply.DATE.ToString("dd/MM/yyyy");
             applicantAvatar = jsDAO.FetchImg(apply.JSeekerID, "Avatar");
             if (applicantAvatar != null) ptbApplicantPicture.Image = applicantAvatar;
+            lblEmailT.Text = info.GetCommonByID(apply.JSeekerID, "JobSeeker").Email;
         }
         private void btnProfile_Click(object sender, EventArgs e)
         {
@@ -49,10 +50,5 @@ namespace WinFormProject
             fAnswer.Show();
         }
 
-        private void btnInterview_Click(object sender, EventArgs e)
-        {
-            FScheduleInterview fScheduleInterview = new FScheduleInterview(apply);
-            fScheduleInterview.Show();
-        }
     }
 }
