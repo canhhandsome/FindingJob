@@ -31,12 +31,14 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FCompany));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroControlBox3 = new ReaLTaiizor.Controls.MetroControlBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -46,6 +48,7 @@
             this.btnPostJob = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnBody = new System.Windows.Forms.Panel();
+            this.btnApplicant = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -92,6 +95,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(59)))), ((int)(((byte)(96)))));
             this.panel2.Controls.Add(this.btnLogOut);
+            this.panel2.Controls.Add(this.btnApplicant);
             this.panel2.Controls.Add(this.btnSetting);
             this.panel2.Controls.Add(this.btnHistory);
             this.panel2.Controls.Add(this.btnPostJob);
@@ -122,8 +126,8 @@
             this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogOut.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnLogOut.Location = new System.Drawing.Point(0, 446);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnLogOut.Location = new System.Drawing.Point(0, 541);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(5);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.ShadowDecoration.Color = System.Drawing.Color.White;
             this.btnLogOut.ShadowDecoration.CustomizableEdges = customizableEdges2;
@@ -137,7 +141,7 @@
             // btnSetting
             // 
             this.btnSetting.BorderRadius = 20;
-            this.btnSetting.CustomizableEdges = customizableEdges3;
+            this.btnSetting.CustomizableEdges = customizableEdges5;
             this.btnSetting.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSetting.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSetting.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -149,15 +153,15 @@
             this.btnSetting.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.btnSetting.HoverState.Font = new System.Drawing.Font("Cooper Black", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSetting.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnSetting.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnSetting.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
             this.btnSetting.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSetting.ImageSize = new System.Drawing.Size(50, 50);
             this.btnSetting.Location = new System.Drawing.Point(0, 351);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(5);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.ShadowDecoration.Color = System.Drawing.Color.White;
-            this.btnSetting.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.btnSetting.ShadowDecoration.CustomizableEdges = customizableEdges6;
             this.btnSetting.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(2);
             this.btnSetting.Size = new System.Drawing.Size(231, 95);
             this.btnSetting.TabIndex = 2;
@@ -168,7 +172,7 @@
             // btnHistory
             // 
             this.btnHistory.BorderRadius = 20;
-            this.btnHistory.CustomizableEdges = customizableEdges5;
+            this.btnHistory.CustomizableEdges = customizableEdges7;
             this.btnHistory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnHistory.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnHistory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -180,15 +184,15 @@
             this.btnHistory.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.btnHistory.HoverState.Font = new System.Drawing.Font("Cooper Black", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnHistory.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnHistory.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btnHistory.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.btnHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnHistory.Image")));
             this.btnHistory.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnHistory.ImageSize = new System.Drawing.Size(50, 50);
             this.btnHistory.Location = new System.Drawing.Point(0, 256);
-            this.btnHistory.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnHistory.Margin = new System.Windows.Forms.Padding(5);
             this.btnHistory.Name = "btnHistory";
             this.btnHistory.ShadowDecoration.Color = System.Drawing.Color.White;
-            this.btnHistory.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.btnHistory.ShadowDecoration.CustomizableEdges = customizableEdges8;
             this.btnHistory.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(2);
             this.btnHistory.Size = new System.Drawing.Size(231, 95);
             this.btnHistory.TabIndex = 1;
@@ -199,7 +203,7 @@
             // btnPostJob
             // 
             this.btnPostJob.BorderRadius = 20;
-            this.btnPostJob.CustomizableEdges = customizableEdges7;
+            this.btnPostJob.CustomizableEdges = customizableEdges9;
             this.btnPostJob.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnPostJob.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnPostJob.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -211,15 +215,15 @@
             this.btnPostJob.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.btnPostJob.HoverState.Font = new System.Drawing.Font("Cooper Black", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPostJob.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnPostJob.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.btnPostJob.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.btnPostJob.Image = ((System.Drawing.Image)(resources.GetObject("btnPostJob.Image")));
             this.btnPostJob.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPostJob.ImageSize = new System.Drawing.Size(50, 50);
             this.btnPostJob.Location = new System.Drawing.Point(0, 161);
-            this.btnPostJob.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnPostJob.Margin = new System.Windows.Forms.Padding(5);
             this.btnPostJob.Name = "btnPostJob";
             this.btnPostJob.ShadowDecoration.Color = System.Drawing.Color.White;
-            this.btnPostJob.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            this.btnPostJob.ShadowDecoration.CustomizableEdges = customizableEdges10;
             this.btnPostJob.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(2);
             this.btnPostJob.Size = new System.Drawing.Size(231, 95);
             this.btnPostJob.TabIndex = 0;
@@ -248,6 +252,36 @@
             this.pnBody.Name = "pnBody";
             this.pnBody.Size = new System.Drawing.Size(1251, 899);
             this.pnBody.TabIndex = 4;
+            // 
+            // btnApplicant
+            // 
+            this.btnApplicant.BorderRadius = 20;
+            this.btnApplicant.CustomizableEdges = customizableEdges3;
+            this.btnApplicant.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnApplicant.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnApplicant.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnApplicant.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnApplicant.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnApplicant.FillColor = System.Drawing.Color.Transparent;
+            this.btnApplicant.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnApplicant.ForeColor = System.Drawing.Color.White;
+            this.btnApplicant.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.btnApplicant.HoverState.Font = new System.Drawing.Font("Cooper Black", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnApplicant.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnApplicant.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnApplicant.Image = ((System.Drawing.Image)(resources.GetObject("btnApplicant.Image")));
+            this.btnApplicant.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnApplicant.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnApplicant.Location = new System.Drawing.Point(0, 446);
+            this.btnApplicant.Margin = new System.Windows.Forms.Padding(5);
+            this.btnApplicant.Name = "btnApplicant";
+            this.btnApplicant.ShadowDecoration.Color = System.Drawing.Color.White;
+            this.btnApplicant.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.btnApplicant.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(2);
+            this.btnApplicant.Size = new System.Drawing.Size(231, 95);
+            this.btnApplicant.TabIndex = 2;
+            this.btnApplicant.Text = "Applicants";
+            this.btnApplicant.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // FCompany
             // 
@@ -281,5 +315,6 @@
         private Guna.UI2.WinForms.Guna2Button btnSetting;
         private Guna.UI2.WinForms.Guna2Button btnHistory;
         private Guna.UI2.WinForms.Guna2Button btnPostJob;
+        private Guna.UI2.WinForms.Guna2Button btnApplicant;
     }
 }

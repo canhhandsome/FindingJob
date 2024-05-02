@@ -388,3 +388,7 @@ D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.pdb
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.genruntimeconfig.cache
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\ref\WinFormProject.dll
+D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FFindApplicant.resources
+D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FJobPreference.resources
+D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FJobPreferenceView.resources
+D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.UCCandidate.resources
