@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormProject.OOPCODE;
 using WinFormProject.WinFormCode;
 
 namespace WinFormProject
@@ -14,6 +15,7 @@ namespace WinFormProject
     public partial class FAlertView : Form
     {
         private Alert alert = new Alert();
+        private JobOffer JobOffer = new JobOffer();
         public FAlertView(Alert alert)
         {
             InitializeComponent();
@@ -25,6 +27,19 @@ namespace WinFormProject
             lblDateT.Text = alert.DateReply.ToString("dd/MM/yyyy");
             lblSubjectT.Text = alert.Subject;
             lblJobT.Text = jobDAO.FetchName(alert.JobID);
+            CheckStatus();
+        }
+        public FAlertView(JobOffer jobOffer)
+        {
+            InitializeComponent();
+            this.JobOffer = jobOffer;
+            CompanyDAO companyDAO = new CompanyDAO();
+            JobDAO jobDAO = new JobDAO();
+            llFromT.Text = companyDAO.FetchName(JobOffer.SenderID);
+            lblContentT.Text = JobOffer.Content;
+            lblDateT.Text = jobOffer.DateReply.ToString("dd/MM/yyyy");
+            lblSubjectT.Text = jobOffer.Subject;
+            lblJobT.Text = "JOB OFFER!!";
             CheckStatus();
         }
 

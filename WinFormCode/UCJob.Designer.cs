@@ -256,6 +256,7 @@
             pnWrap.ShadowDepth = 110;
             pnWrap.Size = new Size(550, 421);
             pnWrap.TabIndex = 53;
+            pnWrap.Paint += pnWrap_Paint;
             // 
             // lblCountApplicants
             // 

@@ -300,6 +300,29 @@ namespace WinFormProject
                 conn.Close();
             }
         }
+        public void FetchAllOffers(string strFetch, List<JobOffer> offers)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    offers.Add(new JobOffer(reader["id"].ToString(), reader["senderID"].ToString(), reader["recipientID"].ToString(), reader["subject"].ToString(), reader["content"].ToString()));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("them that bai" + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
         public JobPreference FetchJobPreference(string SQL)
         {
             // Implement code to execute SQL query and fetch data from the database

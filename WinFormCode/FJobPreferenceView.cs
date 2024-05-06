@@ -77,7 +77,8 @@ namespace WinFormProject.WinFormCode
 
         private void btnOffer_Click(object sender, EventArgs e)
         {
-            
+            FOffer fOffter = new FOffer(companyid, jobPreference);
+            fOffter.Show();
         }
     }
 }
