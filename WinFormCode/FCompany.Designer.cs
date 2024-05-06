@@ -43,6 +43,20 @@
             metroControlBox3 = new ReaLTaiizor.Controls.MetroControlBox();
             panel2 = new Panel();
             btnLogOut = new Guna.UI2.WinForms.Guna2Button();
+            btnSetting = new Guna.UI2.WinForms.Guna2Button();
+            btnInterviewView = new Guna.UI2.WinForms.Guna2Button();
+            btnHistory = new Guna.UI2.WinForms.Guna2Button();
+            btnPostJob = new Guna.UI2.WinForms.Guna2Button();
+            pictureBox2 = new PictureBox();
+            pnBody = new Panel();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            SuspendLayout();
+            panel1 = new Panel();
+            metroControlBox3 = new ReaLTaiizor.Controls.MetroControlBox();
+            panel2 = new Panel();
+            btnLogOut = new Guna.UI2.WinForms.Guna2Button();
             btnApplicant = new Guna.UI2.WinForms.Guna2Button();
             btnSetting = new Guna.UI2.WinForms.Guna2Button();
             btnHistory = new Guna.UI2.WinForms.Guna2Button();
@@ -60,12 +74,45 @@
             panel1.Controls.Add(metroControlBox3);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1297, 24);
+            panel1.TabIndex = 2;
+            panel1.BackColor = Color.WhiteSmoke;
+            panel1.Controls.Add(metroControlBox3);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1482, 32);
             panel1.TabIndex = 2;
             // 
             // metroControlBox3
             // 
+            metroControlBox3.CloseHoverBackColor = Color.FromArgb(183, 40, 40);
+            metroControlBox3.CloseHoverForeColor = Color.White;
+            metroControlBox3.CloseNormalForeColor = Color.Gray;
+            metroControlBox3.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
+            metroControlBox3.DisabledForeColor = Color.DimGray;
+            metroControlBox3.Dock = DockStyle.Right;
+            metroControlBox3.IsDerivedStyle = true;
+            metroControlBox3.Location = new Point(1197, 0);
+            metroControlBox3.Margin = new Padding(3, 2, 3, 2);
+            metroControlBox3.MaximizeBox = true;
+            metroControlBox3.MaximizeHoverBackColor = Color.FromArgb(238, 238, 238);
+            metroControlBox3.MaximizeHoverForeColor = Color.Gray;
+            metroControlBox3.MaximizeNormalForeColor = Color.Gray;
+            metroControlBox3.MinimizeBox = true;
+            metroControlBox3.MinimizeHoverBackColor = Color.FromArgb(238, 238, 238);
+            metroControlBox3.MinimizeHoverForeColor = Color.Gray;
+            metroControlBox3.MinimizeNormalForeColor = Color.Gray;
+            metroControlBox3.Name = "metroControlBox3";
+            metroControlBox3.Size = new Size(100, 25);
+            metroControlBox3.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            metroControlBox3.StyleManager = null;
+            metroControlBox3.TabIndex = 5;
+            metroControlBox3.Text = "metroControlBox3";
+            metroControlBox3.ThemeAuthor = "Taiizor";
+            metroControlBox3.ThemeName = "MetroLight";
             metroControlBox3.CloseHoverBackColor = Color.FromArgb(183, 40, 40);
             metroControlBox3.CloseHoverForeColor = Color.White;
             metroControlBox3.CloseNormalForeColor = Color.Gray;
@@ -95,6 +142,18 @@
             // 
             panel2.BackColor = Color.FromArgb(65, 59, 96);
             panel2.Controls.Add(btnLogOut);
+            panel2.Controls.Add(btnSetting);
+            panel2.Controls.Add(btnInterviewView);
+            panel2.Controls.Add(btnHistory);
+            panel2.Controls.Add(btnPostJob);
+            panel2.Controls.Add(pictureBox2);
+            panel2.Dock = DockStyle.Left;
+            panel2.Location = new Point(0, 24);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(202, 674);
+            panel2.TabIndex = 3;
+            panel2.BackColor = Color.FromArgb(65, 59, 96);
+            panel2.Controls.Add(btnLogOut);
             panel2.Controls.Add(btnApplicant);
             panel2.Controls.Add(btnSetting);
             panel2.Controls.Add(btnHistory);
@@ -109,6 +168,34 @@
             // 
             // btnLogOut
             // 
+            btnLogOut.BorderRadius = 20;
+            btnLogOut.CustomizableEdges = customizableEdges1;
+            btnLogOut.DisabledState.BorderColor = Color.DarkGray;
+            btnLogOut.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnLogOut.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnLogOut.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnLogOut.Dock = DockStyle.Top;
+            btnLogOut.FillColor = Color.Transparent;
+            btnLogOut.Font = new Font("Cooper Black", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLogOut.ForeColor = Color.White;
+            btnLogOut.HoverState.FillColor = Color.FromArgb(220, 251, 251);
+            btnLogOut.HoverState.Font = new Font("Cooper Black", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLogOut.HoverState.ForeColor = Color.Black;
+            btnLogOut.HoverState.Image = (Image)resources.GetObject("resource.Image");
+            btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
+            btnLogOut.ImageAlign = HorizontalAlignment.Left;
+            btnLogOut.ImageSize = new Size(50, 50);
+            btnLogOut.Location = new Point(0, 405);
+            btnLogOut.Margin = new Padding(4);
+            btnLogOut.Name = "btnLogOut";
+            btnLogOut.ShadowDecoration.Color = Color.White;
+            btnLogOut.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnLogOut.ShadowDecoration.Shadow = new Padding(2);
+            btnLogOut.Size = new Size(202, 71);
+            btnLogOut.TabIndex = 3;
+            btnLogOut.Text = "Log Out";
+            btnLogOut.TextAlign = HorizontalAlignment.Left;
+            btnLogOut.Click += btnLogOut_Click;
             btnLogOut.BorderRadius = 20;
             btnLogOut.CustomizableEdges = customizableEdges1;
             btnLogOut.DisabledState.BorderColor = Color.DarkGray;
@@ -172,6 +259,65 @@
             // btnSetting
             // 
             btnSetting.BorderRadius = 20;
+            btnSetting.CustomizableEdges = customizableEdges3;
+            btnSetting.DisabledState.BorderColor = Color.DarkGray;
+            btnSetting.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSetting.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSetting.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSetting.Dock = DockStyle.Top;
+            btnSetting.FillColor = Color.Transparent;
+            btnSetting.Font = new Font("Cooper Black", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSetting.ForeColor = Color.White;
+            btnSetting.HoverState.FillColor = Color.FromArgb(220, 251, 251);
+            btnSetting.HoverState.Font = new Font("Cooper Black", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSetting.HoverState.ForeColor = Color.Black;
+            btnSetting.HoverState.Image = (Image)resources.GetObject("resource.Image1");
+            btnSetting.Image = (Image)resources.GetObject("btnSetting.Image");
+            btnSetting.ImageAlign = HorizontalAlignment.Left;
+            btnSetting.ImageSize = new Size(50, 50);
+            btnSetting.Location = new Point(0, 334);
+            btnSetting.Margin = new Padding(4);
+            btnSetting.Name = "btnSetting";
+            btnSetting.ShadowDecoration.Color = Color.White;
+            btnSetting.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnSetting.ShadowDecoration.Shadow = new Padding(2);
+            btnSetting.Size = new Size(202, 71);
+            btnSetting.TabIndex = 2;
+            btnSetting.Text = "Profile";
+            btnSetting.TextAlign = HorizontalAlignment.Left;
+            btnSetting.Click += btnSetting_Click;
+            // 
+            // btnInterviewView
+            // 
+            btnInterviewView.BorderRadius = 20;
+            btnInterviewView.CustomizableEdges = customizableEdges5;
+            btnInterviewView.DisabledState.BorderColor = Color.DarkGray;
+            btnInterviewView.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnInterviewView.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnInterviewView.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnInterviewView.Dock = DockStyle.Top;
+            btnInterviewView.FillColor = Color.Transparent;
+            btnInterviewView.Font = new Font("Cooper Black", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnInterviewView.ForeColor = Color.White;
+            btnInterviewView.HoverState.FillColor = Color.FromArgb(220, 251, 251);
+            btnInterviewView.HoverState.Font = new Font("Cooper Black", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            btnInterviewView.HoverState.ForeColor = Color.Black;
+            btnInterviewView.HoverState.Image = (Image)resources.GetObject("resource.Image2");
+            btnInterviewView.Image = (Image)resources.GetObject("btnInterviewView.Image");
+            btnInterviewView.ImageAlign = HorizontalAlignment.Left;
+            btnInterviewView.ImageSize = new Size(50, 50);
+            btnInterviewView.Location = new Point(0, 263);
+            btnInterviewView.Margin = new Padding(4);
+            btnInterviewView.Name = "btnInterviewView";
+            btnInterviewView.ShadowDecoration.Color = Color.White;
+            btnInterviewView.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnInterviewView.ShadowDecoration.Shadow = new Padding(2);
+            btnInterviewView.Size = new Size(202, 71);
+            btnInterviewView.TabIndex = 4;
+            btnInterviewView.Text = "Interviews";
+            btnInterviewView.TextAlign = HorizontalAlignment.Left;
+            btnInterviewView.Click += btnInterviewView_Click;
+            btnSetting.BorderRadius = 20;
             btnSetting.CustomizableEdges = customizableEdges5;
             btnSetting.DisabledState.BorderColor = Color.DarkGray;
             btnSetting.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -202,6 +348,34 @@
             // 
             // btnHistory
             // 
+            btnHistory.BorderRadius = 20;
+            btnHistory.CustomizableEdges = customizableEdges7;
+            btnHistory.DisabledState.BorderColor = Color.DarkGray;
+            btnHistory.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnHistory.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnHistory.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnHistory.Dock = DockStyle.Top;
+            btnHistory.FillColor = Color.Transparent;
+            btnHistory.Font = new Font("Cooper Black", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnHistory.ForeColor = Color.White;
+            btnHistory.HoverState.FillColor = Color.FromArgb(220, 251, 251);
+            btnHistory.HoverState.Font = new Font("Cooper Black", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            btnHistory.HoverState.ForeColor = Color.Black;
+            btnHistory.HoverState.Image = (Image)resources.GetObject("resource.Image3");
+            btnHistory.Image = (Image)resources.GetObject("btnHistory.Image");
+            btnHistory.ImageAlign = HorizontalAlignment.Left;
+            btnHistory.ImageSize = new Size(50, 50);
+            btnHistory.Location = new Point(0, 192);
+            btnHistory.Margin = new Padding(4);
+            btnHistory.Name = "btnHistory";
+            btnHistory.ShadowDecoration.Color = Color.White;
+            btnHistory.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnHistory.ShadowDecoration.Shadow = new Padding(2);
+            btnHistory.Size = new Size(202, 71);
+            btnHistory.TabIndex = 1;
+            btnHistory.Text = "History";
+            btnHistory.TextAlign = HorizontalAlignment.Left;
+            btnHistory.Click += btnHistory_Click;
             btnHistory.BorderRadius = 20;
             btnHistory.CustomizableEdges = customizableEdges7;
             btnHistory.DisabledState.BorderColor = Color.DarkGray;
@@ -250,6 +424,34 @@
             btnPostJob.Image = (Image)resources.GetObject("btnPostJob.Image");
             btnPostJob.ImageAlign = HorizontalAlignment.Left;
             btnPostJob.ImageSize = new Size(50, 50);
+            btnPostJob.Location = new Point(0, 121);
+            btnPostJob.Margin = new Padding(4);
+            btnPostJob.Name = "btnPostJob";
+            btnPostJob.ShadowDecoration.Color = Color.White;
+            btnPostJob.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnPostJob.ShadowDecoration.Shadow = new Padding(2);
+            btnPostJob.Size = new Size(202, 71);
+            btnPostJob.TabIndex = 0;
+            btnPostJob.Text = "List of Job";
+            btnPostJob.TextAlign = HorizontalAlignment.Left;
+            btnPostJob.Click += btnPostJob_Click;
+            btnPostJob.BorderRadius = 20;
+            btnPostJob.CustomizableEdges = customizableEdges9;
+            btnPostJob.DisabledState.BorderColor = Color.DarkGray;
+            btnPostJob.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnPostJob.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnPostJob.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnPostJob.Dock = DockStyle.Top;
+            btnPostJob.FillColor = Color.Transparent;
+            btnPostJob.Font = new Font("Cooper Black", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnPostJob.ForeColor = Color.White;
+            btnPostJob.HoverState.FillColor = Color.FromArgb(220, 251, 251);
+            btnPostJob.HoverState.Font = new Font("Cooper Black", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            btnPostJob.HoverState.ForeColor = Color.Black;
+            btnPostJob.HoverState.Image = (Image)resources.GetObject("resource.Image4");
+            btnPostJob.Image = (Image)resources.GetObject("btnPostJob.Image");
+            btnPostJob.ImageAlign = HorizontalAlignment.Left;
+            btnPostJob.ImageSize = new Size(50, 50);
             btnPostJob.Location = new Point(0, 161);
             btnPostJob.Margin = new Padding(5);
             btnPostJob.Name = "btnPostJob";
@@ -267,6 +469,14 @@
             pictureBox2.Dock = DockStyle.Top;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(202, 121);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
+            pictureBox2.Dock = DockStyle.Top;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(0, 0);
             pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(231, 161);
@@ -278,6 +488,12 @@
             // 
             pnBody.AutoScroll = true;
             pnBody.Dock = DockStyle.Fill;
+            pnBody.Location = new Point(202, 24);
+            pnBody.Name = "pnBody";
+            pnBody.Size = new Size(1095, 674);
+            pnBody.TabIndex = 4;
+            pnBody.AutoScroll = true;
+            pnBody.Dock = DockStyle.Fill;
             pnBody.Location = new Point(231, 32);
             pnBody.Margin = new Padding(3, 4, 3, 4);
             pnBody.Name = "pnBody";
@@ -286,6 +502,22 @@
             // 
             // FCompany
             // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(1297, 698);
+            Controls.Add(pnBody);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "FCompany";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "FCompany";
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ResumeLayout(false);
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
@@ -315,6 +547,7 @@
         private Guna.UI2.WinForms.Guna2Button btnSetting;
         private Guna.UI2.WinForms.Guna2Button btnHistory;
         private Guna.UI2.WinForms.Guna2Button btnPostJob;
+        private Guna.UI2.WinForms.Guna2Button btnInterviewView;
         private Guna.UI2.WinForms.Guna2Button btnApplicant;
     }
 }

@@ -44,6 +44,9 @@
     <Compile Update="WinFormCode\FHistory.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="WinFormCode\FInterview.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="WinFormCode\FJobCreation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +92,9 @@
     <Compile Update="WinFormCode\FReportDetail.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="WinFormCode\FScheduleInterview.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="WinFormCode\FSearchJob.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="WinFormCode\FSupReportSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FViewInterview.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="WinFormCode\UCAlert.cs">
@@ -114,6 +123,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="WinFormCode\UCInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\UCInterview.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="WinFormCode\UCJob.cs">

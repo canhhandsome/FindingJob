@@ -29,6 +29,15 @@ namespace WinFormProject
             string strCRUD = string.Format("UPDATE Apply SET status = '{0}' WHERE JobSeekerID = '{1}' AND JobID = '{2}'", status, apply.JSeekerID, apply.JobID);
             conn.CRUD(strCRUD);
         }
+
+
+        public string FetchStatusApply(string jobID, string jsID)
+        {
+            string strFetch = string.Format($"SELECT status FROM Apply WHERE jobID = '{jobID}' and jobseekerID = '{jsID}'");
+            return conn.FetchScalar(jobID);
+        }
+        
+
         public bool CheckApply(string jobID,string jsid) 
         {
             string SQL = string.Format("Select * From apply where jobID = '{0}' and jobseekerID = '{1}'", jobID,jsid);

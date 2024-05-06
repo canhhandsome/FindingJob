@@ -24,5 +24,6 @@ namespace WinFormProject
             string strFetch = string.Format("Select id, name, email, address, phonenumber FROM {0} where id = '{1}'", type, id);
             return conn.FetchData(strFetch);
         }
+
     }
 }

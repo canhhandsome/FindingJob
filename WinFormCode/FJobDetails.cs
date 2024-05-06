@@ -20,10 +20,10 @@ namespace WinFormProject
         Company company;
         ApplyDAO applyDAO = new ApplyDAO();
         CompanyAddtionalImageDAO cadi = new CompanyAddtionalImageDAO();
+        CompanyDAO companyDAO = new CompanyDAO();
         public FJobDetails(Job job, string jsID)
         {
             InitializeComponent();
-            CompanyDAO companyDAO = new CompanyDAO();
             this.job = job;
             this.jsID = jsID;
             company = companyDAO.FetchCompanyInformationBasedOnID(job.CompanyID);
@@ -55,6 +55,7 @@ namespace WinFormProject
             lblAddressText.Text = company.INFO.Address;
             UCCarousel ucc = new UCCarousel(cadi.FetchAllPictures(company.INFO.ID));
             pnCarousel.Controls.Add(ucc);
+            SetMostRecruited();
             foreach (string s in job.SkillList)
             {
                 if (s != "NULL")
@@ -67,6 +68,16 @@ namespace WinFormProject
                 }
             }
         }
+
+        private void SetMostRecruited()
+        {
+            if(company.INFO.ID == companyDAO.GetCompanyWithMostRecruitedCandidates())
+            {
+                pnTopCompany.Visible = true;
+                pnTopCompany.Enabled = true;
+            }
+        }
+
         private void SetApplyButton()
         {
             if (applyDAO.CheckApply(job.Jobid, jsID))

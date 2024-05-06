@@ -18,8 +18,9 @@ namespace WinFormProject
         Image BusinessLicenseData = null;
         public Company()
         {
-
+            
         }
+
         public Company(Information information, string companytype, string companysize, string taxidentification, string description,string websitelink,string workingtimebegin,string workingtimeend, Image AvatarData, Image BusinessLicenseData,List<Image> Images)
         {
             this.information = information;
@@ -52,6 +53,7 @@ namespace WinFormProject
             workingtimebegin = otherinfo[5];
             workingtimeend = otherinfo[6];
         }
+
         public List<Job> Jobs
         {
             get { return jobs; }

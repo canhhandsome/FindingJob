@@ -40,6 +40,7 @@
             btnDone = new ReaLTaiizor.Controls.CyberButton();
             lblJob = new Label();
             lblJobT = new Label();
+            btnInterview = new ReaLTaiizor.Controls.CyberButton();
             flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             // 
             lblContent.AutoSize = true;
             lblContent.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblContent.Location = new Point(9, 180);
+            lblContent.Location = new Point(9, 172);
             lblContent.Name = "lblContent";
             lblContent.Size = new Size(83, 25);
             lblContent.TabIndex = 35;
@@ -57,7 +58,7 @@
             // 
             lblSubject.AutoSize = true;
             lblSubject.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSubject.Location = new Point(9, 134);
+            lblSubject.Location = new Point(9, 126);
             lblSubject.Name = "lblSubject";
             lblSubject.Size = new Size(78, 25);
             lblSubject.TabIndex = 34;
@@ -67,7 +68,7 @@
             // 
             lblDateT.AutoSize = true;
             lblDateT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDateT.Location = new Point(106, 50);
+            lblDateT.Location = new Point(106, 87);
             lblDateT.Name = "lblDateT";
             lblDateT.Size = new Size(55, 25);
             lblDateT.TabIndex = 33;
@@ -77,7 +78,7 @@
             // 
             lblDate.AutoSize = true;
             lblDate.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDate.Location = new Point(9, 50);
+            lblDate.Location = new Point(9, 87);
             lblDate.Name = "lblDate";
             lblDate.Size = new Size(55, 25);
             lblDate.TabIndex = 32;
@@ -87,7 +88,7 @@
             // 
             llFromT.AutoSize = true;
             llFromT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            llFromT.Location = new Point(106, 12);
+            llFromT.Location = new Point(106, 49);
             llFromT.Name = "llFromT";
             llFromT.Size = new Size(59, 25);
             llFromT.TabIndex = 31;
@@ -97,7 +98,7 @@
             // 
             lblFrom.AutoSize = true;
             lblFrom.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFrom.Location = new Point(9, 12);
+            lblFrom.Location = new Point(9, 49);
             lblFrom.Name = "lblFrom";
             lblFrom.Size = new Size(59, 25);
             lblFrom.TabIndex = 30;
@@ -107,7 +108,7 @@
             // 
             lblSubjectT.AutoSize = true;
             lblSubjectT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSubjectT.Location = new Point(106, 134);
+            lblSubjectT.Location = new Point(106, 126);
             lblSubjectT.Name = "lblSubjectT";
             lblSubjectT.Size = new Size(78, 25);
             lblSubjectT.TabIndex = 40;
@@ -120,7 +121,7 @@
             flowLayoutPanel1.BorderStyle = BorderStyle.Fixed3D;
             flowLayoutPanel1.Controls.Add(lblContentT);
             flowLayoutPanel1.Enabled = false;
-            flowLayoutPanel1.Location = new Point(106, 180);
+            flowLayoutPanel1.Location = new Point(106, 172);
             flowLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(750, 177);
@@ -165,7 +166,7 @@
             btnDone.Lighting = true;
             btnDone.LinearGradient_Background = false;
             btnDone.LinearGradientPen = false;
-            btnDone.Location = new Point(766, 380);
+            btnDone.Location = new Point(736, 461);
             btnDone.Name = "btnDone";
             btnDone.PenWidth = 15;
             btnDone.Rounding = true;
@@ -184,7 +185,7 @@
             // 
             lblJob.AutoSize = true;
             lblJob.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblJob.Location = new Point(9, 89);
+            lblJob.Location = new Point(12, 16);
             lblJob.Name = "lblJob";
             lblJob.Size = new Size(50, 25);
             lblJob.TabIndex = 34;
@@ -193,19 +194,63 @@
             // lblJobT
             // 
             lblJobT.AutoSize = true;
-            lblJobT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblJobT.Location = new Point(106, 89);
+            lblJobT.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblJobT.Location = new Point(106, 5);
             lblJobT.Name = "lblJobT";
-            lblJobT.Size = new Size(45, 25);
+            lblJobT.Size = new Size(67, 37);
             lblJobT.TabIndex = 40;
             lblJobT.Text = "Job:";
+            // 
+            // btnInterview
+            // 
+            btnInterview.Alpha = 20;
+            btnInterview.BackColor = Color.Transparent;
+            btnInterview.Background = true;
+            btnInterview.Background_WidthPen = 4F;
+            btnInterview.BackgroundPen = true;
+            btnInterview.ColorBackground = Color.FromArgb(176, 226, 243);
+            btnInterview.ColorBackground_1 = Color.FromArgb(128, 128, 255);
+            btnInterview.ColorBackground_2 = Color.FromArgb(128, 128, 255);
+            btnInterview.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
+            btnInterview.ColorLighting = Color.FromArgb(128, 128, 255);
+            btnInterview.ColorPen_1 = Color.FromArgb(128, 128, 255);
+            btnInterview.ColorPen_2 = Color.FromArgb(128, 128, 255);
+            btnInterview.Cursor = Cursors.Hand;
+            btnInterview.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            btnInterview.Effect_1 = true;
+            btnInterview.Effect_1_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnInterview.Effect_1_Transparency = 25;
+            btnInterview.Effect_2 = true;
+            btnInterview.Effect_2_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnInterview.Effect_2_Transparency = 20;
+            btnInterview.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnInterview.ForeColor = Color.FromArgb(46, 54, 71);
+            btnInterview.Lighting = true;
+            btnInterview.LinearGradient_Background = false;
+            btnInterview.LinearGradientPen = false;
+            btnInterview.Location = new Point(610, 461);
+            btnInterview.Name = "btnInterview";
+            btnInterview.PenWidth = 15;
+            btnInterview.Rounding = true;
+            btnInterview.RoundingInt = 20;
+            btnInterview.Size = new Size(120, 40);
+            btnInterview.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnInterview.TabIndex = 44;
+            btnInterview.Tag = "Decline";
+            btnInterview.TextButton = "Interview";
+            btnInterview.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnInterview.Timer_Effect_1 = 5;
+            btnInterview.Timer_RGB = 300;
+            btnInterview.Visible = false;
+            btnInterview.Click += btnInterview_Click;
             // 
             // FAlertView
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(918, 439);
+            ClientSize = new Size(872, 513);
+            Controls.Add(btnInterview);
             Controls.Add(btnDone);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(lblJobT);
@@ -240,5 +285,6 @@
         private ReaLTaiizor.Controls.CyberButton btnDone;
         private Label lblJob;
         private Label lblJobT;
+        private ReaLTaiizor.Controls.CyberButton btnInterview;
     }
 }

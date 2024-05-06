@@ -392,3 +392,7 @@ D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FJobPreference.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FJobPreferenceView.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.UCCandidate.resources
+D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FInterview.resources
+D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FScheduleInterview.resources
+D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FViewInterview.resources
+D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.UCInterview.resources

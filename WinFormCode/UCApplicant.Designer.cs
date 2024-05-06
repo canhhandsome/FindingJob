@@ -36,15 +36,12 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblDateT = new Label();
             ptbApplicantPicture = new PictureBox();
             lblApplicantNameT = new Label();
             lblEmailT = new Label();
             guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            btnDecline = new Guna.UI2.WinForms.Guna2Button();
-            btnApprove = new Guna.UI2.WinForms.Guna2Button();
+            btnAnswer = new Guna.UI2.WinForms.Guna2Button();
             btnProfile = new Guna.UI2.WinForms.Guna2Button();
             guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -104,8 +101,7 @@
             // guna2ShadowPanel1
             // 
             guna2ShadowPanel1.BackColor = Color.Transparent;
-            guna2ShadowPanel1.Controls.Add(btnDecline);
-            guna2ShadowPanel1.Controls.Add(btnApprove);
+            guna2ShadowPanel1.Controls.Add(btnAnswer);
             guna2ShadowPanel1.Controls.Add(btnProfile);
             guna2ShadowPanel1.Controls.Add(guna2ShadowPanel2);
             guna2ShadowPanel1.Dock = DockStyle.Fill;
@@ -117,51 +113,31 @@
             guna2ShadowPanel1.Size = new Size(410, 407);
             guna2ShadowPanel1.TabIndex = 4;
             // 
-            // btnDecline
+            // btnAnswer
             // 
-            btnDecline.BorderRadius = 10;
-            btnDecline.Cursor = Cursors.Hand;
-            btnDecline.CustomizableEdges = customizableEdges1;
-            btnDecline.DisabledState.BorderColor = Color.DarkGray;
-            btnDecline.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnDecline.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnDecline.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnDecline.FillColor = Color.FromArgb(176, 226, 243);
-            btnDecline.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            btnDecline.ForeColor = Color.Black;
-            btnDecline.Location = new Point(23, 352);
-            btnDecline.Name = "btnDecline";
-            btnDecline.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnDecline.Size = new Size(107, 36);
-            btnDecline.TabIndex = 14;
-            btnDecline.Text = "Decline";
-            btnDecline.Click += btnAnswer_Click;
-            // 
-            // btnApprove
-            // 
-            btnApprove.BorderRadius = 10;
-            btnApprove.Cursor = Cursors.Hand;
-            btnApprove.CustomizableEdges = customizableEdges3;
-            btnApprove.DisabledState.BorderColor = Color.DarkGray;
-            btnApprove.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnApprove.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnApprove.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnApprove.FillColor = Color.FromArgb(176, 226, 243);
-            btnApprove.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            btnApprove.ForeColor = Color.Black;
-            btnApprove.Location = new Point(150, 352);
-            btnApprove.Name = "btnApprove";
-            btnApprove.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnApprove.Size = new Size(107, 36);
-            btnApprove.TabIndex = 14;
-            btnApprove.Text = "Approve";
-            btnApprove.Click += btnAnswer_Click;
+            btnAnswer.BorderRadius = 10;
+            btnAnswer.Cursor = Cursors.Hand;
+            btnAnswer.CustomizableEdges = customizableEdges1;
+            btnAnswer.DisabledState.BorderColor = Color.DarkGray;
+            btnAnswer.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnAnswer.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnAnswer.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnAnswer.FillColor = Color.FromArgb(176, 226, 243);
+            btnAnswer.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAnswer.ForeColor = Color.Black;
+            btnAnswer.Location = new Point(54, 354);
+            btnAnswer.Name = "btnAnswer";
+            btnAnswer.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnAnswer.Size = new Size(107, 36);
+            btnAnswer.TabIndex = 14;
+            btnAnswer.Text = "Answer";
+            btnAnswer.Click += btnAnswer_Click;
             // 
             // btnProfile
             // 
             btnProfile.BorderRadius = 10;
             btnProfile.Cursor = Cursors.Hand;
-            btnProfile.CustomizableEdges = customizableEdges5;
+            btnProfile.CustomizableEdges = customizableEdges3;
             btnProfile.DisabledState.BorderColor = Color.DarkGray;
             btnProfile.DisabledState.CustomBorderColor = Color.DarkGray;
             btnProfile.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -169,9 +145,9 @@
             btnProfile.FillColor = Color.FromArgb(176, 226, 243);
             btnProfile.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
             btnProfile.ForeColor = Color.Black;
-            btnProfile.Location = new Point(278, 352);
+            btnProfile.Location = new Point(247, 354);
             btnProfile.Name = "btnProfile";
-            btnProfile.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnProfile.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnProfile.Size = new Size(107, 36);
             btnProfile.TabIndex = 14;
             btnProfile.Text = "Profile";
@@ -195,22 +171,22 @@
             // guna2Panel2
             // 
             guna2Panel2.Controls.Add(lblApplicantNameT);
-            guna2Panel2.CustomizableEdges = customizableEdges7;
+            guna2Panel2.CustomizableEdges = customizableEdges5;
             guna2Panel2.Dock = DockStyle.Bottom;
             guna2Panel2.Location = new Point(0, 232);
             guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2Panel2.Size = new Size(387, 60);
             guna2Panel2.TabIndex = 12;
             // 
             // guna2Panel1
             // 
             guna2Panel1.Controls.Add(lblEmailT);
-            guna2Panel1.CustomizableEdges = customizableEdges9;
+            guna2Panel1.CustomizableEdges = customizableEdges7;
             guna2Panel1.Dock = DockStyle.Bottom;
             guna2Panel1.Location = new Point(0, 292);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2Panel1.Size = new Size(387, 42);
             guna2Panel1.TabIndex = 11;
             // 
@@ -240,8 +216,7 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2Button btnDecline;
-        private Guna.UI2.WinForms.Guna2Button btnApprove;
+        private Guna.UI2.WinForms.Guna2Button btnAnswer;
         private Guna.UI2.WinForms.Guna2Button btnProfile;
     }
 }

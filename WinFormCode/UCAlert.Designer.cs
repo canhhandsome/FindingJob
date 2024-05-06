@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCAlert));
             panel1 = new Panel();
             flowLayoutPanel1 = new FlowLayoutPanel();
@@ -37,10 +38,14 @@
             ptbCompanyPicture = new PictureBox();
             lblJobNameT = new Label();
             lblSubjectT = new Label();
+            guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            lblStatus = new Label();
+            pictureBox2 = new PictureBox();
             panel1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -57,15 +62,18 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(500, 159);
             panel1.TabIndex = 8;
+            panel1.Click += panel1_Click;
             // 
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.Controls.Add(lblFromT);
             flowLayoutPanel1.Controls.Add(pictureBox1);
             flowLayoutPanel1.Controls.Add(lblDateT);
+            flowLayoutPanel1.Controls.Add(pictureBox2);
+            flowLayoutPanel1.Controls.Add(lblStatus);
             flowLayoutPanel1.Location = new Point(14, 63);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(259, 30);
+            flowLayoutPanel1.Size = new Size(364, 30);
             flowLayoutPanel1.TabIndex = 10;
             // 
             // lblFromT
@@ -106,10 +114,10 @@
             // 
             // ptbCompanyPicture
             // 
-            ptbCompanyPicture.Location = new Point(409, 14);
+            ptbCompanyPicture.Location = new Point(384, 14);
             ptbCompanyPicture.Margin = new Padding(3, 2, 3, 2);
             ptbCompanyPicture.Name = "ptbCompanyPicture";
-            ptbCompanyPicture.Size = new Size(68, 68);
+            ptbCompanyPicture.Size = new Size(91, 91);
             ptbCompanyPicture.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbCompanyPicture.TabIndex = 9;
             ptbCompanyPicture.TabStop = false;
@@ -135,6 +143,35 @@
             lblSubjectT.TabIndex = 0;
             lblSubjectT.Text = "Subject: ";
             // 
+            // guna2Elipse1
+            // 
+            guna2Elipse1.BorderRadius = 15;
+            guna2Elipse1.TargetControl = panel1;
+            // 
+            // lblStatus
+            // 
+            lblStatus.AutoSize = true;
+            lblStatus.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            lblStatus.ForeColor = Color.FromArgb(64, 64, 64);
+            lblStatus.Location = new Point(203, 0);
+            lblStatus.Name = "lblStatus";
+            lblStatus.Size = new Size(64, 25);
+            lblStatus.TabIndex = 0;
+            lblStatus.Text = "Status:";
+            lblStatus.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Dock = DockStyle.Bottom;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(167, 2);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(30, 30);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 10;
+            pictureBox2.TabStop = false;
+            // 
             // UCAlert
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -150,6 +187,7 @@
             flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)ptbCompanyPicture).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -163,5 +201,8 @@
         public Label lblFromT;
         public Label lblDateT;
         private PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private PictureBox pictureBox2;
+        public Label lblStatus;
     }
 }
