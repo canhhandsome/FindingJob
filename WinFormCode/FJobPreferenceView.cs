@@ -16,12 +16,13 @@ namespace WinFormProject.WinFormCode
         JobPreference jobPreference = new JobPreference();
         JobPreferenceDAO jobPreferenceDAO = new JobPreferenceDAO();
         string companyid;
-        public FJobPreferenceView(string jobseekerid,string companyid)
+        public FJobPreferenceView(string jobseekerid, string companyid)
         {
             InitializeComponent();
             jobPreference = jobPreferenceDAO.FetchJobPreference(jobseekerid);
             FillInformation();
             this.companyid = companyid;
+           
         }
         private void FillInformation()
         {
@@ -69,9 +70,14 @@ namespace WinFormProject.WinFormCode
         {
             CV cv = new CV();
             CVDao cVDao = new CVDao();
-            cVDao.FetchAllInformationOfCV(jobPreference.JobSeekerId,cv);
-            FCompanyCVView fCompanyCVView = new FCompanyCVView(cv,companyid);
+            cVDao.FetchAllInformationOfCV(jobPreference.JobSeekerId, cv);
+            FCompanyCVView fCompanyCVView = new FCompanyCVView(cv, companyid);
             fCompanyCVView.Show();
+        }
+
+        private void btnOffer_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -74,6 +74,9 @@
     <Compile Update="WinFormCode\FManageUser.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="WinFormCode\FOffer.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="WinFormCode\FOTP.cs">
       <SubType>Form</SubType>
     </Compile>

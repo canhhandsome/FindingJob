@@ -24,7 +24,6 @@ namespace WinFormProject
             JobDAO jobDAO = new JobDAO();
             lblToT.Text = jobSeekerDAO.FetchName(apply.JSeekerID);
         }
-
         private void btnSend_Click(object sender, EventArgs e)
         {
             AlertDAO dAO = new AlertDAO();

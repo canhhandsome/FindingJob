@@ -241,6 +241,7 @@
             btnOffer.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             btnOffer.Timer_Effect_1 = 5;
             btnOffer.Timer_RGB = 300;
+            btnOffer.Click += btnOffer_Click;
             // 
             // label13
             // 
