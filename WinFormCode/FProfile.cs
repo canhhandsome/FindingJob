@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormProject.OOPCODE;
+using WinFormProject.WinFormCode;
 
 namespace WinFormProject
 {
@@ -149,20 +150,10 @@ namespace WinFormProject
             FillInfor(); // Reload the form with the original data
             Enable_Save_Click(); // Re-enable the form for editing
         }
-
-        private void FProfile_Load(object sender, EventArgs e)
+        private void btnJobPreference_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void rdoFemale_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox8_Click(object sender, EventArgs e)
-        {
-
+            FJobPreference fJobPreference = new FJobPreference(jobseeker.INFO.ID);
+            fJobPreference.Show();
         }
     }
 }

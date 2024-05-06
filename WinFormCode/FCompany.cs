@@ -121,5 +121,9 @@ namespace WinFormProject
             OpenChildForm(new FHistory(company.Jobs, company.INFO.ID));
         }
 
+        private void btnApplicant_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FFindApplicant(company.INFO.ID));
+        }
     }
 }

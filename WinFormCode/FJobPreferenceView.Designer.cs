@@ -28,436 +28,420 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            this.btnCV = new ReaLTaiizor.Controls.CyberButton();
-            this.txtLocation = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cbbCompanySize = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cbbCompanyType = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.pnBody = new System.Windows.Forms.Panel();
-            this.btnOffer = new ReaLTaiizor.Controls.CyberButton();
-            this.flPBtnSkills = new System.Windows.Forms.FlowLayoutPanel();
-            this.flpSkills = new System.Windows.Forms.FlowLayoutPanel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtSalary = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cbbExperience = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cbbWorkingForm = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.pnBody.SuspendLayout();
-            this.flPBtnSkills.SuspendLayout();
-            this.SuspendLayout();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            btnCV = new ReaLTaiizor.Controls.CyberButton();
+            txtLocation = new Guna.UI2.WinForms.Guna2TextBox();
+            cbbCompanySize = new Guna.UI2.WinForms.Guna2ComboBox();
+            cbbCompanyType = new Guna.UI2.WinForms.Guna2ComboBox();
+            pnBody = new Panel();
+            btnOffer = new ReaLTaiizor.Controls.CyberButton();
+            label13 = new Label();
+            label18 = new Label();
+            label17 = new Label();
+            flPBtnSkills = new FlowLayoutPanel();
+            flpSkills = new FlowLayoutPanel();
+            label16 = new Label();
+            label15 = new Label();
+            label12 = new Label();
+            label11 = new Label();
+            label6 = new Label();
+            txtSalary = new Guna.UI2.WinForms.Guna2TextBox();
+            cbbExperience = new Guna.UI2.WinForms.Guna2ComboBox();
+            cbbWorkingForm = new Guna.UI2.WinForms.Guna2ComboBox();
+            lblTitle = new Label();
+            pnBody.SuspendLayout();
+            flPBtnSkills.SuspendLayout();
+            SuspendLayout();
             // 
             // btnCV
             // 
-            this.btnCV.Alpha = 20;
-            this.btnCV.BackColor = System.Drawing.Color.Transparent;
-            this.btnCV.Background = true;
-            this.btnCV.Background_WidthPen = 4F;
-            this.btnCV.BackgroundPen = true;
-            this.btnCV.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnCV.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCV.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCV.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.btnCV.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCV.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCV.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCV.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.btnCV.Effect_1 = true;
-            this.btnCV.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCV.Effect_1_Transparency = 25;
-            this.btnCV.Effect_2 = true;
-            this.btnCV.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCV.Effect_2_Transparency = 20;
-            this.btnCV.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
-            this.btnCV.Lighting = true;
-            this.btnCV.LinearGradient_Background = false;
-            this.btnCV.LinearGradientPen = false;
-            this.btnCV.Location = new System.Drawing.Point(892, 726);
-            this.btnCV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnCV.Name = "btnCV";
-            this.btnCV.PenWidth = 15;
-            this.btnCV.Rounding = true;
-            this.btnCV.RoundingInt = 20;
-            this.btnCV.Size = new System.Drawing.Size(150, 56);
-            this.btnCV.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnCV.TabIndex = 84;
-            this.btnCV.Tag = "Decline";
-            this.btnCV.TextButton = "CV";
-            this.btnCV.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnCV.Timer_Effect_1 = 5;
-            this.btnCV.Timer_RGB = 300;
+            btnCV.Alpha = 20;
+            btnCV.BackColor = Color.Transparent;
+            btnCV.Background = true;
+            btnCV.Background_WidthPen = 4F;
+            btnCV.BackgroundPen = true;
+            btnCV.ColorBackground = Color.FromArgb(176, 226, 243);
+            btnCV.ColorBackground_1 = Color.FromArgb(128, 128, 255);
+            btnCV.ColorBackground_2 = Color.FromArgb(128, 128, 255);
+            btnCV.ColorBackground_Pen = Color.FromArgb(237, 27, 47);
+            btnCV.ColorLighting = Color.FromArgb(128, 128, 255);
+            btnCV.ColorPen_1 = Color.FromArgb(128, 128, 255);
+            btnCV.ColorPen_2 = Color.FromArgb(128, 128, 255);
+            btnCV.Cursor = Cursors.Hand;
+            btnCV.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            btnCV.Effect_1 = true;
+            btnCV.Effect_1_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnCV.Effect_1_Transparency = 25;
+            btnCV.Effect_2 = true;
+            btnCV.Effect_2_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnCV.Effect_2_Transparency = 20;
+            btnCV.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCV.ForeColor = Color.FromArgb(46, 54, 71);
+            btnCV.Lighting = true;
+            btnCV.LinearGradient_Background = false;
+            btnCV.LinearGradientPen = false;
+            btnCV.Location = new Point(892, 726);
+            btnCV.Margin = new Padding(3, 4, 3, 4);
+            btnCV.Name = "btnCV";
+            btnCV.PenWidth = 15;
+            btnCV.Rounding = true;
+            btnCV.RoundingInt = 20;
+            btnCV.Size = new Size(150, 56);
+            btnCV.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnCV.TabIndex = 84;
+            btnCV.Tag = "Decline";
+            btnCV.TextButton = "CV";
+            btnCV.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnCV.Timer_Effect_1 = 5;
+            btnCV.Timer_RGB = 300;
+            btnCV.Click += btnCV_Click;
             // 
             // txtLocation
             // 
-            this.txtLocation.BorderRadius = 15;
-            this.txtLocation.CustomizableEdges = customizableEdges13;
-            this.txtLocation.DefaultText = "";
-            this.txtLocation.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtLocation.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtLocation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLocation.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLocation.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLocation.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtLocation.ForeColor = System.Drawing.Color.Black;
-            this.txtLocation.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLocation.Location = new System.Drawing.Point(48, 493);
-            this.txtLocation.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtLocation.Name = "txtLocation";
-            this.txtLocation.PasswordChar = '\0';
-            this.txtLocation.PlaceholderText = "Location";
-            this.txtLocation.SelectedText = "";
-            this.txtLocation.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            this.txtLocation.Size = new System.Drawing.Size(469, 52);
-            this.txtLocation.TabIndex = 81;
+            txtLocation.BorderRadius = 15;
+            txtLocation.CustomizableEdges = customizableEdges1;
+            txtLocation.DefaultText = "";
+            txtLocation.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtLocation.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtLocation.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtLocation.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtLocation.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtLocation.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            txtLocation.ForeColor = Color.Black;
+            txtLocation.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtLocation.Location = new Point(48, 493);
+            txtLocation.Margin = new Padding(5, 4, 5, 4);
+            txtLocation.Name = "txtLocation";
+            txtLocation.PasswordChar = '\0';
+            txtLocation.PlaceholderText = "Location";
+            txtLocation.SelectedText = "";
+            txtLocation.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtLocation.Size = new Size(469, 52);
+            txtLocation.TabIndex = 81;
             // 
             // cbbCompanySize
             // 
-            this.cbbCompanySize.BackColor = System.Drawing.Color.Transparent;
-            this.cbbCompanySize.BorderRadius = 15;
-            this.cbbCompanySize.CustomizableEdges = customizableEdges15;
-            this.cbbCompanySize.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbbCompanySize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbCompanySize.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbCompanySize.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbCompanySize.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cbbCompanySize.ForeColor = System.Drawing.Color.Black;
-            this.cbbCompanySize.ItemHeight = 45;
-            this.cbbCompanySize.Items.AddRange(new object[] {
-            "Small",
-            "Medium",
-            "Large"});
-            this.cbbCompanySize.Location = new System.Drawing.Point(606, 392);
-            this.cbbCompanySize.Name = "cbbCompanySize";
-            this.cbbCompanySize.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            this.cbbCompanySize.Size = new System.Drawing.Size(469, 51);
-            this.cbbCompanySize.TabIndex = 79;
+            cbbCompanySize.BackColor = Color.Transparent;
+            cbbCompanySize.BorderRadius = 15;
+            cbbCompanySize.CustomizableEdges = customizableEdges3;
+            cbbCompanySize.DrawMode = DrawMode.OwnerDrawFixed;
+            cbbCompanySize.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbbCompanySize.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbbCompanySize.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbbCompanySize.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            cbbCompanySize.ForeColor = Color.Black;
+            cbbCompanySize.ItemHeight = 45;
+            cbbCompanySize.Items.AddRange(new object[] { "Small", "Medium", "Large" });
+            cbbCompanySize.Location = new Point(606, 392);
+            cbbCompanySize.Name = "cbbCompanySize";
+            cbbCompanySize.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            cbbCompanySize.Size = new Size(469, 51);
+            cbbCompanySize.TabIndex = 79;
             // 
             // cbbCompanyType
             // 
-            this.cbbCompanyType.BackColor = System.Drawing.Color.Transparent;
-            this.cbbCompanyType.BorderRadius = 15;
-            this.cbbCompanyType.CustomizableEdges = customizableEdges17;
-            this.cbbCompanyType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbbCompanyType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbCompanyType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbCompanyType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbCompanyType.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cbbCompanyType.ForeColor = System.Drawing.Color.Black;
-            this.cbbCompanyType.ItemHeight = 45;
-            this.cbbCompanyType.Items.AddRange(new object[] {
-            "Outsource",
-            "Product",
-            "HeadHunter",
-            "Non - IT",
-            "Services and Consulting"});
-            this.cbbCompanyType.Location = new System.Drawing.Point(606, 301);
-            this.cbbCompanyType.Name = "cbbCompanyType";
-            this.cbbCompanyType.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            this.cbbCompanyType.Size = new System.Drawing.Size(469, 51);
-            this.cbbCompanyType.TabIndex = 77;
+            cbbCompanyType.BackColor = Color.Transparent;
+            cbbCompanyType.BorderRadius = 15;
+            cbbCompanyType.CustomizableEdges = customizableEdges5;
+            cbbCompanyType.DrawMode = DrawMode.OwnerDrawFixed;
+            cbbCompanyType.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbbCompanyType.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbbCompanyType.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbbCompanyType.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            cbbCompanyType.ForeColor = Color.Black;
+            cbbCompanyType.ItemHeight = 45;
+            cbbCompanyType.Items.AddRange(new object[] { "Outsource", "Product", "HeadHunter", "Non - IT", "Services and Consulting" });
+            cbbCompanyType.Location = new Point(606, 301);
+            cbbCompanyType.Name = "cbbCompanyType";
+            cbbCompanyType.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            cbbCompanyType.Size = new Size(469, 51);
+            cbbCompanyType.TabIndex = 77;
             // 
             // pnBody
             // 
-            this.pnBody.AutoScroll = true;
-            this.pnBody.BackColor = System.Drawing.Color.White;
-            this.pnBody.Controls.Add(this.btnCV);
-            this.pnBody.Controls.Add(this.btnOffer);
-            this.pnBody.Controls.Add(this.label13);
-            this.pnBody.Controls.Add(this.txtLocation);
-            this.pnBody.Controls.Add(this.label18);
-            this.pnBody.Controls.Add(this.cbbCompanySize);
-            this.pnBody.Controls.Add(this.label17);
-            this.pnBody.Controls.Add(this.cbbCompanyType);
-            this.pnBody.Controls.Add(this.flPBtnSkills);
-            this.pnBody.Controls.Add(this.label16);
-            this.pnBody.Controls.Add(this.label15);
-            this.pnBody.Controls.Add(this.label12);
-            this.pnBody.Controls.Add(this.label11);
-            this.pnBody.Controls.Add(this.label6);
-            this.pnBody.Controls.Add(this.txtSalary);
-            this.pnBody.Controls.Add(this.cbbExperience);
-            this.pnBody.Controls.Add(this.cbbWorkingForm);
-            this.pnBody.Controls.Add(this.lblTitle);
-            this.pnBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnBody.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.pnBody.ForeColor = System.Drawing.Color.Gray;
-            this.pnBody.Location = new System.Drawing.Point(0, 0);
-            this.pnBody.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pnBody.Name = "pnBody";
-            this.pnBody.Size = new System.Drawing.Size(1233, 805);
-            this.pnBody.TabIndex = 19;
-            this.pnBody.Paint += new System.Windows.Forms.PaintEventHandler(this.pnBody_Paint);
+            pnBody.AutoScroll = true;
+            pnBody.BackColor = Color.White;
+            pnBody.Controls.Add(btnCV);
+            pnBody.Controls.Add(btnOffer);
+            pnBody.Controls.Add(label13);
+            pnBody.Controls.Add(txtLocation);
+            pnBody.Controls.Add(label18);
+            pnBody.Controls.Add(cbbCompanySize);
+            pnBody.Controls.Add(label17);
+            pnBody.Controls.Add(cbbCompanyType);
+            pnBody.Controls.Add(flPBtnSkills);
+            pnBody.Controls.Add(label16);
+            pnBody.Controls.Add(label15);
+            pnBody.Controls.Add(label12);
+            pnBody.Controls.Add(label11);
+            pnBody.Controls.Add(label6);
+            pnBody.Controls.Add(txtSalary);
+            pnBody.Controls.Add(cbbExperience);
+            pnBody.Controls.Add(cbbWorkingForm);
+            pnBody.Controls.Add(lblTitle);
+            pnBody.Dock = DockStyle.Fill;
+            pnBody.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            pnBody.ForeColor = Color.Gray;
+            pnBody.Location = new Point(0, 0);
+            pnBody.Margin = new Padding(3, 4, 3, 4);
+            pnBody.Name = "pnBody";
+            pnBody.Size = new Size(1233, 805);
+            pnBody.TabIndex = 19;
+            pnBody.Paint += pnBody_Paint;
             // 
             // btnOffer
             // 
-            this.btnOffer.Alpha = 20;
-            this.btnOffer.BackColor = System.Drawing.Color.Transparent;
-            this.btnOffer.Background = true;
-            this.btnOffer.Background_WidthPen = 4F;
-            this.btnOffer.BackgroundPen = true;
-            this.btnOffer.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
-            this.btnOffer.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnOffer.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnOffer.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.btnOffer.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnOffer.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnOffer.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnOffer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOffer.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.btnOffer.Effect_1 = true;
-            this.btnOffer.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnOffer.Effect_1_Transparency = 25;
-            this.btnOffer.Effect_2 = true;
-            this.btnOffer.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnOffer.Effect_2_Transparency = 20;
-            this.btnOffer.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnOffer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
-            this.btnOffer.Lighting = true;
-            this.btnOffer.LinearGradient_Background = false;
-            this.btnOffer.LinearGradientPen = false;
-            this.btnOffer.Location = new System.Drawing.Point(1048, 726);
-            this.btnOffer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnOffer.Name = "btnOffer";
-            this.btnOffer.PenWidth = 15;
-            this.btnOffer.Rounding = true;
-            this.btnOffer.RoundingInt = 20;
-            this.btnOffer.Size = new System.Drawing.Size(150, 56);
-            this.btnOffer.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnOffer.TabIndex = 83;
-            this.btnOffer.Tag = "Decline";
-            this.btnOffer.TextButton = "Offer a Job";
-            this.btnOffer.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnOffer.Timer_Effect_1 = 5;
-            this.btnOffer.Timer_RGB = 300;
-            // 
-            // flPBtnSkills
-            // 
-            this.flPBtnSkills.Controls.Add(this.flpSkills);
-            this.flPBtnSkills.Location = new System.Drawing.Point(53, 611);
-            this.flPBtnSkills.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.flPBtnSkills.Name = "flPBtnSkills";
-            this.flPBtnSkills.Size = new System.Drawing.Size(1129, 55);
-            this.flPBtnSkills.TabIndex = 76;
-            // 
-            // flpSkills
-            // 
-            this.flpSkills.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flpSkills.Location = new System.Drawing.Point(3, 4);
-            this.flpSkills.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.flpSkills.Name = "flpSkills";
-            this.flpSkills.Size = new System.Drawing.Size(41, 0);
-            this.flpSkills.TabIndex = 76;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.White;
-            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(48, 236);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(306, 28);
-            this.label16.TabIndex = 75;
-            this.label16.Text = "Expectation about the company:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.White;
-            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(48, 104);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(221, 28);
-            this.label15.TabIndex = 74;
-            this.label15.Text = "The salary expectation:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(48, 580);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(129, 28);
-            this.label12.TabIndex = 71;
-            this.label12.Text = "3 main skills:";
-            // 
-            // txtSalary
-            // 
-            this.txtSalary.BorderRadius = 15;
-            this.txtSalary.CustomizableEdges = customizableEdges19;
-            this.txtSalary.DefaultText = "";
-            this.txtSalary.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSalary.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSalary.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSalary.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSalary.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSalary.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtSalary.ForeColor = System.Drawing.Color.Black;
-            this.txtSalary.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSalary.Location = new System.Drawing.Point(48, 136);
-            this.txtSalary.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtSalary.Name = "txtSalary";
-            this.txtSalary.PasswordChar = '\0';
-            this.txtSalary.PlaceholderText = "Salary";
-            this.txtSalary.SelectedText = "";
-            this.txtSalary.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            this.txtSalary.Size = new System.Drawing.Size(469, 52);
-            this.txtSalary.TabIndex = 56;
-            // 
-            // cbbExperience
-            // 
-            this.cbbExperience.BackColor = System.Drawing.Color.Transparent;
-            this.cbbExperience.BorderRadius = 15;
-            this.cbbExperience.CustomizableEdges = customizableEdges21;
-            this.cbbExperience.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbbExperience.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbExperience.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbExperience.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbExperience.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cbbExperience.ForeColor = System.Drawing.Color.Black;
-            this.cbbExperience.ItemHeight = 45;
-            this.cbbExperience.Items.AddRange(new object[] {
-            "Intern",
-            "Fresher",
-            "Junior",
-            "Middle",
-            "Senior",
-            "Expert"});
-            this.cbbExperience.Location = new System.Drawing.Point(48, 301);
-            this.cbbExperience.Name = "cbbExperience";
-            this.cbbExperience.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            this.cbbExperience.Size = new System.Drawing.Size(469, 51);
-            this.cbbExperience.TabIndex = 45;
-            // 
-            // cbbWorkingForm
-            // 
-            this.cbbWorkingForm.BackColor = System.Drawing.Color.Transparent;
-            this.cbbWorkingForm.BorderRadius = 15;
-            this.cbbWorkingForm.CustomizableEdges = customizableEdges23;
-            this.cbbWorkingForm.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbbWorkingForm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbWorkingForm.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbWorkingForm.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbWorkingForm.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cbbWorkingForm.ForeColor = System.Drawing.Color.Black;
-            this.cbbWorkingForm.ItemHeight = 45;
-            this.cbbWorkingForm.Items.AddRange(new object[] {
-            "Office",
-            "Remote",
-            "Hybrid"});
-            this.cbbWorkingForm.Location = new System.Drawing.Point(48, 392);
-            this.cbbWorkingForm.Name = "cbbWorkingForm";
-            this.cbbWorkingForm.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            this.cbbWorkingForm.Size = new System.Drawing.Size(469, 51);
-            this.cbbWorkingForm.TabIndex = 42;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.Color.White;
-            this.lblTitle.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitle.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblTitle.Location = new System.Drawing.Point(48, 28);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(82, 37);
-            this.lblTitle.TabIndex = 14;
-            this.lblTitle.Text = "Title";
+            btnOffer.Alpha = 20;
+            btnOffer.BackColor = Color.Transparent;
+            btnOffer.Background = true;
+            btnOffer.Background_WidthPen = 4F;
+            btnOffer.BackgroundPen = true;
+            btnOffer.ColorBackground = Color.FromArgb(176, 226, 243);
+            btnOffer.ColorBackground_1 = Color.FromArgb(128, 128, 255);
+            btnOffer.ColorBackground_2 = Color.FromArgb(128, 128, 255);
+            btnOffer.ColorBackground_Pen = Color.FromArgb(237, 27, 47);
+            btnOffer.ColorLighting = Color.FromArgb(128, 128, 255);
+            btnOffer.ColorPen_1 = Color.FromArgb(128, 128, 255);
+            btnOffer.ColorPen_2 = Color.FromArgb(128, 128, 255);
+            btnOffer.Cursor = Cursors.Hand;
+            btnOffer.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            btnOffer.Effect_1 = true;
+            btnOffer.Effect_1_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnOffer.Effect_1_Transparency = 25;
+            btnOffer.Effect_2 = true;
+            btnOffer.Effect_2_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnOffer.Effect_2_Transparency = 20;
+            btnOffer.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnOffer.ForeColor = Color.FromArgb(46, 54, 71);
+            btnOffer.Lighting = true;
+            btnOffer.LinearGradient_Background = false;
+            btnOffer.LinearGradientPen = false;
+            btnOffer.Location = new Point(1048, 726);
+            btnOffer.Margin = new Padding(3, 4, 3, 4);
+            btnOffer.Name = "btnOffer";
+            btnOffer.PenWidth = 15;
+            btnOffer.Rounding = true;
+            btnOffer.RoundingInt = 20;
+            btnOffer.Size = new Size(150, 56);
+            btnOffer.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnOffer.TabIndex = 83;
+            btnOffer.Tag = "Decline";
+            btnOffer.TextButton = "Offer a Job";
+            btnOffer.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnOffer.Timer_Effect_1 = 5;
+            btnOffer.Timer_RGB = 300;
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.White;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.Color.Gray;
-            this.label13.Location = new System.Drawing.Point(48, 467);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(169, 23);
-            this.label13.TabIndex = 82;
-            this.label13.Text = "Expectation location.";
+            label13.AutoSize = true;
+            label13.BackColor = Color.White;
+            label13.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label13.ForeColor = Color.Gray;
+            label13.Location = new Point(48, 467);
+            label13.Name = "label13";
+            label13.Size = new Size(169, 23);
+            label13.TabIndex = 82;
+            label13.Text = "Expectation location.";
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.White;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.ForeColor = System.Drawing.Color.Gray;
-            this.label18.Location = new System.Drawing.Point(606, 368);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(214, 23);
-            this.label18.TabIndex = 80;
-            this.label18.Text = "The suitable company size.";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(48, 368);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(212, 23);
-            this.label6.TabIndex = 65;
-            this.label6.Text = "The suitable working form.";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.Color.Gray;
-            this.label11.Location = new System.Drawing.Point(48, 276);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(304, 23);
-            this.label11.TabIndex = 70;
-            this.label11.Text = "Expectation job experience for the job.";
+            label18.AutoSize = true;
+            label18.BackColor = Color.White;
+            label18.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label18.ForeColor = Color.Gray;
+            label18.Location = new Point(606, 368);
+            label18.Name = "label18";
+            label18.Size = new Size(214, 23);
+            label18.TabIndex = 80;
+            label18.Text = "The suitable company size.";
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.White;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.ForeColor = System.Drawing.Color.Gray;
-            this.label17.Location = new System.Drawing.Point(606, 276);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(219, 23);
-            this.label17.TabIndex = 78;
-            this.label17.Text = "The suitable company type.";
+            label17.AutoSize = true;
+            label17.BackColor = Color.White;
+            label17.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label17.ForeColor = Color.Gray;
+            label17.Location = new Point(606, 276);
+            label17.Name = "label17";
+            label17.Size = new Size(219, 23);
+            label17.TabIndex = 78;
+            label17.Text = "The suitable company type.";
+            // 
+            // flPBtnSkills
+            // 
+            flPBtnSkills.Controls.Add(flpSkills);
+            flPBtnSkills.Location = new Point(53, 611);
+            flPBtnSkills.Margin = new Padding(3, 4, 3, 4);
+            flPBtnSkills.Name = "flPBtnSkills";
+            flPBtnSkills.Size = new Size(1129, 55);
+            flPBtnSkills.TabIndex = 76;
+            // 
+            // flpSkills
+            // 
+            flpSkills.Dock = DockStyle.Left;
+            flpSkills.Location = new Point(3, 4);
+            flpSkills.Margin = new Padding(3, 4, 3, 4);
+            flpSkills.Name = "flpSkills";
+            flpSkills.Size = new Size(41, 0);
+            flpSkills.TabIndex = 76;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.BackColor = Color.White;
+            label16.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label16.ForeColor = Color.Black;
+            label16.Location = new Point(48, 236);
+            label16.Name = "label16";
+            label16.Size = new Size(306, 28);
+            label16.TabIndex = 75;
+            label16.Text = "Expectation about the company:";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.BackColor = Color.White;
+            label15.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label15.ForeColor = Color.Black;
+            label15.Location = new Point(48, 104);
+            label15.Name = "label15";
+            label15.Size = new Size(221, 28);
+            label15.TabIndex = 74;
+            label15.Text = "The salary expectation:";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = Color.White;
+            label12.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.ForeColor = Color.Black;
+            label12.Location = new Point(48, 580);
+            label12.Name = "label12";
+            label12.Size = new Size(129, 28);
+            label12.TabIndex = 71;
+            label12.Text = "3 main skills:";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = Color.White;
+            label11.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.ForeColor = Color.Gray;
+            label11.Location = new Point(48, 276);
+            label11.Name = "label11";
+            label11.Size = new Size(304, 23);
+            label11.TabIndex = 70;
+            label11.Text = "Expectation job experience for the job.";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.White;
+            label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = Color.Gray;
+            label6.Location = new Point(48, 368);
+            label6.Name = "label6";
+            label6.Size = new Size(212, 23);
+            label6.TabIndex = 65;
+            label6.Text = "The suitable working form.";
+            // 
+            // txtSalary
+            // 
+            txtSalary.BorderRadius = 15;
+            txtSalary.CustomizableEdges = customizableEdges7;
+            txtSalary.DefaultText = "";
+            txtSalary.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtSalary.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtSalary.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtSalary.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtSalary.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtSalary.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            txtSalary.ForeColor = Color.Black;
+            txtSalary.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtSalary.Location = new Point(48, 136);
+            txtSalary.Margin = new Padding(5, 4, 5, 4);
+            txtSalary.Name = "txtSalary";
+            txtSalary.PasswordChar = '\0';
+            txtSalary.PlaceholderText = "Salary";
+            txtSalary.SelectedText = "";
+            txtSalary.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtSalary.Size = new Size(469, 52);
+            txtSalary.TabIndex = 56;
+            // 
+            // cbbExperience
+            // 
+            cbbExperience.BackColor = Color.Transparent;
+            cbbExperience.BorderRadius = 15;
+            cbbExperience.CustomizableEdges = customizableEdges9;
+            cbbExperience.DrawMode = DrawMode.OwnerDrawFixed;
+            cbbExperience.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbbExperience.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbbExperience.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbbExperience.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            cbbExperience.ForeColor = Color.Black;
+            cbbExperience.ItemHeight = 45;
+            cbbExperience.Items.AddRange(new object[] { "Intern", "Fresher", "Junior", "Middle", "Senior", "Expert" });
+            cbbExperience.Location = new Point(48, 301);
+            cbbExperience.Name = "cbbExperience";
+            cbbExperience.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            cbbExperience.Size = new Size(469, 51);
+            cbbExperience.TabIndex = 45;
+            // 
+            // cbbWorkingForm
+            // 
+            cbbWorkingForm.BackColor = Color.Transparent;
+            cbbWorkingForm.BorderRadius = 15;
+            cbbWorkingForm.CustomizableEdges = customizableEdges11;
+            cbbWorkingForm.DrawMode = DrawMode.OwnerDrawFixed;
+            cbbWorkingForm.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbbWorkingForm.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbbWorkingForm.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbbWorkingForm.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            cbbWorkingForm.ForeColor = Color.Black;
+            cbbWorkingForm.ItemHeight = 45;
+            cbbWorkingForm.Items.AddRange(new object[] { "Office", "Remote", "Hybrid" });
+            cbbWorkingForm.Location = new Point(48, 392);
+            cbbWorkingForm.Name = "cbbWorkingForm";
+            cbbWorkingForm.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            cbbWorkingForm.Size = new Size(469, 51);
+            cbbWorkingForm.TabIndex = 42;
+            // 
+            // lblTitle
+            // 
+            lblTitle.AutoSize = true;
+            lblTitle.BackColor = Color.White;
+            lblTitle.Font = new Font("Times New Roman", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTitle.ForeColor = SystemColors.ControlText;
+            lblTitle.Location = new Point(48, 28);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(82, 37);
+            lblTitle.TabIndex = 14;
+            lblTitle.Text = "Title";
             // 
             // FJobPreferenceView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1233, 805);
-            this.Controls.Add(this.pnBody);
-            this.Name = "FJobPreferenceView";
-            this.Text = "FJobPreferenceView";
-            this.pnBody.ResumeLayout(false);
-            this.pnBody.PerformLayout();
-            this.flPBtnSkills.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1233, 805);
+            Controls.Add(pnBody);
+            Name = "FJobPreferenceView";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "FJobPreferenceView";
+            pnBody.ResumeLayout(false);
+            pnBody.PerformLayout();
+            flPBtnSkills.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion

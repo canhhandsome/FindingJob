@@ -299,7 +299,87 @@ namespace WinFormProject
                 conn.Close();
             }
         }
+        public JobPreference FetchJobPreference(string SQL)
+        {
+            // Implement code to execute SQL query and fetch data from the database
+            // Construct a JobPreference object with the fetched data
+            JobPreference jobPreference = new JobPreference();
+            try
+            {
+                conn.Open();
+                SqlCommand command = new SqlCommand(SQL, conn);
+                SqlDataReader reader = command.ExecuteReader();
 
+                // Check if there are rows returned
+                if (reader.HasRows)
+                {
+                    // Read the first row
+                    reader.Read();
+
+                    // Assign values to JobPreference object properties
+                    jobPreference.JobSeekerId = reader["JobSeekerID"].ToString();
+                    jobPreference.Title = reader["Title"].ToString();
+                    jobPreference.Position = reader["Position"].ToString();
+                    jobPreference.CompanyType = reader["CompanyType"].ToString();
+                    jobPreference.WorkingForm = reader["WorkingForm"].ToString();
+                    jobPreference.CompanySize = reader["CompanySize"].ToString();
+                    jobPreference.Location = reader["Location"].ToString();
+                    jobPreference.Salary = Convert.ToInt32(reader["Salary"]);
+                    jobPreference.Deadline = Convert.ToDateTime(reader["Deadline"]);
+                    jobPreference.SkillList = new List<string>
+            {
+                reader["Skill1"].ToString(),
+                reader["Skill2"].ToString(),
+                reader["Skill3"].ToString()
+            };
+                }
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            // Return the constructed JobPreference object
+            return jobPreference;
+        }
+        public void FetchAllJobPreference(string SQL, List<JobPreference> list)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand command = new SqlCommand(SQL, conn);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    JobPreference jobPreference = new JobPreference
+                    {
+                        JobSeekerId = reader["JobSeekerID"].ToString(),
+                        Title = reader["Title"].ToString(),
+                        Position = reader["Position"].ToString(),
+                        CompanyType = reader["CompanyType"].ToString(),
+                        WorkingForm = reader["WorkingForm"].ToString(),
+                        CompanySize = reader["CompanySize"].ToString(),
+                        Location = reader["Location"].ToString(),
+                        Salary = Convert.ToInt32(reader["Salary"]),
+                        Deadline = Convert.ToDateTime(reader["Deadline"]),
+                        SkillList = new List<string>
+                            {
+                                reader["Skill1"].ToString(),
+                                reader["Skill2"].ToString(),
+                                reader["Skill3"].ToString()
+                            }
+                    };
+                    list.Add(jobPreference);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
+            } finally { conn.Close(); }
+           
+        }
         public void CRUD(string SQL)
         {
             try
@@ -310,7 +390,7 @@ namespace WinFormProject
                     MessageBox.Show("Successfully");
                 else MessageBox.Show("Failed");
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
                 MessageBox.Show("Failed, check again" + ex);
             }
