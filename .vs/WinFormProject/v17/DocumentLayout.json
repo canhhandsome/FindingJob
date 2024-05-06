@@ -1,16 +1,50 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|d:\\learning\\second_year\\hk2\\windows programming\\project_lastterm\\lastterm\\findingjob\\winformcode\\foffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|solutionrelative:winformcode\\foffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|d:\\learning\\second_year\\hk2\\windows programming\\project_lastterm\\lastterm\\findingjob\\winformcode\\fanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|solutionrelative:winformcode\\fanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 75,
-          "SelectedChildIndex": -1,
-          "Children": []
+          "DockedWidth": 469,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FAnswer.cs [Design]",
+              "DocumentMoniker": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FAnswer.cs",
+              "RelativeDocumentMoniker": "WinFormCode\\FAnswer.cs",
+              "ToolTip": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FAnswer.cs [Design]",
+              "RelativeToolTip": "WinFormCode\\FAnswer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T15:07:44.239Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FOffer.cs [Design]",
+              "DocumentMoniker": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FOffer.cs",
+              "RelativeDocumentMoniker": "WinFormCode\\FOffer.cs",
+              "ToolTip": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FOffer.cs [Design]",
+              "RelativeToolTip": "WinFormCode\\FOffer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T14:58:48.774Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
         },
         {
           "DockedWidth": 469,

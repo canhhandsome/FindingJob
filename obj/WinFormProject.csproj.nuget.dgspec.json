@@ -1,34 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "D:\\UTE\\UTE2023and2024\\Ki2\\WindowsProgramming\\Project\\FindingJob\\WinFormProject.csproj": {}
+    "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormProject.csproj": {}
   },
   "projects": {
-    "D:\\UTE\\UTE2023and2024\\Ki2\\WindowsProgramming\\Project\\FindingJob\\WinFormProject.csproj": {
+    "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UTE\\UTE2023and2024\\Ki2\\WindowsProgramming\\Project\\FindingJob\\WinFormProject.csproj",
+        "projectUniqueName": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormProject.csproj",
         "projectName": "WinFormProject",
-        "projectPath": "D:\\UTE\\UTE2023and2024\\Ki2\\WindowsProgramming\\Project\\FindingJob\\WinFormProject.csproj",
-        "packagesPath": "C:\\Users\\OS\\.nuget\\packages\\",
-        "outputPath": "D:\\UTE\\UTE2023and2024\\Ki2\\WindowsProgramming\\Project\\FindingJob\\obj\\",
-=======
-    "D:\\Window Programming\\Project\\FindingJob\\WinFormProject.csproj": {}
-  },
-  "projects": {
-    "D:\\Window Programming\\Project\\FindingJob\\WinFormProject.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Window Programming\\Project\\FindingJob\\WinFormProject.csproj",
-        "projectName": "WinFormProject",
-        "projectPath": "D:\\Window Programming\\Project\\FindingJob\\WinFormProject.csproj",
-        "packagesPath": "C:\\Users\\TIEN TOAN\\.nuget\\packages\\",
-        "outputPath": "D:\\Window Programming\\Project\\FindingJob\\obj\\",
->>>>>>> PostFindJob
+        "projectPath": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormProject.csproj",
+        "packagesPath": "C:\\Users\\Canh\\.nuget\\packages\\",
+        "outputPath": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\TIEN TOAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Canh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -98,7 +89,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
