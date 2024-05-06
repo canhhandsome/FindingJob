@@ -20,10 +20,10 @@ namespace WinFormProject
         Company company;
         ApplyDAO applyDAO = new ApplyDAO();
         CompanyAddtionalImageDAO cadi = new CompanyAddtionalImageDAO();
+        CompanyDAO companyDAO = new CompanyDAO();
         public FJobDetails(Job job, string jsID)
         {
             InitializeComponent();
-            CompanyDAO companyDAO = new CompanyDAO();
             this.job = job;
             this.jsID = jsID;
             company = companyDAO.FetchCompanyInformationBasedOnID(job.CompanyID);
@@ -38,7 +38,6 @@ namespace WinFormProject
             lblWorkingTime.ForeColor = Color.FromArgb(166, 166, 166);
             lblCompanySize.ForeColor = Color.FromArgb(166, 166, 166);
             lblCompanyType.ForeColor = Color.FromArgb(166, 166, 166);
-            btnApply.ColorBackground = Color.FromArgb(237, 27, 47);
             lblJobName.Text = job.Name;
             lblCompany.Text = company.INFO.Name;
             lblSalary.Text = job.Salary;
@@ -56,7 +55,29 @@ namespace WinFormProject
             lblAddressText.Text = company.INFO.Address;
             UCCarousel ucc = new UCCarousel(cadi.FetchAllPictures(company.INFO.ID));
             pnCarousel.Controls.Add(ucc);
+            SetMostRecruited();
+            foreach (string s in job.SkillList)
+            {
+                if (s != "NULL")
+                {
+                    BtnSkill btnSkill = new BtnSkill();
+                    btnSkill.Text = s;
+                    btnSkill.Show();
+                    flowLayoutPanel4.Controls.Add(btnSkill);
+                    flowLayoutPanel4.Width += btnSkill.Width + 20;
+                }
+            }
         }
+
+        private void SetMostRecruited()
+        {
+            if (company.INFO.ID == companyDAO.GetCompanyWithMostRecruitedCandidates())
+            {
+                pnTopCompany.Visible = true;
+                pnTopCompany.Enabled = true;
+            }
+        }
+
         private void SetApplyButton()
         {
             if (applyDAO.CheckApply(job.Jobid, jsID))
@@ -68,8 +89,6 @@ namespace WinFormProject
             else
             {
                 btnApply.Enabled = true;
-                btnApply.ColorBackground = Color.FromArgb(176, 226, 243);
-                btnApply.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
             }
         }
         private void btnBack_Click(object sender, EventArgs e)

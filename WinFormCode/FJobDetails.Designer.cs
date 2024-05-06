@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FJobDetails));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblSalary = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
@@ -66,6 +68,7 @@
             ptbAvatar = new Guna.UI2.WinForms.Guna2PictureBox();
             btnCompanyDetail = new ReaLTaiizor.Controls.CyberButton();
             flowLayoutPanel3 = new FlowLayoutPanel();
+            pnTopCompany = new Guna.UI2.WinForms.Guna2Panel();
             panel2 = new Panel();
             lblCompanyTypeText = new ReaLTaiizor.Controls.MetroLabel();
             lblCompanyType = new ReaLTaiizor.Controls.MetroLabel();
@@ -78,6 +81,7 @@
             panel12 = new Panel();
             lblWorkingTimeText = new ReaLTaiizor.Controls.MetroLabel();
             lblWorkingTime = new ReaLTaiizor.Controls.MetroLabel();
+            lblTopCompany = new Guna.UI2.WinForms.Guna2HtmlLabel();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -98,6 +102,7 @@
             panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).BeginInit();
             flowLayoutPanel3.SuspendLayout();
+            pnTopCompany.SuspendLayout();
             panel2.SuspendLayout();
             panel9.SuspendLayout();
             panel11.SuspendLayout();
@@ -244,19 +249,19 @@
             btnApply.Background_WidthPen = 4F;
             btnApply.BackgroundPen = true;
             btnApply.ColorBackground = Color.FromArgb(237, 27, 47);
-            btnApply.ColorBackground_1 = Color.FromArgb(128, 128, 255);
-            btnApply.ColorBackground_2 = Color.FromArgb(128, 128, 255);
-            btnApply.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
-            btnApply.ColorLighting = Color.FromArgb(128, 128, 255);
-            btnApply.ColorPen_1 = Color.FromArgb(128, 128, 255);
-            btnApply.ColorPen_2 = Color.FromArgb(128, 128, 255);
+            btnApply.ColorBackground_1 = Color.FromArgb(237, 27, 47);
+            btnApply.ColorBackground_2 = Color.FromArgb(237, 27, 47);
+            btnApply.ColorBackground_Pen = Color.FromArgb(237, 27, 47);
+            btnApply.ColorLighting = Color.FromArgb(237, 27, 47);
+            btnApply.ColorPen_1 = Color.FromArgb(237, 27, 47);
+            btnApply.ColorPen_2 = Color.FromArgb(237, 27, 47);
             btnApply.Cursor = Cursors.Hand;
             btnApply.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
             btnApply.Effect_1 = true;
-            btnApply.Effect_1_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnApply.Effect_1_ColorBackground = Color.FromArgb(237, 27, 47);
             btnApply.Effect_1_Transparency = 25;
             btnApply.Effect_2 = true;
-            btnApply.Effect_2_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnApply.Effect_2_ColorBackground = Color.FromArgb(237, 27, 47);
             btnApply.Effect_2_Transparency = 20;
             btnApply.Font = new Font("Arial Narrow", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
             btnApply.ForeColor = Color.White;
@@ -457,7 +462,7 @@
             flowLayoutPanel4.Dock = DockStyle.Bottom;
             flowLayoutPanel4.Location = new Point(3, 456);
             flowLayoutPanel4.Name = "flowLayoutPanel4";
-            flowLayoutPanel4.Size = new Size(803, 59);
+            flowLayoutPanel4.Size = new Size(803, 74);
             flowLayoutPanel4.TabIndex = 5;
             // 
             // guna2HtmlLabel1
@@ -465,10 +470,10 @@
             guna2HtmlLabel1.AutoSize = false;
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel1.Location = new Point(10, 10);
-            guna2HtmlLabel1.Margin = new Padding(10);
+            guna2HtmlLabel1.Location = new Point(10, 11);
+            guna2HtmlLabel1.Margin = new Padding(10, 11, 10, 11);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(107, 58);
+            guna2HtmlLabel1.Size = new Size(107, 59);
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "Skill";
             // 
@@ -491,7 +496,6 @@
             panel10.Controls.Add(ptbAvatar);
             panel10.Controls.Add(btnCompanyDetail);
             panel10.Controls.Add(lblCompanyNameLeft);
-            panel10.Dock = DockStyle.Top;
             panel10.Location = new Point(3, 3);
             panel10.Name = "panel10";
             panel10.Size = new Size(448, 183);
@@ -520,7 +524,7 @@
             btnCompanyDetail.ColorBackground = Color.FromArgb(192, 255, 255);
             btnCompanyDetail.ColorBackground_1 = Color.FromArgb(128, 128, 255);
             btnCompanyDetail.ColorBackground_2 = Color.FromArgb(128, 128, 255);
-            btnCompanyDetail.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
+            btnCompanyDetail.ColorBackground_Pen = Color.FromArgb(237, 27, 47);
             btnCompanyDetail.ColorLighting = Color.FromArgb(128, 128, 255);
             btnCompanyDetail.ColorPen_1 = Color.FromArgb(128, 128, 255);
             btnCompanyDetail.ColorPen_2 = Color.FromArgb(128, 128, 255);
@@ -537,7 +541,7 @@
             btnCompanyDetail.Lighting = true;
             btnCompanyDetail.LinearGradient_Background = false;
             btnCompanyDetail.LinearGradientPen = false;
-            btnCompanyDetail.Location = new Point(164, 83);
+            btnCompanyDetail.Location = new Point(165, 83);
             btnCompanyDetail.Margin = new Padding(3, 4, 3, 4);
             btnCompanyDetail.Name = "btnCompanyDetail";
             btnCompanyDetail.PenWidth = 15;
@@ -556,22 +560,37 @@
             // flowLayoutPanel3
             // 
             flowLayoutPanel3.Controls.Add(panel10);
+            flowLayoutPanel3.Controls.Add(pnTopCompany);
             flowLayoutPanel3.Controls.Add(panel2);
             flowLayoutPanel3.Controls.Add(panel9);
             flowLayoutPanel3.Controls.Add(panel11);
             flowLayoutPanel3.Controls.Add(panel12);
             flowLayoutPanel3.Dock = DockStyle.Right;
-            flowLayoutPanel3.Location = new Point(868, 0);
+            flowLayoutPanel3.Location = new Point(867, 0);
             flowLayoutPanel3.Name = "flowLayoutPanel3";
             flowLayoutPanel3.Size = new Size(456, 865);
             flowLayoutPanel3.TabIndex = 52;
+            // 
+            // pnTopCompany
+            // 
+            pnTopCompany.Controls.Add(lblTopCompany);
+            pnTopCompany.CustomizableEdges = customizableEdges3;
+            pnTopCompany.Enabled = false;
+            pnTopCompany.ForeColor = Color.Red;
+            pnTopCompany.Location = new Point(3, 193);
+            pnTopCompany.Margin = new Padding(3, 4, 3, 4);
+            pnTopCompany.Name = "pnTopCompany";
+            pnTopCompany.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            pnTopCompany.Size = new Size(448, 109);
+            pnTopCompany.TabIndex = 56;
+            pnTopCompany.Visible = false;
             // 
             // panel2
             // 
             panel2.AutoScroll = true;
             panel2.Controls.Add(lblCompanyTypeText);
             panel2.Controls.Add(lblCompanyType);
-            panel2.Location = new Point(3, 192);
+            panel2.Location = new Point(3, 309);
             panel2.Name = "panel2";
             panel2.Size = new Size(448, 107);
             panel2.TabIndex = 52;
@@ -613,7 +632,7 @@
             panel9.AutoScroll = true;
             panel9.Controls.Add(lblCompanySizeText);
             panel9.Controls.Add(lblCompanySize);
-            panel9.Location = new Point(3, 305);
+            panel9.Location = new Point(3, 422);
             panel9.Name = "panel9";
             panel9.Size = new Size(448, 107);
             panel9.TabIndex = 53;
@@ -655,7 +674,7 @@
             panel11.AutoScroll = true;
             panel11.Controls.Add(lblAddressText);
             panel11.Controls.Add(lblAddress);
-            panel11.Location = new Point(3, 418);
+            panel11.Location = new Point(3, 535);
             panel11.Name = "panel11";
             panel11.Size = new Size(448, 107);
             panel11.TabIndex = 54;
@@ -697,7 +716,7 @@
             panel12.AutoScroll = true;
             panel12.Controls.Add(lblWorkingTimeText);
             panel12.Controls.Add(lblWorkingTime);
-            panel12.Location = new Point(3, 531);
+            panel12.Location = new Point(3, 648);
             panel12.Name = "panel12";
             panel12.Size = new Size(448, 107);
             panel12.TabIndex = 55;
@@ -734,13 +753,27 @@
             lblWorkingTime.ThemeAuthor = "Taiizor";
             lblWorkingTime.ThemeName = "MetroLight";
             // 
+            // lblTopCompany
+            // 
+            lblTopCompany.AutoSize = false;
+            lblTopCompany.BackColor = Color.Transparent;
+            lblTopCompany.Dock = DockStyle.Fill;
+            lblTopCompany.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lblTopCompany.Location = new Point(0, 0);
+            lblTopCompany.Margin = new Padding(3, 4, 3, 4);
+            lblTopCompany.Name = "lblTopCompany";
+            lblTopCompany.Size = new Size(448, 109);
+            lblTopCompany.TabIndex = 0;
+            lblTopCompany.Text = "*The company recruited the most candidates of the year";
+            lblTopCompany.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
             // FJobDetails
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.White;
-            ClientSize = new Size(1324, 865);
+            ClientSize = new Size(1323, 865);
             Controls.Add(flowLayoutPanel3);
             Controls.Add(flowLayoutPanel1);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
@@ -769,6 +802,7 @@
             panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).EndInit();
             flowLayoutPanel3.ResumeLayout(false);
+            pnTopCompany.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel9.ResumeLayout(false);
             panel11.ResumeLayout(false);
@@ -825,5 +859,7 @@
         private FlowLayoutPanel flowLayoutPanel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2PictureBox ptbAvatar;
+        private Guna.UI2.WinForms.Guna2Panel pnTopCompany;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTopCompany;
     }
 }

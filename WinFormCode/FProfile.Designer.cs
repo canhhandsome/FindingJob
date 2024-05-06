@@ -73,6 +73,10 @@ namespace WinFormProject
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges41 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges42 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges43 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges44 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges45 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges46 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblGender = new Label();
             txtFullName = new Guna.UI2.WinForms.Guna2TextBox();
             txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
@@ -104,6 +108,8 @@ namespace WinFormProject
             lblProfile = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ptbAvatar = new Guna.UI2.WinForms.Guna2PictureBox();
             ptbCV = new Guna.UI2.WinForms.Guna2PictureBox();
+            btnJobPreference = new Guna.UI2.WinForms.Guna2Button();
+            btnEditJobPreferences = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox3).BeginInit();
@@ -348,7 +354,6 @@ namespace WinFormProject
             rdoFemale.Text = "Female";
             rdoFemale.UseAccentColor = false;
             rdoFemale.UseVisualStyleBackColor = true;
-            rdoFemale.CheckedChanged += rdoFemale_CheckedChanged;
             // 
             // rdoMale
             // 
@@ -527,13 +532,12 @@ namespace WinFormProject
             btnCancel.FillColor = Color.FromArgb(255, 150, 150);
             btnCancel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnCancel.ForeColor = Color.Black;
-            btnCancel.Location = new Point(319, 700);
+            btnCancel.Location = new Point(318, 697);
             btnCancel.Name = "btnCancel";
             btnCancel.ShadowDecoration.CustomizableEdges = customizableEdges34;
             btnCancel.Size = new Size(225, 56);
             btnCancel.TabIndex = 52;
             btnCancel.Text = "Cancel";
-            btnCancel.Click += btnCancel_Click;
             // 
             // btnSave
             // 
@@ -546,7 +550,7 @@ namespace WinFormProject
             btnSave.FillColor = Color.FromArgb(176, 226, 243);
             btnSave.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnSave.ForeColor = Color.Black;
-            btnSave.Location = new Point(41, 700);
+            btnSave.Location = new Point(41, 697);
             btnSave.Name = "btnSave";
             btnSave.ShadowDecoration.CustomizableEdges = customizableEdges36;
             btnSave.Size = new Size(225, 56);
@@ -565,7 +569,7 @@ namespace WinFormProject
             btnEdit.FillColor = Color.FromArgb(176, 226, 243);
             btnEdit.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnEdit.ForeColor = Color.Black;
-            btnEdit.Location = new Point(41, 700);
+            btnEdit.Location = new Point(41, 697);
             btnEdit.Name = "btnEdit";
             btnEdit.ShadowDecoration.CustomizableEdges = customizableEdges38;
             btnEdit.Size = new Size(225, 56);
@@ -611,7 +615,43 @@ namespace WinFormProject
             ptbCV.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbCV.TabIndex = 57;
             ptbCV.TabStop = false;
-            ptbCV.Click += guna2PictureBox8_Click;
+            // 
+            // btnJobPreference
+            // 
+            btnJobPreference.BorderRadius = 10;
+            btnJobPreference.CustomizableEdges = customizableEdges43;
+            btnJobPreference.DisabledState.BorderColor = Color.DarkGray;
+            btnJobPreference.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnJobPreference.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnJobPreference.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnJobPreference.FillColor = Color.FromArgb(176, 226, 243);
+            btnJobPreference.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnJobPreference.ForeColor = Color.Black;
+            btnJobPreference.Location = new Point(637, 697);
+            btnJobPreference.Name = "btnJobPreference";
+            btnJobPreference.ShadowDecoration.CustomizableEdges = customizableEdges44;
+            btnJobPreference.Size = new Size(225, 56);
+            btnJobPreference.TabIndex = 58;
+            btnJobPreference.Text = "Job Preferences";
+            btnJobPreference.Click += btnJobPreference_Click;
+            // 
+            // btnEditJobPreferences
+            // 
+            btnEditJobPreferences.BorderRadius = 10;
+            btnEditJobPreferences.CustomizableEdges = customizableEdges45;
+            btnEditJobPreferences.DisabledState.BorderColor = Color.DarkGray;
+            btnEditJobPreferences.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnEditJobPreferences.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnEditJobPreferences.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnEditJobPreferences.FillColor = Color.FromArgb(176, 226, 243);
+            btnEditJobPreferences.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnEditJobPreferences.ForeColor = Color.Black;
+            btnEditJobPreferences.Location = new Point(637, 697);
+            btnEditJobPreferences.Name = "btnEditJobPreferences";
+            btnEditJobPreferences.ShadowDecoration.CustomizableEdges = customizableEdges46;
+            btnEditJobPreferences.Size = new Size(225, 56);
+            btnEditJobPreferences.TabIndex = 59;
+            btnEditJobPreferences.Text = "Edit Job Preferences";
             // 
             // FProfile
             // 
@@ -619,6 +659,7 @@ namespace WinFormProject
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1233, 852);
+            Controls.Add(btnJobPreference);
             Controls.Add(ptbCV);
             Controls.Add(ptbAvatar);
             Controls.Add(lblProfile);
@@ -650,10 +691,10 @@ namespace WinFormProject
             Controls.Add(rdoFemale);
             Controls.Add(rdoMale);
             Controls.Add(lblGender);
+            Controls.Add(btnEditJobPreferences);
             Margin = new Padding(3, 4, 3, 4);
             Name = "FProfile";
             StartPosition = FormStartPosition.CenterScreen;
-            Load += FProfile_Load;
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox3).EndInit();
@@ -699,5 +740,7 @@ namespace WinFormProject
         private Guna.UI2.WinForms.Guna2HtmlLabel lblProfile;
         private Guna.UI2.WinForms.Guna2PictureBox ptbAvatar;
         private Guna.UI2.WinForms.Guna2PictureBox ptbCV;
+        private Guna.UI2.WinForms.Guna2Button btnJobPreference;
+        private Guna.UI2.WinForms.Guna2Button btnEditJobPreferences;
     }
 }

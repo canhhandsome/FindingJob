@@ -73,6 +73,16 @@ namespace WinFormProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DarkHeart {
+            get {
+                object obj = ResourceManager.GetObject("DarkHeart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ErrorImage {
             get {
                 object obj = ResourceManager.GetObject("ErrorImage", resourceCulture);
@@ -226,6 +236,16 @@ namespace WinFormProject.Properties {
         internal static System.Drawing.Bitmap plus {
             get {
                 object obj = ResourceManager.GetObject("plus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RedHeart {
+            get {
+                object obj = ResourceManager.GetObject("RedHeart", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

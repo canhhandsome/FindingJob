@@ -77,7 +77,6 @@ namespace WinFormProject
         }
         private void BtnSkill_Click(object sender, EventArgs e)
         {
-            // When a skill button is clicked, raise the event and pass the skill text
             if (sender is BtnSkillShow btnSkill)
             {
                 string skillText = btnSkill.Text;

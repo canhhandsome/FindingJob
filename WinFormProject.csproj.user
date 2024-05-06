@@ -23,6 +23,9 @@
     <Compile Update="WinFormCode\FCompany.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="WinFormCode\FCompanyCVView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="WinFormCode\FCompanyDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -32,10 +35,16 @@
     <Compile Update="WinFormCode\FFilter.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="WinFormCode\FFindApplicant.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="WinFormCode\FFPassword.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="WinFormCode\FHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FInterview.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="WinFormCode\FJobCreation.cs">
@@ -45,6 +54,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="WinFormCode\FJobEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FJobPreference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FJobPreferenceView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="WinFormCode\FJobSeeker.cs">
@@ -77,6 +92,9 @@
     <Compile Update="WinFormCode\FReportDetail.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="WinFormCode\FScheduleInterview.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="WinFormCode\FSearchJob.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,10 +104,16 @@
     <Compile Update="WinFormCode\FSupReportSection.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="WinFormCode\FViewInterview.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="WinFormCode\UCAlert.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="WinFormCode\UCApplicant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\UCCandidate.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="WinFormCode\UCCarousel.cs">
@@ -99,6 +123,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="WinFormCode\UCInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\UCInterview.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="WinFormCode\UCJob.cs">

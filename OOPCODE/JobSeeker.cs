@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WinFormProject.OOPCODE;
 
 namespace WinFormProject
 {
@@ -14,22 +15,21 @@ namespace WinFormProject
         private string nationalid = string.Empty;
         private string gender = string.Empty;
         private Image AvatarData = null;
-        private byte[] CvData;
-        private Image CVpicture = null;
+        private CV cv = new CV();
+   
 
         public JobSeeker()
         {
-
+            
         }
-        public JobSeeker(Information information, DateTime bdate, string nationalid, string gender, Image avatarData, byte[] cvData, Image cVPicture)
+        public JobSeeker(Information information, DateTime bdate, string nationalid, string gender, Image avatarData,CV cv)
         {
             this.information = information;
             this.bdate = bdate;
             this.nationalid = nationalid;
             this.gender = gender;
             AvatarData = avatarData;
-            CvData = cvData;
-            CVpicture = cVPicture;
+            this.cv = cv;
         }
 
         public JobSeeker(Information information)
@@ -41,9 +41,8 @@ namespace WinFormProject
             gender = list[1];
             bdate = DateTime.Parse(jobseekerdao.FetchBdate(this));
             AvatarData = jobseekerdao.FetchImg(this.INFO.ID, "Avatar");
-            CVpicture = jobseekerdao.FetchImg(this.INFO.ID, "CVPicture");
-            CvData = jobseekerdao.FetchCV(this.INFO.ID);
-
+            CVDao cvDao = new CVDao();
+            cvDao.FetchAllInformationOfCV(this.INFO.ID,cv);
         }
 
         public Information INFO
@@ -70,14 +69,9 @@ namespace WinFormProject
         {
             get { return AvatarData; }
         }
-
-        public byte[] CV
+        public CV CVData
         {
-            get { return CvData; }
-        }
-        public Image CVPicture
-        {
-            get { return CVpicture; }
+            get { return cv; }
         }
     }
 }

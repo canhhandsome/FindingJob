@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormProject.OOPCODE;
+using WinFormProject.WinFormCode;
 
 namespace WinFormProject
 {
@@ -16,6 +17,7 @@ namespace WinFormProject
     {
         JobSeeker jobseeker;
         JobSeekerDAO jsDAO = new JobSeekerDAO();
+        CVDao cvdao = new CVDao();
         byte[] Cv = new byte[0];
         public FProfile(JobSeeker jobSeeker)
         {
@@ -40,7 +42,7 @@ namespace WinFormProject
             }
             else rdoFemale.Checked = true;
             if (jobseeker.Avatar != null) ptbAvatar.Image = jobseeker.Avatar;
-            if (jobseeker.CVPicture != null) ptbCV.Image = jobseeker.CVPicture;
+            if (jobseeker.CVData.CVPictureProperty != null) ptbCV.Image = jobseeker.CVData.CVPictureProperty;
         }
         private void btnEdit_Click(object sender, EventArgs e)
         {
@@ -63,6 +65,8 @@ namespace WinFormProject
             dtpkBirthDate.Enabled = false;
             rdoFemale.Enabled = false;
             rdoMale.Enabled = false;
+            btnEditJobPreferences.Visible = false;
+            btnJobPreference.Visible = true;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -70,6 +74,7 @@ namespace WinFormProject
             Enable_Save_Click();
             JobSeeker newjseeker = CreateJobSeeker();
             jsDAO.UpdateJobSeeker(newjseeker);
+            cvdao.UpdateCV(newjseeker.CVData);
             jobseeker = newjseeker;
         }
         private void Enable_Edit_Click()
@@ -89,6 +94,8 @@ namespace WinFormProject
             dtpkBirthDate.Enabled = true;
             rdoMale.Enabled = true;
             rdoFemale.Enabled = true;
+            btnEditJobPreferences.Visible = true;
+            btnJobPreference.Visible = false;
         }
         private void btnChooseNewCV_Click(object sender, EventArgs e)
         {
@@ -119,12 +126,16 @@ namespace WinFormProject
             }
             else
             {
-                CvData = this.jobseeker.CV;
-                CVImage = this.jobseeker.CVPicture;
+                CvData = this.jobseeker.CVData.CVDataProperty;
+                CVImage = this.jobseeker.CVData.CVPictureProperty;
             }
+
             Information information = new Information(jobseeker.INFO.ID, txtFullName.Text, txtEmail.Text, txtAddress.Text, txtPhoneNumber.Text);
             if (rdoFemale.Checked) gender = "female"; else gender = "male";
-            return new JobSeeker(information, dtpkBirthDate.Value, txtCitizenID.Text, gender, AvatarData, CvData, CVImage);
+            jobseeker.CVData.CVDataProperty = CvData;
+            jobseeker.CVData.CVPictureProperty = CVImage;
+            jobseeker.CVData.JobSeekerID = information.ID;
+            return new JobSeeker(information, dtpkBirthDate.Value, txtCitizenID.Text, gender, AvatarData, jobseeker.CVData);
         }
 
         private void btnCV_Click(object sender, EventArgs e)
@@ -139,20 +150,10 @@ namespace WinFormProject
             FillInfor(); // Reload the form with the original data
             Enable_Save_Click(); // Re-enable the form for editing
         }
-
-        private void FProfile_Load(object sender, EventArgs e)
+        private void btnJobPreference_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void rdoFemale_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox8_Click(object sender, EventArgs e)
-        {
-
+            FJobPreference fJobPreference = new FJobPreference(jobseeker.INFO.ID);
+            fJobPreference.Show();
         }
     }
 }

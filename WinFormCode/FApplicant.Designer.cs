@@ -56,7 +56,7 @@
             txtSearch.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtSearch.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSearch.IconLeft = (Image)resources.GetObject("txtSearch.IconLeft");
-            txtSearch.Location = new Point(153, 33);
+            txtSearch.Location = new Point(106, 33);
             txtSearch.Margin = new Padding(4, 3, 4, 3);
             txtSearch.Name = "txtSearch";
             txtSearch.PasswordChar = '\0';

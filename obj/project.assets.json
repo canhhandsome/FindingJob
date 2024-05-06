@@ -803,11 +803,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormProject.csproj",
+      "projectUniqueName": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormProject.csproj",
       "projectName": "WinFormProject",
-      "projectPath": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormProject.csproj",
+      "projectPath": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormProject.csproj",
       "packagesPath": "C:\\Users\\Canh\\.nuget\\packages\\",
-      "outputPath": "D:\\Learning\\Second Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\obj\\",
+      "outputPath": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Canh\\AppData\\Roaming\\NuGet\\NuGet.Config",

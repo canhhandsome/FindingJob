@@ -1,5 +1,6 @@
 ﻿using System.Data;
 using System.Data.SqlClient;
+using System.Text.Json.Serialization;
 using WinFormProject.OOPCODE;
 
 namespace WinFormProject
@@ -106,6 +107,85 @@ namespace WinFormProject
             }
             return "";
         }
+        public void FetchCV(string SQL, CV cv)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(SQL, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    cv.CVDataProperty = reader["CV"] as byte[];
+                    byte[] CvPicture = reader["CVPicture"] as byte[];
+                    cv.CVPictureProperty = ImageHandler.ByteArrayToImage(CvPicture);
+                    // Check if "Likes" column is DBNull
+                    if (!reader.IsDBNull(reader.GetOrdinal("LikeCount"))) // Ensure "LikeCount" is used instead of "Likes" if it's the correct column name
+                    {
+                        cv.Likes = (int)reader["LikeCount"]; // Use "LikeCount" if it's the correct column name
+                    }
+                    else
+                    {
+                        cv.Likes = 0; // Assign 0 if "LikeCount" is NULL
+                    }
+                    cv.JobSeekerID = reader["JobSeekerID"].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to fetch CV: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+
+        public void UpdateCV(string SQL, CV cv)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(SQL, conn);
+                cmd.Parameters.AddWithValue("@CV", cv.CVDataProperty);
+                cmd.Parameters.AddWithValue("@CVPicture", ImageHandler.ImageToByteArray(cv.CVPictureProperty)); // Assuming CVPicture is an Image object
+                cmd.Parameters.AddWithValue("@LikeCount", cv.Likes); // Change parameter name to match column name
+                cmd.Parameters.AddWithValue("@JobSeekerID", cv.JobSeekerID);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Fail to Update CV: " + e.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+        public void FetchCompanyLikeCV(string SQL, CompanyLikeCV companylikecv)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(SQL, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    // Populate the CompanyLikeCV object
+                    companylikecv.CompanyId = reader["CompanyID"].ToString();
+                    companylikecv.JobseekerId = reader["JobSeekerID"].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to fetch CompanyLikeCV: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
 
         public void FetchHiringJob(string strFetch, List<Job> jobs)
         {
@@ -154,11 +234,16 @@ namespace WinFormProject
 
                 while (reader.Read())
                 {
-                    SkillList.Add(reader["Skill1"].ToString().Trim());
-                    SkillList.Add(reader["Skill2"].ToString().Trim());
-                    SkillList.Add(reader["Skill3"].ToString().Trim());
+                    if (!reader.IsDBNull(reader.GetOrdinal("Skill1")) && reader["Skill1"].ToString().Trim() != "NULL")
+                        SkillList.Add(reader["Skill1"].ToString().Trim());
 
+                    if (!reader.IsDBNull(reader.GetOrdinal("Skill2")) && reader["Skill2"].ToString().Trim() != "NULL")
+                        SkillList.Add(reader["Skill2"].ToString().Trim());
+
+                    if (!reader.IsDBNull(reader.GetOrdinal("Skill3")) && reader["Skill3"].ToString().Trim() != "NULL")
+                        SkillList.Add(reader["Skill3"].ToString().Trim());
                 }
+
             }
             catch (Exception ex)
             {
@@ -215,7 +300,87 @@ namespace WinFormProject
                 conn.Close();
             }
         }
+        public JobPreference FetchJobPreference(string SQL)
+        {
+            // Implement code to execute SQL query and fetch data from the database
+            // Construct a JobPreference object with the fetched data
+            JobPreference jobPreference = new JobPreference();
+            try
+            {
+                conn.Open();
+                SqlCommand command = new SqlCommand(SQL, conn);
+                SqlDataReader reader = command.ExecuteReader();
 
+                // Check if there are rows returned
+                if (reader.HasRows)
+                {
+                    // Read the first row
+                    reader.Read();
+
+                    // Assign values to JobPreference object properties
+                    jobPreference.JobSeekerId = reader["JobSeekerID"].ToString();
+                    jobPreference.Title = reader["Title"].ToString();
+                    jobPreference.Position = reader["Position"].ToString();
+                    jobPreference.CompanyType = reader["CompanyType"].ToString();
+                    jobPreference.WorkingForm = reader["WorkingForm"].ToString();
+                    jobPreference.CompanySize = reader["CompanySize"].ToString();
+                    jobPreference.Location = reader["Location"].ToString();
+                    jobPreference.Salary = Convert.ToInt32(reader["Salary"]);
+                    jobPreference.Deadline = Convert.ToDateTime(reader["Deadline"]);
+                    jobPreference.SkillList = new List<string>
+            {
+                reader["Skill1"].ToString(),
+                reader["Skill2"].ToString(),
+                reader["Skill3"].ToString()
+            };
+                }
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            // Return the constructed JobPreference object
+            return jobPreference;
+        }
+        public void FetchAllJobPreference(string SQL, List<JobPreference> list)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand command = new SqlCommand(SQL, conn);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    JobPreference jobPreference = new JobPreference
+                    {
+                        JobSeekerId = reader["JobSeekerID"].ToString(),
+                        Title = reader["Title"].ToString(),
+                        Position = reader["Position"].ToString(),
+                        CompanyType = reader["CompanyType"].ToString(),
+                        WorkingForm = reader["WorkingForm"].ToString(),
+                        CompanySize = reader["CompanySize"].ToString(),
+                        Location = reader["Location"].ToString(),
+                        Salary = Convert.ToInt32(reader["Salary"]),
+                        Deadline = Convert.ToDateTime(reader["Deadline"]),
+                        SkillList = new List<string>
+                            {
+                                reader["Skill1"].ToString(),
+                                reader["Skill2"].ToString(),
+                                reader["Skill3"].ToString()
+                            }
+                    };
+                    list.Add(jobPreference);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
+            } finally { conn.Close(); }
+           
+        }
         public void CRUD(string SQL)
         {
             try
@@ -226,7 +391,7 @@ namespace WinFormProject
                     MessageBox.Show("Successfully");
                 else MessageBox.Show("Failed");
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
                 MessageBox.Show("Failed, check again" + ex);
             }
@@ -243,8 +408,6 @@ namespace WinFormProject
                 SqlCommand cmd = new SqlCommand(SQL, conn);
                 cmd.Parameters.AddWithValue("@BDate", jobseeker.BDate);
                 cmd.Parameters.AddWithValue("@Avatar", (object)ImageHandler.ImageToByteArray(jobseeker.Avatar) ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@CV", (object)jobseeker.CV ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@CVPicture", (object)ImageHandler.ImageToByteArray(jobseeker.CVPicture) ?? DBNull.Value);
                 if (cmd.ExecuteNonQuery() > 0)
                     MessageBox.Show("Successfully");
                 else MessageBox.Show("Failed");
@@ -506,6 +669,78 @@ namespace WinFormProject
             {
                 conn.Close();
             }
+        }
+
+        public List<Interview> FetchAllInterviews(string strFetch)
+        {
+            List<Interview> lst = new List<Interview> ();
+            try
+            {
+
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        object idjs = reader["IdJSeeker"];
+                        object idj = reader["IdJob"];
+                        object tinter = reader["TimeInterview"];
+                        object dinter = reader["DateInterview"];
+                        object status = reader["Status"];
+
+                        Interview inter = new Interview(idjs.ToString().Trim(), idj.ToString().Trim(), tinter.ToString().Trim(), status.ToString().Trim(),(DateTime)dinter);
+                        lst.Add(inter);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Operation failed. Error: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return lst;
+        }
+
+        public Interview FetchInterview(string strFetch)
+        {
+            Interview interview = new Interview();
+            try
+            {
+
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        object idjs = reader["IdJSeeker"];
+                        object idj = reader["IdJob"];
+                        object tinter = reader["TimeInterview"];
+                        object dinter = reader["DateInterview"];
+                        object status = reader["Status"];
+
+                        interview = new Interview(idjs.ToString().Trim(), idj.ToString().Trim(), tinter.ToString().Trim(), status.ToString().Trim(), (DateTime)dinter);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Operation failed. Error: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return interview;
         }
     }
 }
