@@ -71,7 +71,7 @@ namespace WinFormProject
 
         private void SetMostRecruited()
         {
-            if(company.INFO.ID == companyDAO.GetCompanyWithMostRecruitedCandidates())
+            if (company.INFO.ID == companyDAO.GetCompanyWithMostRecruitedCandidates())
             {
                 pnTopCompany.Visible = true;
                 pnTopCompany.Enabled = true;
