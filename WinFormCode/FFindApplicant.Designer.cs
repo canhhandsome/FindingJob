@@ -51,18 +51,16 @@
             pnBody.Controls.Add(txtSearch);
             pnBody.Dock = DockStyle.Fill;
             pnBody.Location = new Point(0, 0);
-            pnBody.Margin = new Padding(3, 4, 3, 4);
             pnBody.Name = "pnBody";
-            pnBody.Size = new Size(1233, 847);
+            pnBody.Size = new Size(1079, 635);
             pnBody.TabIndex = 3;
             // 
             // pnSubBody
             // 
             pnSubBody.AutoScroll = true;
-            pnSubBody.Location = new Point(44, 174);
-            pnSubBody.Margin = new Padding(3, 4, 3, 4);
+            pnSubBody.Location = new Point(38, 130);
             pnSubBody.Name = "pnSubBody";
-            pnSubBody.Size = new Size(1143, 660);
+            pnSubBody.Size = new Size(1000, 495);
             pnSubBody.TabIndex = 4;
             // 
             // guna2CircleButton1
@@ -77,11 +75,12 @@
             guna2CircleButton1.ForeColor = Color.White;
             guna2CircleButton1.Image = (Image)resources.GetObject("guna2CircleButton1.Image");
             guna2CircleButton1.ImageSize = new Size(45, 45);
-            guna2CircleButton1.Location = new Point(1122, 104);
+            guna2CircleButton1.Location = new Point(982, 78);
+            guna2CircleButton1.Margin = new Padding(3, 2, 3, 2);
             guna2CircleButton1.Name = "guna2CircleButton1";
             guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges1;
             guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            guna2CircleButton1.Size = new Size(65, 48);
+            guna2CircleButton1.Size = new Size(57, 36);
             guna2CircleButton1.TabIndex = 44;
             // 
             // lblListApplicant
@@ -90,16 +89,16 @@
             lblListApplicant.BackColor = Color.White;
             lblListApplicant.Font = new Font("Times New Roman", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             lblListApplicant.ForeColor = SystemColors.ControlText;
-            lblListApplicant.Location = new Point(53, 39);
+            lblListApplicant.Location = new Point(46, 29);
             lblListApplicant.Name = "lblListApplicant";
-            lblListApplicant.Size = new Size(308, 42);
+            lblListApplicant.Size = new Size(248, 35);
             lblListApplicant.TabIndex = 3;
             lblListApplicant.Text = "List Of Applicants";
             // 
             // txtSearch
             // 
             txtSearch.AutoRoundedCorners = true;
-            txtSearch.BorderRadius = 23;
+            txtSearch.BorderRadius = 17;
             txtSearch.CustomizableEdges = customizableEdges2;
             txtSearch.DefaultText = "";
             txtSearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -110,22 +109,24 @@
             txtSearch.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtSearch.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSearch.IconLeft = (Image)resources.GetObject("txtSearch.IconLeft");
-            txtSearch.Location = new Point(44, 104);
-            txtSearch.Margin = new Padding(4, 4, 4, 4);
+            txtSearch.Location = new Point(38, 78);
+            txtSearch.Margin = new Padding(4, 3, 4, 3);
             txtSearch.Name = "txtSearch";
             txtSearch.PasswordChar = '\0';
             txtSearch.PlaceholderText = "Search for applicants";
             txtSearch.SelectedText = "";
             txtSearch.ShadowDecoration.CustomizableEdges = customizableEdges3;
-            txtSearch.Size = new Size(1059, 48);
+            txtSearch.Size = new Size(927, 36);
             txtSearch.TabIndex = 43;
+            txtSearch.KeyDown += txtSearch_KeyDown;
             // 
             // FFindApplicant
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1233, 847);
+            ClientSize = new Size(1079, 635);
             Controls.Add(pnBody);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FFindApplicant";
             Text = "FFindApplicant";
             pnBody.ResumeLayout(false);

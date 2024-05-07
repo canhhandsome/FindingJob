@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using WinFormProject.WinFormCode;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace WinFormProject
@@ -19,6 +20,7 @@ namespace WinFormProject
         private int locaY = 0;
         private List<string> jobNames = new List<string>();
         private List<Job> jobs;
+        private FFilter fFilter;
         private string companyid;
 
         public FPostJob(List<Job> jobs, string companyid)
@@ -32,35 +34,24 @@ namespace WinFormProject
         {
             JobDAO jobDAO = new JobDAO();
             jobs = jobDAO.FetchCompanyJob(companyid);
+            fFilter = new FFilter(jobs);
+            fFilter.btnApply.Click += btnApply_Click;
+            fFilter.btnReset.Click += btnApply_Click;
+            FillInfor(jobs);
+        }
+
+        private void FillInfor(List<Job> joblist)
+        {
             pnSubBody.Controls.Clear();
-            foreach (Job job in jobs)
+            foreach (Job job in joblist)
             {
-                if(job.Status == "waiting")
+                if (job.Status.ToLower() == "Waiting".ToLower())
                 {
-                    UCJob ucjob = new UCJob(job);
-                    pnSubBody.Controls.Add(ucjob);
-                    ucjob.Dock = DockStyle.Top;
-                    pnSubBody.Height += 150;
+                    UCHistory uchistory = new UCHistory(job);
+                    pnSubBody.Controls.Add(uchistory);
+                    pnSubBody.Height += 270;
                 }
             }
-        }
-        private void OpenChildForm(Form childForm)
-        {
-            pnBody.Controls.Clear();
-
-            if (currentFormChild != null)
-            {
-                currentFormChild.Close();
-            }
-            currentFormChild = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            pnBody.Controls.Add(childForm);
-            pnBody.Tag = childForm;
-            pnBody.BackColor = Color.FromArgb(32, 41, 58);
-            childForm.BringToFront();
-            childForm.Show();
         }
 
         private void btnPostingJob_Click(object sender, EventArgs e)
@@ -68,17 +59,34 @@ namespace WinFormProject
             FJobCreation fJobCreation = new FJobCreation(jobs, companyid);
             fJobCreation.Show();
         }
-        private void btnEditJob_Click(object sender, EventArgs e)
-        {
-            //FJobEdit fJobEdit = new FJobEdit();
-            //fJobEdit.LblTitle = "Editing a job";
-            //fJobEdit.BtnPostJob = "Save";
-            //OpenChildForm(fJobEdit);
-        }
 
         private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
             PostJob_Load(sender, e);
+        }
+        private void SearchNameJS(string search)
+        {
+            JobSeekerDAO jsDAO = new JobSeekerDAO();
+            jobs = jobs.Where(job => job.Name.ToLower().Contains(search)).ToList();
+        }
+
+        private void txtSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SearchNameJS(txtSearch.Text.ToLower());
+                FillInfor(jobs);
+            }
+        }
+        private void btnApply_Click(object sender, EventArgs e)
+        {
+            jobs = fFilter.filterList;
+            FillInfor(jobs);
+        }
+
+        private void btnFilter_Click(object sender, EventArgs e)
+        {
+            fFilter.Show();
         }
     }
 }

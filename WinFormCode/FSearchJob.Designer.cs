@@ -35,12 +35,9 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             flpJob = new FlowLayoutPanel();
             btnFilter = new ReaLTaiizor.Controls.ParrotButton();
             txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             btnBack = new Guna.UI2.WinForms.Guna2Button();
             btnNext = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
@@ -67,7 +64,7 @@
             btnFilter.HoverBackgroundColor = Color.FromArgb(248, 242, 197);
             btnFilter.HoverTextColor = Color.Black;
             btnFilter.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
-            btnFilter.Location = new Point(941, 26);
+            btnFilter.Location = new Point(843, 26);
             btnFilter.Name = "btnFilter";
             btnFilter.Size = new Size(127, 36);
             btnFilter.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
@@ -75,6 +72,7 @@
             btnFilter.TextColor = Color.Black;
             btnFilter.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             btnFilter.Vertical_Alignment = StringAlignment.Center;
+            btnFilter.Click += btnFilter_Click;
             // 
             // txtSearch
             // 
@@ -90,7 +88,7 @@
             txtSearch.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtSearch.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSearch.IconLeft = (Image)resources.GetObject("txtSearch.IconLeft");
-            txtSearch.Location = new Point(212, 26);
+            txtSearch.Location = new Point(114, 26);
             txtSearch.Margin = new Padding(4, 3, 4, 3);
             txtSearch.Name = "txtSearch";
             txtSearch.PasswordChar = '\0';
@@ -99,32 +97,13 @@
             txtSearch.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtSearch.Size = new Size(711, 36);
             txtSearch.TabIndex = 37;
-            // 
-            // guna2ComboBox1
-            // 
-            guna2ComboBox1.AutoRoundedCorners = true;
-            guna2ComboBox1.BackColor = Color.Transparent;
-            guna2ComboBox1.BorderRadius = 17;
-            guna2ComboBox1.CustomizableEdges = customizableEdges3;
-            guna2ComboBox1.DrawMode = DrawMode.OwnerDrawFixed;
-            guna2ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            guna2ComboBox1.FocusedColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2ComboBox1.ForeColor = Color.FromArgb(68, 88, 112);
-            guna2ComboBox1.ItemHeight = 30;
-            guna2ComboBox1.Location = new Point(31, 26);
-            guna2ComboBox1.Margin = new Padding(3, 2, 3, 2);
-            guna2ComboBox1.Name = "guna2ComboBox1";
-            guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2ComboBox1.Size = new Size(162, 36);
-            guna2ComboBox1.TabIndex = 38;
+            txtSearch.KeyDown += txtSearch_KeyDown;
             // 
             // btnBack
             // 
             btnBack.AutoRoundedCorners = true;
             btnBack.BorderRadius = 20;
-            btnBack.CustomizableEdges = customizableEdges5;
+            btnBack.CustomizableEdges = customizableEdges3;
             btnBack.DisabledState.BorderColor = Color.DarkGray;
             btnBack.DisabledState.CustomBorderColor = Color.DarkGray;
             btnBack.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -134,7 +113,7 @@
             btnBack.Location = new Point(21, 582);
             btnBack.Margin = new Padding(3, 2, 3, 2);
             btnBack.Name = "btnBack";
-            btnBack.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnBack.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnBack.Size = new Size(141, 42);
             btnBack.TabIndex = 39;
             btnBack.Text = "Back";
@@ -144,7 +123,7 @@
             // 
             btnNext.AutoRoundedCorners = true;
             btnNext.BorderRadius = 20;
-            btnNext.CustomizableEdges = customizableEdges7;
+            btnNext.CustomizableEdges = customizableEdges5;
             btnNext.DisabledState.BorderColor = Color.DarkGray;
             btnNext.DisabledState.CustomBorderColor = Color.DarkGray;
             btnNext.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -154,7 +133,7 @@
             btnNext.Location = new Point(187, 582);
             btnNext.Margin = new Padding(3, 2, 3, 2);
             btnNext.Name = "btnNext";
-            btnNext.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnNext.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnNext.Size = new Size(141, 42);
             btnNext.TabIndex = 40;
             btnNext.Text = "Next";
@@ -169,7 +148,6 @@
             ClientSize = new Size(1079, 635);
             Controls.Add(btnNext);
             Controls.Add(btnBack);
-            Controls.Add(guna2ComboBox1);
             Controls.Add(txtSearch);
             Controls.Add(btnFilter);
             Controls.Add(flpJob);
@@ -182,7 +160,6 @@
         private FlowLayoutPanel flpJob;
         private ReaLTaiizor.Controls.ParrotButton btnFilter;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Guna.UI2.WinForms.Guna2Button btnBack;
         private Guna.UI2.WinForms.Guna2Button btnNext;
     }

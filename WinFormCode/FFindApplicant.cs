@@ -22,14 +22,29 @@ namespace WinFormProject.WinFormCode
             this.companyid = companyid;
             InitializeComponent();
             jobpreferenceDAO.FetchAllJobPreference(jobpreference);
-            FillCandicate();
+            FillCandicate(jobpreference);
         }
-        private void FillCandicate()
+        private void FillCandicate(List<JobPreference> lst)
         {
-            foreach (JobPreference jp in jobpreference)
+            pnSubBody.Controls.Clear();
+            foreach (JobPreference jp in lst)
             {
-                UCCandidate uCCandidate = new UCCandidate(jp,companyid);
+                UCCandidate uCCandidate = new UCCandidate(jp, companyid);
                 pnSubBody.Controls.Add(uCCandidate);
+            }
+        }
+
+        private List<JobPreference> SearchNameJS(string search)
+        {
+            JobSeekerDAO jsDAO = new JobSeekerDAO();
+            return jobpreference.Where(jp => jsDAO.FetchName(jp.JobSeekerId).ToLower().Contains(search)).ToList();
+        }
+
+        private void txtSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                FillCandicate(SearchNameJS(txtSearch.Text.ToLower()));
             }
         }
     }

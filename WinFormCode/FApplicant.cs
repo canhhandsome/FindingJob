@@ -15,11 +15,19 @@ namespace WinFormProject
         Company company;
         ApplyDAO applyDAO = new ApplyDAO();
         List<Apply> applies = new List<Apply> { };
+        Job job;
         public FApplicant(Job job)
         {
             InitializeComponent();
+            this.job = job;
             applies = applyDAO.AllApplies(job.Jobid);
-            foreach (Apply apply in applies)
+            FillInfor(applies);
+        }
+
+        private void FillInfor(List<Apply> applylist)
+        {
+            flpApplicant.Controls.Clear();
+            foreach (Apply apply in applylist)
             {
                 UCApplicant uCApplicant = new UCApplicant(apply, job);
                 flpApplicant.Controls.Add(uCApplicant);
@@ -27,5 +35,18 @@ namespace WinFormProject
             }
         }
 
+        private List<Apply> SearchNameJS(string search)
+        {
+            JobSeekerDAO jsDAO = new JobSeekerDAO(); 
+            return applies.Where(apply => jsDAO.FetchName(apply.JSeekerID).ToLower().Contains(search)).ToList();
+        }
+
+        private void txtSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                FillInfor(SearchNameJS(txtSearch.Text));
+            }
+        }
     }
 }

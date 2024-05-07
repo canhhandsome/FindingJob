@@ -15,7 +15,7 @@ namespace WinFormProject.WinFormCode
     {
         private List<Job> jobs;
         private string companyid;
-
+        private FFilter fFilter;
         public FHistory(List<Job> jobs, string companyid)
         {
             InitializeComponent();
@@ -28,13 +28,21 @@ namespace WinFormProject.WinFormCode
                 uchistory.Dock = DockStyle.Top;
                 pnSubBody.Height += 150;
             }
+            fFilter = new FFilter(jobs);
+            fFilter.btnApply.Click += btnApply_Click;
+            fFilter.btnReset.Click += btnApply_Click;
         }
         private void Job_Load(object sender, EventArgs e)
         {
             JobDAO jobDAO = new JobDAO();
             jobs = jobDAO.FetchCompanyJob(companyid);
+            FillInfor(jobs);
+        }
+
+        private void FillInfor(List<Job> joblist)
+        {
             pnSubBody.Controls.Clear();
-            foreach (Job job in jobs)
+            foreach (Job job in joblist)
             {
                 UCHistory uchistory = new UCHistory(job);
                 pnSubBody.Controls.Add(uchistory);
@@ -46,6 +54,46 @@ namespace WinFormProject.WinFormCode
         private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
             Job_Load(sender, e);
+        }
+
+        private void SearchNameJS(string search)
+        {
+            JobSeekerDAO jsDAO = new JobSeekerDAO();
+            jobs = jobs.Where(job => job.Name.ToLower().Contains(search)).ToList();
+        }
+        private void SearchStatusJS(string search)
+        {
+            jobs = jobs.Where(job => job.Status.ToLower().Contains(search)).ToList();
+        }
+
+        private void txtSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SearchNameJS(txtSearch.Text);
+                FillInfor(jobs);
+            }
+        }
+
+        private void cbbStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbbStatus.SelectedIndex == 0)
+            {
+                return;
+            }
+            SearchStatusJS(cbbStatus.Text.ToLower());
+            FillInfor(jobs);
+        }
+
+        private void btnFilter_Click(object sender, EventArgs e)
+        {
+            fFilter.Show();
+        }
+
+        private void btnApply_Click(object sender, EventArgs e)
+        {
+            jobs = fFilter.filterList;
+            FillInfor(jobs);
         }
     }
 }
