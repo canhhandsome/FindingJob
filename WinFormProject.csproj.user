@@ -32,6 +32,18 @@
     <Compile Update="WinFormCode\FCV.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="WinFormCode\FCVCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FCVCreation_Edu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FCVCreation_Exp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\FCVCreation_Project.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="WinFormCode\FFilter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +134,12 @@
     <Compile Update="WinFormCode\UCCarousel.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="WinFormCode\UCEducation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\UCExperience.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="WinFormCode\UCHistory.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -132,6 +150,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="WinFormCode\UCJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="WinFormCode\UCProject.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

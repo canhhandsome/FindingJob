@@ -12,9 +12,12 @@
     <PackageReference Include="dot-net-transitions" Version="1.2.1" />
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.6" />
     <PackageReference Include="MaterialSkin" Version="0.2.1" />
+    <PackageReference Include="PDFsharp" Version="6.0.0" />
     <PackageReference Include="ReaLTaiizor" Version="3.8.0.5" />
     <PackageReference Include="Syncfusion.Pdf.WinForms" Version="25.1.37" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.4" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -69,6 +72,57 @@
 
   <ItemGroup>
     <Content Remove="C:\Users\OS\.nuget\packages\syncfusion.pdftoimageconverter.winforms\25.1.37\build\net6.0-windows7.0\..\..\Pdfium\win-x64\native\pdfium.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="fonts\arial\arial.ttf" />
+    <None Remove="fonts\arial\arialbd.ttf" />
+    <None Remove="fonts\arial\arialbi.ttf" />
+    <None Remove="fonts\arial\ariali.ttf" />
+    <None Remove="fonts\arial\ARIALN.TTF" />
+    <None Remove="fonts\arial\ARIALNB.TTF" />
+    <None Remove="fonts\arial\ARIALNBI.TTF" />
+    <None Remove="fonts\arial\ARIALNI.TTF" />
+    <None Remove="fonts\arial\ariblk.ttf" />
+    <None Remove="Resources\avatar.png" />
+    <None Remove="Resources\coding.png" />
+    <None Remove="Resources\mortarboard.png" />
+    <None Remove="Resources\portfolio.png" />
+    <None Remove="Resources\project.png" />
+    <None Remove="Resources\skills.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\avatar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\coding.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\mortarboard.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\portfolio.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\project.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\skills.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="fonts\arial\arial.ttf" />
+    <EmbeddedResource Include="fonts\arial\arialbd.ttf" />
+    <EmbeddedResource Include="fonts\arial\arialbi.ttf" />
+    <EmbeddedResource Include="fonts\arial\ariali.ttf" />
+    <EmbeddedResource Include="fonts\arial\ARIALN.TTF" />
+    <EmbeddedResource Include="fonts\arial\ARIALNB.TTF" />
+    <EmbeddedResource Include="fonts\arial\ARIALNBI.TTF" />
+    <EmbeddedResource Include="fonts\arial\ARIALNI.TTF" />
+    <EmbeddedResource Include="fonts\arial\ariblk.ttf" />
   </ItemGroup>
 
 </Project>

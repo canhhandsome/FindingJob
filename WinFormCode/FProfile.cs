@@ -160,5 +160,11 @@ namespace WinFormProject
         {
 
         }
+
+        private void btnCreateCV_Click(object sender, EventArgs e)
+        {
+            FCVCreation fCV = new FCVCreation(jobseeker);
+            fCV.Show();
+        }
     }
 }

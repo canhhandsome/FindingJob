@@ -24,6 +24,11 @@ namespace WinFormProject.WinFormCode
             this.skills = skills;
         }
 
+        public FJobSKills()
+        {
+            InitializeComponent();
+        }
+        
         private void FJobSKills_Load(object sender, EventArgs e)
         {
             SetAllButtonClick(pnBody);
@@ -128,5 +133,8 @@ namespace WinFormProject.WinFormCode
             PassListBackToListener();
             this.Hide();
         }
+
+        public List<string> Skills
+        { get { return skills; } }
     }
 }
