@@ -42,6 +42,10 @@ namespace WinFormProject
             string strFetch = string.Format(@$"Select * FROM Interview WHERE idJob = '{jobID}' and idJSeeker = '{jsID}'");
             return conn.FetchInterview(strFetch);
         }
-
+        public void SetStatusForInterview(string jobseekerid, string jobid, string status)
+        {
+            string SQL = string.Format("Update Interview Set Status ='{0}' Where IdJSeeker ='{1}' and IdJob = '{2}'",status,jobseekerid,jobid);
+            conn.CRUD(SQL);
+        }
     }
 }

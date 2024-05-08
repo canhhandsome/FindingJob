@@ -56,6 +56,7 @@ namespace WinFormProject.OOPCODE
         public string Status
         {
             get { return status; }
+            set {  status = value; }    
         }
     }
 }

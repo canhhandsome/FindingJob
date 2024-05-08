@@ -95,17 +95,18 @@ namespace WinFormProject
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(strFetch, conn);
-                return cmd.ExecuteScalar().ToString();
+                object result = cmd.ExecuteScalar();
+                return result != null ? result.ToString() : "";
             }
             catch (Exception ex)
             {
-
+                // Handle the exception, you might want to log it or perform some other action
             }
             finally
             {
                 conn.Close();
             }
-            return "";
+            return ""; // This line is reached only if an exception occurs
         }
         public void FetchCV(string SQL, CV cv)
         {

@@ -24,5 +24,15 @@ namespace WinFormProject.OOPCODE
             conn.FetchAllOffers(sqlFetch, offers);
             return offers;
         }
+        public void OfferAccepted(string companyid, string jobseekerid)
+        {
+            string SQL = string.Format("Update JobOffer Set Status ='Accepted' Where recipientID ='{1}' And SenderID ='{0}'", companyid,jobseekerid);
+            conn.CRUD(SQL);
+        }
+        public void OfferRejected(string companyid, string jobseekerid)
+        {
+            string SQL = string.Format("Update JobOffer Set Status ='Rejected' Where recipientID ='{1}' And SenderID ='{0}'", companyid, jobseekerid);
+            conn.CRUD(SQL);
+        }
     }
 }

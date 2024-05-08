@@ -16,6 +16,9 @@ namespace WinFormProject
     {
         private Alert alert = new Alert();
         private JobOffer JobOffer = new JobOffer();
+        private CompanySendOfferDAO companySendOfferDAO = new CompanySendOfferDAO();
+        private InterviewDAO interviewDAO = new InterviewDAO();
+        private JobOfferDAO jobOfferDAO = new JobOfferDAO();
         public FAlertView(Alert alert)
         {
             InitializeComponent();
@@ -33,6 +36,10 @@ namespace WinFormProject
         {
             InitializeComponent();
             this.JobOffer = jobOffer;
+            StartUp(jobOffer);
+        }
+        private void StartUp(JobOffer jobOffer)
+        {
             CompanyDAO companyDAO = new CompanyDAO();
             JobDAO jobDAO = new JobDAO();
             llFromT.Text = companyDAO.FetchName(JobOffer.SenderID);
@@ -93,12 +100,20 @@ namespace WinFormProject
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-
+            jobOfferDAO.OfferAccepted(JobOffer.SenderID,JobOffer.RecipientID);
+            companySendOfferDAO.OfferAccepted(JobOffer.SenderID, JobOffer.RecipientID);
+            interviewDAO.SetStatusForInterview(JobOffer.RecipientID,"","Accepted");
+            this.JobOffer.Status = "Accepted";
+            StartUp(this.JobOffer);
         }
 
         private void btnReject_Click(object sender, EventArgs e)
         {
-
+            jobOfferDAO.OfferRejected(JobOffer.SenderID, JobOffer.RecipientID);
+            companySendOfferDAO.OfferRejected(JobOffer.SenderID, JobOffer.RecipientID);
+            interviewDAO.SetStatusForInterview(JobOffer.RecipientID, "", "Rejected");
+            this.JobOffer.Status = "Rejected";
+            StartUp(this.JobOffer);
         }
     }
 }

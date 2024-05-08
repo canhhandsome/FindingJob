@@ -13,22 +13,21 @@ namespace WinFormProject.OOPCODE
         DBConnection conn = new DBConnection();
         public void Insert(CompanySendOffer companySendOffer)
         {
-            string sqlUpdate = string.Format("INSERT INTO CompanySendOffer (companyid,jobseekerid) " +
-                                         "VALUES ('{0}', '{1}')",
-                                         companySendOffer.companyid,companySendOffer.jobseekerid
-                                         );
+            string sqlUpdate = string.Format("INSERT INTO CompanySendOffer (companyid,jobseekerid,status) " +
+                                         "VALUES ('{0}', '{1}','{2}')",
+                                         companySendOffer.companyid,companySendOffer.jobseekerid, "Offering");
             conn.CRUD(sqlUpdate);
         }
-        public bool AlreadySent(string jobseekerid)
+        public bool AlreadySent(string jobseekerid,string companyid)
         {
-            string id;
-            string strFetch = string.Format("SELECT status from CompanySendOffer WHERE JobSeekerID= '{0}'", jobseekerid);
-            id = conn.FetchScalar(strFetch);
-            if (id != "Rejected")
+            string status;
+            string strFetch = string.Format("SELECT status from CompanySendOffer WHERE JobSeekerID= '{0}' and CompanyID = '{1}'", jobseekerid,companyid);
+            status = conn.FetchScalar(strFetch);
+            if (status == "Rejected" || status == "")
             {
-                return true;
+                return false;
             }
-            return false;
+            return true;
         }
         public void OfferAccepted(string companyid, string jobseekerid)
         {
