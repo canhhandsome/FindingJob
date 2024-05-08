@@ -715,20 +715,17 @@ namespace WinFormProject
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(strFetch, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
-
-                if (reader.HasRows)
+                while (reader.Read())
                 {
-                    while (reader.Read())
-                    {
-                        object idjs = reader["IdJSeeker"];
-                        object idj = reader["IdJob"];
-                        object tinter = reader["TimeInterview"];
-                        object dinter = reader["DateInterview"];
-                        object status = reader["Status"];
+                    object idjs = reader["IdJSeeker"];
+                    object idj = reader["IdJob"];
+                    object tinter = reader["TimeInterview"];
+                    object dinter = reader["DateInterview"];
+                    object status = reader["Status"];
+                    object companyID = reader["companyID"];
 
-                        Interview inter = new Interview(idjs.ToString().Trim(), idj.ToString().Trim(), tinter.ToString().Trim(), status.ToString().Trim(),(DateTime)dinter);
-                        lst.Add(inter);
-                    }
+                    Interview inter = new Interview(idjs.ToString().Trim(), idj.ToString().Trim(), tinter.ToString().Trim(), status.ToString().Trim(), (DateTime)dinter, companyID.ToString().Trim());
+                    lst.Add(inter);
                 }
 
             }
@@ -762,8 +759,9 @@ namespace WinFormProject
                         object tinter = reader["TimeInterview"];
                         object dinter = reader["DateInterview"];
                         object status = reader["Status"];
+                        object companyID = reader["companyID"];
 
-                        interview = new Interview(idjs.ToString().Trim(), idj.ToString().Trim(), tinter.ToString().Trim(), status.ToString().Trim(), (DateTime)dinter);
+                        interview = new Interview(idjs.ToString().Trim(), idj.ToString().Trim(), tinter.ToString().Trim(), status.ToString().Trim(), (DateTime)dinter, companyID.ToString().Trim());
                     }
                 }
             }

@@ -3,6 +3,7 @@ using Syncfusion.XPS;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.Design;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -19,22 +20,24 @@ namespace WinFormProject.WinFormCode
         List<Interview> interviews = new List<Interview>();
         InterviewDAO InterviewDAO = new InterviewDAO();
         List<string> times = new List<string>();
-        string jobseekerid, jobid;
-        public FScheduleInterview(Apply apply)
+        string jobseekerid, jobid, companyID;
+        public FScheduleInterview(Apply apply, string companyID)
         {
             InitializeComponent();
             this.apply = apply;
+            this.companyID = companyID;
             jobseekerid = apply.JSeekerID;
             jobid = apply.JobID;
-            interviews = InterviewDAO.AllInterview();
+            interviews = InterviewDAO.FetchInterviewByID(companyID);
             times.AddRange(cbbTimeIv.Items.Cast<string>());
         }
-        public FScheduleInterview(JobPreference jobPreference)
+        public FScheduleInterview(JobPreference jobPreference, string companyID)
         {
             InitializeComponent();
+            this.companyID = companyID;
             this.jobseekerid = jobPreference.JobSeekerId;
             this.jobid = string.Empty;
-            interviews = InterviewDAO.AllInterview();
+            interviews = InterviewDAO.FetchInterviewByID(companyID);
             times.AddRange(cbbTimeIv.Items.Cast<string>());
         }
         private void mcpSchdule_DateSelected(object sender, DateRangeEventArgs e)
@@ -47,7 +50,7 @@ namespace WinFormProject.WinFormCode
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Interview interview = new Interview(jobseekerid, jobid, cbbTimeIv.Text, mcpSchdule.SelectionRange.Start);
+            Interview interview = new Interview(jobseekerid, jobid, cbbTimeIv.Text, mcpSchdule.SelectionRange.Start, companyID);
             InterviewDAO.InsertInterview(interview);
             interviews.Add(interview);
             FScheduleInterview_Load(sender, e);

@@ -50,7 +50,7 @@ namespace WinFormProject
 
         private void btnInterview_Click(object sender, EventArgs e)
         {
-            FScheduleInterview fScheduleInterview = new FScheduleInterview(apply);
+            FScheduleInterview fScheduleInterview = new FScheduleInterview(apply, job.CompanyID);
             fScheduleInterview.Show();
         }
     }

@@ -121,7 +121,7 @@
             // 
             // mcpSchdule
             // 
-            mcpSchdule.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            mcpSchdule.Font = new Font("Segoe UI", 12F);
             mcpSchdule.Location = new Point(415, 83);
             mcpSchdule.MaxSelectionCount = 1;
             mcpSchdule.Name = "mcpSchdule";
@@ -158,7 +158,7 @@
             // lblDateTime
             // 
             lblDateTime.BackColor = Color.Transparent;
-            lblDateTime.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDateTime.Font = new Font("Segoe UI", 15F);
             lblDateTime.Location = new Point(48, 16);
             lblDateTime.Margin = new Padding(4, 3, 4, 3);
             lblDateTime.Name = "lblDateTime";
@@ -177,7 +177,7 @@
             btnAdd.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnAdd.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
             btnAdd.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnAdd.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAdd.Font = new Font("Segoe UI", 12F);
             btnAdd.ForeColor = Color.White;
             btnAdd.Location = new Point(646, 14);
             btnAdd.Margin = new Padding(4, 3, 4, 3);
@@ -201,7 +201,7 @@
             cbbTimeIv.DropDownStyle = ComboBoxStyle.DropDownList;
             cbbTimeIv.FocusedColor = Color.FromArgb(94, 148, 255);
             cbbTimeIv.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            cbbTimeIv.Font = new Font("Segoe UI", 14.5F, FontStyle.Regular, GraphicsUnit.Point);
+            cbbTimeIv.Font = new Font("Segoe UI", 14.5F);
             cbbTimeIv.ForeColor = Color.FromArgb(68, 88, 112);
             cbbTimeIv.ItemHeight = 30;
             cbbTimeIv.Items.AddRange(new object[] { "8:00 - 10:00", "10:00 - 12:00", "13:00 - 15:00", "15:00 - 17:00" });
@@ -286,7 +286,7 @@
             // 
             guna2HtmlLabel3.AutoSize = false;
             guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             guna2HtmlLabel3.Location = new Point(0, 0);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             guna2HtmlLabel3.Size = new Size(129, 34);
@@ -307,7 +307,7 @@
             // 
             lblTime.AutoSize = false;
             lblTime.BackColor = Color.Transparent;
-            lblTime.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTime.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             lblTime.Location = new Point(0, 0);
             lblTime.Name = "lblTime";
             lblTime.Size = new Size(129, 34);
@@ -329,7 +329,7 @@
             lblTimeAdd.AutoSize = false;
             lblTimeAdd.BackColor = Color.Transparent;
             lblTimeAdd.Dock = DockStyle.Fill;
-            lblTimeAdd.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTimeAdd.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             lblTimeAdd.Location = new Point(0, 0);
             lblTimeAdd.Name = "lblTimeAdd";
             lblTimeAdd.Size = new Size(115, 34);
@@ -351,7 +351,7 @@
             lblJob.AutoSize = false;
             lblJob.BackColor = Color.Transparent;
             lblJob.Dock = DockStyle.Fill;
-            lblJob.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblJob.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             lblJob.Location = new Point(0, 0);
             lblJob.Name = "lblJob";
             lblJob.Size = new Size(318, 34);
@@ -375,7 +375,7 @@
             guna2HtmlLabel2.AutoSize = false;
             guna2HtmlLabel2.BackColor = Color.Transparent;
             guna2HtmlLabel2.Dock = DockStyle.Fill;
-            guna2HtmlLabel2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             guna2HtmlLabel2.Location = new Point(29, 0);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             guna2HtmlLabel2.Size = new Size(101, 34);
@@ -397,7 +397,7 @@
             lblJSeeker.AutoSize = false;
             lblJSeeker.BackColor = Color.Transparent;
             lblJSeeker.Dock = DockStyle.Fill;
-            lblJSeeker.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblJSeeker.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             lblJSeeker.Location = new Point(0, 0);
             lblJSeeker.Name = "lblJSeeker";
             lblJSeeker.Size = new Size(247, 34);
@@ -416,7 +416,7 @@
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Font = new Font("Segoe UI Semibold", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel1.Font = new Font("Segoe UI Semibold", 25F, FontStyle.Bold);
             guna2HtmlLabel1.Location = new Point(384, 29);
             guna2HtmlLabel1.Margin = new Padding(4, 3, 4, 3);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";

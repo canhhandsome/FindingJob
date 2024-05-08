@@ -16,13 +16,13 @@ namespace WinFormProject
 
         public void InsertInterview(Interview interview)
         {
-            string strCRUD = string.Format(@$"Insert into Interview (IdJSeeker, IdJob, TimeInterview, DateInterview) Values('{interview.IdJSeeker}', '{interview.IdJob}', '{interview.TimeInterview}', '{interview.DateInterview.ToString("yyyy-MM-dd")}')");
+            string strCRUD = string.Format(@$"Insert into Interview (IdJSeeker, IdJob, TimeInterview, DateInterview, companyID) Values('{interview.IdJSeeker}', '{interview.IdJob}', '{interview.TimeInterview}', '{interview.DateInterview.ToString("yyyy-MM-dd")}', '{interview.CompanyID}')");
             conn.CRUD(strCRUD);
         }
 
-        public List<Interview> FetchInterviewByID(string jobID)
+        public List<Interview> FetchInterviewByID(string companyID)
         {
-            string strFetch = string.Format(@$"Select * FROM Interview WHERE idJob = '{jobID}'");
+            string strFetch = string.Format(@$"Select * FROM Interview WHERE companyID = '{companyID}'");
             return conn.FetchAllInterviews(strFetch);
         }
         public List<Interview> FetchInterviewByID(string jsID, string jobID)
@@ -37,14 +37,15 @@ namespace WinFormProject
             return conn.FetchAllInterviews(strFetch);
         }
 
-        public Interview FetchInterview(string jsID, string jobID)
+        public Interview FetchInterview(string jsID, string companyID, string jobID)
         {
-            string strFetch = string.Format(@$"Select * FROM Interview WHERE idJob = '{jobID}' and idJSeeker = '{jsID}'");
+            string strFetch = string.Format(@$"Select * FROM Interview WHERE companyID = '{companyID}' and idJSeeker = '{jsID}' and idJob = '{jobID}' and status != 'rejected'");
             return conn.FetchInterview(strFetch);
         }
-        public void SetStatusForInterview(string jobseekerid, string jobid, string status)
+
+        public void SetStatusForInterview(string jobseekerid, string jobid, string status, string companyID)
         {
-            string SQL = string.Format("Update Interview Set Status ='{0}' Where IdJSeeker ='{1}' and IdJob = '{2}'",status,jobseekerid,jobid);
+            string SQL = string.Format("Update Interview Set Status ='{0}' Where IdJSeeker ='{1}' and IdJob = '{2}' and companyID = '{3}'",status,jobseekerid,jobid, companyID);
             conn.CRUD(SQL);
         }
     }
