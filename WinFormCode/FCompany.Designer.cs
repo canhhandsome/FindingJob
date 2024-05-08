@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FCompany));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -97,9 +97,9 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(65, 59, 96);
-            panel2.Controls.Add(btnInterviewView);
             panel2.Controls.Add(btnLogOut);
             panel2.Controls.Add(btnApplicant);
+            panel2.Controls.Add(btnInterviewView);
             panel2.Controls.Add(btnSetting);
             panel2.Controls.Add(btnHistory);
             panel2.Controls.Add(btnPostJob);
@@ -114,7 +114,7 @@
             // btnInterviewView
             // 
             btnInterviewView.BorderRadius = 20;
-            btnInterviewView.CustomizableEdges = customizableEdges1;
+            btnInterviewView.CustomizableEdges = customizableEdges5;
             btnInterviewView.DisabledState.BorderColor = Color.DarkGray;
             btnInterviewView.DisabledState.CustomBorderColor = Color.DarkGray;
             btnInterviewView.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -126,15 +126,15 @@
             btnInterviewView.HoverState.FillColor = Color.FromArgb(220, 251, 251);
             btnInterviewView.HoverState.Font = new Font("Cooper Black", 16.2F);
             btnInterviewView.HoverState.ForeColor = Color.Black;
-            btnInterviewView.HoverState.Image = (Image)resources.GetObject("resource.Image");
+            btnInterviewView.HoverState.Image = (Image)resources.GetObject("resource.Image2");
             btnInterviewView.Image = (Image)resources.GetObject("btnInterviewView.Image");
             btnInterviewView.ImageAlign = HorizontalAlignment.Left;
             btnInterviewView.ImageSize = new Size(50, 50);
-            btnInterviewView.Location = new Point(0, 636);
+            btnInterviewView.Location = new Point(0, 446);
             btnInterviewView.Margin = new Padding(4);
             btnInterviewView.Name = "btnInterviewView";
             btnInterviewView.ShadowDecoration.Color = Color.White;
-            btnInterviewView.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnInterviewView.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnInterviewView.ShadowDecoration.Shadow = new Padding(2);
             btnInterviewView.Size = new Size(231, 71);
             btnInterviewView.TabIndex = 4;
@@ -145,7 +145,7 @@
             // btnLogOut
             // 
             btnLogOut.BorderRadius = 20;
-            btnLogOut.CustomizableEdges = customizableEdges3;
+            btnLogOut.CustomizableEdges = customizableEdges1;
             btnLogOut.DisabledState.BorderColor = Color.DarkGray;
             btnLogOut.DisabledState.CustomBorderColor = Color.DarkGray;
             btnLogOut.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -157,15 +157,15 @@
             btnLogOut.HoverState.FillColor = Color.FromArgb(220, 251, 251);
             btnLogOut.HoverState.Font = new Font("Cooper Black", 16.2F);
             btnLogOut.HoverState.ForeColor = Color.Black;
-            btnLogOut.HoverState.Image = (Image)resources.GetObject("resource.Image1");
+            btnLogOut.HoverState.Image = (Image)resources.GetObject("resource.Image");
             btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
             btnLogOut.ImageAlign = HorizontalAlignment.Left;
             btnLogOut.ImageSize = new Size(50, 50);
-            btnLogOut.Location = new Point(0, 541);
+            btnLogOut.Location = new Point(0, 612);
             btnLogOut.Margin = new Padding(5);
             btnLogOut.Name = "btnLogOut";
             btnLogOut.ShadowDecoration.Color = Color.White;
-            btnLogOut.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnLogOut.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnLogOut.ShadowDecoration.Shadow = new Padding(2);
             btnLogOut.Size = new Size(231, 95);
             btnLogOut.TabIndex = 3;
@@ -176,7 +176,7 @@
             // btnApplicant
             // 
             btnApplicant.BorderRadius = 20;
-            btnApplicant.CustomizableEdges = customizableEdges5;
+            btnApplicant.CustomizableEdges = customizableEdges3;
             btnApplicant.DisabledState.BorderColor = Color.DarkGray;
             btnApplicant.DisabledState.CustomBorderColor = Color.DarkGray;
             btnApplicant.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -188,15 +188,15 @@
             btnApplicant.HoverState.FillColor = Color.FromArgb(220, 251, 251);
             btnApplicant.HoverState.Font = new Font("Cooper Black", 16.2F);
             btnApplicant.HoverState.ForeColor = Color.Black;
-            btnApplicant.HoverState.Image = (Image)resources.GetObject("resource.Image2");
+            btnApplicant.HoverState.Image = (Image)resources.GetObject("resource.Image1");
             btnApplicant.Image = (Image)resources.GetObject("btnApplicant.Image");
             btnApplicant.ImageAlign = HorizontalAlignment.Left;
             btnApplicant.ImageSize = new Size(50, 50);
-            btnApplicant.Location = new Point(0, 446);
+            btnApplicant.Location = new Point(0, 517);
             btnApplicant.Margin = new Padding(5);
             btnApplicant.Name = "btnApplicant";
             btnApplicant.ShadowDecoration.Color = Color.White;
-            btnApplicant.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnApplicant.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnApplicant.ShadowDecoration.Shadow = new Padding(2);
             btnApplicant.Size = new Size(231, 95);
             btnApplicant.TabIndex = 2;
@@ -207,7 +207,7 @@
             // btnSetting
             // 
             btnSetting.BorderRadius = 20;
-            btnSetting.CustomizableEdges = customizableEdges1;
+            btnSetting.CustomizableEdges = customizableEdges5;
             btnSetting.DisabledState.BorderColor = Color.DarkGray;
             btnSetting.DisabledState.CustomBorderColor = Color.DarkGray;
             btnSetting.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -227,7 +227,7 @@
             btnSetting.Margin = new Padding(5);
             btnSetting.Name = "btnSetting";
             btnSetting.ShadowDecoration.Color = Color.White;
-            btnSetting.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnSetting.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnSetting.ShadowDecoration.Shadow = new Padding(2);
             btnSetting.Size = new Size(231, 95);
             btnSetting.TabIndex = 2;
