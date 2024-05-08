@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            components = new System.ComponentModel.Container();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblTitle = new Label();
             pnBody = new Panel();
             flPBtnSkills = new FlowLayoutPanel();
@@ -75,19 +76,29 @@
             rtxtdescription = new RichTextBox();
             tbpbenefit = new TabPage();
             rtxtBenefit = new RichTextBox();
+            errorProvider1 = new ErrorProvider(components);
+            errorProvider2 = new ErrorProvider(components);
+            errorProvider3 = new ErrorProvider(components);
+            errorProvider4 = new ErrorProvider(components);
+            errorProvider5 = new ErrorProvider(components);
             pnBody.SuspendLayout();
             flPBtnSkills.SuspendLayout();
             tabpage.SuspendLayout();
             tbprequirement.SuspendLayout();
             tbpdescription.SuspendLayout();
             tbpbenefit.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider5).BeginInit();
             SuspendLayout();
             // 
             // lblTitle
             // 
             lblTitle.AutoSize = true;
             lblTitle.BackColor = Color.White;
-            lblTitle.Font = new Font("Times New Roman", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTitle.Font = new Font("Times New Roman", 19.8F, FontStyle.Bold);
             lblTitle.ForeColor = SystemColors.ControlText;
             lblTitle.Location = new Point(42, 21);
             lblTitle.Name = "lblTitle";
@@ -126,7 +137,7 @@
             pnBody.Controls.Add(btnPostJob);
             pnBody.Controls.Add(tabpage);
             pnBody.Dock = DockStyle.Fill;
-            pnBody.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            pnBody.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             pnBody.ForeColor = Color.Gray;
             pnBody.Location = new Point(0, 0);
             pnBody.Name = "pnBody";
@@ -144,31 +155,32 @@
             // 
             // flpSkills
             // 
+            flpSkills.AutoSize = true;
             flpSkills.Dock = DockStyle.Left;
             flpSkills.Location = new Point(3, 3);
             flpSkills.Name = "flpSkills";
-            flpSkills.Size = new Size(36, 37);
+            flpSkills.Size = new Size(0, 37);
             flpSkills.TabIndex = 76;
             // 
             // btnAddSkills
             // 
             btnAddSkills.BorderRadius = 15;
-            btnAddSkills.CustomizableEdges = customizableEdges1;
+            btnAddSkills.CustomizableEdges = customizableEdges13;
             btnAddSkills.DisabledState.BorderColor = Color.DarkGray;
             btnAddSkills.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAddSkills.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnAddSkills.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnAddSkills.FillColor = Color.Transparent;
-            btnAddSkills.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            btnAddSkills.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Underline);
             btnAddSkills.ForeColor = Color.FromArgb(64, 64, 64);
             btnAddSkills.HoverState.BorderColor = Color.Transparent;
-            btnAddSkills.HoverState.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            btnAddSkills.HoverState.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Underline);
             btnAddSkills.HoverState.ForeColor = Color.Black;
-            btnAddSkills.Location = new Point(45, 2);
+            btnAddSkills.Location = new Point(9, 2);
             btnAddSkills.Margin = new Padding(3, 2, 3, 2);
             btnAddSkills.Name = "btnAddSkills";
-            btnAddSkills.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnAddSkills.Size = new Size(301, 39);
+            btnAddSkills.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btnAddSkills.Size = new Size(293, 39);
             btnAddSkills.TabIndex = 50;
             btnAddSkills.Text = "Click here to see some popular skills";
             btnAddSkills.TextAlign = HorizontalAlignment.Left;
@@ -178,7 +190,7 @@
             // 
             label16.AutoSize = true;
             label16.BackColor = Color.White;
-            label16.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label16.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             label16.ForeColor = Color.Black;
             label16.Location = new Point(82, 260);
             label16.Name = "label16";
@@ -190,7 +202,7 @@
             // 
             label15.AutoSize = true;
             label15.BackColor = Color.White;
-            label15.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label15.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             label15.ForeColor = Color.Black;
             label15.Location = new Point(571, 59);
             label15.Name = "label15";
@@ -202,7 +214,7 @@
             // 
             label14.AutoSize = true;
             label14.BackColor = Color.White;
-            label14.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label14.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             label14.ForeColor = Color.Black;
             label14.Location = new Point(82, 65);
             label14.Name = "label14";
@@ -214,7 +226,7 @@
             // 
             label13.AutoSize = true;
             label13.BackColor = Color.White;
-            label13.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label13.Font = new Font("Segoe UI", 10.2F);
             label13.ForeColor = Color.Gray;
             label13.Location = new Point(56, 443);
             label13.Name = "label13";
@@ -226,7 +238,7 @@
             // 
             label12.AutoSize = true;
             label12.BackColor = Color.White;
-            label12.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.Font = new Font("Segoe UI", 10.2F);
             label12.ForeColor = Color.Gray;
             label12.Location = new Point(56, 381);
             label12.Name = "label12";
@@ -238,7 +250,7 @@
             // 
             label11.AutoSize = true;
             label11.BackColor = Color.White;
-            label11.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Font = new Font("Segoe UI", 10.2F);
             label11.ForeColor = Color.Gray;
             label11.Location = new Point(56, 314);
             label11.Name = "label11";
@@ -250,7 +262,7 @@
             // 
             label10.AutoSize = true;
             label10.BackColor = Color.White;
-            label10.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.Font = new Font("Segoe UI", 10.2F);
             label10.ForeColor = Color.Gray;
             label10.Location = new Point(56, 280);
             label10.Name = "label10";
@@ -262,7 +274,7 @@
             // 
             label9.AutoSize = true;
             label9.BackColor = Color.White;
-            label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Font = new Font("Segoe UI", 10.2F);
             label9.ForeColor = Color.Gray;
             label9.Location = new Point(545, 190);
             label9.Name = "label9";
@@ -274,7 +286,7 @@
             // 
             label8.AutoSize = true;
             label8.BackColor = Color.White;
-            label8.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Font = new Font("Segoe UI", 10.2F);
             label8.ForeColor = Color.Gray;
             label8.Location = new Point(545, 115);
             label8.Name = "label8";
@@ -286,7 +298,7 @@
             // 
             label7.AutoSize = true;
             label7.BackColor = Color.White;
-            label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Font = new Font("Segoe UI", 10.2F);
             label7.ForeColor = Color.Gray;
             label7.Location = new Point(545, 86);
             label7.Name = "label7";
@@ -298,7 +310,7 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.White;
-            label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Font = new Font("Segoe UI", 10.2F);
             label6.ForeColor = Color.Gray;
             label6.Location = new Point(56, 190);
             label6.Name = "label6";
@@ -310,7 +322,7 @@
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.White;
-            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Font = new Font("Segoe UI", 10.2F);
             label5.ForeColor = Color.Gray;
             label5.Location = new Point(56, 115);
             label5.Name = "label5";
@@ -322,7 +334,7 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.White;
-            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI", 10.2F);
             label2.ForeColor = Color.Gray;
             label2.Location = new Point(56, 86);
             label2.Name = "label2";
@@ -334,7 +346,7 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.White;
-            label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Segoe UI", 10.2F);
             label4.ForeColor = Color.Gray;
             label4.Location = new Point(56, 263);
             label4.Name = "label4";
@@ -346,7 +358,7 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.White;
-            label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Segoe UI", 10.2F);
             label3.ForeColor = Color.Gray;
             label3.Location = new Point(545, 63);
             label3.Name = "label3";
@@ -358,7 +370,7 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.White;
-            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI", 10.2F);
             label1.ForeColor = Color.Gray;
             label1.Location = new Point(56, 68);
             label1.Name = "label1";
@@ -370,9 +382,9 @@
             // 
             dtpDateEnd.BorderRadius = 15;
             dtpDateEnd.Checked = true;
-            dtpDateEnd.CustomizableEdges = customizableEdges3;
+            dtpDateEnd.CustomizableEdges = customizableEdges15;
             dtpDateEnd.FillColor = Color.White;
-            dtpDateEnd.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            dtpDateEnd.Font = new Font("Segoe UI", 10.2F);
             dtpDateEnd.ForeColor = Color.Black;
             dtpDateEnd.Format = DateTimePickerFormat.Long;
             dtpDateEnd.Location = new Point(545, 209);
@@ -380,7 +392,7 @@
             dtpDateEnd.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             dtpDateEnd.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             dtpDateEnd.Name = "dtpDateEnd";
-            dtpDateEnd.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            dtpDateEnd.ShadowDecoration.CustomizableEdges = customizableEdges16;
             dtpDateEnd.Size = new Size(410, 34);
             dtpDateEnd.TabIndex = 57;
             dtpDateEnd.Value = new DateTime(2024, 4, 5, 19, 51, 38, 253);
@@ -388,14 +400,14 @@
             // txtSalary
             // 
             txtSalary.BorderRadius = 15;
-            txtSalary.CustomizableEdges = customizableEdges5;
+            txtSalary.CustomizableEdges = customizableEdges17;
             txtSalary.DefaultText = "";
             txtSalary.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtSalary.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             txtSalary.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             txtSalary.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtSalary.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtSalary.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            txtSalary.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             txtSalary.ForeColor = Color.Black;
             txtSalary.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSalary.Location = new Point(545, 134);
@@ -404,7 +416,7 @@
             txtSalary.PasswordChar = '\0';
             txtSalary.PlaceholderText = "Salary";
             txtSalary.SelectedText = "";
-            txtSalary.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txtSalary.ShadowDecoration.CustomizableEdges = customizableEdges18;
             txtSalary.Size = new Size(410, 39);
             txtSalary.TabIndex = 56;
             // 
@@ -412,19 +424,19 @@
             // 
             cbbExperience.BackColor = Color.Transparent;
             cbbExperience.BorderRadius = 15;
-            cbbExperience.CustomizableEdges = customizableEdges7;
+            cbbExperience.CustomizableEdges = customizableEdges19;
             cbbExperience.DrawMode = DrawMode.OwnerDrawFixed;
             cbbExperience.DropDownStyle = ComboBoxStyle.DropDownList;
             cbbExperience.FocusedColor = Color.FromArgb(94, 148, 255);
             cbbExperience.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            cbbExperience.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            cbbExperience.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             cbbExperience.ForeColor = Color.Black;
             cbbExperience.ItemHeight = 45;
             cbbExperience.Items.AddRange(new object[] { "Intern", "Fresher", "Junior", "Middle", "Senior", "Expert" });
             cbbExperience.Location = new Point(56, 333);
             cbbExperience.Margin = new Padding(3, 2, 3, 2);
             cbbExperience.Name = "cbbExperience";
-            cbbExperience.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            cbbExperience.ShadowDecoration.CustomizableEdges = customizableEdges20;
             cbbExperience.Size = new Size(411, 51);
             cbbExperience.TabIndex = 45;
             // 
@@ -432,33 +444,33 @@
             // 
             cbbWorkingForm.BackColor = Color.Transparent;
             cbbWorkingForm.BorderRadius = 15;
-            cbbWorkingForm.CustomizableEdges = customizableEdges9;
+            cbbWorkingForm.CustomizableEdges = customizableEdges21;
             cbbWorkingForm.DrawMode = DrawMode.OwnerDrawFixed;
             cbbWorkingForm.DropDownStyle = ComboBoxStyle.DropDownList;
             cbbWorkingForm.FocusedColor = Color.FromArgb(94, 148, 255);
             cbbWorkingForm.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            cbbWorkingForm.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            cbbWorkingForm.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             cbbWorkingForm.ForeColor = Color.Black;
             cbbWorkingForm.ItemHeight = 45;
             cbbWorkingForm.Items.AddRange(new object[] { "Office", "Remote", "Hybrid" });
             cbbWorkingForm.Location = new Point(56, 208);
             cbbWorkingForm.Margin = new Padding(3, 2, 3, 2);
             cbbWorkingForm.Name = "cbbWorkingForm";
-            cbbWorkingForm.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            cbbWorkingForm.ShadowDecoration.CustomizableEdges = customizableEdges22;
             cbbWorkingForm.Size = new Size(411, 51);
             cbbWorkingForm.TabIndex = 42;
             // 
             // txtJobName
             // 
             txtJobName.BorderRadius = 15;
-            txtJobName.CustomizableEdges = customizableEdges11;
+            txtJobName.CustomizableEdges = customizableEdges23;
             txtJobName.DefaultText = "";
             txtJobName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtJobName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             txtJobName.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             txtJobName.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtJobName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtJobName.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            txtJobName.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             txtJobName.ForeColor = Color.Black;
             txtJobName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtJobName.Location = new Point(56, 134);
@@ -467,7 +479,7 @@
             txtJobName.PasswordChar = '\0';
             txtJobName.PlaceholderText = "Job's Name";
             txtJobName.SelectedText = "";
-            txtJobName.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtJobName.ShadowDecoration.CustomizableEdges = customizableEdges24;
             txtJobName.Size = new Size(410, 39);
             txtJobName.TabIndex = 37;
             // 
@@ -493,7 +505,7 @@
             btnCancel.Effect_2 = true;
             btnCancel.Effect_2_ColorBackground = Color.FromArgb(128, 128, 255);
             btnCancel.Effect_2_Transparency = 20;
-            btnCancel.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCancel.Font = new Font("Arial", 11F);
             btnCancel.ForeColor = Color.FromArgb(46, 54, 71);
             btnCancel.Lighting = true;
             btnCancel.LinearGradient_Background = false;
@@ -535,7 +547,7 @@
             btnPostJob.Effect_2 = true;
             btnPostJob.Effect_2_ColorBackground = Color.FromArgb(128, 128, 255);
             btnPostJob.Effect_2_Transparency = 20;
-            btnPostJob.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnPostJob.Font = new Font("Arial", 11F);
             btnPostJob.ForeColor = Color.FromArgb(46, 54, 71);
             btnPostJob.Lighting = true;
             btnPostJob.LinearGradient_Background = false;
@@ -560,7 +572,7 @@
             tabpage.Controls.Add(tbprequirement);
             tabpage.Controls.Add(tbpdescription);
             tabpage.Controls.Add(tbpbenefit);
-            tabpage.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            tabpage.Font = new Font("Segoe UI", 12F);
             tabpage.Location = new Point(56, 463);
             tabpage.Margin = new Padding(3, 2, 3, 2);
             tabpage.Name = "tabpage";
@@ -574,7 +586,7 @@
             tbprequirement.BackColor = Color.Transparent;
             tbprequirement.BorderStyle = BorderStyle.Fixed3D;
             tbprequirement.Controls.Add(rtxtjobrequirement);
-            tbprequirement.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            tbprequirement.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             tbprequirement.Location = new Point(4, 30);
             tbprequirement.Margin = new Padding(3, 2, 3, 2);
             tbprequirement.Name = "tbprequirement";
@@ -588,7 +600,7 @@
             rtxtjobrequirement.BackColor = Color.FromArgb(248, 212, 187);
             rtxtjobrequirement.BorderStyle = BorderStyle.None;
             rtxtjobrequirement.Dock = DockStyle.Fill;
-            rtxtjobrequirement.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            rtxtjobrequirement.Font = new Font("Segoe UI", 10.2F);
             rtxtjobrequirement.Location = new Point(3, 2);
             rtxtjobrequirement.Margin = new Padding(3, 2, 3, 2);
             rtxtjobrequirement.Name = "rtxtjobrequirement";
@@ -601,7 +613,7 @@
             tbpdescription.AutoScroll = true;
             tbpdescription.BorderStyle = BorderStyle.Fixed3D;
             tbpdescription.Controls.Add(rtxtdescription);
-            tbpdescription.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            tbpdescription.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             tbpdescription.Location = new Point(4, 30);
             tbpdescription.Margin = new Padding(3, 2, 3, 2);
             tbpdescription.Name = "tbpdescription";
@@ -616,7 +628,7 @@
             rtxtdescription.BackColor = Color.FromArgb(248, 212, 187);
             rtxtdescription.BorderStyle = BorderStyle.None;
             rtxtdescription.Dock = DockStyle.Fill;
-            rtxtdescription.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            rtxtdescription.Font = new Font("Segoe UI", 10.2F);
             rtxtdescription.Location = new Point(3, 2);
             rtxtdescription.Margin = new Padding(3, 2, 3, 2);
             rtxtdescription.Name = "rtxtdescription";
@@ -630,7 +642,7 @@
             tbpbenefit.BackColor = Color.Transparent;
             tbpbenefit.BorderStyle = BorderStyle.Fixed3D;
             tbpbenefit.Controls.Add(rtxtBenefit);
-            tbpbenefit.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            tbpbenefit.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             tbpbenefit.Location = new Point(4, 30);
             tbpbenefit.Margin = new Padding(3, 2, 3, 2);
             tbpbenefit.Name = "tbpbenefit";
@@ -644,13 +656,33 @@
             rtxtBenefit.BackColor = Color.FromArgb(248, 212, 187);
             rtxtBenefit.BorderStyle = BorderStyle.None;
             rtxtBenefit.Dock = DockStyle.Fill;
-            rtxtBenefit.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            rtxtBenefit.Font = new Font("Segoe UI", 10.2F);
             rtxtBenefit.Location = new Point(3, 2);
             rtxtBenefit.Margin = new Padding(3, 2, 3, 2);
             rtxtBenefit.Name = "rtxtBenefit";
             rtxtBenefit.Size = new Size(951, 173);
             rtxtBenefit.TabIndex = 0;
             rtxtBenefit.Text = "";
+            // 
+            // errorProvider1
+            // 
+            errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            errorProvider2.ContainerControl = this;
+            // 
+            // errorProvider3
+            // 
+            errorProvider3.ContainerControl = this;
+            // 
+            // errorProvider4
+            // 
+            errorProvider4.ContainerControl = this;
+            // 
+            // errorProvider5
+            // 
+            errorProvider5.ContainerControl = this;
             // 
             // FJobCreation
             // 
@@ -666,10 +698,16 @@
             pnBody.ResumeLayout(false);
             pnBody.PerformLayout();
             flPBtnSkills.ResumeLayout(false);
+            flPBtnSkills.PerformLayout();
             tabpage.ResumeLayout(false);
             tbprequirement.ResumeLayout(false);
             tbpdescription.ResumeLayout(false);
             tbpbenefit.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider5).EndInit();
             ResumeLayout(false);
         }
 
@@ -709,5 +747,10 @@
         private Label label8;
         private FlowLayoutPanel flPBtnSkills;
         private FlowLayoutPanel flpSkills;
+        private ErrorProvider errorProvider1;
+        private ErrorProvider errorProvider2;
+        private ErrorProvider errorProvider3;
+        private ErrorProvider errorProvider4;
+        private ErrorProvider errorProvider5;
     }
 }
