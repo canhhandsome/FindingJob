@@ -28,193 +28,194 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            lblTo = new Label();
-            lblToT = new Label();
-            lblSubject = new Label();
-            lblContent = new Label();
-            txtContent = new ReaLTaiizor.Controls.HopeRichTextBox();
-            btnCancel = new Button();
-            btnSend = new Button();
-            guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
-            guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(components);
-            cbbSubject = new Guna.UI2.WinForms.Guna2ComboBox();
-            btnInterview = new Guna.UI2.WinForms.Guna2Button();
-            SuspendLayout();
+            this.lblTo = new System.Windows.Forms.Label();
+            this.lblToT = new System.Windows.Forms.Label();
+            this.lblSubject = new System.Windows.Forms.Label();
+            this.lblContent = new System.Windows.Forms.Label();
+            this.txtContent = new ReaLTaiizor.Controls.HopeRichTextBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSend = new System.Windows.Forms.Button();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
+            this.cbbSubject = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnInterview = new Guna.UI2.WinForms.Guna2Button();
+            this.SuspendLayout();
             // 
             // lblTo
             // 
-            lblTo.AutoSize = true;
-            lblTo.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTo.Location = new Point(15, 23);
-            lblTo.Name = "lblTo";
-            lblTo.Size = new Size(35, 25);
-            lblTo.TabIndex = 9;
-            lblTo.Text = "To:";
+            this.lblTo.AutoSize = true;
+            this.lblTo.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTo.Location = new System.Drawing.Point(17, 31);
+            this.lblTo.Name = "lblTo";
+            this.lblTo.Size = new System.Drawing.Size(44, 32);
+            this.lblTo.TabIndex = 9;
+            this.lblTo.Text = "To:";
             // 
             // lblToT
             // 
-            lblToT.AutoSize = true;
-            lblToT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblToT.Location = new Point(112, 23);
-            lblToT.Name = "lblToT";
-            lblToT.Size = new Size(35, 25);
-            lblToT.TabIndex = 10;
-            lblToT.Text = "To:";
+            this.lblToT.AutoSize = true;
+            this.lblToT.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblToT.Location = new System.Drawing.Point(128, 31);
+            this.lblToT.Name = "lblToT";
+            this.lblToT.Size = new System.Drawing.Size(44, 32);
+            this.lblToT.TabIndex = 10;
+            this.lblToT.Text = "To:";
             // 
             // lblSubject
             // 
-            lblSubject.AutoSize = true;
-            lblSubject.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSubject.Location = new Point(15, 62);
-            lblSubject.Name = "lblSubject";
-            lblSubject.Size = new Size(78, 25);
-            lblSubject.TabIndex = 11;
-            lblSubject.Text = "Subject:";
+            this.lblSubject.AutoSize = true;
+            this.lblSubject.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSubject.Location = new System.Drawing.Point(17, 83);
+            this.lblSubject.Name = "lblSubject";
+            this.lblSubject.Size = new System.Drawing.Size(98, 32);
+            this.lblSubject.TabIndex = 11;
+            this.lblSubject.Text = "Subject:";
             // 
             // lblContent
             // 
-            lblContent.AutoSize = true;
-            lblContent.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblContent.Location = new Point(15, 103);
-            lblContent.Name = "lblContent";
-            lblContent.Size = new Size(83, 25);
-            lblContent.TabIndex = 12;
-            lblContent.Text = "Content:";
+            this.lblContent.AutoSize = true;
+            this.lblContent.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblContent.Location = new System.Drawing.Point(17, 137);
+            this.lblContent.Name = "lblContent";
+            this.lblContent.Size = new System.Drawing.Size(105, 32);
+            this.lblContent.TabIndex = 12;
+            this.lblContent.Text = "Content:";
             // 
             // txtContent
             // 
-            txtContent.BorderColor = Color.FromArgb(220, 223, 230);
-            txtContent.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtContent.ForeColor = Color.FromArgb(48, 49, 51);
-            txtContent.Hint = "";
-            txtContent.HoverBorderColor = Color.FromArgb(64, 158, 255);
-            txtContent.Location = new Point(112, 103);
-            txtContent.Margin = new Padding(3, 2, 3, 2);
-            txtContent.MaxLength = 32767;
-            txtContent.Multiline = true;
-            txtContent.Name = "txtContent";
-            txtContent.PasswordChar = '\0';
-            txtContent.ScrollBars = ScrollBars.None;
-            txtContent.SelectedText = "";
-            txtContent.SelectionLength = 0;
-            txtContent.SelectionStart = 0;
-            txtContent.Size = new Size(769, 177);
-            txtContent.TabIndex = 14;
-            txtContent.TabStop = false;
-            txtContent.Text = "Enter content";
-            txtContent.UseSystemPasswordChar = false;
+            this.txtContent.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.txtContent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtContent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.txtContent.Hint = "";
+            this.txtContent.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.txtContent.Location = new System.Drawing.Point(128, 137);
+            this.txtContent.MaxLength = 32767;
+            this.txtContent.Multiline = true;
+            this.txtContent.Name = "txtContent";
+            this.txtContent.PasswordChar = '\0';
+            this.txtContent.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtContent.SelectedText = "";
+            this.txtContent.SelectionLength = 0;
+            this.txtContent.SelectionStart = 0;
+            this.txtContent.Size = new System.Drawing.Size(879, 236);
+            this.txtContent.TabIndex = 14;
+            this.txtContent.TabStop = false;
+            this.txtContent.Text = "Enter content";
+            this.txtContent.UseSystemPasswordChar = false;
             // 
             // btnCancel
             // 
-            btnCancel.BackColor = Color.LightCoral;
-            btnCancel.Cursor = Cursors.Hand;
-            btnCancel.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
-            btnCancel.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 64, 64);
-            btnCancel.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
-            btnCancel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCancel.ForeColor = SystemColors.Control;
-            btnCancel.Location = new Point(747, 321);
-            btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(134, 37);
-            btnCancel.TabIndex = 28;
-            btnCancel.Text = "Cancel";
-            btnCancel.UseVisualStyleBackColor = false;
-            btnCancel.Click += btnCancel_Click;
+            this.btnCancel.BackColor = System.Drawing.Color.LightCoral;
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancel.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCancel.Location = new System.Drawing.Point(854, 428);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(153, 49);
+            this.btnCancel.TabIndex = 28;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // btnSend
             // 
-            btnSend.BackColor = Color.White;
-            btnSend.Cursor = Cursors.Hand;
-            btnSend.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
-            btnSend.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 64, 64);
-            btnSend.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
-            btnSend.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSend.ForeColor = SystemColors.ControlText;
-            btnSend.Location = new Point(589, 321);
-            btnSend.Name = "btnSend";
-            btnSend.Size = new Size(134, 37);
-            btnSend.TabIndex = 29;
-            btnSend.Text = "Send";
-            btnSend.UseVisualStyleBackColor = false;
-            btnSend.Click += btnSend_Click;
+            this.btnSend.BackColor = System.Drawing.Color.White;
+            this.btnSend.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSend.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSend.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSend.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnSend.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSend.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSend.Location = new System.Drawing.Point(673, 428);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(153, 49);
+            this.btnSend.TabIndex = 29;
+            this.btnSend.Text = "Send";
+            this.btnSend.UseVisualStyleBackColor = false;
             // 
             // guna2Elipse1
             // 
-            guna2Elipse1.BorderRadius = 30;
-            guna2Elipse1.TargetControl = this;
+            this.guna2Elipse1.BorderRadius = 30;
+            this.guna2Elipse1.TargetControl = this;
             // 
             // guna2ShadowForm1
             // 
-            guna2ShadowForm1.BorderRadius = 30;
-            guna2ShadowForm1.TargetForm = this;
+            this.guna2ShadowForm1.BorderRadius = 30;
+            this.guna2ShadowForm1.TargetForm = this;
             // 
             // cbbSubject
             // 
-            cbbSubject.BackColor = Color.Transparent;
-            cbbSubject.CustomizableEdges = customizableEdges3;
-            cbbSubject.DrawMode = DrawMode.OwnerDrawFixed;
-            cbbSubject.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbbSubject.FocusedColor = Color.FromArgb(94, 148, 255);
-            cbbSubject.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            cbbSubject.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            cbbSubject.ForeColor = Color.FromArgb(68, 88, 112);
-            cbbSubject.ItemHeight = 30;
-            cbbSubject.Items.AddRange(new object[] { "Approve", "Decline" });
-            cbbSubject.Location = new Point(112, 62);
-            cbbSubject.Name = "cbbSubject";
-            cbbSubject.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            cbbSubject.Size = new Size(221, 36);
-            cbbSubject.TabIndex = 30;
-            cbbSubject.SelectedIndexChanged += cbbSubject_SelectedIndexChanged;
+            this.cbbSubject.BackColor = System.Drawing.Color.Transparent;
+            this.cbbSubject.CustomizableEdges = customizableEdges3;
+            this.cbbSubject.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbSubject.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbSubject.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbSubject.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbSubject.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbbSubject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbbSubject.ItemHeight = 30;
+            this.cbbSubject.Items.AddRange(new object[] {
+            "Approve",
+            "Decline"});
+            this.cbbSubject.Location = new System.Drawing.Point(128, 83);
+            this.cbbSubject.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbbSubject.Name = "cbbSubject";
+            this.cbbSubject.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.cbbSubject.Size = new System.Drawing.Size(252, 36);
+            this.cbbSubject.TabIndex = 30;
             // 
             // btnInterview
             // 
-            btnInterview.BorderRadius = 10;
-            btnInterview.Cursor = Cursors.Hand;
-            btnInterview.CustomizableEdges = customizableEdges1;
-            btnInterview.DisabledState.BorderColor = Color.DarkGray;
-            btnInterview.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnInterview.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnInterview.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnInterview.FillColor = Color.FromArgb(176, 226, 243);
-            btnInterview.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            btnInterview.ForeColor = Color.Black;
-            btnInterview.Location = new Point(350, 62);
-            btnInterview.Name = "btnInterview";
-            btnInterview.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnInterview.Size = new Size(107, 36);
-            btnInterview.TabIndex = 31;
-            btnInterview.Text = "Interview";
-            btnInterview.Visible = false;
-            btnInterview.Click += btnInterview_Click;
+            this.btnInterview.BorderRadius = 10;
+            this.btnInterview.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInterview.CustomizableEdges = customizableEdges1;
+            this.btnInterview.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnInterview.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnInterview.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnInterview.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnInterview.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(226)))), ((int)(((byte)(243)))));
+            this.btnInterview.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnInterview.ForeColor = System.Drawing.Color.Black;
+            this.btnInterview.Location = new System.Drawing.Point(400, 83);
+            this.btnInterview.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnInterview.Name = "btnInterview";
+            this.btnInterview.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.btnInterview.Size = new System.Drawing.Size(122, 48);
+            this.btnInterview.TabIndex = 31;
+            this.btnInterview.Text = "Interview";
+            this.btnInterview.Visible = false;
             // 
             // FAnswer
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(918, 386);
-            Controls.Add(btnInterview);
-            Controls.Add(cbbSubject);
-            Controls.Add(btnSend);
-            Controls.Add(btnCancel);
-            Controls.Add(txtContent);
-            Controls.Add(lblContent);
-            Controls.Add(lblSubject);
-            Controls.Add(lblToT);
-            Controls.Add(lblTo);
-            FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "FAnswer";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "FAnswer";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1049, 515);
+            this.Controls.Add(this.btnInterview);
+            this.Controls.Add(this.cbbSubject);
+            this.Controls.Add(this.btnSend);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.txtContent);
+            this.Controls.Add(this.lblContent);
+            this.Controls.Add(this.lblSubject);
+            this.Controls.Add(this.lblToT);
+            this.Controls.Add(this.lblTo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FAnswer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FAnswer";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
