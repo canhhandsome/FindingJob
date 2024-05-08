@@ -418,9 +418,8 @@ namespace WinFormProject
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(SQL, conn);
-                if (cmd.ExecuteNonQuery() > 0)
-                    MessageBox.Show("Successfully");
-                else MessageBox.Show("Failed");
+                if (cmd.ExecuteNonQuery() < 0)
+                    MessageBox.Show("Failed");
             }
             catch (SqlException ex)
             {

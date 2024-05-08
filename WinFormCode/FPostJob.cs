@@ -47,13 +47,19 @@ namespace WinFormProject
             {
                 if (job.Status.ToLower() == "Waiting".ToLower())
                 {
-                    UCHistory uchistory = new UCHistory(job);
-                    pnSubBody.Controls.Add(uchistory);
+                    UCJob uCJob = new UCJob(job);
+                    uCJob.JobDone += JobDone_Handle;
+                    pnSubBody.Controls.Add(uCJob);
                     pnSubBody.Height += 270;
                 }
             }
         }
-
+        private void JobDone_Handle(object sender, EventArgs e)
+        {
+            UCJob ucjob = sender as UCJob;
+            jobs.Remove(ucjob.job);
+            pnSubBody.Controls.Remove(ucjob);
+        }
         private void btnPostingJob_Click(object sender, EventArgs e)
         {
             FJobCreation fJobCreation = new FJobCreation(jobs, companyid);

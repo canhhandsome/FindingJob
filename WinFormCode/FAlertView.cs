@@ -118,6 +118,8 @@ namespace WinFormProject
             companySendOfferDAO.OfferRejected(JobOffer.SenderID, JobOffer.RecipientID);
             interviewDAO.SetStatusForInterview(JobOffer.RecipientID, "", "Rejected", JobOffer.SenderID);
             this.JobOffer.Status = "Rejected";
+            this.btnAccept.Visible = false;
+            this.btnReject.Visible = false;
             StartUp(this.JobOffer);
         }
     }

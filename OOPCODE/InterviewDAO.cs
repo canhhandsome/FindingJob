@@ -48,5 +48,10 @@ namespace WinFormProject
             string SQL = string.Format("Update Interview Set Status ='{0}' Where IdJSeeker ='{1}' and IdJob = '{2}' and companyID = '{3}'",status,jobseekerid,jobid, companyID);
             conn.CRUD(SQL);
         }
+        public void DeletedNewInterview(string jobseekerid, string jobid,string companyid)
+        {
+            string SQL = string.Format("Delete Interview Where IdJSeeker = '{0}' and Idjob = '{1}' and companyid = '{2}' and status = 'waiting'",jobseekerid,jobid,companyid);
+            conn.CRUD(SQL);
+        }
     }
 }
