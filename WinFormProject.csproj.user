@@ -119,6 +119,9 @@
     <Compile Update="WinFormCode\FSupReportSection.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="WinFormCode\FTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="WinFormCode\FViewInterview.cs">
       <SubType>Form</SubType>
     </Compile>
