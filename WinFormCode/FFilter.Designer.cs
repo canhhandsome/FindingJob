@@ -506,7 +506,7 @@
         private Panel pnFooter;
         private Panel pnBody;
         private ReaLTaiizor.Controls.AirButton airButton1;
-        private ReaLTaiizor.Controls.ParrotButton btnApply;
+        public ReaLTaiizor.Controls.ParrotButton btnApply;
         private Label lblWorkForm;
         private Label lblTypeCompany;
         private Label lblSalary;
@@ -529,6 +529,6 @@
         private Panel pnType;
         private Panel pnLevel;
         private Panel panel1;
-        private ReaLTaiizor.Controls.ParrotButton btnReset;
+        public ReaLTaiizor.Controls.ParrotButton btnReset;
     }
 }

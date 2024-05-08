@@ -36,163 +36,164 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            this.pnBody = new System.Windows.Forms.Panel();
-            this.btnPostingJob = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.pnSubBody = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.lblListJobs = new System.Windows.Forms.Label();
-            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pnBody.SuspendLayout();
-            this.SuspendLayout();
+            pnBody = new Panel();
+            btnPostingJob = new Guna.UI2.WinForms.Guna2Button();
+            btnFilter = new Guna.UI2.WinForms.Guna2Button();
+            pnSubBody = new FlowLayoutPanel();
+            guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            lblListJobs = new Label();
+            txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            pnBody.SuspendLayout();
+            SuspendLayout();
             // 
             // pnBody
             // 
-            this.pnBody.AutoScroll = true;
-            this.pnBody.AutoSize = true;
-            this.pnBody.BackColor = System.Drawing.Color.White;
-            this.pnBody.Controls.Add(this.btnPostingJob);
-            this.pnBody.Controls.Add(this.guna2Button1);
-            this.pnBody.Controls.Add(this.pnSubBody);
-            this.pnBody.Controls.Add(this.guna2CircleButton1);
-            this.pnBody.Controls.Add(this.lblListJobs);
-            this.pnBody.Controls.Add(this.txtSearch);
-            this.pnBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnBody.Location = new System.Drawing.Point(0, 0);
-            this.pnBody.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pnBody.Name = "pnBody";
-            this.pnBody.Size = new System.Drawing.Size(1233, 847);
-            this.pnBody.TabIndex = 2;
+            pnBody.AutoScroll = true;
+            pnBody.AutoSize = true;
+            pnBody.BackColor = Color.White;
+            pnBody.Controls.Add(btnPostingJob);
+            pnBody.Controls.Add(btnFilter);
+            pnBody.Controls.Add(pnSubBody);
+            pnBody.Controls.Add(guna2CircleButton1);
+            pnBody.Controls.Add(lblListJobs);
+            pnBody.Controls.Add(txtSearch);
+            pnBody.Dock = DockStyle.Fill;
+            pnBody.Location = new Point(0, 0);
+            pnBody.Name = "pnBody";
+            pnBody.Size = new Size(1079, 635);
+            pnBody.TabIndex = 2;
             // 
             // btnPostingJob
             // 
-            this.btnPostingJob.BackColor = System.Drawing.Color.Transparent;
-            this.btnPostingJob.BorderRadius = 23;
-            this.btnPostingJob.CustomizableEdges = customizableEdges1;
-            this.btnPostingJob.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPostingJob.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPostingJob.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPostingJob.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPostingJob.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
-            this.btnPostingJob.Font = new System.Drawing.Font("Sitka Text Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnPostingJob.ForeColor = System.Drawing.Color.Black;
-            this.btnPostingJob.HoverState.Font = new System.Drawing.Font("Sitka Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnPostingJob.Location = new System.Drawing.Point(1004, 39);
-            this.btnPostingJob.Name = "btnPostingJob";
-            this.btnPostingJob.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.btnPostingJob.Size = new System.Drawing.Size(196, 50);
-            this.btnPostingJob.TabIndex = 46;
-            this.btnPostingJob.Text = "Posting a Job";
-            this.btnPostingJob.Click += new System.EventHandler(this.btnPostingJob_Click);
+            btnPostingJob.BackColor = Color.Transparent;
+            btnPostingJob.BorderRadius = 23;
+            btnPostingJob.CustomizableEdges = customizableEdges1;
+            btnPostingJob.DisabledState.BorderColor = Color.DarkGray;
+            btnPostingJob.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnPostingJob.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnPostingJob.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnPostingJob.FillColor = Color.FromArgb(248, 212, 187);
+            btnPostingJob.Font = new Font("Sitka Text Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnPostingJob.ForeColor = Color.Black;
+            btnPostingJob.HoverState.Font = new Font("Sitka Text", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnPostingJob.Location = new Point(878, 29);
+            btnPostingJob.Margin = new Padding(3, 2, 3, 2);
+            btnPostingJob.Name = "btnPostingJob";
+            btnPostingJob.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnPostingJob.Size = new Size(172, 38);
+            btnPostingJob.TabIndex = 46;
+            btnPostingJob.Text = "Posting a Job";
+            btnPostingJob.Click += btnPostingJob_Click;
             // 
-            // guna2Button1
+            // btnFilter
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 23;
-            this.guna2Button1.CustomizableEdges = customizableEdges3;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Sitka Text Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.HoverState.Font = new System.Drawing.Font("Sitka Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button1.Location = new System.Drawing.Point(1018, 111);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            this.guna2Button1.Size = new System.Drawing.Size(98, 48);
-            this.guna2Button1.TabIndex = 45;
-            this.guna2Button1.Text = "Filter";
+            btnFilter.BackColor = Color.Transparent;
+            btnFilter.BorderRadius = 23;
+            btnFilter.CustomizableEdges = customizableEdges3;
+            btnFilter.DisabledState.BorderColor = Color.DarkGray;
+            btnFilter.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnFilter.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnFilter.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnFilter.FillColor = Color.FromArgb(248, 212, 187);
+            btnFilter.Font = new Font("Sitka Text Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnFilter.ForeColor = Color.Black;
+            btnFilter.HoverState.Font = new Font("Sitka Text", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnFilter.Location = new Point(891, 83);
+            btnFilter.Margin = new Padding(3, 2, 3, 2);
+            btnFilter.Name = "btnFilter";
+            btnFilter.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnFilter.Size = new Size(86, 36);
+            btnFilter.TabIndex = 45;
+            btnFilter.Text = "Filter";
+            btnFilter.Click += btnFilter_Click;
             // 
             // pnSubBody
             // 
-            this.pnSubBody.Location = new System.Drawing.Point(69, 181);
-            this.pnSubBody.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pnSubBody.Name = "pnSubBody";
-            this.pnSubBody.Size = new System.Drawing.Size(1143, 276);
-            this.pnSubBody.TabIndex = 4;
+            pnSubBody.Location = new Point(60, 136);
+            pnSubBody.Name = "pnSubBody";
+            pnSubBody.Size = new Size(1000, 207);
+            pnSubBody.TabIndex = 4;
             // 
             // guna2CircleButton1
             // 
-            this.guna2CircleButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2CircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2CircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton1.Image")));
-            this.guna2CircleButton1.ImageSize = new System.Drawing.Size(45, 45);
-            this.guna2CircleButton1.Location = new System.Drawing.Point(1135, 111);
-            this.guna2CircleButton1.Name = "guna2CircleButton1";
-            this.guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges5;
-            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(65, 48);
-            this.guna2CircleButton1.TabIndex = 44;
-            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
+            guna2CircleButton1.Cursor = Cursors.Hand;
+            guna2CircleButton1.DisabledState.BorderColor = Color.DarkGray;
+            guna2CircleButton1.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2CircleButton1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2CircleButton1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2CircleButton1.FillColor = Color.Transparent;
+            guna2CircleButton1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2CircleButton1.ForeColor = Color.White;
+            guna2CircleButton1.Image = (Image)resources.GetObject("guna2CircleButton1.Image");
+            guna2CircleButton1.ImageSize = new Size(45, 45);
+            guna2CircleButton1.Location = new Point(993, 83);
+            guna2CircleButton1.Margin = new Padding(3, 2, 3, 2);
+            guna2CircleButton1.Name = "guna2CircleButton1";
+            guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges5;
+            guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            guna2CircleButton1.Size = new Size(57, 36);
+            guna2CircleButton1.TabIndex = 44;
+            guna2CircleButton1.Click += guna2CircleButton1_Click;
             // 
             // lblListJobs
             // 
-            this.lblListJobs.AutoSize = true;
-            this.lblListJobs.BackColor = System.Drawing.Color.White;
-            this.lblListJobs.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblListJobs.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblListJobs.Location = new System.Drawing.Point(53, 39);
-            this.lblListJobs.Name = "lblListJobs";
-            this.lblListJobs.Size = new System.Drawing.Size(348, 42);
-            this.lblListJobs.TabIndex = 3;
-            this.lblListJobs.Text = "List Of Current Jobs";
+            lblListJobs.AutoSize = true;
+            lblListJobs.BackColor = Color.White;
+            lblListJobs.Font = new Font("Times New Roman", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblListJobs.ForeColor = SystemColors.ControlText;
+            lblListJobs.Location = new Point(46, 29);
+            lblListJobs.Name = "lblListJobs";
+            lblListJobs.Size = new Size(281, 35);
+            lblListJobs.TabIndex = 3;
+            lblListJobs.Text = "List Of Current Jobs";
             // 
             // txtSearch
             // 
-            this.txtSearch.AutoRoundedCorners = true;
-            this.txtSearch.BorderRadius = 23;
-            this.txtSearch.CustomizableEdges = customizableEdges6;
-            this.txtSearch.DefaultText = "";
-            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtSearch.IconLeft")));
-            this.txtSearch.Location = new System.Drawing.Point(69, 111);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PlaceholderText = "Search for jobs";
-            this.txtSearch.SelectedText = "";
-            this.txtSearch.ShadowDecoration.CustomizableEdges = customizableEdges7;
-            this.txtSearch.Size = new System.Drawing.Size(942, 48);
-            this.txtSearch.TabIndex = 43;
+            txtSearch.AutoRoundedCorners = true;
+            txtSearch.BorderRadius = 17;
+            txtSearch.CustomizableEdges = customizableEdges6;
+            txtSearch.DefaultText = "";
+            txtSearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtSearch.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtSearch.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtSearch.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtSearch.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtSearch.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSearch.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtSearch.IconLeft = (Image)resources.GetObject("txtSearch.IconLeft");
+            txtSearch.Location = new Point(60, 83);
+            txtSearch.Margin = new Padding(4, 3, 4, 3);
+            txtSearch.Name = "txtSearch";
+            txtSearch.PasswordChar = '\0';
+            txtSearch.PlaceholderText = "Search for jobs";
+            txtSearch.SelectedText = "";
+            txtSearch.ShadowDecoration.CustomizableEdges = customizableEdges7;
+            txtSearch.Size = new Size(824, 36);
+            txtSearch.TabIndex = 43;
+            txtSearch.KeyDown += txtSearch_KeyDown;
             // 
             // FPostJob
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(58)))));
-            this.ClientSize = new System.Drawing.Size(1233, 847);
-            this.Controls.Add(this.pnBody);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "FPostJob";
-            this.Text = "PostJob";
-            this.Load += new System.EventHandler(this.PostJob_Load);
-            this.pnBody.ResumeLayout(false);
-            this.pnBody.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
+            BackColor = Color.FromArgb(32, 41, 58);
+            ClientSize = new Size(1079, 635);
+            Controls.Add(pnBody);
+            Name = "FPostJob";
+            Text = "PostJob";
+            Load += PostJob_Load;
+            pnBody.ResumeLayout(false);
+            pnBody.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
         private Panel pnBody;
         private Label lblListJobs;
         private FlowLayoutPanel pnSubBody;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnFilter;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2Button btnPostingJob;

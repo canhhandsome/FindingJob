@@ -202,5 +202,8 @@ namespace WinFormProject
             PassListBackToListener();
             this.Hide();
         }
+
+        public List<Job> filterList
+        { get { return jobs; } }
     }
 }

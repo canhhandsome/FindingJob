@@ -65,6 +65,7 @@
             txtSearch.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtSearch.Size = new Size(711, 36);
             txtSearch.TabIndex = 38;
+            txtSearch.KeyDown += txtSearch_KeyDown;
             // 
             // FApplicant
             // 

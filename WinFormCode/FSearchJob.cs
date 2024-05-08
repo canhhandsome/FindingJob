@@ -150,7 +150,7 @@ namespace WinFormProject
                 else
                 {
                     offset -= 4;
-                    
+
                 }
                 FillJob(filterjobs.Skip(offset).Take(limit).ToList());
 
@@ -175,8 +175,9 @@ namespace WinFormProject
                 limit += 4;
                 offset += 4;
                 FillJob(filterjobs.Skip(offset).Take(limit).ToList());
-            } 
             }
         }
-  }
+
+    }
+}
 
