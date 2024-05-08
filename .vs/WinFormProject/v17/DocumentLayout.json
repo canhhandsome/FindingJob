@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|d:\\learning\\second_year\\hk2\\windows programming\\project_lastterm\\lastterm\\findingjob\\winformcode\\foffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|solutionrelative:winformcode\\foffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|d:\\learning\\second_year\\hk2\\windows programming\\project_lastterm\\lastterm\\findingjob\\winformcode\\falertview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|solutionrelative:winformcode\\falertview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|d:\\learning\\second_year\\hk2\\windows programming\\project_lastterm\\lastterm\\findingjob\\winformcode\\fanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|solutionrelative:winformcode\\fanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|d:\\learning\\second_year\\hk2\\windows programming\\project_lastterm\\lastterm\\findingjob\\winformcode\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|solutionrelative:winformcode\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|d:\\learning\\second_year\\hk2\\windows programming\\project_lastterm\\lastterm\\findingjob\\winformcode\\fprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|solutionrelative:winformcode\\fprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|d:\\learning\\second_year\\hk2\\windows programming\\project_lastterm\\lastterm\\findingjob\\winformcode\\fprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|solutionrelative:winformcode\\fprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|d:\\learning\\second_year\\hk2\\windows programming\\project_lastterm\\lastterm\\findingjob\\winformcode\\fprofile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350F96D8-6109-4C1F-84A4-C5017CA49AC2}|WinFormProject.csproj|solutionrelative:winformcode\\fprofile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +30,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 469,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FAnswer.cs [Design]",
-              "DocumentMoniker": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FAnswer.cs",
-              "RelativeDocumentMoniker": "WinFormCode\\FAnswer.cs",
-              "ToolTip": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FAnswer.cs [Design]",
-              "RelativeToolTip": "WinFormCode\\FAnswer.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "FAlertView.cs [Design]",
+              "DocumentMoniker": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FAlertView.cs",
+              "RelativeDocumentMoniker": "WinFormCode\\FAlertView.cs",
+              "ToolTip": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FAlertView.cs [Design]",
+              "RelativeToolTip": "WinFormCode\\FAlertView.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T15:07:44.239Z",
+              "WhenOpened": "2024-05-08T10:19:23.653Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FOffer.cs [Design]",
-              "DocumentMoniker": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FOffer.cs",
-              "RelativeDocumentMoniker": "WinFormCode\\FOffer.cs",
-              "ToolTip": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FOffer.cs [Design]",
-              "RelativeToolTip": "WinFormCode\\FOffer.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "FProfile.Designer.cs",
+              "DocumentMoniker": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FProfile.Designer.cs",
+              "RelativeDocumentMoniker": "WinFormCode\\FProfile.Designer.cs",
+              "ToolTip": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FProfile.Designer.cs",
+              "RelativeToolTip": "WinFormCode\\FProfile.Designer.cs",
+              "ViewState": "AQIAAIACAAAAAAAAAAAgwJECAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T14:58:48.774Z",
+              "WhenOpened": "2024-05-08T10:09:47.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FProfile.cs",
+              "DocumentMoniker": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FProfile.cs",
+              "RelativeDocumentMoniker": "WinFormCode\\FProfile.cs",
+              "ToolTip": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FProfile.cs",
+              "RelativeToolTip": "WinFormCode\\FProfile.cs",
+              "ViewState": "AQIAAJwAAAAAAAAAAAArwKoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T10:09:43.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FProfile.cs [Design]",
+              "DocumentMoniker": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FProfile.cs",
+              "RelativeDocumentMoniker": "WinFormCode\\FProfile.cs",
+              "ToolTip": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\FProfile.cs [Design]",
+              "RelativeToolTip": "WinFormCode\\FProfile.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T10:08:58.867Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\Program.cs",
+              "RelativeDocumentMoniker": "WinFormCode\\Program.cs",
+              "ToolTip": "D:\\Learning\\Second_Year\\HK2\\WIndows Programming\\Project_LastTerm\\LastTerm\\FindingJob\\WinFormCode\\Program.cs",
+              "RelativeToolTip": "WinFormCode\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T02:06:44.127Z",
+              "EditorCaption": ""
             }
           ]
         },
