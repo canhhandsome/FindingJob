@@ -41,13 +41,21 @@ namespace WinFormProject
             lblSubjectT.Text = jobOffer.Subject;
             lblJobT.Text = "JOB OFFER!!";
             CheckStatus();
+            EnableButton(jobOffer.Status);
         }
-
+        private void EnableButton(string status)
+        {
+            if(status.Trim() == "Offering")
+            {
+                btnAccept.Visible = true;
+                btnReject.Visible = true;
+            }
+        }
         private void CheckStatus()
         {
             if (lblSubjectT.Text.ToLower() == "approve" || lblSubjectT.Text.ToLower() == "Offering")
             {
-                
+
                 btnInterview.Visible = true;
             }
         }
@@ -60,10 +68,11 @@ namespace WinFormProject
         private void btnInterview_Click(object sender, EventArgs e)
         {
             FInterview fInterview;
-            if(lblJobT.Text == "JOB OFFER!!")
+            if (lblJobT.Text == "JOB OFFER!!")
             {
                 fInterview = new FInterview(JobOffer.RecipientID, "");
-            } else fInterview = new FInterview(alert.RecipientID, alert.JobID);
+            }
+            else fInterview = new FInterview(alert.RecipientID, alert.JobID);
             fInterview.Show();
         }
     }
