@@ -71,24 +71,31 @@ namespace WinFormProject
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(strFetch, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
-                reader.Read();
-                for (int i = 0; i < reader.FieldCount; i++)
+                if (reader.Read()) // Check if there's at least one row
                 {
-                    seperatedinfo.Add(reader.IsDBNull(i) ? "" : reader.GetFieldValue<string>(i));
+                    for (int i = 0; i < reader.FieldCount; i++)
+                    {
+                        seperatedinfo.Add(reader.IsDBNull(i) ? string.Empty : reader.GetFieldValue<string>(i));
+                    }
+                }
+                else
+                {
+                    // Add one empty string if no rows are returned
+                    seperatedinfo.Add(string.Empty);
                 }
                 return seperatedinfo;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("them that bai" + ex);
+                MessageBox.Show("Failed to fetch data: " + ex.Message);
             }
             finally
             {
                 conn.Close();
             }
             return seperatedinfo;
-
         }
+
         public string FetchScalar(string strFetch)
         {
             try
@@ -769,6 +776,33 @@ namespace WinFormProject
                 conn.Close();
             }
             return interview;
+        }
+        public List<string> FetchList(string strFetch)
+        {
+            List<string> resultList = new List<string>();
+
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string status = reader["status"].ToString();
+                    resultList.Add(status);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to fetch list: {ex.Message}");
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return resultList;
         }
     }
 }

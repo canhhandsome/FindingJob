@@ -513,3 +513,4 @@ D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.UCEducation.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.UCExperience.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.UCProject.resources
+D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FJobByCompany.resources

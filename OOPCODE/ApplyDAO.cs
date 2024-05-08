@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,6 +43,11 @@ namespace WinFormProject
         {
             string SQL = string.Format("Select * From apply where jobID = '{0}' and jobseekerID = '{1}'", jobID,jsid);
             return conn.CheckApplyData(SQL,jobID,jsid);
+        }
+        public List<string> FetchStatusApply(string jobID)
+        {
+            string strStatus= string.Format($"SELECT status FROM Apply WHERE jobID = '{jobID}'");
+            return conn.FetchSeperatedData(strStatus);
         }
     }
 }

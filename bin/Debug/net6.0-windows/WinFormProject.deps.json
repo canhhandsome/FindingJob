@@ -12,7 +12,7 @@
           "MaterialSkin": "0.2.1",
           "PDFsharp": "6.0.0",
           "ReaLTaiizor": "3.8.0.5",
-          "Syncfusion.Pdf.WinForms": "25.1.37",
+          "Syncfusion.Pdf.WinForms": "25.1.42",
           "System.Data.SqlClient": "4.8.6",
           "System.Drawing.Common": "8.0.4",
           "System.Text.Encoding.CodePages": "8.0.0",
@@ -303,31 +303,31 @@
           }
         }
       },
-      "Syncfusion.Compression.Base/25.1.37": {
+      "Syncfusion.Compression.Base/25.1.42": {
         "runtime": {
           "lib/net6.0-windows7.0/Syncfusion.Compression.Base.dll": {
-            "assemblyVersion": "25.1.37.0",
-            "fileVersion": "25.1.37.0"
+            "assemblyVersion": "25.1.42.0",
+            "fileVersion": "25.1.42.0"
           }
         }
       },
-      "Syncfusion.Licensing/25.1.37": {
+      "Syncfusion.Licensing/25.1.42": {
         "runtime": {
           "lib/net6.0/Syncfusion.Licensing.dll": {
-            "assemblyVersion": "25.1.37.0",
-            "fileVersion": "25.1.37.0"
+            "assemblyVersion": "25.1.42.0",
+            "fileVersion": "25.1.42.0"
           }
         }
       },
-      "Syncfusion.Pdf.WinForms/25.1.37": {
+      "Syncfusion.Pdf.WinForms/25.1.42": {
         "dependencies": {
-          "Syncfusion.Compression.Base": "25.1.37",
-          "Syncfusion.Licensing": "25.1.37"
+          "Syncfusion.Compression.Base": "25.1.42",
+          "Syncfusion.Licensing": "25.1.42"
         },
         "runtime": {
           "lib/net6.0-windows7.0/Syncfusion.Pdf.Base.dll": {
-            "assemblyVersion": "25.1.37.0",
-            "fileVersion": "25.1.37.0"
+            "assemblyVersion": "25.1.42.0",
+            "fileVersion": "25.1.42.0"
           }
         }
       },
@@ -608,26 +608,26 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
-    "Syncfusion.Compression.Base/25.1.37": {
+    "Syncfusion.Compression.Base/25.1.42": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-x2H2Pa6dnXq9Sn8h/R9eETJDMbV/2HldXWkPK16ZJms9kJMCyrkezwTcD59qz/HYra639Sgmj9Sn3xAQOq8vTA==",
-      "path": "syncfusion.compression.base/25.1.37",
-      "hashPath": "syncfusion.compression.base.25.1.37.nupkg.sha512"
+      "sha512": "sha512-KY8P1clXIgClOMFaySxYbyIdk2d6Mj/Q3e8m2h/RzG/iBzmuP0DFt9sPwFo3VgxsDqDDYMOQcZqcqJhgHPRwww==",
+      "path": "syncfusion.compression.base/25.1.42",
+      "hashPath": "syncfusion.compression.base.25.1.42.nupkg.sha512"
     },
-    "Syncfusion.Licensing/25.1.37": {
+    "Syncfusion.Licensing/25.1.42": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6Fu08NMF7nE8mw1HZ9yoZphB8ML8EBNQGxL50xTuRqfTpOHRSg+8h8NQmtDlEWh4UBZ35K+52qD5AJxnKbY2bg==",
-      "path": "syncfusion.licensing/25.1.37",
-      "hashPath": "syncfusion.licensing.25.1.37.nupkg.sha512"
+      "sha512": "sha512-6jOdnRMW6bK2XHggLxqq2GJaNS3HYVunTECMP/+YyesrAOdOF8ewelh+PaiHeyVbzc/cfjxI/pUKgRJsXR+1iA==",
+      "path": "syncfusion.licensing/25.1.42",
+      "hashPath": "syncfusion.licensing.25.1.42.nupkg.sha512"
     },
-    "Syncfusion.Pdf.WinForms/25.1.37": {
+    "Syncfusion.Pdf.WinForms/25.1.42": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-k9VAVrdpctTOa5sG3Ptv6kpB4zLcqFm7r2Dn/XkVd0qS9fnXPAtAVtPUzWeTbtt4/k9gfzrykFqjuDyGI9gRHA==",
-      "path": "syncfusion.pdf.winforms/25.1.37",
-      "hashPath": "syncfusion.pdf.winforms.25.1.37.nupkg.sha512"
+      "sha512": "sha512-9bPYusZoc9R3jJSd0yrDsnIsovySHnqKENUR0uKUyLP5lidhKbpU1rJ+s7Mx7ZI8WX02nxjulstYz0xS480uRQ==",
+      "path": "syncfusion.pdf.winforms/25.1.42",
+      "hashPath": "syncfusion.pdf.winforms.25.1.42.nupkg.sha512"
     },
     "System.CodeDom/6.0.0": {
       "type": "package",

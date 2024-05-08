@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YiXXS8usmuPQKES20U9XnpQcdJZsN8YXUK/htXZEAGWUHs6q9xf0xuZ1+zuD7toA0eL4hCCUDmsLWaIF8bk1kg==",
+  "dgSpecHash": "t5739Ko4FO/4lN9Fs2zTDMcCS5DL0g+2BFbdyhoV2oIF6JHiUvH3N9Cexg2TKX85cH/GSXcZuCX6ffP2C3FoIQ==",
   "success": true,
   "projectFilePath": "D:\\UTE\\UTE2023and2024\\Ki2\\WindowsProgramming\\Project\\FindingJob\\WinFormProject.csproj",
   "expectedPackageFiles": [
@@ -28,9 +28,9 @@
     "C:\\Users\\OS\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\OS\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\OS\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\OS\\.nuget\\packages\\syncfusion.compression.base\\25.1.37\\syncfusion.compression.base.25.1.37.nupkg.sha512",
-    "C:\\Users\\OS\\.nuget\\packages\\syncfusion.licensing\\25.1.37\\syncfusion.licensing.25.1.37.nupkg.sha512",
-    "C:\\Users\\OS\\.nuget\\packages\\syncfusion.pdf.winforms\\25.1.37\\syncfusion.pdf.winforms.25.1.37.nupkg.sha512",
+    "C:\\Users\\OS\\.nuget\\packages\\syncfusion.compression.base\\25.1.42\\syncfusion.compression.base.25.1.42.nupkg.sha512",
+    "C:\\Users\\OS\\.nuget\\packages\\syncfusion.licensing\\25.1.42\\syncfusion.licensing.25.1.42.nupkg.sha512",
+    "C:\\Users\\OS\\.nuget\\packages\\syncfusion.pdf.winforms\\25.1.42\\syncfusion.pdf.winforms.25.1.42.nupkg.sha512",
     "C:\\Users\\OS\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\OS\\.nuget\\packages\\system.data.sqlclient\\4.8.6\\system.data.sqlclient.4.8.6.nupkg.sha512",
     "C:\\Users\\OS\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",

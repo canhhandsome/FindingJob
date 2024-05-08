@@ -48,17 +48,29 @@
               "target": "Package",
               "version": "[0.2.1, )"
             },
+            "PDFsharp": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "ReaLTaiizor": {
               "target": "Package",
               "version": "[3.8.0.5, )"
             },
             "Syncfusion.Pdf.WinForms": {
               "target": "Package",
-              "version": "[25.1.37, )"
+              "version": "[25.1.42, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.6, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "System.Text.Encoding.CodePages": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "dot-net-transitions": {
               "target": "Package",
