@@ -45,15 +45,30 @@ namespace WinFormProject
         }
         private void EnableButton(string status)
         {
-            if(status.Trim() == "Offering")
+            if (status.Trim() == "Offering")
             {
                 btnAccept.Visible = true;
                 btnReject.Visible = true;
+                lblResponse.Visible = true;
+                lblResponseT.Visible = true;
+                lblResponseT.Text = "You have not reponsed yet!";
+            }
+            if (status.Trim() == "Accepted")
+            {
+                lblResponse.Visible = true;
+                lblResponseT.Visible = true;
+                lblResponseT.Text = "You have accepted this deal!";
+            }
+            if (status.Trim() == "Rejected")
+            {
+                lblResponse.Visible = true;
+                lblResponseT.Visible = true;
+                lblResponseT.Text = "You have rejected this deal";
             }
         }
         private void CheckStatus()
         {
-            if (lblSubjectT.Text.ToLower() == "approve" || lblSubjectT.Text.ToLower() == "Offering")
+            if (lblSubjectT.Text.ToLower() != "decline" || lblSubjectT.Text.ToLower() != "rejected")
             {
 
                 btnInterview.Visible = true;
@@ -74,6 +89,16 @@ namespace WinFormProject
             }
             else fInterview = new FInterview(alert.RecipientID, alert.JobID);
             fInterview.Show();
+        }
+
+        private void btnAccept_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReject_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

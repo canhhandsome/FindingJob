@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,15 @@ namespace WinFormProject.OOPCODE
             }
             return false;
         }
-
+        public void OfferAccepted(string companyid, string jobseekerid)
+        {
+            string str = string.Format("UPDATE CompanySendOffer SET Status = 'Accepted' WHERE CompanyID = '{0}' AND JobSeekerID = '{1}'", companyid, jobseekerid);
+            conn.CRUD(str);
+        }
+        public void OfferRejected(string companyid, string jobseekerid)
+        {
+            string str = string.Format("DELETE FROM CompanySendOffer WHERE CompanyID = '{0}' AND JobSeekerID = '{1}'", companyid, jobseekerid);
+            conn.CRUD(str);
+        }
     }
 }
