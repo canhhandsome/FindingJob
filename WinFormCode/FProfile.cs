@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormProject.OOPCODE;
+using WinFormProject.WinFormCode;
 
 namespace WinFormProject
 {
@@ -163,6 +164,12 @@ namespace WinFormProject
         private void guna2PictureBox8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCreateCV_Click(object sender, EventArgs e)
+        {
+            FCVCreation fCV = new FCVCreation(jobseeker);
+            fCV.Show();
         }
     }
 }

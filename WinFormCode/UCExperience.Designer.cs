@@ -30,85 +30,119 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCExperience));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            this.lblTitleAndCompany = new System.Windows.Forms.Label();
-            this.lblLocationAndPeriod = new System.Windows.Forms.Label();
-            this.rtxtAchievement = new System.Windows.Forms.RichTextBox();
-            this.btnDelete = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.SuspendLayout();
+            guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            rtxtAchieve = new ReaLTaiizor.Controls.HopeRichTextBox();
+            btnDelete = new Guna.UI2.WinForms.Guna2CircleButton();
+            lblLocationAndPeriod = new Label();
+            lblTitleAndCompany = new Label();
+            guna2ShadowPanel1.SuspendLayout();
+            SuspendLayout();
             // 
-            // lblTitleAndCompany
+            // guna2ShadowPanel1
             // 
-            this.lblTitleAndCompany.AutoSize = true;
-            this.lblTitleAndCompany.BackColor = System.Drawing.Color.White;
-            this.lblTitleAndCompany.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitleAndCompany.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblTitleAndCompany.Location = new System.Drawing.Point(22, 23);
-            this.lblTitleAndCompany.Name = "lblTitleAndCompany";
-            this.lblTitleAndCompany.Size = new System.Drawing.Size(234, 37);
-            this.lblTitleAndCompany.TabIndex = 91;
-            this.lblTitleAndCompany.Text = "Title, Company";
+            guna2ShadowPanel1.BackColor = Color.Transparent;
+            guna2ShadowPanel1.Controls.Add(rtxtAchieve);
+            guna2ShadowPanel1.Controls.Add(btnDelete);
+            guna2ShadowPanel1.Controls.Add(lblLocationAndPeriod);
+            guna2ShadowPanel1.Controls.Add(lblTitleAndCompany);
+            guna2ShadowPanel1.Dock = DockStyle.Fill;
+            guna2ShadowPanel1.FillColor = Color.White;
+            guna2ShadowPanel1.Location = new Point(0, 0);
+            guna2ShadowPanel1.Name = "guna2ShadowPanel1";
+            guna2ShadowPanel1.Radius = 10;
+            guna2ShadowPanel1.ShadowColor = Color.Black;
+            guna2ShadowPanel1.Size = new Size(695, 151);
+            guna2ShadowPanel1.TabIndex = 0;
+            guna2ShadowPanel1.Click += guna2ShadowPanel1_Click;
             // 
-            // lblLocationAndPeriod
+            // rtxtAchieve
             // 
-            this.lblLocationAndPeriod.AutoSize = true;
-            this.lblLocationAndPeriod.BackColor = System.Drawing.Color.White;
-            this.lblLocationAndPeriod.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblLocationAndPeriod.ForeColor = System.Drawing.Color.Gray;
-            this.lblLocationAndPeriod.Location = new System.Drawing.Point(22, 74);
-            this.lblLocationAndPeriod.Name = "lblLocationAndPeriod";
-            this.lblLocationAndPeriod.Size = new System.Drawing.Size(255, 23);
-            this.lblLocationAndPeriod.TabIndex = 92;
-            this.lblLocationAndPeriod.Text = "Location - (StartDate - EndDate)";
-            // 
-            // rtxtAchievement
-            // 
-            this.rtxtAchievement.BackColor = System.Drawing.Color.White;
-            this.rtxtAchievement.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtxtAchievement.Location = new System.Drawing.Point(22, 109);
-            this.rtxtAchievement.Name = "rtxtAchievement";
-            this.rtxtAchievement.Size = new System.Drawing.Size(750, 101);
-            this.rtxtAchievement.TabIndex = 94;
-            this.rtxtAchievement.Text = "";
+            rtxtAchieve.BorderColor = Color.FromArgb(220, 223, 230);
+            rtxtAchieve.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            rtxtAchieve.ForeColor = Color.FromArgb(48, 49, 51);
+            rtxtAchieve.Hint = "";
+            rtxtAchieve.HoverBorderColor = Color.FromArgb(64, 158, 255);
+            rtxtAchieve.Location = new Point(19, 61);
+            rtxtAchieve.MaxLength = 32767;
+            rtxtAchieve.Multiline = true;
+            rtxtAchieve.Name = "rtxtAchieve";
+            rtxtAchieve.PasswordChar = '\0';
+            rtxtAchieve.ScrollBars = ScrollBars.None;
+            rtxtAchieve.SelectedText = "";
+            rtxtAchieve.SelectionLength = 0;
+            rtxtAchieve.SelectionStart = 0;
+            rtxtAchieve.Size = new Size(656, 46);
+            rtxtAchieve.TabIndex = 104;
+            rtxtAchieve.TabStop = false;
+            rtxtAchieve.UseSystemPasswordChar = false;
+            rtxtAchieve.Click += guna2ShadowPanel1_Click;
             // 
             // btnDelete
             // 
-            this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
-            this.btnDelete.ImageSize = new System.Drawing.Size(24, 24);
-            this.btnDelete.Location = new System.Drawing.Point(732, 22);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.ShadowDecoration.CustomizableEdges = customizableEdges1;
-            this.btnDelete.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnDelete.Size = new System.Drawing.Size(40, 40);
-            this.btnDelete.TabIndex = 99;
+            btnDelete.Cursor = Cursors.Hand;
+            btnDelete.DisabledState.BorderColor = Color.DarkGray;
+            btnDelete.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnDelete.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnDelete.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnDelete.FillColor = Color.FromArgb(224, 224, 224);
+            btnDelete.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDelete.ForeColor = Color.White;
+            btnDelete.Image = (Image)resources.GetObject("btnDelete.Image");
+            btnDelete.ImageSize = new Size(24, 24);
+            btnDelete.Location = new Point(640, 8);
+            btnDelete.Margin = new Padding(3, 2, 3, 2);
+            btnDelete.Name = "btnDelete";
+            btnDelete.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            btnDelete.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            btnDelete.Size = new Size(35, 30);
+            btnDelete.TabIndex = 103;
+            // 
+            // lblLocationAndPeriod
+            // 
+            lblLocationAndPeriod.AutoSize = true;
+            lblLocationAndPeriod.BackColor = Color.White;
+            lblLocationAndPeriod.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLocationAndPeriod.ForeColor = Color.Gray;
+            lblLocationAndPeriod.Location = new Point(19, 39);
+            lblLocationAndPeriod.Name = "lblLocationAndPeriod";
+            lblLocationAndPeriod.Size = new Size(207, 19);
+            lblLocationAndPeriod.TabIndex = 102;
+            lblLocationAndPeriod.Text = "Location - (StartDate - EndDate)";
+            lblLocationAndPeriod.Click += guna2ShadowPanel1_Click;
+            // 
+            // lblTitleAndCompany
+            // 
+            lblTitleAndCompany.AutoSize = true;
+            lblTitleAndCompany.BackColor = Color.White;
+            lblTitleAndCompany.Font = new Font("Times New Roman", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTitleAndCompany.ForeColor = SystemColors.ControlText;
+            lblTitleAndCompany.Location = new Point(19, 8);
+            lblTitleAndCompany.Name = "lblTitleAndCompany";
+            lblTitleAndCompany.Size = new Size(196, 31);
+            lblTitleAndCompany.TabIndex = 101;
+            lblTitleAndCompany.Text = "Title, Company";
+            lblTitleAndCompany.Click += guna2ShadowPanel1_Click;
             // 
             // UCExperience
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.rtxtAchievement);
-            this.Controls.Add(this.lblLocationAndPeriod);
-            this.Controls.Add(this.lblTitleAndCompany);
-            this.Name = "UCExperience";
-            this.Size = new System.Drawing.Size(794, 237);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Transparent;
+            Controls.Add(guna2ShadowPanel1);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "UCExperience";
+            Size = new Size(695, 151);
+            guna2ShadowPanel1.ResumeLayout(false);
+            guna2ShadowPanel1.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
 
-        private Label lblTitleAndCompany;
-        private Label lblLocationAndPeriod;
-        private RichTextBox rtxtAchievement;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
+        private ReaLTaiizor.Controls.HopeRichTextBox rtxtAchieve;
         private Guna.UI2.WinForms.Guna2CircleButton btnDelete;
+        private Label lblLocationAndPeriod;
+        private Label lblTitleAndCompany;
     }
 }

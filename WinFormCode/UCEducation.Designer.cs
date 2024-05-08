@@ -30,85 +30,122 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCEducation));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            this.rtxtDecription = new System.Windows.Forms.RichTextBox();
-            this.lblLocationAndPeriod = new System.Windows.Forms.Label();
-            this.lblDegreeAndSchool = new System.Windows.Forms.Label();
-            this.btnDelete = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.SuspendLayout();
+            guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            rtxtDescription = new ReaLTaiizor.Controls.HopeRichTextBox();
+            btnDelete = new Guna.UI2.WinForms.Guna2CircleButton();
+            lblLocationAndPeriod = new Label();
+            lblDegreeAndSchool = new Label();
+            guna2ShadowPanel1.SuspendLayout();
+            SuspendLayout();
             // 
-            // rtxtDecription
+            // guna2ShadowPanel1
             // 
-            this.rtxtDecription.BackColor = System.Drawing.Color.White;
-            this.rtxtDecription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtxtDecription.Location = new System.Drawing.Point(22, 111);
-            this.rtxtDecription.Name = "rtxtDecription";
-            this.rtxtDecription.Size = new System.Drawing.Size(750, 101);
-            this.rtxtDecription.TabIndex = 97;
-            this.rtxtDecription.Text = "";
+            guna2ShadowPanel1.BackColor = Color.Transparent;
+            guna2ShadowPanel1.Controls.Add(rtxtDescription);
+            guna2ShadowPanel1.Controls.Add(btnDelete);
+            guna2ShadowPanel1.Controls.Add(lblLocationAndPeriod);
+            guna2ShadowPanel1.Controls.Add(lblDegreeAndSchool);
+            guna2ShadowPanel1.Dock = DockStyle.Fill;
+            guna2ShadowPanel1.FillColor = Color.White;
+            guna2ShadowPanel1.Location = new Point(0, 0);
+            guna2ShadowPanel1.Margin = new Padding(0);
+            guna2ShadowPanel1.MaximumSize = new Size(695, 151);
+            guna2ShadowPanel1.Name = "guna2ShadowPanel1";
+            guna2ShadowPanel1.Radius = 10;
+            guna2ShadowPanel1.ShadowColor = Color.Black;
+            guna2ShadowPanel1.Size = new Size(695, 151);
+            guna2ShadowPanel1.TabIndex = 0;
+            guna2ShadowPanel1.Click += guna2ShadowPanel1_Click;
             // 
-            // lblLocationAndPeriod
+            // rtxtDescription
             // 
-            this.lblLocationAndPeriod.AutoSize = true;
-            this.lblLocationAndPeriod.BackColor = System.Drawing.Color.White;
-            this.lblLocationAndPeriod.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblLocationAndPeriod.ForeColor = System.Drawing.Color.Gray;
-            this.lblLocationAndPeriod.Location = new System.Drawing.Point(22, 76);
-            this.lblLocationAndPeriod.Name = "lblLocationAndPeriod";
-            this.lblLocationAndPeriod.Size = new System.Drawing.Size(255, 23);
-            this.lblLocationAndPeriod.TabIndex = 96;
-            this.lblLocationAndPeriod.Text = "Location - (StartDate - EndDate)";
-            // 
-            // lblDegreeAndSchool
-            // 
-            this.lblDegreeAndSchool.AutoSize = true;
-            this.lblDegreeAndSchool.BackColor = System.Drawing.Color.White;
-            this.lblDegreeAndSchool.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDegreeAndSchool.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblDegreeAndSchool.Location = new System.Drawing.Point(22, 25);
-            this.lblDegreeAndSchool.Name = "lblDegreeAndSchool";
-            this.lblDegreeAndSchool.Size = new System.Drawing.Size(227, 37);
-            this.lblDegreeAndSchool.TabIndex = 95;
-            this.lblDegreeAndSchool.Text = "Degree, School";
+            rtxtDescription.BorderColor = Color.FromArgb(220, 223, 230);
+            rtxtDescription.Enabled = false;
+            rtxtDescription.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            rtxtDescription.ForeColor = Color.FromArgb(48, 49, 51);
+            rtxtDescription.Hint = "";
+            rtxtDescription.HoverBorderColor = Color.FromArgb(64, 158, 255);
+            rtxtDescription.Location = new Point(19, 60);
+            rtxtDescription.MaxLength = 32767;
+            rtxtDescription.Multiline = true;
+            rtxtDescription.Name = "rtxtDescription";
+            rtxtDescription.PasswordChar = '\0';
+            rtxtDescription.ScrollBars = ScrollBars.None;
+            rtxtDescription.SelectedText = "";
+            rtxtDescription.SelectionLength = 0;
+            rtxtDescription.SelectionStart = 0;
+            rtxtDescription.Size = new Size(656, 46);
+            rtxtDescription.TabIndex = 107;
+            rtxtDescription.TabStop = false;
+            rtxtDescription.UseSystemPasswordChar = false;
+            rtxtDescription.Click += guna2ShadowPanel1_Click;
             // 
             // btnDelete
             // 
-            this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
-            this.btnDelete.ImageSize = new System.Drawing.Size(24, 24);
-            this.btnDelete.Location = new System.Drawing.Point(732, 22);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.ShadowDecoration.CustomizableEdges = customizableEdges1;
-            this.btnDelete.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnDelete.Size = new System.Drawing.Size(40, 40);
-            this.btnDelete.TabIndex = 98;
+            btnDelete.DisabledState.BorderColor = Color.DarkGray;
+            btnDelete.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnDelete.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnDelete.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnDelete.FillColor = Color.FromArgb(224, 224, 224);
+            btnDelete.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDelete.ForeColor = Color.White;
+            btnDelete.Image = (Image)resources.GetObject("btnDelete.Image");
+            btnDelete.ImageSize = new Size(24, 24);
+            btnDelete.Location = new Point(640, 9);
+            btnDelete.Margin = new Padding(3, 2, 3, 2);
+            btnDelete.Name = "btnDelete";
+            btnDelete.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            btnDelete.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            btnDelete.Size = new Size(35, 30);
+            btnDelete.TabIndex = 106;
+            // 
+            // lblLocationAndPeriod
+            // 
+            lblLocationAndPeriod.AutoSize = true;
+            lblLocationAndPeriod.BackColor = Color.White;
+            lblLocationAndPeriod.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lblLocationAndPeriod.ForeColor = Color.Gray;
+            lblLocationAndPeriod.Location = new Point(19, 38);
+            lblLocationAndPeriod.Name = "lblLocationAndPeriod";
+            lblLocationAndPeriod.Size = new Size(207, 19);
+            lblLocationAndPeriod.TabIndex = 105;
+            lblLocationAndPeriod.Text = "Location - (StartDate - EndDate)";
+            lblLocationAndPeriod.Click += guna2ShadowPanel1_Click;
+            // 
+            // lblDegreeAndSchool
+            // 
+            lblDegreeAndSchool.AutoSize = true;
+            lblDegreeAndSchool.BackColor = Color.White;
+            lblDegreeAndSchool.Font = new Font("Times New Roman", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblDegreeAndSchool.ForeColor = SystemColors.ControlText;
+            lblDegreeAndSchool.Location = new Point(19, 6);
+            lblDegreeAndSchool.Name = "lblDegreeAndSchool";
+            lblDegreeAndSchool.Size = new Size(187, 31);
+            lblDegreeAndSchool.TabIndex = 104;
+            lblDegreeAndSchool.Text = "Degree, School";
+            lblDegreeAndSchool.Click += guna2ShadowPanel1_Click;
             // 
             // UCEducation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.rtxtDecription);
-            this.Controls.Add(this.lblLocationAndPeriod);
-            this.Controls.Add(this.lblDegreeAndSchool);
-            this.Name = "UCEducation";
-            this.Size = new System.Drawing.Size(794, 237);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Transparent;
+            Controls.Add(guna2ShadowPanel1);
+            Margin = new Padding(3, 2, 3, 2);
+            MaximumSize = new Size(695, 151);
+            Name = "UCEducation";
+            Size = new Size(695, 151);
+            guna2ShadowPanel1.ResumeLayout(false);
+            guna2ShadowPanel1.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
 
-        private RichTextBox rtxtDecription;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
+        private ReaLTaiizor.Controls.HopeRichTextBox rtxtDescription;
+        private Guna.UI2.WinForms.Guna2CircleButton btnDelete;
         private Label lblLocationAndPeriod;
         private Label lblDegreeAndSchool;
-        private Guna.UI2.WinForms.Guna2CircleButton btnDelete;
     }
 }
