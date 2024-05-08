@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormProject.OOPCODE;
 using WinFormProject.WinFormCode;
 
 namespace WinFormProject
@@ -14,6 +15,7 @@ namespace WinFormProject
     public partial class FAlertView : Form
     {
         private Alert alert = new Alert();
+        private JobOffer JobOffer = new JobOffer();
         public FAlertView(Alert alert)
         {
             InitializeComponent();
@@ -27,13 +29,48 @@ namespace WinFormProject
             lblJobT.Text = jobDAO.FetchName(alert.JobID);
             CheckStatus();
         }
-
+        public FAlertView(JobOffer jobOffer)
+        {
+            InitializeComponent();
+            this.JobOffer = jobOffer;
+            CompanyDAO companyDAO = new CompanyDAO();
+            JobDAO jobDAO = new JobDAO();
+            llFromT.Text = companyDAO.FetchName(JobOffer.SenderID);
+            lblContentT.Text = JobOffer.Content;
+            lblDateT.Text = jobOffer.DateReply.ToString("dd/MM/yyyy");
+            lblSubjectT.Text = jobOffer.Subject;
+            lblJobT.Text = "JOB OFFER!!";
+            CheckStatus();
+            EnableButton(jobOffer.Status);
+        }
+        private void EnableButton(string status)
+        {
+            if (status.Trim() == "Offering")
+            {
+                btnAccept.Visible = true;
+                btnReject.Visible = true;
+                lblResponse.Visible = true;
+                lblResponseT.Visible = true;
+                lblResponseT.Text = "You have not reponsed yet!";
+            }
+            if (status.Trim() == "Accepted")
+            {
+                lblResponse.Visible = true;
+                lblResponseT.Visible = true;
+                lblResponseT.Text = "You have accepted this deal!";
+            }
+            if (status.Trim() == "Rejected")
+            {
+                lblResponse.Visible = true;
+                lblResponseT.Visible = true;
+                lblResponseT.Text = "You have rejected this deal";
+            }
+        }
         private void CheckStatus()
         {
-            if (lblSubjectT.Text.ToLower() == "approve")
+            if (lblSubjectT.Text.ToLower() != "decline" || lblSubjectT.Text.ToLower() != "rejected")
             {
-                btnDone.Location = new Point(736, 467);
-                this.Height = 558;
+
                 btnInterview.Visible = true;
             }
         }
@@ -45,8 +82,23 @@ namespace WinFormProject
 
         private void btnInterview_Click(object sender, EventArgs e)
         {
-            FInterview fInterview = new FInterview(alert.RecipientID, alert.JobID);   
+            FInterview fInterview;
+            if (lblJobT.Text == "JOB OFFER!!")
+            {
+                fInterview = new FInterview(JobOffer.RecipientID, "");
+            }
+            else fInterview = new FInterview(alert.RecipientID, alert.JobID);
             fInterview.Show();
+        }
+
+        private void btnAccept_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReject_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

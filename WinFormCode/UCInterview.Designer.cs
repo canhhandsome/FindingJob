@@ -69,14 +69,14 @@
             guna2Panel1.Dock = DockStyle.Fill;
             guna2Panel1.FillColor = Color.FromArgb(248, 212, 187);
             guna2Panel1.Location = new Point(0, 0);
-            guna2Panel1.Margin = new Padding(3, 10, 3, 3);
+            guna2Panel1.Margin = new Padding(3, 13, 3, 4);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.BorderRadius = 20;
             guna2Panel1.ShadowDecoration.Color = Color.Gray;
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Panel1.ShadowDecoration.Depth = 10;
             guna2Panel1.ShadowDecoration.Enabled = true;
-            guna2Panel1.Size = new Size(1036, 82);
+            guna2Panel1.Size = new Size(1184, 109);
             guna2Panel1.TabIndex = 0;
             guna2Panel1.Click += lblJob_Click;
             // 
@@ -84,9 +84,10 @@
             // 
             panel7.Controls.Add(lblStatus);
             panel7.Dock = DockStyle.Fill;
-            panel7.Location = new Point(930, 0);
+            panel7.Location = new Point(959, 0);
+            panel7.Margin = new Padding(3, 4, 3, 4);
             panel7.Name = "panel7";
-            panel7.Size = new Size(106, 82);
+            panel7.Size = new Size(225, 109);
             panel7.TabIndex = 7;
             panel7.Click += lblJob_Click;
             // 
@@ -97,20 +98,22 @@
             lblStatus.Dock = DockStyle.Fill;
             lblStatus.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblStatus.Location = new Point(0, 0);
+            lblStatus.Margin = new Padding(3, 4, 3, 4);
             lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(106, 82);
+            lblStatus.Size = new Size(225, 109);
             lblStatus.TabIndex = 0;
             lblStatus.Text = "15:00 - 17:00";
-            lblStatus.TextAlignment = ContentAlignment.MiddleLeft;
+            lblStatus.TextAlignment = ContentAlignment.MiddleCenter;
             lblStatus.Click += lblJob_Click;
             // 
             // panel5
             // 
             panel5.Controls.Add(lblTime);
             panel5.Dock = DockStyle.Left;
-            panel5.Location = new Point(810, 0);
+            panel5.Location = new Point(822, 0);
+            panel5.Margin = new Padding(3, 4, 3, 4);
             panel5.Name = "panel5";
-            panel5.Size = new Size(120, 82);
+            panel5.Size = new Size(137, 109);
             panel5.TabIndex = 5;
             panel5.Click += lblJob_Click;
             // 
@@ -121,20 +124,22 @@
             lblTime.Dock = DockStyle.Fill;
             lblTime.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblTime.Location = new Point(0, 0);
+            lblTime.Margin = new Padding(3, 4, 3, 4);
             lblTime.Name = "lblTime";
-            lblTime.Size = new Size(120, 82);
+            lblTime.Size = new Size(137, 109);
             lblTime.TabIndex = 0;
             lblTime.Text = "15:00 - 17:00";
-            lblTime.TextAlignment = ContentAlignment.MiddleLeft;
+            lblTime.TextAlignment = ContentAlignment.MiddleCenter;
             lblTime.Click += lblJob_Click;
             // 
             // panel6
             // 
             panel6.Controls.Add(lblTimeAdd);
             panel6.Dock = DockStyle.Left;
-            panel6.Location = new Point(695, 0);
+            panel6.Location = new Point(644, 0);
+            panel6.Margin = new Padding(3, 4, 3, 4);
             panel6.Name = "panel6";
-            panel6.Size = new Size(115, 82);
+            panel6.Size = new Size(178, 109);
             panel6.TabIndex = 6;
             panel6.Click += lblJob_Click;
             // 
@@ -145,20 +150,23 @@
             lblTimeAdd.Dock = DockStyle.Fill;
             lblTimeAdd.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblTimeAdd.Location = new Point(0, 0);
+            lblTimeAdd.Margin = new Padding(3, 4, 3, 4);
             lblTimeAdd.Name = "lblTimeAdd";
-            lblTimeAdd.Size = new Size(115, 82);
+            lblTimeAdd.Size = new Size(178, 109);
             lblTimeAdd.TabIndex = 0;
             lblTimeAdd.Text = "28/11/2004";
-            lblTimeAdd.TextAlignment = ContentAlignment.MiddleLeft;
+            lblTimeAdd.TextAlignment = ContentAlignment.MiddleCenter;
             lblTimeAdd.Click += lblJob_Click;
             // 
             // panel4
             // 
+            panel4.AutoScroll = true;
             panel4.Controls.Add(lblJob);
             panel4.Dock = DockStyle.Left;
-            panel4.Location = new Point(377, 0);
+            panel4.Location = new Point(341, 0);
+            panel4.Margin = new Padding(3, 4, 3, 4);
             panel4.Name = "panel4";
-            panel4.Size = new Size(318, 82);
+            panel4.Size = new Size(303, 109);
             panel4.TabIndex = 4;
             panel4.Click += lblJob_Click;
             // 
@@ -169,11 +177,12 @@
             lblJob.Dock = DockStyle.Fill;
             lblJob.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblJob.Location = new Point(0, 0);
+            lblJob.Margin = new Padding(3, 4, 3, 4);
             lblJob.Name = "lblJob";
-            lblJob.Size = new Size(318, 82);
+            lblJob.Size = new Size(303, 109);
             lblJob.TabIndex = 0;
             lblJob.Text = "Name Job";
-            lblJob.TextAlignment = ContentAlignment.MiddleLeft;
+            lblJob.TextAlignment = ContentAlignment.MiddleCenter;
             lblJob.Click += lblJob_Click;
             // 
             // panel1
@@ -183,8 +192,9 @@
             panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(377, 82);
+            panel1.Size = new Size(341, 109);
             panel1.TabIndex = 2;
             panel1.Click += lblJob_Click;
             // 
@@ -192,10 +202,11 @@
             // 
             ptbAvatar.CustomizableEdges = customizableEdges1;
             ptbAvatar.ImageRotate = 0F;
-            ptbAvatar.Location = new Point(35, 6);
+            ptbAvatar.Location = new Point(40, 8);
+            ptbAvatar.Margin = new Padding(3, 4, 3, 4);
             ptbAvatar.Name = "ptbAvatar";
             ptbAvatar.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            ptbAvatar.Size = new Size(69, 69);
+            ptbAvatar.Size = new Size(79, 92);
             ptbAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbAvatar.TabIndex = 2;
             ptbAvatar.TabStop = false;
@@ -205,9 +216,10 @@
             // 
             panel3.Controls.Add(lblJSeeker);
             panel3.Dock = DockStyle.Right;
-            panel3.Location = new Point(130, 0);
+            panel3.Location = new Point(127, 0);
+            panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(247, 82);
+            panel3.Size = new Size(214, 109);
             panel3.TabIndex = 2;
             panel3.Click += lblJob_Click;
             // 
@@ -218,31 +230,33 @@
             lblJSeeker.Dock = DockStyle.Fill;
             lblJSeeker.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblJSeeker.Location = new Point(0, 0);
+            lblJSeeker.Margin = new Padding(3, 4, 3, 4);
             lblJSeeker.Name = "lblJSeeker";
-            lblJSeeker.Size = new Size(247, 82);
+            lblJSeeker.Size = new Size(214, 109);
             lblJSeeker.TabIndex = 0;
             lblJSeeker.Text = "Name Jobseeker";
-            lblJSeeker.TextAlignment = ContentAlignment.MiddleLeft;
+            lblJSeeker.TextAlignment = ContentAlignment.MiddleCenter;
             lblJSeeker.Click += lblJob_Click;
             // 
             // panel2
             // 
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 0);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(29, 82);
+            panel2.Size = new Size(33, 109);
             panel2.TabIndex = 1;
             panel2.Click += lblJob_Click;
             // 
             // UCInterview
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Transparent;
             Controls.Add(guna2Panel1);
-            Margin = new Padding(3, 15, 3, 3);
+            Margin = new Padding(3, 20, 3, 4);
             Name = "UCInterview";
-            Size = new Size(1036, 82);
+            Size = new Size(1184, 109);
             guna2Panel1.ResumeLayout(false);
             panel7.ResumeLayout(false);
             panel5.ResumeLayout(false);

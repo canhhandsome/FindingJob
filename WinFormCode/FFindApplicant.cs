@@ -16,6 +16,7 @@ namespace WinFormProject.WinFormCode
         string companyid;
         List<JobPreference> jobpreference = new List<JobPreference>();
         JobPreferenceDAO jobpreferenceDAO = new JobPreferenceDAO();
+        CompanySendOfferDAO companysendOffer = new CompanySendOfferDAO();
         DBConnection conn = new DBConnection();
         public FFindApplicant(string companyid)
         {
@@ -28,8 +29,11 @@ namespace WinFormProject.WinFormCode
         {
             foreach (JobPreference jp in jobpreference)
             {
-                UCCandidate uCCandidate = new UCCandidate(jp,companyid);
-                pnSubBody.Controls.Add(uCCandidate);
+                if(!companysendOffer.AlreadySent(jp.JobSeekerId))
+                {
+                    UCCandidate uCCandidate = new UCCandidate(jp, companyid);
+                    pnSubBody.Controls.Add(uCCandidate);
+                }
             }
         }
     }

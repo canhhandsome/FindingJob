@@ -473,3 +473,4 @@ D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\Findin
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.pdb
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\WinFormProject.genruntimeconfig.cache
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob\obj\Debug\net6.0-windows\ref\WinFormProject.dll
+D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FOffer.resources

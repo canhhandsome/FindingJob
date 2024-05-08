@@ -155,5 +155,10 @@ namespace WinFormProject
             FJobPreference fJobPreference = new FJobPreference(jobseeker.INFO.ID);
             fJobPreference.Show();
         }
+
+        private void ptbCV_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

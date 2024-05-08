@@ -26,7 +26,9 @@ namespace WinFormProject.WinFormCode
             lblJSeeker.Text = jsDAO.FetchName(interview.IdJSeeker);
             JobDAO jobDAO = new JobDAO();
             lblJob.Text = jobDAO.FetchName(interview.IdJob);
+            if (lblJob.Text == "") lblJob.Text = "Job Offer!";
             ptbAvatar.Image = jsDAO.FetchImg(interview.IdJSeeker, "Avatar");
+
             lblTime.Text = interview.TimeInterview;
             lblTimeAdd.Text = interview.DateInterview.ToString("dd/MM/yyyy");
             lblStatus.Text = interview.Status;

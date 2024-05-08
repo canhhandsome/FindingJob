@@ -13,9 +13,10 @@ namespace WinFormProject
 
         public static byte[] ImageToByteArray(Image img)
         {
-            using (MemoryStream ms = new MemoryStream())
+            using (var ms = new System.IO.MemoryStream())
             {
-                img.Save(ms, System.Drawing.Imaging.ImageFormat.Png); // Saving as PNG for lossless compression
+                // Save the image in JPEG format
+                img.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
                 return ms.ToArray();
             }
         }
@@ -63,7 +64,7 @@ namespace WinFormProject
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                openFileDialog.Filter = "Image Files (*.png;*.jpg;*.jpeg)|*.png;*.jpg;*.jpeg";
+                openFileDialog.Filter = "Image Files (*.jpg;*.jpeg)|*.jpg;*.jpeg";
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     // Load the selected image and set it as the background image of the panel
@@ -86,24 +87,23 @@ namespace WinFormProject
         {
             using (MemoryStream memoryStream = new MemoryStream(pdfBytes))
             {
-                // Check if the memoryStream has content
-                if (memoryStream.Length > 0)
+                // Load PDF document
+                using (PdfLoadedDocument loadedDocument = new PdfLoadedDocument(memoryStream))
                 {
-                    // Load PDF document
-                    PdfLoadedDocument loadedDocument = new PdfLoadedDocument(memoryStream);
-
-                    // Render first page as image
-                    Bitmap image = loadedDocument.ExportAsImage(0);
-
-                    // Dispose the document
-                    loadedDocument.Dispose();
-
-                    return image;
+                    // Check if the document has pages
+                    if (loadedDocument.Pages.Count > 0)
+                    {
+                        // Render first page as image
+                        using (Bitmap bitmap = loadedDocument.ExportAsImage(0))
+                        {
+                            // Convert bitmap to Image object
+                            Image image = bitmap.Clone() as Image;
+                            return image;
+                        }
+                    }
                 }
             }
-
             return null;
-
         }
     }
 }

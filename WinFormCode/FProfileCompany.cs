@@ -23,6 +23,7 @@ namespace WinFormProject
         {
             InitializeComponent();
             Enable_Save_Click();
+
             this.company = company;
             imageList = addtional.FetchAllPictures(company.INFO.ID);
             FillInfor();
@@ -70,6 +71,7 @@ namespace WinFormProject
         }
         private void Enable_Edit_Click()
         {
+            this.btnChoosePicture.Location = new Point(975, 269);
             this.btnChoosePicture.Visible = true;
             this.btnEdit.Visible = false;
             this.btnSave.Visible = true;
@@ -146,6 +148,11 @@ namespace WinFormProject
         private void btnRemove_Click(object sender, EventArgs e)
         {
             uCCarousel.Delete();
+        }
+
+        private void FProfileCompany_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

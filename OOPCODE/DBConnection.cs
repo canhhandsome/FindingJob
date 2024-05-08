@@ -300,6 +300,29 @@ namespace WinFormProject
                 conn.Close();
             }
         }
+        public void FetchAllOffers(string strFetch, List<JobOffer> offers)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    offers.Add(new JobOffer(reader["id"].ToString(), reader["senderID"].ToString(), reader["recipientID"].ToString(), reader["subject"].ToString(), reader["content"].ToString(), reader["status"].ToString()));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("them that bai" + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
         public JobPreference FetchJobPreference(string SQL)
         {
             // Implement code to execute SQL query and fetch data from the database
@@ -407,7 +430,11 @@ namespace WinFormProject
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(SQL, conn);
                 cmd.Parameters.AddWithValue("@BDate", jobseeker.BDate);
-                cmd.Parameters.AddWithValue("@Avatar", (object)ImageHandler.ImageToByteArray(jobseeker.Avatar) ?? DBNull.Value);
+                byte[] avatarBytes = ImageHandler.ImageToByteArray(jobseeker.Avatar);
+                if (avatarBytes != null)
+                    cmd.Parameters.AddWithValue("@Avatar", avatarBytes);
+                else
+                    cmd.Parameters.AddWithValue("@Avatar", DBNull.Value);
                 if (cmd.ExecuteNonQuery() > 0)
                     MessageBox.Show("Successfully");
                 else MessageBox.Show("Failed");

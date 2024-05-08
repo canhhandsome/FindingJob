@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             lblContent = new Label();
             lblSubject = new Label();
             lblDateT = new Label();
@@ -38,29 +39,35 @@
             flowLayoutPanel1 = new FlowLayoutPanel();
             lblContentT = new Label();
             btnDone = new ReaLTaiizor.Controls.CyberButton();
-            lblJob = new Label();
+            lblTitle = new Label();
             lblJobT = new Label();
             btnInterview = new ReaLTaiizor.Controls.CyberButton();
+            guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(components);
+            btnAccept = new ReaLTaiizor.Controls.CyberButton();
+            btnReject = new ReaLTaiizor.Controls.CyberButton();
+            lblResponseT = new Label();
+            lblResponse = new Label();
             flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // lblContent
             // 
             lblContent.AutoSize = true;
-            lblContent.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblContent.Location = new Point(9, 172);
+            lblContent.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblContent.Location = new Point(10, 229);
             lblContent.Name = "lblContent";
-            lblContent.Size = new Size(83, 25);
+            lblContent.Size = new Size(106, 31);
             lblContent.TabIndex = 35;
             lblContent.Text = "Content:";
             // 
             // lblSubject
             // 
             lblSubject.AutoSize = true;
-            lblSubject.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSubject.Location = new Point(9, 126);
+            lblSubject.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSubject.Location = new Point(10, 168);
             lblSubject.Name = "lblSubject";
-            lblSubject.Size = new Size(78, 25);
+            lblSubject.Size = new Size(100, 31);
             lblSubject.TabIndex = 34;
             lblSubject.Text = "Subject:";
             // 
@@ -68,19 +75,19 @@
             // 
             lblDateT.AutoSize = true;
             lblDateT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDateT.Location = new Point(106, 87);
+            lblDateT.Location = new Point(121, 116);
             lblDateT.Name = "lblDateT";
-            lblDateT.Size = new Size(55, 25);
+            lblDateT.Size = new Size(69, 32);
             lblDateT.TabIndex = 33;
             lblDateT.Text = "Date:";
             // 
             // lblDate
             // 
             lblDate.AutoSize = true;
-            lblDate.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDate.Location = new Point(9, 87);
+            lblDate.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblDate.Location = new Point(10, 116);
             lblDate.Name = "lblDate";
-            lblDate.Size = new Size(55, 25);
+            lblDate.Size = new Size(70, 31);
             lblDate.TabIndex = 32;
             lblDate.Text = "Date:";
             // 
@@ -88,19 +95,19 @@
             // 
             llFromT.AutoSize = true;
             llFromT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            llFromT.Location = new Point(106, 49);
+            llFromT.Location = new Point(121, 65);
             llFromT.Name = "llFromT";
-            llFromT.Size = new Size(59, 25);
+            llFromT.Size = new Size(74, 32);
             llFromT.TabIndex = 31;
             llFromT.Text = "From:";
             // 
             // lblFrom
             // 
             lblFrom.AutoSize = true;
-            lblFrom.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFrom.Location = new Point(9, 49);
+            lblFrom.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblFrom.Location = new Point(10, 65);
             lblFrom.Name = "lblFrom";
-            lblFrom.Size = new Size(59, 25);
+            lblFrom.Size = new Size(76, 31);
             lblFrom.TabIndex = 30;
             lblFrom.Text = "From:";
             // 
@@ -108,9 +115,9 @@
             // 
             lblSubjectT.AutoSize = true;
             lblSubjectT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSubjectT.Location = new Point(106, 126);
+            lblSubjectT.Location = new Point(121, 168);
             lblSubjectT.Name = "lblSubjectT";
-            lblSubjectT.Size = new Size(78, 25);
+            lblSubjectT.Size = new Size(98, 32);
             lblSubjectT.TabIndex = 40;
             lblSubjectT.Text = "Subject:";
             // 
@@ -121,10 +128,9 @@
             flowLayoutPanel1.BorderStyle = BorderStyle.Fixed3D;
             flowLayoutPanel1.Controls.Add(lblContentT);
             flowLayoutPanel1.Enabled = false;
-            flowLayoutPanel1.Location = new Point(106, 172);
-            flowLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
+            flowLayoutPanel1.Location = new Point(121, 229);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(750, 177);
+            flowLayoutPanel1.Size = new Size(857, 235);
             flowLayoutPanel1.TabIndex = 41;
             // 
             // lblContentT
@@ -135,7 +141,7 @@
             lblContentT.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblContentT.Location = new Point(3, 0);
             lblContentT.Name = "lblContentT";
-            lblContentT.Size = new Size(65, 21);
+            lblContentT.Size = new Size(82, 28);
             lblContentT.TabIndex = 0;
             lblContentT.Text = "Content";
             // 
@@ -149,7 +155,7 @@
             btnDone.ColorBackground = Color.FromArgb(176, 226, 243);
             btnDone.ColorBackground_1 = Color.FromArgb(128, 128, 255);
             btnDone.ColorBackground_2 = Color.FromArgb(128, 128, 255);
-            btnDone.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
+            btnDone.ColorBackground_Pen = Color.LightCoral;
             btnDone.ColorLighting = Color.FromArgb(128, 128, 255);
             btnDone.ColorPen_1 = Color.FromArgb(128, 128, 255);
             btnDone.ColorPen_2 = Color.FromArgb(128, 128, 255);
@@ -166,12 +172,13 @@
             btnDone.Lighting = true;
             btnDone.LinearGradient_Background = false;
             btnDone.LinearGradientPen = false;
-            btnDone.Location = new Point(736, 461);
+            btnDone.Location = new Point(841, 529);
+            btnDone.Margin = new Padding(3, 4, 3, 4);
             btnDone.Name = "btnDone";
             btnDone.PenWidth = 15;
             btnDone.Rounding = true;
             btnDone.RoundingInt = 20;
-            btnDone.Size = new Size(120, 40);
+            btnDone.Size = new Size(137, 53);
             btnDone.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnDone.TabIndex = 44;
             btnDone.Tag = "Decline";
@@ -181,23 +188,23 @@
             btnDone.Timer_RGB = 300;
             btnDone.Click += btnDone_Click;
             // 
-            // lblJob
+            // lblTitle
             // 
-            lblJob.AutoSize = true;
-            lblJob.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblJob.Location = new Point(12, 16);
-            lblJob.Name = "lblJob";
-            lblJob.Size = new Size(50, 25);
-            lblJob.TabIndex = 34;
-            lblJob.Text = "Job: ";
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTitle.Location = new Point(14, 21);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(74, 31);
+            lblTitle.TabIndex = 34;
+            lblTitle.Text = "Title: ";
             // 
             // lblJobT
             // 
             lblJobT.AutoSize = true;
-            lblJobT.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblJobT.Location = new Point(106, 5);
+            lblJobT.Font = new Font("Segoe UI", 19.8F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            lblJobT.Location = new Point(121, 7);
             lblJobT.Name = "lblJobT";
-            lblJobT.Size = new Size(67, 37);
+            lblJobT.Size = new Size(84, 45);
             lblJobT.TabIndex = 40;
             lblJobT.Text = "Job:";
             // 
@@ -211,7 +218,7 @@
             btnInterview.ColorBackground = Color.FromArgb(176, 226, 243);
             btnInterview.ColorBackground_1 = Color.FromArgb(128, 128, 255);
             btnInterview.ColorBackground_2 = Color.FromArgb(128, 128, 255);
-            btnInterview.ColorBackground_Pen = Color.FromArgb(176, 226, 243);
+            btnInterview.ColorBackground_Pen = Color.LightCoral;
             btnInterview.ColorLighting = Color.FromArgb(128, 128, 255);
             btnInterview.ColorPen_1 = Color.FromArgb(128, 128, 255);
             btnInterview.ColorPen_2 = Color.FromArgb(128, 128, 255);
@@ -228,12 +235,13 @@
             btnInterview.Lighting = true;
             btnInterview.LinearGradient_Background = false;
             btnInterview.LinearGradientPen = false;
-            btnInterview.Location = new Point(610, 461);
+            btnInterview.Location = new Point(683, 529);
+            btnInterview.Margin = new Padding(3, 4, 3, 4);
             btnInterview.Name = "btnInterview";
             btnInterview.PenWidth = 15;
             btnInterview.Rounding = true;
             btnInterview.RoundingInt = 20;
-            btnInterview.Size = new Size(120, 40);
+            btnInterview.Size = new Size(137, 53);
             btnInterview.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnInterview.TabIndex = 44;
             btnInterview.Tag = "Decline";
@@ -244,25 +252,149 @@
             btnInterview.Visible = false;
             btnInterview.Click += btnInterview_Click;
             // 
+            // guna2Elipse1
+            // 
+            guna2Elipse1.BorderRadius = 30;
+            guna2Elipse1.TargetControl = this;
+            // 
+            // guna2ShadowForm1
+            // 
+            guna2ShadowForm1.BorderRadius = 30;
+            guna2ShadowForm1.TargetForm = this;
+            // 
+            // btnAccept
+            // 
+            btnAccept.Alpha = 20;
+            btnAccept.BackColor = Color.Transparent;
+            btnAccept.Background = true;
+            btnAccept.Background_WidthPen = 4F;
+            btnAccept.BackgroundPen = true;
+            btnAccept.ColorBackground = Color.FromArgb(176, 226, 243);
+            btnAccept.ColorBackground_1 = Color.FromArgb(128, 128, 255);
+            btnAccept.ColorBackground_2 = Color.FromArgb(128, 128, 255);
+            btnAccept.ColorBackground_Pen = Color.LightCoral;
+            btnAccept.ColorLighting = Color.FromArgb(128, 128, 255);
+            btnAccept.ColorPen_1 = Color.FromArgb(128, 128, 255);
+            btnAccept.ColorPen_2 = Color.FromArgb(128, 128, 255);
+            btnAccept.Cursor = Cursors.Hand;
+            btnAccept.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            btnAccept.Effect_1 = true;
+            btnAccept.Effect_1_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnAccept.Effect_1_Transparency = 25;
+            btnAccept.Effect_2 = true;
+            btnAccept.Effect_2_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnAccept.Effect_2_Transparency = 20;
+            btnAccept.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAccept.ForeColor = Color.FromArgb(46, 54, 71);
+            btnAccept.Lighting = true;
+            btnAccept.LinearGradient_Background = false;
+            btnAccept.LinearGradientPen = false;
+            btnAccept.Location = new Point(26, 529);
+            btnAccept.Margin = new Padding(3, 4, 3, 4);
+            btnAccept.Name = "btnAccept";
+            btnAccept.PenWidth = 15;
+            btnAccept.Rounding = true;
+            btnAccept.RoundingInt = 20;
+            btnAccept.Size = new Size(137, 53);
+            btnAccept.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnAccept.TabIndex = 45;
+            btnAccept.Tag = "Decline";
+            btnAccept.TextButton = "Accept";
+            btnAccept.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnAccept.Timer_Effect_1 = 5;
+            btnAccept.Timer_RGB = 300;
+            btnAccept.Visible = false;
+            btnAccept.Click += btnAccept_Click;
+            // 
+            // btnReject
+            // 
+            btnReject.Alpha = 20;
+            btnReject.BackColor = Color.Transparent;
+            btnReject.Background = true;
+            btnReject.Background_WidthPen = 4F;
+            btnReject.BackgroundPen = true;
+            btnReject.ColorBackground = Color.Salmon;
+            btnReject.ColorBackground_1 = Color.Salmon;
+            btnReject.ColorBackground_2 = Color.Salmon;
+            btnReject.ColorBackground_Pen = Color.LightCoral;
+            btnReject.ColorLighting = Color.FromArgb(128, 128, 255);
+            btnReject.ColorPen_1 = Color.FromArgb(128, 128, 255);
+            btnReject.ColorPen_2 = Color.FromArgb(128, 128, 255);
+            btnReject.Cursor = Cursors.Hand;
+            btnReject.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            btnReject.Effect_1 = true;
+            btnReject.Effect_1_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnReject.Effect_1_Transparency = 25;
+            btnReject.Effect_2 = true;
+            btnReject.Effect_2_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnReject.Effect_2_Transparency = 20;
+            btnReject.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnReject.ForeColor = Color.FromArgb(46, 54, 71);
+            btnReject.Lighting = true;
+            btnReject.LinearGradient_Background = false;
+            btnReject.LinearGradientPen = false;
+            btnReject.Location = new Point(185, 529);
+            btnReject.Margin = new Padding(3, 4, 3, 4);
+            btnReject.Name = "btnReject";
+            btnReject.PenWidth = 15;
+            btnReject.Rounding = true;
+            btnReject.RoundingInt = 20;
+            btnReject.Size = new Size(137, 53);
+            btnReject.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnReject.TabIndex = 46;
+            btnReject.Tag = "Decline";
+            btnReject.TextButton = "Reject";
+            btnReject.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnReject.Timer_Effect_1 = 5;
+            btnReject.Timer_RGB = 300;
+            btnReject.Visible = false;
+            btnReject.Click += btnReject_Click;
+            // 
+            // lblResponseT
+            // 
+            lblResponseT.AutoSize = true;
+            lblResponseT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            lblResponseT.Location = new Point(195, 479);
+            lblResponseT.Name = "lblResponseT";
+            lblResponseT.Size = new Size(169, 32);
+            lblResponseT.TabIndex = 48;
+            lblResponseT.Text = "Your Response";
+            lblResponseT.Visible = false;
+            // 
+            // lblResponse
+            // 
+            lblResponse.AutoSize = true;
+            lblResponse.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblResponse.Location = new Point(15, 479);
+            lblResponse.Name = "lblResponse";
+            lblResponse.Size = new Size(175, 31);
+            lblResponse.TabIndex = 47;
+            lblResponse.Text = "Your Response:";
+            lblResponse.Visible = false;
+            // 
             // FAlertView
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.MistyRose;
-            ClientSize = new Size(872, 513);
+            BackColor = Color.White;
+            ClientSize = new Size(997, 600);
+            Controls.Add(lblResponseT);
+            Controls.Add(lblResponse);
+            Controls.Add(btnReject);
+            Controls.Add(btnAccept);
             Controls.Add(btnInterview);
             Controls.Add(btnDone);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(lblJobT);
             Controls.Add(lblSubjectT);
-            Controls.Add(lblJob);
+            Controls.Add(lblTitle);
             Controls.Add(lblContent);
             Controls.Add(lblSubject);
             Controls.Add(lblDateT);
             Controls.Add(lblDate);
             Controls.Add(llFromT);
             Controls.Add(lblFrom);
-            Margin = new Padding(3, 2, 3, 2);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FAlertView";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FAlertView";
@@ -283,8 +415,14 @@
         private FlowLayoutPanel flowLayoutPanel1;
         private Label lblContentT;
         private ReaLTaiizor.Controls.CyberButton btnDone;
-        private Label lblJob;
+        private Label lblTitle;
         private Label lblJobT;
         private ReaLTaiizor.Controls.CyberButton btnInterview;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
+        private ReaLTaiizor.Controls.CyberButton btnReject;
+        private ReaLTaiizor.Controls.CyberButton btnAccept;
+        private Label lblResponseT;
+        private Label lblResponse;
     }
 }
