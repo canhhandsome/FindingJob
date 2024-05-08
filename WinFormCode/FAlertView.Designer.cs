@@ -48,9 +48,9 @@
             // 
             lblContent.AutoSize = true;
             lblContent.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblContent.Location = new Point(9, 172);
+            lblContent.Location = new Point(10, 229);
             lblContent.Name = "lblContent";
-            lblContent.Size = new Size(83, 25);
+            lblContent.Size = new Size(105, 32);
             lblContent.TabIndex = 35;
             lblContent.Text = "Content:";
             // 
@@ -58,9 +58,9 @@
             // 
             lblSubject.AutoSize = true;
             lblSubject.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSubject.Location = new Point(9, 126);
+            lblSubject.Location = new Point(10, 168);
             lblSubject.Name = "lblSubject";
-            lblSubject.Size = new Size(78, 25);
+            lblSubject.Size = new Size(98, 32);
             lblSubject.TabIndex = 34;
             lblSubject.Text = "Subject:";
             // 
@@ -68,9 +68,9 @@
             // 
             lblDateT.AutoSize = true;
             lblDateT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDateT.Location = new Point(106, 87);
+            lblDateT.Location = new Point(121, 116);
             lblDateT.Name = "lblDateT";
-            lblDateT.Size = new Size(55, 25);
+            lblDateT.Size = new Size(69, 32);
             lblDateT.TabIndex = 33;
             lblDateT.Text = "Date:";
             // 
@@ -78,9 +78,9 @@
             // 
             lblDate.AutoSize = true;
             lblDate.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDate.Location = new Point(9, 87);
+            lblDate.Location = new Point(10, 116);
             lblDate.Name = "lblDate";
-            lblDate.Size = new Size(55, 25);
+            lblDate.Size = new Size(69, 32);
             lblDate.TabIndex = 32;
             lblDate.Text = "Date:";
             // 
@@ -88,9 +88,9 @@
             // 
             llFromT.AutoSize = true;
             llFromT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            llFromT.Location = new Point(106, 49);
+            llFromT.Location = new Point(121, 65);
             llFromT.Name = "llFromT";
-            llFromT.Size = new Size(59, 25);
+            llFromT.Size = new Size(74, 32);
             llFromT.TabIndex = 31;
             llFromT.Text = "From:";
             // 
@@ -98,9 +98,9 @@
             // 
             lblFrom.AutoSize = true;
             lblFrom.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFrom.Location = new Point(9, 49);
+            lblFrom.Location = new Point(10, 65);
             lblFrom.Name = "lblFrom";
-            lblFrom.Size = new Size(59, 25);
+            lblFrom.Size = new Size(74, 32);
             lblFrom.TabIndex = 30;
             lblFrom.Text = "From:";
             // 
@@ -108,9 +108,9 @@
             // 
             lblSubjectT.AutoSize = true;
             lblSubjectT.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSubjectT.Location = new Point(106, 126);
+            lblSubjectT.Location = new Point(121, 168);
             lblSubjectT.Name = "lblSubjectT";
-            lblSubjectT.Size = new Size(78, 25);
+            lblSubjectT.Size = new Size(98, 32);
             lblSubjectT.TabIndex = 40;
             lblSubjectT.Text = "Subject:";
             // 
@@ -121,10 +121,9 @@
             flowLayoutPanel1.BorderStyle = BorderStyle.Fixed3D;
             flowLayoutPanel1.Controls.Add(lblContentT);
             flowLayoutPanel1.Enabled = false;
-            flowLayoutPanel1.Location = new Point(106, 172);
-            flowLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
+            flowLayoutPanel1.Location = new Point(121, 229);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(750, 177);
+            flowLayoutPanel1.Size = new Size(857, 235);
             flowLayoutPanel1.TabIndex = 41;
             // 
             // lblContentT
@@ -135,7 +134,7 @@
             lblContentT.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblContentT.Location = new Point(3, 0);
             lblContentT.Name = "lblContentT";
-            lblContentT.Size = new Size(65, 21);
+            lblContentT.Size = new Size(82, 28);
             lblContentT.TabIndex = 0;
             lblContentT.Text = "Content";
             // 
@@ -166,12 +165,13 @@
             btnDone.Lighting = true;
             btnDone.LinearGradient_Background = false;
             btnDone.LinearGradientPen = false;
-            btnDone.Location = new Point(736, 461);
+            btnDone.Location = new Point(817, 471);
+            btnDone.Margin = new Padding(3, 4, 3, 4);
             btnDone.Name = "btnDone";
             btnDone.PenWidth = 15;
             btnDone.Rounding = true;
             btnDone.RoundingInt = 20;
-            btnDone.Size = new Size(120, 40);
+            btnDone.Size = new Size(137, 53);
             btnDone.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnDone.TabIndex = 44;
             btnDone.Tag = "Decline";
@@ -185,9 +185,9 @@
             // 
             lblJob.AutoSize = true;
             lblJob.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lblJob.Location = new Point(12, 16);
+            lblJob.Location = new Point(14, 21);
             lblJob.Name = "lblJob";
-            lblJob.Size = new Size(50, 25);
+            lblJob.Size = new Size(63, 32);
             lblJob.TabIndex = 34;
             lblJob.Text = "Job: ";
             // 
@@ -195,9 +195,9 @@
             // 
             lblJobT.AutoSize = true;
             lblJobT.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblJobT.Location = new Point(106, 5);
+            lblJobT.Location = new Point(121, 7);
             lblJobT.Name = "lblJobT";
-            lblJobT.Size = new Size(67, 37);
+            lblJobT.Size = new Size(81, 46);
             lblJobT.TabIndex = 40;
             lblJobT.Text = "Job:";
             // 
@@ -228,12 +228,13 @@
             btnInterview.Lighting = true;
             btnInterview.LinearGradient_Background = false;
             btnInterview.LinearGradientPen = false;
-            btnInterview.Location = new Point(610, 461);
+            btnInterview.Location = new Point(661, 471);
+            btnInterview.Margin = new Padding(3, 4, 3, 4);
             btnInterview.Name = "btnInterview";
             btnInterview.PenWidth = 15;
             btnInterview.Rounding = true;
             btnInterview.RoundingInt = 20;
-            btnInterview.Size = new Size(120, 40);
+            btnInterview.Size = new Size(137, 53);
             btnInterview.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnInterview.TabIndex = 44;
             btnInterview.Tag = "Decline";
@@ -246,10 +247,10 @@
             // 
             // FAlertView
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(872, 513);
+            ClientSize = new Size(997, 554);
             Controls.Add(btnInterview);
             Controls.Add(btnDone);
             Controls.Add(flowLayoutPanel1);
@@ -262,7 +263,6 @@
             Controls.Add(lblDate);
             Controls.Add(llFromT);
             Controls.Add(lblFrom);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "FAlertView";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FAlertView";

@@ -10,8 +10,9 @@ namespace WinFormProject.OOPCODE
     public class JobOffer
     {
         // Private fields should be declared with the access modifier "private"
-        private string jobseekerid, jobpreferenceid, companyid, subject, content;
+        private string jobseekerid, status, companyid, subject, content;
         string id = string.Empty;
+        
         DateTime dateReply = new DateTime();
 
         // Constructor to initialize the fields
@@ -28,7 +29,7 @@ namespace WinFormProject.OOPCODE
             this.dateReply = DateTime.Now;
 
         }
-        public JobOffer(string id, string companyid, string jobseekerid, string subject, string content)
+        public JobOffer(string id, string companyid, string jobseekerid, string subject, string content,string status)
         {
             this.id = id;
             this.jobseekerid = jobseekerid;
@@ -36,6 +37,7 @@ namespace WinFormProject.OOPCODE
             this.subject = subject;
             this.content = content;
             this.dateReply = DateTime.Now;
+            this.status = status;
 
         }
         // Properties to provide access to the private fields
@@ -51,6 +53,10 @@ namespace WinFormProject.OOPCODE
         { get { return companyid; } }
         public string RecipientID
         { get { return jobseekerid; } }
+        public string Status
+        {
+            get { return status; }
+        }
     }
 }
 

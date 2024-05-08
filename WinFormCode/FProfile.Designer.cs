@@ -615,6 +615,7 @@ namespace WinFormProject
             ptbCV.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbCV.TabIndex = 57;
             ptbCV.TabStop = false;
+            ptbCV.Click += ptbCV_Click;
             // 
             // btnJobPreference
             // 

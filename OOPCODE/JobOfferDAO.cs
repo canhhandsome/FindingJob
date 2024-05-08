@@ -12,9 +12,9 @@ namespace WinFormProject.OOPCODE
         public JobOfferDAO() { }
         public void InsertOffer(JobOffer offer)
         {
-            string sqlUpdate = string.Format("INSERT INTO JobOffer (senderID, recipientID, subject, content, dateReply) " +
-                                     "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}')",
-                                     offer.SenderID, offer.RecipientID, offer.Subject, offer.Content, offer.DateReply);
+            string sqlUpdate = string.Format("INSERT INTO JobOffer (senderID, recipientID, subject, content, dateReply,status) " +
+                                     "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}','{5}')",
+                                     offer.SenderID, offer.RecipientID, offer.Subject, offer.Content, offer.DateReply,"Offering");
             conn.CRUD(sqlUpdate);
         }
         public List<JobOffer> FetchOffers(string jobseekerid)

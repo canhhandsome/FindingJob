@@ -38,7 +38,7 @@ namespace WinFormProject
             InitializeComponent();
             this.jobOffer = jobOffer;
             this.MaximumSize = new System.Drawing.Size(531, 206);
-            lblDateT.Text = alert.DateReply.ToString("dd/MM/yyyy");
+            lblDateT.Text = jobOffer.DateReply.ToString("dd/MM/yyyy");
             CompanyDAO companyDAO = new CompanyDAO();
             companyAvatar = companyDAO.FetchImg(jobOffer.SenderID, "Avatar");
             if (companyAvatar != null) ptbCompanyPicture.Image = companyAvatar;

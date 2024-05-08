@@ -45,10 +45,9 @@ namespace WinFormProject
 
         private void CheckStatus()
         {
-            if (lblSubjectT.Text.ToLower() == "approve")
+            if (lblSubjectT.Text.ToLower() == "approve" || lblSubjectT.Text.ToLower() == "Offering")
             {
-                btnDone.Location = new Point(736, 467);
-                this.Height = 558;
+                
                 btnInterview.Visible = true;
             }
         }
@@ -60,7 +59,11 @@ namespace WinFormProject
 
         private void btnInterview_Click(object sender, EventArgs e)
         {
-            FInterview fInterview = new FInterview(alert.RecipientID, alert.JobID);   
+            FInterview fInterview;
+            if(lblJobT.Text == "JOB OFFER!!")
+            {
+                fInterview = new FInterview(JobOffer.RecipientID, "");
+            } else fInterview = new FInterview(alert.RecipientID, alert.JobID);
             fInterview.Show();
         }
     }

@@ -310,7 +310,7 @@ namespace WinFormProject
 
                 while (reader.Read())
                 {
-                    offers.Add(new JobOffer(reader["id"].ToString(), reader["senderID"].ToString(), reader["recipientID"].ToString(), reader["subject"].ToString(), reader["content"].ToString()));
+                    offers.Add(new JobOffer(reader["id"].ToString(), reader["senderID"].ToString(), reader["recipientID"].ToString(), reader["subject"].ToString(), reader["content"].ToString(), reader["status"].ToString()));
                 }
             }
             catch (Exception ex)
@@ -430,7 +430,11 @@ namespace WinFormProject
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(SQL, conn);
                 cmd.Parameters.AddWithValue("@BDate", jobseeker.BDate);
-                cmd.Parameters.AddWithValue("@Avatar", (object)ImageHandler.ImageToByteArray(jobseeker.Avatar) ?? DBNull.Value);
+                byte[] avatarBytes = ImageHandler.ImageToByteArray(jobseeker.Avatar);
+                if (avatarBytes != null)
+                    cmd.Parameters.AddWithValue("@Avatar", avatarBytes);
+                else
+                    cmd.Parameters.AddWithValue("@Avatar", DBNull.Value);
                 if (cmd.ExecuteNonQuery() > 0)
                     MessageBox.Show("Successfully");
                 else MessageBox.Show("Failed");

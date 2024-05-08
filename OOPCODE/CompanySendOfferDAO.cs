@@ -18,12 +18,12 @@ namespace WinFormProject.OOPCODE
                                          );
             conn.CRUD(sqlUpdate);
         }
-        public bool AlreadySent(string jobseekerid,string companyid)
+        public bool AlreadySent(string jobseekerid)
         {
             string id;
-            string strFetch = string.Format("SELECT companyid from CompanySendOffer WHERE JobSeekerID= '{0}'", jobseekerid);
+            string strFetch = string.Format("SELECT status from CompanySendOffer WHERE JobSeekerID= '{0}'", jobseekerid);
             id = conn.FetchScalar(strFetch);
-            if (companyid == id)
+            if (id != "Rejected")
             {
                 return true;
             }

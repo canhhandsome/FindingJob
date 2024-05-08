@@ -29,7 +29,7 @@ namespace WinFormProject.WinFormCode
         {
             foreach (JobPreference jp in jobpreference)
             {
-                if(!companysendOffer.AlreadySent(jp.JobSeekerId, companyid))
+                if(!companysendOffer.AlreadySent(jp.JobSeekerId))
                 {
                     UCCandidate uCCandidate = new UCCandidate(jp, companyid);
                     pnSubBody.Controls.Add(uCCandidate);
