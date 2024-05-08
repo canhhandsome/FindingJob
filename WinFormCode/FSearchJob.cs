@@ -39,48 +39,58 @@ namespace WinFormProject
         }
         private void FillJob(List<Job> jobslist)
         {
-            flpJob.Controls.Clear();
-            this.Size = oldSize;
-            int count = 0;
-
-            // Add job information controls
-            foreach (Job job in jobslist)
+            if(jobslist.Count > 0 )
             {
-                if (job.Status == "waiting")
+                flpJob.Controls.Clear();
+                this.Size = oldSize;
+                int count = 0;
+
+                // Add job information controls
+                foreach (Job job in jobslist)
                 {
-                    count++;
-                    UCInformation uCInformation = new UCInformation(job, jsID);
-                    uCInformation.pnBody.FillColor = colorJob(count);
-                    flpJob.Controls.Add(uCInformation);
-                    if (count % 2 == 1)
+                    if (job.Status == "waiting")
                     {
-                        flpJob.Height += 500;
+                        count++;
+                        UCInformation uCInformation = new UCInformation(job, jsID);
+                        uCInformation.pnBody.FillColor = colorJob(count);
+                        flpJob.Controls.Add(uCInformation);
+                        if (count % 2 == 1)
+                        {
+                            flpJob.Height += 500;
+                        }
+                    }
+                    if (count == 4)
+                    {
+                        count = 0;
                     }
                 }
-                if (count == 4)
-                {
-                    count = 0;
-                }
-            }
 
-            // Attach event handler for skill button click
-            foreach (Control control in flpJob.Controls)
+                // Attach event handler for skill button click
+                foreach (Control control in flpJob.Controls)
+                {
+                    if (control is UCInformation ucInfo)
+                    {
+                        ucInfo.SkillButtonClicked += UCInformation_SkillButtonClicked;
+                    }
+                }
+                btnBack.Visible = true;
+                btnNext.Visible = true;
+                // Add buttons to a new line after the last element
+                flpJob.SetFlowBreak(flpJob.Controls[flpJob.Controls.Count - 1], true);
+
+                // Left align the buttons
+                btnBack.Anchor = AnchorStyles.Left;
+                btnNext.Anchor = AnchorStyles.Left;
+
+                // Add the buttons to the FlowLayoutPanel
+                flpJob.Controls.Add(btnBack);
+                flpJob.Controls.Add(btnNext);
+            }
+            else
             {
-                if (control is UCInformation ucInfo)
-                {
-                    ucInfo.SkillButtonClicked += UCInformation_SkillButtonClicked;
-                }
+                btnBack.Visible = false;
+                btnNext.Visible = false;
             }
-            // Add buttons to a new line after the last element
-            flpJob.SetFlowBreak(flpJob.Controls[flpJob.Controls.Count - 1], true);
-
-            // Left align the buttons
-            btnBack.Anchor = AnchorStyles.Left;
-            btnNext.Anchor = AnchorStyles.Left;
-
-            // Add the buttons to the FlowLayoutPanel
-            flpJob.Controls.Add(btnBack);
-            flpJob.Controls.Add(btnNext);
 
         }
         private Color colorJob(int count)
