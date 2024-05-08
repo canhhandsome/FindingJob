@@ -60,7 +60,10 @@ namespace WinFormProject.WinFormCode
             {
                 if (interview.DateInterview == mcpSchdule.SelectionRange.Start)
                 {
-                    cbbTimeIv.Items.Remove(interview.TimeInterview);
+                    if(interview.Status.ToLower() != "rejected")
+                    {
+                        cbbTimeIv.Items.Remove(interview.TimeInterview);
+                    }
                     UCInterview uc = new UCInterview(interview);
                     flpBody.Controls.Add(uc);
                     flpBody.Height += 85;
