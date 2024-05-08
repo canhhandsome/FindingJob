@@ -19,10 +19,16 @@ namespace WinFormProject
         private CompanySendOfferDAO companySendOfferDAO = new CompanySendOfferDAO();
         private InterviewDAO interviewDAO = new InterviewDAO();
         private JobOfferDAO jobOfferDAO = new JobOfferDAO();
+        private string jsID;
+        private string companyID;
+        private string jobID; 
         public FAlertView(Alert alert)
         {
             InitializeComponent();
             this.alert = alert;
+            jsID = alert.RecipientID;
+            companyID = alert.SenderID;
+            jobID = alert.JobID;
             CompanyDAO companyDAO = new CompanyDAO();
             JobDAO jobDAO = new JobDAO();
             llFromT.Text = companyDAO.FetchName(alert.SenderID);
@@ -36,6 +42,9 @@ namespace WinFormProject
         {
             InitializeComponent();
             this.JobOffer = jobOffer;
+            jsID = jobOffer.RecipientID;
+            companyID = jobOffer.SenderID;
+            jobID = "";
             StartUp(jobOffer);
         }
         private void StartUp(JobOffer jobOffer)
@@ -90,11 +99,7 @@ namespace WinFormProject
         private void btnInterview_Click(object sender, EventArgs e)
         {
             FInterview fInterview;
-            if (lblJobT.Text == "JOB OFFER!!")
-            {
-                fInterview = new FInterview(JobOffer.RecipientID, "");
-            }
-            else fInterview = new FInterview(alert.RecipientID, alert.JobID);
+            fInterview = new FInterview(jsID, companyID, jobID);
             fInterview.Show();
         }
 
@@ -102,7 +107,7 @@ namespace WinFormProject
         {
             jobOfferDAO.OfferAccepted(JobOffer.SenderID,JobOffer.RecipientID);
             companySendOfferDAO.OfferAccepted(JobOffer.SenderID, JobOffer.RecipientID);
-            interviewDAO.SetStatusForInterview(JobOffer.RecipientID,"","Accepted");
+            interviewDAO.SetStatusForInterview(JobOffer.RecipientID,"","Accepted", JobOffer.SenderID);
             this.JobOffer.Status = "Accepted";
             StartUp(this.JobOffer);
         }
@@ -111,7 +116,7 @@ namespace WinFormProject
         {
             jobOfferDAO.OfferRejected(JobOffer.SenderID, JobOffer.RecipientID);
             companySendOfferDAO.OfferRejected(JobOffer.SenderID, JobOffer.RecipientID);
-            interviewDAO.SetStatusForInterview(JobOffer.RecipientID, "", "Rejected");
+            interviewDAO.SetStatusForInterview(JobOffer.RecipientID, "", "Rejected", JobOffer.SenderID);
             this.JobOffer.Status = "Rejected";
             StartUp(this.JobOffer);
         }

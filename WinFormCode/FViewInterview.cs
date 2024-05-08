@@ -26,7 +26,7 @@ namespace WinFormProject.WinFormCode
             List<Interview> interviews = new List<Interview>();
             foreach (Job job in company.Jobs)
             {
-                interviews = interviewDAO.FetchInterviewByID(job.Jobid);
+                interviews = interviewDAO.FetchInterviewByID(company.INFO.ID);
                 foreach (Interview interview in interviews)
                 {
                     if (interview.DateInterview == mcpSchdule.SelectionRange.Start)

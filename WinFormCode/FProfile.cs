@@ -166,5 +166,31 @@ namespace WinFormProject
             FCVCreation fCV = new FCVCreation(jobseeker);
             fCV.Show();
         }
+
+        private void txtFullName_Leave(object sender, EventArgs e)
+        {
+            if (txtFullName.Text == string.Empty)
+            {
+                errorProviderFullName.SetError(txtFullName, "Please enter your name!");
+            }
+            else
+            {
+                errorProviderFullName.SetError(txtFullName, null);
+
+            }
+        }
+
+        private void txtAddress_Leave(object sender, EventArgs e)
+        {
+            if (txtAddress.Text == string.Empty)
+            {
+                errorProviderFullName.SetError(txtAddress, "Please enter your address!");
+            }
+            else
+            {
+                errorProviderFullName.SetError(txtAddress, null);
+
+            }
+        }
     }
 }

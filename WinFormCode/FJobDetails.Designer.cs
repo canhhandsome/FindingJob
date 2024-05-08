@@ -29,90 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FJobDetails));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            this.lblSalary = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.rtxtRequirement = new System.Windows.Forms.RichTextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.rtxtDescription = new System.Windows.Forms.RichTextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.rtxtBenefit = new System.Windows.Forms.RichTextBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnApply = new ReaLTaiizor.Controls.CyberButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblCompany = new System.Windows.Forms.Label();
-            this.lblJobName = new System.Windows.Forms.Label();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnCarousel = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lbLocation = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.lblWorkingForm = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblCompanyNameLeft = new ReaLTaiizor.Controls.MetroLabel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.btnSeeMore = new ReaLTaiizor.Controls.CyberButton();
-            this.ptbAvatar = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnCompanyDetail = new ReaLTaiizor.Controls.CyberButton();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblCompanyTypeText = new ReaLTaiizor.Controls.MetroLabel();
-            this.lblCompanyType = new ReaLTaiizor.Controls.MetroLabel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.lblCompanySizeText = new ReaLTaiizor.Controls.MetroLabel();
-            this.lblCompanySize = new ReaLTaiizor.Controls.MetroLabel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.lblAddressText = new ReaLTaiizor.Controls.MetroLabel();
-            this.lblAddress = new ReaLTaiizor.Controls.MetroLabel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.lblWorkingTimeText = new ReaLTaiizor.Controls.MetroLabel();
-            this.lblWorkingTime = new ReaLTaiizor.Controls.MetroLabel();
-            this.lblStatus = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.flowLayoutPanel4.SuspendLayout();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAvatar)).BeginInit();
-            this.flowLayoutPanel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.SuspendLayout();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblSalary = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             rtxtRequirement = new RichTextBox();
             tabPage2 = new TabPage();
-            richTextBox1 = new RichTextBox();
             rtxtDescription = new RichTextBox();
             tabPage3 = new TabPage();
             rtxtBenefit = new RichTextBox();
@@ -139,10 +64,10 @@
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             lblCompanyNameLeft = new ReaLTaiizor.Controls.MetroLabel();
             panel10 = new Panel();
+            btnSeeMore = new ReaLTaiizor.Controls.CyberButton();
             ptbAvatar = new Guna.UI2.WinForms.Guna2PictureBox();
             btnCompanyDetail = new ReaLTaiizor.Controls.CyberButton();
             flowLayoutPanel3 = new FlowLayoutPanel();
-            pnTopCompany = new Guna.UI2.WinForms.Guna2Panel();
             panel2 = new Panel();
             lblCompanyTypeText = new ReaLTaiizor.Controls.MetroLabel();
             lblCompanyType = new ReaLTaiizor.Controls.MetroLabel();
@@ -155,6 +80,8 @@
             panel12 = new Panel();
             lblWorkingTimeText = new ReaLTaiizor.Controls.MetroLabel();
             lblWorkingTime = new ReaLTaiizor.Controls.MetroLabel();
+            lblStatus = new Label();
+            pnTopCompany = new Guna.UI2.WinForms.Guna2Panel();
             lblTopCompany = new Guna.UI2.WinForms.Guna2HtmlLabel();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -176,525 +103,460 @@
             panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).BeginInit();
             flowLayoutPanel3.SuspendLayout();
-            pnTopCompany.SuspendLayout();
             panel2.SuspendLayout();
             panel9.SuspendLayout();
             panel11.SuspendLayout();
             panel12.SuspendLayout();
+            pnTopCompany.SuspendLayout();
             SuspendLayout();
             // 
             // lblSalary
             // 
-            this.lblSalary.AutoSize = true;
-            this.lblSalary.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.lblSalary.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lblSalary.Location = new System.Drawing.Point(46, 108);
-            this.lblSalary.Name = "lblSalary";
-            this.lblSalary.Size = new System.Drawing.Size(85, 31);
-            this.lblSalary.TabIndex = 19;
-            this.lblSalary.Text = "Salary:";
+            lblSalary.AutoSize = true;
+            lblSalary.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold | FontStyle.Underline);
+            lblSalary.ForeColor = Color.SeaGreen;
+            lblSalary.Location = new Point(40, 81);
+            lblSalary.Name = "lblSalary";
+            lblSalary.Size = new Size(70, 25);
+            lblSalary.TabIndex = 19;
+            lblSalary.Text = "Salary:";
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tabControl1.Location = new System.Drawing.Point(3, 749);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(813, 308);
-            this.tabControl1.TabIndex = 28;
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabPage3);
+            tabControl1.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold);
+            tabControl1.Location = new Point(3, 561);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(711, 231);
+            tabControl1.TabIndex = 28;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.rtxtRequirement);
-            this.tabPage1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tabPage1.Location = new System.Drawing.Point(4, 46);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage1.Size = new System.Drawing.Size(805, 258);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Requirement";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            tabPage1.Controls.Add(rtxtRequirement);
+            tabPage1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            tabPage1.Location = new Point(4, 39);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3, 3, 3, 3);
+            tabPage1.Size = new Size(703, 188);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Requirement";
+            tabPage1.UseVisualStyleBackColor = true;
             // 
             // rtxtRequirement
             // 
-            this.rtxtRequirement.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rtxtRequirement.Enabled = false;
-            this.rtxtRequirement.Location = new System.Drawing.Point(3, 4);
-            this.rtxtRequirement.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rtxtRequirement.Name = "rtxtRequirement";
-            this.rtxtRequirement.Size = new System.Drawing.Size(799, 255);
-            this.rtxtRequirement.TabIndex = 0;
-            this.rtxtRequirement.Text = "";
+            rtxtRequirement.Dock = DockStyle.Top;
+            rtxtRequirement.Enabled = false;
+            rtxtRequirement.Location = new Point(3, 3);
+            rtxtRequirement.Name = "rtxtRequirement";
+            rtxtRequirement.Size = new Size(697, 192);
+            rtxtRequirement.TabIndex = 0;
+            rtxtRequirement.Text = "";
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.richTextBox1);
-            this.tabPage2.Controls.Add(this.rtxtDescription);
-            this.tabPage2.Location = new System.Drawing.Point(4, 46);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage2.Size = new System.Drawing.Size(805, 258);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Description";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Enabled = false;
-            this.richTextBox1.Location = new System.Drawing.Point(3, 4);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(799, 250);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            tabPage2.Controls.Add(rtxtDescription);
+            tabPage2.Location = new Point(4, 39);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3, 3, 3, 3);
+            tabPage2.Size = new Size(703, 188);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Description";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
             // rtxtDescription
             // 
-            this.rtxtDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtxtDescription.Enabled = false;
-            this.rtxtDescription.Location = new System.Drawing.Point(3, 4);
-            this.rtxtDescription.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rtxtDescription.Name = "rtxtDescription";
-            this.rtxtDescription.Size = new System.Drawing.Size(799, 250);
-            this.rtxtDescription.TabIndex = 0;
-            this.rtxtDescription.Text = "";
+            rtxtDescription.Dock = DockStyle.Fill;
+            rtxtDescription.Enabled = false;
+            rtxtDescription.Location = new Point(3, 3);
+            rtxtDescription.Name = "rtxtDescription";
+            rtxtDescription.Size = new Size(697, 182);
+            rtxtDescription.TabIndex = 0;
+            rtxtDescription.Text = "";
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.rtxtBenefit);
-            this.tabPage3.Location = new System.Drawing.Point(4, 46);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage3.Size = new System.Drawing.Size(805, 258);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Benefit";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            tabPage3.Controls.Add(rtxtBenefit);
+            tabPage3.Location = new Point(4, 39);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Padding = new Padding(3, 3, 3, 3);
+            tabPage3.Size = new Size(703, 188);
+            tabPage3.TabIndex = 2;
+            tabPage3.Text = "Benefit";
+            tabPage3.UseVisualStyleBackColor = true;
             // 
             // rtxtBenefit
             // 
-            this.rtxtBenefit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtxtBenefit.Enabled = false;
-            this.rtxtBenefit.Location = new System.Drawing.Point(3, 4);
-            this.rtxtBenefit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rtxtBenefit.Name = "rtxtBenefit";
-            this.rtxtBenefit.Size = new System.Drawing.Size(799, 250);
-            this.rtxtBenefit.TabIndex = 45;
-            this.rtxtBenefit.Text = "";
+            rtxtBenefit.Dock = DockStyle.Fill;
+            rtxtBenefit.Enabled = false;
+            rtxtBenefit.Location = new Point(3, 3);
+            rtxtBenefit.Name = "rtxtBenefit";
+            rtxtBenefit.Size = new Size(697, 182);
+            rtxtBenefit.TabIndex = 45;
+            rtxtBenefit.Text = "";
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
-            this.flowLayoutPanel1.Controls.Add(this.tabControl1);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(842, 865);
-            this.flowLayoutPanel1.TabIndex = 49;
+            flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.BackColor = Color.White;
+            flowLayoutPanel1.Controls.Add(panel1);
+            flowLayoutPanel1.Controls.Add(flowLayoutPanel2);
+            flowLayoutPanel1.Controls.Add(tabControl1);
+            flowLayoutPanel1.Dock = DockStyle.Left;
+            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(737, 649);
+            flowLayoutPanel1.TabIndex = 49;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnApply);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.lblCompany);
-            this.panel1.Controls.Add(this.lblJobName);
-            this.panel1.Controls.Add(this.lblSalary);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(813, 216);
-            this.panel1.TabIndex = 0;
+            panel1.Controls.Add(btnApply);
+            panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(lblCompany);
+            panel1.Controls.Add(lblJobName);
+            panel1.Controls.Add(lblSalary);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(3, 2);
+            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(711, 162);
+            panel1.TabIndex = 0;
             // 
             // btnApply
             // 
-            this.btnApply.Alpha = 20;
-            this.btnApply.BackColor = System.Drawing.Color.Transparent;
-            this.btnApply.Background = true;
-            this.btnApply.Background_WidthPen = 4F;
-            this.btnApply.BackgroundPen = true;
-            this.btnApply.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.btnApply.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.btnApply.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.btnApply.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.btnApply.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.btnApply.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.btnApply.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.btnApply.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnApply.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.btnApply.Effect_1 = true;
-            this.btnApply.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.btnApply.Effect_1_Transparency = 25;
-            this.btnApply.Effect_2 = true;
-            this.btnApply.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.btnApply.Effect_2_Transparency = 20;
-            this.btnApply.Font = new System.Drawing.Font("Arial Narrow", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnApply.ForeColor = System.Drawing.Color.White;
-            this.btnApply.Lighting = true;
-            this.btnApply.LinearGradient_Background = false;
-            this.btnApply.LinearGradientPen = false;
-            this.btnApply.Location = new System.Drawing.Point(3, 147);
-            this.btnApply.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnApply.Name = "btnApply";
-            this.btnApply.PenWidth = 15;
-            this.btnApply.Rounding = true;
-            this.btnApply.RoundingInt = 10;
-            this.btnApply.Size = new System.Drawing.Size(794, 56);
-            this.btnApply.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnApply.TabIndex = 47;
-            this.btnApply.Tag = "Decline";
-            this.btnApply.TextButton = "Apply";
-            this.btnApply.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnApply.Timer_Effect_1 = 5;
-            this.btnApply.Timer_RGB = 300;
+            btnApply.Alpha = 20;
+            btnApply.BackColor = Color.Transparent;
+            btnApply.Background = true;
+            btnApply.Background_WidthPen = 4F;
+            btnApply.BackgroundPen = true;
+            btnApply.ColorBackground = Color.FromArgb(237, 27, 47);
+            btnApply.ColorBackground_1 = Color.FromArgb(237, 27, 47);
+            btnApply.ColorBackground_2 = Color.FromArgb(237, 27, 47);
+            btnApply.ColorBackground_Pen = Color.FromArgb(237, 27, 47);
+            btnApply.ColorLighting = Color.FromArgb(237, 27, 47);
+            btnApply.ColorPen_1 = Color.FromArgb(237, 27, 47);
+            btnApply.ColorPen_2 = Color.FromArgb(237, 27, 47);
+            btnApply.Cursor = Cursors.Hand;
+            btnApply.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            btnApply.Effect_1 = true;
+            btnApply.Effect_1_ColorBackground = Color.FromArgb(237, 27, 47);
+            btnApply.Effect_1_Transparency = 25;
+            btnApply.Effect_2 = true;
+            btnApply.Effect_2_ColorBackground = Color.FromArgb(237, 27, 47);
+            btnApply.Effect_2_Transparency = 20;
+            btnApply.Font = new Font("Arial Narrow", 13.2F, FontStyle.Bold);
+            btnApply.ForeColor = Color.White;
+            btnApply.Lighting = true;
+            btnApply.LinearGradient_Background = false;
+            btnApply.LinearGradientPen = false;
+            btnApply.Location = new Point(3, 110);
+            btnApply.Name = "btnApply";
+            btnApply.PenWidth = 15;
+            btnApply.Rounding = true;
+            btnApply.RoundingInt = 10;
+            btnApply.Size = new Size(695, 42);
+            btnApply.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnApply.TabIndex = 47;
+            btnApply.Tag = "Decline";
+            btnApply.TextButton = "Apply";
+            btnApply.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnApply.Timer_Effect_1 = 5;
+            btnApply.Timer_RGB = 300;
+            btnApply.Click += btnApply_Click_1;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(11, 109);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 29);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(10, 82);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(26, 22);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 15;
+            pictureBox2.TabStop = false;
             // 
             // lblCompany
             // 
-            this.lblCompany.AutoSize = true;
-            this.lblCompany.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCompany.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblCompany.Location = new System.Drawing.Point(11, 69);
-            this.lblCompany.Name = "lblCompany";
-            this.lblCompany.Size = new System.Drawing.Size(100, 28);
-            this.lblCompany.TabIndex = 13;
-            this.lblCompany.Text = "Company:";
+            lblCompany.AutoSize = true;
+            lblCompany.Font = new Font("Segoe UI", 12F);
+            lblCompany.ForeColor = SystemColors.ControlText;
+            lblCompany.Location = new Point(10, 52);
+            lblCompany.Name = "lblCompany";
+            lblCompany.Size = new Size(80, 21);
+            lblCompany.TabIndex = 13;
+            lblCompany.Text = "Company:";
             // 
             // lblJobName
             // 
-            this.lblJobName.AccessibleDescription = "";
-            this.lblJobName.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblJobName.Location = new System.Drawing.Point(0, 0);
-            this.lblJobName.Name = "lblJobName";
-            this.lblJobName.Size = new System.Drawing.Size(809, 69);
-            this.lblJobName.TabIndex = 1;
-            this.lblJobName.Text = "Job Name:";
+            lblJobName.AccessibleDescription = "";
+            lblJobName.Font = new Font("Segoe UI", 25.8F, FontStyle.Bold);
+            lblJobName.Location = new Point(0, 0);
+            lblJobName.Name = "lblJobName";
+            lblJobName.Size = new Size(708, 52);
+            lblJobName.TabIndex = 1;
+            lblJobName.Text = "Job Name:";
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.Controls.Add(this.pnCarousel);
-            this.flowLayoutPanel2.Controls.Add(this.panel4);
-            this.flowLayoutPanel2.Controls.Add(this.panel5);
-            this.flowLayoutPanel2.Controls.Add(this.panel7);
-            this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanel4);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 225);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(813, 517);
-            this.flowLayoutPanel2.TabIndex = 1;
+            flowLayoutPanel2.Controls.Add(pnCarousel);
+            flowLayoutPanel2.Controls.Add(panel4);
+            flowLayoutPanel2.Controls.Add(panel5);
+            flowLayoutPanel2.Controls.Add(panel7);
+            flowLayoutPanel2.Controls.Add(flowLayoutPanel4);
+            flowLayoutPanel2.Dock = DockStyle.Top;
+            flowLayoutPanel2.Location = new Point(3, 168);
+            flowLayoutPanel2.Margin = new Padding(3, 2, 3, 2);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
+            flowLayoutPanel2.Size = new Size(711, 388);
+            flowLayoutPanel2.TabIndex = 1;
             // 
             // pnCarousel
             // 
-            this.pnCarousel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnCarousel.Location = new System.Drawing.Point(3, 3);
-            this.pnCarousel.Name = "pnCarousel";
-            this.pnCarousel.Size = new System.Drawing.Size(807, 252);
-            this.pnCarousel.TabIndex = 1;
+            pnCarousel.Dock = DockStyle.Top;
+            pnCarousel.Location = new Point(3, 2);
+            pnCarousel.Margin = new Padding(3, 2, 3, 2);
+            pnCarousel.Name = "pnCarousel";
+            pnCarousel.Size = new Size(706, 189);
+            pnCarousel.TabIndex = 1;
             // 
             // panel4
             // 
-            this.panel4.AutoScroll = true;
-            this.panel4.Controls.Add(this.lbLocation);
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(3, 261);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(803, 59);
-            this.panel4.TabIndex = 2;
+            panel4.AutoScroll = true;
+            panel4.Controls.Add(lbLocation);
+            panel4.Controls.Add(pictureBox1);
+            panel4.Dock = DockStyle.Top;
+            panel4.Location = new Point(3, 195);
+            panel4.Margin = new Padding(3, 2, 3, 2);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(703, 44);
+            panel4.TabIndex = 2;
             // 
             // lbLocation
             // 
-            this.lbLocation.AutoEllipsis = true;
-            this.lbLocation.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lbLocation.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbLocation.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbLocation.Location = new System.Drawing.Point(78, 0);
-            this.lbLocation.Name = "lbLocation";
-            this.lbLocation.Size = new System.Drawing.Size(725, 59);
-            this.lbLocation.TabIndex = 24;
-            this.lbLocation.Text = "Location";
-            this.lbLocation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            lbLocation.AutoEllipsis = true;
+            lbLocation.Dock = DockStyle.Right;
+            lbLocation.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold);
+            lbLocation.ForeColor = SystemColors.ControlText;
+            lbLocation.Location = new Point(69, 0);
+            lbLocation.Name = "lbLocation";
+            lbLocation.Size = new Size(634, 44);
+            lbLocation.TabIndex = 24;
+            lbLocation.Text = "Location";
+            lbLocation.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 29);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(14, 11);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(26, 22);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.panel6);
-            this.panel5.Controls.Add(this.pictureBox3);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(3, 326);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(803, 59);
-            this.panel5.TabIndex = 3;
+            panel5.Controls.Add(panel6);
+            panel5.Controls.Add(pictureBox3);
+            panel5.Dock = DockStyle.Top;
+            panel5.Location = new Point(3, 243);
+            panel5.Margin = new Padding(3, 2, 3, 2);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(703, 44);
+            panel5.TabIndex = 3;
             // 
             // panel6
             // 
-            this.panel6.AutoScroll = true;
-            this.panel6.Controls.Add(this.lblWorkingForm);
-            this.panel6.Controls.Add(this.pictureBox4);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(803, 59);
-            this.panel6.TabIndex = 3;
+            panel6.AutoScroll = true;
+            panel6.Controls.Add(lblWorkingForm);
+            panel6.Controls.Add(pictureBox4);
+            panel6.Dock = DockStyle.Top;
+            panel6.Location = new Point(0, 0);
+            panel6.Margin = new Padding(3, 2, 3, 2);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(703, 44);
+            panel6.TabIndex = 3;
             // 
             // lblWorkingForm
             // 
-            this.lblWorkingForm.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblWorkingForm.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblWorkingForm.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblWorkingForm.Location = new System.Drawing.Point(78, 0);
-            this.lblWorkingForm.Name = "lblWorkingForm";
-            this.lblWorkingForm.Size = new System.Drawing.Size(725, 59);
-            this.lblWorkingForm.TabIndex = 23;
-            this.lblWorkingForm.Text = "Woking Form";
-            this.lblWorkingForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            lblWorkingForm.Dock = DockStyle.Right;
+            lblWorkingForm.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold);
+            lblWorkingForm.ForeColor = SystemColors.ControlText;
+            lblWorkingForm.Location = new Point(69, 0);
+            lblWorkingForm.Name = "lblWorkingForm";
+            lblWorkingForm.Size = new Size(634, 44);
+            lblWorkingForm.TabIndex = 23;
+            lblWorkingForm.Text = "Woking Form";
+            lblWorkingForm.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 29);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(14, 11);
+            pictureBox4.Margin = new Padding(3, 2, 3, 2);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(26, 22);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 0;
+            pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(6, 15);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 29);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(5, 11);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(26, 22);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 0;
+            pictureBox3.TabStop = false;
             // 
             // panel7
             // 
-            this.panel7.AutoScroll = true;
-            this.panel7.Controls.Add(this.lblDate);
-            this.panel7.Controls.Add(this.pictureBox5);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(3, 391);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(803, 59);
-            this.panel7.TabIndex = 4;
+            panel7.AutoScroll = true;
+            panel7.Controls.Add(lblDate);
+            panel7.Controls.Add(pictureBox5);
+            panel7.Dock = DockStyle.Top;
+            panel7.Location = new Point(3, 291);
+            panel7.Margin = new Padding(3, 2, 3, 2);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(703, 44);
+            panel7.TabIndex = 4;
             // 
             // lblDate
             // 
-            this.lblDate.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblDate.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDate.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblDate.Location = new System.Drawing.Point(78, 0);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(725, 59);
-            this.lblDate.TabIndex = 22;
-            this.lblDate.Text = "Date Publish:";
-            this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            lblDate.Dock = DockStyle.Right;
+            lblDate.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold);
+            lblDate.ForeColor = SystemColors.ControlText;
+            lblDate.Location = new Point(69, 0);
+            lblDate.Name = "lblDate";
+            lblDate.Size = new Size(634, 44);
+            lblDate.TabIndex = 22;
+            lblDate.Text = "Date Publish:";
+            lblDate.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(30, 29);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(14, 11);
+            pictureBox5.Margin = new Padding(3, 2, 3, 2);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(26, 22);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 0;
+            pictureBox5.TabStop = false;
             // 
             // flowLayoutPanel4
             // 
-            this.flowLayoutPanel4.Controls.Add(this.guna2HtmlLabel1);
-            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(3, 456);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(803, 59);
-            this.flowLayoutPanel4.TabIndex = 5;
             flowLayoutPanel4.Controls.Add(guna2HtmlLabel1);
             flowLayoutPanel4.Dock = DockStyle.Bottom;
-            flowLayoutPanel4.Location = new Point(3, 456);
+            flowLayoutPanel4.Location = new Point(3, 339);
+            flowLayoutPanel4.Margin = new Padding(3, 2, 3, 2);
             flowLayoutPanel4.Name = "flowLayoutPanel4";
-            flowLayoutPanel4.Size = new Size(803, 74);
+            flowLayoutPanel4.Size = new Size(703, 56);
             flowLayoutPanel4.TabIndex = 5;
             // 
             // guna2HtmlLabel1
             // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(10, 10);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(10);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(107, 58);
-            this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "Skill";
             guna2HtmlLabel1.AutoSize = false;
             guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel1.Location = new Point(10, 11);
-            guna2HtmlLabel1.Margin = new Padding(10, 11, 10, 11);
+            guna2HtmlLabel1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold);
+            guna2HtmlLabel1.Location = new Point(9, 8);
+            guna2HtmlLabel1.Margin = new Padding(9, 8, 9, 8);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(107, 59);
+            guna2HtmlLabel1.Size = new Size(94, 44);
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "Skill";
             // 
             // lblCompanyNameLeft
             // 
-            this.lblCompanyNameLeft.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCompanyNameLeft.IsDerivedStyle = true;
-            this.lblCompanyNameLeft.Location = new System.Drawing.Point(170, 25);
-            this.lblCompanyNameLeft.Name = "lblCompanyNameLeft";
-            this.lblCompanyNameLeft.Size = new System.Drawing.Size(278, 67);
-            this.lblCompanyNameLeft.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            this.lblCompanyNameLeft.StyleManager = null;
-            this.lblCompanyNameLeft.TabIndex = 48;
-            this.lblCompanyNameLeft.Text = "Company Name";
-            this.lblCompanyNameLeft.ThemeAuthor = "Taiizor";
-            this.lblCompanyNameLeft.ThemeName = "MetroLight";
+            lblCompanyNameLeft.Font = new Font("Segoe UI Variable Text Semibold", 12F, FontStyle.Bold);
+            lblCompanyNameLeft.IsDerivedStyle = true;
+            lblCompanyNameLeft.Location = new Point(149, 19);
+            lblCompanyNameLeft.Name = "lblCompanyNameLeft";
+            lblCompanyNameLeft.Size = new Size(243, 50);
+            lblCompanyNameLeft.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            lblCompanyNameLeft.StyleManager = null;
+            lblCompanyNameLeft.TabIndex = 48;
+            lblCompanyNameLeft.Text = "Company Name";
+            lblCompanyNameLeft.ThemeAuthor = "Taiizor";
+            lblCompanyNameLeft.ThemeName = "MetroLight";
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.btnSeeMore);
-            this.panel10.Controls.Add(this.ptbAvatar);
-            this.panel10.Controls.Add(this.btnCompanyDetail);
-            this.panel10.Controls.Add(this.lblCompanyNameLeft);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(3, 3);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(448, 183);
-            this.panel10.TabIndex = 51;
-            // 
-            // btnSeeMore
-            // 
-            this.btnSeeMore.Alpha = 20;
-            this.btnSeeMore.BackColor = System.Drawing.Color.Transparent;
-            this.btnSeeMore.Background = true;
-            this.btnSeeMore.Background_WidthPen = 4F;
-            this.btnSeeMore.BackgroundPen = true;
-            this.btnSeeMore.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnSeeMore.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSeeMore.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSeeMore.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.btnSeeMore.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSeeMore.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSeeMore.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSeeMore.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSeeMore.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.btnSeeMore.Effect_1 = true;
-            this.btnSeeMore.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSeeMore.Effect_1_Transparency = 25;
-            this.btnSeeMore.Effect_2 = true;
-            this.btnSeeMore.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSeeMore.Effect_2_Transparency = 20;
-            this.btnSeeMore.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSeeMore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
-            this.btnSeeMore.Lighting = true;
-            this.btnSeeMore.LinearGradient_Background = false;
-            this.btnSeeMore.LinearGradientPen = false;
-            this.btnSeeMore.Location = new System.Drawing.Point(168, 83);
-            this.btnSeeMore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSeeMore.Name = "btnSeeMore";
-            this.btnSeeMore.PenWidth = 15;
-            this.btnSeeMore.Rounding = true;
-            this.btnSeeMore.RoundingInt = 10;
-            this.btnSeeMore.Size = new System.Drawing.Size(273, 56);
-            this.btnSeeMore.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnSeeMore.TabIndex = 52;
-            this.btnSeeMore.Tag = "";
-            this.btnSeeMore.TextButton = "See More Jobs";
-            this.btnSeeMore.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
-            this.btnSeeMore.Timer_Effect_1 = 5;
-            this.btnSeeMore.Timer_RGB = 300;
-            this.btnSeeMore.Click += new System.EventHandler(this.btnSeeMore_Click);
+            panel10.Controls.Add(btnSeeMore);
             panel10.Controls.Add(ptbAvatar);
             panel10.Controls.Add(btnCompanyDetail);
             panel10.Controls.Add(lblCompanyNameLeft);
-            panel10.Location = new Point(3, 3);
+            panel10.Dock = DockStyle.Top;
+            panel10.Location = new Point(3, 57);
+            panel10.Margin = new Padding(3, 2, 3, 2);
             panel10.Name = "panel10";
-            panel10.Size = new Size(448, 183);
+            panel10.Size = new Size(392, 137);
             panel10.TabIndex = 51;
+            // 
+            // btnSeeMore
+            // 
+            btnSeeMore.Alpha = 20;
+            btnSeeMore.BackColor = Color.Transparent;
+            btnSeeMore.Background = true;
+            btnSeeMore.Background_WidthPen = 4F;
+            btnSeeMore.BackgroundPen = true;
+            btnSeeMore.ColorBackground = Color.FromArgb(192, 255, 255);
+            btnSeeMore.ColorBackground_1 = Color.FromArgb(128, 128, 255);
+            btnSeeMore.ColorBackground_2 = Color.FromArgb(128, 128, 255);
+            btnSeeMore.ColorBackground_Pen = Color.FromArgb(237, 27, 47);
+            btnSeeMore.ColorLighting = Color.FromArgb(128, 128, 255);
+            btnSeeMore.ColorPen_1 = Color.FromArgb(128, 128, 255);
+            btnSeeMore.ColorPen_2 = Color.FromArgb(128, 128, 255);
+            btnSeeMore.Cursor = Cursors.Hand;
+            btnSeeMore.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            btnSeeMore.Effect_1 = true;
+            btnSeeMore.Effect_1_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnSeeMore.Effect_1_Transparency = 25;
+            btnSeeMore.Effect_2 = true;
+            btnSeeMore.Effect_2_ColorBackground = Color.FromArgb(128, 128, 255);
+            btnSeeMore.Effect_2_Transparency = 20;
+            btnSeeMore.Font = new Font("Arial", 11F);
+            btnSeeMore.ForeColor = Color.FromArgb(46, 54, 71);
+            btnSeeMore.Lighting = true;
+            btnSeeMore.LinearGradient_Background = false;
+            btnSeeMore.LinearGradientPen = false;
+            btnSeeMore.Location = new Point(147, 62);
+            btnSeeMore.Name = "btnSeeMore";
+            btnSeeMore.PenWidth = 15;
+            btnSeeMore.Rounding = true;
+            btnSeeMore.RoundingInt = 10;
+            btnSeeMore.Size = new Size(239, 42);
+            btnSeeMore.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnSeeMore.TabIndex = 52;
+            btnSeeMore.Tag = "";
+            btnSeeMore.TextButton = "See More Jobs";
+            btnSeeMore.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            btnSeeMore.Timer_Effect_1 = 5;
+            btnSeeMore.Timer_RGB = 300;
+            btnSeeMore.Click += btnSeeMore_Click;
             // 
             // ptbAvatar
             // 
-            this.ptbAvatar.CustomizableEdges = customizableEdges1;
-            this.ptbAvatar.Image = ((System.Drawing.Image)(resources.GetObject("ptbAvatar.Image")));
-            this.ptbAvatar.ImageRotate = 0F;
-            this.ptbAvatar.Location = new System.Drawing.Point(16, 25);
-            this.ptbAvatar.Name = "ptbAvatar";
-            this.ptbAvatar.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.ptbAvatar.Size = new System.Drawing.Size(137, 123);
-            this.ptbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbAvatar.TabIndex = 51;
-            this.ptbAvatar.TabStop = false;
+            ptbAvatar.CustomizableEdges = customizableEdges5;
+            ptbAvatar.Image = (Image)resources.GetObject("ptbAvatar.Image");
+            ptbAvatar.ImageRotate = 0F;
+            ptbAvatar.Location = new Point(14, 19);
+            ptbAvatar.Margin = new Padding(3, 2, 3, 2);
+            ptbAvatar.Name = "ptbAvatar";
+            ptbAvatar.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            ptbAvatar.Size = new Size(120, 92);
+            ptbAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbAvatar.TabIndex = 51;
+            ptbAvatar.TabStop = false;
             // 
             // btnCompanyDetail
             // 
-            this.btnCompanyDetail.Alpha = 20;
-            this.btnCompanyDetail.BackColor = System.Drawing.Color.Transparent;
-            this.btnCompanyDetail.Background = true;
-            this.btnCompanyDetail.Background_WidthPen = 4F;
-            this.btnCompanyDetail.BackgroundPen = true;
-            this.btnCompanyDetail.ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnCompanyDetail.ColorBackground_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCompanyDetail.ColorBackground_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCompanyDetail.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.btnCompanyDetail.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCompanyDetail.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCompanyDetail.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCompanyDetail.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCompanyDetail.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.btnCompanyDetail.Effect_1 = true;
-            this.btnCompanyDetail.Effect_1_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCompanyDetail.Effect_1_Transparency = 25;
-            this.btnCompanyDetail.Effect_2 = true;
-            this.btnCompanyDetail.Effect_2_ColorBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnCompanyDetail.Effect_2_Transparency = 20;
-            this.btnCompanyDetail.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCompanyDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(54)))), ((int)(((byte)(71)))));
-            this.btnCompanyDetail.Lighting = true;
-            this.btnCompanyDetail.LinearGradient_Background = false;
-            this.btnCompanyDetail.LinearGradientPen = false;
-            this.btnCompanyDetail.Location = new System.Drawing.Point(164, 83);
-            this.btnCompanyDetail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnCompanyDetail.Name = "btnCompanyDetail";
-            this.btnCompanyDetail.PenWidth = 15;
-            this.btnCompanyDetail.Rounding = true;
-            this.btnCompanyDetail.RoundingInt = 10;
-            this.btnCompanyDetail.Size = new System.Drawing.Size(273, 56);
-            this.btnCompanyDetail.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.btnCompanyDetail.TabIndex = 50;
-            this.btnCompanyDetail.Tag = "";
-            this.btnCompanyDetail.TextButton = "Detail";
-            this.btnCompanyDetail.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btnCompanyDetail.Timer_Effect_1 = 5;
-            this.btnCompanyDetail.Timer_RGB = 300;
             btnCompanyDetail.Alpha = 20;
             btnCompanyDetail.BackColor = Color.Transparent;
             btnCompanyDetail.Background = true;
@@ -715,18 +577,17 @@
             btnCompanyDetail.Effect_2 = true;
             btnCompanyDetail.Effect_2_ColorBackground = Color.FromArgb(128, 128, 255);
             btnCompanyDetail.Effect_2_Transparency = 20;
-            btnCompanyDetail.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCompanyDetail.Font = new Font("Arial", 11F);
             btnCompanyDetail.ForeColor = Color.FromArgb(46, 54, 71);
             btnCompanyDetail.Lighting = true;
             btnCompanyDetail.LinearGradient_Background = false;
             btnCompanyDetail.LinearGradientPen = false;
-            btnCompanyDetail.Location = new Point(165, 83);
-            btnCompanyDetail.Margin = new Padding(3, 4, 3, 4);
+            btnCompanyDetail.Location = new Point(144, 62);
             btnCompanyDetail.Name = "btnCompanyDetail";
             btnCompanyDetail.PenWidth = 15;
             btnCompanyDetail.Rounding = true;
             btnCompanyDetail.RoundingInt = 10;
-            btnCompanyDetail.Size = new Size(273, 56);
+            btnCompanyDetail.Size = new Size(239, 42);
             btnCompanyDetail.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnCompanyDetail.TabIndex = 50;
             btnCompanyDetail.Tag = "";
@@ -738,17 +599,7 @@
             // 
             // flowLayoutPanel3
             // 
-            this.flowLayoutPanel3.Controls.Add(this.panel10);
-            this.flowLayoutPanel3.Controls.Add(this.panel2);
-            this.flowLayoutPanel3.Controls.Add(this.panel9);
-            this.flowLayoutPanel3.Controls.Add(this.panel11);
-            this.flowLayoutPanel3.Controls.Add(this.panel12);
-            this.flowLayoutPanel3.Controls.Add(this.lblStatus);
-            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(868, 0);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(456, 865);
-            this.flowLayoutPanel3.TabIndex = 52;
+            flowLayoutPanel3.Controls.Add(lblStatus);
             flowLayoutPanel3.Controls.Add(panel10);
             flowLayoutPanel3.Controls.Add(pnTopCompany);
             flowLayoutPanel3.Controls.Add(panel2);
@@ -756,296 +607,231 @@
             flowLayoutPanel3.Controls.Add(panel11);
             flowLayoutPanel3.Controls.Add(panel12);
             flowLayoutPanel3.Dock = DockStyle.Right;
-            flowLayoutPanel3.Location = new Point(867, 0);
+            flowLayoutPanel3.Location = new Point(759, 0);
+            flowLayoutPanel3.Margin = new Padding(3, 2, 3, 2);
             flowLayoutPanel3.Name = "flowLayoutPanel3";
-            flowLayoutPanel3.Size = new Size(456, 865);
+            flowLayoutPanel3.Size = new Size(399, 649);
             flowLayoutPanel3.TabIndex = 52;
-            // 
-            // pnTopCompany
-            // 
-            pnTopCompany.Controls.Add(lblTopCompany);
-            pnTopCompany.CustomizableEdges = customizableEdges3;
-            pnTopCompany.Enabled = false;
-            pnTopCompany.ForeColor = Color.Red;
-            pnTopCompany.Location = new Point(3, 193);
-            pnTopCompany.Margin = new Padding(3, 4, 3, 4);
-            pnTopCompany.Name = "pnTopCompany";
-            pnTopCompany.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            pnTopCompany.Size = new Size(448, 109);
-            pnTopCompany.TabIndex = 56;
-            pnTopCompany.Visible = false;
             // 
             // panel2
             // 
-            this.panel2.AutoScroll = true;
-            this.panel2.Controls.Add(this.lblCompanyTypeText);
-            this.panel2.Controls.Add(this.lblCompanyType);
-            this.panel2.Location = new System.Drawing.Point(3, 192);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(448, 107);
-            this.panel2.TabIndex = 52;
             panel2.AutoScroll = true;
             panel2.Controls.Add(lblCompanyTypeText);
             panel2.Controls.Add(lblCompanyType);
-            panel2.Location = new Point(3, 309);
+            panel2.Location = new Point(3, 286);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(448, 107);
+            panel2.Size = new Size(392, 80);
             panel2.TabIndex = 52;
             // 
             // lblCompanyTypeText
             // 
-            this.lblCompanyTypeText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblCompanyTypeText.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCompanyTypeText.IsDerivedStyle = true;
-            this.lblCompanyTypeText.Location = new System.Drawing.Point(174, 0);
-            this.lblCompanyTypeText.Name = "lblCompanyTypeText";
-            this.lblCompanyTypeText.Size = new System.Drawing.Size(274, 107);
-            this.lblCompanyTypeText.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            this.lblCompanyTypeText.StyleManager = null;
-            this.lblCompanyTypeText.TabIndex = 1;
-            this.lblCompanyTypeText.Text = "Companytype Text";
-            this.lblCompanyTypeText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblCompanyTypeText.ThemeAuthor = "Taiizor";
-            this.lblCompanyTypeText.ThemeName = "MetroLight";
+            lblCompanyTypeText.Dock = DockStyle.Right;
+            lblCompanyTypeText.Font = new Font("Segoe UI Variable Text Semibold", 10.8F, FontStyle.Bold);
+            lblCompanyTypeText.IsDerivedStyle = true;
+            lblCompanyTypeText.Location = new Point(152, 0);
+            lblCompanyTypeText.Name = "lblCompanyTypeText";
+            lblCompanyTypeText.Size = new Size(240, 80);
+            lblCompanyTypeText.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            lblCompanyTypeText.StyleManager = null;
+            lblCompanyTypeText.TabIndex = 1;
+            lblCompanyTypeText.Text = "Companytype Text";
+            lblCompanyTypeText.TextAlign = ContentAlignment.MiddleLeft;
+            lblCompanyTypeText.ThemeAuthor = "Taiizor";
+            lblCompanyTypeText.ThemeName = "MetroLight";
             // 
             // lblCompanyType
             // 
-            this.lblCompanyType.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblCompanyType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCompanyType.IsDerivedStyle = true;
-            this.lblCompanyType.Location = new System.Drawing.Point(0, 0);
-            this.lblCompanyType.Name = "lblCompanyType";
-            this.lblCompanyType.Size = new System.Drawing.Size(155, 107);
-            this.lblCompanyType.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            this.lblCompanyType.StyleManager = null;
-            this.lblCompanyType.TabIndex = 0;
-            this.lblCompanyType.Text = "CompanyType";
-            this.lblCompanyType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblCompanyType.ThemeAuthor = "Taiizor";
-            this.lblCompanyType.ThemeName = "MetroLight";
+            lblCompanyType.Dock = DockStyle.Left;
+            lblCompanyType.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold);
+            lblCompanyType.IsDerivedStyle = true;
+            lblCompanyType.Location = new Point(0, 0);
+            lblCompanyType.Name = "lblCompanyType";
+            lblCompanyType.Size = new Size(136, 80);
+            lblCompanyType.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            lblCompanyType.StyleManager = null;
+            lblCompanyType.TabIndex = 0;
+            lblCompanyType.Text = "CompanyType";
+            lblCompanyType.TextAlign = ContentAlignment.MiddleLeft;
+            lblCompanyType.ThemeAuthor = "Taiizor";
+            lblCompanyType.ThemeName = "MetroLight";
             // 
             // panel9
             // 
-            this.panel9.AutoScroll = true;
-            this.panel9.Controls.Add(this.lblCompanySizeText);
-            this.panel9.Controls.Add(this.lblCompanySize);
-            this.panel9.Location = new System.Drawing.Point(3, 305);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(448, 107);
-            this.panel9.TabIndex = 53;
             panel9.AutoScroll = true;
             panel9.Controls.Add(lblCompanySizeText);
             panel9.Controls.Add(lblCompanySize);
-            panel9.Location = new Point(3, 422);
+            panel9.Location = new Point(3, 370);
+            panel9.Margin = new Padding(3, 2, 3, 2);
             panel9.Name = "panel9";
-            panel9.Size = new Size(448, 107);
+            panel9.Size = new Size(392, 80);
             panel9.TabIndex = 53;
             // 
             // lblCompanySizeText
             // 
-            this.lblCompanySizeText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblCompanySizeText.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCompanySizeText.IsDerivedStyle = true;
-            this.lblCompanySizeText.Location = new System.Drawing.Point(174, 0);
-            this.lblCompanySizeText.Name = "lblCompanySizeText";
-            this.lblCompanySizeText.Size = new System.Drawing.Size(274, 107);
-            this.lblCompanySizeText.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            this.lblCompanySizeText.StyleManager = null;
-            this.lblCompanySizeText.TabIndex = 1;
-            this.lblCompanySizeText.Text = "CompanySize Text";
-            this.lblCompanySizeText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblCompanySizeText.ThemeAuthor = "Taiizor";
-            this.lblCompanySizeText.ThemeName = "MetroLight";
+            lblCompanySizeText.Dock = DockStyle.Right;
+            lblCompanySizeText.Font = new Font("Segoe UI Variable Text Semibold", 12F, FontStyle.Bold);
+            lblCompanySizeText.IsDerivedStyle = true;
+            lblCompanySizeText.Location = new Point(152, 0);
+            lblCompanySizeText.Name = "lblCompanySizeText";
+            lblCompanySizeText.Size = new Size(240, 80);
+            lblCompanySizeText.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            lblCompanySizeText.StyleManager = null;
+            lblCompanySizeText.TabIndex = 1;
+            lblCompanySizeText.Text = "CompanySize Text";
+            lblCompanySizeText.TextAlign = ContentAlignment.MiddleLeft;
+            lblCompanySizeText.ThemeAuthor = "Taiizor";
+            lblCompanySizeText.ThemeName = "MetroLight";
             // 
             // lblCompanySize
             // 
-            this.lblCompanySize.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblCompanySize.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCompanySize.IsDerivedStyle = true;
-            this.lblCompanySize.Location = new System.Drawing.Point(0, 0);
-            this.lblCompanySize.Name = "lblCompanySize";
-            this.lblCompanySize.Size = new System.Drawing.Size(155, 107);
-            this.lblCompanySize.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            this.lblCompanySize.StyleManager = null;
-            this.lblCompanySize.TabIndex = 0;
-            this.lblCompanySize.Text = "CompanySize";
-            this.lblCompanySize.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblCompanySize.ThemeAuthor = "Taiizor";
-            this.lblCompanySize.ThemeName = "MetroLight";
+            lblCompanySize.Dock = DockStyle.Left;
+            lblCompanySize.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold);
+            lblCompanySize.IsDerivedStyle = true;
+            lblCompanySize.Location = new Point(0, 0);
+            lblCompanySize.Name = "lblCompanySize";
+            lblCompanySize.Size = new Size(136, 80);
+            lblCompanySize.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            lblCompanySize.StyleManager = null;
+            lblCompanySize.TabIndex = 0;
+            lblCompanySize.Text = "CompanySize";
+            lblCompanySize.TextAlign = ContentAlignment.MiddleLeft;
+            lblCompanySize.ThemeAuthor = "Taiizor";
+            lblCompanySize.ThemeName = "MetroLight";
             // 
             // panel11
             // 
-            this.panel11.AutoScroll = true;
-            this.panel11.Controls.Add(this.lblAddressText);
-            this.panel11.Controls.Add(this.lblAddress);
-            this.panel11.Location = new System.Drawing.Point(3, 418);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(448, 107);
-            this.panel11.TabIndex = 54;
             panel11.AutoScroll = true;
             panel11.Controls.Add(lblAddressText);
             panel11.Controls.Add(lblAddress);
-            panel11.Location = new Point(3, 535);
+            panel11.Location = new Point(3, 454);
+            panel11.Margin = new Padding(3, 2, 3, 2);
             panel11.Name = "panel11";
-            panel11.Size = new Size(448, 107);
+            panel11.Size = new Size(392, 80);
             panel11.TabIndex = 54;
             // 
             // lblAddressText
             // 
-            this.lblAddressText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblAddressText.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblAddressText.IsDerivedStyle = true;
-            this.lblAddressText.Location = new System.Drawing.Point(174, 0);
-            this.lblAddressText.Name = "lblAddressText";
-            this.lblAddressText.Size = new System.Drawing.Size(274, 107);
-            this.lblAddressText.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            this.lblAddressText.StyleManager = null;
-            this.lblAddressText.TabIndex = 1;
-            this.lblAddressText.Text = "Address Text";
-            this.lblAddressText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblAddressText.ThemeAuthor = "Taiizor";
-            this.lblAddressText.ThemeName = "MetroLight";
+            lblAddressText.Dock = DockStyle.Right;
+            lblAddressText.Font = new Font("Segoe UI Variable Text Semibold", 10.2F, FontStyle.Bold);
+            lblAddressText.IsDerivedStyle = true;
+            lblAddressText.Location = new Point(152, 0);
+            lblAddressText.Name = "lblAddressText";
+            lblAddressText.Size = new Size(240, 80);
+            lblAddressText.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            lblAddressText.StyleManager = null;
+            lblAddressText.TabIndex = 1;
+            lblAddressText.Text = "Address Text";
+            lblAddressText.TextAlign = ContentAlignment.MiddleLeft;
+            lblAddressText.ThemeAuthor = "Taiizor";
+            lblAddressText.ThemeName = "MetroLight";
             // 
             // lblAddress
             // 
-            this.lblAddress.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblAddress.IsDerivedStyle = true;
-            this.lblAddress.Location = new System.Drawing.Point(0, 0);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(155, 107);
-            this.lblAddress.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            this.lblAddress.StyleManager = null;
-            this.lblAddress.TabIndex = 0;
-            this.lblAddress.Text = "Address";
-            this.lblAddress.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblAddress.ThemeAuthor = "Taiizor";
-            this.lblAddress.ThemeName = "MetroLight";
+            lblAddress.Dock = DockStyle.Left;
+            lblAddress.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
+            lblAddress.IsDerivedStyle = true;
+            lblAddress.Location = new Point(0, 0);
+            lblAddress.Name = "lblAddress";
+            lblAddress.Size = new Size(136, 80);
+            lblAddress.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            lblAddress.StyleManager = null;
+            lblAddress.TabIndex = 0;
+            lblAddress.Text = "Address";
+            lblAddress.TextAlign = ContentAlignment.MiddleLeft;
+            lblAddress.ThemeAuthor = "Taiizor";
+            lblAddress.ThemeName = "MetroLight";
             // 
             // panel12
             // 
-            this.panel12.AutoScroll = true;
-            this.panel12.Controls.Add(this.lblWorkingTimeText);
-            this.panel12.Controls.Add(this.lblWorkingTime);
-            this.panel12.Location = new System.Drawing.Point(3, 531);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(448, 107);
-            this.panel12.TabIndex = 55;
             panel12.AutoScroll = true;
             panel12.Controls.Add(lblWorkingTimeText);
             panel12.Controls.Add(lblWorkingTime);
-            panel12.Location = new Point(3, 648);
+            panel12.Location = new Point(3, 538);
+            panel12.Margin = new Padding(3, 2, 3, 2);
             panel12.Name = "panel12";
-            panel12.Size = new Size(448, 107);
+            panel12.Size = new Size(392, 80);
             panel12.TabIndex = 55;
             // 
             // lblWorkingTimeText
             // 
-            this.lblWorkingTimeText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblWorkingTimeText.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblWorkingTimeText.IsDerivedStyle = true;
-            this.lblWorkingTimeText.Location = new System.Drawing.Point(174, 0);
-            this.lblWorkingTimeText.Name = "lblWorkingTimeText";
-            this.lblWorkingTimeText.Size = new System.Drawing.Size(274, 107);
-            this.lblWorkingTimeText.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            this.lblWorkingTimeText.StyleManager = null;
-            this.lblWorkingTimeText.TabIndex = 1;
-            this.lblWorkingTimeText.Text = "Working Time Text";
-            this.lblWorkingTimeText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblWorkingTimeText.ThemeAuthor = "Taiizor";
-            this.lblWorkingTimeText.ThemeName = "MetroLight";
+            lblWorkingTimeText.Dock = DockStyle.Right;
+            lblWorkingTimeText.Font = new Font("Segoe UI Variable Text Semibold", 10.2F, FontStyle.Bold);
+            lblWorkingTimeText.IsDerivedStyle = true;
+            lblWorkingTimeText.Location = new Point(152, 0);
+            lblWorkingTimeText.Name = "lblWorkingTimeText";
+            lblWorkingTimeText.Size = new Size(240, 80);
+            lblWorkingTimeText.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            lblWorkingTimeText.StyleManager = null;
+            lblWorkingTimeText.TabIndex = 1;
+            lblWorkingTimeText.Text = "Working Time Text";
+            lblWorkingTimeText.TextAlign = ContentAlignment.MiddleLeft;
+            lblWorkingTimeText.ThemeAuthor = "Taiizor";
+            lblWorkingTimeText.ThemeName = "MetroLight";
             // 
             // lblWorkingTime
             // 
-            this.lblWorkingTime.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblWorkingTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblWorkingTime.IsDerivedStyle = true;
-            this.lblWorkingTime.Location = new System.Drawing.Point(0, 0);
-            this.lblWorkingTime.Name = "lblWorkingTime";
-            this.lblWorkingTime.Size = new System.Drawing.Size(155, 107);
-            this.lblWorkingTime.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            this.lblWorkingTime.StyleManager = null;
-            this.lblWorkingTime.TabIndex = 0;
-            this.lblWorkingTime.Text = "Working Time";
-            this.lblWorkingTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblWorkingTime.ThemeAuthor = "Taiizor";
-            this.lblWorkingTime.ThemeName = "MetroLight";
+            lblWorkingTime.Dock = DockStyle.Left;
+            lblWorkingTime.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
+            lblWorkingTime.IsDerivedStyle = true;
+            lblWorkingTime.Location = new Point(0, 0);
+            lblWorkingTime.Name = "lblWorkingTime";
+            lblWorkingTime.Size = new Size(136, 80);
+            lblWorkingTime.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            lblWorkingTime.StyleManager = null;
+            lblWorkingTime.TabIndex = 0;
+            lblWorkingTime.Text = "Working Time";
+            lblWorkingTime.TextAlign = ContentAlignment.MiddleLeft;
+            lblWorkingTime.ThemeAuthor = "Taiizor";
+            lblWorkingTime.ThemeName = "MetroLight";
             // 
             // lblStatus
             // 
-            this.lblStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblStatus.ForeColor = System.Drawing.Color.Red;
-            this.lblStatus.Location = new System.Drawing.Point(3, 641);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(448, 73);
-            this.lblStatus.TabIndex = 56;
-            this.lblStatus.Text = "This company is down-trend now!";
-            this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblStatus.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold);
+            lblStatus.ForeColor = Color.Red;
+            lblStatus.Location = new Point(3, 0);
+            lblStatus.Name = "lblStatus";
+            lblStatus.Size = new Size(392, 55);
+            lblStatus.TabIndex = 56;
+            lblStatus.Text = "This company is down-trend now!";
+            lblStatus.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pnTopCompany
+            // 
+            pnTopCompany.Controls.Add(lblTopCompany);
+            pnTopCompany.CustomizableEdges = customizableEdges7;
+            pnTopCompany.Enabled = false;
+            pnTopCompany.ForeColor = Color.Red;
+            pnTopCompany.Location = new Point(3, 199);
+            pnTopCompany.Name = "pnTopCompany";
+            pnTopCompany.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            pnTopCompany.Size = new Size(392, 82);
+            pnTopCompany.TabIndex = 56;
+            pnTopCompany.Visible = false;
             // 
             // lblTopCompany
             // 
             lblTopCompany.AutoSize = false;
             lblTopCompany.BackColor = Color.Transparent;
             lblTopCompany.Dock = DockStyle.Fill;
-            lblTopCompany.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lblTopCompany.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold | FontStyle.Italic);
             lblTopCompany.Location = new Point(0, 0);
-            lblTopCompany.Margin = new Padding(3, 4, 3, 4);
             lblTopCompany.Name = "lblTopCompany";
-            lblTopCompany.Size = new Size(448, 109);
+            lblTopCompany.Size = new Size(392, 82);
             lblTopCompany.TabIndex = 0;
             lblTopCompany.Text = "*The company recruited the most candidates of the year";
             lblTopCompany.TextAlignment = ContentAlignment.MiddleCenter;
             // 
             // FJobDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1324, 865);
-            this.Controls.Add(this.flowLayoutPanel3);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "FJobDetails";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FJobDetails";
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.flowLayoutPanel4.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAvatar)).EndInit();
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.ResumeLayout(false);
-
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.White;
-            ClientSize = new Size(1323, 865);
+            ClientSize = new Size(1158, 649);
             Controls.Add(flowLayoutPanel3);
             Controls.Add(flowLayoutPanel1);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FJobDetails";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FJobDetails";
@@ -1070,11 +856,11 @@
             panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).EndInit();
             flowLayoutPanel3.ResumeLayout(false);
-            pnTopCompany.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel9.ResumeLayout(false);
             panel11.ResumeLayout(false);
             panel12.ResumeLayout(false);
+            pnTopCompany.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -1085,7 +871,6 @@
         private RichTextBox rtxtRequirement;
         private TabPage tabPage2;
         private RichTextBox rtxtDescription;
-        private RichTextBox richTextBox1;
         private TabPage tabPage3;
         private RichTextBox rtxtBenefit;
         private FlowLayoutPanel flowLayoutPanel1;
