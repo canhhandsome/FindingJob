@@ -200,5 +200,11 @@ namespace WinFormProject
         }
 
 
+
+        private void btnRatings_Click(object sender, EventArgs e)
+        {
+            FRatings ratings = new FRatings(jsID, company);
+            ratings.Show();
+        }
     }
 }

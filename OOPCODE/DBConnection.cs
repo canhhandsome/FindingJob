@@ -858,6 +858,37 @@ namespace WinFormProject
                 conn.Close();
             }
         }
+
+        public List<Ratings> FetchAllRatings(string strFetch)
+        {
+            List<Ratings> ratings = new List<Ratings>();
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(strFetch, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    string jsID = reader["JobSeekerID"].ToString().Trim();
+                    string companyID = reader["CompanyID"].ToString().Trim();
+                    int rates = (int)reader["rate"];
+                    DateTime timerates = (DateTime)reader["TimeRate"];
+                    string contents = reader["Content"].ToString().Trim();
+                    Ratings rate = new Ratings(jsID, companyID, rates, timerates, contents);
+                    ratings.Add(rate);
+                }
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show($"Failed to fetch list: {ex.Message}");
+            }
+            finally 
+            { 
+                conn.Close(); 
+            }
+            return ratings;
+        }
+
     }
 }
 

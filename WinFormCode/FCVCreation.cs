@@ -337,7 +337,7 @@ namespace WinFormProject.WinFormCode
             }
             mTop -= 20;
 
-            string filePath = @$"C:\Users\Canh\OneDrive\Máy tính\CV.pdf";
+            string filePath = @$"C:\Users\OS\Desktop\CV.pdf";
 
             pdfDocument.Save(filePath);
         }

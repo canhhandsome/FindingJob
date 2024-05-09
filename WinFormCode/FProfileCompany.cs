@@ -139,11 +139,6 @@ namespace WinFormProject
                     SetError(cbb);
                 }
             }
-            if (company.BusinessLicense == null)
-            {
-                MessageBox.Show("Select your Business License!!");
-                return;
-            }
             foreach (Control control in this.Controls)
             {
                 if (AnyErrors(control))
