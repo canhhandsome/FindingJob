@@ -30,23 +30,33 @@ namespace WinFormProject
             foreach (Apply apply in applylist)
             {
                 UCApplicant uCApplicant = new UCApplicant(apply, job);
+                uCApplicant.SendClickHandle += SendClickHandle_Handle;
                 flpApplicant.Controls.Add(uCApplicant);
                 flpApplicant.Height += 600;
             }
         }
-
+        private void SendClickHandle_Handle(object sender, EventArgs e)
+        {
+            UCApplicant uCApplicant = sender as UCApplicant;
+            flpApplicant.Controls.Remove(uCApplicant);
+        }
         private List<Apply> SearchNameJS(string search)
         {
-            JobSeekerDAO jsDAO = new JobSeekerDAO(); 
+            JobSeekerDAO jsDAO = new JobSeekerDAO();
             return applies.Where(apply => jsDAO.FetchName(apply.JSeekerID).ToLower().Contains(search)).ToList();
         }
 
         private void txtSearch_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 FillInfor(SearchNameJS(txtSearch.Text));
             }
+        }
+
+        private void FApplicant_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
