@@ -33,6 +33,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblSalary = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
@@ -64,6 +66,7 @@
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             lblCompanyNameLeft = new ReaLTaiizor.Controls.MetroLabel();
             panel10 = new Panel();
+            btnRatings = new Guna.UI2.WinForms.Guna2Button();
             btnSeeMore = new ReaLTaiizor.Controls.CyberButton();
             ptbAvatar = new Guna.UI2.WinForms.Guna2PictureBox();
             btnCompanyDetail = new ReaLTaiizor.Controls.CyberButton();
@@ -235,7 +238,7 @@
             btnApply.ColorBackground = Color.FromArgb(237, 27, 47);
             btnApply.ColorBackground_1 = Color.FromArgb(237, 27, 47);
             btnApply.ColorBackground_2 = Color.FromArgb(237, 27, 47);
-            btnApply.ColorBackground_Pen = Color.FromArgb(237, 27, 47);
+            btnApply.ColorBackground_Pen = Color.LightCoral;
             btnApply.ColorLighting = Color.FromArgb(237, 27, 47);
             btnApply.ColorPen_1 = Color.FromArgb(237, 27, 47);
             btnApply.ColorPen_2 = Color.FromArgb(237, 27, 47);
@@ -488,6 +491,7 @@
             // 
             // panel10
             // 
+            panel10.Controls.Add(btnRatings);
             panel10.Controls.Add(btnSeeMore);
             panel10.Controls.Add(ptbAvatar);
             panel10.Controls.Add(btnCompanyDetail);
@@ -496,8 +500,27 @@
             panel10.Location = new Point(3, 57);
             panel10.Margin = new Padding(3, 2, 3, 2);
             panel10.Name = "panel10";
-            panel10.Size = new Size(392, 137);
+            panel10.Size = new Size(392, 156);
             panel10.TabIndex = 51;
+            // 
+            // btnRatings
+            // 
+            btnRatings.Cursor = Cursors.Hand;
+            btnRatings.CustomizableEdges = customizableEdges1;
+            btnRatings.DisabledState.BorderColor = Color.DarkGray;
+            btnRatings.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnRatings.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnRatings.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnRatings.FillColor = Color.Transparent;
+            btnRatings.Font = new Font("Segoe UI", 15F, FontStyle.Underline);
+            btnRatings.ForeColor = Color.Black;
+            btnRatings.Location = new Point(152, 110);
+            btnRatings.Name = "btnRatings";
+            btnRatings.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnRatings.Size = new Size(231, 37);
+            btnRatings.TabIndex = 54;
+            btnRatings.Text = "View Ratings";
+            btnRatings.Click += btnRatings_Click;
             // 
             // btnSeeMore
             // 
@@ -509,7 +532,7 @@
             btnSeeMore.ColorBackground = Color.FromArgb(192, 255, 255);
             btnSeeMore.ColorBackground_1 = Color.FromArgb(128, 128, 255);
             btnSeeMore.ColorBackground_2 = Color.FromArgb(128, 128, 255);
-            btnSeeMore.ColorBackground_Pen = Color.FromArgb(237, 27, 47);
+            btnSeeMore.ColorBackground_Pen = Color.LightCoral;
             btnSeeMore.ColorLighting = Color.FromArgb(128, 128, 255);
             btnSeeMore.ColorPen_1 = Color.FromArgb(128, 128, 255);
             btnSeeMore.ColorPen_2 = Color.FromArgb(128, 128, 255);
@@ -543,13 +566,13 @@
             // 
             // ptbAvatar
             // 
-            ptbAvatar.CustomizableEdges = customizableEdges1;
+            ptbAvatar.CustomizableEdges = customizableEdges3;
             ptbAvatar.Image = (Image)resources.GetObject("ptbAvatar.Image");
             ptbAvatar.ImageRotate = 0F;
             ptbAvatar.Location = new Point(14, 19);
             ptbAvatar.Margin = new Padding(3, 2, 3, 2);
             ptbAvatar.Name = "ptbAvatar";
-            ptbAvatar.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            ptbAvatar.ShadowDecoration.CustomizableEdges = customizableEdges4;
             ptbAvatar.Size = new Size(120, 92);
             ptbAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbAvatar.TabIndex = 51;
@@ -565,7 +588,7 @@
             btnCompanyDetail.ColorBackground = Color.FromArgb(192, 255, 255);
             btnCompanyDetail.ColorBackground_1 = Color.FromArgb(128, 128, 255);
             btnCompanyDetail.ColorBackground_2 = Color.FromArgb(128, 128, 255);
-            btnCompanyDetail.ColorBackground_Pen = Color.FromArgb(237, 27, 47);
+            btnCompanyDetail.ColorBackground_Pen = Color.LightCoral;
             btnCompanyDetail.ColorLighting = Color.FromArgb(128, 128, 255);
             btnCompanyDetail.ColorPen_1 = Color.FromArgb(128, 128, 255);
             btnCompanyDetail.ColorPen_2 = Color.FromArgb(128, 128, 255);
@@ -627,12 +650,12 @@
             // pnTopCompany
             // 
             pnTopCompany.Controls.Add(lblTopCompany);
-            pnTopCompany.CustomizableEdges = customizableEdges3;
+            pnTopCompany.CustomizableEdges = customizableEdges5;
             pnTopCompany.Enabled = false;
             pnTopCompany.ForeColor = Color.Red;
-            pnTopCompany.Location = new Point(3, 199);
+            pnTopCompany.Location = new Point(3, 218);
             pnTopCompany.Name = "pnTopCompany";
-            pnTopCompany.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            pnTopCompany.ShadowDecoration.CustomizableEdges = customizableEdges6;
             pnTopCompany.Size = new Size(392, 82);
             pnTopCompany.TabIndex = 56;
             pnTopCompany.Visible = false;
@@ -655,7 +678,7 @@
             panel2.AutoScroll = true;
             panel2.Controls.Add(lblCompanyTypeText);
             panel2.Controls.Add(lblCompanyType);
-            panel2.Location = new Point(3, 286);
+            panel2.Location = new Point(3, 305);
             panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
             panel2.Size = new Size(392, 80);
@@ -698,7 +721,7 @@
             panel9.AutoScroll = true;
             panel9.Controls.Add(lblCompanySizeText);
             panel9.Controls.Add(lblCompanySize);
-            panel9.Location = new Point(3, 370);
+            panel9.Location = new Point(3, 389);
             panel9.Margin = new Padding(3, 2, 3, 2);
             panel9.Name = "panel9";
             panel9.Size = new Size(392, 80);
@@ -741,7 +764,7 @@
             panel11.AutoScroll = true;
             panel11.Controls.Add(lblAddressText);
             panel11.Controls.Add(lblAddress);
-            panel11.Location = new Point(3, 454);
+            panel11.Location = new Point(3, 473);
             panel11.Margin = new Padding(3, 2, 3, 2);
             panel11.Name = "panel11";
             panel11.Size = new Size(392, 80);
@@ -784,7 +807,7 @@
             panel12.AutoScroll = true;
             panel12.Controls.Add(lblWorkingTimeText);
             panel12.Controls.Add(lblWorkingTime);
-            panel12.Location = new Point(3, 538);
+            panel12.Location = new Point(3, 557);
             panel12.Margin = new Padding(3, 2, 3, 2);
             panel12.Name = "panel12";
             panel12.Size = new Size(392, 80);
@@ -916,5 +939,6 @@
         private ReaLTaiizor.Controls.CyberButton btnSeeMore;
         private Guna.UI2.WinForms.Guna2Panel pnTopCompany;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTopCompany;
+        private Guna.UI2.WinForms.Guna2Button btnRatings;
     }
 }

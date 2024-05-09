@@ -121,5 +121,11 @@ namespace WinFormProject
             FJobByCompany fJobByCompany = new FJobByCompany(company.INFO.ID, jsID);
             fJobByCompany.Show();
         }
+
+        private void btnRatings_Click(object sender, EventArgs e)
+        {
+            FRatings ratings = new FRatings(jsID, company);
+            ratings.Show();
+        }
     }
 }
