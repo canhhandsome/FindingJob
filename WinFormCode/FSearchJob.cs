@@ -24,12 +24,17 @@ namespace WinFormProject
 
             this.jsID = jsID;
             InitializeComponent();
+        }
+
+        private void FSearchJob_Load(object sender, EventArgs e)
+        {
             filterjobs = jobDAO.FetchAvailableJobs();
             SetLimit();
             FillJob(this.filterjobs);
             fFilter = new FFilter(filterjobs.Skip(offset).Take(limit).ToList());
             fFilter.ListReady += fFilter_ListReady;
         }
+
         private void UCInformation_SkillButtonClicked(object sender, string skillText)
         {
             filterjobs = jobDAO.FetchAvailableJobs();
@@ -39,7 +44,7 @@ namespace WinFormProject
         }
         private void FillJob(List<Job> jobslist)
         {
-            if(jobslist.Count > 0 )
+            if (jobslist.Count > 0)
             {
                 flpJob.Controls.Clear();
                 this.Size = oldSize;
@@ -186,6 +191,11 @@ namespace WinFormProject
                 offset += 4;
                 FillJob(filterjobs.Skip(offset).Take(limit).ToList());
             }
+        }
+
+        private void btnReload_Click(object sender, EventArgs e)
+        {
+            FSearchJob_Load(sender, e);
         }
 
     }

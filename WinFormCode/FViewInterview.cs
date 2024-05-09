@@ -24,20 +24,16 @@ namespace WinFormProject.WinFormCode
             flpBody.Controls.Clear();
             InterviewDAO interviewDAO = new InterviewDAO();
             List<Interview> interviews = new List<Interview>();
-            foreach (Job job in company.Jobs)
+            interviews = interviewDAO.FetchInterviewByID(company.INFO.ID);
+            foreach (Interview interview in interviews)
             {
-                interviews = interviewDAO.FetchInterviewByID(company.INFO.ID);
-                foreach (Interview interview in interviews)
+                if (interview.DateInterview == mcpSchdule.SelectionRange.Start)
                 {
-                    if (interview.DateInterview == mcpSchdule.SelectionRange.Start)
-                    {
-                        UCInterview uc = new UCInterview(interview);
-                        flpBody.Controls.Add(uc);
-                        flpBody.Height += 85;
-                    }
+                    UCInterview uc = new UCInterview(interview);
+                    flpBody.Controls.Add(uc);
+                    flpBody.Height += 85;
                 }
             }
-
         }
 
         private void mcpSchdule_DateChanged(object sender, DateRangeEventArgs e)

@@ -18,6 +18,8 @@ namespace WinFormProject.WinFormCode
         JobSeekerDAO jsdao = new JobSeekerDAO();
         JobOfferDAO jobOfferDAO = new JobOfferDAO();
         CompanySendOfferDAO companySendOfferDAO = new CompanySendOfferDAO();
+        InterviewDAO interviewDAO = new InterviewDAO();
+        public event EventHandler SendClick;
         public FOffer(string companyid, JobPreference jobPreference)
         {
             InitializeComponent();
@@ -29,11 +31,12 @@ namespace WinFormProject.WinFormCode
         {
             cbbSubject.Text = "Approve";
             cbbSubject.Enabled = false;
-            lblTo.Text = jsdao.FetchName(jobPreference.JobSeekerId);
+            lblToT.Text = jsdao.FetchName(jobPreference.JobSeekerId);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            interviewDAO.DeletedNewInterview(jobPreference.JobSeekerId,"",companyid);
             this.Close();
         }
 
@@ -54,6 +57,7 @@ namespace WinFormProject.WinFormCode
             CompanySendOffer companySendOffer = new CompanySendOffer(companyid,jobPreference.JobSeekerId);
             companySendOfferDAO.Insert(companySendOffer);
             this.Close();
+            SendClick?.Invoke(this,EventArgs.Empty);
         }
 
         private void btnInterview_Click(object sender, EventArgs e)

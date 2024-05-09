@@ -17,6 +17,7 @@ namespace WinFormProject.OOPCODE
         }
         public void InsertImage(string companyid, List<Image> images)
         {
+            DeleteImage(companyid);
             List<byte[]> ImageBytes = ImageHandler.ConvertListImgToListByte(images);
             while (ImageBytes.Count < 5)
             {
@@ -25,6 +26,11 @@ namespace WinFormProject.OOPCODE
             string SQL = "INSERT INTO imgcompany (companyid, imgid1, imgid2, imgid3, imgid4, imgid5) " +
               "VALUES (@companyId, @img1, @img2, @img3, @img4, @img5)";
             conn.InsertImageIntoImgCompany(SQL,companyid,ImageBytes);
+        }
+        public void DeleteImage(string companyid)
+        {
+            string SQL = string.Format("DELETE FROM ImgCompany WHERE companyid = {0}", companyid);
+            conn.CRUD(SQL);
         }
     }
 }

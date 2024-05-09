@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FJobDetails));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblSalary = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
@@ -68,6 +68,9 @@
             ptbAvatar = new Guna.UI2.WinForms.Guna2PictureBox();
             btnCompanyDetail = new ReaLTaiizor.Controls.CyberButton();
             flowLayoutPanel3 = new FlowLayoutPanel();
+            lblStatus = new Label();
+            pnTopCompany = new Guna.UI2.WinForms.Guna2Panel();
+            lblTopCompany = new Guna.UI2.WinForms.Guna2HtmlLabel();
             panel2 = new Panel();
             lblCompanyTypeText = new ReaLTaiizor.Controls.MetroLabel();
             lblCompanyType = new ReaLTaiizor.Controls.MetroLabel();
@@ -80,9 +83,6 @@
             panel12 = new Panel();
             lblWorkingTimeText = new ReaLTaiizor.Controls.MetroLabel();
             lblWorkingTime = new ReaLTaiizor.Controls.MetroLabel();
-            lblStatus = new Label();
-            pnTopCompany = new Guna.UI2.WinForms.Guna2Panel();
-            lblTopCompany = new Guna.UI2.WinForms.Guna2HtmlLabel();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -103,11 +103,11 @@
             panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).BeginInit();
             flowLayoutPanel3.SuspendLayout();
+            pnTopCompany.SuspendLayout();
             panel2.SuspendLayout();
             panel9.SuspendLayout();
             panel11.SuspendLayout();
             panel12.SuspendLayout();
-            pnTopCompany.SuspendLayout();
             SuspendLayout();
             // 
             // lblSalary
@@ -139,7 +139,7 @@
             tabPage1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             tabPage1.Location = new Point(4, 39);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3, 3, 3, 3);
+            tabPage1.Padding = new Padding(3);
             tabPage1.Size = new Size(703, 188);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Requirement";
@@ -160,7 +160,7 @@
             tabPage2.Controls.Add(rtxtDescription);
             tabPage2.Location = new Point(4, 39);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3, 3, 3, 3);
+            tabPage2.Padding = new Padding(3);
             tabPage2.Size = new Size(703, 188);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Description";
@@ -181,7 +181,7 @@
             tabPage3.Controls.Add(rtxtBenefit);
             tabPage3.Location = new Point(4, 39);
             tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3, 3, 3, 3);
+            tabPage3.Padding = new Padding(3);
             tabPage3.Size = new Size(703, 188);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Benefit";
@@ -543,13 +543,13 @@
             // 
             // ptbAvatar
             // 
-            ptbAvatar.CustomizableEdges = customizableEdges5;
+            ptbAvatar.CustomizableEdges = customizableEdges1;
             ptbAvatar.Image = (Image)resources.GetObject("ptbAvatar.Image");
             ptbAvatar.ImageRotate = 0F;
             ptbAvatar.Location = new Point(14, 19);
             ptbAvatar.Margin = new Padding(3, 2, 3, 2);
             ptbAvatar.Name = "ptbAvatar";
-            ptbAvatar.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            ptbAvatar.ShadowDecoration.CustomizableEdges = customizableEdges2;
             ptbAvatar.Size = new Size(120, 92);
             ptbAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbAvatar.TabIndex = 51;
@@ -612,6 +612,43 @@
             flowLayoutPanel3.Name = "flowLayoutPanel3";
             flowLayoutPanel3.Size = new Size(399, 649);
             flowLayoutPanel3.TabIndex = 52;
+            // 
+            // lblStatus
+            // 
+            lblStatus.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold);
+            lblStatus.ForeColor = Color.Red;
+            lblStatus.Location = new Point(3, 0);
+            lblStatus.Name = "lblStatus";
+            lblStatus.Size = new Size(392, 55);
+            lblStatus.TabIndex = 56;
+            lblStatus.Text = "This company is down-trend now!";
+            lblStatus.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pnTopCompany
+            // 
+            pnTopCompany.Controls.Add(lblTopCompany);
+            pnTopCompany.CustomizableEdges = customizableEdges3;
+            pnTopCompany.Enabled = false;
+            pnTopCompany.ForeColor = Color.Red;
+            pnTopCompany.Location = new Point(3, 199);
+            pnTopCompany.Name = "pnTopCompany";
+            pnTopCompany.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            pnTopCompany.Size = new Size(392, 82);
+            pnTopCompany.TabIndex = 56;
+            pnTopCompany.Visible = false;
+            // 
+            // lblTopCompany
+            // 
+            lblTopCompany.AutoSize = false;
+            lblTopCompany.BackColor = Color.Transparent;
+            lblTopCompany.Dock = DockStyle.Fill;
+            lblTopCompany.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold | FontStyle.Italic);
+            lblTopCompany.Location = new Point(0, 0);
+            lblTopCompany.Name = "lblTopCompany";
+            lblTopCompany.Size = new Size(392, 82);
+            lblTopCompany.TabIndex = 0;
+            lblTopCompany.Text = "*The company recruited the most candidates of the year";
+            lblTopCompany.TextAlignment = ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
@@ -785,43 +822,6 @@
             lblWorkingTime.ThemeAuthor = "Taiizor";
             lblWorkingTime.ThemeName = "MetroLight";
             // 
-            // lblStatus
-            // 
-            lblStatus.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold);
-            lblStatus.ForeColor = Color.Red;
-            lblStatus.Location = new Point(3, 0);
-            lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(392, 55);
-            lblStatus.TabIndex = 56;
-            lblStatus.Text = "This company is down-trend now!";
-            lblStatus.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // pnTopCompany
-            // 
-            pnTopCompany.Controls.Add(lblTopCompany);
-            pnTopCompany.CustomizableEdges = customizableEdges7;
-            pnTopCompany.Enabled = false;
-            pnTopCompany.ForeColor = Color.Red;
-            pnTopCompany.Location = new Point(3, 199);
-            pnTopCompany.Name = "pnTopCompany";
-            pnTopCompany.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            pnTopCompany.Size = new Size(392, 82);
-            pnTopCompany.TabIndex = 56;
-            pnTopCompany.Visible = false;
-            // 
-            // lblTopCompany
-            // 
-            lblTopCompany.AutoSize = false;
-            lblTopCompany.BackColor = Color.Transparent;
-            lblTopCompany.Dock = DockStyle.Fill;
-            lblTopCompany.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold | FontStyle.Italic);
-            lblTopCompany.Location = new Point(0, 0);
-            lblTopCompany.Name = "lblTopCompany";
-            lblTopCompany.Size = new Size(392, 82);
-            lblTopCompany.TabIndex = 0;
-            lblTopCompany.Text = "*The company recruited the most candidates of the year";
-            lblTopCompany.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
             // FJobDetails
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -856,11 +856,11 @@
             panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).EndInit();
             flowLayoutPanel3.ResumeLayout(false);
+            pnTopCompany.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel9.ResumeLayout(false);
             panel11.ResumeLayout(false);
             panel12.ResumeLayout(false);
-            pnTopCompany.ResumeLayout(false);
             ResumeLayout(false);
         }
 

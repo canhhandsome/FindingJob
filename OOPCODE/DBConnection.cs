@@ -32,7 +32,10 @@ namespace WinFormProject
             {
                 MessageBox.Show("them that bai" + ex);
             }
-            finally { conn.Close(); }
+            finally 
+            { 
+                conn.Close(); 
+            }
             return false;
         }
         //This is used for fetch common data ( the information of company and person)
@@ -409,7 +412,11 @@ namespace WinFormProject
             catch(Exception ex)
             {
                 MessageBox.Show("Error" + ex.Message);
-            } finally { conn.Close(); }
+            } 
+            finally 
+            { 
+                conn.Close(); 
+            }
            
         }
         public void CRUD(string SQL)
@@ -418,9 +425,8 @@ namespace WinFormProject
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(SQL, conn);
-                if (cmd.ExecuteNonQuery() > 0)
-                    MessageBox.Show("Successfully");
-                else MessageBox.Show("Failed");
+                if (cmd.ExecuteNonQuery() < 0)
+                    MessageBox.Show("Failed");
             }
             catch (SqlException ex)
             {
@@ -612,6 +618,10 @@ namespace WinFormProject
             {
                 // Log the error or handle it appropriately
                 Console.WriteLine("Operation failed. Error: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
             }
             return Images;
         }

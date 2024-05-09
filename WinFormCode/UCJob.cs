@@ -12,19 +12,19 @@ namespace WinFormProject
 {
     public partial class UCJob : UserControl
     {
-        Job job = new Job();
+        public Job job = new Job();
         JobDAO jobDAO = new JobDAO();
+        public event EventHandler JobDone;
         public UCJob(Job job)
         {
             InitializeComponent();
             this.MaximumSize = new System.Drawing.Size(550, 421);
             this.job = job;
         }
-
-        public Job Job { get { return job; } }
         private void btnDone_Click(object sender, EventArgs e)
         {
             jobDAO.DoneJob(job.Jobid);
+            JobDone?.Invoke(this,EventArgs.Empty);
         }
 
         private void btnApplicants_Click(object sender, EventArgs e)

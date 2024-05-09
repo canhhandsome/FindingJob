@@ -14,7 +14,8 @@ namespace WinFormProject.WinFormCode
     public partial class UCCandidate : UserControl
     {
         string companyid;
-        JobPreference jobPreference = new JobPreference();
+        public JobPreference jobPreference = new JobPreference();
+        public event EventHandler SendClickHandleHandle;
         public UCCandidate(JobPreference jobPreference,string companyid)
         {
             this.jobPreference = jobPreference;
@@ -52,7 +53,12 @@ namespace WinFormProject.WinFormCode
         private void btnDetails_Click(object sender, EventArgs e)
         {
             FJobPreferenceView fJobPreferenceView = new FJobPreferenceView(jobPreference.JobSeekerId,companyid);
+            fJobPreferenceView.SendCLickHandle += SendClickHandle_Handle;
             fJobPreferenceView.Show();
+        }
+        private void SendClickHandle_Handle(object sender, EventArgs e)
+        {
+            SendClickHandleHandle?.Invoke(this, e);
         }
     }
 }

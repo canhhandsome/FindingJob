@@ -14,6 +14,8 @@ namespace WinFormProject
     public partial class FAnswer : Form
     {
         Apply apply = new Apply();
+        Interview interview = new Interview();
+        FScheduleInterview fScheduleInterview;
         Job job = new Job();
         public FAnswer(Apply apply, Job job)
         {
@@ -22,16 +24,31 @@ namespace WinFormProject
             this.job = job;
             JobSeekerDAO jobSeekerDAO = new JobSeekerDAO();
             JobDAO jobDAO = new JobDAO();
+            fScheduleInterview = new FScheduleInterview(apply, job.CompanyID);
             lblToT.Text = jobSeekerDAO.FetchName(apply.JSeekerID);
+            fScheduleInterview.btnAdd.Click += BtnAdd_Click;
         }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            this.interview = fScheduleInterview.INTER;
+        }
+
         private void btnSend_Click(object sender, EventArgs e)
         {
-            AlertDAO dAO = new AlertDAO();
-            Alert alert = new Alert(job.CompanyID, apply.JSeekerID, cbbSubject.Text, txtContent.Text, job.Jobid);
-            ApplyDAO applyDAO = new ApplyDAO();
-            applyDAO.UpdateStatus(cbbSubject.Text, apply);
-            dAO.InsertAlert(alert);
-            this.Close();
+            if(interview.Status.ToLower() != "waiting")
+            {
+                AlertDAO dAO = new AlertDAO();
+                Alert alert = new Alert(job.CompanyID, apply.JSeekerID, cbbSubject.Text, txtContent.Text, job.Jobid);
+                ApplyDAO applyDAO = new ApplyDAO();
+                applyDAO.UpdateStatus(cbbSubject.Text, apply);
+                dAO.InsertAlert(alert);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Please Schedule the Interview!");
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -50,7 +67,6 @@ namespace WinFormProject
 
         private void btnInterview_Click(object sender, EventArgs e)
         {
-            FScheduleInterview fScheduleInterview = new FScheduleInterview(apply, job.CompanyID);
             fScheduleInterview.Show();
         }
     }

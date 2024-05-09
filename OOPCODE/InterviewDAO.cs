@@ -16,6 +16,11 @@ namespace WinFormProject
 
         public void InsertInterview(Interview interview)
         {
+            if(FetchInterview(interview.IdJSeeker, interview.CompanyID, interview.IdJob).Status.ToLower() == "waiting")
+            {
+                MessageBox.Show("There are a interview have already schedule with this jobseeker!!");
+                return;
+            }
             string strCRUD = string.Format(@$"Insert into Interview (IdJSeeker, IdJob, TimeInterview, DateInterview, companyID) Values('{interview.IdJSeeker}', '{interview.IdJob}', '{interview.TimeInterview}', '{interview.DateInterview.ToString("yyyy-MM-dd")}', '{interview.CompanyID}')");
             conn.CRUD(strCRUD);
         }
@@ -46,6 +51,11 @@ namespace WinFormProject
         public void SetStatusForInterview(string jobseekerid, string jobid, string status, string companyID)
         {
             string SQL = string.Format("Update Interview Set Status ='{0}' Where IdJSeeker ='{1}' and IdJob = '{2}' and companyID = '{3}'",status,jobseekerid,jobid, companyID);
+            conn.CRUD(SQL);
+        }
+        public void DeletedNewInterview(string jobseekerid, string jobid,string companyid)
+        {
+            string SQL = string.Format("Delete Interview Where IdJSeeker = '{0}' and Idjob = '{1}' and companyid = '{2}' and status = 'waiting'",jobseekerid,jobid,companyid);
             conn.CRUD(SQL);
         }
     }

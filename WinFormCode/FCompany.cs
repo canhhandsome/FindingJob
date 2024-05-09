@@ -28,8 +28,20 @@ namespace WinFormProject
             //btnPostJob.PerformClick();
             company = new Company(informationDAO.FetchCommon(account));
             GetAllButtons(panel2);
+            SetStatusJobs();
         }
 
+        private void SetStatusJobs()
+        {
+            JobDAO jDAO = new JobDAO();
+            foreach(Job job in company.Jobs)
+            {
+                if(job.DateEnd < DateTime.Now)
+                {
+                    jDAO.DoneJob(job.Jobid);
+                }
+            }
+        }
 
         void GetAllButtons(Control control)
         {

@@ -30,11 +30,21 @@ namespace WinFormProject.WinFormCode
             pnSubBody.Controls.Clear();
             foreach (JobPreference jp in lst)
             {
-                UCCandidate uCCandidate = new UCCandidate(jp, companyid);
-                pnSubBody.Controls.Add(uCCandidate);
+                if (companysendOffer.AlreadySent(jp.JobSeekerId, companyid) == false)
+                {
+                    UCCandidate uCCandidate = new UCCandidate(jp, companyid);
+                    uCCandidate.SendClickHandleHandle += HandleLast;
+                    pnSubBody.Controls.Add(uCCandidate);
+                }
+
             }
         }
-
+        private void HandleLast(object sender, EventArgs e)
+        {
+            UCCandidate uCCandidate = sender as UCCandidate;
+            jobpreference.Remove(uCCandidate.jobPreference);
+            pnSubBody.Controls.Remove(uCCandidate);
+        }
         private List<JobPreference> SearchNameJS(string search)
         {
             JobSeekerDAO jsDAO = new JobSeekerDAO();

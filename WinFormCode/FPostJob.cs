@@ -15,7 +15,6 @@ namespace WinFormProject
 {
     public partial class FPostJob : Form
     {
-        private Form currentFormChild;
         private int locaX = 62;
         private int locaY = 0;
         private List<string> jobNames = new List<string>();
@@ -47,13 +46,19 @@ namespace WinFormProject
             {
                 if (job.Status.ToLower() == "Waiting".ToLower())
                 {
-                    UCHistory uchistory = new UCHistory(job);
-                    pnSubBody.Controls.Add(uchistory);
+                    UCJob uCJob = new UCJob(job);
+                    uCJob.JobDone += JobDone_Handle;
+                    pnSubBody.Controls.Add(uCJob);
                     pnSubBody.Height += 270;
                 }
             }
         }
-
+        private void JobDone_Handle(object sender, EventArgs e)
+        {
+            UCJob ucjob = sender as UCJob;
+            jobs.Remove(ucjob.job);
+            pnSubBody.Controls.Remove(ucjob);
+        }
         private void btnPostingJob_Click(object sender, EventArgs e)
         {
             FJobCreation fJobCreation = new FJobCreation(jobs, companyid);
@@ -87,6 +92,11 @@ namespace WinFormProject
         private void btnFilter_Click(object sender, EventArgs e)
         {
             fFilter.Show();
+        }
+
+        private void btnReload_Click(object sender, EventArgs e)
+        {
+            PostJob_Load(sender, e);
         }
     }
 }

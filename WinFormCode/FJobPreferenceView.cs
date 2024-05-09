@@ -16,6 +16,7 @@ namespace WinFormProject.WinFormCode
         JobPreference jobPreference = new JobPreference();
         JobPreferenceDAO jobPreferenceDAO = new JobPreferenceDAO();
         string companyid;
+        public event EventHandler SendCLickHandle;
         public FJobPreferenceView(string jobseekerid, string companyid)
         {
             InitializeComponent();
@@ -78,7 +79,14 @@ namespace WinFormProject.WinFormCode
         private void btnOffer_Click(object sender, EventArgs e)
         {
             FOffer fOffter = new FOffer(companyid, jobPreference);
+            fOffter.SendClick += SendClick_Handle; 
             fOffter.Show();
         }
+        private void SendClick_Handle(object sender, EventArgs e)
+        {
+            this.Close();
+            SendCLickHandle?.Invoke(this, EventArgs.Empty);
+        }
+        
     }
 }
