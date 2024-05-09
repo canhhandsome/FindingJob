@@ -15,6 +15,8 @@ namespace WinFormProject
     {
         Apply apply = new Apply();
         Job job = new Job();
+        InterviewDAO interviewDAO = new InterviewDAO();
+        public event EventHandler SendClick;
         public FAnswer(Apply apply, Job job)
         {
             InitializeComponent();
@@ -32,10 +34,12 @@ namespace WinFormProject
             applyDAO.UpdateStatus(cbbSubject.Text, apply);
             dAO.InsertAlert(alert);
             this.Close();
+            SendClick?.Invoke(this, EventArgs.Empty);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            interviewDAO.DeletedNewInterview(apply.JSeekerID,job.Jobid,job.CompanyID);
             this.Close();
         }
 

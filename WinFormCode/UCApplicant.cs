@@ -22,6 +22,7 @@ namespace WinFormProject
         Job job = new Job();
         InformationDAO info = new InformationDAO();
         Image applicantAvatar = null;
+        public event EventHandler SendClickHandle;
         public UCApplicant(Apply apply, Job job)
         {
             InitializeComponent();
@@ -52,7 +53,12 @@ namespace WinFormProject
         {
             ApplyDAO applyDao = new ApplyDAO();
             FAnswer fAnswer = new FAnswer(apply, job);
+            fAnswer.SendClick += SendClick_Handle;
             fAnswer.Show();
+        }
+        private void SendClick_Handle(object sender, EventArgs e)
+        {
+            SendClickHandle?.Invoke(this,e);
         }
 
     }
