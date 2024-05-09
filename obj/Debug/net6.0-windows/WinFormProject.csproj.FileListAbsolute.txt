@@ -344,7 +344,6 @@ D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.csproj.AssemblyReference.cache
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.Properties.Resources.resources
-D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAdmin.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAlert.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAlertView.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAnswer.resources
@@ -362,15 +361,12 @@ D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobSeeker.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FJobSKills.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FLogin.resources
-D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FManageUser.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FOTP.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FPostJob.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FProfile.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FProfileCompany.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FRegister.resources
-D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FReportDetail.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FSearchJob.resources
-D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FSupReportSection.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.UCAlert.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.UCApplicant.resources
 D:\UTE\UTE2023and2024\Ki2\WindowsProgramming\Project\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.UCCarousel.resources
@@ -568,7 +564,6 @@ D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\Findin
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.csproj.AssemblyReference.cache
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.Properties.Resources.resources
-D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAdmin.resources
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAlert.resources
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAlertView.resources
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FAnswer.resources
@@ -595,17 +590,14 @@ D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\Findin
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FJobSeeker.resources
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FJobSKills.resources
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FLogin.resources
-D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FManageUser.resources
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FOffer.resources
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FOTP.resources
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FPostJob.resources
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FProfile.resources
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FProfileCompany.resources
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FRegister.resources
-D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FReportDetail.resources
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FScheduleInterview.resources
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FSearchJob.resources
-D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.FSupReportSection.resources
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FTest.resources
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.WinFormCode.FViewInterview.resources
 D:\Learning\Second_Year\HK2\WIndows Programming\Project_LastTerm\LastTerm\FindingJob_2.0\FindingJob\obj\Debug\net6.0-windows\WinFormProject.UCAlert.resources

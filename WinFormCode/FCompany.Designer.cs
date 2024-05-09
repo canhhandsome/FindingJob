@@ -61,8 +61,9 @@
             panel1.Controls.Add(metroControlBox3);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1482, 32);
+            panel1.Size = new Size(1297, 24);
             panel1.TabIndex = 2;
             // 
             // metroControlBox3
@@ -74,7 +75,8 @@
             metroControlBox3.DisabledForeColor = Color.DimGray;
             metroControlBox3.Dock = DockStyle.Right;
             metroControlBox3.IsDerivedStyle = true;
-            metroControlBox3.Location = new Point(1382, 0);
+            metroControlBox3.Location = new Point(1197, 0);
+            metroControlBox3.Margin = new Padding(3, 2, 3, 2);
             metroControlBox3.MaximizeBox = true;
             metroControlBox3.MaximizeHoverBackColor = Color.FromArgb(238, 238, 238);
             metroControlBox3.MaximizeHoverForeColor = Color.Gray;
@@ -103,10 +105,9 @@
             panel2.Controls.Add(btnPostJob);
             panel2.Controls.Add(pictureBox2);
             panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 32);
-            panel2.Margin = new Padding(3, 4, 3, 4);
+            panel2.Location = new Point(0, 24);
             panel2.Name = "panel2";
-            panel2.Size = new Size(231, 899);
+            panel2.Size = new Size(202, 674);
             panel2.TabIndex = 3;
             // 
             // btnLogOut
@@ -128,13 +129,13 @@
             btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
             btnLogOut.ImageAlign = HorizontalAlignment.Left;
             btnLogOut.ImageSize = new Size(50, 50);
-            btnLogOut.Location = new Point(0, 612);
-            btnLogOut.Margin = new Padding(5);
+            btnLogOut.Location = new Point(0, 458);
+            btnLogOut.Margin = new Padding(4);
             btnLogOut.Name = "btnLogOut";
             btnLogOut.ShadowDecoration.Color = Color.White;
             btnLogOut.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnLogOut.ShadowDecoration.Shadow = new Padding(2);
-            btnLogOut.Size = new Size(231, 95);
+            btnLogOut.Size = new Size(202, 71);
             btnLogOut.TabIndex = 3;
             btnLogOut.Text = "Log Out";
             btnLogOut.TextAlign = HorizontalAlignment.Left;
@@ -159,13 +160,13 @@
             btnApplicant.Image = (Image)resources.GetObject("btnApplicant.Image");
             btnApplicant.ImageAlign = HorizontalAlignment.Left;
             btnApplicant.ImageSize = new Size(50, 50);
-            btnApplicant.Location = new Point(0, 517);
-            btnApplicant.Margin = new Padding(5);
+            btnApplicant.Location = new Point(0, 387);
+            btnApplicant.Margin = new Padding(4);
             btnApplicant.Name = "btnApplicant";
             btnApplicant.ShadowDecoration.Color = Color.White;
             btnApplicant.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnApplicant.ShadowDecoration.Shadow = new Padding(2);
-            btnApplicant.Size = new Size(231, 95);
+            btnApplicant.Size = new Size(202, 71);
             btnApplicant.TabIndex = 2;
             btnApplicant.Text = "Applicants";
             btnApplicant.TextAlign = HorizontalAlignment.Left;
@@ -190,13 +191,13 @@
             btnInterviewView.Image = (Image)resources.GetObject("btnInterviewView.Image");
             btnInterviewView.ImageAlign = HorizontalAlignment.Left;
             btnInterviewView.ImageSize = new Size(50, 50);
-            btnInterviewView.Location = new Point(0, 446);
-            btnInterviewView.Margin = new Padding(5, 4, 5, 4);
+            btnInterviewView.Location = new Point(0, 334);
+            btnInterviewView.Margin = new Padding(4, 3, 4, 3);
             btnInterviewView.Name = "btnInterviewView";
             btnInterviewView.ShadowDecoration.Color = Color.White;
             btnInterviewView.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnInterviewView.ShadowDecoration.Shadow = new Padding(2);
-            btnInterviewView.Size = new Size(231, 71);
+            btnInterviewView.Size = new Size(202, 53);
             btnInterviewView.TabIndex = 4;
             btnInterviewView.Text = "Interviews";
             btnInterviewView.TextAlign = HorizontalAlignment.Left;
@@ -221,13 +222,13 @@
             btnSetting.Image = (Image)resources.GetObject("btnSetting.Image");
             btnSetting.ImageAlign = HorizontalAlignment.Left;
             btnSetting.ImageSize = new Size(50, 50);
-            btnSetting.Location = new Point(0, 351);
-            btnSetting.Margin = new Padding(5);
+            btnSetting.Location = new Point(0, 263);
+            btnSetting.Margin = new Padding(4);
             btnSetting.Name = "btnSetting";
             btnSetting.ShadowDecoration.Color = Color.White;
             btnSetting.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnSetting.ShadowDecoration.Shadow = new Padding(2);
-            btnSetting.Size = new Size(231, 95);
+            btnSetting.Size = new Size(202, 71);
             btnSetting.TabIndex = 2;
             btnSetting.Text = "Profile";
             btnSetting.TextAlign = HorizontalAlignment.Left;
@@ -252,13 +253,13 @@
             btnHistory.Image = (Image)resources.GetObject("btnHistory.Image");
             btnHistory.ImageAlign = HorizontalAlignment.Left;
             btnHistory.ImageSize = new Size(50, 50);
-            btnHistory.Location = new Point(0, 256);
-            btnHistory.Margin = new Padding(5);
+            btnHistory.Location = new Point(0, 192);
+            btnHistory.Margin = new Padding(4);
             btnHistory.Name = "btnHistory";
             btnHistory.ShadowDecoration.Color = Color.White;
             btnHistory.ShadowDecoration.CustomizableEdges = customizableEdges8;
             btnHistory.ShadowDecoration.Shadow = new Padding(2);
-            btnHistory.Size = new Size(231, 95);
+            btnHistory.Size = new Size(202, 71);
             btnHistory.TabIndex = 1;
             btnHistory.Text = "History";
             btnHistory.TextAlign = HorizontalAlignment.Left;
@@ -283,13 +284,13 @@
             btnPostJob.Image = (Image)resources.GetObject("btnPostJob.Image");
             btnPostJob.ImageAlign = HorizontalAlignment.Left;
             btnPostJob.ImageSize = new Size(50, 50);
-            btnPostJob.Location = new Point(0, 161);
-            btnPostJob.Margin = new Padding(5);
+            btnPostJob.Location = new Point(0, 121);
+            btnPostJob.Margin = new Padding(4);
             btnPostJob.Name = "btnPostJob";
             btnPostJob.ShadowDecoration.Color = Color.White;
             btnPostJob.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnPostJob.ShadowDecoration.Shadow = new Padding(2);
-            btnPostJob.Size = new Size(231, 95);
+            btnPostJob.Size = new Size(202, 71);
             btnPostJob.TabIndex = 0;
             btnPostJob.Text = "List of Job";
             btnPostJob.TextAlign = HorizontalAlignment.Left;
@@ -300,9 +301,8 @@
             pictureBox2.Dock = DockStyle.Top;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(231, 161);
+            pictureBox2.Size = new Size(202, 121);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
@@ -311,22 +311,22 @@
             // 
             pnBody.AutoScroll = true;
             pnBody.Dock = DockStyle.Fill;
-            pnBody.Location = new Point(231, 32);
-            pnBody.Margin = new Padding(3, 4, 3, 4);
+            pnBody.Location = new Point(202, 24);
             pnBody.Name = "pnBody";
-            pnBody.Size = new Size(1251, 899);
+            pnBody.Size = new Size(1095, 674);
             pnBody.TabIndex = 4;
             // 
             // FCompany
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1482, 931);
+            ClientSize = new Size(1297, 698);
             Controls.Add(pnBody);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FCompany";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FCompany";

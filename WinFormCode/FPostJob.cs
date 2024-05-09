@@ -15,7 +15,6 @@ namespace WinFormProject
 {
     public partial class FPostJob : Form
     {
-        private Form currentFormChild;
         private int locaX = 62;
         private int locaY = 0;
         private List<string> jobNames = new List<string>();
@@ -93,6 +92,11 @@ namespace WinFormProject
         private void btnFilter_Click(object sender, EventArgs e)
         {
             fFilter.Show();
+        }
+
+        private void btnReload_Click(object sender, EventArgs e)
+        {
+            PostJob_Load(sender, e);
         }
     }
 }

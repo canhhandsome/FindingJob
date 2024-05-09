@@ -18,6 +18,7 @@ namespace WinFormProject.WinFormCode
     {
         Apply apply = new Apply();
         List<Interview> interviews = new List<Interview>();
+        Interview interview = new Interview();
         InterviewDAO InterviewDAO = new InterviewDAO();
         List<string> times = new List<string>();
         string jobseekerid, jobid, companyID;
@@ -50,7 +51,7 @@ namespace WinFormProject.WinFormCode
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Interview interview = new Interview(jobseekerid, jobid, cbbTimeIv.Text, mcpSchdule.SelectionRange.Start, companyID);
+            interview = new Interview(jobseekerid, jobid, cbbTimeIv.Text, mcpSchdule.SelectionRange.Start, companyID);
             InterviewDAO.InsertInterview(interview);
             interviews.Add(interview);
             FScheduleInterview_Load(sender, e);
@@ -73,5 +74,7 @@ namespace WinFormProject.WinFormCode
                 }
             }
         }
+        public Interview INTER
+        { get { return interview; } }
     }
 }

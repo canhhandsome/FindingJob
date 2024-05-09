@@ -114,9 +114,10 @@ namespace WinFormProject
             btnJobPreference = new Guna.UI2.WinForms.Guna2Button();
             btnEditJobPreferences = new Guna.UI2.WinForms.Guna2Button();
             btnCreateCV = new Guna.UI2.WinForms.Guna2Button();
-            errorProviderFullName = new ErrorProvider(components);
-            errorProviderAddress = new ErrorProvider(components);
-            errorProviderPhone = new ErrorProvider(components);
+            epTxt = new ErrorProvider(components);
+            epCbb = new ErrorProvider(components);
+            epRbtn = new ErrorProvider(components);
+            epDtp = new ErrorProvider(components);
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox3).BeginInit();
@@ -126,9 +127,10 @@ namespace WinFormProject
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ptbCV).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)errorProviderFullName).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)errorProviderAddress).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)errorProviderPhone).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)epTxt).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)epCbb).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)epRbtn).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)epDtp).BeginInit();
             SuspendLayout();
             // 
             // lblGender
@@ -136,9 +138,9 @@ namespace WinFormProject
             lblGender.AutoSize = true;
             lblGender.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
             lblGender.ForeColor = SystemColors.ControlText;
-            lblGender.Location = new Point(43, 549);
+            lblGender.Location = new Point(38, 412);
             lblGender.Name = "lblGender";
-            lblGender.Size = new Size(91, 31);
+            lblGender.Size = new Size(78, 25);
             lblGender.TabIndex = 11;
             lblGender.Text = "Gender";
             // 
@@ -158,14 +160,14 @@ namespace WinFormProject
             txtFullName.Font = new Font("Verdana", 13.8F);
             txtFullName.ForeColor = Color.Black;
             txtFullName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtFullName.Location = new Point(41, 157);
-            txtFullName.Margin = new Padding(5);
+            txtFullName.Location = new Point(36, 118);
+            txtFullName.Margin = new Padding(4);
             txtFullName.Name = "txtFullName";
             txtFullName.PasswordChar = '\0';
             txtFullName.PlaceholderText = "";
             txtFullName.SelectedText = "";
             txtFullName.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtFullName.Size = new Size(406, 69);
+            txtFullName.Size = new Size(355, 52);
             txtFullName.TabIndex = 29;
             // 
             // txtAddress
@@ -182,14 +184,14 @@ namespace WinFormProject
             txtAddress.Font = new Font("Verdana", 13.8F);
             txtAddress.ForeColor = Color.Black;
             txtAddress.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtAddress.Location = new Point(477, 157);
-            txtAddress.Margin = new Padding(5);
+            txtAddress.Location = new Point(417, 118);
+            txtAddress.Margin = new Padding(4);
             txtAddress.Name = "txtAddress";
             txtAddress.PasswordChar = '\0';
             txtAddress.PlaceholderText = "";
             txtAddress.SelectedText = "";
             txtAddress.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtAddress.Size = new Size(406, 69);
+            txtAddress.Size = new Size(355, 52);
             txtAddress.TabIndex = 30;
             // 
             // txtPhoneNumber
@@ -206,14 +208,14 @@ namespace WinFormProject
             txtPhoneNumber.Font = new Font("Verdana", 13.8F);
             txtPhoneNumber.ForeColor = Color.Black;
             txtPhoneNumber.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPhoneNumber.Location = new Point(41, 309);
-            txtPhoneNumber.Margin = new Padding(5);
+            txtPhoneNumber.Location = new Point(36, 232);
+            txtPhoneNumber.Margin = new Padding(4);
             txtPhoneNumber.Name = "txtPhoneNumber";
             txtPhoneNumber.PasswordChar = '\0';
             txtPhoneNumber.PlaceholderText = "";
             txtPhoneNumber.SelectedText = "";
             txtPhoneNumber.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtPhoneNumber.Size = new Size(406, 69);
+            txtPhoneNumber.Size = new Size(355, 52);
             txtPhoneNumber.TabIndex = 31;
             // 
             // txtCitizenID
@@ -230,14 +232,14 @@ namespace WinFormProject
             txtCitizenID.Font = new Font("Verdana", 13.8F);
             txtCitizenID.ForeColor = Color.Black;
             txtCitizenID.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtCitizenID.Location = new Point(477, 309);
-            txtCitizenID.Margin = new Padding(5);
+            txtCitizenID.Location = new Point(417, 232);
+            txtCitizenID.Margin = new Padding(4);
             txtCitizenID.Name = "txtCitizenID";
             txtCitizenID.PasswordChar = '\0';
             txtCitizenID.PlaceholderText = "";
             txtCitizenID.SelectedText = "";
             txtCitizenID.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            txtCitizenID.Size = new Size(406, 69);
+            txtCitizenID.Size = new Size(355, 52);
             txtCitizenID.TabIndex = 32;
             // 
             // txtEmail
@@ -254,14 +256,14 @@ namespace WinFormProject
             txtEmail.Font = new Font("Verdana", 13.8F);
             txtEmail.ForeColor = Color.Black;
             txtEmail.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtEmail.Location = new Point(37, 465);
-            txtEmail.Margin = new Padding(5);
+            txtEmail.Location = new Point(32, 349);
+            txtEmail.Margin = new Padding(4);
             txtEmail.Name = "txtEmail";
             txtEmail.PasswordChar = '\0';
             txtEmail.PlaceholderText = "";
             txtEmail.SelectedText = "";
             txtEmail.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtEmail.Size = new Size(406, 69);
+            txtEmail.Size = new Size(355, 52);
             txtEmail.TabIndex = 33;
             // 
             // dtpkBirthDate
@@ -273,12 +275,13 @@ namespace WinFormProject
             dtpkBirthDate.Font = new Font("Verdana", 13.8F);
             dtpkBirthDate.ForeColor = Color.Black;
             dtpkBirthDate.Format = DateTimePickerFormat.Long;
-            dtpkBirthDate.Location = new Point(477, 465);
+            dtpkBirthDate.Location = new Point(417, 349);
+            dtpkBirthDate.Margin = new Padding(3, 2, 3, 2);
             dtpkBirthDate.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             dtpkBirthDate.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             dtpkBirthDate.Name = "dtpkBirthDate";
             dtpkBirthDate.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            dtpkBirthDate.Size = new Size(406, 69);
+            dtpkBirthDate.Size = new Size(355, 52);
             dtpkBirthDate.TabIndex = 34;
             dtpkBirthDate.Value = new DateTime(2024, 4, 5, 18, 5, 10, 589);
             // 
@@ -287,9 +290,10 @@ namespace WinFormProject
             lblFullName.AutoSize = false;
             lblFullName.BackColor = Color.Transparent;
             lblFullName.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            lblFullName.Location = new Point(37, 108);
+            lblFullName.Location = new Point(32, 81);
+            lblFullName.Margin = new Padding(3, 2, 3, 2);
             lblFullName.Name = "lblFullName";
-            lblFullName.Size = new Size(360, 43);
+            lblFullName.Size = new Size(315, 32);
             lblFullName.TabIndex = 35;
             lblFullName.Text = "Full Name";
             // 
@@ -298,9 +302,10 @@ namespace WinFormProject
             lblPhoneNumber.AutoSize = false;
             lblPhoneNumber.BackColor = Color.Transparent;
             lblPhoneNumber.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            lblPhoneNumber.Location = new Point(45, 259);
+            lblPhoneNumber.Location = new Point(39, 194);
+            lblPhoneNumber.Margin = new Padding(3, 2, 3, 2);
             lblPhoneNumber.Name = "lblPhoneNumber";
-            lblPhoneNumber.Size = new Size(360, 43);
+            lblPhoneNumber.Size = new Size(315, 32);
             lblPhoneNumber.TabIndex = 36;
             lblPhoneNumber.Text = "Phone Number";
             // 
@@ -309,9 +314,10 @@ namespace WinFormProject
             lblEmail.AutoSize = false;
             lblEmail.BackColor = Color.Transparent;
             lblEmail.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            lblEmail.Location = new Point(46, 417);
+            lblEmail.Location = new Point(40, 313);
+            lblEmail.Margin = new Padding(3, 2, 3, 2);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(360, 43);
+            lblEmail.Size = new Size(315, 32);
             lblEmail.TabIndex = 37;
             lblEmail.Text = "Email";
             // 
@@ -320,9 +326,10 @@ namespace WinFormProject
             lblAddress.AutoSize = false;
             lblAddress.BackColor = Color.Transparent;
             lblAddress.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            lblAddress.Location = new Point(477, 108);
+            lblAddress.Location = new Point(417, 81);
+            lblAddress.Margin = new Padding(3, 2, 3, 2);
             lblAddress.Name = "lblAddress";
-            lblAddress.Size = new Size(360, 43);
+            lblAddress.Size = new Size(315, 32);
             lblAddress.TabIndex = 38;
             lblAddress.Text = "Address";
             // 
@@ -331,9 +338,10 @@ namespace WinFormProject
             lblCitizenID.AutoSize = false;
             lblCitizenID.BackColor = Color.Transparent;
             lblCitizenID.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            lblCitizenID.Location = new Point(477, 259);
+            lblCitizenID.Location = new Point(417, 194);
+            lblCitizenID.Margin = new Padding(3, 2, 3, 2);
             lblCitizenID.Name = "lblCitizenID";
-            lblCitizenID.Size = new Size(360, 43);
+            lblCitizenID.Size = new Size(315, 32);
             lblCitizenID.TabIndex = 39;
             lblCitizenID.Text = "Citizen ID";
             // 
@@ -342,9 +350,10 @@ namespace WinFormProject
             lblBirthDate.AutoSize = false;
             lblBirthDate.BackColor = Color.Transparent;
             lblBirthDate.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            lblBirthDate.Location = new Point(477, 417);
+            lblBirthDate.Location = new Point(417, 313);
+            lblBirthDate.Margin = new Padding(3, 2, 3, 2);
             lblBirthDate.Name = "lblBirthDate";
-            lblBirthDate.Size = new Size(360, 43);
+            lblBirthDate.Size = new Size(315, 32);
             lblBirthDate.TabIndex = 40;
             lblBirthDate.Text = "Birth Date";
             // 
@@ -352,7 +361,7 @@ namespace WinFormProject
             // 
             rdoFemale.AutoSize = true;
             rdoFemale.Depth = 0;
-            rdoFemale.Location = new Point(128, 587);
+            rdoFemale.Location = new Point(112, 440);
             rdoFemale.Margin = new Padding(0);
             rdoFemale.MouseLocation = new Point(-1, -1);
             rdoFemale.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
@@ -370,7 +379,7 @@ namespace WinFormProject
             rdoMale.AutoSize = true;
             rdoMale.Depth = 0;
             rdoMale.Font = new Font("Segoe UI", 9F);
-            rdoMale.Location = new Point(41, 587);
+            rdoMale.Location = new Point(36, 440);
             rdoMale.Margin = new Padding(0);
             rdoMale.MouseLocation = new Point(-1, -1);
             rdoMale.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
@@ -388,10 +397,11 @@ namespace WinFormProject
             guna2PictureBox1.CustomizableEdges = customizableEdges13;
             guna2PictureBox1.Image = (Image)resources.GetObject("guna2PictureBox1.Image");
             guna2PictureBox1.ImageRotate = 0F;
-            guna2PictureBox1.Location = new Point(463, 144);
+            guna2PictureBox1.Location = new Point(405, 108);
+            guna2PictureBox1.Margin = new Padding(3, 2, 3, 2);
             guna2PictureBox1.Name = "guna2PictureBox1";
             guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2PictureBox1.Size = new Size(37, 27);
+            guna2PictureBox1.Size = new Size(32, 20);
             guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2PictureBox1.TabIndex = 42;
             guna2PictureBox1.TabStop = false;
@@ -401,10 +411,11 @@ namespace WinFormProject
             guna2PictureBox2.CustomizableEdges = customizableEdges15;
             guna2PictureBox2.Image = (Image)resources.GetObject("guna2PictureBox2.Image");
             guna2PictureBox2.ImageRotate = 0F;
-            guna2PictureBox2.Location = new Point(26, 144);
+            guna2PictureBox2.Location = new Point(23, 108);
+            guna2PictureBox2.Margin = new Padding(3, 2, 3, 2);
             guna2PictureBox2.Name = "guna2PictureBox2";
             guna2PictureBox2.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            guna2PictureBox2.Size = new Size(37, 27);
+            guna2PictureBox2.Size = new Size(32, 20);
             guna2PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2PictureBox2.TabIndex = 43;
             guna2PictureBox2.TabStop = false;
@@ -414,10 +425,11 @@ namespace WinFormProject
             guna2PictureBox3.CustomizableEdges = customizableEdges17;
             guna2PictureBox3.Image = (Image)resources.GetObject("guna2PictureBox3.Image");
             guna2PictureBox3.ImageRotate = 0F;
-            guna2PictureBox3.Location = new Point(26, 293);
+            guna2PictureBox3.Location = new Point(23, 220);
+            guna2PictureBox3.Margin = new Padding(3, 2, 3, 2);
             guna2PictureBox3.Name = "guna2PictureBox3";
             guna2PictureBox3.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2PictureBox3.Size = new Size(37, 27);
+            guna2PictureBox3.Size = new Size(32, 20);
             guna2PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2PictureBox3.TabIndex = 44;
             guna2PictureBox3.TabStop = false;
@@ -427,10 +439,11 @@ namespace WinFormProject
             guna2PictureBox4.CustomizableEdges = customizableEdges19;
             guna2PictureBox4.Image = (Image)resources.GetObject("guna2PictureBox4.Image");
             guna2PictureBox4.ImageRotate = 0F;
-            guna2PictureBox4.Location = new Point(463, 293);
+            guna2PictureBox4.Location = new Point(405, 220);
+            guna2PictureBox4.Margin = new Padding(3, 2, 3, 2);
             guna2PictureBox4.Name = "guna2PictureBox4";
             guna2PictureBox4.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            guna2PictureBox4.Size = new Size(37, 27);
+            guna2PictureBox4.Size = new Size(32, 20);
             guna2PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2PictureBox4.TabIndex = 45;
             guna2PictureBox4.TabStop = false;
@@ -440,10 +453,11 @@ namespace WinFormProject
             guna2PictureBox5.CustomizableEdges = customizableEdges21;
             guna2PictureBox5.Image = (Image)resources.GetObject("guna2PictureBox5.Image");
             guna2PictureBox5.ImageRotate = 0F;
-            guna2PictureBox5.Location = new Point(26, 452);
+            guna2PictureBox5.Location = new Point(23, 339);
+            guna2PictureBox5.Margin = new Padding(3, 2, 3, 2);
             guna2PictureBox5.Name = "guna2PictureBox5";
             guna2PictureBox5.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            guna2PictureBox5.Size = new Size(37, 27);
+            guna2PictureBox5.Size = new Size(32, 20);
             guna2PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2PictureBox5.TabIndex = 46;
             guna2PictureBox5.TabStop = false;
@@ -453,10 +467,11 @@ namespace WinFormProject
             guna2PictureBox6.CustomizableEdges = customizableEdges23;
             guna2PictureBox6.Image = (Image)resources.GetObject("guna2PictureBox6.Image");
             guna2PictureBox6.ImageRotate = 0F;
-            guna2PictureBox6.Location = new Point(463, 452);
+            guna2PictureBox6.Location = new Point(405, 339);
+            guna2PictureBox6.Margin = new Padding(3, 2, 3, 2);
             guna2PictureBox6.Name = "guna2PictureBox6";
             guna2PictureBox6.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            guna2PictureBox6.Size = new Size(37, 27);
+            guna2PictureBox6.Size = new Size(32, 20);
             guna2PictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2PictureBox6.TabIndex = 47;
             guna2PictureBox6.TabStop = false;
@@ -466,10 +481,11 @@ namespace WinFormProject
             guna2PictureBox7.CustomizableEdges = customizableEdges25;
             guna2PictureBox7.Image = (Image)resources.GetObject("guna2PictureBox7.Image");
             guna2PictureBox7.ImageRotate = 0F;
-            guna2PictureBox7.Location = new Point(141, 549);
+            guna2PictureBox7.Location = new Point(123, 412);
+            guna2PictureBox7.Margin = new Padding(3, 2, 3, 2);
             guna2PictureBox7.Name = "guna2PictureBox7";
             guna2PictureBox7.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            guna2PictureBox7.Size = new Size(37, 27);
+            guna2PictureBox7.Size = new Size(32, 20);
             guna2PictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2PictureBox7.TabIndex = 48;
             guna2PictureBox7.TabStop = false;
@@ -485,10 +501,11 @@ namespace WinFormProject
             btnChoosePicture.FillColor = Color.FromArgb(176, 226, 243);
             btnChoosePicture.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnChoosePicture.ForeColor = Color.Black;
-            btnChoosePicture.Location = new Point(952, 297);
+            btnChoosePicture.Location = new Point(833, 223);
+            btnChoosePicture.Margin = new Padding(3, 2, 3, 2);
             btnChoosePicture.Name = "btnChoosePicture";
             btnChoosePicture.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            btnChoosePicture.Size = new Size(225, 56);
+            btnChoosePicture.Size = new Size(197, 42);
             btnChoosePicture.TabIndex = 49;
             btnChoosePicture.Text = "Choose Picture";
             btnChoosePicture.Click += btnChoosePicture_Click;
@@ -504,10 +521,11 @@ namespace WinFormProject
             btnChooseNewCV.FillColor = Color.FromArgb(176, 226, 243);
             btnChooseNewCV.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnChooseNewCV.ForeColor = Color.Black;
-            btnChooseNewCV.Location = new Point(943, 697);
+            btnChooseNewCV.Location = new Point(825, 523);
+            btnChooseNewCV.Margin = new Padding(3, 2, 3, 2);
             btnChooseNewCV.Name = "btnChooseNewCV";
             btnChooseNewCV.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            btnChooseNewCV.Size = new Size(225, 56);
+            btnChooseNewCV.Size = new Size(197, 42);
             btnChooseNewCV.TabIndex = 50;
             btnChooseNewCV.Text = "Choose CV";
             btnChooseNewCV.Click += btnChooseNewCV_Click;
@@ -523,10 +541,11 @@ namespace WinFormProject
             btnCV.FillColor = Color.FromArgb(176, 226, 243);
             btnCV.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnCV.ForeColor = Color.Black;
-            btnCV.Location = new Point(943, 697);
+            btnCV.Location = new Point(825, 523);
+            btnCV.Margin = new Padding(3, 2, 3, 2);
             btnCV.Name = "btnCV";
             btnCV.ShadowDecoration.CustomizableEdges = customizableEdges32;
-            btnCV.Size = new Size(225, 56);
+            btnCV.Size = new Size(197, 42);
             btnCV.TabIndex = 51;
             btnCV.Text = "CV";
             btnCV.Click += btnCV_Click;
@@ -542,10 +561,11 @@ namespace WinFormProject
             btnCancel.FillColor = Color.FromArgb(255, 150, 150);
             btnCancel.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnCancel.ForeColor = Color.Black;
-            btnCancel.Location = new Point(318, 697);
+            btnCancel.Location = new Point(278, 523);
+            btnCancel.Margin = new Padding(3, 2, 3, 2);
             btnCancel.Name = "btnCancel";
             btnCancel.ShadowDecoration.CustomizableEdges = customizableEdges34;
-            btnCancel.Size = new Size(225, 56);
+            btnCancel.Size = new Size(197, 42);
             btnCancel.TabIndex = 52;
             btnCancel.Text = "Cancel";
             // 
@@ -560,13 +580,14 @@ namespace WinFormProject
             btnSave.FillColor = Color.FromArgb(176, 226, 243);
             btnSave.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnSave.ForeColor = Color.Black;
-            btnSave.Location = new Point(41, 697);
+            btnSave.Location = new Point(36, 523);
+            btnSave.Margin = new Padding(3, 2, 3, 2);
             btnSave.Name = "btnSave";
             btnSave.ShadowDecoration.CustomizableEdges = customizableEdges36;
-            btnSave.Size = new Size(225, 56);
+            btnSave.Size = new Size(197, 42);
             btnSave.TabIndex = 53;
             btnSave.Text = "Save";
-            btnSave.Click += btnSave_Click;
+            btnSave.Click += btnSave_Click_Error;
             // 
             // btnEdit
             // 
@@ -579,10 +600,11 @@ namespace WinFormProject
             btnEdit.FillColor = Color.FromArgb(176, 226, 243);
             btnEdit.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnEdit.ForeColor = Color.Black;
-            btnEdit.Location = new Point(41, 697);
+            btnEdit.Location = new Point(36, 523);
+            btnEdit.Margin = new Padding(3, 2, 3, 2);
             btnEdit.Name = "btnEdit";
             btnEdit.ShadowDecoration.CustomizableEdges = customizableEdges38;
-            btnEdit.Size = new Size(225, 56);
+            btnEdit.Size = new Size(197, 42);
             btnEdit.TabIndex = 54;
             btnEdit.Text = "Edit";
             btnEdit.Click += btnEdit_Click;
@@ -591,9 +613,10 @@ namespace WinFormProject
             // 
             lblProfile.BackColor = Color.Transparent;
             lblProfile.Font = new Font("Britannic Bold", 24F);
-            lblProfile.Location = new Point(37, 12);
+            lblProfile.Location = new Point(32, 9);
+            lblProfile.Margin = new Padding(3, 2, 3, 2);
             lblProfile.Name = "lblProfile";
-            lblProfile.Size = new Size(215, 46);
+            lblProfile.Size = new Size(172, 38);
             lblProfile.TabIndex = 55;
             lblProfile.Text = "Your Profile";
             // 
@@ -601,14 +624,15 @@ namespace WinFormProject
             // 
             ptbAvatar.AutoRoundedCorners = true;
             ptbAvatar.BackColor = Color.Transparent;
-            ptbAvatar.BorderRadius = 124;
+            ptbAvatar.BorderRadius = 93;
             ptbAvatar.CustomizableEdges = customizableEdges39;
             ptbAvatar.Image = (Image)resources.GetObject("ptbAvatar.Image");
             ptbAvatar.ImageRotate = 0F;
-            ptbAvatar.Location = new Point(914, 41);
+            ptbAvatar.Location = new Point(800, 31);
+            ptbAvatar.Margin = new Padding(3, 2, 3, 2);
             ptbAvatar.Name = "ptbAvatar";
             ptbAvatar.ShadowDecoration.CustomizableEdges = customizableEdges40;
-            ptbAvatar.Size = new Size(287, 251);
+            ptbAvatar.Size = new Size(251, 188);
             ptbAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbAvatar.TabIndex = 56;
             ptbAvatar.TabStop = false;
@@ -618,10 +642,11 @@ namespace WinFormProject
             ptbCV.BorderRadius = 20;
             ptbCV.CustomizableEdges = customizableEdges41;
             ptbCV.ImageRotate = 0F;
-            ptbCV.Location = new Point(930, 401);
+            ptbCV.Location = new Point(814, 301);
+            ptbCV.Margin = new Padding(3, 2, 3, 2);
             ptbCV.Name = "ptbCV";
             ptbCV.ShadowDecoration.CustomizableEdges = customizableEdges42;
-            ptbCV.Size = new Size(261, 265);
+            ptbCV.Size = new Size(228, 199);
             ptbCV.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbCV.TabIndex = 57;
             ptbCV.TabStop = false;
@@ -638,10 +663,11 @@ namespace WinFormProject
             btnJobPreference.FillColor = Color.FromArgb(176, 226, 243);
             btnJobPreference.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnJobPreference.ForeColor = Color.Black;
-            btnJobPreference.Location = new Point(637, 697);
+            btnJobPreference.Location = new Point(557, 523);
+            btnJobPreference.Margin = new Padding(3, 2, 3, 2);
             btnJobPreference.Name = "btnJobPreference";
             btnJobPreference.ShadowDecoration.CustomizableEdges = customizableEdges44;
-            btnJobPreference.Size = new Size(225, 56);
+            btnJobPreference.Size = new Size(197, 42);
             btnJobPreference.TabIndex = 58;
             btnJobPreference.Text = "Job Preferences";
             btnJobPreference.Click += btnJobPreference_Click;
@@ -657,10 +683,11 @@ namespace WinFormProject
             btnEditJobPreferences.FillColor = Color.FromArgb(176, 226, 243);
             btnEditJobPreferences.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnEditJobPreferences.ForeColor = Color.Black;
-            btnEditJobPreferences.Location = new Point(637, 697);
+            btnEditJobPreferences.Location = new Point(557, 523);
+            btnEditJobPreferences.Margin = new Padding(3, 2, 3, 2);
             btnEditJobPreferences.Name = "btnEditJobPreferences";
             btnEditJobPreferences.ShadowDecoration.CustomizableEdges = customizableEdges46;
-            btnEditJobPreferences.Size = new Size(225, 56);
+            btnEditJobPreferences.Size = new Size(197, 42);
             btnEditJobPreferences.TabIndex = 59;
             btnEditJobPreferences.Text = "Edit Job Preferences";
             // 
@@ -675,38 +702,42 @@ namespace WinFormProject
             btnCreateCV.FillColor = Color.FromArgb(176, 226, 243);
             btnCreateCV.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnCreateCV.ForeColor = Color.Black;
-            btnCreateCV.Location = new Point(943, 759);
+            btnCreateCV.Location = new Point(557, 458);
+            btnCreateCV.Margin = new Padding(3, 2, 3, 2);
             btnCreateCV.Name = "btnCreateCV";
             btnCreateCV.ShadowDecoration.CustomizableEdges = customizableEdges48;
-            btnCreateCV.Size = new Size(225, 56);
+            btnCreateCV.Size = new Size(197, 42);
             btnCreateCV.TabIndex = 58;
             btnCreateCV.Text = "Create CV";
             btnCreateCV.Click += btnCreateCV_Click;
             // 
-            // errorProviderFullName
+            // epTxt
             // 
-            errorProviderFullName.ContainerControl = this;
+            epTxt.ContainerControl = this;
             // 
-            // errorProviderAddress
+            // epCbb
             // 
-            errorProviderAddress.ContainerControl = this;
+            epCbb.ContainerControl = this;
             // 
-            // errorProviderPhone
+            // epRbtn
             // 
-            errorProviderPhone.ContainerControl = this;
+            epRbtn.ContainerControl = this;
+            // 
+            // epDtp
+            // 
+            epDtp.ContainerControl = this;
             // 
             // FProfile
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1233, 852);
+            ClientSize = new Size(1079, 639);
             Controls.Add(btnCreateCV);
             Controls.Add(btnJobPreference);
             Controls.Add(ptbCV);
             Controls.Add(ptbAvatar);
             Controls.Add(lblProfile);
-            Controls.Add(btnEdit);
             Controls.Add(btnSave);
             Controls.Add(btnCancel);
             Controls.Add(btnCV);
@@ -735,7 +766,8 @@ namespace WinFormProject
             Controls.Add(rdoMale);
             Controls.Add(lblGender);
             Controls.Add(btnEditJobPreferences);
-            Margin = new Padding(3, 5, 3, 5);
+            Controls.Add(btnEdit);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FProfile";
             StartPosition = FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
@@ -747,9 +779,10 @@ namespace WinFormProject
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).EndInit();
             ((System.ComponentModel.ISupportInitialize)ptbCV).EndInit();
-            ((System.ComponentModel.ISupportInitialize)errorProviderFullName).EndInit();
-            ((System.ComponentModel.ISupportInitialize)errorProviderAddress).EndInit();
-            ((System.ComponentModel.ISupportInitialize)errorProviderPhone).EndInit();
+            ((System.ComponentModel.ISupportInitialize)epTxt).EndInit();
+            ((System.ComponentModel.ISupportInitialize)epCbb).EndInit();
+            ((System.ComponentModel.ISupportInitialize)epRbtn).EndInit();
+            ((System.ComponentModel.ISupportInitialize)epDtp).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -789,8 +822,9 @@ namespace WinFormProject
         private Guna.UI2.WinForms.Guna2Button btnJobPreference;
         private Guna.UI2.WinForms.Guna2Button btnEditJobPreferences;
         private Guna.UI2.WinForms.Guna2Button btnCreateCV;
-        private ErrorProvider errorProviderFullName;
-        private ErrorProvider errorProviderAddress;
-        private ErrorProvider errorProviderPhone;
+        private ErrorProvider epTxt;
+        private ErrorProvider epCbb;
+        private ErrorProvider epRbtn;
+        private ErrorProvider epDtp;
     }
 }

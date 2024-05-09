@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormProject.OOPCODE;
 using WinFormProject.WinFormCode;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WinFormProject
 {
@@ -33,7 +34,12 @@ namespace WinFormProject
             fJobSKills = new FJobSKills(skills);
             FillForm();
             fJobSKills.ListReady += FJobSkills_ListReady;
+            dtpDateEnd.MinDate = DateTime.Today.AddDays(-1);
+
         }
+
+        public List<Job> JobList
+        { get { return jobs; } }
 
         private void FillForm()
         {
@@ -82,11 +88,120 @@ namespace WinFormProject
                 }
             }
         }
-
         private void btnAddSkills_Click(object sender, EventArgs e)
         {
             fJobSKills.Show();
 
+        }
+
+        private void btnSave_Click_Error(object sender, EventArgs e)
+        {
+            SetError(txtJobName);
+            SetError(txtSalary);
+            SetError(cbbExperience);
+            SetError(cbbWorkingForm);
+            SetError(rtxtBenefit);
+            SetError(rtxtdescription);
+            SetError(rtxtjobrequirement);
+            if (flpSkills.Controls.Count < 1)
+            {
+                MessageBox.Show("Choose the Main Skill!!");
+                return;
+            }
+            if (AnyErrors(this))
+            {
+                return;
+            }
+            foreach (Control control in this.Controls)
+            {
+                if (AnyErrors(control))
+                {
+                    return;
+                }
+            }
+            btnSave_Click(sender, e);
+        }
+
+        public bool AnyErrors(Control control)
+        {
+            // Check if the control has an ErrorProvider and if it has any errors
+            if (control is Guna.UI2.WinForms.Guna2TextBox txt)
+            {
+                if (!string.IsNullOrEmpty(epTextbox.GetError(txt)))
+                {
+                    return true;
+                }
+            }
+
+            if (control is Guna.UI2.WinForms.Guna2ComboBox cbb)
+            {
+                if (!string.IsNullOrEmpty(epCbb.GetError(cbb)))
+                {
+                    return true;
+                }
+            }
+
+            if (control is RichTextBox rtxt)
+            {
+                if (!string.IsNullOrEmpty(epTextbox.GetError(rtxt)))
+                {
+                    return true;
+                }
+            }
+
+            foreach (Control childControl in control.Controls)
+            {
+                if (AnyErrors(childControl))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private void txtJobName_Leave(object sender, EventArgs e)
+        {
+            SetError(txtJobName);
+        }
+
+        private void txtSalary_Leave(object sender, EventArgs e)
+        {
+            SetError(txtSalary);
+        }
+
+        private void SetError(Guna.UI2.WinForms.Guna2TextBox txt)
+        {
+            if (txt.Text.Length == 0)
+            {
+                epTextbox.SetError(txt, "Textbox cannot be empty");
+            }
+            else
+            {
+                epTextbox.SetError(txt, "");
+            }
+        }
+        private void SetError(Guna.UI2.WinForms.Guna2ComboBox cbb)
+        {
+            if (cbb.SelectedIndex < 0)
+            {
+                epCbb.SetError(cbb, "Must choose something!!!");
+            }
+            else
+            {
+                epCbb.SetError(cbb, "");
+            }
+        }
+        private void SetError(RichTextBox rtxt)
+        {
+            if (rtxt.Text.Length < 1)
+            {
+                epTextbox.SetError(rtxt, "Textbox cannot be empty");
+            }
+            else
+            {
+                epTextbox.SetError(rtxt, "");
+            }
         }
     }
 }

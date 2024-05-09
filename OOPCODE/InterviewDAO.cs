@@ -16,6 +16,11 @@ namespace WinFormProject
 
         public void InsertInterview(Interview interview)
         {
+            if(FetchInterview(interview.IdJSeeker, interview.CompanyID, interview.IdJob).Status.ToLower() == "waiting")
+            {
+                MessageBox.Show("There are a interview have already schedule with this jobseeker!!");
+                return;
+            }
             string strCRUD = string.Format(@$"Insert into Interview (IdJSeeker, IdJob, TimeInterview, DateInterview, companyID) Values('{interview.IdJSeeker}', '{interview.IdJob}', '{interview.TimeInterview}', '{interview.DateInterview.ToString("yyyy-MM-dd")}', '{interview.CompanyID}')");
             conn.CRUD(strCRUD);
         }

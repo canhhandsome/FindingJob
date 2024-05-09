@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -77,6 +78,32 @@ namespace WinFormProject
             cvdao.UpdateCV(newjseeker.CVData);
             jobseeker = newjseeker;
         }
+
+        private void btnSave_Click_Error(object sender, EventArgs e)
+        {
+            foreach (Control control in this.Controls)
+            {
+                if (control is Guna2TextBox txt)
+                {
+                    SetError(txt);
+                }
+                if (control is Guna2ComboBox cbb)
+                {
+                    SetError(cbb);
+                }
+            }
+            SetError();
+            SetError(dtpkBirthDate);
+            foreach (Control control in this.Controls)
+            {
+                if (AnyErrors(control))
+                {
+                    return;
+                }
+            }
+            btnSave_Click(sender, e);
+        }
+
         private void Enable_Edit_Click()
         {
             this.btnChoosePicture.Visible = true;
@@ -167,29 +194,82 @@ namespace WinFormProject
             fCV.Show();
         }
 
-        private void txtFullName_Leave(object sender, EventArgs e)
+
+        public bool AnyErrors(Control control)
         {
-            if (txtFullName.Text == string.Empty)
+            // Check if the control has an ErrorProvider and if it has any errors
+            if (control is Guna.UI2.WinForms.Guna2TextBox txt)
             {
-                errorProviderFullName.SetError(txtFullName, "Please enter your name!");
+                if (!string.IsNullOrEmpty(epTxt.GetError(txt)))
+                {
+                    return true;
+                }
+            }
+
+            if (control is Guna.UI2.WinForms.Guna2ComboBox cbb)
+            {
+                if (!string.IsNullOrEmpty(epCbb.GetError(cbb)))
+                {
+                    return true;
+                }
+            }
+
+
+            foreach (Control childControl in control.Controls)
+            {
+                if (AnyErrors(childControl))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private void SetError(Guna2TextBox txt)
+        {
+            if (txt.Text.Length < 1)
+            {
+                epTxt.SetError(txt, "Textbox cannot be empty");
             }
             else
             {
-                errorProviderFullName.SetError(txtFullName, null);
-
+                epTxt.SetError(txt, "");
             }
         }
 
-        private void txtAddress_Leave(object sender, EventArgs e)
+        private void SetError(Guna2ComboBox cbb)
         {
-            if (txtAddress.Text == string.Empty)
+            if (cbb.SelectedIndex < 0)
             {
-                errorProviderFullName.SetError(txtAddress, "Please enter your address!");
+                epTxt.SetError(cbb, "Must choose something!!!");
             }
             else
             {
-                errorProviderFullName.SetError(txtAddress, null);
+                epTxt.SetError(cbb, "");
+            }
+        }
+        private void SetError()
+        {
+            if(!rdoFemale.Checked && !rdoMale.Checked)
+            {
+                epRbtn.SetError(rdoFemale, "Can't empty here!");
+            }
+            else
+            {
+                epRbtn.SetError(rdoFemale, "");
+            }
+        }
 
+        private void SetError(Guna2DateTimePicker dtp)
+        {
+            if (jobseeker.CheckAge(dtp.Value))
+            {
+                epDtp.SetError(dtp, "You are too young, pls return when you 16!");
+            }
+            else
+            {
+                epDtp.SetError(dtp, "");
             }
         }
     }

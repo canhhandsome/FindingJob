@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormProject.OOPCODE;
 using WinFormProject.WinFormCode;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WinFormProject
 {
@@ -124,6 +126,34 @@ namespace WinFormProject
             this.company = newcompany;
         }
 
+        private void btnSave_Click_Error(object sender, EventArgs e)
+        {
+            foreach(Control control in this.Controls)
+            {
+                if(control is Guna2TextBox txt)
+                {
+                    SetError(txt);
+                }
+                if(control is Guna2ComboBox cbb)
+                {
+                    SetError(cbb);
+                }
+            }
+            if (company.BusinessLicense == null)
+            {
+                MessageBox.Show("Select your Business License!!");
+                return;
+            }
+            foreach (Control control in this.Controls)
+            {
+                if (AnyErrors(control))
+                {
+                    return;
+                }
+            }
+            btnSave_Click(sender, e);
+        }
+
         private void btnChoosePicture_Click(object sender, EventArgs e)
         {
             ImageHandler.ChoosePicture(ref ptbAvatar);
@@ -154,5 +184,61 @@ namespace WinFormProject
         {
 
         }
+
+        public bool AnyErrors(Control control)
+        {
+            // Check if the control has an ErrorProvider and if it has any errors
+            if (control is Guna.UI2.WinForms.Guna2TextBox txt)
+            {
+                if (!string.IsNullOrEmpty(epTxt.GetError(txt)))
+                {
+                    return true;
+                }
+            }
+
+            if (control is Guna.UI2.WinForms.Guna2ComboBox cbb)
+            {
+                if (!string.IsNullOrEmpty(epCbb.GetError(cbb)))
+                {
+                    return true;
+                }
+            }
+
+
+            foreach (Control childControl in control.Controls)
+            {
+                if (AnyErrors(childControl))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private void SetError(Guna2TextBox txt)
+        {
+            if(txt.Text.Length < 1)
+            {
+                epTxt.SetError(txt, "Textbox cannot be empty");
+            }
+            else
+            {
+                epTxt.SetError(txt, "");
+            }
+        }
+
+        private void SetError(Guna2ComboBox cbb)
+        {
+            if (cbb.SelectedIndex < 0)
+            {
+                epTxt.SetError(cbb, "Must choose something!!!");
+            }
+            else
+            {
+                epTxt.SetError(cbb, "");
+            }
+        }
+
     }
 }

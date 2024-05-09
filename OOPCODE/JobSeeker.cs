@@ -45,6 +45,18 @@ namespace WinFormProject
             cvDao.FetchAllInformationOfCV(this.INFO.ID,cv);
         }
 
+        public bool CheckAge(DateTime birthDate)
+        {
+            int age = DateTime.Now.Year - birthDate.Year;
+
+            // Check if the birthday has occurred this year
+            if (DateTime.Now.Month < birthDate.Month || (DateTime.Now.Month == birthDate.Month && DateTime.Now.Day < birthDate.Day))
+            {
+                age--;
+            }
+            return age > 15;
+        }
+
         public Information INFO
         {
             get { return information; }

@@ -8,9 +8,6 @@
     <Compile Update="WinFormCode\BtnSkillShow.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="WinFormCode\FAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="WinFormCode\FAlertView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,9 +83,6 @@
     <Compile Update="WinFormCode\FLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="WinFormCode\FManageUser.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="WinFormCode\FOffer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,9 +101,6 @@
     <Compile Update="WinFormCode\FRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="WinFormCode\FReportDetail.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="WinFormCode\FScheduleInterview.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,9 +108,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="WinFormCode\FAlert.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="WinFormCode\FSupReportSection.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="WinFormCode\FTest.cs">

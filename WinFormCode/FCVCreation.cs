@@ -131,6 +131,7 @@ namespace WinFormProject.WinFormCode
             try
             {
                 CreatePDFDocument();
+                MessageBox.Show("Create Success, Please go to the desktop to get the file!");
             }
             catch(Exception ex)
             {
