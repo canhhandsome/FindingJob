@@ -18,6 +18,7 @@ namespace WinFormProject
         private Job job = new Job();
         CompanyDAO companyDAO = new CompanyDAO();
         string jsID = string.Empty;
+        public event EventHandler OpenFromAnotherJob;
         Company company;
         public UCInformation(Job job, string jsID)
         {
@@ -74,6 +75,7 @@ namespace WinFormProject
         {
             FJobDetails jobDetails = new FJobDetails(job, jsID);
             jobDetails.Show();
+            OpenFromAnotherJob?.Invoke(this, EventArgs.Empty);
         }
         private void BtnSkill_Click(object sender, EventArgs e)
         {

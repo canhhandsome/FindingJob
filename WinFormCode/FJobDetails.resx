@@ -347,6 +347,20 @@
         R6KeAaIfu6e4i4vYiw3Va9XCX2+kRNPG22yuAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        pQAAAKUBcMTeVQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGaSURBVEhLtZY7
+        TgMxEIYdKQ0tRQoOQJSaipqSG6AoHUdIGXGG1ByBDorcgVtAQRkhIYQExfJ/3vHKZifEEexInzSex78b
+        vzahaZqdyCbiUtyIe/Fi4BMjN/F6E34whLFYiU9BIPFq5DFqqB27Wr1ACDPxKBhsxVrMxVSMDHxi5Kih
+        lp5ZT68YhLAQH4LBRpzkeQ9qrJYBvYsinxXy5hS8i+u8qAZ6rBeN7pekJHOepmWnuOwMvBzQK3DQimuS
+        EiwSziZv+InsGbxcAg2Bs7Jx3IrsBBbr1zmXxV3k5RJoCLTQRDvuZTJrryFHtvcBgJbAQTseGAZzrzhH
+        VvsAtjAO2vFUMph6xTmy2gdwTnDQjkefxpFXnGN1bMVjL5+QcRipRfugBzwInCdx7tWArHjAIVN0JG6t
+        /kssRe/FZMUUVS9yQnYl3qxv6eSLRa7epjmyU3EnLpxcsU2rD1oNaJhWe9AsWHVV1ICGabVXhQWrLrt9
+        0Gsa5WVnyeGu66xouA9OF2h/SZouFuv/PpldsF2TYT76ObI//m1pwjfzwX73AwyV4AAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
   <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
@@ -374,20 +388,6 @@
         R0szbVBf19C1WovcmpPQ3dDuD3ksPSY/mOw9L6x26FqTxd7C3VAx4Yc9Vhf0cyBduRlhTUDF9mLvGhfw
         G7ot9XCpPNBZuySTb4TO6KyCudQrDfbhng2J3s/rmMM5HDOqL+MaXiLO38fOf67pNyms/0f7cAn6g8+g
         R6KeAaIfu6e4i4vYiw3Va9XCX2+kRNPG22yuAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        pQAAAKUBcMTeVQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGaSURBVEhLtZY7
-        TgMxEIYdKQ0tRQoOQJSaipqSG6AoHUdIGXGG1ByBDorcgVtAQRkhIYQExfJ/3vHKZifEEexInzSex78b
-        vzahaZqdyCbiUtyIe/Fi4BMjN/F6E34whLFYiU9BIPFq5DFqqB27Wr1ACDPxKBhsxVrMxVSMDHxi5Kih
-        lp5ZT68YhLAQH4LBRpzkeQ9qrJYBvYsinxXy5hS8i+u8qAZ6rBeN7pekJHOepmWnuOwMvBzQK3DQimuS
-        EiwSziZv+InsGbxcAg2Bs7Jx3IrsBBbr1zmXxV3k5RJoCLTQRDvuZTJrryFHtvcBgJbAQTseGAZzrzhH
-        VvsAtjAO2vFUMph6xTmy2gdwTnDQjkefxpFXnGN1bMVjL5+QcRipRfugBzwInCdx7tWArHjAIVN0JG6t
-        /kssRe/FZMUUVS9yQnYl3qxv6eSLRa7epjmyU3EnLpxcsU2rD1oNaJhWe9AsWHVV1ICGabVXhQWrLrt9
-        0Gsa5WVnyeGu66xouA9OF2h/SZouFuv/PpldsF2TYT76ObI//m1pwjfzwX73AwyV4AAAAABJRU5ErkJg
-        gg==
 </value>
   </data>
   <data name="ptbAvatar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

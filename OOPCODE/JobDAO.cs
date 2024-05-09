@@ -67,5 +67,32 @@ namespace WinFormProject
         ////    return conn.GetTotal(SQL);
         ////}
 
+        public void FetchRelatedJob(string jobname, List<Job> relatedJobs,string jobid)
+        {
+            List<string> JobNameEach = JobNameLike(jobname);
+            foreach(string name in JobNameEach)
+            {
+                string SQL = string.Format("SELECT * FROM Job WHERE Status = 'waiting' And Jobid != '{1}' AND JobName LIKE '%{0}%'", name,jobid);
+                conn.FetchRelatedJob(SQL, relatedJobs);
+            }
+        }
+        private static List<string> JobNameLike(string jobName)
+        {
+            // Split the job name into individual words
+            string[] wordsArray = jobName.Split(' ');
+
+            // Trim each word in the array
+            for (int i = 0; i < wordsArray.Length; i++)
+            {
+                wordsArray[i] = wordsArray[i].Trim();
+            }
+
+            // Convert the array to a list
+            List<string> wordsList = new List<string>(wordsArray);
+
+            return wordsList;
+        }
+
+
     }
 }

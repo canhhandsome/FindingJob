@@ -29,10 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FJobDetails));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblSalary = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
@@ -52,16 +58,21 @@
             panel4 = new Panel();
             lbLocation = new Label();
             pictureBox1 = new PictureBox();
+            panel7 = new Panel();
+            lblDate = new Label();
+            pictureBox5 = new PictureBox();
             panel5 = new Panel();
             panel6 = new Panel();
             lblWorkingForm = new Label();
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
-            panel7 = new Panel();
-            lblDate = new Label();
-            pictureBox5 = new PictureBox();
             flowLayoutPanel4 = new FlowLayoutPanel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            panel3 = new Panel();
+            label1 = new Label();
+            pnRelatedJob = new Guna.UI2.WinForms.Guna2Panel();
+            btnNext = new Guna.UI2.WinForms.Guna2Button();
+            btnBack = new Guna.UI2.WinForms.Guna2Button();
             lblCompanyNameLeft = new ReaLTaiizor.Controls.MetroLabel();
             panel10 = new Panel();
             btnSeeMore = new ReaLTaiizor.Controls.CyberButton();
@@ -93,13 +104,15 @@
             flowLayoutPanel2.SuspendLayout();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel5.SuspendLayout();
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             flowLayoutPanel4.SuspendLayout();
+            panel3.SuspendLayout();
+            pnRelatedJob.SuspendLayout();
             panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).BeginInit();
             flowLayoutPanel3.SuspendLayout();
@@ -127,10 +140,10 @@
             tabControl1.Controls.Add(tabPage2);
             tabControl1.Controls.Add(tabPage3);
             tabControl1.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold);
-            tabControl1.Location = new Point(3, 561);
+            tabControl1.Location = new Point(3, 574);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(711, 231);
+            tabControl1.Size = new Size(991, 253);
             tabControl1.TabIndex = 28;
             // 
             // tabPage1
@@ -140,18 +153,17 @@
             tabPage1.Location = new Point(4, 39);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(703, 188);
+            tabPage1.Size = new Size(983, 210);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Requirement";
             tabPage1.UseVisualStyleBackColor = true;
             // 
             // rtxtRequirement
             // 
-            rtxtRequirement.Dock = DockStyle.Top;
             rtxtRequirement.Enabled = false;
             rtxtRequirement.Location = new Point(3, 3);
             rtxtRequirement.Name = "rtxtRequirement";
-            rtxtRequirement.Size = new Size(697, 192);
+            rtxtRequirement.Size = new Size(986, 204);
             rtxtRequirement.TabIndex = 0;
             rtxtRequirement.Text = "";
             // 
@@ -161,7 +173,7 @@
             tabPage2.Location = new Point(4, 39);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(703, 188);
+            tabPage2.Size = new Size(983, 210);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Description";
             tabPage2.UseVisualStyleBackColor = true;
@@ -170,9 +182,10 @@
             // 
             rtxtDescription.Dock = DockStyle.Fill;
             rtxtDescription.Enabled = false;
+            rtxtDescription.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             rtxtDescription.Location = new Point(3, 3);
             rtxtDescription.Name = "rtxtDescription";
-            rtxtDescription.Size = new Size(697, 182);
+            rtxtDescription.Size = new Size(977, 204);
             rtxtDescription.TabIndex = 0;
             rtxtDescription.Text = "";
             // 
@@ -182,7 +195,7 @@
             tabPage3.Location = new Point(4, 39);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(703, 188);
+            tabPage3.Size = new Size(983, 210);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Benefit";
             tabPage3.UseVisualStyleBackColor = true;
@@ -191,9 +204,10 @@
             // 
             rtxtBenefit.Dock = DockStyle.Fill;
             rtxtBenefit.Enabled = false;
+            rtxtBenefit.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             rtxtBenefit.Location = new Point(3, 3);
             rtxtBenefit.Name = "rtxtBenefit";
-            rtxtBenefit.Size = new Size(697, 182);
+            rtxtBenefit.Size = new Size(977, 204);
             rtxtBenefit.TabIndex = 45;
             rtxtBenefit.Text = "";
             // 
@@ -204,11 +218,13 @@
             flowLayoutPanel1.Controls.Add(panel1);
             flowLayoutPanel1.Controls.Add(flowLayoutPanel2);
             flowLayoutPanel1.Controls.Add(tabControl1);
+            flowLayoutPanel1.Controls.Add(panel3);
+            flowLayoutPanel1.Controls.Add(pnRelatedJob);
             flowLayoutPanel1.Dock = DockStyle.Left;
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(737, 649);
+            flowLayoutPanel1.Size = new Size(1018, 963);
             flowLayoutPanel1.TabIndex = 49;
             // 
             // panel1
@@ -218,11 +234,10 @@
             panel1.Controls.Add(lblCompany);
             panel1.Controls.Add(lblJobName);
             panel1.Controls.Add(lblSalary);
-            panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(3, 2);
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(711, 162);
+            panel1.Size = new Size(993, 162);
             panel1.TabIndex = 0;
             // 
             // btnApply
@@ -252,7 +267,7 @@
             btnApply.Lighting = true;
             btnApply.LinearGradient_Background = false;
             btnApply.LinearGradientPen = false;
-            btnApply.Location = new Point(3, 110);
+            btnApply.Location = new Point(194, 117);
             btnApply.Name = "btnApply";
             btnApply.PenWidth = 15;
             btnApply.Rounding = true;
@@ -303,23 +318,21 @@
             // 
             flowLayoutPanel2.Controls.Add(pnCarousel);
             flowLayoutPanel2.Controls.Add(panel4);
-            flowLayoutPanel2.Controls.Add(panel5);
             flowLayoutPanel2.Controls.Add(panel7);
+            flowLayoutPanel2.Controls.Add(panel5);
             flowLayoutPanel2.Controls.Add(flowLayoutPanel4);
-            flowLayoutPanel2.Dock = DockStyle.Top;
             flowLayoutPanel2.Location = new Point(3, 168);
             flowLayoutPanel2.Margin = new Padding(3, 2, 3, 2);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(711, 388);
+            flowLayoutPanel2.Size = new Size(991, 401);
             flowLayoutPanel2.TabIndex = 1;
             // 
             // pnCarousel
             // 
-            pnCarousel.Dock = DockStyle.Top;
             pnCarousel.Location = new Point(3, 2);
             pnCarousel.Margin = new Padding(3, 2, 3, 2);
             pnCarousel.Name = "pnCarousel";
-            pnCarousel.Size = new Size(706, 189);
+            pnCarousel.Size = new Size(988, 187);
             pnCarousel.TabIndex = 1;
             // 
             // panel4
@@ -327,11 +340,10 @@
             panel4.AutoScroll = true;
             panel4.Controls.Add(lbLocation);
             panel4.Controls.Add(pictureBox1);
-            panel4.Dock = DockStyle.Top;
-            panel4.Location = new Point(3, 195);
+            panel4.Location = new Point(3, 193);
             panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(703, 44);
+            panel4.Size = new Size(703, 46);
             panel4.TabIndex = 2;
             // 
             // lbLocation
@@ -342,7 +354,7 @@
             lbLocation.ForeColor = SystemColors.ControlText;
             lbLocation.Location = new Point(69, 0);
             lbLocation.Name = "lbLocation";
-            lbLocation.Size = new Size(634, 44);
+            lbLocation.Size = new Size(634, 46);
             lbLocation.TabIndex = 24;
             lbLocation.Text = "Location";
             lbLocation.TextAlign = ContentAlignment.MiddleLeft;
@@ -358,12 +370,45 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // panel7
+            // 
+            panel7.AutoScroll = true;
+            panel7.Controls.Add(lblDate);
+            panel7.Controls.Add(pictureBox5);
+            panel7.Location = new Point(3, 243);
+            panel7.Margin = new Padding(3, 2, 3, 2);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(703, 44);
+            panel7.TabIndex = 4;
+            // 
+            // lblDate
+            // 
+            lblDate.Dock = DockStyle.Right;
+            lblDate.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold);
+            lblDate.ForeColor = SystemColors.ControlText;
+            lblDate.Location = new Point(69, 0);
+            lblDate.Name = "lblDate";
+            lblDate.Size = new Size(634, 44);
+            lblDate.TabIndex = 22;
+            lblDate.Text = "Date Publish:";
+            lblDate.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(14, 11);
+            pictureBox5.Margin = new Padding(3, 2, 3, 2);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(26, 22);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 0;
+            pictureBox5.TabStop = false;
+            // 
             // panel5
             // 
             panel5.Controls.Add(panel6);
             panel5.Controls.Add(pictureBox3);
-            panel5.Dock = DockStyle.Top;
-            panel5.Location = new Point(3, 243);
+            panel5.Location = new Point(3, 291);
             panel5.Margin = new Padding(3, 2, 3, 2);
             panel5.Name = "panel5";
             panel5.Size = new Size(703, 44);
@@ -415,49 +460,13 @@
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
             // 
-            // panel7
-            // 
-            panel7.AutoScroll = true;
-            panel7.Controls.Add(lblDate);
-            panel7.Controls.Add(pictureBox5);
-            panel7.Dock = DockStyle.Top;
-            panel7.Location = new Point(3, 291);
-            panel7.Margin = new Padding(3, 2, 3, 2);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(703, 44);
-            panel7.TabIndex = 4;
-            // 
-            // lblDate
-            // 
-            lblDate.Dock = DockStyle.Right;
-            lblDate.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold);
-            lblDate.ForeColor = SystemColors.ControlText;
-            lblDate.Location = new Point(69, 0);
-            lblDate.Name = "lblDate";
-            lblDate.Size = new Size(634, 44);
-            lblDate.TabIndex = 22;
-            lblDate.Text = "Date Publish:";
-            lblDate.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(14, 11);
-            pictureBox5.Margin = new Padding(3, 2, 3, 2);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(26, 22);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 0;
-            pictureBox5.TabStop = false;
-            // 
             // flowLayoutPanel4
             // 
             flowLayoutPanel4.Controls.Add(guna2HtmlLabel1);
-            flowLayoutPanel4.Dock = DockStyle.Bottom;
             flowLayoutPanel4.Location = new Point(3, 339);
             flowLayoutPanel4.Margin = new Padding(3, 2, 3, 2);
             flowLayoutPanel4.Name = "flowLayoutPanel4";
-            flowLayoutPanel4.Size = new Size(703, 56);
+            flowLayoutPanel4.Size = new Size(988, 56);
             flowLayoutPanel4.TabIndex = 5;
             // 
             // guna2HtmlLabel1
@@ -471,6 +480,76 @@
             guna2HtmlLabel1.Size = new Size(94, 44);
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "Skill";
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(label1);
+            panel3.Location = new Point(3, 833);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(991, 38);
+            panel3.TabIndex = 29;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Dock = DockStyle.Left;
+            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold);
+            label1.Location = new Point(0, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(134, 30);
+            label1.TabIndex = 0;
+            label1.Text = "Related Job";
+            // 
+            // pnRelatedJob
+            // 
+            pnRelatedJob.Controls.Add(btnNext);
+            pnRelatedJob.Controls.Add(btnBack);
+            pnRelatedJob.CustomizableEdges = customizableEdges5;
+            pnRelatedJob.Location = new Point(3, 877);
+            pnRelatedJob.Name = "pnRelatedJob";
+            pnRelatedJob.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            pnRelatedJob.Size = new Size(993, 400);
+            pnRelatedJob.TabIndex = 30;
+            // 
+            // btnNext
+            // 
+            btnNext.AutoRoundedCorners = true;
+            btnNext.BorderRadius = 16;
+            btnNext.CustomizableEdges = customizableEdges1;
+            btnNext.DisabledState.BorderColor = Color.DarkGray;
+            btnNext.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnNext.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnNext.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnNext.Font = new Font("Segoe UI", 9F);
+            btnNext.ForeColor = Color.White;
+            btnNext.Location = new Point(881, 364);
+            btnNext.Margin = new Padding(3, 2, 3, 2);
+            btnNext.Name = "btnNext";
+            btnNext.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnNext.Size = new Size(107, 34);
+            btnNext.TabIndex = 42;
+            btnNext.Text = "Next";
+            btnNext.Click += btnNext_Click;
+            // 
+            // btnBack
+            // 
+            btnBack.AutoRoundedCorners = true;
+            btnBack.BorderRadius = 16;
+            btnBack.CustomizableEdges = customizableEdges3;
+            btnBack.DisabledState.BorderColor = Color.DarkGray;
+            btnBack.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnBack.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnBack.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnBack.Font = new Font("Segoe UI", 9F);
+            btnBack.ForeColor = Color.White;
+            btnBack.Location = new Point(768, 364);
+            btnBack.Margin = new Padding(3, 2, 3, 2);
+            btnBack.Name = "btnBack";
+            btnBack.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnBack.Size = new Size(107, 34);
+            btnBack.TabIndex = 41;
+            btnBack.Text = "Back";
+            btnBack.Click += btnBack_Click_1;
             // 
             // lblCompanyNameLeft
             // 
@@ -543,13 +622,13 @@
             // 
             // ptbAvatar
             // 
-            ptbAvatar.CustomizableEdges = customizableEdges1;
+            ptbAvatar.CustomizableEdges = customizableEdges7;
             ptbAvatar.Image = (Image)resources.GetObject("ptbAvatar.Image");
             ptbAvatar.ImageRotate = 0F;
             ptbAvatar.Location = new Point(14, 19);
             ptbAvatar.Margin = new Padding(3, 2, 3, 2);
             ptbAvatar.Name = "ptbAvatar";
-            ptbAvatar.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            ptbAvatar.ShadowDecoration.CustomizableEdges = customizableEdges8;
             ptbAvatar.Size = new Size(120, 92);
             ptbAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
             ptbAvatar.TabIndex = 51;
@@ -607,10 +686,10 @@
             flowLayoutPanel3.Controls.Add(panel11);
             flowLayoutPanel3.Controls.Add(panel12);
             flowLayoutPanel3.Dock = DockStyle.Right;
-            flowLayoutPanel3.Location = new Point(759, 0);
+            flowLayoutPanel3.Location = new Point(1024, 0);
             flowLayoutPanel3.Margin = new Padding(3, 2, 3, 2);
             flowLayoutPanel3.Name = "flowLayoutPanel3";
-            flowLayoutPanel3.Size = new Size(399, 649);
+            flowLayoutPanel3.Size = new Size(399, 963);
             flowLayoutPanel3.TabIndex = 52;
             // 
             // lblStatus
@@ -627,12 +706,12 @@
             // pnTopCompany
             // 
             pnTopCompany.Controls.Add(lblTopCompany);
-            pnTopCompany.CustomizableEdges = customizableEdges3;
+            pnTopCompany.CustomizableEdges = customizableEdges9;
             pnTopCompany.Enabled = false;
             pnTopCompany.ForeColor = Color.Red;
             pnTopCompany.Location = new Point(3, 199);
             pnTopCompany.Name = "pnTopCompany";
-            pnTopCompany.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            pnTopCompany.ShadowDecoration.CustomizableEdges = customizableEdges10;
             pnTopCompany.Size = new Size(392, 82);
             pnTopCompany.TabIndex = 56;
             pnTopCompany.Visible = false;
@@ -828,13 +907,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.White;
-            ClientSize = new Size(1158, 649);
+            ClientSize = new Size(1423, 963);
             Controls.Add(flowLayoutPanel3);
             Controls.Add(flowLayoutPanel1);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "FJobDetails";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FJobDetails";
+            Load += FJobDetails_Load;
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
@@ -846,13 +926,16 @@
             flowLayoutPanel2.ResumeLayout(false);
             panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel5.ResumeLayout(false);
             panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             flowLayoutPanel4.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            pnRelatedJob.ResumeLayout(false);
             panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ptbAvatar).EndInit();
             flowLayoutPanel3.ResumeLayout(false);
@@ -916,5 +999,10 @@
         private ReaLTaiizor.Controls.CyberButton btnSeeMore;
         private Guna.UI2.WinForms.Guna2Panel pnTopCompany;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTopCompany;
+        private Panel panel3;
+        private Label label1;
+        private Guna.UI2.WinForms.Guna2Panel pnRelatedJob;
+        private Guna.UI2.WinForms.Guna2Button btnNext;
+        private Guna.UI2.WinForms.Guna2Button btnBack;
     }
 }

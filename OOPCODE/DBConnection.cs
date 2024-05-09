@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System.ComponentModel.Design;
+using System.Data;
 using System.Data.SqlClient;
 using System.Text.Json.Serialization;
 using WinFormProject.OOPCODE;
@@ -811,6 +812,51 @@ namespace WinFormProject
             }
 
             return resultList;
+        }
+        public void FetchRelatedJob(string SQL, List<Job> relatedJob)
+        {
+            try
+            {
+                SkillListDAO sldao = new SkillListDAO();
+                conn.Open();
+                SqlCommand command = new SqlCommand(SQL, conn);
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string jobid = reader["JobID"].ToString();
+
+                    // Check if relatedJob already contains a job with the same jobid
+                    if (!relatedJob.Any(job => job.Jobid == jobid))
+                    {
+                        // Read data from the reader and create Job objects
+                        string companyid = reader["CompanyID"].ToString();
+                        string jobname = reader["JobName"].ToString();
+                        string position = reader["Position"].ToString();
+                        string salary = reader["Salary"].ToString();
+                        string requirement = reader["requirement"].ToString();
+                        string description = reader["description"].ToString();
+                        string benefit = reader["benefit"].ToString();
+                        DateTime datapublish = Convert.ToDateTime(reader["DatePublish"]);
+                        DateTime dateend = Convert.ToDateTime(reader["DateEnd"]);
+                        string status = reader["status"].ToString();
+                        string workingform = reader["WorkingForm"].ToString();
+                        List<string> skillList = sldao.GetSkills(jobid);
+                        // Create a new Job object and add it to the list
+                        Job job = new Job(jobid, companyid, jobname, position, salary, requirement, description, benefit, datapublish, dateend, status, workingform, skillList);
+                        relatedJob.Add(job);
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
     }
 }
